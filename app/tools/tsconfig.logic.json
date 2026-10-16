@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "types": [],
+    "paths": { "@/*": ["../src/*"] }
+  },
+  "include": ["../src/lib/**/*.ts", "../src/types.ts", "../src/data/lessons/index.ts", "../__tests__/**/*.ts", "./jest-globals.d.ts"]
+}

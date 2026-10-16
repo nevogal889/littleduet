@@ -1,0 +1,54 @@
+# Runs on every push and pull request: validates the song catalog and lessons,
+# installs the app for real, type-checks it, runs the unit tests and builds the web export.
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  content:
+    name: Songs and lessons
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r video/requirements.txt
+      - name: Validate the 100-song catalog
+        run: cd content && python validate_songs.py
+      - name: Rebuild and validate every lesson
+        run: python content/build_lessons.py --songs content/songs.json
+      - name: Lessons in git match the generator
+        run: git diff --exit-code -- content/lessons || (echo "content/lessons is stale; run build_lessons.py and commit" && exit 1)
+
+  app:
+    name: App (install, types, tests, web export)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install
+        run: npm install --no-audit --no-fund
+      - name: Align Expo package versions
+        run: npx expo install --check || true
+      - name: Copy content into the app
+        run: node scripts/sync-content.mjs
+      - name: Type-check
+        run: npx tsc --noEmit
+      - name: Unit tests
+        run: npx jest --ci
+      - name: Web export
+        run: npx expo export -p web
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web-export
+          path: app/dist
+          retention-days: 7

@@ -1,0 +1,99 @@
+{
+  "expo": {
+    "name": "Little Duet",
+    "slug": "little-duet",
+    "scheme": "littleduet",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#EEF3F7",
+    "primaryColor": "#F26B4F",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.littleduet.app",
+      "buildNumber": "1",
+      "supportsTablet": true,
+      "requireFullScreen": false,
+      "usesAppleSignIn": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "UISupportedInterfaceOrientations": ["UIInterfaceOrientationPortrait"],
+        "UISupportedInterfaceOrientations~ipad": [
+          "UIInterfaceOrientationPortrait",
+          "UIInterfaceOrientationPortraitUpsideDown",
+          "UIInterfaceOrientationLandscapeLeft",
+          "UIInterfaceOrientationLandscapeRight"
+        ],
+        "UIBackgroundModes": [],
+        "NSMicrophoneUsageDescription": "Little Duet does not use the microphone."
+      },
+      "privacyManifests": {
+        "NSPrivacyTracking": false,
+        "NSPrivacyTrackingDomains": [],
+        "NSPrivacyCollectedDataTypes": [],
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": ["CA92.1"]
+          }
+        ]
+      }
+    },
+    "android": {
+      "package": "com.littleduet.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#F26B4F"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.READ_CONTACTS",
+        "com.google.android.gms.permission.AD_ID"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png",
+      "name": "Little Duet",
+      "themeColor": "#F26B4F",
+      "backgroundColor": "#EEF3F7"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-apple-authentication",
+      ["expo-video", { "supportsBackgroundPlayback": false, "supportsPictureInPicture": false }],
+      ["expo-audio", { "microphonePermission": false }],
+      ["expo-screen-orientation", { "initialOrientation": "DEFAULT" }],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#EEF3F7"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "REPLACE_WITH_EAS_PROJECT_ID"
+      }
+    }
+  }
+}

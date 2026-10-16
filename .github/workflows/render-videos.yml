@@ -1,0 +1,79 @@
+# Renders every lesson video (723 classes) on GitHub's machines, 8 jobs in parallel,
+# and uploads them to the video CDN (Cloudflare R2, S3-compatible) with the same folder
+# structure the app expects: <songId>/<classId>.mp4 and .jpg.
+#
+# One-time setup (Settings > Secrets and variables > Actions):
+#   secrets  R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY
+#   variables R2_ENDPOINT (https://<account>.r2.cloudflarestorage.com), R2_BUCKET (e.g. littleduet-video)
+# Without them the videos are kept as workflow artifacts for 3 days instead.
+# Finished files are skipped on re-runs when R2 already has them.
+name: Render lesson videos
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Optional: render just these song ids (space separated)"
+        required: false
+        default: ""
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pip install -r video/requirements.txt
+      - name: Pick this shard's classes
+        run: |
+          cd video
+          if [ -n "${{ inputs.only }}" ]; then
+            python -B render.py --list | grep -E "^($(echo '${{ inputs.only }}' | tr ' ' '|'))-c[0-9]+$" > all.txt
+          else
+            python -B render.py --list > all.txt
+          fi
+          awk -v n=8 -v s=${{ matrix.shard }} 'NR % n == s' all.txt > mine.txt
+          echo "$(wc -l < mine.txt) classes in shard ${{ matrix.shard }}"
+      - name: Skip classes already on R2
+        if: ${{ vars.R2_BUCKET != '' }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          cd video
+          aws s3 ls "s3://${{ vars.R2_BUCKET }}/" --recursive --endpoint-url "${{ vars.R2_ENDPOINT }}" \
+            | awk '{print $4}' | grep '\.mp4$' | sed 's#.*/##; s#\.mp4$##' | sort > have.txt || true
+          sort mine.txt | comm -23 - have.txt > todo.txt; mv todo.txt mine.txt
+          echo "$(wc -l < mine.txt) left to render"
+      - name: Render
+        run: |
+          cd video
+          xargs -a mine.txt -P "$(nproc)" -I{} sh -c 'python -B render.py --class "$1" --threads 1 || echo "FAILED $1"' _ {}
+          python -B check_videos.py
+      - name: Upload to R2
+        if: ${{ vars.R2_BUCKET != '' }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          aws s3 sync video/out "s3://${{ vars.R2_BUCKET }}/" --endpoint-url "${{ vars.R2_ENDPOINT }}" \
+            --exclude "*" --include "*.mp4" --include "*.jpg" --cache-control "public, max-age=31536000"
+      - name: Keep as artifact (no R2 configured)
+        if: ${{ vars.R2_BUCKET == '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos-shard-${{ matrix.shard }}
+          path: |
+            video/out/**/*.mp4
+            video/out/**/*.jpg
+          retention-days: 3

@@ -1,0 +1,26 @@
+# dependencies and builds
+node_modules/
+app/dist/
+app/.expo/
+app/ios/
+app/android/
+app/web-build/
+app/tools/offline-web/out/
+app/screenshots/
+*.tsbuildinfo
+
+# rendered media (hosted on the video CDN, not in git)
+video/out/
+video/assets/cache/
+app/public/media/
+
+# python / logs / os
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+
+# secrets
+.env
+.env.*
+!.env.example
