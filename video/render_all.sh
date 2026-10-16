@@ -13,6 +13,7 @@ mkdir -p "$OUT"
 exec 9>"$OUT/.render_all.lock"
 flock 9   # one render_all at a time (a second one waits, then finds less to do)
 rm -f "$OUT"/*/*.part.mp4 "$OUT"/*/*.part.wav   # leftovers of an interrupted run (we hold the lock)
+python3 -B render.py --covers --all   # song covers first (single frames, seconds)
 mapfile -t ALL < <(python3 -B render.py --list)
 # Breadth-first: class 1 of every song first (the free class every family sees), then class 2, ...
 mapfile -t TODO < <(python3 -B render.py --list --todo | awk -F'-c' '{print $NF"\t"$0}' | sort -s -n -k1,1 | cut -f2)

@@ -1,6 +1,7 @@
 /* Minimal react-native -> react-dom shim for the OFFLINE web preview only (the sandbox
  * this was built in could not install react-native-web). Mirrors RN-web layout defaults.
  * Real builds use react-native / react-native-web. */
+import { createPortal } from 'react-dom';
 import React, { createContext, forwardRef, useContext, useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 type AnyStyle = any;
@@ -18,6 +19,10 @@ const FONT_MAP: Record<string, [string, number]> = {
   DMSans_400Regular: ['DM Sans', 400],
   DMSans_500Medium: ['DM Sans', 500],
   DMSans_700Bold: ['DM Sans', 700],
+  Nunito_400Regular: ['Nunito', 400],
+  Nunito_600SemiBold: ['Nunito', 600],
+  Nunito_700Bold: ['Nunito', 700],
+  Nunito_800ExtraBold: ['Nunito', 800],
 };
 
 export function toCss(style: AnyStyle, kind: 'view' | 'text' | 'image' = 'view'): React.CSSProperties {
@@ -80,7 +85,7 @@ export function toCss(style: AnyStyle, kind: 'view' | 'text' | 'image' = 'view')
       case 'fontFamily': {
         const f = FONT_MAP[v];
         if (f) {
-          out.fontFamily = `'${f[0]}', system-ui, sans-serif`;
+          out.fontFamily = `'${f[0]}', 'DM Sans', system-ui, sans-serif`;
           out.fontWeight = f[1];
         } else out.fontFamily = v;
         break;
@@ -320,12 +325,14 @@ export function Image(p: any) {
   return <img src={src} alt="" style={{ display: 'block', ...toCss(p.style, 'image'), objectFit: p.resizeMode === 'stretch' ? 'fill' : p.resizeMode ?? 'cover' }} onError={p.onError} aria-hidden />;
 }
 
+// Real RN modals open in their own window: portal to <body> so screen stacking contexts can't cover them.
 export function Modal(p: any) {
   if (!p.visible) return null;
-  return (
+  return createPortal(
     <div className="rn-view" style={{ position: 'fixed', inset: 0, zIndex: 1000, background: p.transparent ? 'transparent' : '#fff', overflow: 'auto' }}>
       {p.children}
-    </div>
+    </div>,
+    document.body,
   );
 }
 

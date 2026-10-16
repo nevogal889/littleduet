@@ -5,8 +5,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import * as ScreenOrientation from 'expo-screen-orientation';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { useFonts, BricolageGrotesque_700Bold, BricolageGrotesque_800ExtraBold } from '@expo-google-fonts/bricolage-grotesque';
-import { DMSans_400Regular, DMSans_500Medium, DMSans_700Bold } from '@expo-google-fonts/dm-sans';
+import { useFonts, Nunito_400Regular, Nunito_600SemiBold, Nunito_700Bold, Nunito_800ExtraBold } from '@expo-google-fonts/nunito';
 import { AppProvider, useApp } from '../src/state/store';
 import { GateProvider } from '../src/components/ParentalGate';
 import { colors } from '../src/theme';
@@ -17,11 +16,10 @@ function Root() {
   const { ready } = useApp();
   const { width, height } = useWindowDimensions();
   const [fontsLoaded] = useFonts({
-    BricolageGrotesque_700Bold,
-    BricolageGrotesque_800ExtraBold,
-    DMSans_400Regular,
-    DMSans_500Medium,
-    DMSans_700Bold,
+    Nunito_400Regular,
+    Nunito_600SemiBold,
+    Nunito_700Bold,
+    Nunito_800ExtraBold,
   });
 
   // Phones stay portrait (iOS does this via Info.plist); tablets rotate freely.
@@ -38,7 +36,7 @@ function Root() {
   if (!ready || !fontsLoaded) {
     return (
       <View style={{ flex: 1, backgroundColor: colors.ground, alignItems: 'center', justifyContent: 'center' }}>
-        <ActivityIndicator color={colors.coral} size="large" />
+        <ActivityIndicator color={colors.ink} size="large" />
       </View>
     );
   }

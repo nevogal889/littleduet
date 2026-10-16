@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { SongArt } from '../src/components/art/SongArt';
+import { SongCover } from '../src/components/bits';
+import { SONGS } from '../src/data/catalog';
 import { Icon } from '../src/components/Icon';
 import { ParentalGate } from '../src/components/ParentalGate';
 import { Paywall } from '../src/components/Paywall';
@@ -10,7 +11,7 @@ import { BackButton, Button, T } from '../src/components/ui';
 import { authEnabled } from '../src/config';
 import { t, tRaw } from '../src/i18n';
 import { useApp } from '../src/state/store';
-import { colors, fonts, radius, shadow, space, touch, useLayout } from '../src/theme';
+import { card, colors, fonts, radius, space, touch, useLayout } from '../src/theme';
 import type { PlayMode } from '../src/types';
 
 const TOTAL = 4;
@@ -47,14 +48,16 @@ export default function Onboarding() {
           {step === 1 ? (
             <>
               <View style={styles.hero} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-                <SongArt icon="bear" size={isTablet ? 160 : 120} />
-                <SongArt icon="music" size={isTablet ? 110 : 80} />
-                <SongArt icon="bird" size={isTablet ? 160 : 120} />
+                {SONGS.slice(0, 3).map((s, i) => (
+                  <View key={s.id} style={i === 1 ? styles.heroMid : styles.heroSide}>
+                    <SongCover song={s} kind="square" width={isTablet ? (i === 1 ? 180 : 140) : i === 1 ? 120 : 92} rounded={20} />
+                  </View>
+                ))}
               </View>
-              <T v="hero" accessibilityRole="header" style={styles.center}>
+              <T v="h1" accessibilityRole="header" style={styles.center}>
                 {t('onboarding.welcome.title')}
               </T>
-              <T v="body" style={styles.center}>
+              <T v="body" style={[styles.center, { color: colors.inkSoft }]}>
                 {t('onboarding.welcome.body')}
               </T>
               <View style={styles.steps}>
@@ -109,9 +112,9 @@ export default function Onboarding() {
                     accessibilityState={{ checked: age === a, selected: age === a }}
                     accessibilityLabel={t('grownups.children.ageButton', { age: a })}
                     onPress={() => setAge(a)}
-                    style={({ pressed }) => [styles.age, age === a && styles.ageOn, pressed && age !== a && { backgroundColor: colors.indigoSoft }]}
+                    style={({ pressed }) => [styles.age, age === a && styles.ageOn, pressed && age !== a && { backgroundColor: colors.selectedSoft }]}
                   >
-                    <Text style={[styles.ageText, age === a && { color: colors.white }]}>{a}</Text>
+                    <Text style={styles.ageText}>{a}</Text>
                   </Pressable>
                 ))}
               </View>
@@ -140,17 +143,17 @@ export default function Onboarding() {
                     setMode(o.m);
                     setStep(4);
                   }}
-                  style={({ pressed }) => [styles.option, pressed && { borderColor: colors.coral }]}
+                  style={({ pressed }) => [styles.option, pressed && { backgroundColor: colors.blueSoft, borderColor: '#84D8FF' }]}
                 >
                   <View style={styles.optionIcon}>
-                    <Icon name={o.icon} size={40} color={colors.indigo} />
+                    <Icon name={o.icon} size={32} color={colors.blueEdge} />
                   </View>
                   <View style={{ flex: 1, gap: 4 }}>
-                    <T v="h2">{o.title}</T>
-                    <T v="bodyStrong" style={{ color: colors.indigo }}>
-                      {o.mode}
+                    <T v="h3">{o.title}</T>
+                    <T v="small">{o.mode}</T>
+                    <T v="body" style={{ color: colors.inkSoft }}>
+                      {o.detail}
                     </T>
-                    <T v="body">{o.detail}</T>
                   </View>
                   <Icon name="chevronRight" size={28} />
                 </Pressable>
@@ -163,14 +166,7 @@ export default function Onboarding() {
             gatePassed ? (
               <Paywall onDone={finish} onLater={finish} childName={name.trim()} />
             ) : (
-              <>
-                <T v="body">{t('onboarding.paywallGateNote')}</T>
-                <ParentalGate purpose="paywall" onPass={() => setGatePassed(true)} />
-                <Button testID="onb-keep-free" variant="secondary" size="md" label={t('paywall.keepFree')} onPress={finish} />
-                <T v="small" style={styles.center}>
-                  {t('onboarding.ready.body')}
-                </T>
-              </>
+              <ParentalGate compact purpose="paywall" onPass={() => setGatePassed(true)} onCancel={finish} cancelLabel={t('paywall.keepFree')} />
             )
           ) : null}
         </View>
@@ -182,54 +178,57 @@ export default function Onboarding() {
 const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: colors.ground },
   top: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', minHeight: 64 },
-  dots: { flexDirection: 'row', gap: 8, paddingRight: space.sm },
-  dot: { width: 12, height: 12, borderRadius: 6, backgroundColor: colors.line },
-  dotOn: { backgroundColor: colors.coral, width: 28 },
-  dotDone: { backgroundColor: colors.indigo },
+  dots: { flexDirection: 'row', gap: 6, paddingRight: space.sm },
+  dot: { width: 8, height: 8, borderRadius: 4, backgroundColor: colors.line },
+  dotOn: { backgroundColor: colors.brand, width: 22 },
+  dotDone: { backgroundColor: colors.brandSoft },
   body: { paddingBottom: space.xxxl, flexGrow: 1 },
-  col: { width: '100%', maxWidth: 620, alignSelf: 'center', gap: space.lg, paddingTop: space.md },
-  hero: { flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-end', gap: space.md, paddingVertical: space.lg },
+  col: { width: '100%', maxWidth: 560, alignSelf: 'center', gap: space.lg, paddingTop: space.md },
+  hero: { flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: space.md, paddingVertical: space.xl },
+  heroSide: { opacity: 0.9 },
+  heroMid: {},
   center: { textAlign: 'center' },
-  steps: { gap: space.md, backgroundColor: colors.surface, borderRadius: radius.lg, padding: space.lg, ...shadow.card },
+  steps: { ...card, gap: space.lg, padding: space.xl },
   stepRow: { flexDirection: 'row', gap: space.md, alignItems: 'flex-start' },
-  stepNum: { width: 36, height: 36, borderRadius: 18, backgroundColor: colors.marigold, alignItems: 'center', justifyContent: 'center' },
-  stepNumText: { fontFamily: fonts.display, fontSize: 18, color: colors.ink },
+  stepNum: { width: 32, height: 32, borderRadius: 16, backgroundColor: colors.blueSoft, alignItems: 'center', justifyContent: 'center' },
+  stepNumText: { fontFamily: fonts.extra, fontSize: 15, color: colors.ink },
   input: {
     minHeight: touch.primary,
     borderWidth: 2,
-    borderColor: colors.lineStrong,
+    borderColor: colors.line,
     borderRadius: radius.md,
     backgroundColor: colors.surface,
     paddingHorizontal: space.lg,
     fontFamily: fonts.bold,
-    fontSize: 22,
+    fontSize: 20,
     color: colors.ink,
   },
   ages: { flexDirection: 'row', gap: space.sm },
   age: {
     flex: 1,
     maxWidth: 96,
-    height: 72,
-    borderRadius: radius.lg,
+    height: 64,
+    borderRadius: radius.md,
     borderWidth: 2,
-    borderColor: colors.lineStrong,
+    borderBottomWidth: 4,
+    borderColor: colors.line,
     backgroundColor: colors.surface,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  ageOn: { backgroundColor: colors.indigo, borderColor: colors.indigo },
-  ageText: { fontFamily: fonts.display, fontSize: 32, color: colors.ink },
+  ageOn: { backgroundColor: colors.blueSoft, borderColor: '#84D8FF' },
+  ageText: { fontFamily: fonts.bold, fontSize: 24, color: colors.ink },
   option: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: space.lg,
     backgroundColor: colors.surface,
-    borderRadius: radius.lg,
-    padding: space.lg,
-    borderWidth: 3,
+    borderRadius: radius.card,
+    padding: space.xl,
+    borderWidth: 2,
     borderColor: colors.line,
-    minHeight: 120,
-    ...shadow.card,
+    minHeight: 112,
+    borderBottomWidth: 4,
   },
-  optionIcon: { width: 64, height: 64, borderRadius: 32, backgroundColor: colors.indigoSoft, alignItems: 'center', justifyContent: 'center' },
+  optionIcon: { width: 56, height: 56, borderRadius: 28, backgroundColor: colors.blueSoft, alignItems: 'center', justifyContent: 'center' },
 });

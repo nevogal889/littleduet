@@ -99,3 +99,23 @@ export function newThisWeek(songs: Song[], now: number, count = 8): Song[] {
   const wk = weekNumber(now);
   return [...songs].sort((a, b) => hash(`${wk}:${a.id}`) - hash(`${wk}:${b.id}`)).slice(0, count);
 }
+
+/** Song cover produced by the video teammate: <songId>/cover.jpg (16:9) or cover-square.jpg. */
+export function coverPath(songId: string, kind: 'wide' | 'square'): string {
+  return `${songId}/${kind === 'wide' ? 'cover.jpg' : 'cover-square.jpg'}`;
+}
+
+export type MediaManifest = Record<string, { photo?: boolean; cover?: boolean }>;
+
+/**
+ * Cover image sources for a song, best first: the founder's real photo (<songId>/photo.jpg),
+ * then the lesson-style cover (cover.jpg / cover-square.jpg). Empty list = draw the icon art.
+ * Square tiles crop the same photo (resizeMode cover). Songs missing from the manifest try both.
+ */
+export function coverSources(songId: string, kind: 'wide' | 'square', manifest: MediaManifest): string[] {
+  const m = manifest[songId];
+  const out: string[] = [];
+  if (!m || m.photo) out.push(`${songId}/photo.jpg`);
+  if (!m || m.cover) out.push(coverPath(songId, kind));
+  return out;
+}

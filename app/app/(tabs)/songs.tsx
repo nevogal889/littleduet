@@ -7,7 +7,7 @@ import { Button, Chip, Screen, T } from '../../src/components/ui';
 import { LESSONS, SONGS } from '../../src/data/catalog';
 import { t } from '../../src/i18n';
 import { AGE_GROUPS, DIFFICULTY_WORDS, ageGroupForAge, filterSongs, type DifficultyWord } from '../../src/lib/catalog';
-import { songProgress } from '../../src/lib/progress';
+import { songPercent } from '../../src/lib/progress';
 import { useApp } from '../../src/state/store';
 import { colors, fonts, radius, space, touch, useLayout } from '../../src/theme';
 import type { AgeGroupId } from '../../src/types';
@@ -27,7 +27,7 @@ export default function Songs() {
 
   return (
     <Screen testID="songs">
-      <T v="h1" accessibilityRole="header" style={{ paddingTop: space.lg }}>
+      <T v="h1" accessibilityRole="header" style={{ paddingTop: space.xl }}>
         {t('songs.title')}
       </T>
       <View style={styles.search}>
@@ -64,7 +64,7 @@ export default function Songs() {
           <Chip key={w} testID={`level-${w}`} label={t(`difficultyWords.${w}`)} selected={level === w} onPress={() => setLevel(w)}>
             <View style={styles.levelDots}>
               {[0, 1, 2].map((d) => (
-                <View key={d} style={[styles.levelDot, { backgroundColor: d <= i ? (level === w ? colors.white : colors.indigo) : 'transparent', borderColor: level === w ? colors.white : colors.indigo }]} />
+                <View key={d} style={[styles.levelDot, { backgroundColor: d <= i ? (level === w ? colors.white : colors.ink) : 'transparent', borderColor: level === w ? colors.white : colors.ink }]} />
               ))}
             </View>
           </Chip>
@@ -77,20 +77,9 @@ export default function Songs() {
 
       {list.length ? (
         <View style={[styles.grid, { gap }]} testID="songs-grid">
-          {list.map((s) => {
-            const sp = songProgress(LESSONS[s.id], childData.progress);
-            return (
-              <SongCard
-                key={s.id}
-                song={s}
-                lesson={LESSONS[s.id]}
-                width={cardW}
-                progress={sp.fraction}
-                finished={sp.finished}
-                onPress={() => router.push(`/song/${s.id}` as never)}
-              />
-            );
-          })}
+          {list.map((s) => (
+            <SongCard key={s.id} song={s} lesson={LESSONS[s.id]} width={cardW} percent={songPercent(LESSONS[s.id], childData.progress)} onPress={() => router.push(`/song/${s.id}` as never)} />
+          ))}
         </View>
       ) : (
         <View style={styles.empty}>
@@ -119,16 +108,16 @@ const styles = StyleSheet.create({
     minHeight: touch.primary,
     marginTop: space.lg,
     paddingHorizontal: space.lg,
-    borderWidth: 2,
+    borderWidth: 1,
     borderColor: colors.lineStrong,
-    borderRadius: radius.lg,
+    borderRadius: radius.md,
     backgroundColor: colors.surface,
   },
-  searchInput: { flex: 1, minHeight: touch.primary - 4, fontFamily: fonts.medium, fontSize: 19, color: colors.ink },
-  label: { marginTop: space.lg, marginBottom: space.sm },
+  searchInput: { flex: 1, minHeight: touch.primary - 4, fontFamily: fonts.regular, fontSize: 17, color: colors.ink },
+  label: { marginTop: space.xl, marginBottom: space.sm },
   chips: { gap: space.sm, flexDirection: 'row', flexWrap: 'wrap' },
   levelDots: { flexDirection: 'row', gap: 3 },
-  levelDot: { width: 9, height: 9, borderRadius: 5, borderWidth: 2 },
+  levelDot: { width: 7, height: 7, borderRadius: 4, borderWidth: 1.5 },
   grid: { flexDirection: 'row', flexWrap: 'wrap', marginTop: space.md },
   empty: { gap: space.md, marginTop: space.xl },
 });

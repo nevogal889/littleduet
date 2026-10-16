@@ -5,8 +5,7 @@ import { t, tList } from '../i18n';
 import { PRICES, type Plan } from '../lib/entitlement';
 import { payments, type PlanOffer } from '../services/payments';
 import { useApp } from '../state/store';
-import { colors, fonts, radius, shadow, space, type } from '../theme';
-import { SongArt } from './art/SongArt';
+import { card, colors, fonts, radius, space, type } from '../theme';
 import { Icon } from './Icon';
 import { useGate } from './ParentalGate';
 import { Button, T } from './ui';
@@ -85,21 +84,16 @@ export function Paywall({
 
   return (
     <View style={styles.wrap} testID="paywall">
-      <View style={styles.art} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-        <SongArt icon="bird" size={84} />
-        <SongArt icon="music" size={64} />
-        <SongArt icon="bear" size={84} />
-      </View>
       <T v="h1" accessibilityRole="header" style={styles.center}>
         {songTitle ? t('paywall.headlineFromSong', { songTitle }) : t('paywall.headline')}
       </T>
-      <T v="body" style={styles.center}>
+      <T v="body" style={[styles.center, { color: colors.inkSoft }]}>
         {songTitle && moreClasses ? t('paywall.subheadFromSong', { songTitle, count: moreClasses }) : t('paywall.subhead')}
       </T>
       <View style={styles.features}>
         {tList('paywall.features', { name }).map((f) => (
           <View key={f} style={styles.feature}>
-            <Icon name="check" size={24} color={colors.indigo} />
+            <Icon name="check" size={22} color={colors.green} />
             <T v="body" style={{ flex: 1 }}>
               {f}
             </T>
@@ -147,13 +141,13 @@ export function Paywall({
       <T v="small" style={styles.center}>
         {t('paywall.trialLine', { trialDays })}
       </T>
-      {busy ? <ActivityIndicator color={colors.coral} /> : null}
+      {busy ? <ActivityIndicator color={colors.ink} /> : null}
       <Button testID="paywall-buy" label={t('paywall.ctaTrial', { trialDays })} onPress={buy} disabled={busy} />
       <T v="small" style={styles.center}>
         {t('paywall.underCtaTrial', { trialDays, price, period })}
       </T>
       {msg ? (
-        <T v="bodyStrong" accessibilityLiveRegion="polite" style={[styles.center, { color: colors.indigo }]}>
+        <T v="bodyStrong" accessibilityLiveRegion="polite" style={styles.center}>
           {msg}
         </T>
       ) : null}
@@ -179,22 +173,21 @@ export function storeAccount() {
 }
 
 const styles = StyleSheet.create({
-  wrap: { width: '100%', maxWidth: 620, alignSelf: 'center', gap: space.lg, paddingVertical: space.lg },
-  art: { flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-end', gap: space.sm },
+  wrap: { width: '100%', maxWidth: 560, alignSelf: 'center', gap: space.lg, paddingVertical: space.lg },
   center: { textAlign: 'center' },
-  features: { gap: space.sm },
-  feature: { flexDirection: 'row', gap: space.sm, alignItems: 'flex-start' },
+  features: { ...card, gap: space.md, padding: space.xl },
+  feature: { flexDirection: 'row', gap: space.md, alignItems: 'flex-start' },
   plans: { gap: space.md },
-  plan: { backgroundColor: colors.surface, borderRadius: radius.lg, borderWidth: 3, borderColor: colors.line, padding: space.lg, gap: 4, ...shadow.card },
-  planOn: { borderColor: colors.coral },
+  plan: { ...card, borderBottomWidth: 4, padding: space.xl, gap: 4 },
+  planOn: { borderColor: '#84D8FF', backgroundColor: colors.blueSoft },
   planHead: { flexDirection: 'row', alignItems: 'center', gap: space.sm, flexWrap: 'wrap' },
-  radio: { width: 28, height: 28, borderRadius: 14, borderWidth: 3, borderColor: colors.lineStrong, alignItems: 'center', justifyContent: 'center' },
-  radioOn: { borderColor: colors.coral },
-  radioDot: { width: 14, height: 14, borderRadius: 7, backgroundColor: colors.coral },
-  planTitle: { fontFamily: fonts.bold, fontSize: 18, color: colors.ink, flexShrink: 1 },
-  badge: { backgroundColor: colors.marigold, borderRadius: radius.pill, paddingHorizontal: 10, paddingVertical: 2 },
-  badgeText: { fontFamily: fonts.bold, fontSize: 17, color: colors.ink },
-  billed: { fontFamily: fonts.display, fontSize: 30, lineHeight: 36, color: colors.ink },
+  radio: { width: 26, height: 26, borderRadius: 13, borderWidth: 2, borderColor: colors.lineStrong, alignItems: 'center', justifyContent: 'center' },
+  radioOn: { borderColor: colors.blueEdge },
+  radioDot: { width: 14, height: 14, borderRadius: 7, backgroundColor: colors.blueEdge },
+  planTitle: { fontFamily: fonts.bold, fontSize: 17, color: colors.ink, flexShrink: 1 },
+  badge: { backgroundColor: colors.gold, borderRadius: radius.sm, paddingHorizontal: 10, paddingVertical: 2 },
+  badgeText: { fontFamily: fonts.extra, fontSize: 13, color: colors.ink, textTransform: 'uppercase' },
+  billed: { fontFamily: fonts.extra, fontSize: 28, lineHeight: 34, color: colors.ink },
   links: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: space.xs },
-  disclosure: { fontFamily: fonts.body, fontSize: 17, lineHeight: 24, color: colors.inkSoft },
+  disclosure: { fontFamily: fonts.regular, fontSize: 14, lineHeight: 20, color: colors.inkSoft },
 });

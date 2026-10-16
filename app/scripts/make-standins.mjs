@@ -2,14 +2,17 @@
 // Builds STAND-IN lesson files (contract-shaped) for songs that have no real lesson yet,
 // so the app can be developed before content/lessons/*.json exists.
 //   node scripts/make-standins.mjs            -> src/data/lessons/<songId>.json (+ index.ts)
-//   node scripts/make-standins.mjs --videos   -> also public/media/<songId>/<classId>.mp4/.webm/.jpg via ffmpeg
+//   node scripts/make-standins.mjs --videos[=songA,songB] -> also public/media/<songId>/<classId>.mp4/.webm/.jpg via ffmpeg
 // Real lessons always win: run scripts/sync-content.mjs after the curriculum teammate ships.
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { CONTENT, DATA, DATA_LESSONS, MEDIA, ROOT, readJson, sourceSongsPath, writeLessonIndex } from './lib/paths.mjs';
 
-const withVideos = process.argv.includes('--videos');
+const videosArg = process.argv.find((x) => x.startsWith('--videos'));
+const withVideos = !!videosArg;
+// --videos (every class without a real video) or --videos=songA,songB (only those songs)
+const videoOnly = videosArg?.includes('=') ? new Set(videosArg.split('=')[1].split(',')) : null;
 const songs = readJson(sourceSongsPath());
 fs.mkdirSync(DATA_LESSONS, { recursive: true });
 fs.writeFileSync(path.join(DATA, 'songs.json'), JSON.stringify(songs, null, 2));
@@ -168,6 +171,7 @@ for (const song of songs) {
 if (withVideos) {
   for (const song of songs) {
     const lessonFile = path.join(DATA_LESSONS, `${song.id}.json`);
+    if (videoOnly && !videoOnly.has(song.id)) continue;
     if (fs.existsSync(lessonFile)) renderStandInVideos(song, readJson(lessonFile));
   }
   process.stdout.write('\n');

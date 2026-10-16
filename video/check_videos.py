@@ -16,6 +16,9 @@ import sys
 
 from PIL import Image
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from render import needs_render, needs_cover  # noqa: E402
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
@@ -39,16 +42,22 @@ def main():
     ap.add_argument("--lessons", default=os.path.join(ROOT, "content", "lessons"))
     ap.add_argument("--out", default=os.path.join(HERE, "out"))
     a = ap.parse_args()
-    ok = missing = 0
+    ok = missing = stale = 0
+    covers_missing = 0
     fails = []
     sizes, secs = [], []
     for lp in sorted(glob.glob(os.path.join(a.lessons, "*.json"))):
         L = json.load(open(lp))
+        if needs_cover(L, a.out):
+            covers_missing += 1
         for c in L["classes"]:
             mp4 = os.path.join(a.out, c["video"])
             jpg = os.path.join(a.out, c["thumb"])
             if not os.path.exists(mp4):
                 missing += 1
+                continue
+            if needs_render(L, c, a.out):      # rendered from an older version of the lesson
+                stale += 1
                 continue
             errs = []
             try:
@@ -83,7 +92,9 @@ def main():
             sizes.append(size)
             secs.append(dur)
     n = len(sizes)
-    print("videos ok: %d  failed: %d  not rendered yet: %d" % (ok, len(fails), missing))
+    print("videos ok: %d  failed: %d  not rendered yet: %d  stale (lesson changed, will re-render): %d"
+          % (ok, len(fails), missing, stale))
+    print("songs missing or outdated covers: %d" % covers_missing)
     if n:
         print("size: avg %.2f MB, max %.2f MB, avg %.2f MB per 4 min, total %.2f GB, %.1f h of video"
               % (sum(sizes) / n / 1e6, max(sizes) / 1e6, sum(sizes) / sum(secs) * 240 / 1e6,

@@ -5,6 +5,7 @@
  "icon": "star",
  "key": "C",
  "timeSignature": "6/8",
+ "totalSec": 2056,
  "classes": [
   {
    "id": "silent-night-c01",
@@ -732,7 +733,7 @@
    "title": "Part 2",
    "goal": "Learn the next part, one finger per key",
    "type": "phrase",
-   "durationSec": 237,
+   "durationSec": 266,
    "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
    "video": "silent-night/silent-night-c02.mp4",
    "thumb": "silent-night/silent-night-c02.jpg",
@@ -1389,6 +1390,75 @@
     },
     {
      "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Let's do it again",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 67,
+     "leadInSec": 1.791,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 2,
+       "s": "Sleep"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "heav"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "peace"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Sleep in heavenly peace",
+       "from": 0
+      }
+     ],
+     "durationSec": 18
+    },
+    {
+     "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
@@ -1400,7 +1470,7 @@
    "title": "Put it together",
    "goal": "Play the whole song slowly, all parts in order",
    "type": "put-together",
-   "durationSec": 275,
+   "durationSec": 270,
    "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
    "video": "silent-night/silent-night-c03.mp4",
    "thumb": "silent-night/silent-night-c03.jpg",
@@ -2062,16 +2132,17 @@
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Take a breath between lines",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6
     },
     {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 71,
-     "leadInSec": 1.69,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 67,
+     "leadInSec": 1.791,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "G4",
@@ -2207,102 +2278,67 @@
        "d": 3,
        "f": 1,
        "s": "Child"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Silent night, holy night",
+       "from": 0
       },
       {
-       "p": "A4",
-       "d": 2,
-       "f": 4,
-       "s": "Ho"
+       "lyric": "All is calm, all is bright",
+       "from": 8
       },
       {
-       "p": "A4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 5,
-       "s": "In"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "fant"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "so"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 2,
-       "s": "ten"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "der"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 1,
-       "s": "mild"
-      },
-      {
-       "p": "D5",
-       "d": 2,
-       "f": 3,
-       "s": "Sleep"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "F5",
-       "d": 1.5,
-       "f": 5,
-       "s": "heav"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "B4",
-       "d": 1,
-       "f": 1,
-       "s": "ly"
-      },
-      {
-       "p": "C5",
-       "d": 3,
-       "f": 2,
-       "s": "peace"
-      },
-      {
-       "p": "E5",
-       "d": 3,
-       "f": 4
-      },
+       "lyric": "Round yon Virgin Mother and Child",
+       "from": 14
+      }
+     ],
+     "durationSec": 57
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "silent-night-c04",
+   "index": 4,
+   "title": "Tricky spots",
+   "goal": "Practise the hardest part slowly, then a little faster",
+   "type": "review",
+   "durationSec": 254,
+   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "video": "silent-night/silent-night-c04.mp4",
+   "thumb": "silent-night/silent-night-c04.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Silent Night",
+     "subcaption": "Class 4: Tricky spots",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Tricky spots, nice and slow",
+     "parentCue": "This is the hardest part of the song",
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Slow, then a bit faster",
+     "parentCue": "Say the finger numbers out loud",
+     "durationSec": 7
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch slowly",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 50,
+     "leadInSec": 2.4,
+     "notes": [
       {
        "p": "C5",
        "d": 1.5,
@@ -2343,35 +2379,571 @@
        "p": "C4",
        "d": 3,
        "f": 1
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 2,
+       "s": "Round"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 2,
+       "s": "yon"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 4,
+       "s": "Vir"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3,
+       "s": "gin"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 2,
+       "s": "Moth"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 1,
+       "s": "er"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 1,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 1,
+       "s": "Child"
       }
      ],
      "lines": [
       {
-       "lyric": "Silent night, holy night",
+       "lyric": "Sleep in heavenly peace",
        "from": 0
       },
       {
-       "lyric": "All is calm, all is bright",
-       "from": 8
+       "lyric": "Round yon Virgin Mother and Child",
+       "from": 7
+      }
+     ],
+     "durationSec": 30
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn, slowly",
+     "parentCue": "Slow is perfect",
+     "bpm": 50,
+     "leadInSec": 2.4,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 2,
+       "s": "Sleep"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "heav"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "peace"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 2,
+       "s": "Round"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 2,
+       "s": "yon"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 4,
+       "s": "Vir"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3,
+       "s": "gin"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 2,
+       "s": "Moth"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 1,
+       "s": "er"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 1,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 1,
+       "s": "Child"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Sleep in heavenly peace",
+       "from": 0
       },
       {
        "lyric": "Round yon Virgin Mother and Child",
-       "from": 14
-      },
-      {
-       "lyric": "Holy Infant so tender and mild",
-       "from": 23
-      },
-      {
-       "lyric": "Sleep in heavenly peace",
-       "from": 32
-      },
-      {
-       "lyric": "Sleep in heavenly peace",
-       "from": 39
+       "from": 7
       }
      ],
-     "durationSec": 62
+     "durationSec": 49
+    },
+    {
+     "kind": "say",
+     "caption": "A little faster now",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 59,
+     "leadInSec": 2.034,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 2,
+       "s": "Sleep"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "heav"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "peace"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 2,
+       "s": "Round"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 2,
+       "s": "yon"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 4,
+       "s": "Vir"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3,
+       "s": "gin"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 2,
+       "s": "Moth"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 1,
+       "s": "er"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 1,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 1,
+       "s": "Child"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Sleep in heavenly peace",
+       "from": 0
+      },
+      {
+       "lyric": "Round yon Virgin Mother and Child",
+       "from": 7
+      }
+     ],
+     "durationSec": 42
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Again, a bit faster",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 67,
+     "leadInSec": 1.791,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 2,
+       "s": "Sleep"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "heav"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "peace"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 2,
+       "s": "Round"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 2,
+       "s": "yon"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 4,
+       "s": "Vir"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3,
+       "s": "gin"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 2,
+       "s": "Moth"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 1,
+       "s": "er"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 1,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 1,
+       "s": "Child"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Sleep in heavenly peace",
+       "from": 0
+      },
+      {
+       "lyric": "Round yon Virgin Mother and Child",
+       "from": 7
+      }
+     ],
+     "durationSec": 37
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Nearly full speed",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 76,
+     "leadInSec": 1.579,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 2,
+       "s": "Sleep"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "heav"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "peace"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 2,
+       "s": "Round"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 2,
+       "s": "yon"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 4,
+       "s": "Vir"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3,
+       "s": "gin"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 2,
+       "s": "Moth"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 1,
+       "s": "er"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 1,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 1,
+       "s": "Child"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Sleep in heavenly peace",
+       "from": 0
+      },
+      {
+       "lyric": "Round yon Virgin Mother and Child",
+       "from": 7
+      }
+     ],
+     "durationSec": 33
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Wiggle your fingers!",
+     "parentCue": "Shake out both hands together",
+     "durationSec": 6
     },
     {
      "kind": "praise",
@@ -2381,20 +2953,20 @@
    ]
   },
   {
-   "id": "silent-night-c04",
-   "index": 4,
+   "id": "silent-night-c05",
+   "index": 5,
    "title": "Left hand helper",
    "goal": "Play one low left hand note at the start of each bar",
    "type": "left-hand",
    "durationSec": 264,
    "parentTip": "You play the tune, your child plays the low notes. Count bars out loud to help.",
-   "video": "silent-night/silent-night-c04.mp4",
-   "thumb": "silent-night/silent-night-c04.jpg",
+   "video": "silent-night/silent-night-c05.mp4",
+   "thumb": "silent-night/silent-night-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Silent Night",
-     "subcaption": "Class 4: Left hand helper",
+     "subcaption": "Class 5: Left hand helper",
      "durationSec": 5
     },
     {
@@ -3239,20 +3811,20 @@
    ]
   },
   {
-   "id": "silent-night-c05",
-   "index": 5,
+   "id": "silent-night-c06",
+   "index": 6,
    "title": "Hands together, slowly",
    "goal": "Play the tune with a low left hand note on each bar",
    "type": "hands-together",
-   "durationSec": 266,
+   "durationSec": 241,
    "parentTip": "Two hands is hard work. Go very slowly and stop while it's still fun.",
-   "video": "silent-night/silent-night-c05.mp4",
-   "thumb": "silent-night/silent-night-c05.jpg",
+   "video": "silent-night/silent-night-c06.mp4",
+   "thumb": "silent-night/silent-night-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Silent Night",
-     "subcaption": "Class 5: Hands together, slowly",
+     "subcaption": "Class 6: Hands together, slowly",
      "durationSec": 5
     },
     {
@@ -3747,18 +4319,11 @@
      "durationSec": 69
     },
     {
-     "kind": "say",
-     "caption": "The whole song, both hands",
-     "parentCue": "Help with the left hand if needed",
-     "durationSec": 7
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Both hands",
-     "parentCue": "Keep it slow",
+     "kind": "together",
+     "caption": "Together, slowly",
+     "parentCue": "Play along slowly",
      "bpm": 55,
      "leadInSec": 2.182,
-     "gapBeats": 1,
      "notes": [
       {
        "p": "G4",
@@ -4196,7 +4761,81 @@
        "from": 39
       }
      ],
-     "durationSec": 130
+     "durationSec": 79
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 67,
+     "leadInSec": 1.791,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 3,
+       "s": "Si"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "lent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 1,
+       "s": "night"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 3,
+       "s": "Ho"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 1,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Silent night, holy night",
+       "from": 0
+      }
+     ],
+     "durationSec": 22
     },
     {
      "kind": "praise",
@@ -4206,20 +4845,20 @@
    ]
   },
   {
-   "id": "silent-night-c06",
-   "index": 6,
+   "id": "silent-night-c07",
+   "index": 7,
    "title": "Play along",
    "goal": "Play the whole song along with the music at full speed",
    "type": "play-along",
-   "durationSec": 257,
+   "durationSec": 242,
    "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "video": "silent-night/silent-night-c06.mp4",
-   "thumb": "silent-night/silent-night-c06.jpg",
+   "video": "silent-night/silent-night-c07.mp4",
+   "thumb": "silent-night/silent-night-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Silent Night",
-     "subcaption": "Class 6: Play along",
+     "subcaption": "Class 7: Play along",
      "durationSec": 5
     },
     {
@@ -5168,16 +5807,17 @@
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Sing the words together",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6
     },
     {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Sing while you play",
-     "bpm": 84,
-     "leadInSec": 1.429,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 67,
+     "leadInSec": 1.791,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "G4",
@@ -5260,195 +5900,6 @@
        "d": 3,
        "f": 1,
        "s": "bright"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 2,
-       "s": "Round"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 2,
-       "s": "yon"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 4,
-       "s": "Vir"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 3,
-       "s": "gin"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 2,
-       "s": "Moth"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 1,
-       "s": "er"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 1,
-       "s": "Child"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 4,
-       "s": "Ho"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 5,
-       "s": "In"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "fant"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "so"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 2,
-       "s": "ten"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "der"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 1,
-       "s": "mild"
-      },
-      {
-       "p": "D5",
-       "d": 2,
-       "f": 3,
-       "s": "Sleep"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "F5",
-       "d": 1.5,
-       "f": 5,
-       "s": "heav"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "B4",
-       "d": 1,
-       "f": 1,
-       "s": "ly"
-      },
-      {
-       "p": "C5",
-       "d": 3,
-       "f": 2,
-       "s": "peace"
-      },
-      {
-       "p": "E5",
-       "d": 3,
-       "f": 4
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 2,
-       "s": "Sleep"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "in"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "heav"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "en"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "peace"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1
       }
      ],
      "lines": [
@@ -5459,25 +5910,9 @@
       {
        "lyric": "All is calm, all is bright",
        "from": 8
-      },
-      {
-       "lyric": "Round yon Virgin Mother and Child",
-       "from": 14
-      },
-      {
-       "lyric": "Holy Infant so tender and mild",
-       "from": 23
-      },
-      {
-       "lyric": "Sleep in heavenly peace",
-       "from": 32
-      },
-      {
-       "lyric": "Sleep in heavenly peace",
-       "from": 39
       }
      ],
-     "durationSec": 53
+     "durationSec": 38
     },
     {
      "kind": "praise",
@@ -5487,20 +5922,20 @@
    ]
   },
   {
-   "id": "silent-night-c07",
-   "index": 7,
+   "id": "silent-night-c08",
+   "index": 8,
    "title": "Concert time",
    "goal": "Play the whole song from start to end and celebrate",
    "type": "concert",
    "durationSec": 270,
    "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "video": "silent-night/silent-night-c07.mp4",
-   "thumb": "silent-night/silent-night-c07.jpg",
+   "video": "silent-night/silent-night-c08.mp4",
+   "thumb": "silent-night/silent-night-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Silent Night",
-     "subcaption": "Class 7: Concert time",
+     "subcaption": "Class 8: Concert time",
      "durationSec": 5
     },
     {

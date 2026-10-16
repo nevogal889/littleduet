@@ -45,7 +45,8 @@ videos stay in `out/` and can be deleted by hand).
   `python3 video/render.py --list --todo` shows what still needs rendering; `--stamp` marks existing
   files as matching the current lessons.
 - `python3 video/check_videos.py` checks every rendered file (size, codecs, 30 fps, faststart,
-  duration = `durationSec`, thumbnail size) and prints totals.
+  duration = `durationSec`, thumbnail size), counts stale videos (lesson changed, will be re-rendered)
+  and missing covers, and prints totals.
 - Encoder settings: `--preset veryfast --crf 26 -tune animation`, keyframe every 10 s, AAC 80 kb/s.
   Flat graphics compress to roughly 3–5 MB per 4-minute class.
 - Audio is normalised to about -16 LUFS with peaks held at -2.5 dBFS.
@@ -53,6 +54,34 @@ videos stay in `out/` and can be deleted by hand).
 Requirements: Python 3 with numpy, scipy, Pillow; ffmpeg with libx264. One-time assets live in
 `video/assets/` (fonts, piano samples, the pitch-shifted sample cache `assets/cache/piano_C3_C6.npy`,
 rebuilt automatically if deleted). See `CREDITS.md` for licences — the piano needs a CC-BY credit line.
+
+## Song covers
+
+Each song also gets a cover in the lesson-video style (a composed frame, not a separate illustration):
+
+```
+video/out/<songId>/cover.jpg          1280x720  icon left, title + age pill right, keyboard strip below
+video/out/<songId>/cover-square.jpg   720x720   icon on top, title centred, keyboard strip below
+```
+
+Ground colour, the song's flat icon, the title in Bricolage Grotesque (sized to stay readable as a
+small tile), an "Ages 2-3 | Tiny Ears" pill, and the keyboard covering the opening's range with the
+first notes lit coral (finger numbers) and the next notes falling as bars. No captions or progress bar.
+
+```bash
+python3 video/render.py --covers --all            # all songs, about 10 s; existing covers skipped
+python3 video/render.py --covers --song bingo --force
+```
+
+`render_all.sh` (and so `pipeline.sh`) renders missing or outdated covers first. Covers carry a hidden
+`.cover.hash`; a cover without it (hand-made) is never overwritten unless `--force`.
+
+## Lesson lengths
+
+Each song has 8-10 classes of 3-5 minutes; song totals are spread evenly over 30-40 minutes
+(see CONTRACT.md and `content/build_lessons.py`, which prints the distribution on every build).
+When lessons change, the affected classes are re-rendered automatically (hash check), so after a
+curriculum change just re-run the pipeline.
 
 ## What is on screen
 
@@ -94,6 +123,7 @@ All are additive; the contract fields are unchanged.
 | `showKeys: [{p, f}]` | `say` | Keys to light with finger numbers (hand position) |
 | `dynamic: "loud" / "soft"` | `beat` | Loud/soft game; the video plays louder or softer |
 | `subcaption` | `title` | "Class N: <title>" |
+| `totalSec` | lesson root | Sum of the classes' `durationSec` (1800-2400) |
 | `title`, `ageGroup`, `icon`, `key` | lesson root | Copied from the song so the renderer needs only the lesson file |
 
 Segment `durationSec` = ceil(leadInSec + note time (+ gaps) + 1.5 s tail); class types used:

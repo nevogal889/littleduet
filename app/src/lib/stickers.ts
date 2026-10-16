@@ -170,3 +170,35 @@ export function classesThisWeek(map: ProgressMap, now: number): number {
   const start = weekStart(now);
   return Object.values(map).filter((p) => p.completed && (p.completedAt ?? 0) >= start).length;
 }
+
+export interface HomeStats {
+  stars: number;
+  songsLearned: number;
+  /** Monday..Sunday of this week: true when music was played that day */
+  week: boolean[];
+  musicDays: number;
+}
+
+/** The three child-readable stats on Home: stars, songs learned, music days this week. */
+export function homeStats(songs: Song[], lessons: Record<string, Lesson>, child: { progress: ProgressMap; activityDays: string[]; stickers: string[] }, now: number): HomeStats {
+  const stars = Object.values(child.progress).reduce((a, p) => a + p.stars, 0);
+  const songsLearned = finishedSongs(songs, lessons, child.progress).length;
+  const start = weekStart(now);
+  const played = new Set(child.activityDays);
+  const week = Array.from({ length: 7 }, (_, i) => played.has(localDay(start + i * 86400000 + 12 * 3600000)));
+  return { stars, songsLearned, week, musicDays: week.filter(Boolean).length };
+}
+
+/** Grown-ups: minutes of classes played this week (finished classes count in full). */
+export function minutesThisWeek(lessons: Record<string, Lesson>, map: ProgressMap, now: number): number {
+  const start = weekStart(now);
+  let sec = 0;
+  for (const l of Object.values(lessons)) {
+    for (const c of l.classes) {
+      const p = map[c.id];
+      if (!p || p.lastWatchedAt < start) continue;
+      sec += p.completed ? c.durationSec : Math.min(p.positionSec, c.durationSec);
+    }
+  }
+  return Math.round(sec / 60);
+}

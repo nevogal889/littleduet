@@ -6,6 +6,7 @@
 //   content/lessons/<songId>.json           -> src/data/lessons/<songId>.json (+ index.ts)
 //   video/samples/<Note>.mp3                -> assets/samples/<Note>.mp3 (bundled, '#' -> 's') + src/data/samples.ts
 //   video/out/<songId>/<classId>.mp4/.jpg   -> public/media/<songId>/  (web dev only)
+//   content/covers/<songId>.jpg             -> public/media/<songId>/photo.jpg + src/data/media.json
 //
 // Real builds stream videos/thumbs from EXPO_PUBLIC_VIDEO_BASE_URL instead of public/media.
 // Flags: --no-media (skip videos), --webm (also transcode VP8 copies for web dev),
@@ -16,6 +17,10 @@ import { execFileSync } from 'node:child_process';
 import { APP, ROOT, CONTENT, DATA, DATA_LESSONS, MEDIA, VIDEO_OUT, VIDEO_SAMPLES, readJson, sourceSongsPath, writeLessonIndex } from './lib/paths.mjs';
 
 const args = new Set(process.argv.slice(2));
+// --webm (all songs) or --webm=songA,songB (only those): VP8 copies for browsers without H.264.
+const webmArg = process.argv.find((a) => a.startsWith('--webm'));
+const webmOnly = webmArg?.includes('=') ? new Set(webmArg.split('=')[1].split(',')) : null;
+const wantWebm = (songId) => !!webmArg && (!webmOnly || webmOnly.has(songId));
 const report = [];
 
 // 1. songs
@@ -105,7 +110,7 @@ if (!args.has('--no-media')) {
         else vids++;
         // Browsers without H.264 (e.g. Playwright Chromium) get a VP8 copy; the web player picks it.
         const webm = dest.replace(/\.mp4$/, '.webm');
-        if (args.has('--webm') && f.endsWith('.mp4') && (!fs.existsSync(webm) || fs.statSync(webm).mtimeMs < fs.statSync(path.join(dir, f)).mtimeMs)) {
+        if (wantWebm(songId) && f.endsWith('.mp4') && (!fs.existsSync(webm) || fs.statSync(webm).mtimeMs < fs.statSync(path.join(dir, f)).mtimeMs)) {
           execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', dest, '-vf', 'scale=640:-2', '-c:v', 'libvpx', '-b:v', '600k', '-deadline', 'realtime', '-cpu-used', '8', '-c:a', 'libopus', '-b:a', '64k', webm]);
         }
       }
@@ -115,6 +120,28 @@ if (!args.has('--no-media')) {
     report.push('media: video/out not found yet (stand-ins: node scripts/make-standins.mjs --videos)');
   }
 }
+
+// 5. song covers: founder's real photos win over the lesson-style covers.
+//    content/covers/<songId>.jpg -> public/media/<songId>/photo.jpg (native: <VIDEO_BASE_URL>/<songId>/photo.jpg)
+//    src/data/media.json tells the app which images exist so it never requests missing ones.
+const PHOTOS = path.join(CONTENT, 'covers');
+const manifest = {};
+let photos = 0;
+for (const s of songs) {
+  const photo = path.join(PHOTOS, `${s.id}.jpg`);
+  const hasPhoto = fs.existsSync(photo);
+  if (hasPhoto) {
+    photos++;
+    if (!args.has('--no-media')) {
+      fs.mkdirSync(path.join(MEDIA, s.id), { recursive: true });
+      fs.copyFileSync(photo, path.join(MEDIA, s.id, 'photo.jpg'));
+    }
+  }
+  const hasCover = fs.existsSync(path.join(VIDEO_OUT, s.id, 'cover.jpg'));
+  manifest[s.id] = { photo: hasPhoto, cover: hasCover };
+}
+fs.writeFileSync(path.join(DATA, 'media.json'), JSON.stringify(manifest));
+report.push(`covers: ${photos} real photos, ${Object.values(manifest).filter((m) => m.cover).length} lesson-style covers (manifest src/data/media.json)`);
 
 console.log(report.join('\n'));
 

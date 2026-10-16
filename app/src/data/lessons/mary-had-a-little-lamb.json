@@ -5,6 +5,7 @@
  "icon": "sheep",
  "key": "C",
  "timeSignature": "4/4",
+ "totalSec": 2336,
  "classes": [
   {
    "id": "mary-had-a-little-lamb-c01",
@@ -12,7 +13,7 @@
    "title": "Listen and sway",
    "goal": "Hear the whole song and move to the beat",
    "type": "listen",
-   "durationSec": 224,
+   "durationSec": 237,
    "parentTip": "Sit together at the piano. Sway side to side while the song plays.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c01.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c01.jpg",
@@ -1542,6 +1543,17 @@
     },
     {
      "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
@@ -2899,7 +2911,7 @@
    "title": "Find the special note",
    "goal": "Find and play the song's special note: E",
    "type": "special-note",
-   "durationSec": 223,
+   "durationSec": 236,
    "parentTip": "Help your child find E. Use one finger and press gently, like a button.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c03.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c03.jpg",
@@ -3380,6 +3392,17 @@
     },
     {
      "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Big breath in and out",
+     "parentCue": "Breathe slowly together",
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
@@ -3388,18 +3411,668 @@
   {
    "id": "mary-had-a-little-lamb-c04",
    "index": 4,
-   "title": "Echo me",
-   "goal": "Copy short 2 and 3 note patterns from the song",
-   "type": "echo",
-   "durationSec": 230,
-   "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
+   "title": "E up high",
+   "goal": "Find the special note in a second place on the piano",
+   "type": "octave",
+   "durationSec": 234,
+   "parentTip": "Notes repeat every eight white keys. Let your child hop between the two Es.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c04.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 4: Echo me",
+     "subcaption": "Class 4: E up high",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "E lives up high too!",
+     "parentCue": "Find the same key up high",
+     "showKeys": [
+      {
+       "p": "E4"
+      },
+      {
+       "p": "E5"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Same name, same sound, higher",
+     "parentCue": "Play both and listen",
+     "durationSec": 6
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: E and E up high",
+     "parentCue": "Watch both keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: E and E up high",
+     "parentCue": "Watch both keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: E and E up high",
+     "parentCue": "Watch both keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 12
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: E and E up high",
+     "parentCue": "Watch both keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: E and E up high",
+     "parentCue": "Watch both keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: E and E up high",
+     "parentCue": "Watch both keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 12
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: E and E up high",
+     "parentCue": "Watch both keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: E and E up high",
+     "parentCue": "Watch both keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: E and E up high",
+     "parentCue": "Watch both keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 12
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: E and E up high",
+     "parentCue": "Watch both keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: E and E up high",
+     "parentCue": "Watch both keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "mary-had-a-little-lamb-c05",
+   "index": 5,
+   "title": "Echo me",
+   "goal": "Copy short 2 and 3 note patterns from the song",
+   "type": "echo",
+   "durationSec": 229,
+   "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
+   "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c05.mp4",
+   "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c05.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Mary Had a Little Lamb",
+     "subcaption": "Class 5: Echo me",
      "durationSec": 5
     },
     {
@@ -3681,87 +4354,25 @@
      "leadInSec": 1.622,
      "notes": [
       {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Lit"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tle"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "lamb"
-      }
-     ],
-     "durationSec": 7
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 74,
-     "leadInSec": 1.622,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Lit"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tle"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "lamb"
-      }
-     ],
-     "durationSec": 9
-    },
-    {
-     "kind": "praise",
-     "caption": "Yes, that's it!",
-     "durationSec": 5
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 74,
-     "leadInSec": 1.622,
-     "notes": [
-      {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "lit"
+       "s": "Ma"
       },
       {
-       "p": "G4",
+       "p": "D4",
        "d": 1,
-       "f": 5,
-       "s": "tle"
+       "f": 2,
+       "s": "ry"
       },
       {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "lamb"
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had"
       }
      ],
-     "durationSec": 7
+     "durationSec": 6
     },
     {
      "kind": "your_turn",
@@ -3775,22 +4386,22 @@
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "lit"
+       "s": "Ma"
       },
       {
-       "p": "G4",
+       "p": "D4",
        "d": 1,
-       "f": 5,
-       "s": "tle"
+       "f": 2,
+       "s": "ry"
       },
       {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "lamb"
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had"
       }
      ],
-     "durationSec": 9
+     "durationSec": 8
     },
     {
      "kind": "demo",
@@ -3803,16 +4414,22 @@
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "Lit"
+       "s": "a"
       },
       {
-       "p": "D4",
+       "p": "E4",
        "d": 1,
-       "f": 2,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
        "s": "tle"
       }
      ],
-     "durationSec": 5
+     "durationSec": 6
     },
     {
      "kind": "your_turn",
@@ -3826,16 +4443,22 @@
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "Lit"
+       "s": "a"
       },
       {
-       "p": "D4",
+       "p": "E4",
        "d": 1,
-       "f": 2,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
        "s": "tle"
       }
      ],
-     "durationSec": 7
+     "durationSec": 8
     },
     {
      "kind": "praise",
@@ -3850,19 +4473,19 @@
      "leadInSec": 1.622,
      "notes": [
       {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "lamb"
-      },
-      {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "lit"
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
       }
      ],
-     "durationSec": 6
+     "durationSec": 5
     },
     {
      "kind": "your_turn",
@@ -3873,19 +4496,19 @@
      "gapBeats": 1,
      "notes": [
       {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "lamb"
-      },
-      {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "lit"
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
       }
      ],
-     "durationSec": 8
+     "durationSec": 7
     },
     {
      "kind": "demo",
@@ -3895,19 +4518,19 @@
      "leadInSec": 1.622,
      "notes": [
       {
-       "p": "G4",
+       "p": "C4",
        "d": 1,
-       "f": 5,
-       "s": "tle"
+       "f": 1,
+       "s": "had"
       },
       {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "lamb"
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
       }
      ],
-     "durationSec": 6
+     "durationSec": 5
     },
     {
      "kind": "your_turn",
@@ -3918,19 +4541,19 @@
      "gapBeats": 1,
      "notes": [
       {
-       "p": "G4",
+       "p": "C4",
        "d": 1,
-       "f": 5,
-       "s": "tle"
+       "f": 1,
+       "s": "had"
       },
       {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "lamb"
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
       }
      ],
-     "durationSec": 8
+     "durationSec": 7
     },
     {
      "kind": "praise",
@@ -3948,6 +4571,51 @@
        "p": "E4",
        "d": 1,
        "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
        "s": "Ma"
       },
       {
@@ -4102,6 +4770,51 @@
      "durationSec": 7
     },
     {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
      "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
@@ -4109,20 +4822,636 @@
    ]
   },
   {
-   "id": "mary-had-a-little-lamb-c05",
-   "index": 5,
-   "title": "Special note in the song",
-   "goal": "Play the special note at the right moments in the song",
-   "type": "special-note",
-   "durationSec": 215,
-   "parentTip": "You play the blue keys, your child plays the coral one. Waiting is part of the game.",
-   "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c05.mp4",
-   "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c05.jpg",
+   "id": "mary-had-a-little-lamb-c06",
+   "index": 6,
+   "title": "Echo me again",
+   "goal": "Copy short 2 and 3 note patterns from the song",
+   "type": "echo",
+   "durationSec": 207,
+   "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
+   "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c06.mp4",
+   "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 5: Special note in the song",
+     "subcaption": "Class 6: Echo me again",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Echo me! I play, then you play",
+     "parentCue": "Listen first, then copy",
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Just like an echo in a cave",
+     "parentCue": "Say hello and echo it back",
+     "durationSec": 7
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had"
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
+     "caption": "Yes, that's it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 1.622,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb"
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "mary-had-a-little-lamb-c07",
+   "index": 7,
+   "title": "Special note in the song",
+   "goal": "Play the special note at the right moments in the song",
+   "type": "special-note",
+   "durationSec": 244,
+   "parentTip": "You play the blue keys, your child plays the coral one. Waiting is part of the game.",
+   "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c07.mp4",
+   "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c07.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Mary Had a Little Lamb",
+     "subcaption": "Class 7: Special note in the song",
      "durationSec": 5
     },
     {
@@ -4869,7 +6198,7 @@
     },
     {
      "kind": "praise",
-     "caption": "Yes, that's it!",
+     "caption": "You did it!",
      "durationSec": 5
     },
     {
@@ -5080,26 +6409,1163 @@
     },
     {
      "kind": "praise",
+     "caption": "Perfect timing!",
+     "durationSec": 5
+    },
+    {
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Keep going, even after a miss",
+     "bpm": 92,
+     "leadInSec": 1.304,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "its"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "fleece",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "was",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "white"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "as",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "snow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Mary had a little lamb",
+       "from": 0
+      },
+      {
+       "lyric": "Little lamb, little lamb",
+       "from": 7
+      },
+      {
+       "lyric": "Mary had a little lamb, its",
+       "from": 13
+      },
+      {
+       "lyric": "fleece was white as snow",
+       "from": 21
+      }
+     ],
+     "durationSec": 24
+    },
+    {
+     "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
    ]
   },
   {
-   "id": "mary-had-a-little-lamb-c06",
-   "index": 6,
-   "title": "Play together",
-   "goal": "Play the whole song together at full speed",
-   "type": "together",
-   "durationSec": 229,
-   "parentTip": "Keep playing even if your child misses a note. The beat matters more than being perfect.",
-   "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c06.mp4",
-   "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c06.jpg",
+   "id": "mary-had-a-little-lamb-c08",
+   "index": 8,
+   "title": "Add a second note",
+   "goal": "Play two special notes, E and D, in the song",
+   "type": "special-note",
+   "durationSec": 213,
+   "parentTip": "Two notes means more waiting and watching. Celebrate each coral key your child catches.",
+   "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c08.mp4",
+   "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 6: Play together",
+     "subcaption": "Class 8: Add a second note",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "A second special note: D",
+     "parentCue": "Your child now plays E and D",
+     "showKeys": [
+      {
+       "p": "D4"
+      },
+      {
+       "p": "E4"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Two coral keys to watch",
+     "parentCue": "You play the blue keys",
+     "durationSec": 6
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen for E and D",
+     "parentCue": "Point at each coral key",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Mary had a little lamb",
+       "from": 0
+      },
+      {
+       "lyric": "Little lamb, little lamb",
+       "from": 7
+      }
+     ],
+     "durationSec": 18
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn on two notes!",
+     "parentCue": "You play the blue keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Mary had a little lamb",
+       "from": 0
+      },
+      {
+       "lyric": "Little lamb, little lamb",
+       "from": 7
+      }
+     ],
+     "durationSec": 26
+    },
+    {
+     "kind": "say",
+     "caption": "The whole song now",
+     "parentCue": "Two coral keys for your child",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Wait for the coral keys",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "its"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "fleece"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "was"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "white"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "as"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "snow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Mary had a little lamb",
+       "from": 0
+      },
+      {
+       "lyric": "Little lamb, little lamb",
+       "from": 7
+      },
+      {
+       "lyric": "Mary had a little lamb, its",
+       "from": 13
+      },
+      {
+       "lyric": "fleece was white as snow",
+       "from": 21
+      }
+     ],
+     "durationSec": 50
+    },
+    {
+     "kind": "praise",
+     "caption": "Two notes, wow!",
+     "durationSec": 5
+    },
+    {
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Keep going after a miss",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "its"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "fleece"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "was"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "white"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "as"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "snow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Mary had a little lamb",
+       "from": 0
+      },
+      {
+       "lyric": "Little lamb, little lamb",
+       "from": 7
+      },
+      {
+       "lyric": "Mary had a little lamb, its",
+       "from": 13
+      },
+      {
+       "lyric": "fleece was white as snow",
+       "from": 21
+      }
+     ],
+     "durationSec": 27
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "First half again",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Mary had a little lamb",
+       "from": 0
+      },
+      {
+       "lyric": "Little lamb, little lamb",
+       "from": 7
+      }
+     ],
+     "durationSec": 26
+    },
+    {
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Keep going after a miss",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "its"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "fleece"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "was"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "white"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "as"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "snow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Mary had a little lamb",
+       "from": 0
+      },
+      {
+       "lyric": "Little lamb, little lamb",
+       "from": 7
+      },
+      {
+       "lyric": "Mary had a little lamb, its",
+       "from": 13
+      },
+      {
+       "lyric": "fleece was white as snow",
+       "from": 21
+      }
+     ],
+     "durationSec": 27
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "mary-had-a-little-lamb-c09",
+   "index": 9,
+   "title": "Play together",
+   "goal": "Play the whole song together at full speed",
+   "type": "together",
+   "durationSec": 259,
+   "parentTip": "Keep playing even if your child misses a note. The beat matters more than being perfect.",
+   "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c09.mp4",
+   "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c09.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Mary Had a Little Lamb",
+     "subcaption": "Class 9: Play together",
      "durationSec": 5
     },
     {
@@ -6360,26 +8826,198 @@
     },
     {
      "kind": "praise",
+     "caption": "Well done!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Your child plays the special note",
+     "bpm": 92,
+     "leadInSec": 1.304,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "its"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Mary had a little lamb",
+       "from": 0
+      },
+      {
+       "lyric": "Little lamb, little lamb",
+       "from": 7
+      },
+      {
+       "lyric": "Mary had a little lamb, its",
+       "from": 13
+      }
+     ],
+     "durationSec": 19
+    },
+    {
+     "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
    ]
   },
   {
-   "id": "mary-had-a-little-lamb-c07",
-   "index": 7,
+   "id": "mary-had-a-little-lamb-c10",
+   "index": 10,
    "title": "Concert time",
    "goal": "Play the whole song from start to end and celebrate",
    "type": "concert",
-   "durationSec": 224,
+   "durationSec": 259,
    "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c07.mp4",
-   "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c07.jpg",
+   "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c10.mp4",
+   "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c10.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 7: Concert time",
+     "subcaption": "Class 10: Concert time",
      "durationSec": 5
     },
     {
@@ -7448,6 +10086,216 @@
      "kind": "together",
      "caption": "Encore!",
      "parentCue": "You play the tune, your child plays the special note",
+     "bpm": 92,
+     "leadInSec": 1.304,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lit",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "lamb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lamb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "had",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lamb"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "its"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "fleece",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "was",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "white"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "as",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "snow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Mary had a little lamb",
+       "from": 0
+      },
+      {
+       "lyric": "Little lamb, little lamb",
+       "from": 7
+      },
+      {
+       "lyric": "Mary had a little lamb, its",
+       "from": 13
+      },
+      {
+       "lyric": "fleece was white as snow",
+       "from": 21
+      }
+     ],
+     "durationSec": 24
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Your child plays the special note",
      "bpm": 92,
      "leadInSec": 1.304,
      "notes": [

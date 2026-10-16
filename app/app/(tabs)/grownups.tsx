@@ -10,6 +10,8 @@ import { Button, Card, Screen, SectionTitle, Segmented, T } from '../../src/comp
 import { authEnabled, config } from '../../src/config';
 import { t, tRaw } from '../../src/i18n';
 import { isEntitled } from '../../src/lib/entitlement';
+import { minutesThisWeek } from '../../src/lib/stickers';
+import { LESSONS } from '../../src/data/catalog';
 import { useApp } from '../../src/state/store';
 import { colors, fonts, radius, space, touch } from '../../src/theme';
 
@@ -67,6 +69,7 @@ export default function GrownUps() {
     : ent.expiresAt
       ? t('grownups.subscription.statusActiveBody', { renewDate: new Date(ent.expiresAt).toLocaleDateString() })
       : t('grownups.subscription.familyNote');
+  const minutes = minutesThisWeek(LESSONS, app.childData.progress, Date.now());
   const faq = (tRaw('grownups.help.faq') as { q: string; a: string }[] | undefined) ?? [];
 
   const runConfirm = async () => {
@@ -104,10 +107,16 @@ export default function GrownUps() {
         </View>
       </View>
       {msg ? (
-        <T v="bodyStrong" accessibilityLiveRegion="polite" style={{ color: colors.indigo, marginTop: space.md }}>
+        <T v="bodyStrong" accessibilityLiveRegion="polite" style={{ marginTop: space.md }}>
           {msg}
         </T>
       ) : null}
+
+      <Card style={[styles.card, { marginTop: space.xl }]} testID="minutes-week">
+        <T v="small">{t('grownups.minutesThisWeek')}</T>
+        <Text style={styles.bigNum}>{minutes}</Text>
+        <T v="small">{t('grownups.minutesThisWeekBody', { count: minutes })}</T>
+      </Card>
 
       <SectionTitle>{t('grownups.sections.subscription')}</SectionTitle>
       <Card style={styles.card} testID="sub-card">
@@ -146,7 +155,7 @@ export default function GrownUps() {
                 <T v="small">{t('grownups.children.ageButton', { age: c.age })}</T>
               </View>
               {active ? (
-                <Pill tone="indigo" label={t('grownups.children.active')} />
+                <Pill tone="dark" label={t('grownups.children.active')} />
               ) : (
                 <View style={{ gap: space.xs }}>
                   <Button size="md" full={false} variant="secondary" label={t('grownups.children.switch', { name: nameOf(c.name) })} onPress={() => app.setActiveChild(c.id)} />
@@ -180,7 +189,7 @@ export default function GrownUps() {
                   onPress={() => setNewAge(a)}
                   style={[styles.age, newAge === a && styles.ageOn]}
                 >
-                  <Text style={[styles.ageText, newAge === a && { color: colors.white }]}>{a}</Text>
+                  <Text style={styles.ageText}>{a}</Text>
                 </Pressable>
               ))}
             </View>
@@ -309,13 +318,14 @@ export default function GrownUps() {
 const styles = StyleSheet.create({
   head: { flexDirection: 'row', alignItems: 'center', paddingTop: space.lg },
   card: { gap: space.md },
+  bigNum: { fontFamily: fonts.bold, fontSize: 40, lineHeight: 46, color: colors.ink },
   childRow: { flexDirection: 'row', alignItems: 'center', gap: space.md, flexWrap: 'wrap' },
-  avatar: { width: 52, height: 52, borderRadius: 26, backgroundColor: colors.marigold, alignItems: 'center', justifyContent: 'center' },
-  avatarText: { fontFamily: fonts.display, fontSize: 24, color: colors.ink },
+  avatar: { width: 48, height: 48, borderRadius: 24, backgroundColor: colors.selectedSoft, alignItems: 'center', justifyContent: 'center' },
+  avatarText: { fontFamily: fonts.bold, fontSize: 20, color: colors.ink },
   input: {
     minHeight: touch.primary,
     borderWidth: 2,
-    borderColor: colors.lineStrong,
+    borderColor: colors.line,
     borderRadius: radius.md,
     paddingHorizontal: space.lg,
     fontFamily: fonts.bold,
@@ -324,7 +334,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface,
   },
   ages: { flexDirection: 'row', gap: space.sm },
-  age: { flex: 1, maxWidth: 88, height: 64, borderRadius: radius.md, borderWidth: 2, borderColor: colors.lineStrong, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.surface },
-  ageOn: { backgroundColor: colors.indigo, borderColor: colors.indigo },
-  ageText: { fontFamily: fonts.display, fontSize: 28, color: colors.ink },
+  age: { flex: 1, maxWidth: 88, height: 56, borderRadius: radius.md, borderWidth: 2, borderBottomWidth: 4, borderColor: colors.line, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.surface },
+  ageOn: { backgroundColor: colors.blueSoft, borderColor: '#84D8FF' },
+  ageText: { fontFamily: fonts.bold, fontSize: 22, color: colors.ink },
 });

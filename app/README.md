@@ -75,6 +75,22 @@ Set the email template to include `{{ .Token }}` so the sign-in email carries th
 RevenueCat: products `littleduet_monthly` ($9.99) and `littleduet_annual` ($59.99), 7-day trial, in the
 current offering's monthly and annual packages. Prices on the paywall come from the store; the mock uses the same values.
 
+## Design + gamification (current)
+- Tokens live only in `src/theme.ts` (game-style, own brand, no mascot): white/#F7F7F7 surfaces, 2 px #E5E5E5
+  borders, Nunito (800 headings/buttons), 3D buttons with a solid bottom edge. One meaning per colour: coral =
+  brand/current/progress, orange = streak, gold = stars, blue = info/selection, green = done, grey = locked.
+  Primary buttons use #CC452D (white text 4.7:1); brand coral #F2674E (3.1:1 with white) is used for non-text only.
+- Song page = lesson path (`src/components/LessonPath.tsx`), list fallback for screen readers ("Show as list").
+- Kind streak (`src/lib/streak.ts`): daily goal = 1 finished class; Sat/Sun never break it; a missed weekday shows
+  "Welcome back!" and starts again. Levels + weekly family quests + chest (`src/lib/rewards.ts`).
+- Parental gate = written math question only (no hold step). Players have no lock: Close, play/pause, back 10 s
+  and the scrubber are always visible, away from the keyboard.
+- Covers: one helper (`SongCover` + `coverSources`): real photo `content/covers/<songId>.jpg` (served as
+  `<songId>/photo.jpg`), else the lesson-style `video/out/<songId>/cover.jpg`, else the icon art.
+  `src/data/media.json` (written by sync) says which exist.
+- Lessons: `src/data/lessons/summary.json` (classes without segments) is bundled for the catalog; full timelines
+  load lazily per song when a class opens (`fullLesson`, `fullClass`).
+
 ## How content and videos are wired
 
 | Source (teammates) | Copied by `scripts/sync-content.mjs` to | Used by |
@@ -84,6 +100,8 @@ current offering's monthly and annual packages. Prices on the paywall come from 
 | `video/samples/<Note>.mp3` | `assets/samples/<Note>.mp3` (`#` -> `s`) + generated `src/data/samples.ts` | piano (bundled, instant, offline) |
 | `video/out/<songId>/<classId>.mp4/.jpg` | `public/media/<songId>/` (web dev only; `--webm` adds VP8 copies) | `src/services/media.ts` |
 | `copy/strings.en.json` | `src/data/strings.en.json` | `src/i18n.ts` (app-only keys in `strings.app.json`) |
+| `content/covers/<songId>.jpg` (real photos) | `public/media/<songId>/photo.jpg` + `src/data/media.json` | `SongCover` |
+| `video/out/<songId>/cover.jpg`, `cover-square.jpg` | `public/media/<songId>/` | `SongCover` fallback |
 
 Swapping in the real files is a copy step: re-run `node scripts/sync-content.mjs` (`--prune` drops lessons of
 removed songs). Before the curriculum exists, `node scripts/make-standins.mjs [--videos]` writes contract-shaped
@@ -113,6 +131,9 @@ least 1 star. Free tier = class 1 of every song. Continue row = in-progress clas
 recently finished one, newest first. Wrong keys play their own sound and the right key glows; nothing fails.
 
 ## Known gaps
+- The offline web preview has no Nunito file (no network), so it renders with DM Sans; real builds load Nunito.
+- The app bundle still contains all 100 lesson timelines (~10 MB JSON, evaluated lazily). Moving them to
+  per-song downloads from `EXPO_PUBLIC_VIDEO_BASE_URL` would shrink the store download.
 - Dependencies were never installed here, so `npm test` (jest) and the full `npx tsc --noEmit` have not run on
   this code; the logic tests and logic type-check ran via the offline tools above. Expect a short fix-up pass.
 - Native-only paths (RevenueCat, Supabase, Sign in with Apple, expo-audio multi-touch keyboard) are untested on devices.

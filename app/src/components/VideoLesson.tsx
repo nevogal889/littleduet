@@ -10,7 +10,6 @@ import { colors, fonts, radius, space } from '../theme';
 import type { LessonClass, Song } from '../types';
 import { Icon } from './Icon';
 import { LessonStage, type StageResult } from './LessonStage';
-import { LockPill, usePlayerLock } from './PlayerLock';
 import { Button } from './ui';
 
 interface Props {
@@ -61,7 +60,6 @@ function RealVideo({ cls, resumeSec, onProgress, onFinish, onExit, url, onFail }
   const started = useRef(false);
   const done = useRef(false);
   const lastSave = useRef(Date.now());
-  const lock = usePlayerLock(!isPlaying && started.current);
   const duration = player.duration > 0 ? player.duration : cls.durationSec;
 
   useEventListener(player, 'statusChange', ({ status }) => {
@@ -103,60 +101,34 @@ function RealVideo({ cls, resumeSec, onProgress, onFinish, onExit, url, onFail }
   };
 
   return (
-    <View style={styles.root} testID="video-player">
-      <VideoView player={player} style={StyleSheet.absoluteFill} contentFit="contain" nativeControls={false} allowsPictureInPicture={false} />
-      {lock.unlocked ? (
-        <View style={[styles.overlay, { paddingTop: insets.top + space.sm, paddingBottom: insets.bottom + space.md }]}>
-          <View style={styles.topRow}>
-            <Button testID="player-exit" variant="light" size="md" full={false} icon="close" label={t('player.exit')} onPress={exit} />
-            <Button testID="player-lock" variant="light" size="md" full={false} icon="lock" label={t('player.lock')} onPress={lock.lock} />
-          </View>
-          {cls.parentTip ? (
-            <Text style={styles.tip} numberOfLines={3}>
-              {t('player.grownUpTip')}: {cls.parentTip}
-            </Text>
-          ) : null}
-          <View style={styles.center}>
-            <RoundButton
-              testID="player-back10"
-              label={t('player.back10')}
-              icon="back10"
-              size={80}
-              onPress={() => {
-                player.seekBy(-10);
-                lock.poke();
-              }}
-            />
-            <RoundButton
-              testID="player-playpause"
-              label={isPlaying ? t('a11y.pauseButton') : t('a11y.playButton')}
-              icon={isPlaying ? 'pause' : 'play'}
-              size={104}
-              primary
-              onPress={() => {
-                if (isPlaying) player.pause();
-                else player.play();
-                lock.poke();
-              }}
-            />
-            <View style={{ width: 80 }} />
-          </View>
-          <Scrubber
-            player={player}
-            pos={pos}
-            duration={duration}
-            onSeek={(s) => {
-              player.currentTime = s;
-              setPos(s);
-              lock.poke();
-            }}
+    <View style={[styles.root, { paddingTop: insets.top, paddingBottom: insets.bottom }]} testID="video-player">
+      {/* Controls are always available, above and below the picture (never on top of it). */}
+      <View style={styles.topRow}>
+        <Button testID="player-exit" variant="light" size="md" full={false} icon="close" label={t('player.close')} onPress={exit} />
+      </View>
+      <View style={styles.videoBox}>
+        <VideoView player={player} style={StyleSheet.absoluteFill} contentFit="contain" nativeControls={false} allowsPictureInPicture={false} />
+      </View>
+      <View style={styles.bottom}>
+        {cls.parentTip ? (
+          <Text style={styles.tip} numberOfLines={2}>
+            {t('player.grownUpTip')}: {cls.parentTip}
+          </Text>
+        ) : null}
+        <Scrubber player={player} pos={pos} duration={duration} onSeek={(s) => ((player.currentTime = s), setPos(s))} />
+        <View style={styles.center}>
+          <RoundButton testID="player-back10" label={t('player.back10')} icon="back10" size={64} onPress={() => player.seekBy(-10)} />
+          <RoundButton
+            testID="player-playpause"
+            label={isPlaying ? t('a11y.pauseButton') : t('a11y.playButton')}
+            icon={isPlaying ? 'pause' : 'play'}
+            size={84}
+            primary
+            onPress={() => (isPlaying ? player.pause() : player.play())}
           />
+          <View style={{ width: 64 }} />
         </View>
-      ) : (
-        <View style={[styles.lockArea, { paddingTop: insets.top }]}>
-          <LockPill dark onUnlock={lock.unlock} />
-        </View>
-      )}
+      </View>
     </View>
   );
 }
@@ -170,11 +142,11 @@ function RoundButton({ label, icon, size, onPress, primary, testID }: { label: s
         accessibilityLabel={label}
         onPress={onPress}
         style={({ pressed }) => [
-          { width: size, height: size, borderRadius: size / 2, alignItems: 'center', justifyContent: 'center', backgroundColor: primary ? colors.coral : 'rgba(255,255,255,0.94)' },
+          { width: size, height: size, borderRadius: size / 2, alignItems: 'center', justifyContent: 'center', backgroundColor: primary ? colors.accent : 'rgba(255,255,255,0.14)' },
           pressed && { opacity: 0.85 },
         ]}
       >
-        <Icon name={icon} size={size * 0.42} color={primary ? colors.white : colors.ink} />
+        <Icon name={icon} size={size * 0.42} color={colors.white} />
       </Pressable>
       {icon === 'back10' ? <Text style={styles.btnLabel}>{label}</Text> : null}
     </View>
@@ -204,7 +176,7 @@ function Scrubber({ pos, duration, onSeek }: { player: VideoPlayer; pos: number;
         <View pointerEvents="none" style={styles.trackBg}>
           <View style={[styles.trackFill, { width: `${frac * 100}%` }]} />
         </View>
-        <View pointerEvents="none" style={[styles.thumb, { left: frac * w - 16 }]} />
+        <View pointerEvents="none" style={[styles.thumb, { left: frac * w - 12 }]} />
       </View>
       <Text style={styles.time}>{fmt(duration)}</Text>
     </View>
@@ -212,17 +184,17 @@ function Scrubber({ pos, duration, onSeek }: { player: VideoPlayer; pos: number;
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: colors.black },
-  overlay: { ...StyleSheet.absoluteFillObject, backgroundColor: 'rgba(30,42,58,0.55)', justifyContent: 'space-between', paddingHorizontal: space.lg },
-  topRow: { flexDirection: 'row', justifyContent: 'space-between', gap: space.md },
-  tip: { fontFamily: fonts.medium, fontSize: 18, lineHeight: 25, color: colors.white, textAlign: 'center', maxWidth: 640, alignSelf: 'center' },
+  root: { flex: 1, backgroundColor: '#11161E' },
+  topRow: { flexDirection: 'row', justifyContent: 'flex-start', paddingHorizontal: space.lg, paddingVertical: space.md },
+  videoBox: { flex: 1, backgroundColor: colors.black },
+  bottom: { paddingHorizontal: space.lg, paddingTop: space.md, paddingBottom: space.lg, gap: space.md },
+  tip: { fontFamily: fonts.regular, fontSize: 15, lineHeight: 21, color: 'rgba(255,255,255,0.85)', textAlign: 'center', maxWidth: 640, alignSelf: 'center' },
   center: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: space.xxl },
-  btnLabel: { fontFamily: fonts.bold, fontSize: 17, color: colors.white },
-  lockArea: { position: 'absolute', top: 0, right: 0, padding: space.sm },
+  btnLabel: { fontFamily: fonts.medium, fontSize: 13, color: colors.white },
   scrubRow: { flexDirection: 'row', alignItems: 'center', gap: space.md },
-  time: { fontFamily: fonts.bold, fontSize: 17, color: colors.white, minWidth: 48, textAlign: 'center' },
-  track: { flex: 1, height: 56, justifyContent: 'center' },
-  trackBg: { height: 10, borderRadius: 5, backgroundColor: 'rgba(255,255,255,0.35)', overflow: 'hidden' },
-  trackFill: { height: 10, backgroundColor: colors.coral },
-  thumb: { position: 'absolute', top: 12, width: 32, height: 32, borderRadius: 16, backgroundColor: colors.white, borderWidth: 4, borderColor: colors.coral },
+  time: { fontFamily: fonts.medium, fontSize: 15, color: colors.white, minWidth: 44, textAlign: 'center' },
+  track: { flex: 1, height: 48, justifyContent: 'center' },
+  trackBg: { height: 6, borderRadius: 3, backgroundColor: 'rgba(255,255,255,0.3)', overflow: 'hidden' },
+  trackFill: { height: 6, backgroundColor: colors.accent },
+  thumb: { position: 'absolute', top: 12, width: 24, height: 24, borderRadius: 12, backgroundColor: colors.white },
 });

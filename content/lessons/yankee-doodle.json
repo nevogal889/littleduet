@@ -5,6 +5,7 @@
  "icon": "horse",
  "key": "C",
  "timeSignature": "4/4",
+ "totalSec": 2250,
  "classes": [
   {
    "id": "yankee-doodle-c01",
@@ -12,7 +13,7 @@
    "title": "Hands ready, first half",
    "goal": "Find the hand position and learn the first half",
    "type": "hand-position",
-   "durationSec": 229,
+   "durationSec": 212,
    "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
    "video": "yankee-doodle/yankee-doodle-c01.mp4",
    "thumb": "yankee-doodle/yankee-doodle-c01.jpg",
@@ -964,14 +965,78 @@
     },
     {
      "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 84,
+     "leadInSec": 1.429,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      }
+     ],
      "durationSec": 6
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
+     "parentCue": "Slow is fine",
      "bpm": 84,
      "leadInSec": 1.429,
      "gapBeats": 1,
@@ -1023,147 +1088,15 @@
        "d": 0.5,
        "f": 1,
        "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "rid"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "on"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2,
-       "s": "po"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "ny"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Stuck"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "fea"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ther"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 5,
-       "s": "in"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "his"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "cap"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "called"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "it"
-      },
-      {
-       "p": "A3",
-       "d": 0.5,
-       "f": 2,
-       "s": "mac"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "ro"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "ni"
       }
      ],
      "lines": [
       {
        "lyric": "Yankee Doodle went to town, a-",
        "from": 0
-      },
-      {
-       "lyric": "riding on a pony",
-       "from": 8
-      },
-      {
-       "lyric": "Stuck a feather in his cap and",
-       "from": 14
-      },
-      {
-       "lyric": "called it macaroni",
-       "from": 22
       }
      ],
-     "durationSec": 35
+     "durationSec": 12
     },
     {
      "kind": "praise",
@@ -2280,7 +2213,7 @@
    "title": "Part 3",
    "goal": "Learn the next part, one finger per key",
    "type": "phrase",
-   "durationSec": 225,
+   "durationSec": 211,
    "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
    "video": "yankee-doodle/yankee-doodle-c03.mp4",
    "thumb": "yankee-doodle/yankee-doodle-c03.jpg",
@@ -3216,218 +3149,74 @@
     },
     {
      "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 5
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
+     "parentCue": "The first part again",
      "bpm": 90,
      "leadInSec": 1.333,
      "gapBeats": 1,
      "notes": [
       {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Mind"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 5,
-       "s": "the"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mu"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "sic"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 5,
-       "s": "the"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 4,
-       "s": "step"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "G4",
+       "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "with"
+       "s": "Yan"
       },
       {
-       "p": "C5",
+       "p": "C4",
        "d": 0.5,
-       "f": 4,
-       "s": "the"
+       "f": 1,
+       "s": "kee"
       },
       {
-       "p": "B4",
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "girls"
+       "s": "dle"
       },
       {
-       "p": "D5",
+       "p": "C4",
        "d": 0.5,
-       "f": 5,
-       "s": "be"
+       "f": 1,
+       "s": "went"
       },
       {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "han"
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
       },
       {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "dy"
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
       }
      ],
      "lines": [
       {
-       "lyric": "Mind the music and the step and",
+       "lyric": "Yankee Doodle went to town, a-",
        "from": 0
-      },
-      {
-       "lyric": "with the girls be handy",
-       "from": 8
       }
      ],
-     "durationSec": 18
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 101,
-     "leadInSec": 1.188,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Mind"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 5,
-       "s": "the"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mu"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "sic"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 5,
-       "s": "the"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 4,
-       "s": "step"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 1,
-       "s": "with"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 3,
-       "s": "girls"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 5,
-       "s": "be"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "han"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "dy"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Mind the music and the step and",
-       "from": 0
-      },
-      {
-       "lyric": "with the girls be handy",
-       "from": 8
-      }
-     ],
-     "durationSec": 8
+     "durationSec": 11
     },
     {
      "kind": "praise",
@@ -3442,7 +3231,7 @@
    "title": "Put it together",
    "goal": "Play the whole song slowly, all parts in order",
    "type": "put-together",
-   "durationSec": 222,
+   "durationSec": 217,
    "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
    "video": "yankee-doodle/yankee-doodle-c04.mp4",
    "thumb": "yankee-doodle/yankee-doodle-c04.jpg",
@@ -4624,16 +4413,17 @@
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Take a breath between lines",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6
     },
     {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 95,
-     "leadInSec": 1.263,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "C4",
@@ -4718,168 +4508,110 @@
        "d": 1,
        "f": 1,
        "s": "ny"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
       },
+      {
+       "lyric": "riding on a pony",
+       "from": 8
+      }
+     ],
+     "durationSec": 18
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "yankee-doodle-c05",
+   "index": 5,
+   "title": "Tricky spots",
+   "goal": "Practise the hardest part slowly, then a little faster",
+   "type": "review",
+   "durationSec": 237,
+   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "video": "yankee-doodle/yankee-doodle-c05.mp4",
+   "thumb": "yankee-doodle/yankee-doodle-c05.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Yankee Doodle",
+     "subcaption": "Class 5: Tricky spots",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Tricky spots, nice and slow",
+     "parentCue": "This is the hardest part of the song",
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Slow, then a bit faster",
+     "parentCue": "Say the finger numbers out loud",
+     "durationSec": 7
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch slowly",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 67,
+     "leadInSec": 1.791,
+     "notes": [
       {
        "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Stuck"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "fea"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ther"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 5,
-       "s": "in"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "his"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "cap"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "B3",
        "d": 0.5,
        "f": 1,
-       "s": "called"
+       "s": "Yan"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
       },
       {
        "p": "G3",
        "d": 0.5,
        "f": 1,
-       "s": "it"
-      },
-      {
-       "p": "A3",
-       "d": 0.5,
-       "f": 2,
-       "s": "mac"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
        "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "ro"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "ni"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Yan"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "kee"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Doo"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "dle"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "keep"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "it"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "up"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Yan"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "kee"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Doo"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "dle"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "dan"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "dy"
       },
       {
        "p": "A4",
@@ -4928,42 +4660,6 @@
        "d": 0.5,
        "f": 2,
        "s": "and"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 1,
-       "s": "with"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 3,
-       "s": "girls"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 5,
-       "s": "be"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "han"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "dy"
       }
      ],
      "lines": [
@@ -4972,35 +4668,891 @@
        "from": 0
       },
       {
-       "lyric": "riding on a pony",
+       "lyric": "Mind the music and the step and",
        "from": 8
+      }
+     ],
+     "durationSec": 11
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn, slowly",
+     "parentCue": "Slow is perfect",
+     "bpm": 67,
+     "leadInSec": 1.791,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan"
       },
       {
-       "lyric": "Stuck a feather in his cap and",
-       "from": 14
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
       },
       {
-       "lyric": "called it macaroni",
-       "from": 22
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
       },
       {
-       "lyric": "Yankee Doodle, keep it up",
-       "from": 28
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
       },
       {
-       "lyric": "Yankee Doodle dandy",
-       "from": 35
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
       },
       {
        "lyric": "Mind the music and the step and",
-       "from": 41
-      },
-      {
-       "lyric": "with the girls be handy",
-       "from": 49
+       "from": 8
       }
      ],
-     "durationSec": 23
+     "durationSec": 25
+    },
+    {
+     "kind": "say",
+     "caption": "A little faster now",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 8
+      }
+     ],
+     "durationSec": 22
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Again, a bit faster",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 8
+      }
+     ],
+     "durationSec": 19
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Nearly full speed",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 101,
+     "leadInSec": 1.188,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 8
+      }
+     ],
+     "durationSec": 17
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "A little faster now",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 8
+      }
+     ],
+     "durationSec": 22
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Again, a bit faster",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 8
+      }
+     ],
+     "durationSec": 19
+    },
+    {
+     "kind": "praise",
+     "caption": "Well done!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Nearly full speed",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 101,
+     "leadInSec": 1.188,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 8
+      }
+     ],
+     "durationSec": 17
     },
     {
      "kind": "praise",
@@ -5010,20 +5562,20 @@
    ]
   },
   {
-   "id": "yankee-doodle-c05",
-   "index": 5,
+   "id": "yankee-doodle-c06",
+   "index": 6,
    "title": "Left hand helper",
    "goal": "Play one low left hand note at the start of each bar",
    "type": "left-hand",
-   "durationSec": 223,
+   "durationSec": 232,
    "parentTip": "You play the tune, your child plays the low notes. Count bars out loud to help.",
-   "video": "yankee-doodle/yankee-doodle-c05.mp4",
-   "thumb": "yankee-doodle/yankee-doodle-c05.jpg",
+   "video": "yankee-doodle/yankee-doodle-c06.mp4",
+   "thumb": "yankee-doodle/yankee-doodle-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Yankee Doodle",
-     "subcaption": "Class 5: Left hand helper",
+     "subcaption": "Class 6: Left hand helper",
      "durationSec": 5
     },
     {
@@ -6699,6 +7251,12 @@
      "durationSec": 32
     },
     {
+     "kind": "say",
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 9
+    },
+    {
      "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
@@ -6706,20 +7264,20 @@
    ]
   },
   {
-   "id": "yankee-doodle-c06",
-   "index": 6,
+   "id": "yankee-doodle-c07",
+   "index": 7,
    "title": "Hands together, slowly",
    "goal": "Play the tune with a low left hand note on each bar",
    "type": "hands-together",
    "durationSec": 236,
    "parentTip": "Two hands is hard work. Go very slowly and stop while it's still fun.",
-   "video": "yankee-doodle/yankee-doodle-c06.mp4",
-   "thumb": "yankee-doodle/yankee-doodle-c06.jpg",
+   "video": "yankee-doodle/yankee-doodle-c07.mp4",
+   "thumb": "yankee-doodle/yankee-doodle-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Yankee Doodle",
-     "subcaption": "Class 6: Hands together, slowly",
+     "subcaption": "Class 7: Hands together, slowly",
      "durationSec": 5
     },
     {
@@ -8049,7 +8607,7 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "You did it!",
      "durationSec": 5
     },
     {
@@ -8281,20 +8839,2644 @@
    ]
   },
   {
-   "id": "yankee-doodle-c07",
-   "index": 7,
+   "id": "yankee-doodle-c08",
+   "index": 8,
+   "title": "Hands together, a bit faster",
+   "goal": "Play both hands together closer to full speed",
+   "type": "hands-together",
+   "durationSec": 237,
+   "parentTip": "Speed comes last. If notes fall apart, go back to the slower tempo.",
+   "video": "yankee-doodle/yankee-doodle-c08.mp4",
+   "thumb": "yankee-doodle/yankee-doodle-c08.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Yankee Doodle",
+     "subcaption": "Class 8: Hands together, a bit faster",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Both hands, a bit faster",
+     "parentCue": "Only if the slow class felt good",
+     "showKeys": [
+      {
+       "p": "C4",
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "f": 2
+      },
+      {
+       "p": "A4",
+       "f": 3
+      },
+      {
+       "p": "C4",
+       "f": 4
+      },
+      {
+       "p": "B4",
+       "f": 5
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Both hands",
+     "parentCue": "Warm up slowly",
+     "bpm": 84,
+     "leadInSec": 1.429,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "rid",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2,
+       "s": "po"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "ny"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Stuck",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "fea"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ther"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 5,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "cap"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "called",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "it"
+      },
+      {
+       "p": "A3",
+       "d": 0.5,
+       "f": 2,
+       "s": "mac"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ro"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ni"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Yan",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "kee"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Doo"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "dle"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "keep"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "it"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "up"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "kee"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "dan"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "dy"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 1,
+       "s": "with",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3,
+       "s": "girls"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 5,
+       "s": "be"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "han"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "dy"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "riding on a pony",
+       "from": 8
+      },
+      {
+       "lyric": "Stuck a feather in his cap and",
+       "from": 14
+      },
+      {
+       "lyric": "called it macaroni",
+       "from": 22
+      },
+      {
+       "lyric": "Yankee Doodle, keep it up",
+       "from": 28
+      },
+      {
+       "lyric": "Yankee Doodle dandy",
+       "from": 35
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 41
+      },
+      {
+       "lyric": "with the girls be handy",
+       "from": 49
+      }
+     ],
+     "durationSec": 66
+    },
+    {
+     "kind": "together",
+     "caption": "A bit faster now",
+     "parentCue": "Keep the beat steady",
+     "bpm": 95,
+     "leadInSec": 1.263,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "rid",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2,
+       "s": "po"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "ny"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Stuck",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "fea"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ther"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 5,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "cap"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "called",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "it"
+      },
+      {
+       "p": "A3",
+       "d": 0.5,
+       "f": 2,
+       "s": "mac"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ro"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ni"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Yan",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "kee"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Doo"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "dle"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "keep"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "it"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "up"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "kee"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "dan"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "dy"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 1,
+       "s": "with",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3,
+       "s": "girls"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 5,
+       "s": "be"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "han"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "dy"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "riding on a pony",
+       "from": 8
+      },
+      {
+       "lyric": "Stuck a feather in his cap and",
+       "from": 14
+      },
+      {
+       "lyric": "called it macaroni",
+       "from": 22
+      },
+      {
+       "lyric": "Yankee Doodle, keep it up",
+       "from": 28
+      },
+      {
+       "lyric": "Yankee Doodle dandy",
+       "from": 35
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 41
+      },
+      {
+       "lyric": "with the girls be handy",
+       "from": 49
+      }
+     ],
+     "durationSec": 23
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Relax your shoulders",
+     "durationSec": 5
+    },
+    {
+     "kind": "together",
+     "caption": "Both hands together",
+     "parentCue": "Help with the left hand if needed",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "rid",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2,
+       "s": "po"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "ny"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Stuck",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "fea"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ther"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 5,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "cap"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "called",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "it"
+      },
+      {
+       "p": "A3",
+       "d": 0.5,
+       "f": 2,
+       "s": "mac"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ro"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ni"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Yan",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "kee"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Doo"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "dle"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "keep"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "it"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "up"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "kee"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "dan"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "dy"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 1,
+       "s": "with",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3,
+       "s": "girls"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 5,
+       "s": "be"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "han"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "dy"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "riding on a pony",
+       "from": 8
+      },
+      {
+       "lyric": "Stuck a feather in his cap and",
+       "from": 14
+      },
+      {
+       "lyric": "called it macaroni",
+       "from": 22
+      },
+      {
+       "lyric": "Yankee Doodle, keep it up",
+       "from": 28
+      },
+      {
+       "lyric": "Yankee Doodle dandy",
+       "from": 35
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 41
+      },
+      {
+       "lyric": "with the girls be handy",
+       "from": 49
+      }
+     ],
+     "durationSec": 25
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Again, nice and easy",
+     "parentCue": "Relax your shoulders",
+     "durationSec": 5
+    },
+    {
+     "kind": "together",
+     "caption": "Both hands together",
+     "parentCue": "Help with the left hand if needed",
+     "bpm": 95,
+     "leadInSec": 1.263,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "rid",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2,
+       "s": "po"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "ny"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Stuck",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "fea"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ther"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 5,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "cap"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "called",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "it"
+      },
+      {
+       "p": "A3",
+       "d": 0.5,
+       "f": 2,
+       "s": "mac"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ro"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ni"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Yan",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "kee"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Doo"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "dle"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "keep"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "it"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "up"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "kee"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "dan"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "dy"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 1,
+       "s": "with",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3,
+       "s": "girls"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 5,
+       "s": "be"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "han"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "dy"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "riding on a pony",
+       "from": 8
+      },
+      {
+       "lyric": "Stuck a feather in his cap and",
+       "from": 14
+      },
+      {
+       "lyric": "called it macaroni",
+       "from": 22
+      },
+      {
+       "lyric": "Yankee Doodle, keep it up",
+       "from": 28
+      },
+      {
+       "lyric": "Yankee Doodle dandy",
+       "from": 35
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 41
+      },
+      {
+       "lyric": "with the girls be handy",
+       "from": 49
+      }
+     ],
+     "durationSec": 23
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Let's do it again",
+     "parentCue": "Relax your shoulders",
+     "durationSec": 5
+    },
+    {
+     "kind": "together",
+     "caption": "Both hands together",
+     "parentCue": "Help with the left hand if needed",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "rid",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2,
+       "s": "po"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "ny"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Stuck",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "fea"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ther"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 5,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "cap"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "called",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "it"
+      },
+      {
+       "p": "A3",
+       "d": 0.5,
+       "f": 2,
+       "s": "mac"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ro"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ni"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Yan",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "kee"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Doo"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "dle"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "keep"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "it"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "up"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "kee"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "dan"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "dy"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 1,
+       "s": "with",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3,
+       "s": "girls"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 5,
+       "s": "be"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "han"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "dy"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "riding on a pony",
+       "from": 8
+      },
+      {
+       "lyric": "Stuck a feather in his cap and",
+       "from": 14
+      },
+      {
+       "lyric": "called it macaroni",
+       "from": 22
+      },
+      {
+       "lyric": "Yankee Doodle, keep it up",
+       "from": 28
+      },
+      {
+       "lyric": "Yankee Doodle dandy",
+       "from": 35
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 41
+      },
+      {
+       "lyric": "with the girls be handy",
+       "from": 49
+      }
+     ],
+     "durationSec": 25
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "And again!",
+     "parentCue": "Relax your shoulders",
+     "durationSec": 5
+    },
+    {
+     "kind": "together",
+     "caption": "Both hands together",
+     "parentCue": "Help with the left hand if needed",
+     "bpm": 95,
+     "leadInSec": 1.263,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "kee"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dle"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "went"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "town"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "rid",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2,
+       "s": "po"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "ny"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Stuck",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "fea"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ther"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 5,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "cap"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "called",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "it"
+      },
+      {
+       "p": "A3",
+       "d": 0.5,
+       "f": 2,
+       "s": "mac"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ro"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ni"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Yan",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "kee"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Doo"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "dle"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "keep"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "it"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "up"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Yan",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "kee"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Doo"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dle"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "dan"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "dy"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Mind",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mu"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sic"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "step"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 1,
+       "s": "with",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3,
+       "s": "girls"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 5,
+       "s": "be"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "han"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "dy"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Yankee Doodle went to town, a-",
+       "from": 0
+      },
+      {
+       "lyric": "riding on a pony",
+       "from": 8
+      },
+      {
+       "lyric": "Stuck a feather in his cap and",
+       "from": 14
+      },
+      {
+       "lyric": "called it macaroni",
+       "from": 22
+      },
+      {
+       "lyric": "Yankee Doodle, keep it up",
+       "from": 28
+      },
+      {
+       "lyric": "Yankee Doodle dandy",
+       "from": 35
+      },
+      {
+       "lyric": "Mind the music and the step and",
+       "from": 41
+      },
+      {
+       "lyric": "with the girls be handy",
+       "from": 49
+      }
+     ],
+     "durationSec": 23
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "yankee-doodle-c09",
+   "index": 9,
    "title": "Play along",
    "goal": "Play the whole song along with the music at full speed",
    "type": "play-along",
    "durationSec": 215,
    "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "video": "yankee-doodle/yankee-doodle-c07.mp4",
-   "thumb": "yankee-doodle/yankee-doodle-c07.jpg",
+   "video": "yankee-doodle/yankee-doodle-c09.mp4",
+   "thumb": "yankee-doodle/yankee-doodle-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Yankee Doodle",
-     "subcaption": "Class 7: Play along",
+     "subcaption": "Class 9: Play along",
      "durationSec": 5
     },
     {
@@ -10985,20 +14167,20 @@
    ]
   },
   {
-   "id": "yankee-doodle-c08",
-   "index": 8,
+   "id": "yankee-doodle-c10",
+   "index": 10,
    "title": "Concert time",
    "goal": "Play the whole song from start to end and celebrate",
    "type": "concert",
    "durationSec": 233,
    "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "video": "yankee-doodle/yankee-doodle-c08.mp4",
-   "thumb": "yankee-doodle/yankee-doodle-c08.jpg",
+   "video": "yankee-doodle/yankee-doodle-c10.mp4",
+   "thumb": "yankee-doodle/yankee-doodle-c10.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Yankee Doodle",
-     "subcaption": "Class 8: Concert time",
+     "subcaption": "Class 10: Concert time",
      "durationSec": 5
     },
     {

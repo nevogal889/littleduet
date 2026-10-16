@@ -1,6 +1,11 @@
 {
   "_note": "App-side strings the copy file does not have yet. copy/strings.en.json always wins. Listed in NOTES-app.md for the copy teammate.",
-  "tabs": { "home": "Home", "songs": "Songs", "stickers": "Stickers", "grownups": "Grown-ups" },
+  "tabs": {
+    "home": "Home",
+    "songs": "Songs",
+    "stickers": "Progress",
+    "grownups": "Grown-ups"
+  },
   "home": {
     "pickedFor": "Picked for {name} (age {age})",
     "easyTitle": "Easy songs to start",
@@ -10,57 +15,130 @@
     "startFirstBody": "{songTitle} is a lovely first song. Class 1 is free.",
     "startFirstCta": "Start the first song",
     "seeAll": "See all songs",
-    "lockedNext": "Part of the full songbook"
+    "lockedNext": "Part of the full songbook",
+    "stats": {
+      "streak": "Day streak",
+      "stars": "Stars",
+      "songs": "Songs learned",
+      "week": "This week"
+    }
   },
-  "difficultyWords": { "Easy": "Easy", "Medium": "Medium", "Harder": "Harder" },
+  "difficultyWords": {
+    "Easy": "Easy",
+    "Medium": "Medium",
+    "Harder": "Harder"
+  },
   "song": {
-    "stats": "{classes} · {minutes} total",
+    "stats": "{classes} \u00b7 {minutes} total",
     "classMinutes": "{count} min",
-    "recommended": "Next up"
+    "recommended": "Next up",
+    "done": "Done",
+    "percent": "{count}%",
+    "percentDone": "{count}% done"
   },
   "player": {
-    "holdToUnlock": "Hold to unlock",
-    "holdToUnlockHint": "Grown-ups: press and hold for 2 seconds",
-    "lock": "Lock",
-    "videoFallback": "The video is not ready yet, so the lesson plays on screen."
+    "videoFallback": "The video is not ready yet, so the lesson plays on screen.",
+    "close": "Close"
   },
   "celebration": {
     "headline": "Amazing playing, {name}!",
     "parentHeadline": "Great teaching, grown-up!",
     "pickNewSong": "Pick a new song",
-    "unlockNext": "Open the next class"
+    "unlockNext": "Open the next class",
+    "plusStars_one": "+{count} star",
+    "plusStars_other": "+{count} stars",
+    "continue": "Continue",
+    "trophy": "Song complete!",
+    "streakUp": "{count}-day streak"
   },
   "stickers": {
-    "milestones": { "first": "First class", "half": "Halfway", "concert": "Concert" },
+    "milestones": {
+      "first": "First class",
+      "half": "Halfway",
+      "concert": "Concert"
+    },
     "songsFinished": "Songs finished",
     "classesThisWeek": "Classes this week",
     "musicDays": "Music days this week",
     "musicDaysHint": "Every day you play gets a dot.",
     "levelUpTitle": "{ageLabel} songs done!",
     "levelUpBody": "{name} is ready for {nextLabel} songs. Wonderful work together.",
-    "levelUpTopBody": "{name} has played most of the {ageLabel} songs. Wonderful work together."
+    "levelUpTopBody": "{name} has played most of the {ageLabel} songs. Wonderful work together.",
+    "title": "Progress",
+    "book": "Stickers",
+    "chestStickers": "Chest stickers"
   },
   "badges": {
-    "grad": { "name": "{ageLabel} graduate", "description": "Finished most {ageLabel} songs" }
+    "grad": {
+      "name": "{ageLabel} graduate",
+      "description": "Finished most {ageLabel} songs"
+    }
   },
   "gate": {
-    "holdTitle": "Press and hold for 3 seconds",
-    "holdHint": "Keep your finger on the button until it fills up."
+    "compactTitle": "For grown-ups"
   },
-  "paywall": { "save": "Save 50%" },
+  "paywall": {
+    "save": "Save 50%"
+  },
   "grownups": {
-    "lock": "Lock the grown-ups area",
-    "children": { "switch": "Switch to {name}", "active": "Playing now", "ageButton": "Age {age}" },
+    "children": {
+      "switch": "Switch to {name}",
+      "active": "Playing now",
+      "ageButton": "Age {age}"
+    },
     "reset": {
       "button": "Reset progress",
       "title": "Reset {name}'s progress?",
       "body": "Stars, stickers and class progress for {name} go back to the start. Your plan is not affected.",
       "confirm": "Reset progress"
     },
-    "account": { "offBody": "Progress is saved on this device." }
+    "account": {
+      "offBody": "Progress is saved on this device."
+    },
+    "minutesThisWeek": "Minutes played this week",
+    "minutesThisWeekBody_one": "{count} minute of music together this week.",
+    "minutesThisWeekBody_other": "{count} minutes of music together this week."
   },
   "onboarding": {
-    "stepOf": "Step {index} of {total}",
-    "paywallGateNote": "Next, a grown-up can look at the plans."
+    "stepOf": "Step {index} of {total}"
+  },
+  "streak": {
+    "title_one": "{count} day in a row",
+    "title_other": "{count} days in a row",
+    "title_zero": "Start a streak today",
+    "welcomeBack": "Welcome back!",
+    "welcomeBackBody": "Play one class today to start a new streak.",
+    "goal": "Daily goal: 1 class",
+    "goalDone": "Daily goal done. See you tomorrow!",
+    "goalTodo": "Play 1 class today",
+    "weekend": "Weekends are free days: skipping Saturday or Sunday never breaks your streak.",
+    "thisWeek": "This week",
+    "close": "Close",
+    "open": "Streak details"
+  },
+  "progress": {
+    "title": "Progress",
+    "level": "Level {level}",
+    "levelStars": "{inLevel} / {need} stars",
+    "levelHint": "Every star from a class fills the bar."
+  },
+  "quests": {
+    "title": "Family quests this week",
+    "classes": "Play 3 classes",
+    "song": "Finish a song",
+    "days": "Play on 4 days",
+    "chestReady": "All quests done! Open your chest.",
+    "chestOpen": "Open chest",
+    "chestLocked": "Finish all 3 quests to open the chest.",
+    "chestGot": "New sticker: {songTitle}",
+    "chestDone": "Chest opened this week. New quests on Monday."
+  },
+  "path": {
+    "start": "Start",
+    "continue": "Continue",
+    "minutes": "{count} min",
+    "listView": "Show as list",
+    "pathView": "Show as path",
+    "classNode": "Class {index}: {title}"
   }
 }

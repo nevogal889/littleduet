@@ -101,27 +101,30 @@ def mix(c1, c2, a):
 
 # ------------------------------------------------------------------ keyboard
 class Keyboard:
-    def __init__(self, lo, hi):
+    def __init__(self, lo, hi, y0=None, y1=None, width=None, max_kw=112.0, margin=64.0):
+        self.ky0 = self.ky0 if y0 is None else y0
+        self.ky1 = self.ky1 if y1 is None else y1
+        self.width = W if width is None else width
         self.lo, self.hi = lo, hi
         whites = [m for m in range(lo, hi + 1) if not is_black(m)]
         self.whites = whites
         n = len(whites)
-        kw = min(112.0, (W - 64.0) / n)
+        kw = min(max_kw, (self.width - margin) / n)
         self.kw = kw
-        x0 = (W - kw * n) / 2.0
+        x0 = (self.width - kw * n) / 2.0
         self.x0 = x0
         self.bw = kw * 0.6
-        self.bh = (KB_Y1 - KB_Y0) * 0.6
+        self.bh = (self.ky1 - self.ky0) * 0.6
         self.rect = {}
         for i, m in enumerate(whites):
-            self.rect[m] = (x0 + i * kw, KB_Y0, x0 + (i + 1) * kw, KB_Y1)
+            self.rect[m] = (x0 + i * kw, self.ky0, x0 + (i + 1) * kw, self.ky1)
         for m in range(lo, hi + 1):
             if is_black(m):
                 left = self.rect[m - 1]
                 cx = left[2]
                 # nudge C#/D# and F#/G#/A# a little like a real piano
                 nud = {1: -0.08, 3: 0.08, 6: -0.1, 8: 0.0, 10: 0.1}[m % 12] * self.bw
-                self.rect[m] = (cx - self.bw / 2 + nud, KB_Y0, cx + self.bw / 2 + nud, KB_Y0 + self.bh)
+                self.rect[m] = (cx - self.bw / 2 + nud, self.ky0, cx + self.bw / 2 + nud, self.ky0 + self.bh)
         self.base = None
         self._patch = {}
         self.split = whites[n // 2]   # low half = keys below this
@@ -148,11 +151,11 @@ class Keyboard:
                 if f == INK:   # small highlight to read as glossy plastic
                     d.rounded_rectangle([round(x0) + 4, round(y1) - 14, round(x1) - 4, round(y1) - 6],
                                         radius=3, fill=(58, 72, 92))
-        d.rounded_rectangle([fx0, KB_Y0 - 10, fx1, KB_Y0], radius=4, fill=INK)   # fallboard
+        d.rounded_rectangle([fx0, self.ky0 - 10, fx1, self.ky0], radius=4, fill=INK)   # fallboard
         if self.lo <= 60 <= self.hi:      # middle C dot
             x = self.cx(60)
             r = max(4, int(self.kw * 0.07))
-            d.ellipse([x - r, KB_Y1 - 3 * r - 6, x + r, KB_Y1 - r - 6], fill=INK if 60 not in fills else WHITE)
+            d.ellipse([x - r, self.ky1 - 3 * r - 6, x + r, self.ky1 - r - 6], fill=INK if 60 not in fills else WHITE)
         return img
 
     def patch(self, m, fill):
@@ -162,7 +165,7 @@ class Keyboard:
             img = self.base.copy()
             self.draw(img, {m: fill})
             x0, y0, x1, y1 = self.rect[m]
-            box = (int(math.floor(x0)) - 1, KB_Y0, int(math.ceil(x1)) + 2, int(math.ceil(y1)) + 1)
+            box = (int(math.floor(x0)) - 1, self.ky0, int(math.ceil(x1)) + 2, int(math.ceil(y1)) + 1)
             self._patch[key] = (box[0], box[1], img.crop(box))
         return self._patch[key]
 
@@ -172,7 +175,7 @@ class Keyboard:
             r = min(self.bw * 0.46, 30)
             return (x0 + x1) / 2.0, y1 - r - 8, r
         r = min(self.kw * 0.40, 40 if big else 32)
-        return (x0 + x1) / 2.0, KB_Y1 - r - 30, r
+        return (x0 + x1) / 2.0, self.ky1 - r - 30, r
 
 
 _circle_cache = {}
@@ -766,6 +769,147 @@ class ClassRenderer:
             ImageDraw.Draw(fr).rectangle([0, PROG_Y0, x, PROG_Y1], fill=CORAL)
 
 
+
+# ------------------------------------------------------------------ covers
+AGE_LABELS = {"2-3": "Tiny Ears", "3-4": "Little Explorer", "4-5": "First Songs", "5-6": "Little Pianist"}
+COVER_VERSION = "5"
+
+
+def song_melody(lesson):
+    """The whole-song notes (from the concert class, else the longest note segment)."""
+    best = []
+    for c in reversed(lesson["classes"]):
+        for sgm in c["segments"]:
+            ns = sgm.get("notes") or []
+            if len(ns) > len(best) and sgm["kind"] in ("together", "beat", "listen"):
+                best = ns
+        if best:
+            break
+    return [n for n in best if not n.get("rest") and n.get("h") != "L"], best
+
+
+def cover_hash(lesson):
+    import hashlib
+    mel, _ = song_melody(lesson)
+    key = [COVER_VERSION, lesson.get("title"), lesson.get("icon"), lesson.get("ageGroup"),
+           [(n["p"], n["d"], n.get("f")) for n in mel[:16]]]
+    return hashlib.sha1(json.dumps(key).encode()).hexdigest()
+
+
+def _cover_keys(img, mel, all_notes, bpm, lane_y0, kb_y0, kb_y1, width, max_kw, margin, x_off=0):
+    """Lane + keyboard with the first notes lit coral and the next notes falling as bars."""
+    ms = [midi(n["p"]) for n in mel[:12]] or [60]      # the opening's range keeps keys big
+    lo = max(48, (min(ms) // 12) * 12)
+    hi = min(84, (max(ms) // 12 + 1) * 12)
+    kb = Keyboard(lo, hi, y0=kb_y0, y1=kb_y1, width=width, max_kw=max_kw, margin=margin)
+    canvas = Image.new("RGB", (width, img.height), GROUND)
+    d = ImageDraw.Draw(canvas)
+    d.rectangle([0, lane_y0, width, kb_y0], fill=LANE)
+    for m in kb.whites:
+        if m % 12 in (0, 5):
+            x = int(kb.rect[m][0])
+            d.line([x, lane_y0, x, kb_y0], fill=LANE_LINE, width=2)
+    # first notes lit: the distinct keys of the first three notes
+    lit = []
+    for n in mel[:3]:
+        if n["p"] not in [l["p"] for l in lit]:
+            lit.append(n)
+    fills = {midi(n["p"]): CORAL for n in lit}
+    kb.draw(canvas, fills)
+    # upcoming notes as falling bars (timing as in the lesson video)
+    spb = 60.0 / max(40, bpm)
+    hit = kb_y0 - 10
+    pps = (hit - lane_y0 - 4) / (2.4 * spb)            # about two beats of upcoming notes
+    t = 0.0
+    start = sum(n["d"] for n in mel[:3]) * spb
+    for n in mel[3:11]:
+        on, off = t + start, t + start + n["d"] * spb
+        t += n["d"] * spb
+        rel_on, rel_off = on - start, off - start
+        yb, yt = hit - rel_on * pps, hit - rel_off * pps
+        if yb <= lane_y0:
+            break
+        yt = max(yt, lane_y0)
+        m = midi(n["p"])
+        x0, _, x1, _ = kb.rect[m]
+        w = (x1 - x0) * (0.86 if is_black(m) else 0.72)
+        cx = (x0 + x1) / 2
+        col = CORAL if not is_black(m) else mix(CORAL, INK, 0.25)
+        if yb - yt > 10:
+            d.rounded_rectangle([cx - w / 2, yt + 3, cx + w / 2, yb - 3], radius=min(10, (yb - yt) / 3, w / 2),
+                                fill=col)
+    for n in lit:
+        if n.get("f"):
+            cx, cy, r = kb.circle_pos(midi(n["p"]), True)
+            paste_center(canvas, finger_sprite(n["f"], r, INK), cx, cy)
+    img.paste(canvas.crop((0, lane_y0 - 2, width, kb_y1 + 2)), (x_off, lane_y0 - 2))
+
+
+def _age_pill(d, cx, y, age, size, anchor_left=False):
+    label = "Ages %s  |  %s" % (age, AGE_LABELS.get(age, ""))
+    f = font("text", size, 700)
+    tw = f.getlength(label) + size * 1.4
+    x0 = cx if anchor_left else cx - tw / 2
+    h = size * 1.7
+    d.rounded_rectangle([x0, y, x0 + tw, y + h], radius=h / 2, fill=CORAL)
+    d.text((x0 + tw / 2, y + h / 2 + 1), label, font=f, fill=WHITE, anchor="mm")
+    return y + h
+
+
+def render_covers(lesson, out_root):
+    sid = lesson["songId"]
+    out_dir = os.path.join(out_root, sid)
+    os.makedirs(out_dir, exist_ok=True)
+    mel, _ = song_melody(lesson)
+    bpm = next((sg["bpm"] for c in reversed(lesson["classes"]) for sg in c["segments"] if sg.get("bpm")), 90)
+    title, age = lesson.get("title", sid), lesson.get("ageGroup", "")
+    icon = lesson.get("icon", "music")
+
+    # 1280x720: icon left, title right, keyboard strip at the bottom
+    img = Image.new("RGB", (W, H), GROUND)
+    _cover_keys(img, mel, None, bpm, lane_y0=338, kb_y0=478, kb_y1=708, width=W, max_kw=112, margin=64)
+    ic = IC.draw_icon(icon, 280)
+    paste_center(img, ic, 250, 170)
+    d = ImageDraw.Draw(img)
+    f, lines, sz = fit_lines(title, "display", [104, 96, 88, 80, 72, 64, 56], 760, 2, 800)
+    lh = int(sz * 1.02)
+    block = lh * len(lines) + 24 + 46
+    y = 170 - block / 2
+    for l in lines:
+        d.text((440, y + lh / 2), l, font=f, fill=INK, anchor="lm")
+        y += lh
+    _age_pill(d, 444, y + 22, age, 27, anchor_left=True)
+    img.save(os.path.join(out_dir, "cover.jpg"), quality=90)
+
+    # 720x720 square: icon on top, title centred, keyboard strip at the bottom
+    S = 720
+    sq = Image.new("RGB", (S, S), GROUND)
+    _cover_keys(sq, mel, None, bpm, lane_y0=470, kb_y0=560, kb_y1=708, width=S, max_kw=86, margin=40)
+    paste_center(sq, IC.draw_icon(icon, 200), S / 2, 124)
+    d = ImageDraw.Draw(sq)
+    f, lines, sz = fit_lines(title, "display", [80, 72, 66, 60, 54, 48], S - 70, 2, 800)
+    lh = int(sz * 1.02)
+    y = 234 + (2 - len(lines)) * lh * 0.35
+    for l in lines:
+        d.text((S / 2, y + lh / 2), l, font=f, fill=INK, anchor="mm")
+        y += lh
+    _age_pill(d, S / 2, y + 16, age, 24)
+    sq.save(os.path.join(out_dir, "cover-square.jpg"), quality=90)
+    with open(os.path.join(out_dir, ".cover.hash"), "w") as fh:
+        fh.write(cover_hash(lesson) + "\n")
+
+
+def needs_cover(lesson, out_root):
+    d = os.path.join(out_root, lesson["songId"])
+    if not (os.path.exists(os.path.join(d, "cover.jpg")) and os.path.exists(os.path.join(d, "cover-square.jpg"))):
+        return True
+    hp = os.path.join(d, ".cover.hash")
+    if not os.path.exists(hp):
+        return False            # hand-made cover: leave it alone
+    with open(hp) as fh:
+        return fh.read().strip() != cover_hash(lesson)
+
+
 # ------------------------------------------------------------------ IO
 def load_lessons(lessons_dir):
     out = {}
@@ -876,6 +1020,9 @@ def main():
     ap.add_argument("--frames", help="comma-separated seconds: write PNG stills instead of video")
     ap.add_argument("--frames-out", default=os.path.join(HERE, "out", "_frames"))
     ap.add_argument("--samples", action="store_true", help="export video/samples/<Note>.mp3 (C3..C6)")
+    ap.add_argument("--covers", action="store_true",
+                    help="write out/<songId>/cover.jpg (1280x720) and cover-square.jpg (720x720); "
+                         "with --song/--all; existing covers are skipped unless --force")
     ap.add_argument("--list", action="store_true", help="print every classId, one per line")
     ap.add_argument("--todo", action="store_true", help="with --list: only classes that need rendering")
     ap.add_argument("--stamp", action="store_true",
@@ -900,6 +1047,17 @@ def main():
                 stamp(L, c, a.out)
                 n += 1
         print("stamped %d existing videos" % n)
+        return
+    if a.covers:
+        sids = a.song or (list(lessons) if a.all else [])
+        if not sids:
+            ap.error("--covers needs --song or --all")
+        n = 0
+        for sid in sids:
+            if a.force or needs_cover(lessons[sid], a.out):
+                render_covers(lessons[sid], a.out)
+                n += 1
+        print("covers: %d written, %d up to date" % (n, len(sids) - n))
         return
     todo = []
     if a.cls:

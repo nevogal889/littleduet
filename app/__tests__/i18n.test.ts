@@ -52,3 +52,18 @@ describe('parental gate question', () => {
     expect(Number(q.answer)).toBeLessThanOrEqual(50);
   });
 });
+
+describe('parental gate answer (math question only, no hold step)', () => {
+  it('accepts the digits with surrounding spaces and rejects anything else', () => {
+    const { checkGateAnswer } = require('@/i18n');
+    const q = { text: 'What is seven plus eight?', answer: '15' };
+    expect(checkGateAnswer(q, ' 15 ')).toBe(true);
+    expect(checkGateAnswer(q, '16')).toBe(false);
+    expect(checkGateAnswer(q, '')).toBe(false);
+  });
+
+  it('the app strings no longer contain a hold step', () => {
+    const overlay = require('@/data/strings.app.json');
+    expect(JSON.stringify(overlay).toLowerCase()).not.toContain('hold');
+  });
+});

@@ -5,6 +5,7 @@
  "icon": "music",
  "key": "C",
  "timeSignature": "4/4",
+ "totalSec": 1994,
  "classes": [
   {
    "id": "alphabet-song-c01",
@@ -3516,7 +3517,7 @@
    "title": "Bear low, bird high",
    "goal": "Hear the difference between low and high sounds",
    "type": "high-low",
-   "durationSec": 220,
+   "durationSec": 229,
    "parentTip": "Low keys are on the left, high keys on the right. Any key on the correct side counts.",
    "video": "alphabet-song/alphabet-song-c03.mp4",
    "thumb": "alphabet-song/alphabet-song-c03.jpg",
@@ -4581,6 +4582,65 @@
      "durationSec": 9
     },
     {
+     "kind": "high_low",
+     "caption": "The bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
      "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
@@ -4593,7 +4653,7 @@
    "title": "Loud and soft",
    "goal": "Tap the beat loudly, then softly",
    "type": "loud-soft",
-   "durationSec": 232,
+   "durationSec": 222,
    "parentTip": "Loud means strong, not banging. Whisper when it's time to play soft.",
    "video": "alphabet-song/alphabet-song-c04.mp4",
    "thumb": "alphabet-song/alphabet-song-c04.jpg",
@@ -6032,15 +6092,14 @@
     },
     {
      "kind": "say",
-     "caption": "Now loud for the whole song",
-     "parentCue": "Play strong together",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6
     },
     {
      "kind": "beat",
-     "caption": "Big loud taps",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
+     "caption": "Tap the beat",
+     "parentCue": "You play, your child taps",
      "bpm": 90,
      "leadInSec": 1.333,
      "notes": [
@@ -6246,104 +6305,6 @@
        "f": 2,
        "s": "Z",
        "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Now",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "know",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "A",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "B",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "Cs",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "Next",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "time",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "won't",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "with",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "me",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -6362,17 +6323,9 @@
       {
        "lyric": "W, X, Y and Z",
        "from": 22
-      },
-      {
-       "lyric": "Now I know my A B Cs",
-       "from": 29
-      },
-      {
-       "lyric": "Next time won't you sing with me?",
-       "from": 36
       }
      ],
-     "durationSec": 35
+     "durationSec": 25
     },
     {
      "kind": "praise",
@@ -6387,7 +6340,7 @@
    "title": "Slow and fast",
    "goal": "Follow the music when it goes slow and fast",
    "type": "fast-slow",
-   "durationSec": 275,
+   "durationSec": 211,
    "parentTip": "Let the tempo lead your child. Slow down if taps get wild, then try fast again.",
    "video": "alphabet-song/alphabet-song-c05.mp4",
    "thumb": "alphabet-song/alphabet-song-c05.jpg",
@@ -7815,354 +7768,6 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5
-    },
-    {
-     "kind": "say",
-     "caption": "Whole song, slow",
-     "parentCue": "Play the song slowly",
-     "durationSec": 5
-    },
-    {
-     "kind": "beat",
-     "caption": "Slow, slow, slow",
-     "parentCue": "Slow, like a sleepy turtle",
-     "bpm": 58,
-     "leadInSec": 2.069,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "A",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "B",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "C",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "D",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "E",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "F",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "G",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "H",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "J",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "K",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "L",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "M",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "N",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "O",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "P",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Q",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "R",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 4,
-       "s": "S",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "T",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "U",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "V",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "dou",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ble",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "u",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 4,
-       "s": "X",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Y",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "Z",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Now",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "know",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "A",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "B",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "Cs",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "Next",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "time",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "won't",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "with",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "me",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "A B C D E F G",
-       "from": 0
-      },
-      {
-       "lyric": "H I J K L M N O P",
-       "from": 7
-      },
-      {
-       "lyric": "Q R S, T U V",
-       "from": 16
-      },
-      {
-       "lyric": "W, X, Y and Z",
-       "from": 22
-      },
-      {
-       "lyric": "Now I know my A B Cs",
-       "from": 29
-      },
-      {
-       "lyric": "Next time won't you sing with me?",
-       "from": 36
-      }
-     ],
-     "durationSec": 54
-    },
-    {
-     "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
@@ -8174,7 +7779,7 @@
    "title": "Stop and go",
    "goal": "Tap when the music plays and freeze when it stops",
    "type": "stop-go",
-   "durationSec": 229,
+   "durationSec": 220,
    "parentTip": "Make freezing silly and fun. Holding still is a big skill for little ones.",
    "video": "alphabet-song/alphabet-song-c06.mp4",
    "thumb": "alphabet-song/alphabet-song-c06.jpg",
@@ -9230,67 +8835,9 @@
      "durationSec": 5
     },
     {
-     "kind": "beat",
-     "caption": "Go! Tap the beat",
-     "parentCue": "Play this line",
-     "bpm": 90,
-     "leadInSec": 1.333,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Q",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "R",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 4,
-       "s": "S",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "T",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "U",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "V",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Q R S, T U V",
-       "from": 0
-      }
-     ],
-     "durationSec": 9
-    },
-    {
      "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Stop playing and freeze together",
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
      "durationSec": 4
     },
     {
@@ -9303,18 +8850,1286 @@
   {
    "id": "alphabet-song-c07",
    "index": 7,
-   "title": "Play together",
-   "goal": "Play the song together, grown-up on the tune, child on the beat",
-   "type": "together",
-   "durationSec": 238,
-   "parentTip": "Follow your child's lead. If they stop to listen, keep playing and smile.",
+   "title": "Music games mix",
+   "goal": "Switch quickly between the games: high and low, loud and soft, fast and slow",
+   "type": "review",
+   "durationSec": 224,
+   "parentTip": "Let your child guess the game before the picture shows. Guessing is listening.",
    "video": "alphabet-song/alphabet-song-c07.mp4",
    "thumb": "alphabet-song/alphabet-song-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Alphabet Song",
-     "subcaption": "Class 7: Play together",
+     "subcaption": "Class 7: Music games mix",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Game time: listen and choose!",
+     "parentCue": "Mix all the games you know",
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Listen first, then tap",
+     "parentCue": "Let your child guess the game",
+     "durationSec": 6
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud taps!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft taps",
+     "parentCue": "Tap gently",
+     "dynamic": "soft",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "say",
+     "caption": "Stop! Freeze!",
+     "parentCue": "Freeze together",
+     "durationSec": 4
+    },
+    {
+     "kind": "beat",
+     "caption": "Slow taps",
+     "parentCue": "Slow like a turtle",
+     "bpm": 58,
+     "leadInSec": 2.069,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 12
+    },
+    {
+     "kind": "praise",
+     "caption": "You know all the games!",
+     "durationSec": 5
+    },
+    {
+     "kind": "beat",
+     "caption": "Fast taps!",
+     "parentCue": "Quick like a bunny",
+     "bpm": 117,
+     "leadInSec": 1.026,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud taps!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft taps",
+     "parentCue": "Tap gently",
+     "dynamic": "soft",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "say",
+     "caption": "Stop! Freeze!",
+     "parentCue": "Freeze together",
+     "durationSec": 4
+    },
+    {
+     "kind": "beat",
+     "caption": "Slow taps",
+     "parentCue": "Slow like a turtle",
+     "bpm": 58,
+     "leadInSec": 2.069,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 12
+    },
+    {
+     "kind": "praise",
+     "caption": "You know all the games!",
+     "durationSec": 5
+    },
+    {
+     "kind": "beat",
+     "caption": "Fast taps!",
+     "parentCue": "Quick like a bunny",
+     "bpm": 117,
+     "leadInSec": 1.026,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud taps!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft taps",
+     "parentCue": "Tap gently",
+     "dynamic": "soft",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "say",
+     "caption": "Stop! Freeze!",
+     "parentCue": "Freeze together",
+     "durationSec": 4
+    },
+    {
+     "kind": "beat",
+     "caption": "Slow taps",
+     "parentCue": "Slow like a turtle",
+     "bpm": 58,
+     "leadInSec": 2.069,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 12
+    },
+    {
+     "kind": "praise",
+     "caption": "You know all the games!",
+     "durationSec": 5
+    },
+    {
+     "kind": "beat",
+     "caption": "Fast taps!",
+     "parentCue": "Quick like a bunny",
+     "bpm": 117,
+     "leadInSec": 1.026,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 1,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 1,
+       "s": "B",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "C",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "D",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "s": "E",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "s": "F",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "s": "G",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A B C D E F G",
+       "from": 0
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "alphabet-song-c08",
+   "index": 8,
+   "title": "Play together",
+   "goal": "Play the song together, grown-up on the tune, child on the beat",
+   "type": "together",
+   "durationSec": 204,
+   "parentTip": "Follow your child's lead. If they stop to listen, keep playing and smile.",
+   "video": "alphabet-song/alphabet-song-c08.mp4",
+   "thumb": "alphabet-song/alphabet-song-c08.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "The Alphabet Song",
+     "subcaption": "Class 8: Play together",
      "durationSec": 5
     },
     {
@@ -10712,346 +11527,9 @@
     },
     {
      "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Swap: let your child choose loud or soft",
-     "durationSec": 6
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap the beat with me",
-     "parentCue": "Keep it steady",
-     "bpm": 90,
-     "leadInSec": 1.333,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "A",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "B",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "C",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "D",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "E",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "F",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "G",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "H",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "J",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "K",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "L",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "M",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "N",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "O",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "P",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Q",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "R",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 4,
-       "s": "S",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "T",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "U",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "V",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "dou",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ble",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "u",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 4,
-       "s": "X",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Y",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "Z",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Now",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "know",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "A",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "B",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "Cs",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "Next",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "time",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "won't",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "with",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "me",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "A B C D E F G",
-       "from": 0
-      },
-      {
-       "lyric": "H I J K L M N O P",
-       "from": 7
-      },
-      {
-       "lyric": "Q R S, T U V",
-       "from": 16
-      },
-      {
-       "lyric": "W, X, Y and Z",
-       "from": 22
-      },
-      {
-       "lyric": "Now I know my A B Cs",
-       "from": 29
-      },
-      {
-       "lyric": "Next time won't you sing with me?",
-       "from": 36
-      }
-     ],
-     "durationSec": 35
+     "caption": "Wiggle your fingers!",
+     "parentCue": "Shake out both hands together",
+     "durationSec": 7
     },
     {
      "kind": "praise",
@@ -11061,20 +11539,20 @@
    ]
   },
   {
-   "id": "alphabet-song-c08",
-   "index": 8,
+   "id": "alphabet-song-c09",
+   "index": 9,
    "title": "Concert time",
    "goal": "Play the whole song from start to end and celebrate",
    "type": "concert",
-   "durationSec": 244,
+   "durationSec": 228,
    "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "video": "alphabet-song/alphabet-song-c08.mp4",
-   "thumb": "alphabet-song/alphabet-song-c08.jpg",
+   "video": "alphabet-song/alphabet-song-c09.mp4",
+   "thumb": "alphabet-song/alphabet-song-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Alphabet Song",
-     "subcaption": "Class 8: Concert time",
+     "subcaption": "Class 9: Concert time",
      "durationSec": 5
     },
     {
@@ -12477,14 +12955,14 @@
     },
     {
      "kind": "say",
-     "caption": "One more, big finish!",
-     "parentCue": "Cheer at the last note",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6
     },
     {
      "kind": "beat",
-     "caption": "Big finish!",
-     "parentCue": "You play the tune, your child taps the beat",
+     "caption": "Tap the beat",
+     "parentCue": "You play, your child taps",
      "bpm": 90,
      "leadInSec": 1.333,
      "notes": [
@@ -12641,153 +13119,6 @@
        "f": 2,
        "s": "V",
        "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "dou",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ble",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "u",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 4,
-       "s": "X",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Y",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "Z",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Now",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "know",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "A",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "B",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "Cs",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "Next",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "time",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "won't",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "with",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "me",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -12802,21 +13133,9 @@
       {
        "lyric": "Q R S, T U V",
        "from": 16
-      },
-      {
-       "lyric": "W, X, Y and Z",
-       "from": 22
-      },
-      {
-       "lyric": "Now I know my A B Cs",
-       "from": 29
-      },
-      {
-       "lyric": "Next time won't you sing with me?",
-       "from": 36
       }
      ],
-     "durationSec": 35
+     "durationSec": 19
     },
     {
      "kind": "praise",

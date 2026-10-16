@@ -220,3 +220,28 @@ export function mergeProgress(a: ProgressMap, b: ProgressMap): ProgressMap {
   }
   return out;
 }
+
+/** 0-100 for one class; 100 only once complete (never "100%" while still unfinished). */
+export function classPercent(cls: LessonClass, p: ClassProgress | undefined): number {
+  if (!p) return 0;
+  if (p.completed) return 100;
+  return Math.min(99, Math.max(0, Math.round((p.positionSec / cls.durationSec) * 100)));
+}
+
+/** 0-100 for a song: classes weighted by duration, partial progress counted. */
+export function songPercent(lesson: Lesson, map: ProgressMap): number {
+  let total = 0;
+  let done = 0;
+  let allDone = lesson.classes.length > 0;
+  for (const c of lesson.classes) {
+    total += c.durationSec;
+    const p = map[c.id];
+    if (p?.completed) done += c.durationSec;
+    else {
+      allDone = false;
+      if (p) done += Math.min(p.positionSec, c.durationSec);
+    }
+  }
+  if (allDone) return 100;
+  return total ? Math.min(99, Math.round((done / total) * 100)) : 0;
+}

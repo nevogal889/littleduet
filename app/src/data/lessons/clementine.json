@@ -5,6 +5,7 @@
  "icon": "heart",
  "key": "C",
  "timeSignature": "3/4",
+ "totalSec": 2211,
  "classes": [
   {
    "id": "clementine-c01",
@@ -12,7 +13,7 @@
    "title": "Hands ready, first half",
    "goal": "Find the hand position and learn the first half",
    "type": "hand-position",
-   "durationSec": 228,
+   "durationSec": 215,
    "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
    "video": "clementine/clementine-c01.mp4",
    "thumb": "clementine/clementine-c01.jpg",
@@ -676,7 +677,7 @@
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
+     "caption": "Let's do it again",
      "parentCue": "Fingers ready on the lit keys",
      "durationSec": 6
     },
@@ -790,116 +791,6 @@
       }
      ],
      "durationSec": 27
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 90,
-     "leadInSec": 1.333,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "In"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "cav"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "ern"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "can"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "yon"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Ex"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ca"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "vat"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ing"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "for"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 3,
-       "f": 2,
-       "s": "mine"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "In a cavern, in a canyon",
-       "from": 0
-      },
-      {
-       "lyric": "Excavating for a mine",
-       "from": 8
-      }
-     ],
-     "durationSec": 13
     },
     {
      "kind": "praise",
@@ -1788,7 +1679,7 @@
    "title": "Put it together",
    "goal": "Play the whole song slowly, all parts in order",
    "type": "put-together",
-   "durationSec": 276,
+   "durationSec": 214,
    "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
    "video": "clementine/clementine-c03.mp4",
    "thumb": "clementine/clementine-c03.jpg",
@@ -2644,16 +2535,16 @@
     },
     {
      "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Take a breath between lines",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Keep going after a slip",
-     "bpm": 75,
-     "leadInSec": 1.6,
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
      "gapBeats": 1,
      "notes": [
       {
@@ -2793,7 +2684,67 @@
        "d": 1,
        "f": 1,
        "s": "er"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 0
       },
+      {
+       "lyric": "Excavating for a mine",
+       "from": 8
+      },
+      {
+       "lyric": "Dwelt a miner, forty-niner",
+       "from": 15
+      }
+     ],
+     "durationSec": 36
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "clementine-c04",
+   "index": 4,
+   "title": "Tricky spots",
+   "goal": "Practise the hardest part slowly, then a little faster",
+   "type": "review",
+   "durationSec": 214,
+   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "video": "clementine/clementine-c04.mp4",
+   "thumb": "clementine/clementine-c04.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Oh My Darling, Clementine",
+     "subcaption": "Class 4: Tricky spots",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Tricky spots, nice and slow",
+     "parentCue": "This is the hardest part of the song",
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Slow, then a bit faster",
+     "parentCue": "Say the finger numbers out loud",
+     "durationSec": 7
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch slowly",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 60,
+     "leadInSec": 2.0,
+     "notes": [
       {
        "p": "C4",
        "d": 0.5,
@@ -2840,163 +2791,94 @@
        "p": "C4",
        "d": 0.5,
        "f": 4,
-       "s": "Oh"
+       "s": "In"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 4,
-       "s": "my"
+       "s": "a"
       },
       {
        "p": "C4",
        "d": 1,
        "f": 4,
-       "s": "dar"
+       "s": "cav"
       },
       {
        "p": "G3",
        "d": 1,
        "f": 1,
-       "s": "ling"
+       "s": "ern"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "oh"
+       "s": "in"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "my"
+       "s": "a"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "dar"
+       "s": "can"
       },
       {
        "p": "C4",
        "d": 1,
        "f": 1,
-       "s": "ling"
+       "s": "yon"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "And his daughter Clementine",
+       "from": 0
       },
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 7
+      }
+     ],
+     "durationSec": 18
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn, slowly",
+     "parentCue": "Slow is perfect",
+     "bpm": 60,
+     "leadInSec": 2.0,
+     "gapBeats": 1,
+     "notes": [
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "Oh"
+       "s": "And"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "dar"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ling"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Clem"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "D4",
-       "d": 3,
-       "f": 2,
-       "s": "tine"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "You"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "lost"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "gone"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "for"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ev"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "er"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Dread"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ful"
+       "s": "his"
       },
       {
        "p": "D4",
        "d": 1.5,
        "f": 2,
-       "s": "sor"
+       "s": "daugh"
       },
       {
        "p": "G3",
        "d": 0.5,
        "f": 1,
-       "s": "ry"
+       "s": "ter"
       },
       {
        "p": "B3",
@@ -3015,43 +2897,550 @@
        "d": 3,
        "f": 4,
        "s": "tine"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon"
       }
      ],
      "lines": [
       {
-       "lyric": "In a cavern, in a canyon",
+       "lyric": "And his daughter Clementine",
        "from": 0
       },
       {
-       "lyric": "Excavating for a mine",
-       "from": 8
-      },
-      {
-       "lyric": "Dwelt a miner, forty-niner",
-       "from": 15
-      },
-      {
-       "lyric": "And his daughter Clementine",
-       "from": 23
-      },
-      {
-       "lyric": "Oh my darling, oh my darling",
-       "from": 30
-      },
-      {
-       "lyric": "Oh my darling Clementine",
-       "from": 38
-      },
-      {
-       "lyric": "You are lost and gone forever",
-       "from": 45
-      },
-      {
-       "lyric": "Dreadful sorry, Clementine",
-       "from": 53
+       "lyric": "In a cavern, in a canyon",
+       "from": 7
       }
      ],
-     "durationSec": 98
+     "durationSec": 33
+    },
+    {
+     "kind": "say",
+     "caption": "A little faster now",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 70,
+     "leadInSec": 1.714,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "And"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "daugh"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ter"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "And his daughter Clementine",
+       "from": 0
+      },
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 7
+      }
+     ],
+     "durationSec": 29
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Again, a bit faster",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "And"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "daugh"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ter"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "And his daughter Clementine",
+       "from": 0
+      },
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 7
+      }
+     ],
+     "durationSec": 25
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Nearly full speed",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "And"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "daugh"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ter"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "And his daughter Clementine",
+       "from": 0
+      },
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 7
+      }
+     ],
+     "durationSec": 23
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Nearly full speed",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "And"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "daugh"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ter"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "And his daughter Clementine",
+       "from": 0
+      },
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 7
+      }
+     ],
+     "durationSec": 23
     },
     {
      "kind": "praise",
@@ -3061,20 +3450,20 @@
    ]
   },
   {
-   "id": "clementine-c04",
-   "index": 4,
+   "id": "clementine-c05",
+   "index": 5,
    "title": "Left hand helper",
    "goal": "Play one low left hand note at the start of each bar",
    "type": "left-hand",
-   "durationSec": 247,
+   "durationSec": 233,
    "parentTip": "You play the tune, your child plays the low notes. Count bars out loud to help.",
-   "video": "clementine/clementine-c04.mp4",
-   "thumb": "clementine/clementine-c04.jpg",
+   "video": "clementine/clementine-c05.mp4",
+   "thumb": "clementine/clementine-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Oh My Darling, Clementine",
-     "subcaption": "Class 4: Left hand helper",
+     "subcaption": "Class 5: Left hand helper",
      "durationSec": 5
     },
     {
@@ -3933,14 +4322,1415 @@
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Ex"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ca"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "vat"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ing"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "for"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "mine"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 0
+      },
+      {
+       "lyric": "Excavating for a mine",
+       "from": 8
+      }
+     ],
+     "durationSec": 25
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "clementine-c06",
+   "index": 6,
+   "title": "Left hand, full speed",
+   "goal": "Keep the left hand notes going at full speed with the tune",
+   "type": "left-hand",
+   "durationSec": 210,
+   "parentTip": "Your child only plays the low notes. Keeping going matters more than every note.",
+   "video": "clementine/clementine-c06.mp4",
+   "thumb": "clementine/clementine-c06.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Oh My Darling, Clementine",
+     "subcaption": "Class 6: Left hand, full speed",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Left hand, full speed!",
      "parentCue": "You play the tune, child plays low notes",
      "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Count the bars: one, two, three",
+     "parentCue": "Count out loud together",
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Left hand",
+     "parentCue": "Left hand only",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "rest": true,
+       "d": 1.0
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      }
+     ],
+     "durationSec": 55
     },
     {
      "kind": "together",
      "caption": "Low notes with the tune",
      "parentCue": "You play the blue keys",
+     "bpm": 100,
+     "leadInSec": 1.2,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Ex",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ca",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "vat",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "for",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "mine",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Dwelt",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "min",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "er",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "for",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ty",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "nin",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "er",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "And",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "his",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "daugh",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ter",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Oh",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "dar",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ling",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "oh",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dar",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ling",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Oh",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "dar",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ling",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Clem",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "en",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "tine",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "You",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "are",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "lost",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "gone",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "for",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ev",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "er",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Dread",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ful",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sor",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 0
+      },
+      {
+       "lyric": "Excavating for a mine",
+       "from": 8
+      },
+      {
+       "lyric": "Dwelt a miner, forty-niner",
+       "from": 15
+      },
+      {
+       "lyric": "And his daughter Clementine",
+       "from": 23
+      },
+      {
+       "lyric": "Oh my darling, oh my darling",
+       "from": 30
+      },
+      {
+       "lyric": "Oh my darling Clementine",
+       "from": 38
+      },
+      {
+       "lyric": "You are lost and gone forever",
+       "from": 45
+      },
+      {
+       "lyric": "Dreadful sorry, Clementine",
+       "from": 53
+      }
+     ],
+     "durationSec": 38
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Keep the low notes steady",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Low notes, full speed",
+     "parentCue": "Don't stop for mistakes",
+     "bpm": 100,
+     "leadInSec": 1.2,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Ex",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ca",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "vat",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "for",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "mine",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Dwelt",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "min",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "er",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "for",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ty",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "nin",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "er",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "And",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "his",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "daugh",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ter",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Oh",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "dar",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ling",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "oh",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dar",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ling",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Oh",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "dar",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ling",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Clem",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "en",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "tine",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "You",
+       "who": "parent",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "are",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "lost",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "gone",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "for",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ev",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "er",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Dread",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ful",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sor",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine",
+       "who": "parent",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 0
+      },
+      {
+       "lyric": "Excavating for a mine",
+       "from": 8
+      },
+      {
+       "lyric": "Dwelt a miner, forty-niner",
+       "from": 15
+      },
+      {
+       "lyric": "And his daughter Clementine",
+       "from": 23
+      },
+      {
+       "lyric": "Oh my darling, oh my darling",
+       "from": 30
+      },
+      {
+       "lyric": "Oh my darling Clementine",
+       "from": 38
+      },
+      {
+       "lyric": "You are lost and gone forever",
+       "from": 45
+      },
+      {
+       "lyric": "Dreadful sorry, Clementine",
+       "from": 53
+      }
+     ],
+     "durationSec": 38
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Again, nice and easy",
+     "parentCue": "Keep the low notes steady",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Low notes, full speed",
+     "parentCue": "Don't stop for mistakes",
      "bpm": 100,
      "leadInSec": 1.2,
      "notes": [
@@ -4499,20 +6289,20 @@
    ]
   },
   {
-   "id": "clementine-c05",
-   "index": 5,
+   "id": "clementine-c07",
+   "index": 7,
    "title": "Hands together, slowly",
    "goal": "Play the tune with a low left hand note on each bar",
    "type": "hands-together",
-   "durationSec": 226,
+   "durationSec": 222,
    "parentTip": "Two hands is hard work. Go very slowly and stop while it's still fun.",
-   "video": "clementine/clementine-c05.mp4",
-   "thumb": "clementine/clementine-c05.jpg",
+   "video": "clementine/clementine-c07.mp4",
+   "thumb": "clementine/clementine-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Oh My Darling, Clementine",
-     "subcaption": "Class 5: Hands together, slowly",
+     "subcaption": "Class 7: Hands together, slowly",
      "durationSec": 5
     },
     {
@@ -5057,17 +6847,777 @@
      "durationSec": 58
     },
     {
+     "kind": "together",
+     "caption": "Together, slowly",
+     "parentCue": "Play along slowly",
+     "bpm": 65,
+     "leadInSec": 1.846,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Ex"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ca"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "vat",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ing"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "for"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "mine"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Dwelt"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "min"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "er",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "for"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ty"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "nin",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "er"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "And"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "daugh",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ter"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Oh"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "my"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "dar"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ling",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "oh"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dar"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ling",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Oh"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "dar"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ling"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Clem"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "en"
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "tine",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "You",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "are"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "lost"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "gone",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "for"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ev"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "er",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Dread"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ful"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sor"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ry"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 0
+      },
+      {
+       "lyric": "Excavating for a mine",
+       "from": 8
+      },
+      {
+       "lyric": "Dwelt a miner, forty-niner",
+       "from": 15
+      },
+      {
+       "lyric": "And his daughter Clementine",
+       "from": 23
+      },
+      {
+       "lyric": "Oh my darling, oh my darling",
+       "from": 30
+      },
+      {
+       "lyric": "Oh my darling Clementine",
+       "from": 38
+      },
+      {
+       "lyric": "You are lost and gone forever",
+       "from": 45
+      },
+      {
+       "lyric": "Dreadful sorry, Clementine",
+       "from": 53
+      }
+     ],
+     "durationSec": 57
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
      "kind": "say",
-     "caption": "The whole song, both hands",
-     "parentCue": "Help with the left hand if needed",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Ex"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ca"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "vat"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ing"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "for"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "mine"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Dwelt"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "min"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "er"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "for"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ty"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "nin"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "er"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "And"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "daugh"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ter"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 0
+      },
+      {
+       "lyric": "Excavating for a mine",
+       "from": 8
+      },
+      {
+       "lyric": "Dwelt a miner, forty-niner",
+       "from": 15
+      },
+      {
+       "lyric": "And his daughter Clementine",
+       "from": 23
+      }
+     ],
+     "durationSec": 48
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "clementine-c08",
+   "index": 8,
+   "title": "Hands together, a bit faster",
+   "goal": "Play both hands together closer to full speed",
+   "type": "hands-together",
+   "durationSec": 236,
+   "parentTip": "Speed comes last. If notes fall apart, go back to the slower tempo.",
+   "video": "clementine/clementine-c08.mp4",
+   "thumb": "clementine/clementine-c08.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Oh My Darling, Clementine",
+     "subcaption": "Class 8: Hands together, a bit faster",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Both hands, a bit faster",
+     "parentCue": "Only if the slow class felt good",
+     "showKeys": [
+      {
+       "p": "C4",
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "f": 3
+      },
+      {
+       "p": "C4",
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "f": 5
+      }
+     ],
      "durationSec": 7
     },
     {
      "kind": "your_turn",
      "caption": "Your turn! Both hands",
-     "parentCue": "Keep it slow",
-     "bpm": 65,
-     "leadInSec": 1.846,
+     "parentCue": "Warm up slowly",
+     "bpm": 75,
+     "leadInSec": 1.6,
      "gapBeats": 1,
      "notes": [
       {
@@ -5555,7 +8105,1077 @@
        "from": 53
       }
      ],
-     "durationSec": 113
+     "durationSec": 98
+    },
+    {
+     "kind": "together",
+     "caption": "A bit faster now",
+     "parentCue": "Keep the beat steady",
+     "bpm": 85,
+     "leadInSec": 1.412,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Ex"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ca"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "vat",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ing"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "for"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "mine"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Dwelt"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "min"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "er",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "for"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ty"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "nin",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "er"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "And"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "daugh",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ter"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Oh"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "my"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "dar"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ling",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "oh"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dar"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ling",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Oh"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "dar"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ling"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Clem"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "en"
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "tine",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "You",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "are"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "lost"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "gone",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "for"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ev"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "er",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Dread"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ful"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sor"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ry"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 0
+      },
+      {
+       "lyric": "Excavating for a mine",
+       "from": 8
+      },
+      {
+       "lyric": "Dwelt a miner, forty-niner",
+       "from": 15
+      },
+      {
+       "lyric": "And his daughter Clementine",
+       "from": 23
+      },
+      {
+       "lyric": "Oh my darling, oh my darling",
+       "from": 30
+      },
+      {
+       "lyric": "Oh my darling Clementine",
+       "from": 38
+      },
+      {
+       "lyric": "You are lost and gone forever",
+       "from": 45
+      },
+      {
+       "lyric": "Dreadful sorry, Clementine",
+       "from": 53
+      }
+     ],
+     "durationSec": 44
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Relax your shoulders",
+     "durationSec": 5
+    },
+    {
+     "kind": "together",
+     "caption": "Both hands together",
+     "parentCue": "Help with the left hand if needed",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Ex"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ca"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "vat",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ing"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "for"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "mine"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Dwelt"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "min"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "er",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "for"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ty"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "nin",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "er"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "And"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "his"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "daugh",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ter"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Oh"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "my"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "dar"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ling",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "oh"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dar"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ling",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Oh"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "dar"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ling"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Clem"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "en"
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "tine",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "You",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "are"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "lost"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "gone",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "for"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ev"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "er",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Dread"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ful"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sor"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "ry"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Clem"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "en"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "tine",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 0
+      },
+      {
+       "lyric": "Excavating for a mine",
+       "from": 8
+      },
+      {
+       "lyric": "Dwelt a miner, forty-niner",
+       "from": 15
+      },
+      {
+       "lyric": "And his daughter Clementine",
+       "from": 23
+      },
+      {
+       "lyric": "Oh my darling, oh my darling",
+       "from": 30
+      },
+      {
+       "lyric": "Oh my darling Clementine",
+       "from": 38
+      },
+      {
+       "lyric": "You are lost and gone forever",
+       "from": 45
+      },
+      {
+       "lyric": "Dreadful sorry, Clementine",
+       "from": 53
+      }
+     ],
+     "durationSec": 47
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "cav"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ern"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "can"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "yon"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In a cavern, in a canyon",
+       "from": 0
+      }
+     ],
+     "durationSec": 14
     },
     {
      "kind": "praise",
@@ -5565,20 +9185,20 @@
    ]
   },
   {
-   "id": "clementine-c06",
-   "index": 6,
+   "id": "clementine-c09",
+   "index": 9,
    "title": "Play along",
    "goal": "Play the whole song along with the music at full speed",
    "type": "play-along",
-   "durationSec": 245,
+   "durationSec": 205,
    "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "video": "clementine/clementine-c06.mp4",
-   "thumb": "clementine/clementine-c06.jpg",
+   "video": "clementine/clementine-c09.mp4",
+   "thumb": "clementine/clementine-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Oh My Darling, Clementine",
-     "subcaption": "Class 6: Play along",
+     "subcaption": "Class 9: Play along",
      "durationSec": 5
     },
     {
@@ -7233,413 +10853,9 @@
     },
     {
      "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "Sing the words together",
-     "durationSec": 6
-    },
-    {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Sing while you play",
-     "bpm": 100,
-     "leadInSec": 1.2,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "In"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "cav"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "ern"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "can"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "yon"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Ex"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ca"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "vat"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ing"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "for"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 3,
-       "f": 2,
-       "s": "mine"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Dwelt"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "min"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ty"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "nin"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "er"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "And"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "his"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "daugh"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "Clem"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "en"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 4,
-       "s": "tine"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Oh"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "my"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "dar"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "ling"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "oh"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "dar"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ling"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Oh"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "dar"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ling"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Clem"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "D4",
-       "d": 3,
-       "f": 2,
-       "s": "tine"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "You"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "lost"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "gone"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "for"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ev"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "er"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Dread"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ful"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sor"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "ry"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "Clem"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "en"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 4,
-       "s": "tine"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "In a cavern, in a canyon",
-       "from": 0
-      },
-      {
-       "lyric": "Excavating for a mine",
-       "from": 8
-      },
-      {
-       "lyric": "Dwelt a miner, forty-niner",
-       "from": 15
-      },
-      {
-       "lyric": "And his daughter Clementine",
-       "from": 23
-      },
-      {
-       "lyric": "Oh my darling, oh my darling",
-       "from": 30
-      },
-      {
-       "lyric": "Oh my darling Clementine",
-       "from": 38
-      },
-      {
-       "lyric": "You are lost and gone forever",
-       "from": 45
-      },
-      {
-       "lyric": "Dreadful sorry, Clementine",
-       "from": 53
-      }
-     ],
-     "durationSec": 38
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 4
     },
     {
      "kind": "praise",
@@ -7649,20 +10865,20 @@
    ]
   },
   {
-   "id": "clementine-c07",
-   "index": 7,
+   "id": "clementine-c10",
+   "index": 10,
    "title": "Concert time",
    "goal": "Play the whole song from start to end and celebrate",
    "type": "concert",
-   "durationSec": 259,
+   "durationSec": 246,
    "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "video": "clementine/clementine-c07.mp4",
-   "thumb": "clementine/clementine-c07.jpg",
+   "video": "clementine/clementine-c10.mp4",
+   "thumb": "clementine/clementine-c10.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Oh My Darling, Clementine",
-     "subcaption": "Class 7: Concert time",
+     "subcaption": "Class 10: Concert time",
      "durationSec": 5
     },
     {
@@ -9693,16 +12909,17 @@
     },
     {
      "kind": "say",
-     "caption": "One more, big finish!",
-     "parentCue": "Cheer at the last note",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6
     },
     {
-     "kind": "together",
-     "caption": "Big finish!",
-     "parentCue": "Both hands, nice and steady",
-     "bpm": 100,
-     "leadInSec": 1.2,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "C4",
@@ -9720,13 +12937,7 @@
        "p": "C4",
        "d": 1,
        "f": 4,
-       "s": "cav",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
+       "s": "cav"
       },
       {
        "p": "G3",
@@ -9750,13 +12961,7 @@
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "can",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
+       "s": "can"
       },
       {
        "p": "C4",
@@ -9780,13 +12985,7 @@
        "p": "G4",
        "d": 1.5,
        "f": 5,
-       "s": "vat",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
+       "s": "vat"
       },
       {
        "p": "G4",
@@ -9804,355 +13003,13 @@
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "a",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
+       "s": "a"
       },
       {
        "p": "D4",
        "d": 3,
        "f": 2,
        "s": "mine"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Dwelt"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "min"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "er",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ty"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "nin",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "er"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "And"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "his"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "daugh",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "Clem"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "en",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 4,
-       "s": "tine"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Oh"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "my"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "dar"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "ling",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "oh"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "dar"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ling",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Oh"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "dar"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ling"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Clem"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "D4",
-       "d": 3,
-       "f": 2,
-       "s": "tine",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "You",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "lost"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "gone",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "for"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ev"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "er",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Dread"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ful"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sor"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "ry"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "Clem"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "en"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 4,
-       "s": "tine",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
       }
      ],
      "lines": [
@@ -10163,33 +13020,9 @@
       {
        "lyric": "Excavating for a mine",
        "from": 8
-      },
-      {
-       "lyric": "Dwelt a miner, forty-niner",
-       "from": 15
-      },
-      {
-       "lyric": "And his daughter Clementine",
-       "from": 23
-      },
-      {
-       "lyric": "Oh my darling, oh my darling",
-       "from": 30
-      },
-      {
-       "lyric": "Oh my darling Clementine",
-       "from": 38
-      },
-      {
-       "lyric": "You are lost and gone forever",
-       "from": 45
-      },
-      {
-       "lyric": "Dreadful sorry, Clementine",
-       "from": 53
       }
      ],
-     "durationSec": 38
+     "durationSec": 25
     },
     {
      "kind": "praise",

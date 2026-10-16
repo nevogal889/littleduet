@@ -11,7 +11,6 @@ import type { LessonClass, Song } from '../types';
 import { SongArt } from './art/SongArt';
 import { Icon } from './Icon';
 import { Keyboard, laneX, layoutKeys } from './Keyboard';
-import { LockPill, usePlayerLock } from './PlayerLock';
 import { Button, ProgressBar } from './ui';
 
 const WINDOW = 3; // seconds of falling notes visible
@@ -59,7 +58,6 @@ export function LessonStage({
   const [flash, setFlash] = useState<Record<string, boolean>>({});
   const [pulse, setPulse] = useState(0); // beat circle / cheer, decays
   const [cheer, setCheer] = useState<'low' | 'high' | null>(null);
-  const lock = usePlayerLock(paused);
   const finishedRef = useRef(false);
   const lastSave = useRef(Date.now());
 
@@ -156,28 +154,18 @@ export function LessonStage({
 
   return (
     <View style={[styles.root, { paddingTop: insets.top, paddingBottom: Math.max(insets.bottom, space.md) }]} testID="stage">
+      {/* Parent controls: always visible, top of the screen, far from the keyboard. */}
       <View style={styles.topBar}>
-        {lock.unlocked ? (
-          <View style={styles.controls}>
-            <Button testID="player-exit" variant="secondary" size="md" full={false} icon="close" label={t('player.exit')} onPress={exit} />
-            <Button
-              testID="player-pause"
-              variant="secondary"
-              size="md"
-              full={false}
-              icon={paused ? 'play' : 'pause'}
-              label={paused ? t('player.play') : t('player.pause')}
-              onPress={() => {
-                setPaused((v) => !v);
-                lock.poke();
-              }}
-            />
-            <Button testID="player-lock" variant="ghost" size="md" full={false} icon="lock" label={t('player.lock')} onPress={lock.lock} />
-          </View>
-        ) : (
-          <View style={{ flex: 1 }} />
-        )}
-        {!lock.unlocked ? <LockPill onUnlock={lock.unlock} /> : null}
+        <Button testID="player-exit" variant="secondary" size="md" full={false} icon="close" label={t('player.close')} onPress={exit} />
+        <Button
+          testID="player-pause"
+          variant="secondary"
+          size="md"
+          full={false}
+          icon={paused ? 'play' : 'pause'}
+          label={paused ? t('player.play') : t('player.pause')}
+          onPress={() => setPaused((v) => !v)}
+        />
       </View>
 
       <View style={styles.band}>
@@ -280,8 +268,7 @@ export function LessonStage({
 
 const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: colors.ground, alignItems: 'stretch' },
-  topBar: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: space.sm, minHeight: 72 },
-  controls: { flex: 1, flexDirection: 'row', flexWrap: 'wrap', gap: space.sm, alignItems: 'center', padding: space.sm },
+  topBar: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: space.lg, paddingVertical: space.md, gap: space.md },
   band: {
     marginHorizontal: space.lg,
     backgroundColor: colors.surface,

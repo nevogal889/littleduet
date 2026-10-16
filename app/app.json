@@ -7,8 +7,8 @@
     "orientation": "default",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "light",
-    "backgroundColor": "#EEF3F7",
-    "primaryColor": "#F26B4F",
+    "backgroundColor": "#F7F5F2",
+    "primaryColor": "#C4513A",
     "newArchEnabled": true,
     "ios": {
       "bundleIdentifier": "com.littleduet.app",
@@ -21,7 +21,9 @@
       },
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
-        "UISupportedInterfaceOrientations": ["UIInterfaceOrientationPortrait"],
+        "UISupportedInterfaceOrientations": [
+          "UIInterfaceOrientationPortrait"
+        ],
         "UISupportedInterfaceOrientations~ipad": [
           "UIInterfaceOrientationPortrait",
           "UIInterfaceOrientationPortraitUpsideDown",
@@ -38,7 +40,9 @@
         "NSPrivacyAccessedAPITypes": [
           {
             "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
-            "NSPrivacyAccessedAPITypeReasons": ["CA92.1"]
+            "NSPrivacyAccessedAPITypeReasons": [
+              "CA92.1"
+            ]
           }
         ]
       }
@@ -66,23 +70,39 @@
       "output": "single",
       "favicon": "./assets/images/favicon.png",
       "name": "Little Duet",
-      "themeColor": "#F26B4F",
-      "backgroundColor": "#EEF3F7"
+      "themeColor": "#F7F5F2",
+      "backgroundColor": "#F7F5F2"
     },
     "plugins": [
       "expo-router",
       "expo-font",
       "expo-apple-authentication",
-      ["expo-video", { "supportsBackgroundPlayback": false, "supportsPictureInPicture": false }],
-      ["expo-audio", { "microphonePermission": false }],
-      ["expo-screen-orientation", { "initialOrientation": "DEFAULT" }],
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": false,
+          "supportsPictureInPicture": false
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "DEFAULT"
+        }
+      ],
       [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#EEF3F7"
+          "backgroundColor": "#F7F5F2"
         }
       ]
     ],

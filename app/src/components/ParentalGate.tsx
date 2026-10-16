@@ -1,16 +1,29 @@
 import React, { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react';
-import { Linking, Modal, StyleSheet, TextInput, View } from 'react-native';
+import { Linking, Modal, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { gateQuestion, t } from '../i18n';
+import { checkGateAnswer, gateQuestion, t } from '../i18n';
 import { colors, fonts, radius, space, touch, type } from '../theme';
-import { HoldButton } from './HoldButton';
 import { Button, T } from './ui';
 
 export type GatePurpose = 'paywall' | 'settings' | 'link' | 'account' | 'email';
 
-/** Apple 1.3: hold for 3 seconds, then a written math question typed as digits. */
-export function ParentalGate({ purpose, onPass, onCancel, inset }: { purpose: GatePurpose; onPass: () => void; onCancel?: () => void; inset?: boolean }) {
-  const [step, setStep] = useState<'hold' | 'ask'>('hold');
+/** Apple 1.3 parental gate: a written math question (numbers spelled out) typed as digits. */
+export function ParentalGate({
+  purpose,
+  onPass,
+  onCancel,
+  inset,
+  compact,
+  cancelLabel,
+}: {
+  purpose: GatePurpose;
+  onPass: () => void;
+  onCancel?: () => void;
+  inset?: boolean;
+  /** Onboarding: just "For grown-ups" + the question. */
+  compact?: boolean;
+  cancelLabel?: string;
+}) {
   const [q, setQ] = useState(() => gateQuestion());
   const [answer, setAnswer] = useState('');
   const [wrong, setWrong] = useState(0);
@@ -28,7 +41,7 @@ export function ParentalGate({ purpose, onPass, onCancel, inset }: { purpose: Ga
   }, [pausedUntil]);
 
   const submit = () => {
-    if (answer.trim() === q.answer) {
+    if (checkGateAnswer(q, answer)) {
       onPass();
       return;
     }
@@ -46,46 +59,36 @@ export function ParentalGate({ purpose, onPass, onCancel, inset }: { purpose: Ga
 
   return (
     <View style={[styles.wrap, inset && styles.inset]} testID="gate">
-      <T v="h1" accessibilityRole="header">
-        {t('gate.title')}
+      <Text style={styles.kicker} accessibilityRole="header">
+        {t('gate.compactTitle')}
+      </Text>
+      <T v="h2" testID="gate-question" nativeID="gate-question">
+        {q.text}
       </T>
-      <T v="body">{t(`gate.purpose.${purpose}`)}</T>
-      <T v="small">{t('gate.childPrompt')}</T>
-      {step === 'hold' ? (
-        <HoldButton testID="gate-hold" label={t('gate.holdTitle')} hint={t('gate.holdHint')} ms={3000} icon="lock" onComplete={() => setStep('ask')} />
-      ) : (
-        <View style={styles.ask}>
-          <T v="body">{t('gate.instruction')}</T>
-          <T v="h2" testID="gate-question">
-            {q.text}
-          </T>
-          <T v="bodyStrong" nativeID="gate-answer-label">
-            {t('gate.inputLabel')}
-          </T>
-          <TextInput
-            testID="gate-answer"
-            accessibilityLabel={t('gate.inputLabel')}
-            accessibilityLabelledBy="gate-answer-label"
-            value={answer}
-            onChangeText={(v) => setAnswer(v.replace(/[^0-9]/g, '').slice(0, 4))}
-            keyboardType="number-pad"
-            inputMode="numeric"
-            returnKeyType="done"
-            onSubmitEditing={submit}
-            editable={!pausedUntil}
-            autoFocus
-            style={styles.input}
-            maxLength={4}
-          />
-          {msg ? (
-            <T v="bodyStrong" accessibilityLiveRegion="polite" style={{ color: colors.indigo }}>
-              {msg}
-            </T>
-          ) : null}
-          <Button testID="gate-submit" label={t('gate.submit')} onPress={submit} disabled={!answer || !!pausedUntil} />
-        </View>
-      )}
-      {onCancel ? <Button testID="gate-cancel" variant="ghost" size="md" label={t('gate.cancel')} onPress={onCancel} /> : null}
+      <TextInput
+        testID="gate-answer"
+        accessibilityLabel={`${t('gate.inputLabel')}: ${q.text}`}
+        accessibilityLabelledBy="gate-question"
+        placeholder={t('gate.inputLabel')}
+        placeholderTextColor={colors.inkSoft}
+        value={answer}
+        onChangeText={(v) => setAnswer(v.replace(/[^0-9]/g, '').slice(0, 4))}
+        keyboardType="number-pad"
+        inputMode="numeric"
+        returnKeyType="done"
+        onSubmitEditing={submit}
+        editable={!pausedUntil}
+        autoFocus
+        style={styles.input}
+        maxLength={4}
+      />
+      {msg ? (
+        <T v="body" accessibilityLiveRegion="polite" style={{ color: colors.inkSoft }}>
+          {msg}
+        </T>
+      ) : null}
+      <Button testID="gate-submit" label={t('gate.submit')} onPress={submit} disabled={!answer || !!pausedUntil} />
+      {onCancel ? <Button testID="gate-cancel" variant="ghost" size="md" label={cancelLabel ?? t('gate.cancel')} onPress={onCancel} /> : null}
     </View>
   );
 }
@@ -163,19 +166,19 @@ export function useGate(): GateCtx {
 
 const styles = StyleSheet.create({
   modal: { flex: 1, backgroundColor: colors.ground },
-  wrap: { width: '100%', maxWidth: 560, alignSelf: 'center', gap: space.lg },
-  inset: { padding: space.xl },
-  ask: { gap: space.md },
+  wrap: { width: '100%', maxWidth: 520, alignSelf: 'center', gap: space.md },
+  inset: { padding: space.xl, paddingTop: space.xxxl },
+  kicker: { fontFamily: fonts.extra, fontSize: 13, color: colors.inkSoft, textTransform: 'uppercase', letterSpacing: 1.2 },
   input: {
     minHeight: touch.primary,
     borderWidth: 2,
-    borderColor: colors.lineStrong,
+    borderColor: colors.line,
     borderRadius: radius.md,
     backgroundColor: colors.surface,
     paddingHorizontal: space.lg,
     ...type.h2,
     fontFamily: fonts.bold,
-    fontSize: 28,
+    fontSize: 24,
     color: colors.ink,
   },
 });

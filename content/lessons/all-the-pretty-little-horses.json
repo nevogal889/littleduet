@@ -5,6 +5,7 @@
  "icon": "horse",
  "key": "Am",
  "timeSignature": "4/4",
+ "totalSec": 1970,
  "classes": [
   {
    "id": "all-the-pretty-little-horses-c01",
@@ -12,7 +13,7 @@
    "title": "Listen and sway",
    "goal": "Hear the whole song and move to the beat",
    "type": "listen",
-   "durationSec": 249,
+   "durationSec": 255,
    "parentTip": "Sit together at the piano. Sway side to side while the song plays.",
    "video": "all-the-pretty-little-horses/all-the-pretty-little-horses-c01.mp4",
    "thumb": "all-the-pretty-little-horses/all-the-pretty-little-horses-c01.jpg",
@@ -1779,6 +1780,12 @@
      "durationSec": 41
     },
     {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 6
+    },
+    {
      "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
@@ -3231,7 +3238,7 @@
    "title": "Find the special note",
    "goal": "Find and play the song's special note: E",
    "type": "special-note",
-   "durationSec": 218,
+   "durationSec": 258,
    "parentTip": "Help your child find E. Use one finger and press gently, like a button.",
    "video": "all-the-pretty-little-horses/all-the-pretty-little-horses-c03.mp4",
    "thumb": "all-the-pretty-little-horses/all-the-pretty-little-horses-c03.jpg",
@@ -3660,6 +3667,69 @@
     },
     {
      "kind": "praise",
+     "caption": "Yes, that's it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Use the finger number shown",
+     "durationSec": 6
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen first",
+     "parentCue": "Watch the key",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 5
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child press it",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 5
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Big breath in and out",
+     "parentCue": "Breathe slowly together",
+     "durationSec": 6
+    },
+    {
+     "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
@@ -3671,7 +3741,7 @@
    "title": "Echo me",
    "goal": "Copy short 2 and 3 note patterns from the song",
    "type": "echo",
-   "durationSec": 228,
+   "durationSec": 262,
    "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
    "video": "all-the-pretty-little-horses/all-the-pretty-little-horses-c04.mp4",
    "thumb": "all-the-pretty-little-horses/all-the-pretty-little-horses-c04.jpg",
@@ -3904,6 +3974,63 @@
      "leadInSec": 1.967,
      "notes": [
       {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "to"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "slee"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "to"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "slee"
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "notes": [
+      {
        "p": "A4",
        "d": 1.5,
        "f": 4,
@@ -4097,6 +4224,63 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "to"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "slee"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "to"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "slee"
+      }
+     ],
+     "durationSec": 10
     },
     {
      "kind": "demo",
@@ -4263,7 +4447,7 @@
    "title": "Echo me again",
    "goal": "Copy short 2 and 3 note patterns from the song",
    "type": "echo",
-   "durationSec": 222,
+   "durationSec": 237,
    "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
    "video": "all-the-pretty-little-horses/all-the-pretty-little-horses-c05.mp4",
    "thumb": "all-the-pretty-little-horses/all-the-pretty-little-horses-c05.jpg",
@@ -4294,22 +4478,22 @@
      "leadInSec": 1.967,
      "notes": [
       {
-       "p": "C4",
+       "p": "E4",
        "d": 1,
-       "f": 3,
-       "s": "go"
+       "f": 5,
+       "s": "py"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 4,
-       "s": "to"
+       "s": "lit"
       },
       {
-       "p": "E4",
+       "p": "C4",
        "d": 1,
-       "f": 5,
-       "s": "slee"
+       "f": 3,
+       "s": "tle"
       }
      ],
      "durationSec": 7
@@ -4323,22 +4507,22 @@
      "gapBeats": 1,
      "notes": [
       {
-       "p": "C4",
+       "p": "E4",
        "d": 1,
-       "f": 3,
-       "s": "go"
+       "f": 5,
+       "s": "py"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 4,
-       "s": "to"
+       "s": "lit"
       },
       {
-       "p": "E4",
+       "p": "C4",
        "d": 1,
-       "f": 5,
-       "s": "slee"
+       "f": 3,
+       "s": "tle"
       }
      ],
      "durationSec": 10
@@ -4351,25 +4535,19 @@
      "leadInSec": 1.967,
      "notes": [
       {
-       "p": "E4",
+       "p": "C4",
        "d": 1,
-       "f": 5,
-       "s": "py"
+       "f": 3,
+       "s": "go"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 4,
-       "s": "lit"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 3,
-       "s": "tle"
+       "s": "to"
       }
      ],
-     "durationSec": 7
+     "durationSec": 6
     },
     {
      "kind": "your_turn",
@@ -4380,25 +4558,19 @@
      "gapBeats": 1,
      "notes": [
       {
-       "p": "E4",
+       "p": "C4",
        "d": 1,
-       "f": 5,
-       "s": "py"
+       "f": 3,
+       "s": "go"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 4,
-       "s": "lit"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 3,
-       "s": "tle"
+       "s": "to"
       }
      ],
-     "durationSec": 10
+     "durationSec": 8
     },
     {
      "kind": "praise",
@@ -4413,16 +4585,16 @@
      "leadInSec": 1.967,
      "notes": [
       {
-       "p": "C4",
+       "p": "E4",
        "d": 1,
-       "f": 3,
-       "s": "go"
+       "f": 5,
+       "s": "slee"
       },
       {
-       "p": "D4",
+       "p": "E4",
        "d": 1,
-       "f": 4,
-       "s": "to"
+       "f": 5,
+       "s": "py"
       }
      ],
      "durationSec": 6
@@ -4436,16 +4608,16 @@
      "gapBeats": 1,
      "notes": [
       {
-       "p": "C4",
+       "p": "E4",
        "d": 1,
-       "f": 3,
-       "s": "go"
+       "f": 5,
+       "s": "slee"
       },
       {
-       "p": "D4",
+       "p": "E4",
        "d": 1,
-       "f": 4,
-       "s": "to"
+       "f": 5,
+       "s": "py"
       }
      ],
      "durationSec": 8
@@ -4458,16 +4630,16 @@
      "leadInSec": 1.967,
      "notes": [
       {
-       "p": "E4",
+       "p": "D4",
        "d": 1,
-       "f": 5,
-       "s": "slee"
+       "f": 4,
+       "s": "lit"
       },
       {
-       "p": "E4",
+       "p": "C4",
        "d": 1,
-       "f": 5,
-       "s": "py"
+       "f": 3,
+       "s": "tle"
       }
      ],
      "durationSec": 6
@@ -4481,16 +4653,16 @@
      "gapBeats": 1,
      "notes": [
       {
-       "p": "E4",
+       "p": "D4",
        "d": 1,
-       "f": 5,
-       "s": "slee"
+       "f": 4,
+       "s": "lit"
       },
       {
-       "p": "E4",
+       "p": "C4",
        "d": 1,
-       "f": 5,
-       "s": "py"
+       "f": 3,
+       "s": "tle"
       }
      ],
      "durationSec": 8
@@ -4499,51 +4671,6 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 61,
-     "leadInSec": 1.967,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 4,
-       "s": "lit"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 3,
-       "s": "tle"
-      }
-     ],
-     "durationSec": 6
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 61,
-     "leadInSec": 1.967,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 4,
-       "s": "lit"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 3,
-       "s": "tle"
-      }
-     ],
-     "durationSec": 8
     },
     {
      "kind": "demo",
@@ -4589,11 +4716,6 @@
       }
      ],
      "durationSec": 9
-    },
-    {
-     "kind": "praise",
-     "caption": "Yes, that's it!",
-     "durationSec": 5
     },
     {
      "kind": "demo",
@@ -4653,111 +4775,9 @@
      "durationSec": 11
     },
     {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 61,
-     "leadInSec": 1.967,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Hush"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      }
-     ],
-     "durationSec": 6
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 61,
-     "leadInSec": 1.967,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Hush"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      }
-     ],
-     "durationSec": 8
-    },
-    {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "Yes, that's it!",
      "durationSec": 5
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 61,
-     "leadInSec": 1.967,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 4,
-       "s": "to"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 5,
-       "s": "slee"
-      }
-     ],
-     "durationSec": 7
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 61,
-     "leadInSec": 1.967,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 4,
-       "s": "to"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 5,
-       "s": "slee"
-      }
-     ],
-     "durationSec": 10
     },
     {
      "kind": "demo",
@@ -4817,11 +4837,6 @@
      "durationSec": 10
     },
     {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5
-    },
-    {
      "kind": "demo",
      "caption": "Listen",
      "parentCue": "Watch which keys light",
@@ -4865,6 +4880,208 @@
       }
      ],
      "durationSec": 8
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "slee"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "py"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "slee"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "py"
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "lit"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "lit"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "tle"
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "notes": [
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 1,
+       "s": "ba"
+      },
+      {
+       "p": "A3",
+       "d": 2,
+       "f": 1,
+       "s": "by"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 1,
+       "s": "ba"
+      },
+      {
+       "p": "A3",
+       "d": 2,
+       "f": 1,
+       "s": "by"
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Hush"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "bye"
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Hush"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "bye"
+      }
+     ],
+     "durationSec": 11
     },
     {
      "kind": "praise",
@@ -4879,7 +5096,7 @@
    "title": "Special note in the song",
    "goal": "Play the special note at the right moments in the song",
    "type": "special-note",
-   "durationSec": 246,
+   "durationSec": 245,
    "parentTip": "You play the blue keys, your child plays the coral one. Waiting is part of the game.",
    "video": "all-the-pretty-little-horses/all-the-pretty-little-horses-c06.mp4",
    "thumb": "all-the-pretty-little-horses/all-the-pretty-little-horses-c06.jpg",
@@ -5894,12 +6111,17 @@
      "durationSec": 41
     },
     {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "You play the blue keys",
-     "bpm": 57,
-     "leadInSec": 2.105,
-     "gapBeats": 1,
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Your child plays the special note",
+     "bpm": 76,
+     "leadInSec": 1.579,
      "notes": [
       {
        "p": "A4",
@@ -6034,6 +6256,60 @@
        "f": 5,
        "s": "have",
        "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "all",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "pret"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "ty",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 2,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 1,
+       "s": "hor",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 2,
+       "f": 1,
+       "s": "ses",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -6048,9 +6324,13 @@
       {
        "lyric": "When you wake you shall have",
        "from": 14
+      },
+      {
+       "lyric": "all the pretty little horses",
+       "from": 20
       }
      ],
-     "durationSec": 36
+     "durationSec": 29
     },
     {
      "kind": "praise",
@@ -7453,7 +7733,7 @@
    "title": "Concert time",
    "goal": "Play the whole song from start to end and celebrate",
    "type": "concert",
-   "durationSec": 222,
+   "durationSec": 268,
    "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
    "video": "all-the-pretty-little-horses/all-the-pretty-little-horses-c08.mp4",
    "thumb": "all-the-pretty-little-horses/all-the-pretty-little-horses-c08.jpg",
@@ -8832,6 +9112,290 @@
       }
      ],
      "durationSec": 41
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Your child plays the special note",
+     "bpm": 76,
+     "leadInSec": 1.579,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "bye"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "cry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "slee"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "py"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 4,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 1,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 2,
+       "f": 1,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "When",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 5,
+       "s": "wake"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "you"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "shall",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "have",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "all",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "pret"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "ty",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 2,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 1,
+       "s": "hor",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 2,
+       "f": 1,
+       "s": "ses",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "Dap"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ples"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "grays"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "pin",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "tos",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "bays",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush-a-bye, don't you cry",
+       "from": 0
+      },
+      {
+       "lyric": "go to sleepy little baby",
+       "from": 6
+      },
+      {
+       "lyric": "When you wake you shall have",
+       "from": 14
+      },
+      {
+       "lyric": "all the pretty little horses",
+       "from": 20
+      },
+      {
+       "lyric": "Dapples and grays, pintos and bays",
+       "from": 28
+      }
+     ],
+     "durationSec": 35
     },
     {
      "kind": "praise",

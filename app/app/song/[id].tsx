@@ -1,16 +1,17 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { AccessibilityInfo, StyleSheet, View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { DifficultyDots, SongTile } from '../../src/components/bits';
+import { DifficultyDots, SongCover } from '../../src/components/bits';
 import { ClassRow, songMeta } from '../../src/components/cards';
-import { BackButton, Button, Card, Screen, SectionTitle, Segmented, T } from '../../src/components/ui';
+import { LessonPath, type PathItem } from '../../src/components/LessonPath';
+import { BackButton, Button, Card, PercentBar, Screen, SectionTitle, Segmented, T } from '../../src/components/ui';
 import { LESSONS, songById } from '../../src/data/catalog';
 import { useOpenClass } from '../../src/hooks';
 import { t } from '../../src/i18n';
 import { canPlayClass } from '../../src/lib/entitlement';
-import { classStates, continueRow, songProgress } from '../../src/lib/progress';
+import { classPercent, classStates, continueRow, songPercent, songProgress } from '../../src/lib/progress';
 import { useApp } from '../../src/state/store';
-import { space, useLayout } from '../../src/theme';
+import { colors, space, useLayout } from '../../src/theme';
 
 export default function SongPage() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -18,8 +19,16 @@ export default function SongPage() {
   const { child, childData, entitlement, setPlayMode } = useApp();
   const openClass = useOpenClass();
   const { isTablet, isLandscape, contentWidth } = useLayout();
+  const [asList, setAsList] = useState(false);
   const song = songById(String(id));
   const lesson = song ? LESSONS[song.id] : undefined;
+
+  // Screen readers get the plain list (the path is visual).
+  useEffect(() => {
+    AccessibilityInfo.isScreenReaderEnabled?.()
+      .then((on) => on && setAsList(true))
+      .catch(() => {});
+  }, []);
 
   if (!song || !lesson) {
     return (
@@ -36,28 +45,34 @@ export default function SongPage() {
   const mode = child?.playMode ?? 'real';
   const item = continueRow({ [song.id]: lesson }, progress)[0];
   const target = (item && lesson.classes.find((c) => c.id === item.classId)) || sp.nextClass || lesson.classes[0];
-  const primaryLabel = sp.finished
-    ? t('song.playAgain')
-    : !sp.started
-      ? t('song.start')
-      : t('song.continue', { index: target.index });
   const wide = isTablet && isLandscape;
-  const thumbW = isTablet ? 200 : 128;
+  const pct = songPercent(lesson, progress);
+  const coverW = wide ? contentWidth * 0.42 : Math.min(contentWidth, 720);
+  const pathW = wide ? contentWidth * 0.58 - space.xxl : Math.min(contentWidth, 520);
+
+  const items: PathItem[] = lesson.classes.map((c) => ({
+    cls: c,
+    state: states[c.id],
+    stars: progress[c.id]?.stars ?? 0,
+    percent: classPercent(c, progress[c.id]),
+    locked: !canPlayClass(c, entitlement),
+    current: !sp.finished && c.id === target.id,
+  }));
 
   const info = (
     <View style={styles.info}>
-      <View style={styles.artRow}>
-        <SongTile icon={song.icon} ageGroup={song.ageGroup} size={wide ? 220 : isTablet ? 180 : 132} />
-        <View style={styles.titleCol}>
-          <T v="h1" accessibilityRole="header" testID="song-title">
-            {song.title}
-          </T>
-          <T v="bodyStrong">{t('song.bestFor', { ageLabel: t(`ageGroups.${song.ageGroup}.label`), ages: t(`ageGroups.${song.ageGroup}.ages`) })}</T>
-        </View>
+      <SongCover song={song} kind="wide" width={coverW} rounded={16} />
+      <View style={styles.titleCol}>
+        <T v="h1" accessibilityRole="header" testID="song-title">
+          {song.title}
+        </T>
+        <T v="label">{t('song.bestFor', { ageLabel: t(`ageGroups.${song.ageGroup}.label`), ages: t(`ageGroups.${song.ageGroup}.ages`) })}</T>
       </View>
-      <DifficultyDots level={song.difficulty} />
-      <T v="body">{songMeta(lesson)}</T>
-      <T v="small">{t(`ageGroups.${song.ageGroup}.short`)}</T>
+      <View style={styles.metaRow}>
+        <DifficultyDots level={song.difficulty} />
+        <T v="small">{songMeta(lesson)}</T>
+      </View>
+      <PercentBar percent={pct} doneLabel={t('song.done')} testID="song-pct" />
       <Segmented
         testID="song-mode"
         value={mode}
@@ -67,15 +82,11 @@ export default function SongPage() {
           { value: 'screen', label: t('common.modes.screen.name'), icon: 'screen' },
         ]}
       />
-      <T v="small">{t(`common.modes.${mode}.short`)}</T>
-      <Button
-        testID="song-primary"
-        icon={canPlayClass(target, entitlement) ? 'play' : 'lock'}
-        label={primaryLabel}
-        onPress={() => openClass((sp.finished ? lesson.classes[lesson.classes.length - 1] : target).id, mode)}
-      />
+      {sp.finished ? (
+        <Button testID="song-primary" icon="play" label={t('song.playAgain')} onPress={() => openClass(lesson.classes[lesson.classes.length - 1].id, mode)} />
+      ) : null}
       {target.parentTip ? (
-        <Card style={{ gap: 4 }}>
+        <Card style={{ gap: 4, backgroundColor: colors.soft, borderColor: colors.soft }}>
           <T v="bodyStrong">{t('song.tipTitle')}</T>
           <T v="body">{target.parentTip}</T>
         </Card>
@@ -83,22 +94,40 @@ export default function SongPage() {
     </View>
   );
 
-  const list = (
+  const classes = (
     <View style={{ gap: space.md }} testID="class-list">
-      <SectionTitle>{t('common.classes', { count: lesson.classes.length })}</SectionTitle>
-      {lesson.classes.map((c) => (
-        <ClassRow
-          key={c.id}
-          song={song}
-          cls={c}
-          state={states[c.id]}
-          stars={progress[c.id]?.stars ?? 0}
-          fraction={(progress[c.id]?.positionSec ?? 0) / c.durationSec}
-          locked={!canPlayClass(c, entitlement)}
-          thumbWidth={thumbW}
-          onPress={() => openClass(c.id, mode)}
-        />
-      ))}
+      <SectionTitle
+        action={
+          <Button
+            testID="toggle-list"
+            variant="ghost"
+            size="md"
+            full={false}
+            icon={asList ? 'songs' : 'list'}
+            label={asList ? t('path.pathView') : t('path.listView')}
+            onPress={() => setAsList((v) => !v)}
+          />
+        }
+      >
+        {t('common.classes', { count: lesson.classes.length })}
+      </SectionTitle>
+      {asList ? (
+        lesson.classes.map((c) => (
+          <ClassRow
+            key={c.id}
+            song={song}
+            cls={c}
+            state={states[c.id]}
+            stars={progress[c.id]?.stars ?? 0}
+            percent={classPercent(c, progress[c.id])}
+            locked={!canPlayClass(c, entitlement)}
+            thumbWidth={isTablet ? 200 : 120}
+            onPress={() => openClass(c.id, mode)}
+          />
+        ))
+      ) : (
+        <LessonPath items={items} width={pathW} onOpen={(c) => openClass(c.id, mode)} />
+      )}
       <T v="small">{t('song.concertNote')}</T>
       {song.origin ? (
         <Card style={{ gap: 4, marginTop: space.md }}>
@@ -118,12 +147,12 @@ export default function SongPage() {
       {wide ? (
         <View style={styles.wide}>
           <View style={{ width: contentWidth * 0.42 }}>{info}</View>
-          <View style={{ flex: 1 }}>{list}</View>
+          <View style={{ flex: 1 }}>{classes}</View>
         </View>
       ) : (
         <>
           {info}
-          {list}
+          {classes}
         </>
       )}
     </Screen>
@@ -132,7 +161,7 @@ export default function SongPage() {
 
 const styles = StyleSheet.create({
   info: { gap: space.md },
-  artRow: { flexDirection: 'row', gap: space.lg, alignItems: 'center', flexWrap: 'wrap' },
-  titleCol: { flex: 1, minWidth: 180, gap: space.xs },
+  titleCol: { gap: space.xs, marginTop: space.sm },
+  metaRow: { flexDirection: 'row', alignItems: 'center', gap: space.lg, flexWrap: 'wrap' },
   wide: { flexDirection: 'row', gap: space.xxl, alignItems: 'flex-start' },
 });

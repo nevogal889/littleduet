@@ -114,7 +114,7 @@ export default function Account() {
             </>
           )}
           {err ? (
-            <T v="bodyStrong" accessibilityLiveRegion="polite" style={{ color: colors.indigo }}>
+            <T v="bodyStrong" accessibilityLiveRegion="polite" style={{ color: colors.inkSoft }}>
               {err}
             </T>
           ) : null}

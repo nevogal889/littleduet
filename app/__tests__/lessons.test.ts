@@ -1,12 +1,24 @@
 // Validates whatever lesson data is in src/data (stand-ins or the real files synced from
 // content/lessons) against the contract, and plays every class through the engine.
-import { LESSONS } from '@/data/lessons';
+import { LESSONS as SUMMARY, fullLesson } from '@/data/lessons';
 import songsJson from '@/data/songs.json';
 import { LessonEngine } from '@/lib/timeline';
 import { karaokeLines } from '@/lib/music';
 import type { Song } from '@/types';
 
 const songs = songsJson as unknown as Song[];
+const LESSONS = Object.fromEntries(Object.keys(SUMMARY).map((id) => [id, fullLesson(id)!]));
+
+describe('lesson summary (bundled) matches the full lesson files', () => {
+  it('has the same classes and durations, without segments', () => {
+    for (const [id, sum] of Object.entries(SUMMARY)) {
+      const full = LESSONS[id];
+      expect(sum.classes.map((c) => c.id)).toEqual(full.classes.map((c) => c.id));
+      expect(sum.classes.map((c) => c.durationSec)).toEqual(full.classes.map((c) => c.durationSec));
+      expect(sum.classes.every((c) => c.segments.length === 0)).toBe(true);
+    }
+  });
+});
 
 describe('lesson data matches the contract', () => {
   it('has a lesson for every song', () => {

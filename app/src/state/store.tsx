@@ -48,6 +48,7 @@ interface Ctx {
   deleteAccount(): Promise<boolean>;
   /** Erase everything on this device (profiles, progress). Plan is not affected. */
   eraseDevice(): void;
+  openChest(id: string, songId: string): void;
   flush(): Promise<void>;
 }
 
@@ -206,6 +207,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
           activityDays: withToday(cd.activityDays),
           stickers: [...new Set([...cd.stickers, ...earned.map((s) => s.id)])],
           modesUsed: [...new Set([...(cd.modesUsed ?? []), mode])],
+          goalDays: withToday(cd.goalDays ?? []),
+          completions: [...(cd.completions ?? []), Date.now()].slice(-500),
         }));
         return earned;
       },
@@ -237,6 +240,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       },
       eraseDevice() {
         setData(EMPTY);
+      },
+      openChest(id, songId) {
+        updateChildData((cd) => (cd.chests?.some((c) => c.id === id) ? cd : { ...cd, chests: [...(cd.chests ?? []), { id, songId }] }));
       },
       flush,
     }),

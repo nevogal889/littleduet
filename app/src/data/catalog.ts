@@ -1,11 +1,11 @@
 import songsJson from './songs.json';
-import { LESSONS } from './lessons';
+import { LESSONS, fullLesson } from './lessons';
 import type { Lesson, LessonClass, Song } from '../types';
 import { isPitched } from '../lib/music';
 
 /** Songs that have a lesson file (the app only shows playable songs). */
 export const SONGS: Song[] = (songsJson as unknown as Song[]).filter((s) => LESSONS[s.id]);
-export { LESSONS };
+export { LESSONS, fullLesson };
 
 const songIndex = new Map(SONGS.map((s) => [s.id, s]));
 const classIndex = new Map<string, { song: Song; lesson: Lesson; cls: LessonClass }>();
@@ -22,6 +22,13 @@ export function lessonFor(songId: string): Lesson | undefined {
 export function classById(classId: string) {
   return classIndex.get(classId);
 }
+/** The class with its segment timeline (loads that song's full lesson on first use). */
+export function fullClass(classId: string): LessonClass | undefined {
+  const hit = classIndex.get(classId);
+  if (!hit) return undefined;
+  return fullLesson(hit.song.id)?.classes.find((c) => c.id === classId) ?? hit.cls;
+}
+
 export function nextClassOf(classId: string): LessonClass | undefined {
   const hit = classIndex.get(classId);
   if (!hit) return undefined;

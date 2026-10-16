@@ -113,8 +113,16 @@ any tap counts in beat/high-low games), `together` (full speed, child plays alon
 `beat` (child taps any key on each beat; notes give the melody the parent plays),
 `high_low` (prompt `"target":"low"|"high"`), `praise`.
 `durationSec` on segments must sum to the class `durationSec`, and the class must be
-180–300 seconds (3–5 min). Classes per song: 6–12, depending on song length and difficulty.
-Every song's last class is type `concert` (play the whole song, celebration).
+180–300 seconds (3–5 min). Classes per song: 8–10. Each song's TOTAL (sum of its classes) is
+1800–2400 seconds (30–40 min); totals are spread evenly across the catalog (per-song target from
+song length, difficulty and a hash of the id), so songs differ in length. Lesson files carry
+`totalSec` (= sum of class `durationSec`). Every song's last class is type `concert` (play the
+whole song, celebration). One new idea per class; extra classes are real steps (review games,
+tap-the-words rhythm, the same note/song an octave away, a second special note, tricky spots,
+sing-and-play, left hand at full speed, hands together faster), not filler.
+Class `type` values: listen, beat, high-low, loud-soft, fast-slow, stop-go, rhythm, review,
+together, special-note, echo, octave, hand-position, phrase, put-together, play-along,
+left-hand, hands-together, concert.
 
 ## Progress model (app-side, for reference)
 

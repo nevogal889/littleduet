@@ -15,6 +15,7 @@ export function Confetti({ count = 40 }: { count?: number }) {
         // Fall only in the outer margins (0-14% and 86-100% of the width) so pieces never
         // cover the praise text and buttons in the centre column.
         x: i % 2 ? ((i * 97) % 14) : 86 + ((i * 97) % 14),
+        xPhone: (i * 97) % 100,
         delay: ((i * 37) % 20) / 20,
         speed: 0.6 + ((i * 53) % 40) / 50,
         rot: (i * 47) % 360,
@@ -46,8 +47,12 @@ export function Confetti({ count = 40 }: { count?: number }) {
       {pieces.map((p, i) => {
         const life = still ? 0.2 + ((i * 13) % 60) / 100 : Math.max(0, t - p.delay) * p.speed * 0.45;
         if (!still && (life <= 0 || life > 1.2)) return null;
-        const y = -20 + life * (height + 40);
-        const x = (p.x / 100) * width + Math.sin((life + p.delay) * 6) * 18;
+        // Phones: the text column spans the full width, so confetti stays in the top band
+        // (around the stars) and never crosses the headline. Tablets: full height in the margins.
+        const phone = width < 700;
+        const fall = phone ? height * 0.09 : height + 40;
+        const y = -20 + life * fall;
+        const x = ((phone ? p.xPhone : p.x) / 100) * width + Math.sin((life + p.delay) * 6) * 18;
         return (
           <View
             key={i}

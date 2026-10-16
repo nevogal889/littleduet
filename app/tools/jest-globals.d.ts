@@ -25,3 +25,6 @@ interface Matchers {
   not: Matchers;
 }
 declare function expect(v: unknown): Matchers;
+
+// Metro / jest provide CommonJS require (lazy lesson loading in src/data/lessons/index.ts).
+declare function require(id: string): any;

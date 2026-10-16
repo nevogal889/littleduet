@@ -1,10 +1,10 @@
-import React, { useCallback, useRef } from 'react';
+import React, { useCallback, useMemo, useRef } from 'react';
 import { View } from 'react-native';
 import { Redirect, useLocalSearchParams, useRouter } from 'expo-router';
 import { useKeepAwake } from 'expo-keep-awake';
 import { LessonStage, type StageResult } from '../../src/components/LessonStage';
 import { VideoLesson } from '../../src/components/VideoLesson';
-import { classById } from '../../src/data/catalog';
+import { classById, fullClass } from '../../src/data/catalog';
 import { canPlayClass } from '../../src/lib/entitlement';
 import { isInProgress, resumePositionFor } from '../../src/lib/progress';
 import { useApp } from '../../src/state/store';
@@ -17,6 +17,8 @@ export default function Player() {
   const router = useRouter();
   const { childData, entitlement, child, savePosition, completeClass, flush } = useApp();
   const hit = classById(String(classId));
+  // Segment timelines are loaded only here (the catalog keeps class metadata only).
+  const full = useMemo(() => (hit ? fullClass(hit.cls.id) ?? hit.cls : undefined), [hit]);
   const mode: PlayMode = modeParam === 'screen' || modeParam === 'real' ? modeParam : child?.playMode ?? 'real';
   const ended = useRef(false);
   // Snapshot of saved progress when the class opened (resume point).
@@ -52,7 +54,7 @@ export default function Player() {
       {mode === 'real' ? (
         <VideoLesson
           song={hit.song}
-          cls={hit.cls}
+          cls={full ?? hit.cls}
           resumeSec={resumePositionFor(hit.cls, initial)}
           onProgress={(sec) => !ended.current && savePosition(hit.cls, sec)}
           onFinish={finish}
@@ -61,7 +63,7 @@ export default function Player() {
       ) : (
         <LessonStage
           song={hit.song}
-          cls={hit.cls}
+          cls={full ?? hit.cls}
           startSegIndex={isInProgress(hit.cls, initial) ? initial?.segIndex ?? 0 : 0}
           onProgress={(sec, seg) => !ended.current && savePosition(hit.cls, sec, seg)}
           onFinish={finish}

@@ -128,4 +128,10 @@ export interface ChildData {
   stickers: string[];
   /** Play modes used at least once (for the "Any Piano Will Do" badge). */
   modesUsed?: PlayMode[];
+  /** Local days the daily goal (finish 1 class) was met: drives the kind streak. */
+  goalDays?: string[];
+  /** Timestamps of every finished class, replays included (weekly quests). */
+  completions?: number[];
+  /** Weekly chests opened: { id: 'chest-YYYY-MM-DD', songId } (the sticker inside). */
+  chests?: { id: string; songId: string }[];
 }

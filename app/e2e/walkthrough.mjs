@@ -70,17 +70,10 @@ async function run(viewport, tag) {
     }
     await page.evaluate(() => document.querySelectorAll('*').forEach((e) => e.scrollTop && (e.scrollTop = 0)));
   };
-  const hold = async (testId, ms) => {
-    const box = await id(testId).boundingBox();
-    await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
-    await page.mouse.down();
-    await page.waitForTimeout(ms);
-    await page.mouse.up();
-  };
+  // Gate = written math question only (no hold step).
   const passGate = async () => {
-    await id('gate-hold').waitFor();
-    await hold('gate-hold', 3300);
     await id('gate-question').waitFor();
+    check(`${tag}: gate has no hold step`, (await page.getByText(/hold to unlock|press and hold|hold for 3/i).count()) === 0);
     const q = await id('gate-question').innerText();
     await id('gate-answer').fill(solveGate(q));
     return q;
@@ -99,9 +92,10 @@ async function run(viewport, tag) {
   await shot('onboarding-piano');
   await id('onb-mode-real').click();
   await id('gate').waitFor();
-  await shot('onboarding-gate');
+  const wordy = await page.getByText(/Ask your grown-up|A grown-up needs to check/).count();
+  check(`${tag}: onboarding gate is compact`, wordy === 0);
   const q = await passGate();
-  await shot('gate-question');
+  await shot('onboarding-gate');
   await id('gate-submit').click();
   await id('paywall').waitFor();
   check(`${tag}: gate question is written in words`, /^[A-Za-z ,:?]+$/.test(q), q);
@@ -134,10 +128,10 @@ async function run(viewport, tag) {
     .then(() => true)
     .catch(() => false);
   check(`${tag}: lesson video plays`, playing, playing ? '' : 'video did not reach 3 s');
-  await shot('player-video-locked');
-  await hold('hold-unlock', 2300);
-  await id('player-exit').waitFor();
-  await shot('player-video-unlocked');
+  const ctrl = ['player-exit', 'player-playpause', 'player-back10', 'player-scrubber'];
+  const visible = await Promise.all(ctrl.map((c) => id(c).isVisible()));
+  check(`${tag}: video controls always visible (no hold to unlock)`, visible.every(Boolean) && (await page.getByText(/hold to unlock|press and hold|hold for 3/i).count()) === 0);
+  await shot('player-video');
   await id('player-exit').click();
   await id('song-page').waitFor();
   await id('back').click();
@@ -145,7 +139,9 @@ async function run(viewport, tag) {
   const heroSong = await id('hero-song').innerText();
   const heroClass = await id('hero-class').innerText();
   const heroProgress = await id('hero-progress').count();
-  check(`${tag}: Continue hero shows the class with progress`, heroSong === songTitle && /^Class 1 of \d+$/.test(heroClass) && heroProgress === 1, `${heroSong} / ${heroClass}`);
+  const heroPct = await id('hero-pct').innerText();
+  check(`${tag}: Continue hero shows the class with progress`, heroSong === songTitle && /^Class 1 of \d+$/.test(heroClass) && heroProgress === 1 && /^\d+%$/.test(heroPct.trim()), `${heroSong} / ${heroClass} / ${heroPct}`);
+  check(`${tag}: home stats (streak, stars, songs learned)`, (await id('stat-streak').count()) + (await id('stat-stars').count()) + (await id('stat-songs').count()) === 3);
   await shot('home-continue');
 
   // Locked class -> gate -> paywall -> mock trial
@@ -153,7 +149,7 @@ async function run(viewport, tag) {
   await page.locator('[data-testid^="song-card-"]').first().click();
   await id('song-page').waitFor();
   const yourTurnClass = Number(process.env.YOUR_TURN_CLASS ?? 3);
-  await id(`class-row-${yourTurnClass}`).click();
+  await id(`class-node-${yourTurnClass}`).click();
   const gateShown = await id('gate').isVisible().catch(() => false);
   check(`${tag}: locked class opens the parental gate first`, gateShown);
   await shot('locked-gate');
@@ -167,8 +163,9 @@ async function run(viewport, tag) {
   await shot('song-unlocked-screen-mode');
 
   // Screen piano with a your_turn
-  await id(`class-row-${yourTurnClass}`).click();
+  await id(`class-node-${yourTurnClass}`).click();
   await id('stage').waitFor();
+  check(`${tag}: screen piano close button always visible`, (await id('player-exit').isVisible()) && (await page.getByText(/hold to unlock|press and hold|hold for 3/i).count()) === 0);
   await shot('screen-piano-start');
   let sawWaiting = false;
   let hinted = false;
@@ -203,12 +200,25 @@ async function run(viewport, tag) {
   await shot('celebration');
 
   // Tabs
-  await id('celebrate-back').click();
+  const plus = await id('celebrate-plus').innerText();
+  check(`${tag}: celebration counts +stars and shows the streak`, /^\+[1-3] stars?$/.test(plus.trim()) && (await id('celebrate-streak').count()) === 1, plus);
+  await id('celebrate-continue').click();
   await id('song-page').waitFor();
-  await shot('song-progress');
+  check(`${tag}: song page shows the lesson path`, (await id('lesson-path').count()) === 1 && (await id('song-primary').count()) === 1);
+  const rowDone = (await id(`class-node-${yourTurnClass}`).getAttribute('aria-label')) ?? '';
+  const songPct = (await id('song-pct').count()) ? await id('song-pct').innerText() : '';
+  check(`${tag}: class row shows Done + song shows %`, /Done/.test(rowDone) && /\d+%/.test(songPct), `${songPct.trim()}`);
+  await shot('song-progress', true);
   await id('back').click();
   await id('home').waitFor();
   await shot('home-progress', true);
+  const streakLabel = (await id('stat-streak').getAttribute('aria-label')) ?? '';
+  check(`${tag}: streak is 1 after the first class today`, /: 1$/.test(streakLabel), streakLabel);
+  await id('stat-streak').click();
+  await id('streak-sheet').waitFor();
+  await shot('streak-sheet');
+  await id('streak-close').click();
+  check(`${tag}: song cards show song %`, (await page.locator('[data-testid^="song-pct-"]').count()) > 0);
   await id('tab-songs').click();
   await id('songs').waitFor();
   await shot('songs');
@@ -216,6 +226,8 @@ async function run(viewport, tag) {
   await shot('songs-all');
   await id('tab-stickers').click();
   await id('stickers').waitFor();
+  const questTxt = await id('quest-classes').innerText();
+  check(`${tag}: progress tab shows level + weekly quests`, (await id('level-card').count()) === 1 && /1\/3/.test(questTxt), questTxt.replace(/\s+/g, ' '));
   await shot('stickers', true);
   await id('tab-grownups').click();
   await page.waitForTimeout(300);

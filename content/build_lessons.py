@@ -19,6 +19,7 @@ Timing model (shared with video/render.py and the app's interactive mode):
   * Segment `durationSec` is an integer: ceil(leadIn + notes + 1.5 s tail).
 """
 import argparse
+import hashlib
 import json
 import math
 import os
@@ -29,6 +30,8 @@ from collections import Counter, OrderedDict
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 CLASS_MIN, CLASS_MAX = 180, 300
+CLASSES_MIN, CLASSES_MAX = 8, 10
+SONG_MIN, SONG_MAX = 1800, 2400   # 30-40 minutes per song
 FILL_TARGET = 214          # aim for ~3.5 min classes
 FILL_CEILING = 292         # leave headroom under 300
 TAIL_SEC = 1.5
@@ -40,7 +43,8 @@ SEG_KINDS = {"title", "say", "listen", "demo", "your_turn", "together", "beat",
 NOTE_KINDS = {"listen", "demo", "your_turn", "together", "beat", "high_low"}
 CLASS_TYPES = {"listen", "beat", "high-low", "loud-soft", "fast-slow", "stop-go",
                "together", "special-note", "echo", "hand-position", "phrase",
-               "put-together", "play-along", "left-hand", "hands-together", "concert"}
+               "put-together", "play-along", "left-hand", "hands-together", "concert",
+               "review", "rhythm", "octave"}
 AGE_GROUPS = {"2-3", "3-4", "4-5", "5-6"}
 
 NOTE_NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
@@ -190,7 +194,7 @@ class Song:
         self.thumb = next((k["p"] for k in self.hand if k["f"] == 1), pitched[0]["p"])
 
     # -- phrase material
-    def phrase_notes(self, idxs, who=None, transpose=0):
+    def phrase_notes(self, idxs, who=None, transpose=0, keep_f=False):
         notes, lines = [], []
         for i in idxs:
             lyric, ns = self.phrases[i]
@@ -202,7 +206,8 @@ class Song:
                     m = min(max(m, midi("C3")), midi("C6"))
                     nn = dict(n)
                     nn["p"] = pname(m)
-                    nn.pop("f", None)
+                    if not keep_f:
+                        nn.pop("f", None)
                     notes.append(clean_note(nn, **extra))
                 else:
                     notes.append(clean_note(n, **extra))
@@ -367,8 +372,11 @@ class Song:
 # ---------------------------------------------------------------- class builder
 def finish_class(song, idx, ctype, title, goal, tip, intro, required, extras,
                  outro_praise="Wonderful playing!"):
-    """intro + required units + repeated extras until FILL_TARGET, then praise."""
+    """intro + required units, then repeat extras (and opening-phrase practice) until the
+    class reaches its planned length (song.cur_target, set by build_lesson), then praise."""
     cid = "%s-c%02d" % (song.id, idx)
+    target = getattr(song, "cur_target", FILL_TARGET)
+    ceil_ = min(FILL_CEILING, target + 12)
     segs = [seg_title(song, idx, title)] + intro
     praise = seg_praise(outro_praise)
     for unit in required:
@@ -376,15 +384,27 @@ def finish_class(song, idx, ctype, title, goal, tip, intro, required, extras,
             segs += unit
     k = 0
     stalls = 0
-    while extras and seq_dur(segs) < FILL_TARGET and stalls < len(extras):
+    while extras and seq_dur(segs) + PRAISE_SEC < target - 6 and stalls < len(extras):
         unit = extras[k % len(extras)]
         k += 1
-        if seq_dur(segs) + seq_dur(unit) + PRAISE_SEC <= FILL_CEILING:
+        if seq_dur(segs) + seq_dur(unit) + PRAISE_SEC <= ceil_:
             segs += unit
             stalls = 0
         else:
             stalls += 1
-    # still short? add the smallest extra units that fit
+    # finer steps toward the target: practise the opening lines (granular, phrase by phrase)
+    guard = 0
+    while seq_dur(segs) + PRAISE_SEC < target - 10 and guard < 6:
+        guard += 1
+        unit = filler_unit(song, ceil_ - seq_dur(segs) - PRAISE_SEC, guard)
+        if not unit:
+            break
+        segs += unit
+    # a short movement break closes a remaining gap of a few seconds
+    gap = target - seq_dur(segs) - PRAISE_SEC
+    if 4 <= gap <= 12:
+        segs.append(seg_say(WIGGLES[idx % len(WIGGLES)][0], WIGGLES[idx % len(WIGGLES)][1], sec=int(gap)))
+    # hard minimum: still short? add the smallest extra units that fit
     pool = sorted(extras + required, key=seq_dur)
     guard = 0
     while seq_dur(segs) + PRAISE_SEC < CLASS_MIN and guard < 40:
@@ -393,7 +413,6 @@ def finish_class(song, idx, ctype, title, goal, tip, intro, required, extras,
         if not fit:
             break
         segs += fit[guard % len(fit)]
-    # long songs: units may be too big to repeat; fill with the longest opening part that fits
     guard = 0
     while seq_dur(segs) + PRAISE_SEC < CLASS_MIN and guard < 8:
         guard += 1
@@ -413,9 +432,19 @@ def finish_class(song, idx, ctype, title, goal, tip, intro, required, extras,
         ("segments", segs)])
 
 
+WIGGLES = [("Wiggle your fingers!", "Shake out both hands together"),
+           ("Stretch up tall!", "Stretch arms up, then hands back"),
+           ("Shake, shake, shake!", "Shake hands loose for a moment"),
+           ("Big breath in and out", "Breathe slowly together")]
+FILLER_SAYS = [("Let's practise the first part", "Just the opening lines"),
+               ("The start once more", "Play the beginning again"),
+               ("From the top, a little bit", "Only the first lines"),
+               ("Opening lines again", "Slow and steady")]
+
+
 def filler_unit(song, budget, k):
     """The longest run of opening phrases (as an age-appropriate segment) fitting in budget seconds."""
-    say = seg_say("Let's practise the first part", "Just the opening lines")
+    say = seg_say(*FILLER_SAYS[k % len(FILLER_SAYS)])
     for n in range(len(song.phrases), 0, -1):
         idxs = range(n)
         if song.age == "2-3":
@@ -617,14 +646,6 @@ def cls_together_tiny(song, idx):
                         intro, required, extras)
 
 
-def build_tiny(song):
-    makers = [cls_listen, cls_beat, cls_high_low, cls_loud_soft, cls_fast_slow,
-              cls_stop_go, cls_together_tiny]
-    classes = [m(song, i + 1) for i, m in enumerate(makers)]
-    classes.append(cls_concert(song, len(classes) + 1, "beat"))
-    return classes
-
-
 # ---------- 3-4 Little Explorer
 def special_label(song):
     return song.special[:-1].replace("#", " sharp")
@@ -717,20 +738,6 @@ def cls_together_explorer(song, idx):
                         "Play the whole song together at full speed",
                         "Keep playing even if your child misses a note. The beat matters more than being perfect.",
                         intro, required, extras)
-
-
-def build_explorer(song):
-    pats = song.echo_patterns(limit=8)
-    classes = [cls_listen(song, 1), cls_beat(song, 2), cls_find_special(song, 3)]
-    if len(pats) >= 6 and song.total_beats > 40:
-        classes.append(cls_echo(song, len(classes) + 1, pats[:4], 1))
-        classes.append(cls_echo(song, len(classes) + 1, pats[4:] + pats[:2], 2))
-    else:
-        classes.append(cls_echo(song, len(classes) + 1, pats, 1))
-    classes.append(cls_special_in_song(song, len(classes) + 1))
-    classes.append(cls_together_explorer(song, len(classes) + 1))
-    classes.append(cls_concert(song, len(classes) + 1, "special"))
-    return classes
 
 
 # ---------- 4-5 First Songs / 5-6 Little Pianist
@@ -874,47 +881,411 @@ def cls_hands_together(song, idx):
                         intro, required, extras)
 
 
-def build_first_songs(song):
-    groups, uniq = song.unique_phrase_groups(max_groups=8)
-    if len(groups) + 4 < 6 and len(uniq) > len(groups):
-        groups = [[i] for i in uniq][:8]   # short song: one class per phrase instead of pairs
-    classes = [cls_listen(song, 1, title="Listen and find your hand", ctype="listen",
-                          goal="Hear the song and place the right hand",
-                          tip="Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-                          who=None, show_hand=True)]
+
+# ---------- extra classes (used to reach 8-10 classes per song; each adds one new idea)
+def cls_game_mix(song, idx):
+    p_low, l_low = song.phrase_notes([0], who="parent", transpose=-12 if midi(song.thumb) >= midi("C4") else 0)
+    p_hi, l_hi = song.phrase_notes([0], who="parent", transpose=12)
+    n1, l1 = song.phrase_notes([0], who="parent")
+    intro = [seg_say("Game time: listen and choose!", "Mix all the games you know"),
+             seg_say("Listen first, then tap", "Let your child guess the game")]
+    units = [[seg_notes("high_low", "Bear or bird? Bear!", p_low, song.bpm, cue="Tap any low key", lines=l_low,
+                        target="low")],
+             [seg_notes("beat", "Loud taps!", n1, song.bpm, cue="Tap strong, not hard", lines=l1, dynamic="loud")],
+             [seg_notes("high_low", "Bear or bird? Bird!", p_hi, song.bpm, cue="Tap any high key", lines=l_hi,
+                        target="high")],
+             [seg_notes("beat", "Soft taps", n1, song.bpm, cue="Tap gently", lines=l1, dynamic="soft"),
+              seg_say("Stop! Freeze!", "Freeze together", sec=4)],
+             [seg_notes("beat", "Slow taps", n1, slow(song.bpm, 0.65), cue="Slow like a turtle", lines=l1),
+              seg_praise("You know all the games!")],
+             [seg_notes("beat", "Fast taps!", n1, min(150, song.bpm * 1.3), cue="Quick like a bunny", lines=l1)]]
+    return finish_class(song, idx, "review", "Music games mix",
+                        "Switch quickly between the games: high and low, loud and soft, fast and slow",
+                        "Let your child guess the game before the picture shows. Guessing is listening.",
+                        intro, units[:2], units[2:] + units[:2])
+
+
+def cls_rhythm_words(song, idx):
+    half = max(1, len(song.phrases) // 2)
+    n1, l1 = song.phrase_notes(range(half), who="parent")
+    notes, lines = song.whole(who="parent")
+    intro = [seg_say("Tap with every word!", "One tap for each sung word"),
+             seg_say("The beat walks, the words dance", "Clap the words of the first line")]
+    required = [[seg_notes("together", "Tap with the words", n1, slow(song.bpm, 0.75),
+                           cue="Say the words while you tap", lines=l1)]]
+    extras = [[seg_say(again(i), "Tap the words, not the beat"),
+               seg_notes("together", "Tap the words", notes if i % 2 else n1,
+                         slow(song.bpm, 0.9 if i % 2 else 0.8), cue="Your child taps each word",
+                         lines=lines if i % 2 else l1), seg_praise(praise_word(i))] for i in range(4)]
+    return finish_class(song, idx, "rhythm", "Tap the words",
+                        "Tap the rhythm of the words, one tap per sung word",
+                        "Say the words together while tapping. Long words get one tap per piece.",
+                        intro, required, extras)
+
+
+def octave_of(m):
+    return m + 12 if m + 12 <= midi("C6") else m - 12
+
+
+def cls_octave_special(song, idx):
+    sp = song.special
+    m2 = octave_of(midi(sp))
+    up = m2 > midi(sp)
+    sp2 = pname(m2)
+    f = song.special_finger
+    nt = lambda p, d=1: clean_note({"p": p, "d": d, **({"f": f} if f else {})})
+    lab = special_label(song)
+    where = "up high" if up else "down low"
+    keys = [OrderedDict([("p", sp)]), OrderedDict([("p", sp2)])]
+    intro = [seg_say("%s lives %s too!" % (lab, where), "Find the same key %s" % where, show_keys=keys),
+             seg_say("Same name, same sound, %s" % ("higher" if up else "lower"), "Play both and listen")]
+    bpm = slow(song.bpm, 0.75)
+    pats = [[nt(sp), nt(sp), nt(sp2, 2)], [nt(sp2), nt(sp2), nt(sp, 2)], [nt(sp), nt(sp2), nt(sp), nt(sp2, 2)]]
+    units = [[seg_notes("demo", "Listen: %s and %s %s" % (lab, lab, where), p, bpm, cue="Watch both keys"),
+              seg_notes("your_turn", "Your turn!", p, bpm, cue="Move one finger between them")] +
+             ([seg_praise(praise_word(i))] if i % 2 else []) for i, p in enumerate(pats)]
+    return finish_class(song, idx, "octave", "%s %s" % (lab, where),
+                        "Find the special note in a second place on the piano",
+                        "Notes repeat every eight white keys. Let your child hop between the two %ss." % lab,
+                        intro, units[:2], units[2:] + units[:2])
+
+
+def second_special(song):
+    pitched = [n["p"] for n in song.all_notes if not n.get("rest") and n["p"] != song.special]
+    if not pitched:
+        return None
+    cnt = Counter(pitched)
+    return sorted(cnt, key=lambda p: (-cnt[p], pitched.index(p)))[0]
+
+
+def cls_two_notes(song, idx):
+    sp2 = second_special(song)
+    child = {song.special, sp2}
+    lab, lab2 = special_label(song), sp2[:-1].replace("#", " sharp")
+    def mark(idxs):
+        notes, lines = [], []
+        for i in idxs:
+            lyric, ns = song.phrases[i]
+            lines.append(OrderedDict([("lyric", lyric), ("from", len(notes))]))
+            notes += [clean_note(n) if n.get("rest") or n["p"] in child else clean_note(n, who="parent")
+                      for n in ns]
+        return notes, lines
+    half = max(1, len(song.phrases) // 2)
+    h_notes, h_lines = mark(range(half))
+    notes, lines = mark(range(len(song.phrases)))
+    keys = [OrderedDict([("p", p)]) for p in sorted(child, key=midi)]
+    bpm_s = slow(song.bpm, 0.75)
+    intro = [seg_say("A second special note: %s" % lab2, "Your child now plays %s and %s" % (lab, lab2),
+                     show_keys=keys),
+             seg_say("Two coral keys to watch", "You play the blue keys")]
+    required = [[seg_notes("demo", "Listen for %s and %s" % (lab, lab2), h_notes, bpm_s,
+                           cue="Point at each coral key", lines=h_lines)],
+                [seg_notes("your_turn", "Your turn on two notes!", h_notes, bpm_s, cue="You play the blue keys",
+                           lines=h_lines)]]
+    extras = [[seg_say("The whole song now", "Two coral keys for your child"),
+               seg_notes("your_turn", "Your turn!", notes, bpm_s, cue="Wait for the coral keys", lines=lines),
+               seg_praise("Two notes, wow!")],
+              [seg_notes("together", "Play it together", notes, slow(song.bpm, 0.9), cue="Keep going after a miss",
+                         lines=lines), seg_praise(praise_word(idx))],
+              [seg_notes("your_turn", "Your turn!", h_notes, bpm_s, cue="First half again", lines=h_lines)]]
+    return finish_class(song, idx, "special-note", "Add a second note",
+                        "Play two special notes, %s and %s, in the song" % (lab, lab2),
+                        "Two notes means more waiting and watching. Celebrate each coral key your child catches.",
+                        intro, required, extras)
+
+
+def tricky_group(song):
+    def score(i):
+        ns = [n for n in song.phrases[i][1] if not n.get("rest")]
+        if not ns:
+            return 0
+        ms = [midi(n["p"]) for n in ns]
+        jumps = max([abs(a - b) for a, b in zip(ms, ms[1:])] or [0])
+        return len(set(ms)) * 2 + jumps + sum(1 for n in ns if n["d"] < 1) + (5 if any("#" in n["p"] for n in ns) else 0)
+    _, uniq = song.unique_phrase_groups(max_groups=99)
+    best = sorted(uniq, key=lambda i: (-score(i), i))
+    return best[:2] if len(best) > 1 and sum(len(song.phrases[i][1]) for i in best[:2]) <= 18 else best[:1]
+
+
+def cls_tricky(song, idx):
+    group = tricky_group(song)
+    notes, lines = song.phrase_notes(group)
+    intro = [seg_say("Tricky spots, nice and slow", "This is the hardest part of the song"),
+             seg_say("Slow, then a bit faster", "Say the finger numbers out loud")]
+    required = [[seg_notes("demo", "Watch slowly", notes, slow(song.bpm, 0.6), cue="Watch the finger numbers",
+                           lines=lines)],
+                [seg_notes("your_turn", "Your turn, slowly", notes, slow(song.bpm, 0.6), cue="Slow is perfect",
+                           lines=lines)]]
+    extras = [[seg_say(["A little faster now", "Again, a bit faster", "Nearly full speed"][i % 3],
+                       "Only speed up if it feels easy"),
+               seg_notes("your_turn", "Your turn!", notes, slow(song.bpm, [0.7, 0.8, 0.9][i % 3]),
+                         cue="Keep fingers close to the keys", lines=lines), seg_praise(praise_word(i))]
+              for i in range(6)]
+    return finish_class(song, idx, "review", "Tricky spots",
+                        "Practise the hardest part slowly, then a little faster",
+                        "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+                        intro, required, extras)
+
+
+def octave_song_shift(song):
+    ms = [midi(n["p"]) for n in song.all_notes if not n.get("rest")]
+    if max(ms) + 12 <= midi("C6"):
+        return 12
+    if min(ms) - 12 >= midi("C3"):
+        return -12
+    return 0
+
+
+def cls_octave_song(song, idx):
+    sh = octave_song_shift(song)
+    notes, lines = song.phrase_notes(range(len(song.phrases)), transpose=sh, keep_f=True)
+    where = "up high" if sh > 0 else "down low"
+    keys = [OrderedDict([("p", pname(midi(k["p"]) + sh)), ("f", k["f"])]) for k in song.hand]
+    bpm_s = slow(song.bpm, 0.8)
+    intro = [seg_say("The same song, %s!" % where, "Move the whole hand to the next C", show_keys=keys),
+             seg_say("Same fingers, new place", "Fingers keep the same numbers")]
+    required = [[seg_notes("demo", "Watch: same song, %s" % where, notes, bpm_s, cue="Watch the hand move",
+                           lines=lines)],
+                [seg_notes("your_turn", "Your turn, %s!" % where, notes, bpm_s, cue="Same fingers as before",
+                           lines=lines)]]
+    extras = [[seg_say(again(i), "Listen to how it sounds now"),
+               seg_notes("together", "Play along %s" % where, notes, slow(song.bpm, 0.9 if i % 2 else 0.8),
+                         cue="Is it like a bird or a bear?", lines=lines), seg_praise(praise_word(i))]
+              for i in range(4)]
+    return finish_class(song, idx, "octave", "Same song, %s" % where,
+                        "Play the song in a new place with the same fingers",
+                        "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
+                        intro, required, extras)
+
+
+def cls_sing_play(song, idx):
+    notes, lines = song.whole()
+    intro = [seg_say("Sing and play at the same time!", "Sing the words with your child"),
+             seg_say("First we sing, then we play", "Sing slowly first")]
+    required = [[seg_notes("listen", "Sing along first", notes, song.bpm, cue="Sing together", lines=lines)],
+                [seg_notes("together", "Now sing and play", notes, slow(song.bpm, 0.85), cue="Sing while you play",
+                           lines=lines)]]
+    extras = [[seg_say(again(i), "Sing loudly, play gently"),
+               seg_notes("together", "Sing and play", notes, song.bpm if i % 2 else slow(song.bpm, 0.9),
+                         cue="Keep singing even after a slip", lines=lines), seg_praise(praise_word(i))]
+              for i in range(5)]
+    return finish_class(song, idx, "play-along", "Sing and play",
+                        "Sing the words while playing the tune",
+                        "Singing and playing together is hard. It's fine if the singing comes and goes.",
+                        intro, required, extras)
+
+
+def cls_lh_review(song, idx):
+    lh, fingers = song.left_hand_only()
+    notes, lines = song.with_left_hand(melody_who="parent")
+    intro = [seg_say("Left hand, full speed!", "You play the tune, child plays low notes"),
+             seg_say("Count the bars: one, two, three", "Count out loud together")]
+    required = [[seg_notes("your_turn", "Your turn! Left hand", lh, slow(song.bpm, 0.9), cue="Left hand only")],
+                [seg_notes("together", "Low notes with the tune", notes, song.bpm, cue="You play the blue keys",
+                           lines=lines)]]
+    extras = [[seg_say(again(i), "Keep the low notes steady"),
+               seg_notes("together", "Low notes, full speed", notes, song.bpm, cue="Don't stop for mistakes",
+                         lines=lines), seg_praise(praise_word(i))] for i in range(4)]
+    return finish_class(song, idx, "left-hand", "Left hand, full speed",
+                        "Keep the left hand notes going at full speed with the tune",
+                        "Your child only plays the low notes. Keeping going matters more than every note.",
+                        intro, required, extras)
+
+
+def cls_ht_faster(song, idx):
+    notes, lines = song.with_left_hand()
+    intro = [seg_say("Both hands, a bit faster", "Only if the slow class felt good", show_keys=song.hand)]
+    required = [[seg_notes("your_turn", "Your turn! Both hands", notes, slow(song.bpm, 0.75),
+                           cue="Warm up slowly", lines=lines)],
+                [seg_notes("together", "A bit faster now", notes, slow(song.bpm, 0.85), cue="Keep the beat steady",
+                           lines=lines)]]
+    extras = [[seg_say(again(i), "Relax your shoulders"),
+               seg_notes("together", "Both hands together", notes, slow(song.bpm, 0.85 if i % 2 else 0.8),
+                         cue="Help with the left hand if needed", lines=lines), seg_praise(praise_word(i))]
+              for i in range(4)]
+    return finish_class(song, idx, "hands-together", "Hands together, a bit faster",
+                        "Play both hands together closer to full speed",
+                        "Speed comes last. If notes fall apart, go back to the slower tempo.",
+                        intro, required, extras)
+
+
+# ---------- class plans per age group (lists of makers: idx -> class)
+def phrase_groups(song, n_slots, max_beats=16.0):
+    """Unique phrases grouped into at most n_slots practice groups; paired when space is short,
+    split one phrase per group when there is room."""
+    groups, uniq = song.unique_phrase_groups(max_groups=max(1, n_slots), max_beats=max_beats)
+    return groups, uniq
+
+
+def plan_tiny(song, n):
+    m = [lambda i: cls_listen(song, i), lambda i: cls_beat(song, i), lambda i: cls_high_low(song, i),
+         lambda i: cls_loud_soft(song, i), lambda i: cls_fast_slow(song, i), lambda i: cls_stop_go(song, i)]
+    if n >= 10:
+        m.append(lambda i: cls_rhythm_words(song, i))
+    if n >= 9:
+        m.append(lambda i: cls_game_mix(song, i))
+    m += [lambda i: cls_together_tiny(song, i), lambda i: cls_concert(song, i, "beat")]
+    return m
+
+
+def plan_explorer(song, n):
+    pats = song.echo_patterns(limit=8)
+    options = []                       # extra classes in priority order (core plan has 7)
+    if len(pats) >= 4:
+        options.append("echo2")
+    if second_special(song):
+        options.append("two")
+    options.append("octave")
+    chosen = set(options[:max(0, n - 7)])
+    half = max(2, len(pats) // 2)
+    m = [lambda i: cls_listen(song, i), lambda i: cls_beat(song, i), lambda i: cls_find_special(song, i)]
+    if "octave" in chosen:
+        m.append(lambda i: cls_octave_special(song, i))
+    if "echo2" in chosen:
+        m += [lambda i: cls_echo(song, i, pats[:half], 1), lambda i: cls_echo(song, i, pats[half:] + pats[:1], 2)]
+    else:
+        m.append(lambda i: cls_echo(song, i, pats, 1))
+    m.append(lambda i: cls_special_in_song(song, i))
+    if "two" in chosen:
+        m.append(lambda i: cls_two_notes(song, i))
+    m += [lambda i: cls_together_explorer(song, i), lambda i: cls_concert(song, i, "special")]
+    return m
+
+
+def plan_first_songs(song, n):
+    extras_all = [("tricky", lambda i: cls_tricky(song, i)), ("practice", lambda i: cls_practice(song, i))]
+    if octave_song_shift(song):
+        extras_all.append(("octave", lambda i: cls_octave_song(song, i)))
+    extras_all.append(("sing", lambda i: cls_sing_play(song, i)))
+    groups, uniq = song.unique_phrase_groups(max_groups=n - 4 - 1)
+    spare = n - 4 - len(groups)
+    if spare > len(extras_all) and len(uniq) > len(groups):     # room left: one phrase per class
+        groups = [[u] for u in uniq][: n - 4 - 1]
+        spare = n - 4 - len(groups)
+    chosen = dict(extras_all[:max(0, spare)])
+    m = [lambda i: cls_listen(song, i, title="Listen and find your hand", ctype="listen",
+                              goal="Hear the song and place the right hand",
+                              tip="Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+                              who=None, show_hand=True)]
     for gi, g in enumerate(groups):
-        classes.append(cls_phrase(song, len(classes) + 1, g, "Part %d" % (gi + 1)))
-    classes.append(cls_put_together(song, len(classes) + 1))
-    while len(classes) < 4:
-        classes.append(cls_practice(song, len(classes) + 1))
-    classes.append(cls_play_along(song, len(classes) + 1))
-    classes.append(cls_concert(song, len(classes) + 1, "melody"))
-    return classes
+        m.append(lambda i, g=g, gi=gi: cls_phrase(song, i, g, "Part %d" % (gi + 1)))
+    m.append(lambda i: cls_put_together(song, i))
+    for key in ("tricky", "practice", "octave"):
+        if key in chosen:
+            m.append(chosen[key])
+    m.append(lambda i: cls_play_along(song, i))
+    if "sing" in chosen:
+        m.append(chosen["sing"])
+    m.append(lambda i: cls_concert(song, i, "melody"))
+    return m
 
 
-def build_pianist(song):
-    groups, _ = song.unique_phrase_groups(max_groups=12, max_beats=24.0)
+def plan_pianist(song, n):
+    extras_all = [("tricky", lambda i: cls_tricky(song, i)), ("ht2", lambda i: cls_ht_faster(song, i)),
+                  ("lh2", lambda i: cls_lh_review(song, i))]
+    if octave_song_shift(song):
+        extras_all.append(("octave", lambda i: cls_octave_song(song, i)))
+    extras_all.append(("practice", lambda i: cls_practice(song, i)))
+    groups, uniq = song.unique_phrase_groups(max_groups=99, max_beats=24.0)
     n_first = max(1, (len(groups) + 1) // 2)
-    while len(groups) - n_first > 6:  # 6 fixed classes + phrase classes <= 12
-        n_first += 1
-    classes = [cls_first_half(song, 1, groups[:n_first])]
+    pc = len(groups) - n_first
+    pc_max = n - 6
+    if pc > pc_max:
+        n_first = len(groups) - pc_max
+        pc = pc_max
+    spare = n - 6 - pc
+    if spare > len(extras_all) and len(uniq) > len(groups):
+        groups, _ = song.unique_phrase_groups(max_groups=99, max_beats=8.0)
+        n_first = max(1, (len(groups) + 1) // 2)
+        pc = min(len(groups) - n_first, n - 6)
+        n_first = len(groups) - pc
+        spare = n - 6 - pc
+    chosen = dict(extras_all[:max(0, spare)])
+    m = [lambda i: cls_first_half(song, i, groups[:n_first])]
     for gi, g in enumerate(groups[n_first:]):
-        classes.append(cls_phrase(song, len(classes) + 1, g, "Part %d" % (gi + 2), bpm_f=0.8))
-    classes.append(cls_put_together(song, len(classes) + 1))
-    classes.append(cls_left_hand(song, len(classes) + 1))
-    classes.append(cls_hands_together(song, len(classes) + 1))
-    classes.append(cls_play_along(song, len(classes) + 1))
-    classes.append(cls_concert(song, len(classes) + 1, "lh"))
-    return classes
+        m.append(lambda i, g=g, gi=gi: cls_phrase(song, i, g, "Part %d" % (gi + 2), bpm_f=0.8))
+    m.append(lambda i: cls_put_together(song, i))
+    if "tricky" in chosen:
+        m.append(chosen["tricky"])
+    if "practice" in chosen:
+        m.append(chosen["practice"])
+    m.append(lambda i: cls_left_hand(song, i))
+    if "lh2" in chosen:
+        m.append(chosen["lh2"])
+    m.append(lambda i: cls_hands_together(song, i))
+    if "ht2" in chosen:
+        m.append(chosen["ht2"])
+    if "octave" in chosen:
+        m.append(chosen["octave"])
+    m += [lambda i: cls_play_along(song, i), lambda i: cls_concert(song, i, "lh")]
+    return m
 
 
-BUILDERS = {"2-3": build_tiny, "3-4": build_explorer, "4-5": build_first_songs, "5-6": build_pianist}
+PLANS = {"2-3": plan_tiny, "3-4": plan_explorer, "4-5": plan_first_songs, "5-6": plan_pianist}
+
+
+def _unit(key, salt):
+    h = hashlib.sha1(("%s|%s" % (key, salt)).encode()).digest()
+    return int.from_bytes(h[:6], "big") / float(1 << 48)
+
+
+CATALOG_FRAC = {}   # songId -> evenly spaced position in 0..1 (set by main for the whole catalog)
+
+
+def raw_frac(song):
+    """0..1 from song length and difficulty plus a hash of the id (so neighbours differ)."""
+    secs = song.total_beats * 60.0 / song.bpm
+    len_norm = min(1.0, max(0.0, (secs - 10.0) / 80.0))
+    return (_unit(song.id, "total") + 0.37 * len_norm + 0.15 * (song.difficulty - 1) / 4.0) % 1.0
+
+
+def set_catalog(song_dicts):
+    """Rank the catalog by raw_frac and space the songs evenly over 0..1, so song totals spread
+    flat over 30-40 minutes instead of clumping where the hash happens to clump."""
+    CATALOG_FRAC.clear()
+    ranked = sorted(song_dicts, key=lambda d: (raw_frac(Song(d)), d["id"]))
+    for r, d in enumerate(ranked):
+        CATALOG_FRAC[d["id"]] = (r + 0.5) / len(ranked)
+
+
+def plan_song(song):
+    """Deterministic per-song plan: total length T (spread evenly over 30-40 min, nudged by song
+    length and difficulty), class count n (8-10, feasible for T) and per-class targets."""
+    frac = CATALOG_FRAC.get(song.id, raw_frac(song))
+    T = SONG_MIN + 25 + frac * (SONG_MAX - SONG_MIN - 50)
+    n_lo = max(CLASSES_MIN, int(math.ceil(T / 262.0)))
+    n_hi = min(CLASSES_MAX, int(math.floor(T / 205.0)))
+    n = n_lo + int(_unit(song.id, "count") * (n_hi - n_lo + 1))
+    n = min(max(n, n_lo), n_hi)
+    w = [0.9 + 0.2 * _unit(song.id, "w%d" % i) for i in range(n)]
+    targets = [T * x / sum(w) for x in w]
+    return T, n, targets
+
+
+def build_classes(song, makers, targets):
+    out = []
+    for i, mk in enumerate(makers):
+        song.cur_target = max(CLASS_MIN + 8, min(FILL_CEILING - 6, targets[i]))
+        out.append(mk(i + 1))
+    return out
 
 
 def build_lesson(song_dict):
     song = Song(song_dict)
-    classes = BUILDERS[song.age](song)
-    for i, c in enumerate(classes):  # renumber (fallback inserts) and rebuild ids/paths
+    T, n, targets = plan_song(song)
+    makers = PLANS[song.age](song, n)
+    n = len(makers)
+    if len(targets) != n:          # a plan had fewer options than asked: spread T over what we have
+        targets = [T / n] * n
+    classes = build_classes(song, makers, targets)
+    for _ in range(5):             # nudge class targets until the song total lands near T
+        total = sum(c["durationSec"] for c in classes)
+        if abs(total - T) <= 20:
+            break
+        delta = (T - total) / float(n)
+        targets = [t + delta for t in targets]
+        classes = build_classes(song, makers, targets)
+    for i, c in enumerate(classes):  # renumber and rebuild ids/paths
         idx = i + 1
         c["index"] = idx
         c["id"] = "%s-c%02d" % (song.id, idx)
@@ -924,6 +1295,7 @@ def build_lesson(song_dict):
     return OrderedDict([("songId", song.id), ("title", song.title), ("ageGroup", song.age),
                         ("icon", song_dict.get("icon", "music")), ("key", song_dict.get("key", "C")),
                         ("timeSignature", song_dict.get("timeSignature", "4/4")),
+                        ("totalSec", sum(c["durationSec"] for c in classes)),
                         ("classes", classes)])
 
 
@@ -936,8 +1308,13 @@ def validate_lesson(lesson, song=None):
     if song is not None and song["id"] != sid:
         errs.append("songId %r != song id %r" % (sid, song["id"]))
     classes = lesson.get("classes", [])
-    if not 6 <= len(classes) <= 12:
-        errs.append("%s: %d classes (need 6-12)" % (sid, len(classes)))
+    if not CLASSES_MIN <= len(classes) <= CLASSES_MAX:
+        errs.append("%s: %d classes (need %d-%d)" % (sid, len(classes), CLASSES_MIN, CLASSES_MAX))
+    song_total = sum(c.get("durationSec", 0) for c in classes)
+    if not SONG_MIN <= song_total <= SONG_MAX:
+        errs.append("%s: song total %d s outside %d-%d" % (sid, song_total, SONG_MIN, SONG_MAX))
+    if "totalSec" in lesson and lesson["totalSec"] != song_total:
+        errs.append("%s: totalSec %s != sum of classes %d" % (sid, lesson["totalSec"], song_total))
     seen = set()
     for i, c in enumerate(classes):
         where = "%s class %d" % (sid, i + 1)
@@ -1036,8 +1413,13 @@ def main():
         for sd in load_songs(sp):
             merged[sd["id"]] = sd
     songs = list(merged.values())
+    try:
+        set_catalog(songs)
+    except Exception as e:      # a broken song is reported per song below
+        print("catalog spacing skipped: %r" % e)
     os.makedirs(a.out, exist_ok=True)
     all_errs, n_classes, durs = [], 0, []
+    song_totals, class_counts = [], []
     for sd in songs:
         path = os.path.join(a.out, sd["id"] + ".json")
         if not a.validate_only:
@@ -1068,6 +1450,8 @@ def main():
         all_errs += errs
         n_classes += len(lesson["classes"])
         durs += [c["durationSec"] for c in lesson["classes"]]
+        song_totals.append(sum(c["durationSec"] for c in lesson["classes"]))
+        class_counts.append(len(lesson["classes"]))
     if a.prune:
         keep = {sd["id"] + ".json" for sd in songs}
         for fn in os.listdir(a.out):
@@ -1077,6 +1461,15 @@ def main():
     print("songs: %d  classes: %d  class duration min/avg/max: %d/%.0f/%d s  total video: %.1f h"
           % (len(songs), n_classes, min(durs) if durs else 0, sum(durs) / max(1, len(durs)),
              max(durs) if durs else 0, sum(durs) / 3600.0))
+    if song_totals:
+        mins = sorted(t / 60.0 for t in song_totals)
+        print("song length (min): min %.1f  median %.1f  max %.1f" % (mins[0], mins[len(mins) // 2], mins[-1]))
+        hist = Counter(int(m) for m in mins)
+        print("songs per minute bucket:")
+        for b in range(int(mins[0]), int(mins[-1]) + 1):
+            print("  %2d-%2d min  %3d  %s" % (b, b + 1, hist.get(b, 0), "#" * hist.get(b, 0)))
+        cc = Counter(class_counts)
+        print("classes per song: " + "  ".join("%d classes: %d songs" % (k, cc[k]) for k in sorted(cc)))
     if all_errs:
         print("VALIDATION FAILED: %d problems (invalid lessons were not written)" % len(all_errs))
         for e in all_errs[:200]:

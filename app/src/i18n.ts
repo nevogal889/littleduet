@@ -72,3 +72,7 @@ export function gateQuestion(rand: () => number = Math.random): { text: string; 
   const a = pick(Math.max(1, sum - 12), Math.min(12, sum - 1));
   return { text: fill(tpl, { a: numberWord(a), b: numberWord(sum - a) }), answer: String(sum) };
 }
+
+export function checkGateAnswer(q: { answer: string }, input: string): boolean {
+  return input.trim() !== '' && input.trim() === q.answer;
+}

@@ -5,6 +5,7 @@
  "icon": "dog",
  "key": "C",
  "timeSignature": "4/4",
+ "totalSec": 2202,
  "classes": [
   {
    "id": "this-old-man-c01",
@@ -12,7 +13,7 @@
    "title": "Listen and sway",
    "goal": "Hear the whole song and move to the beat",
    "type": "listen",
-   "durationSec": 227,
+   "durationSec": 232,
    "parentTip": "Sit together at the piano. Sway side to side while the song plays.",
    "video": "this-old-man/this-old-man-c01.mp4",
    "thumb": "this-old-man/this-old-man-c01.jpg",
@@ -2130,6 +2131,12 @@
      "durationSec": 20
     },
     {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 5
+    },
+    {
      "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
@@ -2142,7 +2149,7 @@
    "title": "Find the beat",
    "goal": "Tap a steady beat while the grown-up plays the tune",
    "type": "beat",
-   "durationSec": 225,
+   "durationSec": 222,
    "parentTip": "Any key is fine. Tap with your child's hand at first, then let go.",
    "video": "this-old-man/this-old-man-c02.mp4",
    "thumb": "this-old-man/this-old-man-c02.jpg",
@@ -3758,14 +3765,14 @@
     },
     {
      "kind": "say",
-     "caption": "Again, with a big smile",
-     "parentCue": "Keep the taps steady",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6
     },
     {
-     "kind": "beat",
-     "caption": "Tap, tap, tap",
-     "parentCue": "You play, your child taps",
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Your child plays the special note",
      "bpm": 104,
      "leadInSec": 1.154,
      "notes": [
@@ -3773,8 +3780,7 @@
        "p": "G4",
        "d": 1,
        "f": 4,
-       "s": "This",
-       "who": "parent"
+       "s": "This"
       },
       {
        "p": "E4",
@@ -3787,15 +3793,13 @@
        "p": "G4",
        "d": 2,
        "f": 4,
-       "s": "man",
-       "who": "parent"
+       "s": "man"
       },
       {
        "p": "G4",
        "d": 1,
        "f": 4,
-       "s": "he",
-       "who": "parent"
+       "s": "he"
       },
       {
        "p": "E4",
@@ -3808,8 +3812,7 @@
        "p": "G4",
        "d": 2,
        "f": 4,
-       "s": "one",
-       "who": "parent"
+       "s": "one"
       },
       {
        "p": "A4",
@@ -3822,8 +3825,7 @@
        "p": "G4",
        "d": 1,
        "f": 4,
-       "s": "played",
-       "who": "parent"
+       "s": "played"
       },
       {
        "p": "F4",
@@ -3878,8 +3880,7 @@
        "p": "G4",
        "d": 1,
        "f": 4,
-       "s": "knick",
-       "who": "parent"
+       "s": "knick"
       },
       {
        "p": "C4",
@@ -3941,57 +3942,7 @@
        "p": "G4",
        "d": 2,
        "f": 5,
-       "s": "bone",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "This",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "old",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "man",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
+       "s": "bone"
       }
      ],
      "lines": [
@@ -4010,13 +3961,9 @@
       {
        "lyric": "Give the dog a bone",
        "from": 20
-      },
-      {
-       "lyric": "This old man came rolling home",
-       "from": 25
       }
      ],
-     "durationSec": 20
+     "durationSec": 17
     },
     {
      "kind": "praise",
@@ -4031,7 +3978,7 @@
    "title": "Find the special note",
    "goal": "Find and play the song's special note: G",
    "type": "special-note",
-   "durationSec": 239,
+   "durationSec": 213,
    "parentTip": "Help your child find G. Use one finger and press gently, like a button.",
    "video": "this-old-man/this-old-man-c03.mp4",
    "thumb": "this-old-man/this-old-man-c03.jpg",
@@ -4512,21 +4459,54 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "this-old-man-c04",
+   "index": 4,
+   "title": "G up high",
+   "goal": "Find the special note in a second place on the piano",
+   "type": "octave",
+   "durationSec": 217,
+   "parentTip": "Notes repeat every eight white keys. Let your child hop between the two Gs.",
+   "video": "this-old-man/this-old-man-c04.mp4",
+   "thumb": "this-old-man/this-old-man-c04.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "This Old Man",
+     "subcaption": "Class 4: G up high",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Use the finger number shown",
+     "caption": "G lives up high too!",
+     "parentCue": "Find the same key up high",
+     "showKeys": [
+      {
+       "p": "G4"
+      },
+      {
+       "p": "G5"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Same name, same sound, higher",
+     "parentCue": "Play both and listen",
      "durationSec": 6
     },
     {
      "kind": "demo",
-     "caption": "Listen first",
-     "parentCue": "Watch the key",
-     "bpm": 83,
-     "leadInSec": 1.446,
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
      "notes": [
       {
        "p": "G4",
@@ -4539,19 +4519,19 @@
        "f": 4
       },
       {
-       "p": "G4",
+       "p": "G5",
        "d": 2,
        "f": 4
       }
      ],
-     "durationSec": 6
+     "durationSec": 7
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Let your child press it",
-     "bpm": 83,
-     "leadInSec": 1.446,
+     "parentCue": "Move one finger between them",
+     "bpm": 78,
+     "leadInSec": 1.538,
      "gapBeats": 1,
      "notes": [
       {
@@ -4561,6 +4541,561 @@
       },
       {
        "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G5",
        "d": 1,
        "f": 4
       },
@@ -4580,20 +5115,20 @@
    ]
   },
   {
-   "id": "this-old-man-c04",
-   "index": 4,
+   "id": "this-old-man-c05",
+   "index": 5,
    "title": "Echo me",
    "goal": "Copy short 2 and 3 note patterns from the song",
    "type": "echo",
-   "durationSec": 221,
+   "durationSec": 199,
    "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
-   "video": "this-old-man/this-old-man-c04.mp4",
-   "thumb": "this-old-man/this-old-man-c04.jpg",
+   "video": "this-old-man/this-old-man-c05.mp4",
+   "thumb": "this-old-man/this-old-man-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "This Old Man",
-     "subcaption": "Class 4: Echo me",
+     "subcaption": "Class 5: Echo me",
      "durationSec": 5
     },
     {
@@ -4830,208 +5365,6 @@
      "leadInSec": 1.446,
      "notes": [
       {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "knack"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "on"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "my"
-      }
-     ],
-     "durationSec": 6
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 1.446,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "knack"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "on"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "my"
-      }
-     ],
-     "durationSec": 8
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 1.446,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "He"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "played"
-      }
-     ],
-     "durationSec": 5
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 1.446,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "He"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "played"
-      }
-     ],
-     "durationSec": 6
-    },
-    {
-     "kind": "praise",
-     "caption": "Yes, that's it!",
-     "durationSec": 5
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 1.446,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "knick"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "knack"
-      }
-     ],
-     "durationSec": 5
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 1.446,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "knick"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "knack"
-      }
-     ],
-     "durationSec": 6
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 1.446,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "on"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "my"
-      }
-     ],
-     "durationSec": 5
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 1.446,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "on"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "my"
-      }
-     ],
-     "durationSec": 6
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 1.446,
-     "notes": [
-      {
        "p": "G4",
        "d": 1,
        "f": 4,
@@ -5246,6 +5579,200 @@
      "leadInSec": 1.446,
      "notes": [
       {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man"
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "played"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "one"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "played"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "one"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 5
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "this-old-man-c06",
+   "index": 6,
+   "title": "Echo me again",
+   "goal": "Copy short 2 and 3 note patterns from the song",
+   "type": "echo",
+   "durationSec": 220,
+   "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
+   "video": "this-old-man/this-old-man-c06.mp4",
+   "thumb": "this-old-man/this-old-man-c06.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "This Old Man",
+     "subcaption": "Class 6: Echo me again",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Echo me! I play, then you play",
+     "parentCue": "Listen first, then copy",
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Just like an echo in a cave",
+     "parentCue": "Say hello and echo it back",
+     "durationSec": 7
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
        "p": "E4",
        "d": 1,
        "f": 2,
@@ -5296,6 +5823,664 @@
      "durationSec": 8
     },
     {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man"
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man"
+      }
+     ],
+     "durationSec": 9
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 1.446,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 6
+    },
+    {
      "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
@@ -5303,20 +6488,20 @@
    ]
   },
   {
-   "id": "this-old-man-c05",
-   "index": 5,
+   "id": "this-old-man-c07",
+   "index": 7,
    "title": "Special note in the song",
    "goal": "Play the special note at the right moments in the song",
    "type": "special-note",
-   "durationSec": 230,
+   "durationSec": 211,
    "parentTip": "You play the blue keys, your child plays the coral one. Waiting is part of the game.",
-   "video": "this-old-man/this-old-man-c05.mp4",
-   "thumb": "this-old-man/this-old-man-c05.jpg",
+   "video": "this-old-man/this-old-man-c07.mp4",
+   "thumb": "this-old-man/this-old-man-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "This Old Man",
-     "subcaption": "Class 5: Special note in the song",
+     "subcaption": "Class 7: Special note in the song",
      "durationSec": 5
     },
     {
@@ -6161,7 +7346,7 @@
     },
     {
      "kind": "praise",
-     "caption": "Yes, that's it!",
+     "caption": "You did it!",
      "durationSec": 5
     },
     {
@@ -6673,12 +7858,55 @@
      "durationSec": 20
     },
     {
-     "kind": "your_turn",
-     "caption": "Your turn!",
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "this-old-man-c08",
+   "index": 8,
+   "title": "Add a second note",
+   "goal": "Play two special notes, G and E, in the song",
+   "type": "special-note",
+   "durationSec": 215,
+   "parentTip": "Two notes means more waiting and watching. Celebrate each coral key your child catches.",
+   "video": "this-old-man/this-old-man-c08.mp4",
+   "thumb": "this-old-man/this-old-man-c08.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "This Old Man",
+     "subcaption": "Class 8: Add a second note",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "A second special note: E",
+     "parentCue": "Your child now plays G and E",
+     "showKeys": [
+      {
+       "p": "E4"
+      },
+      {
+       "p": "G4"
+      }
+     ],
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Two coral keys to watch",
      "parentCue": "You play the blue keys",
+     "durationSec": 6
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen for G and E",
+     "parentCue": "Point at each coral key",
      "bpm": 78,
      "leadInSec": 1.538,
-     "gapBeats": 1,
      "notes": [
       {
        "p": "G4",
@@ -6690,8 +7918,7 @@
        "p": "E4",
        "d": 1,
        "f": 2,
-       "s": "old",
-       "who": "parent"
+       "s": "old"
       },
       {
        "p": "G4",
@@ -6709,8 +7936,7 @@
        "p": "E4",
        "d": 1,
        "f": 2,
-       "s": "played",
-       "who": "parent"
+       "s": "played"
       },
       {
        "p": "G4",
@@ -6742,8 +7968,7 @@
        "p": "E4",
        "d": 1,
        "f": 2,
-       "s": "knack",
-       "who": "parent"
+       "s": "knack"
       },
       {
        "p": "D4",
@@ -6756,8 +7981,7 @@
        "p": "E4",
        "d": 0.5,
        "f": 2,
-       "s": "my",
-       "who": "parent"
+       "s": "my"
       },
       {
        "p": "F4",
@@ -6777,7 +8001,971 @@
        "from": 6
       }
      ],
-     "durationSec": 19
+     "durationSec": 15
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn on two notes!",
+     "parentCue": "You play the blue keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "he"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "played"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "one"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "my"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3,
+       "s": "thumb",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "This old man, he played one",
+       "from": 0
+      },
+      {
+       "lyric": "He played knick-knack on my thumb",
+       "from": 6
+      }
+     ],
+     "durationSec": 22
+    },
+    {
+     "kind": "say",
+     "caption": "The whole song now",
+     "parentCue": "Two coral keys for your child",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Wait for the coral keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "he"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "played"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "one"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "my"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3,
+       "s": "thumb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "With"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "knick"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "knack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "pad",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dy",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "whack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Give",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dog"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "bone"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "This"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "old",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "man",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "roll"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "home",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "This old man, he played one",
+       "from": 0
+      },
+      {
+       "lyric": "He played knick-knack on my thumb",
+       "from": 6
+      },
+      {
+       "lyric": "With a knick-knack paddywhack",
+       "from": 13
+      },
+      {
+       "lyric": "Give the dog a bone",
+       "from": 20
+      },
+      {
+       "lyric": "This old man came rolling home",
+       "from": 25
+      }
+     ],
+     "durationSec": 38
+    },
+    {
+     "kind": "praise",
+     "caption": "Two notes, wow!",
+     "durationSec": 5
+    },
+    {
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Keep going after a miss",
+     "bpm": 94,
+     "leadInSec": 1.277,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "he"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "played"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "one"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "my"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3,
+       "s": "thumb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "With"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "knick"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "knack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "pad",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dy",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "whack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Give",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dog"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "bone"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "This"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "old",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "man",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "roll"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "home",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "This old man, he played one",
+       "from": 0
+      },
+      {
+       "lyric": "He played knick-knack on my thumb",
+       "from": 6
+      },
+      {
+       "lyric": "With a knick-knack paddywhack",
+       "from": 13
+      },
+      {
+       "lyric": "Give the dog a bone",
+       "from": 20
+      },
+      {
+       "lyric": "This old man came rolling home",
+       "from": 25
+      }
+     ],
+     "durationSec": 22
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "First half again",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "he"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "played"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "one"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "my"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3,
+       "s": "thumb",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "This old man, he played one",
+       "from": 0
+      },
+      {
+       "lyric": "He played knick-knack on my thumb",
+       "from": 6
+      }
+     ],
+     "durationSec": 22
+    },
+    {
+     "kind": "say",
+     "caption": "The whole song now",
+     "parentCue": "Two coral keys for your child",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Wait for the coral keys",
+     "bpm": 78,
+     "leadInSec": 1.538,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "he"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "played"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "one"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "my"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3,
+       "s": "thumb",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "With"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "knick"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "knack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "pad",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dy",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "whack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Give",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dog"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "bone"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "This"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "old",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "man",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "roll"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "home",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "This old man, he played one",
+       "from": 0
+      },
+      {
+       "lyric": "He played knick-knack on my thumb",
+       "from": 6
+      },
+      {
+       "lyric": "With a knick-knack paddywhack",
+       "from": 13
+      },
+      {
+       "lyric": "Give the dog a bone",
+       "from": 20
+      },
+      {
+       "lyric": "This old man came rolling home",
+       "from": 25
+      }
+     ],
+     "durationSec": 38
+    },
+    {
+     "kind": "praise",
+     "caption": "Two notes, wow!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Wiggle your fingers!",
+     "parentCue": "Shake out both hands together",
+     "durationSec": 8
     },
     {
      "kind": "praise",
@@ -6787,20 +8975,20 @@
    ]
   },
   {
-   "id": "this-old-man-c06",
-   "index": 6,
+   "id": "this-old-man-c09",
+   "index": 9,
    "title": "Play together",
    "goal": "Play the whole song together at full speed",
    "type": "together",
    "durationSec": 240,
    "parentTip": "Keep playing even if your child misses a note. The beat matters more than being perfect.",
-   "video": "this-old-man/this-old-man-c06.mp4",
-   "thumb": "this-old-man/this-old-man-c06.jpg",
+   "video": "this-old-man/this-old-man-c09.mp4",
+   "thumb": "this-old-man/this-old-man-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "This Old Man",
-     "subcaption": "Class 6: Play together",
+     "subcaption": "Class 9: Play together",
      "durationSec": 5
     },
     {
@@ -8620,20 +10808,20 @@
    ]
   },
   {
-   "id": "this-old-man-c07",
-   "index": 7,
+   "id": "this-old-man-c10",
+   "index": 10,
    "title": "Concert time",
    "goal": "Play the whole song from start to end and celebrate",
    "type": "concert",
    "durationSec": 233,
    "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "video": "this-old-man/this-old-man-c07.mp4",
-   "thumb": "this-old-man/this-old-man-c07.jpg",
+   "video": "this-old-man/this-old-man-c10.mp4",
+   "thumb": "this-old-man/this-old-man-c10.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "This Old Man",
-     "subcaption": "Class 7: Concert time",
+     "subcaption": "Class 10: Concert time",
      "durationSec": 5
     },
     {

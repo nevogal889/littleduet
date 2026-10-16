@@ -5,6 +5,7 @@
  "icon": "dog",
  "key": "C",
  "timeSignature": "4/4",
+ "totalSec": 2186,
  "classes": [
   {
    "id": "bow-wow-wow-c01",
@@ -1412,14 +1413,14 @@
     },
     {
      "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
+     "caption": "Sing along this time",
+     "parentCue": "Sing the words softly",
      "durationSec": 6
     },
     {
      "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
+     "caption": "Sing along",
+     "parentCue": "Sing with your child",
      "bpm": 96,
      "leadInSec": 1.25,
      "notes": [
@@ -2860,7 +2861,7 @@
    "title": "Bear low, bird high",
    "goal": "Hear the difference between low and high sounds",
    "type": "high-low",
-   "durationSec": 222,
+   "durationSec": 209,
    "parentTip": "Low keys are on the left, high keys on the right. Any key on the correct side counts.",
    "video": "bow-wow-wow/bow-wow-wow-c03.mp4",
    "thumb": "bow-wow-wow/bow-wow-wow-c03.jpg",
@@ -3688,47 +3689,6 @@
       },
       {
        "p": "C5",
-       "d": 2,
-       "s": "wow",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Bow, wow, wow!",
-       "from": 0
-      }
-     ],
-     "durationSec": 6
-    },
-    {
-     "kind": "say",
-     "caption": "Is it the bear or the bird?",
-     "parentCue": "Let your child guess first",
-     "durationSec": 7
-    },
-    {
-     "kind": "high_low",
-     "caption": "The bear!",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 96,
-     "leadInSec": 1.25,
-     "notes": [
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "Bow",
-       "who": "parent"
-      },
-      {
-       "p": "D3",
-       "d": 1,
-       "s": "wow",
-       "who": "parent"
-      },
-      {
-       "p": "C3",
        "d": 2,
        "s": "wow",
        "who": "parent"
@@ -6390,7 +6350,7 @@
    "title": "Stop and go",
    "goal": "Tap when the music plays and freeze when it stops",
    "type": "stop-go",
-   "durationSec": 227,
+   "durationSec": 217,
    "parentTip": "Make freezing silly and fun. Holding still is a big skill for little ones.",
    "video": "bow-wow-wow/bow-wow-wow-c06.mp4",
    "thumb": "bow-wow-wow/bow-wow-wow-c06.jpg",
@@ -7300,12 +7260,69 @@
      "durationSec": 4
     },
     {
-     "kind": "beat",
-     "caption": "Go! Tap the beat",
-     "parentCue": "Play this line",
-     "bpm": 96,
-     "leadInSec": 1.25,
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "bow-wow-wow-c07",
+   "index": 7,
+   "title": "Tap the words",
+   "goal": "Tap the rhythm of the words, one tap per sung word",
+   "type": "rhythm",
+   "durationSec": 225,
+   "parentTip": "Say the words together while tapping. Long words get one tap per piece.",
+   "video": "bow-wow-wow/bow-wow-wow-c07.mp4",
+   "thumb": "bow-wow-wow/bow-wow-wow-c07.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Bow, Wow, Wow",
+     "subcaption": "Class 7: Tap the words",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Tap with every word!",
+     "parentCue": "One tap for each sung word",
+     "durationSec": 6
+    },
+    {
+     "kind": "say",
+     "caption": "The beat walks, the words dance",
+     "parentCue": "Clap the words of the first line",
+     "durationSec": 7
+    },
+    {
+     "kind": "together",
+     "caption": "Tap with the words",
+     "parentCue": "Say the words while you tap",
+     "bpm": 72,
+     "leadInSec": 1.667,
      "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      },
       {
        "p": "E4",
        "d": 1,
@@ -7337,17 +7354,884 @@
      ],
      "lines": [
       {
-       "lyric": "Whose dog art thou?",
+       "lyric": "Bow, wow, wow!",
        "from": 0
+      },
+      {
+       "lyric": "Whose dog art thou?",
+       "from": 3
       }
      ],
-     "durationSec": 6
+     "durationSec": 11
     },
     {
      "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Stop playing and freeze together",
-     "durationSec": 4
+     "caption": "One more time",
+     "parentCue": "Tap the words, not the beat",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Tap the words",
+     "parentCue": "Your child taps each word",
+     "bpm": 77,
+     "leadInSec": 1.558,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Whose",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "art",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "thou",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      },
+      {
+       "lyric": "Whose dog art thou?",
+       "from": 3
+      }
+     ],
+     "durationSec": 11
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Again, nice and easy",
+     "parentCue": "Tap the words, not the beat",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Tap the words",
+     "parentCue": "Your child taps each word",
+     "bpm": 86,
+     "leadInSec": 1.395,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Whose",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "art",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "thou",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Lit",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Tom",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Tink",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "er's",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      },
+      {
+       "lyric": "Whose dog art thou?",
+       "from": 3
+      },
+      {
+       "lyric": "Little Tommy Tinker's dog",
+       "from": 7
+      },
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 14
+      }
+     ],
+     "durationSec": 18
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Let's do it again",
+     "parentCue": "Tap the words, not the beat",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Tap the words",
+     "parentCue": "Your child taps each word",
+     "bpm": 77,
+     "leadInSec": 1.558,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Whose",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "art",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "thou",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      },
+      {
+       "lyric": "Whose dog art thou?",
+       "from": 3
+      }
+     ],
+     "durationSec": 11
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "And again!",
+     "parentCue": "Tap the words, not the beat",
+     "durationSec": 5
+    },
+    {
+     "kind": "together",
+     "caption": "Tap the words",
+     "parentCue": "Your child taps each word",
+     "bpm": 86,
+     "leadInSec": 1.395,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Whose",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "art",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "thou",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Lit",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Tom",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Tink",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "er's",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      },
+      {
+       "lyric": "Whose dog art thou?",
+       "from": 3
+      },
+      {
+       "lyric": "Little Tommy Tinker's dog",
+       "from": 7
+      },
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 14
+      }
+     ],
+     "durationSec": 18
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Tap the words, not the beat",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Tap the words",
+     "parentCue": "Your child taps each word",
+     "bpm": 77,
+     "leadInSec": 1.558,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Whose",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "art",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "thou",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      },
+      {
+       "lyric": "Whose dog art thou?",
+       "from": 3
+      }
+     ],
+     "durationSec": 11
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Again, nice and easy",
+     "parentCue": "Tap the words, not the beat",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Tap the words",
+     "parentCue": "Your child taps each word",
+     "bpm": 86,
+     "leadInSec": 1.395,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Whose",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "art",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "thou",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Lit",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Tom",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Tink",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "er's",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      },
+      {
+       "lyric": "Whose dog art thou?",
+       "from": 3
+      },
+      {
+       "lyric": "Little Tommy Tinker's dog",
+       "from": 7
+      },
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 14
+      }
+     ],
+     "durationSec": 18
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Let's do it again",
+     "parentCue": "Tap the words, not the beat",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Tap the words",
+     "parentCue": "Your child taps each word",
+     "bpm": 77,
+     "leadInSec": 1.558,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Whose",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "art",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "thou",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      },
+      {
+       "lyric": "Whose dog art thou?",
+       "from": 3
+      }
+     ],
+     "durationSec": 11
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Tap the words, not the beat",
+     "durationSec": 6
+    },
+    {
+     "kind": "together",
+     "caption": "Tap the words",
+     "parentCue": "Your child taps each word",
+     "bpm": 77,
+     "leadInSec": 1.558,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Whose",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "art",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "thou",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      },
+      {
+       "lyric": "Whose dog art thou?",
+       "from": 3
+      }
+     ],
+     "durationSec": 11
     },
     {
      "kind": "praise",
@@ -7357,20 +8241,938 @@
    ]
   },
   {
-   "id": "bow-wow-wow-c07",
-   "index": 7,
+   "id": "bow-wow-wow-c08",
+   "index": 8,
+   "title": "Music games mix",
+   "goal": "Switch quickly between the games: high and low, loud and soft, fast and slow",
+   "type": "review",
+   "durationSec": 197,
+   "parentTip": "Let your child guess the game before the picture shows. Guessing is listening.",
+   "video": "bow-wow-wow/bow-wow-wow-c08.mp4",
+   "thumb": "bow-wow-wow/bow-wow-wow-c08.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Bow, Wow, Wow",
+     "subcaption": "Class 8: Music games mix",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Game time: listen and choose!",
+     "parentCue": "Mix all the games you know",
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Listen first, then tap",
+     "parentCue": "Let your child guess the game",
+     "durationSec": 6
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D3",
+       "d": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 2,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud taps!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft taps",
+     "parentCue": "Tap gently",
+     "dynamic": "soft",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "say",
+     "caption": "Stop! Freeze!",
+     "parentCue": "Freeze together",
+     "durationSec": 4
+    },
+    {
+     "kind": "beat",
+     "caption": "Slow taps",
+     "parentCue": "Slow like a turtle",
+     "bpm": 62,
+     "leadInSec": 1.935,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
+     "caption": "You know all the games!",
+     "durationSec": 5
+    },
+    {
+     "kind": "beat",
+     "caption": "Fast taps!",
+     "parentCue": "Quick like a bunny",
+     "bpm": 125,
+     "leadInSec": 1.0,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D3",
+       "d": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 2,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud taps!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft taps",
+     "parentCue": "Tap gently",
+     "dynamic": "soft",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "say",
+     "caption": "Stop! Freeze!",
+     "parentCue": "Freeze together",
+     "durationSec": 4
+    },
+    {
+     "kind": "beat",
+     "caption": "Slow taps",
+     "parentCue": "Slow like a turtle",
+     "bpm": 62,
+     "leadInSec": 1.935,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
+     "caption": "You know all the games!",
+     "durationSec": 5
+    },
+    {
+     "kind": "beat",
+     "caption": "Fast taps!",
+     "parentCue": "Quick like a bunny",
+     "bpm": 125,
+     "leadInSec": 1.0,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D3",
+       "d": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 2,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud taps!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft taps",
+     "parentCue": "Tap gently",
+     "dynamic": "soft",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "say",
+     "caption": "Stop! Freeze!",
+     "parentCue": "Freeze together",
+     "durationSec": 4
+    },
+    {
+     "kind": "beat",
+     "caption": "Slow taps",
+     "parentCue": "Slow like a turtle",
+     "bpm": 62,
+     "leadInSec": 1.935,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
+     "caption": "You know all the games!",
+     "durationSec": 5
+    },
+    {
+     "kind": "beat",
+     "caption": "Fast taps!",
+     "parentCue": "Quick like a bunny",
+     "bpm": 125,
+     "leadInSec": 1.0,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 5
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D3",
+       "d": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 2,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud taps!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft taps",
+     "parentCue": "Tap gently",
+     "dynamic": "soft",
+     "bpm": 96,
+     "leadInSec": 1.25,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 6
+    },
+    {
+     "kind": "say",
+     "caption": "Stop! Freeze!",
+     "parentCue": "Freeze together",
+     "durationSec": 4
+    },
+    {
+     "kind": "beat",
+     "caption": "Slow taps",
+     "parentCue": "Slow like a turtle",
+     "bpm": 62,
+     "leadInSec": 1.935,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Bow",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "wow",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "wow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Bow, wow, wow!",
+       "from": 0
+      }
+     ],
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "bow-wow-wow-c09",
+   "index": 9,
    "title": "Play together",
    "goal": "Play the song together, grown-up on the tune, child on the beat",
    "type": "together",
    "durationSec": 214,
    "parentTip": "Follow your child's lead. If they stop to listen, keep playing and smile.",
-   "video": "bow-wow-wow/bow-wow-wow-c07.mp4",
-   "thumb": "bow-wow-wow/bow-wow-wow-c07.jpg",
+   "video": "bow-wow-wow/bow-wow-wow-c09.mp4",
+   "thumb": "bow-wow-wow/bow-wow-wow-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Bow, Wow, Wow",
-     "subcaption": "Class 7: Play together",
+     "subcaption": "Class 9: Play together",
      "durationSec": 5
     },
     {
@@ -8630,20 +10432,20 @@
    ]
   },
   {
-   "id": "bow-wow-wow-c08",
-   "index": 8,
+   "id": "bow-wow-wow-c10",
+   "index": 10,
    "title": "Concert time",
    "goal": "Play the whole song from start to end and celebrate",
    "type": "concert",
-   "durationSec": 233,
+   "durationSec": 205,
    "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "video": "bow-wow-wow/bow-wow-wow-c08.mp4",
-   "thumb": "bow-wow-wow/bow-wow-wow-c08.jpg",
+   "video": "bow-wow-wow/bow-wow-wow-c10.mp4",
+   "thumb": "bow-wow-wow/bow-wow-wow-c10.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Bow, Wow, Wow",
-     "subcaption": "Class 8: Concert time",
+     "subcaption": "Class 10: Concert time",
      "durationSec": 5
     },
     {
@@ -9609,164 +11411,6 @@
     {
      "kind": "beat",
      "caption": "A song for teddy",
-     "parentCue": "You play the tune, your child taps the beat",
-     "bpm": 96,
-     "leadInSec": 1.25,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Bow",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "wow",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "wow",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Whose",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "dog",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "art",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "thou",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lit",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Tom",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Tink",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "er's",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "dog",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Bow",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "wow",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "wow",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Bow, wow, wow!",
-       "from": 0
-      },
-      {
-       "lyric": "Whose dog art thou?",
-       "from": 3
-      },
-      {
-       "lyric": "Little Tommy Tinker's dog",
-       "from": 7
-      },
-      {
-       "lyric": "Bow, wow, wow!",
-       "from": 14
-      }
-     ],
-     "durationSec": 16
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5
-    },
-    {
-     "kind": "say",
-     "caption": "Play it for someone you love",
-     "parentCue": "Call a family member to listen",
-     "durationSec": 7
-    },
-    {
-     "kind": "beat",
-     "caption": "A song for you",
      "parentCue": "You play the tune, your child taps the beat",
      "bpm": 96,
      "leadInSec": 1.25,

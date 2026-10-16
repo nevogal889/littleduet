@@ -37,6 +37,7 @@ const alias = {
   'expo-constants': S('constants.ts'),
   '@expo-google-fonts/bricolage-grotesque': S('misc.tsx'),
   '@expo-google-fonts/dm-sans': S('misc.tsx'),
+  '@expo-google-fonts/nunito': S('misc.tsx'),
   '@react-native-async-storage/async-storage': S('async-storage.ts'),
   '@supabase/supabase-js': S('empty.ts'),
   'react-native-url-polyfill/auto': S('empty.ts'),
@@ -88,17 +89,18 @@ fs.writeFileSync(
 <title>Little Duet</title>
 <style>
 @font-face{font-family:'Bricolage Grotesque';src:url(${PREVIEW ? '' : '/'}fonts/bricolage.ttf) format('truetype');font-weight:100 900;font-display:block}
+@font-face{font-family:'Nunito';src:url(${PREVIEW ? '' : '/'}fonts/dmsans.ttf) format('truetype');font-weight:100 1000;font-display:block}
 @font-face{font-family:'DM Sans';src:url(${PREVIEW ? '' : '/'}fonts/dmsans.ttf) format('truetype');font-weight:100 1000;font-display:block}
-html,body,#root{height:100%;margin:0;background:#EEF3F7}
+html,body,#root{height:100%;margin:0;background:#FFFFFF}
 body{overflow:hidden;-webkit-tap-highlight-color:transparent}
 #root{display:flex;flex-direction:column}
 .rn-view{display:flex;flex-direction:column;align-items:stretch;flex-shrink:0;position:relative;box-sizing:border-box;border:0 solid #000;margin:0;padding:0;min-width:0;min-height:0;z-index:0;text-decoration:none;list-style:none}
 .rn-text{display:block;box-sizing:border-box;border:0 solid #000;margin:0;padding:0;white-space:pre-wrap;overflow-wrap:break-word;font-family:'DM Sans',system-ui,sans-serif;font-size:14px;color:#000;position:relative;min-width:0}
 .rn-text-nested{display:inline;font:inherit;white-space:inherit}
 .rn-pressable{user-select:none;-webkit-user-select:none;touch-action:manipulation;outline-offset:2px}
-.rn-pressable:focus-visible{outline:3px solid #3D4C8C}
+.rn-pressable:focus-visible{outline:3px solid #1CB0F6}
 .rn-input{box-sizing:border-box;border:0 solid #000;margin:0;outline-offset:2px;font-family:'DM Sans',system-ui,sans-serif}
-.rn-input:focus-visible{outline:3px solid #3D4C8C}
+.rn-input:focus-visible{outline:3px solid #1CB0F6}
 .rn-noscrollbar{scrollbar-width:none}.rn-noscrollbar::-webkit-scrollbar{display:none}
 .rn-spinner{width:28px;height:28px;border:4px solid;border-radius:50%;animation:spin 0.9s linear infinite;align-self:center;box-sizing:border-box}
 @keyframes spin{to{transform:rotate(360deg)}}

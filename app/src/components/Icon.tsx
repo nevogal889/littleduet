@@ -23,11 +23,15 @@ export type IconName =
   | 'screen'
   | 'restart'
   | 'mail'
-  | 'apple';
+  | 'apple'
+  | 'flame'
+  | 'trophy'
+  | 'chest'
+  | 'list';
 
 /** One stroke family (2.4 on a 24 grid, round caps). Decorative by default: pair with visible text. */
 export function Icon({ name, size = 28, color = colors.ink }: { name: IconName; size?: number; color?: string }) {
-  const s = { stroke: color, strokeWidth: 2.4, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, fill: 'none' };
+  const s = { stroke: color, strokeWidth: 2.2, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, fill: 'none' };
   let body: React.ReactNode;
   switch (name) {
     case 'home':
@@ -139,6 +143,35 @@ export function Icon({ name, size = 28, color = colors.ink }: { name: IconName; 
           <Path d="M3.5 7l8.5 6 8.5-6" {...s} />
         </>
       );
+      break;
+    case 'flame':
+      body = (
+        <>
+          <Path d="M12 2.6c.6 3.7 5.8 5.8 5.8 11a5.8 5.8 0 0 1-11.6 0c0-2.7 1.5-4.6 3-5.9.1 1.9.9 3.1 2.1 3.8-.4-3.4-.1-6.2.7-8.9z" fill={color} />
+          <Path d="M12 20.4a2.6 2.6 0 0 1-2.6-2.6c0-1.6 1.4-2.6 2.1-3.9.5 1.5 3.1 2.2 3.1 3.9a2.6 2.6 0 0 1-2.6 2.6z" fill="#FFFFFF" opacity={0.55} />
+        </>
+      );
+      break;
+    case 'trophy':
+      body = (
+        <>
+          <Path d="M7 4h10v5a5 5 0 0 1-10 0z" fill={color} />
+          <Path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4" {...s} />
+          <Path d="M12 14v3M8 20h8M9.5 17h5v3h-5z" {...s} />
+        </>
+      );
+      break;
+    case 'chest':
+      body = (
+        <>
+          <Path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v1H4z" fill={color} />
+          <Rect x={4} y={11} width={16} height={8} rx={1.5} {...s} />
+          <Rect x={10.5} y={9.5} width={3} height={4} rx={0.8} fill={color} stroke={color} />
+        </>
+      );
+      break;
+    case 'list':
+      body = <Path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01" {...s} />;
       break;
     case 'apple':
       body = (

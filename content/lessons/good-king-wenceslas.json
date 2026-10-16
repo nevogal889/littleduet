@@ -5,6 +5,7 @@
  "icon": "crown",
  "key": "C",
  "timeSignature": "4/4",
+ "totalSec": 2171,
  "classes": [
   {
    "id": "good-king-wenceslas-c01",
@@ -1492,7 +1493,7 @@
    "title": "Put it together",
    "goal": "Play the whole song slowly, all parts in order",
    "type": "put-together",
-   "durationSec": 239,
+   "durationSec": 265,
    "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
    "video": "good-king-wenceslas/good-king-wenceslas-c03.mp4",
    "thumb": "good-king-wenceslas/good-king-wenceslas-c03.jpg",
@@ -2629,6 +2630,76 @@
     },
     {
      "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Good"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "King"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Wen"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "ces"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "las"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "looked"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "out"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Good King Wenceslas looked out",
+       "from": 0
+      }
+     ],
+     "durationSec": 15
+    },
+    {
+     "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
@@ -2637,18 +2708,716 @@
   {
    "id": "good-king-wenceslas-c04",
    "index": 4,
-   "title": "Left hand helper",
-   "goal": "Play one low left hand note at the start of each bar",
-   "type": "left-hand",
-   "durationSec": 220,
-   "parentTip": "You play the tune, your child plays the low notes. Count bars out loud to help.",
+   "title": "Tricky spots",
+   "goal": "Practise the hardest part slowly, then a little faster",
+   "type": "review",
+   "durationSec": 242,
+   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
    "video": "good-king-wenceslas/good-king-wenceslas-c04.mp4",
    "thumb": "good-king-wenceslas/good-king-wenceslas-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Good King Wenceslas",
-     "subcaption": "Class 4: Left hand helper",
+     "subcaption": "Class 4: Tricky spots",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Tricky spots, nice and slow",
+     "parentCue": "This is the hardest part of the song",
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Slow, then a bit faster",
+     "parentCue": "Say the finger numbers out loud",
+     "durationSec": 7
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch slowly",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 60,
+     "leadInSec": 2.0,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Gath"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "'ring"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "win"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ter"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "fu"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 4
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "el"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Bright"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "shone"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "moon"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "that"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Gathering winter fuel",
+       "from": 0
+      },
+      {
+       "lyric": "Brightly shone the moon that night",
+       "from": 7
+      }
+     ],
+     "durationSec": 24
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn, slowly",
+     "parentCue": "Slow is perfect",
+     "bpm": 60,
+     "leadInSec": 2.0,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Gath"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "'ring"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "win"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ter"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "fu"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 4
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "el"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Bright"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "shone"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "moon"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "that"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Gathering winter fuel",
+       "from": 0
+      },
+      {
+       "lyric": "Brightly shone the moon that night",
+       "from": 7
+      }
+     ],
+     "durationSec": 38
+    },
+    {
+     "kind": "say",
+     "caption": "A little faster now",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 70,
+     "leadInSec": 1.714,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Gath"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "'ring"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "win"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ter"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "fu"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 4
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "el"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Bright"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "shone"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "moon"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "that"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Gathering winter fuel",
+       "from": 0
+      },
+      {
+       "lyric": "Brightly shone the moon that night",
+       "from": 7
+      }
+     ],
+     "durationSec": 33
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Again, a bit faster",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Gath"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "'ring"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "win"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ter"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "fu"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 4
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "el"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Bright"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "shone"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "moon"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "that"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Gathering winter fuel",
+       "from": 0
+      },
+      {
+       "lyric": "Brightly shone the moon that night",
+       "from": 7
+      }
+     ],
+     "durationSec": 29
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Nearly full speed",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 90,
+     "leadInSec": 1.333,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Gath"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "'ring"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "win"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ter"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "fu"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 4
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "el"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Bright"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "shone"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "moon"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "that"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Gathering winter fuel",
+       "from": 0
+      },
+      {
+       "lyric": "Brightly shone the moon that night",
+       "from": 7
+      }
+     ],
+     "durationSec": 26
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Again, a bit faster",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Gath"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "'ring"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "win"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ter"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "fu"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 4
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "el"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Bright"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "shone"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "moon"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "that"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Gathering winter fuel",
+       "from": 0
+      },
+      {
+       "lyric": "Brightly shone the moon that night",
+       "from": 7
+      }
+     ],
+     "durationSec": 29
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "good-king-wenceslas-c05",
+   "index": 5,
+   "title": "Left hand helper",
+   "goal": "Play one low left hand note at the start of each bar",
+   "type": "left-hand",
+   "durationSec": 246,
+   "parentTip": "You play the tune, your child plays the low notes. Count bars out loud to help.",
+   "video": "good-king-wenceslas/good-king-wenceslas-c05.mp4",
+   "thumb": "good-king-wenceslas/good-king-wenceslas-c05.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Good King Wenceslas",
+     "subcaption": "Class 5: Left hand helper",
      "durationSec": 5
     },
     {
@@ -3440,26 +4209,96 @@
     },
     {
      "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Good"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "King"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Wen"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "ces"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "las"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "looked"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "out"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Good King Wenceslas looked out",
+       "from": 0
+      }
+     ],
+     "durationSec": 15
+    },
+    {
+     "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
    ]
   },
   {
-   "id": "good-king-wenceslas-c05",
-   "index": 5,
+   "id": "good-king-wenceslas-c06",
+   "index": 6,
    "title": "Hands together, slowly",
    "goal": "Play the tune with a low left hand note on each bar",
    "type": "hands-together",
-   "durationSec": 230,
+   "durationSec": 221,
    "parentTip": "Two hands is hard work. Go very slowly and stop while it's still fun.",
-   "video": "good-king-wenceslas/good-king-wenceslas-c05.mp4",
-   "thumb": "good-king-wenceslas/good-king-wenceslas-c05.jpg",
+   "video": "good-king-wenceslas/good-king-wenceslas-c06.mp4",
+   "thumb": "good-king-wenceslas/good-king-wenceslas-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Good King Wenceslas",
-     "subcaption": "Class 5: Hands together, slowly",
+     "subcaption": "Class 6: Hands together, slowly",
      "durationSec": 5
     },
     {
@@ -3956,17 +4795,682 @@
      "durationSec": 57
     },
     {
+     "kind": "together",
+     "caption": "Together, slowly",
+     "parentCue": "Play along slowly",
+     "bpm": 65,
+     "leadInSec": 1.846,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Good",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "King"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Wen"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "ces"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "las",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "looked"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "out"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "On",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "feast"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "of"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "Ste",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "phen"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "When",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "snow"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "lay"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "round",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "bout"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "Deep",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "and"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "crisp"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "e",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "ven"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Bright",
+       "lh": {
+        "p": "G3",
+        "d": 4.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "shone"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "moon",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "that"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "night"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "Though",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "frost"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "was"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "cru",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "el"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "When",
+       "lh": {
+        "p": "G3",
+        "d": 4.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "poor"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "man"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "came",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "in"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 5,
+       "s": "sight"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Gath",
+       "lh": {
+        "p": "G3",
+        "d": 4.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "'ring"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "win"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ter"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "fu",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 4
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "el",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Good King Wenceslas looked out",
+       "from": 0
+      },
+      {
+       "lyric": "On the feast of Stephen",
+       "from": 7
+      },
+      {
+       "lyric": "When the snow lay round about",
+       "from": 13
+      },
+      {
+       "lyric": "Deep and crisp and even",
+       "from": 20
+      },
+      {
+       "lyric": "Brightly shone the moon that night",
+       "from": 26
+      },
+      {
+       "lyric": "Though the frost was cruel",
+       "from": 33
+      },
+      {
+       "lyric": "When a poor man came in sight",
+       "from": 39
+      },
+      {
+       "lyric": "Gathering winter fuel",
+       "from": 46
+      }
+     ],
+     "durationSec": 67
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
      "kind": "say",
-     "caption": "The whole song, both hands",
-     "parentCue": "Help with the left hand if needed",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Good"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "King"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Wen"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "ces"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "las"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "looked"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "out"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "On"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "feast"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "of"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "Ste"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "phen"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "When"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "snow"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "lay"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "round"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "bout"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Good King Wenceslas looked out",
+       "from": 0
+      },
+      {
+       "lyric": "On the feast of Stephen",
+       "from": 7
+      },
+      {
+       "lyric": "When the snow lay round about",
+       "from": 13
+      }
+     ],
+     "durationSec": 36
+    },
+    {
+     "kind": "praise",
+     "caption": "Wonderful playing!",
+     "durationSec": 5
+    }
+   ]
+  },
+  {
+   "id": "good-king-wenceslas-c07",
+   "index": 7,
+   "title": "Hands together, a bit faster",
+   "goal": "Play both hands together closer to full speed",
+   "type": "hands-together",
+   "durationSec": 227,
+   "parentTip": "Speed comes last. If notes fall apart, go back to the slower tempo.",
+   "video": "good-king-wenceslas/good-king-wenceslas-c07.mp4",
+   "thumb": "good-king-wenceslas/good-king-wenceslas-c07.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Good King Wenceslas",
+     "subcaption": "Class 7: Hands together, a bit faster",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Both hands, a bit faster",
+     "parentCue": "Only if the slow class felt good",
+     "showKeys": [
+      {
+       "p": "G3",
+       "f": 1
+      },
+      {
+       "p": "A3",
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "f": 3
+      },
+      {
+       "p": "C4",
+       "f": 4
+      },
+      {
+       "p": "D4",
+       "f": 5
+      }
+     ],
      "durationSec": 7
     },
     {
      "kind": "your_turn",
      "caption": "Your turn! Both hands",
-     "parentCue": "Keep it slow",
-     "bpm": 65,
-     "leadInSec": 1.846,
+     "parentCue": "Warm up slowly",
+     "bpm": 75,
+     "leadInSec": 1.6,
      "gapBeats": 1,
      "notes": [
       {
@@ -4423,7 +5927,939 @@
        "from": 46
       }
      ],
-     "durationSec": 116
+     "durationSec": 100
+    },
+    {
+     "kind": "together",
+     "caption": "A bit faster now",
+     "parentCue": "Keep the beat steady",
+     "bpm": 85,
+     "leadInSec": 1.412,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Good",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "King"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Wen"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "ces"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "las",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "looked"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "out"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "On",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "feast"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "of"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "Ste",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "phen"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "When",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "snow"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "lay"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "round",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "bout"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "Deep",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "and"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "crisp"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "e",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "ven"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Bright",
+       "lh": {
+        "p": "G3",
+        "d": 4.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "shone"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "moon",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "that"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "night"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "Though",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "frost"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "was"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "cru",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "el"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "When",
+       "lh": {
+        "p": "G3",
+        "d": 4.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "poor"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "man"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "came",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "in"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 5,
+       "s": "sight"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Gath",
+       "lh": {
+        "p": "G3",
+        "d": 4.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "'ring"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "win"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ter"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "fu",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 4
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "el",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Good King Wenceslas looked out",
+       "from": 0
+      },
+      {
+       "lyric": "On the feast of Stephen",
+       "from": 7
+      },
+      {
+       "lyric": "When the snow lay round about",
+       "from": 13
+      },
+      {
+       "lyric": "Deep and crisp and even",
+       "from": 20
+      },
+      {
+       "lyric": "Brightly shone the moon that night",
+       "from": 26
+      },
+      {
+       "lyric": "Though the frost was cruel",
+       "from": 33
+      },
+      {
+       "lyric": "When a poor man came in sight",
+       "from": 39
+      },
+      {
+       "lyric": "Gathering winter fuel",
+       "from": 46
+      }
+     ],
+     "durationSec": 51
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Relax your shoulders",
+     "durationSec": 5
+    },
+    {
+     "kind": "together",
+     "caption": "Both hands together",
+     "parentCue": "Help with the left hand if needed",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Good",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "King"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Wen"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "ces"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "las",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "looked"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "out"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "On",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "feast"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "of"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "Ste",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "phen"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "When",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "snow"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "lay"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "round",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "bout"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "Deep",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "and"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "crisp"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "e",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "ven"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Bright",
+       "lh": {
+        "p": "G3",
+        "d": 4.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "shone"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "moon",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "that"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "night"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "Though",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "frost"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "was"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "cru",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "el"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "When",
+       "lh": {
+        "p": "G3",
+        "d": 4.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "poor"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "man"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "came",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "in"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 5,
+       "s": "sight"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Gath",
+       "lh": {
+        "p": "G3",
+        "d": 4.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "'ring"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "win"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ter"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "fu",
+       "lh": {
+        "p": "F3",
+        "d": 4.0,
+        "f": 2,
+        "h": "L"
+       }
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 4
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "el",
+       "lh": {
+        "p": "C3",
+        "d": 4.0,
+        "f": 5,
+        "h": "L"
+       }
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Good King Wenceslas looked out",
+       "from": 0
+      },
+      {
+       "lyric": "On the feast of Stephen",
+       "from": 7
+      },
+      {
+       "lyric": "When the snow lay round about",
+       "from": 13
+      },
+      {
+       "lyric": "Deep and crisp and even",
+       "from": 20
+      },
+      {
+       "lyric": "Brightly shone the moon that night",
+       "from": 26
+      },
+      {
+       "lyric": "Though the frost was cruel",
+       "from": 33
+      },
+      {
+       "lyric": "When a poor man came in sight",
+       "from": 39
+      },
+      {
+       "lyric": "Gathering winter fuel",
+       "from": 46
+      }
+     ],
+     "durationSec": 54
     },
     {
      "kind": "praise",
@@ -4433,20 +6869,20 @@
    ]
   },
   {
-   "id": "good-king-wenceslas-c06",
-   "index": 6,
+   "id": "good-king-wenceslas-c08",
+   "index": 8,
    "title": "Play along",
    "goal": "Play the whole song along with the music at full speed",
    "type": "play-along",
-   "durationSec": 221,
+   "durationSec": 247,
    "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "video": "good-king-wenceslas/good-king-wenceslas-c06.mp4",
-   "thumb": "good-king-wenceslas/good-king-wenceslas-c06.jpg",
+   "video": "good-king-wenceslas/good-king-wenceslas-c08.mp4",
+   "thumb": "good-king-wenceslas/good-king-wenceslas-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Good King Wenceslas",
-     "subcaption": "Class 6: Play along",
+     "subcaption": "Class 8: Play along",
      "durationSec": 5
     },
     {
@@ -5924,26 +8360,96 @@
     },
     {
      "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Good"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "King"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Wen"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "ces"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "las"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "looked"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "out"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Good King Wenceslas looked out",
+       "from": 0
+      }
+     ],
+     "durationSec": 15
+    },
+    {
+     "kind": "praise",
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
    ]
   },
   {
-   "id": "good-king-wenceslas-c07",
-   "index": 7,
+   "id": "good-king-wenceslas-c09",
+   "index": 9,
    "title": "Concert time",
    "goal": "Play the whole song from start to end and celebrate",
    "type": "concert",
-   "durationSec": 234,
+   "durationSec": 270,
    "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "video": "good-king-wenceslas/good-king-wenceslas-c07.mp4",
-   "thumb": "good-king-wenceslas/good-king-wenceslas-c07.jpg",
+   "video": "good-king-wenceslas/good-king-wenceslas-c09.mp4",
+   "thumb": "good-king-wenceslas/good-king-wenceslas-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Good King Wenceslas",
-     "subcaption": "Class 7: Concert time",
+     "subcaption": "Class 9: Concert time",
      "durationSec": 5
     },
     {
@@ -7842,6 +10348,116 @@
       }
      ],
      "durationSec": 44
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Good"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "King"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Wen"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "ces"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "las"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "looked"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "out"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "On"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "feast"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "of"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "Ste"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "phen"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Good King Wenceslas looked out",
+       "from": 0
+      },
+      {
+       "lyric": "On the feast of Stephen",
+       "from": 7
+      }
+     ],
+     "durationSec": 25
     },
     {
      "kind": "praise",

@@ -27,6 +27,10 @@ export const BricolageGrotesque_800ExtraBold = 'BricolageGrotesque_800ExtraBold'
 export const DMSans_400Regular = 'DMSans_400Regular';
 export const DMSans_500Medium = 'DMSans_500Medium';
 export const DMSans_700Bold = 'DMSans_700Bold';
+export const Nunito_400Regular = 'Nunito_400Regular';
+export const Nunito_600SemiBold = 'Nunito_600SemiBold';
+export const Nunito_700Bold = 'Nunito_700Bold';
+export const Nunito_800ExtraBold = 'Nunito_800ExtraBold';
 
 // splash / orientation / status bar / keep awake / haptics
 export const preventAutoHideAsync = async () => {};
