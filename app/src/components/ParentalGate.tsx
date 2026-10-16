@@ -173,9 +173,9 @@ const styles = StyleSheet.create({
     borderRadius: radius.md,
     backgroundColor: colors.surface,
     paddingHorizontal: space.lg,
+    ...type.h2,
     fontFamily: fonts.bold,
     fontSize: 28,
     color: colors.ink,
-    ...type.h2,
   },
 });

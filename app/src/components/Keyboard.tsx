@@ -96,7 +96,7 @@ export function Keyboard({
     const isHint = hint === k.p;
     const isFlash = flash[k.p];
     const side = sides ? (k.midi >= sides.split ? 'high' : 'low') : null;
-    let bg = k.black ? colors.keyBlack : colors.keyWhite;
+    let bg: string = k.black ? colors.keyBlack : colors.keyWhite;
     if (side && !k.black) bg = side === 'low' ? '#E6E9F6' : '#FDF3DC';
     if (isLit) bg = colors.marigold;
     if (isHint) bg = k.black ? colors.coral : colors.coralSoft;

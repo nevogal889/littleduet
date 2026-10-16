@@ -27,6 +27,8 @@ jobs:
   app:
     name: App (install, types, tests, web export)
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # to post the full report as a commit comment
     defaults:
       run:
         working-directory: app
@@ -42,11 +44,36 @@ jobs:
       - name: Copy content into the app
         run: node scripts/sync-content.mjs
       - name: Type-check
-        run: npx tsc --noEmit
+        id: tsc
+        run: npx tsc --noEmit 2>&1 | tee ../tsc.txt; exit ${PIPESTATUS[0]}
+        continue-on-error: true
       - name: Unit tests
-        run: npx jest --ci
+        id: jest
+        run: npx jest --ci 2>&1 | tee ../jest.txt; exit ${PIPESTATUS[0]}
+        continue-on-error: true
       - name: Web export
-        run: npx expo export -p web
+        id: export
+        run: npx expo export -p web 2>&1 | tee ../export.txt; exit ${PIPESTATUS[0]}
+        continue-on-error: true
+      - name: Post the full report on the commit
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "## CI report"
+            echo "Type-check: ${{ steps.tsc.outcome }} | Unit tests: ${{ steps.jest.outcome }} | Web export: ${{ steps.export.outcome }}"
+            for f in tsc jest export; do
+              echo; echo "### $f"; echo '```'
+              if [ "$f" = jest ]; then grep -E "✕|●|Tests:|Test Suites:|FAIL" ../$f.txt | head -80; else tail -n 80 ../$f.txt; fi
+              echo '```'
+            done
+          } > ../report.md
+          head -c 60000 ../report.md > ../report-trim.md
+          gh api repos/${{ github.repository }}/commits/${{ github.sha }}/comments -f body="$(cat ../report-trim.md)" > /dev/null
+      - name: Fail if any step failed
+        if: steps.tsc.outcome != 'success' || steps.jest.outcome != 'success' || steps.export.outcome != 'success'
+        run: exit 1
       - uses: actions/upload-artifact@v4
         with:
           name: web-export
