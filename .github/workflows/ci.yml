@@ -39,8 +39,10 @@ jobs:
           node-version: "22"
       - name: Install
         run: npm install --no-audit --no-fund
-      - name: Align Expo package versions
-        run: npx expo install --check || true
+      - name: Align Expo package versions with the SDK
+        run: |
+          npx expo install --fix 2>&1 | tail -n 20 | tee ../align.txt || true
+          git diff -- package.json | tee -a ../align.txt
       - name: Copy content into the app
         run: node scripts/sync-content.mjs
       - name: Type-check
@@ -63,7 +65,7 @@ jobs:
           {
             echo "## CI report"
             echo "Type-check: ${{ steps.tsc.outcome }} | Unit tests: ${{ steps.jest.outcome }} | Web export: ${{ steps.export.outcome }}"
-            for f in tsc jest export; do
+            for f in align tsc jest export; do
               echo; echo "### $f"; echo '```'
               if [ "$f" = jest ]; then grep -E "✕|●|Tests:|Test Suites:|FAIL" ../$f.txt | head -80; else tail -n 80 ../$f.txt; fi
               echo '```'
