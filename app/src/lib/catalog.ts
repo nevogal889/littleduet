@@ -84,20 +84,29 @@ function hash(s: string): number {
   return h >>> 0;
 }
 
-/**
- * Songs added in the last 7 days (when the catalog provides `addedAt`), otherwise a
- * stable weekly rotation so the row changes every Monday.
- */
+/** Songs added in the last 7 days (catalog `addedAt`). Empty when nothing is new: the row hides. */
 export function newThisWeek(songs: Song[], now: number, count = 8): Song[] {
-  const dated = songs.filter((s) => s.addedAt);
-  if (dated.length) {
-    return dated
-      .filter((s) => now - new Date(s.addedAt!).getTime() <= WEEK_MS && new Date(s.addedAt!).getTime() <= now)
-      .sort((a, b) => b.addedAt!.localeCompare(a.addedAt!))
-      .slice(0, count);
-  }
+  return songs
+    .filter((s) => s.addedAt && now - new Date(s.addedAt).getTime() <= WEEK_MS && new Date(s.addedAt).getTime() <= now)
+    .sort((a, b) => b.addedAt!.localeCompare(a.addedAt!))
+    .slice(0, count);
+}
+
+/**
+ * Discover: songs the child has not started, rotating every Monday (stable within a week).
+ * Mostly the child's age group and the one above, with a couple from further away for variety.
+ */
+export function discover(songs: Song[], lessons: Record<string, Lesson>, progress: ProgressMap, age: number, now: number, count = 10): Song[] {
+  const rank = groupRank(ageGroupForAge(age));
   const wk = weekNumber(now);
-  return [...songs].sort((a, b) => hash(`${wk}:${a.id}`) - hash(`${wk}:${b.id}`)).slice(0, count);
+  const fresh = songs.filter((s) => !lessons[s.id]?.classes.some((c) => progress[c.id]));
+  const shuffled = [...fresh].sort((a, b) => hash(`${wk}:${a.id}`) - hash(`${wk}:${b.id}`));
+  const near = shuffled.filter((s) => {
+    const r = groupRank(s.ageGroup);
+    return r === rank || r === rank + 1;
+  });
+  const far = shuffled.filter((s) => !near.includes(s));
+  return [...near.slice(0, count - 2), ...far.slice(0, 2)].slice(0, count);
 }
 
 /** Song cover produced by the video teammate: <songId>/cover.jpg (16:9) or cover-square.jpg. */

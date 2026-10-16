@@ -27,7 +27,9 @@ export type IconName =
   | 'flame'
   | 'trophy'
   | 'chest'
-  | 'list';
+  | 'list'
+  | 'gear'
+  | 'cake';
 
 /** One stroke family (2.4 on a 24 grid, round caps). Decorative by default: pair with visible text. */
 export function Icon({ name, size = 28, color = colors.ink }: { name: IconName; size?: number; color?: string }) {
@@ -172,6 +174,24 @@ export function Icon({ name, size = 28, color = colors.ink }: { name: IconName; 
       break;
     case 'list':
       body = <Path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01" {...s} />;
+      break;
+    case 'gear':
+      body = (
+        <>
+          <Circle cx={12} cy={12} r={3.2} {...s} />
+          <Path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7" {...s} />
+          <Circle cx={12} cy={12} r={6.6} {...s} />
+        </>
+      );
+      break;
+    case 'cake':
+      body = (
+        <>
+          <Rect x={4} y={11} width={16} height={9} rx={2} {...s} />
+          <Path d="M4 15c2 1.4 4 1.4 5.3 0 1.4 1.4 4 1.4 5.4 0 1.3 1.4 3.3 1.4 5.3 0M12 11V7.5" {...s} />
+          <Path d="M12 3.2c1 1.2 1.2 2.2 0 3.3-1.2-1.1-1-2.1 0-3.3z" {...s} fill={color} />
+        </>
+      );
       break;
     case 'apple':
       body = (

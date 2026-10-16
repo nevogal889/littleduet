@@ -5,6 +5,7 @@ import { DifficultyDots, SongCover } from '../../src/components/bits';
 import { ClassRow, songMeta } from '../../src/components/cards';
 import { LessonPath, type PathItem } from '../../src/components/LessonPath';
 import { ClassBriefSheet, SkillMapCard } from '../../src/components/skills';
+import { SongStoryCard } from '../../src/components/SongStory';
 import { BackButton, Button, Card, PercentBar, Screen, SectionTitle, Segmented, T } from '../../src/components/ui';
 import { LESSONS, songById } from '../../src/data/catalog';
 import { useOpenClass } from '../../src/hooks';
@@ -81,6 +82,7 @@ export default function SongPage() {
           <PercentBar percent={pct} doneLabel={t('song.done')} testID="song-pct" />
         </View>
       </View>
+      <SongStoryCard song={song} />
       <Segmented
         testID="song-mode"
         value={mode}
@@ -93,7 +95,7 @@ export default function SongPage() {
       {sp.finished ? (
         <Button testID="song-primary" icon="play" label={t('song.playAgain')} onPress={() => openClass(lesson.classes[lesson.classes.length - 1].id, mode)} />
       ) : null}
-      {target.parentTip ? (
+      {mode === 'real' && target.parentTip ? (
         <Card style={{ gap: 4, backgroundColor: colors.soft, boxShadow: 'none' }}>
           <T v="bodyStrong">{t('song.tipTitle')}</T>
           <T v="body">{target.parentTip}</T>
@@ -139,13 +141,6 @@ export default function SongPage() {
       )}
       <T v="small">{t('song.concertNote')}</T>
       {!wide ? <View style={{ marginTop: space.md }}>{skillMap}</View> : null}
-      {song.origin ? (
-        <Card style={{ gap: 4, marginTop: space.md }}>
-          <T v="bodyStrong">{t('song.aboutTitle')}</T>
-          <T v="small">{song.origin}</T>
-          <T v="small">{t('song.aboutPublicDomain')}</T>
-        </Card>
-      ) : null}
     </View>
   );
 

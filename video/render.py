@@ -772,7 +772,7 @@ class ClassRenderer:
 
 # ------------------------------------------------------------------ covers
 AGE_LABELS = {"2-3": "Tiny Ears", "3-4": "Little Explorer", "4-5": "First Songs", "5-6": "Little Pianist"}
-COVER_VERSION = "5"
+COVER_VERSION = "6"   # 6: no age pill (the app shows the age group elsewhere)
 
 
 def song_melody(lesson):
@@ -873,12 +873,10 @@ def render_covers(lesson, out_root):
     d = ImageDraw.Draw(img)
     f, lines, sz = fit_lines(title, "display", [104, 96, 88, 80, 72, 64, 56], 760, 2, 800)
     lh = int(sz * 1.02)
-    block = lh * len(lines) + 24 + 46
-    y = 170 - block / 2
+    y = 170 - lh * len(lines) / 2
     for l in lines:
         d.text((440, y + lh / 2), l, font=f, fill=INK, anchor="lm")
         y += lh
-    _age_pill(d, 444, y + 22, age, 27, anchor_left=True)
     img.save(os.path.join(out_dir, "cover.jpg"), quality=90)
 
     # 720x720 square: icon on top, title centred, keyboard strip at the bottom
@@ -889,11 +887,10 @@ def render_covers(lesson, out_root):
     d = ImageDraw.Draw(sq)
     f, lines, sz = fit_lines(title, "display", [80, 72, 66, 60, 54, 48], S - 70, 2, 800)
     lh = int(sz * 1.02)
-    y = 234 + (2 - len(lines)) * lh * 0.35
+    y = 352 - lh * len(lines) / 2
     for l in lines:
         d.text((S / 2, y + lh / 2), l, font=f, fill=INK, anchor="mm")
         y += lh
-    _age_pill(d, S / 2, y + 16, age, 24)
     sq.save(os.path.join(out_dir, "cover-square.jpg"), quality=90)
     with open(os.path.join(out_dir, ".cover.hash"), "w") as fh:
         fh.write(cover_hash(lesson) + "\n")

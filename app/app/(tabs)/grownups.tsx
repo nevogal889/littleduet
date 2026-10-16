@@ -1,100 +1,44 @@
-import React, { useCallback, useState } from 'react';
+import React, { useMemo } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import Constants from 'expo-constants';
-import { useFocusEffect, useRouter } from 'expo-router';
-import { ConfirmSheet } from '../../src/components/ConfirmSheet';
-import { ParentalGate, useGate } from '../../src/components/ParentalGate';
-import { storeName } from '../../src/components/Paywall';
-import { Pill } from '../../src/components/bits';
-import { Button, Card, Field, Screen, SectionTitle, Segmented, T } from '../../src/components/ui';
-import { authEnabled, config } from '../../src/config';
-import { t, tRaw } from '../../src/i18n';
-import { isEntitled } from '../../src/lib/entitlement';
-import { minutesThisWeek } from '../../src/lib/stickers';
-import { LESSONS } from '../../src/data/catalog';
+import { useRouter } from 'expo-router';
+import { SongCover } from '../../src/components/bits';
+import { Icon } from '../../src/components/Icon';
+import { SKILL_COLORS, skillLabel } from '../../src/components/skills';
+import { Button, Card, PercentBar, Screen, SectionTitle, T } from '../../src/components/ui';
+import { LESSONS, SONGS } from '../../src/data/catalog';
+import { useChildName } from '../../src/hooks';
+import { t } from '../../src/i18n';
+import { songPercent } from '../../src/lib/progress';
+import { classesThisWeek, minutesThisWeek, musicDaysThisWeek } from '../../src/lib/stickers';
 import { useApp } from '../../src/state/store';
-import { colors, fonts, radius, space, touch } from '../../src/theme';
+import { colors, fonts, radius, space } from '../../src/theme';
+import type { SkillId } from '../../src/types';
 
-type Confirm = null | 'reset' | 'erase' | 'signOut' | 'delete' | { remove: string };
-
+/** Grown-ups: progress only (this week, songs being learned, skills practiced). Settings live behind the gear. */
 export default function GrownUps() {
   const router = useRouter();
-  const gate = useGate();
-  const app = useApp();
-  const { child, data, entitlement, user } = app;
-  const [open, setOpen] = useState(gate.isUnlocked());
-  const [confirm, setConfirm] = useState<Confirm>(null);
-  const [adding, setAdding] = useState(false);
-  const [newName, setNewName] = useState('');
-  const [newAge, setNewAge] = useState<number | null>(null);
-  const [msg, setMsg] = useState<string | null>(null);
+  const { childData } = useApp();
+  const name = useChildName();
+  const now = Date.now();
+  const progress = childData.progress;
+  const minutes = minutesThisWeek(LESSONS, progress, now);
+  const classes = classesThisWeek(progress, now);
+  const days = musicDaysThisWeek(childData.activityDays, now);
 
-  // Leaving the tab locks the grown-ups area again.
-  useFocusEffect(
-    useCallback(() => {
-      setOpen(gate.isUnlocked());
-      return () => setOpen(false);
-    }, [gate]),
+  const learning = useMemo(
+    () =>
+      SONGS.map((s) => ({ s, pct: songPercent(LESSONS[s.id], progress) }))
+        .filter((x) => x.pct > 0)
+        .sort((a, b) => b.pct - a.pct),
+    [progress],
   );
-
-  if (!open) {
-    return (
-      <Screen testID="grownups-gate">
-        <View style={{ paddingTop: space.lg }}>
-          <ParentalGate
-            purpose="settings"
-            onPass={() => {
-              gate.unlock();
-              setOpen(true);
-            }}
-            onCancel={() => router.navigate('/' as never)}
-          />
-        </View>
-      </Screen>
-    );
-  }
-
-  const nameOf = (n: string) => n.trim() || t('common.nameFallback');
-  const activeName = nameOf(child?.name ?? '');
-  const ent = entitlement;
-  const subTitle = !isEntitled(ent)
-    ? t('grownups.subscription.statusFree')
-    : ent.trial
-      ? t('grownups.subscription.statusTrial')
-      : ent.plan === 'yearly'
-        ? t('grownups.subscription.statusActiveAnnual')
-        : t('grownups.subscription.statusActiveMonthly');
-  const subBody = !isEntitled(ent)
-    ? t('grownups.subscription.statusFreeBody')
-    : ent.expiresAt
-      ? t('grownups.subscription.statusActiveBody', { renewDate: new Date(ent.expiresAt).toLocaleDateString() })
-      : t('grownups.subscription.familyNote');
-  const minutes = minutesThisWeek(LESSONS, app.childData.progress, Date.now());
-  const faq = (tRaw('grownups.help.faq') as { q: string; a: string }[] | undefined) ?? [];
-
-  const runConfirm = async () => {
-    const c = confirm;
-    setConfirm(null);
-    if (c === 'reset' && child) app.resetProgress(child.id);
-    else if (c === 'erase') {
-      app.eraseDevice();
-      router.replace('/onboarding' as never);
-    } else if (c === 'signOut') await app.signOut();
-    else if (c === 'delete') setMsg((await app.deleteAccount()) ? t('grownups.account.deleteDone') : t('errors.deleteFailed'));
-    else if (c && typeof c === 'object') app.removeChild(c.remove);
-  };
-
-  const confirmText = (() => {
-    if (confirm === 'reset') return { title: t('grownups.reset.title', { name: activeName }), body: t('grownups.reset.body', { name: activeName }), ok: t('grownups.reset.confirm') };
-    if (confirm === 'erase') return { title: t('grownups.privacy.eraseTitle'), body: t('grownups.privacy.eraseBody'), ok: t('grownups.privacy.eraseConfirm') };
-    if (confirm === 'signOut') return { title: t('grownups.account.signOutTitle'), body: t('grownups.account.signOutBody'), ok: t('grownups.account.signOut') };
-    if (confirm === 'delete') return { title: t('grownups.account.deleteTitle'), body: t('grownups.account.deleteBody', { storeName: storeName() }), ok: t('grownups.account.deleteConfirm') };
-    if (confirm && typeof confirm === 'object') {
-      const n = nameOf(data.children.find((c) => c.id === confirm.remove)?.name ?? '');
-      return { title: t('grownups.children.removeTitle', { name: n }), body: t('grownups.children.removeBody', { name: n }), ok: t('grownups.children.removeConfirm') };
-    }
-    return { title: '', body: '', ok: '' };
-  })();
+  const skills = useMemo(() => {
+    const n = new Map<SkillId, number>();
+    for (const l of Object.values(LESSONS))
+      for (const c of l.classes) if (progress[c.id]?.completed && c.skill) n.set(c.skill.primary, (n.get(c.skill.primary) ?? 0) + 1);
+    return [...n.entries()].sort((a, b) => b[1] - a[1]);
+  }, [progress]);
+  const maxSkill = Math.max(1, ...skills.map(([, v]) => v));
 
   return (
     <Screen testID="grownups">
@@ -103,227 +47,91 @@ export default function GrownUps() {
           <T v="h1" accessibilityRole="header">
             {t('grownups.title')}
           </T>
-          <T v="small">{t('grownups.subtitle')}</T>
+          <T v="small">{t('progressPage.subtitle', { name })}</T>
         </View>
+        <Pressable testID="open-settings" accessibilityRole="button" accessibilityLabel={t('settings.title')} onPress={() => router.push('/settings' as never)} style={styles.gear} hitSlop={8}>
+          <Icon name="gear" size={26} color={colors.ink} />
+        </Pressable>
       </View>
-      {msg ? (
-        <T v="bodyStrong" accessibilityLiveRegion="polite" style={{ marginTop: space.md }}>
-          {msg}
-        </T>
-      ) : null}
 
       <Card style={[styles.card, { marginTop: space.xl }]} testID="minutes-week">
         <T v="small">{t('grownups.minutesThisWeek')}</T>
         <Text style={styles.bigNum}>{minutes}</Text>
         <T v="small">{t('grownups.minutesThisWeekBody', { count: minutes })}</T>
-      </Card>
-
-      <SectionTitle>{t('grownups.sections.subscription')}</SectionTitle>
-      <Card style={styles.card} testID="sub-card">
-        <T v="h3" testID="sub-status">
-          {subTitle}
-        </T>
-        <T v="body">{subBody}</T>
-        {!isEntitled(ent) ? (
-          <Button testID="see-plans" label={t('grownups.subscription.seePlans')} onPress={() => router.push('/paywall' as never)} />
-        ) : (
-          <Button testID="manage-sub" variant="secondary" label={t('grownups.subscription.manage', { storeName: storeName() })} onPress={() => gate.requireGate('link', () => app.manageSubscription())} />
-        )}
-        <Button
-          testID="restore"
-          variant="secondary"
-          size="md"
-          label={t('grownups.subscription.restore')}
-          onPress={async () => {
-            const e = await app.restore();
-            setMsg(e.active ? t('grownups.subscription.restoreDone') : `${t('errors.restoreNothingTitle')}.`);
-          }}
-        />
-      </Card>
-
-      <SectionTitle>{t('grownups.sections.children')}</SectionTitle>
-      <View style={{ gap: space.md }}>
-        {data.children.map((c) => {
-          const active = c.id === child?.id;
-          return (
-            <Card key={c.id} style={styles.childRow}>
-              <View style={styles.avatar}>
-                <Text style={styles.avatarText}>{nameOf(c.name).slice(0, 1).toUpperCase()}</Text>
-              </View>
-              <View style={{ flex: 1, gap: 2 }}>
-                <T v="bodyStrong">{nameOf(c.name)}</T>
-                <T v="small">{t('grownups.children.ageButton', { age: c.age })}</T>
-              </View>
-              {active ? (
-                <Pill tone="dark" label={t('grownups.children.active')} />
-              ) : (
-                <View style={{ gap: space.xs }}>
-                  <Button size="md" full={false} variant="secondary" label={t('grownups.children.switch', { name: nameOf(c.name) })} onPress={() => app.setActiveChild(c.id)} />
-                  <Button size="md" full={false} variant="ghost" label={t('common.remove')} onPress={() => setConfirm({ remove: c.id })} />
-                </View>
-              )}
-            </Card>
-          );
-        })}
-        {adding ? (
-          <Card style={styles.card}>
-            <T v="bodyStrong">{t('grownups.children.nameLabel')}</T>
-            <Field
-              testID="add-child-name"
-              value={newName}
-              onChangeText={(v) => setNewName(v.slice(0, 24))}
-              placeholder={t('onboarding.child.namePlaceholder')}
-              accessibilityLabel={t('grownups.children.nameLabel')}
-              style={styles.input}
-            />
-            <T v="small">{t('grownups.children.nicknameNote')}</T>
-            <T v="bodyStrong">{t('onboarding.child.ageTitleNoName')}</T>
-            <View style={styles.ages}>
-              {[2, 3, 4, 5, 6].map((a) => (
-                <Pressable
-                  key={a}
-                  accessibilityRole="radio"
-                  accessibilityState={{ checked: newAge === a }}
-                  accessibilityLabel={t('grownups.children.ageButton', { age: a })}
-                  onPress={() => setNewAge(a)}
-                  style={[styles.age, newAge === a && styles.ageOn]}
-                >
-                  <Text style={styles.ageText}>{a}</Text>
-                </Pressable>
-              ))}
-            </View>
-            <Button
-              testID="add-child-save"
-              label={t('common.save')}
-              disabled={newAge === null}
-              onPress={() => {
-                app.addChild(newName, newAge ?? 3, child?.playMode ?? 'real');
-                setAdding(false);
-                setNewName('');
-                setNewAge(null);
-              }}
-            />
-            <Button variant="ghost" size="md" label={t('common.cancel')} onPress={() => setAdding(false)} />
-          </Card>
-        ) : (
-          <Button testID="add-child" variant="secondary" icon="plus" label={t('grownups.children.add')} onPress={() => setAdding(true)} />
-        )}
-      </View>
-
-      <SectionTitle>{t('grownups.sections.playing')}</SectionTitle>
-      <Card style={styles.card}>
-        <T v="bodyStrong">{t('grownups.playing.defaultMode')}</T>
-        <Segmented
-          testID="gu-mode"
-          value={child?.playMode ?? 'real'}
-          onChange={app.setPlayMode}
-          options={[
-            { value: 'real', label: t('common.modes.real.name'), icon: 'piano' },
-            { value: 'screen', label: t('common.modes.screen.name'), icon: 'screen' },
-          ]}
-        />
-        <T v="small">{t(`common.modes.${child?.playMode ?? 'real'}.description`)}</T>
-        <T v="small">{t('grownups.playing.volumeHint')}</T>
-        <Button testID="reset-progress" variant="secondary" size="md" icon="restart" label={t('grownups.reset.button')} onPress={() => setConfirm('reset')} />
-      </Card>
-
-      <SectionTitle>{t('grownups.sections.account')}</SectionTitle>
-      <Card style={styles.card}>
-        {!authEnabled ? (
-          <>
-            <T v="h3">{t('grownups.account.guestTitle')}</T>
-            <T v="body">{t('grownups.account.offBody')}</T>
-          </>
-        ) : user ? (
-          <>
-            <T v="h3">{t('grownups.account.signedIn', { email: user.email ?? '' })}</T>
-            <T v="body">{t('grownups.account.syncOn')}</T>
-            <T v="small">{t('grownups.children.nicknameNote')}</T>
-            <Button variant="secondary" size="md" label={t('grownups.account.signOut')} onPress={() => setConfirm('signOut')} />
-            <Button testID="delete-account" variant="ghost" size="md" label={t('grownups.account.delete')} onPress={() => setConfirm('delete')} />
-          </>
-        ) : (
-          <>
-            <T v="h3">{t('grownups.account.guestTitle')}</T>
-            <T v="body">{t('grownups.account.guestBody')}</T>
-            <Button variant="secondary" label={t('grownups.account.create')} onPress={() => router.push('/account' as never)} />
-          </>
-        )}
-      </Card>
-
-      <SectionTitle>{t('grownups.sections.privacy')}</SectionTitle>
-      <Card style={styles.card}>
-        <T v="h3">{t('grownups.privacy.summaryTitle')}</T>
-        <T v="body">{t('grownups.privacy.summaryBody', { storeName: storeName() })}</T>
-        <Button variant="secondary" size="md" label={t('grownups.privacy.policy')} onPress={() => gate.openExternal(config.links.privacy)} />
-        <Button variant="secondary" size="md" label={t('grownups.privacy.terms')} onPress={() => gate.openExternal(config.links.terms)} />
-        <Button testID="erase-device" variant="ghost" size="md" label={t('grownups.privacy.eraseDevice')} onPress={() => setConfirm('erase')} />
-      </Card>
-
-      <SectionTitle>{t('grownups.sections.help')}</SectionTitle>
-      <Card style={styles.card}>
-        <T v="body">{t('grownups.help.contactBody')}</T>
-        <Button variant="secondary" size="md" icon="mail" label={t('grownups.help.contact')} onPress={() => gate.openExternal(config.links.support)} />
-        <T v="h3" style={{ marginTop: space.sm }}>
-          {t('grownups.help.faqTitle')}
-        </T>
-        {faq.map((f) => (
-          <View key={f.q} style={{ gap: 2 }}>
-            <T v="bodyStrong">{f.q}</T>
-            <T v="body">{f.a}</T>
+        <View style={styles.weekRow}>
+          <View style={styles.weekStat}>
+            <Text style={styles.weekNum}>{classes}</Text>
+            <T v="small">{t('progressPage.classesWeek', { count: classes })}</T>
           </View>
-        ))}
+          <View style={styles.weekStat}>
+            <Text style={styles.weekNum}>{days}</Text>
+            <T v="small">{t('progressPage.daysWeek', { count: days })}</T>
+          </View>
+        </View>
       </Card>
 
-      <SectionTitle>{t('grownups.sections.about')}</SectionTitle>
-      <Card style={styles.card} testID="about">
-        <T v="bodyStrong">{t('grownups.about.version', { version: Constants.expoConfig?.version ?? '1.0.0' })}</T>
-        <T v="small">{t('grownups.about.credits')}</T>
-        <T v="small" testID="audio-credit">
-          {t('grownups.about.audioCredit')}
-        </T>
-        <T v="small">{t('grownups.about.fontCredit')}</T>
-        <T v="small">{t('grownups.about.madeFor')}</T>
-        <Button variant="secondary" size="md" label={t('grownups.about.licenses')} onPress={() => router.push('/licenses' as never)} />
-      </Card>
+      <SectionTitle>{t('progressPage.learning')}</SectionTitle>
+      {learning.length ? (
+        <Card style={{ gap: space.md }} testID="learning-list">
+          {learning.map(({ s, pct }) => (
+            <Pressable key={s.id} accessibilityRole="button" accessibilityLabel={`${s.title}, ${pct}%`} onPress={() => router.push(`/song/${s.id}` as never)} style={styles.songRow}>
+              <SongCover song={s} kind="square" width={56} rounded={radius.md} />
+              <View style={{ flex: 1, gap: 6 }}>
+                <T v="bodyStrong" numberOfLines={1}>
+                  {s.title}
+                </T>
+                <PercentBar percent={pct} doneLabel={t('song.done')} height={10} />
+              </View>
+            </Pressable>
+          ))}
+        </Card>
+      ) : (
+        <Card>
+          <T v="body">{t('progressPage.learningEmpty')}</T>
+        </Card>
+      )}
+
+      <SectionTitle>{t('progressPage.skills')}</SectionTitle>
+      {skills.length ? (
+        <Card style={{ gap: space.sm }} testID="skills-practiced">
+          {skills.map(([id, v]) => (
+            <View key={id} style={styles.skillRow}>
+              <Text style={styles.skillLabel} numberOfLines={2}>
+                {skillLabel(id)}
+              </Text>
+              <View style={styles.track}>
+                <View style={[styles.fill, { width: `${Math.max(8, (v / maxSkill) * 100)}%`, backgroundColor: SKILL_COLORS[id] }]} />
+              </View>
+              <Text style={styles.skillCount}>{t('progressPage.classesN', { count: v })}</Text>
+            </View>
+          ))}
+          <T v="small">{t('progressPage.skillsNote')}</T>
+        </Card>
+      ) : (
+        <Card>
+          <T v="body">{t('progressPage.skillsEmpty')}</T>
+        </Card>
+      )}
 
       <View style={{ marginTop: space.xl }}>
-        <Button
-          testID="gu-lock"
-          variant="dark"
-          icon="lock"
-          label={t('grownups.lock')}
-          onPress={() => {
-            gate.lock();
-            setOpen(false);
-            router.navigate('/' as never);
-          }}
-        />
+        <Button testID="settings-button" variant="secondary" icon="gear" label={t('settings.title')} onPress={() => router.push('/settings' as never)} />
       </View>
-
-      <ConfirmSheet
-        visible={confirm !== null}
-        title={confirmText.title}
-        body={confirmText.body}
-        confirmLabel={confirmText.ok}
-        cancelLabel={t('common.cancel')}
-        onConfirm={runConfirm}
-        onCancel={() => setConfirm(null)}
-      />
     </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  head: { flexDirection: 'row', alignItems: 'center', paddingTop: space.lg },
+  head: { flexDirection: 'row', alignItems: 'center', paddingTop: space.lg, gap: space.md },
+  gear: { width: 48, height: 48, borderRadius: 24, backgroundColor: colors.surface, alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px -2px rgba(30,42,58,0.08)' },
   card: { gap: space.md },
   bigNum: { fontFamily: fonts.bold, fontSize: 40, lineHeight: 46, color: colors.ink },
-  childRow: { flexDirection: 'row', alignItems: 'center', gap: space.md, flexWrap: 'wrap' },
-  avatar: { width: 48, height: 48, borderRadius: 24, backgroundColor: colors.selectedSoft, alignItems: 'center', justifyContent: 'center' },
-  avatarText: { fontFamily: fonts.bold, fontSize: 20, color: colors.ink },
-  input: { fontSize: 20 },
-  ages: { flexDirection: 'row', gap: space.sm },
-  age: { flex: 1, maxWidth: 88, height: 56, borderRadius: radius.md, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.soft },
-  ageOn: { backgroundColor: colors.surface, boxShadow: '0 10px 30px -5px rgba(30,42,58,0.08), 0 4px 12px -2px rgba(30,42,58,0.05)' },
-  ageText: { fontFamily: fonts.bold, fontSize: 22, color: colors.ink },
+  weekRow: { flexDirection: 'row', gap: space.lg },
+  weekStat: { flex: 1, backgroundColor: colors.soft, borderRadius: radius.md, padding: space.md, gap: 2 },
+  weekNum: { fontFamily: fonts.extra, fontSize: 26, color: colors.ink },
+  songRow: { flexDirection: 'row', alignItems: 'center', gap: space.md },
+  skillRow: { flexDirection: 'row', alignItems: 'center', gap: space.sm },
+  skillLabel: { width: 150, fontFamily: fonts.bold, fontSize: 14, color: colors.ink },
+  track: { flex: 1, height: 12, borderRadius: 6, backgroundColor: colors.soft, overflow: 'hidden' },
+  fill: { height: 12, borderRadius: 6 },
+  skillCount: { width: 70, textAlign: 'right', fontFamily: fonts.bold, fontSize: 13, color: colors.inkSoft },
 });

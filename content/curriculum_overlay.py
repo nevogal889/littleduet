@@ -183,17 +183,16 @@ def plan_layer(pc):
 
 
 def skill_map(classes):
-    """[{id,label,value 0..1,classes}] sorted by weight: primary 2, secondary 1."""
-    w, n = OrderedDict(), {}
+    """[{id,label,value 0..1,classes,total}] counted by MAIN skill only, so the counts add up to the
+    number of classes and match the coloured dots (one per class). Extra skills show per class."""
+    n = OrderedDict()
     for c in classes:
-        sk = c["skill"]
-        for i, sid in enumerate([sk["primary"]] + list(sk.get("secondary", []))):
-            w[sid] = w.get(sid, 0) + (2 if i == 0 else 1)
-            n[sid] = n.get(sid, 0) + 1
-    top = max(w.values()) if w else 1
-    order = sorted(w, key=lambda s: (-w[s], list(SKILLS).index(s)))
-    return [OrderedDict([("id", s), ("label", label(s)), ("value", round(w[s] / float(top), 2)),
-                         ("classes", n[s])]) for s in order]
+        sid = c["skill"]["primary"]
+        n[sid] = n.get(sid, 0) + 1
+    top = max(n.values()) if n else 1
+    order = sorted(n, key=lambda s: (-n[s], list(SKILLS).index(s)))
+    return [OrderedDict([("id", s), ("label", label(s)), ("value", round(n[s] / float(top), 2)),
+                         ("classes", n[s]), ("total", len(classes))]) for s in order]
 
 
 def default_summary(smap):

@@ -58,10 +58,7 @@ describe('catalog', () => {
     const now = new Date(2026, 9, 14).getTime();
     const withDates = [makeSong('x', '2-3', 1, { addedAt: '2026-10-10' }), makeSong('y', '2-3', 1, { addedAt: '2026-01-01' })];
     expect(newThisWeek(withDates, now).map((s) => s.id)).toEqual(['x']);
-    const rot1 = newThisWeek(songs, now, 2).map((s) => s.id);
-    const rot2 = newThisWeek(songs, now + 1000, 2).map((s) => s.id);
-    expect(rot1).toEqual(rot2);
-    expect(rot1).toHaveLength(2);
+    expect(newThisWeek(songs, now)).toEqual([]);
   });
 });
 

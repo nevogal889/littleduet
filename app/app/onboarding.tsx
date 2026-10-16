@@ -13,6 +13,8 @@ import { t, tRaw } from '../src/i18n';
 import { useApp } from '../src/state/store';
 import { card, colors, fonts, radius, shadow, space, touch, useLayout } from '../src/theme';
 import type { PlayMode } from '../src/types';
+import { BirthdayPicker } from '../src/components/BirthdayPicker';
+import { childAge } from '../src/lib/birthday';
 
 const TOTAL = 4;
 
@@ -23,11 +25,16 @@ export default function Onboarding() {
   const [step, setStep] = useState(1);
   const [name, setName] = useState('');
   const [age, setAge] = useState<number | null>(null);
+  const [birthday, setBirthday] = useState<string | undefined>(undefined);
+  const [ageOnly, setAgeOnly] = useState(false);
   const [mode, setMode] = useState<PlayMode>('real');
   const [gatePassed, setGatePassed] = useState(false);
 
   const finish = () => {
-    if (!data.children.length) addChild(name.trim(), age ?? 3, mode);
+    if (!data.children.length) {
+      const bd = ageOnly ? undefined : birthday;
+      addChild(name.trim(), bd ? childAge({ age: 3, birthday: bd }, Date.now()) : age ?? 3, mode, bd);
+    }
     finishOnboarding();
     if (authEnabled) router.replace('/account?from=onboarding');
     else router.replace('/');
@@ -101,25 +108,43 @@ export default function Onboarding() {
               />
               <T v="small">{t('onboarding.child.nameHelper')}</T>
               <T v="h2" style={{ marginTop: space.lg }}>
-                {name.trim() ? t('onboarding.child.ageTitle', { name: name.trim() }) : t('onboarding.child.ageTitleNoName')}
+                {ageOnly
+                  ? name.trim()
+                    ? t('onboarding.child.ageTitle', { name: name.trim() })
+                    : t('onboarding.child.ageTitleNoName')
+                  : name.trim()
+                    ? t('birthday.title', { name: name.trim() })
+                    : t('birthday.titleNoName')}
               </T>
-              <View style={styles.ages} accessibilityRole="radiogroup">
-                {[2, 3, 4, 5, 6].map((a) => (
-                  <Pressable
-                    key={a}
-                    testID={`onb-age-${a}`}
-                    accessibilityRole="radio"
-                    accessibilityState={{ checked: age === a, selected: age === a }}
-                    accessibilityLabel={t('grownups.children.ageButton', { age: a })}
-                    onPress={() => setAge(a)}
-                    style={({ pressed }) => [styles.age, age === a && styles.ageOn, pressed && age !== a && { backgroundColor: colors.selectedSoft }]}
-                  >
-                    <Text style={styles.ageText}>{a}</Text>
-                  </Pressable>
-                ))}
-              </View>
-              <T v="small">{t('onboarding.child.ageHelper')}</T>
-              <Button testID="onb-next" label={t('common.next')} disabled={age === null} onPress={() => setStep(3)} />
+              {ageOnly ? (
+                <>
+                  <View style={styles.ages} accessibilityRole="radiogroup">
+                    {[2, 3, 4, 5, 6].map((a) => (
+                      <Pressable
+                        key={a}
+                        testID={`onb-age-${a}`}
+                        accessibilityRole="radio"
+                        accessibilityState={{ checked: age === a, selected: age === a }}
+                        accessibilityLabel={t('grownups.children.ageButton', { age: a })}
+                        onPress={() => setAge(a)}
+                        style={({ pressed }) => [styles.age, age === a && styles.ageOn, pressed && age !== a && { backgroundColor: colors.selectedSoft }]}
+                      >
+                        <Text style={styles.ageText}>{a}</Text>
+                      </Pressable>
+                    ))}
+                  </View>
+                  <T v="small">{t('onboarding.child.ageHelper')}</T>
+                </>
+              ) : (
+                <>
+                  <BirthdayPicker value={birthday} onChange={setBirthday} />
+                  <T v="small">{t('birthday.helper')}</T>
+                </>
+              )}
+              <Pressable testID="onb-age-toggle" accessibilityRole="button" onPress={() => setAgeOnly((v) => !v)} hitSlop={8}>
+                <Text style={styles.link}>{ageOnly ? t('birthday.useBirthday') : t('birthday.justAge')}</Text>
+              </Pressable>
+              <Button testID="onb-next" label={t('common.next')} disabled={ageOnly ? age === null : !birthday} onPress={() => setStep(3)} />
             </>
           ) : null}
 
@@ -176,6 +201,7 @@ export default function Onboarding() {
 }
 
 const styles = StyleSheet.create({
+  link: { fontFamily: fonts.extra, fontSize: 16, color: colors.brandEdge, textDecorationLine: 'underline' },
   root: { flex: 1, backgroundColor: colors.ground },
   top: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', minHeight: 64 },
   dots: { flexDirection: 'row', gap: 6, paddingRight: space.sm },

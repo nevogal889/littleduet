@@ -41,9 +41,10 @@ export function SkillChip({ id, strong }: { id: SkillId; strong?: boolean }) {
 }
 
 /** Song page: what the whole song practices (bars) + one coloured dot per class (primary skill). */
-export function SkillMapCard({ summary, map, classes, max = 5 }: { summary?: string; map?: SkillMapEntry[]; classes: LessonClass[]; max?: number }) {
+export function SkillMapCard({ summary, map, classes }: { summary?: string; map?: SkillMapEntry[]; classes: LessonClass[] }) {
   if (!map?.length) return null;
-  const rows = map.slice(0, max);
+  // Counted by main skill: the counts add up to the class count and match the dots below.
+  const rows = map;
   return (
     <View style={styles.mapCard} testID="skill-map">
       <Text style={type.meta}>{t('skills.mapTitle')}</Text>
@@ -57,7 +58,7 @@ export function SkillMapCard({ summary, map, classes, max = 5 }: { summary?: str
             <View style={styles.barTrack}>
               <View style={[styles.barFill, { width: `${Math.max(8, Math.round(r.value * 100))}%`, backgroundColor: SKILL_COLORS[r.id] }]} />
             </View>
-            <Text style={styles.barCount}>{t('skills.classes', { count: r.classes })}</Text>
+            <Text style={styles.barCount}>{t('skills.ofTotal', { count: r.classes, total: r.total ?? classes.length })}</Text>
           </View>
         ))}
       </View>
@@ -179,7 +180,7 @@ const styles = StyleSheet.create({
   barLabel: { width: 150, fontFamily: fonts.bold, fontSize: 14, color: colors.ink },
   barTrack: { flex: 1, height: 12, borderRadius: 6, backgroundColor: colors.soft, overflow: 'hidden' },
   barFill: { height: 12, borderRadius: 6 },
-  barCount: { width: 62, textAlign: 'right', fontFamily: fonts.bold, fontSize: 13, color: colors.inkSoft },
+  barCount: { width: 56, textAlign: 'right', fontFamily: fonts.bold, fontSize: 13, color: colors.inkSoft },
   strip: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
   stripItem: { alignItems: 'center' },
   stripDot: { width: 28, height: 28, borderRadius: 14, alignItems: 'center', justifyContent: 'center' },

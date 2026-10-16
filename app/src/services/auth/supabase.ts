@@ -69,7 +69,7 @@ export class SupabaseSync implements SyncService {
         snap.children.map((c) => ({
           id: c.id,
           user_id: user.id,
-          // Child nickname is never sent: it stays on this device (COPPA / Kids rules).
+          // Child nickname and birthday are never sent: they stay on this device (COPPA / Kids rules).
           age: c.age,
           play_mode: c.playMode,
           created_at: new Date(c.createdAt).toISOString(),

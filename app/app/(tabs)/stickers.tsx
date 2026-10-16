@@ -45,7 +45,7 @@ export default function Progress() {
   }, [progress, group]);
   const all = useMemo(() => allStickers(bookSongs, LESSONS), [bookSongs]);
   const grads = levelUps(SONGS, LESSONS, progress);
-  const badgeList = badges(SONGS, LESSONS, progress, { activityDays: childData.activityDays, modesUsed: childData.modesUsed, stickerCount: earned.size });
+  const badgeList = badges(SONGS, LESSONS, progress, { activityDays: childData.activityDays, modesUsed: childData.modesUsed, stickerCount: earned.size, birthdays: childData.birthdays });
   const cols = isTablet ? 6 : 3;
   const tileW = Math.floor((contentWidth - space.md * (cols - 1)) / cols);
   const badgeCols = isTablet ? 4 : 3;

@@ -43,6 +43,17 @@ export interface Song {
   addedAt?: string;
 }
 
+/** content/song-stories.json (researched, sourced). */
+export interface SongStory {
+  writtenBy: string;
+  year: string;
+  origin: string;
+  aboutKids: string;
+  story: string;
+  funFact?: string;
+  myth?: string | null;
+}
+
 export type SegmentKind =
   | 'title'
   | 'say'
@@ -87,8 +98,9 @@ export interface SkillMapEntry {
   label: string;
   /** 0..1, relative to the song's strongest skill */
   value: number;
-  /** classes that practise this skill */
+  /** classes whose MAIN skill this is (the counts add up to total) */
   classes: number;
+  total?: number;
 }
 
 export interface LessonClass {
@@ -138,9 +150,13 @@ export type ProgressMap = Record<string, ClassProgress>;
 export interface ChildProfile {
   id: string;
   name: string;
-  age: number; // 2-6
+  age: number; // 2-6 (kept in step with the birthday when one is set)
   playMode: PlayMode;
   createdAt: number;
+  /** 'YYYY-MM-DD'. Device-only: never synced (the server gets the age only). */
+  birthday?: string;
+  /** The age last shown to the family; when childAge() passes it, Home shows the age-up card. */
+  ageSeen?: number;
 }
 
 export interface ChildData {
@@ -157,4 +173,6 @@ export interface ChildData {
   completions?: number[];
   /** Weekly chests opened: { id: 'chest-YYYY-MM-DD', songId } (the sticker inside). */
   chests?: { id: string; songId: string }[];
+  /** Years the birthday badge was earned (a class finished on the birthday), e.g. ['2026']. */
+  birthdays?: string[];
 }

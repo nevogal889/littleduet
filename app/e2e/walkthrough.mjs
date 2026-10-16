@@ -85,8 +85,12 @@ async function run(viewport, tag) {
   await shot('onboarding-welcome');
   await id('onb-start').click();
   await id('onb-name').fill('Maya');
-  await id('onb-age-3').click();
-  await shot('onboarding-child');
+  // Birthday today, 3 years ago: exercises the birthday banner on Home.
+  const today = new Date();
+  await id(`bday-y-${today.getFullYear() - 3}`).click();
+  await id(`bday-m-${today.getMonth() + 1}`).click();
+  await id(`bday-d-${today.getDate()}`).click();
+  await shot('onboarding-child', true);
   await id('onb-next').click();
   await id('onb-mode-real').waitFor();
   await shot('onboarding-piano');
@@ -114,7 +118,9 @@ async function run(viewport, tag) {
   // Home, brand new
   await id('home').waitFor();
   await id('start-first').waitFor();
-  await shot('home-empty');
+  check(`${tag}: birthday banner on the birthday`, (await id('birthday-banner').count()) === 1);
+  check(`${tag}: home has no piano-mode switch, has settings gear`, (await id('home-mode').count()) === 0 && (await id('home-settings').count()) === 1);
+  await shot('home-empty', true);
   await id('start-first-song').click();
   await id('song-page').waitFor();
   const songTitle = await id('song-title').innerText();
@@ -122,6 +128,11 @@ async function run(viewport, tag) {
 
   // Real piano: class 1 video
   check(`${tag}: song page shows the skill map`, (await id('skill-map').count()) === 1);
+  check(`${tag}: About this song sits near the top`, (await id('song-story').count()) === 1);
+  const mapTxt = await id('skill-map').innerText();
+  const counts = [...mapTxt.matchAll(/(\d+) of (\d+)/g)];
+  const sum = counts.reduce((a, m) => a + Number(m[1]), 0);
+  check(`${tag}: skill counts add up to the class count`, counts.length > 0 && sum === Number(counts[0][2]), `${sum} of ${counts[0]?.[2]}`);
   await id('song-primary').click();
   await id('class-brief').waitFor();
   const briefChips = await page.locator('[data-testid="class-brief"] [data-testid^="skill-chip-"]').count();
@@ -239,14 +250,19 @@ async function run(viewport, tag) {
   check(`${tag}: progress tab shows level + weekly quests`, (await id('level-card').count()) === 1 && /1\/3/.test(questTxt), questTxt.replace(/\s+/g, ' '));
   await shot('stickers', true);
   await id('tab-grownups').click();
+  await id('grownups').waitFor();
+  await shot('grownups', true);
+  check(`${tag}: grown-ups shows progress (minutes, songs, skills)`, (await id('minutes-week').count()) === 1 && (await id('learning-list').count()) === 1 && (await id('skills-practiced').count()) === 1);
+  await id('open-settings').click();
   await page.waitForTimeout(300);
   if (await id('gate').count()) {
-    await shot('grownups-gate');
+    await shot('settings-gate');
     await passGate();
     await id('gate-submit').click();
   }
-  await id('grownups').waitFor();
-  await shot('grownups', true);
+  await id('settings').waitFor();
+  await shot('settings', true);
+  check(`${tag}: settings has piano mode + birthday`, (await id('gu-mode').count()) === 1 && /Birthday:/.test(await page.locator('[data-testid^="child-age-"]').first().innerText()));
   check(`${tag}: About shows CC BY piano credit`, /CC BY 3\.0/.test(await id('audio-credit').innerText()));
 
   const real = errors.filter((e) => !/favicon|Failed to load resource/.test(e));

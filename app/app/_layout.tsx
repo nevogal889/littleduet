@@ -52,6 +52,7 @@ function Root() {
         <Stack.Screen name="paywall" options={{ presentation: 'modal' }} />
         <Stack.Screen name="account" options={{ presentation: 'modal' }} />
         <Stack.Screen name="licenses" />
+        <Stack.Screen name="settings" />
       </Stack>
     </>
   );

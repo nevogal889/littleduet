@@ -5,11 +5,13 @@ import { LockBadge, SongCover } from '../../src/components/bits';
 import { ClassCard, SongCard } from '../../src/components/cards';
 import { Icon, type IconName } from '../../src/components/Icon';
 import { StreakSheet } from '../../src/components/StreakSheet';
-import { Button, Card, PercentBar, Screen, SectionTitle, Segmented, T } from '../../src/components/ui';
+import { Button, Card, PercentBar, Screen, SectionTitle, T } from '../../src/components/ui';
 import { LESSONS, SONGS, classById, songById } from '../../src/data/catalog';
 import { useChildName, useOpenClass } from '../../src/hooks';
 import { t } from '../../src/i18n';
-import { easySongs, newThisWeek, pickedFor } from '../../src/lib/catalog';
+import { discover, easySongs, newThisWeek, pickedFor } from '../../src/lib/catalog';
+import { childAge, isBirthday } from '../../src/lib/birthday';
+import { AgeUpCard, BirthdayBanner } from '../../src/components/BirthdayCards';
 import { canPlayClass } from '../../src/lib/entitlement';
 import { classPercent, heroItem, inProgressRow, songPercent } from '../../src/lib/progress';
 import { homeStats } from '../../src/lib/stickers';
@@ -51,19 +53,24 @@ function Stat({ icon, tint, soft, value, label, testID, onPress }: { icon: IconN
 
 export default function Home() {
   const router = useRouter();
-  const { child, childData, entitlement, setPlayMode } = useApp();
+  const { child, childData, entitlement, updateChild } = useApp();
   const name = useChildName();
   const openClass = useOpenClass();
   const { contentWidth, isTablet } = useLayout();
   const [sheet, setSheet] = useState(false);
   const progress = childData.progress;
-  const age = child?.age ?? 3;
+  const now = Date.now();
+  const age = childAge(child, now);
+  const bday = isBirthday(child?.birthday, now);
+  const ageUp = !!child?.birthday && !bday && child.ageSeen !== undefined && age > child.ageSeen;
+  const markAgeSeen = () => child && updateChild(child.id, { ageSeen: age });
 
   const hero = heroItem(LESSONS, progress);
   const watching = inProgressRow(LESSONS, progress);
   const picked = useMemo(() => pickedFor(SONGS, LESSONS, progress, age).slice(0, 12), [progress, age]);
   const easy = useMemo(() => easySongs(SONGS, age).slice(0, 12), [age]);
   const fresh = useMemo(() => newThisWeek(SONGS, Date.now()), []);
+  const disc = useMemo(() => discover(SONGS, LESSONS, progress, age, Date.now()), [progress, age]);
   const stats = homeStats(SONGS, LESSONS, childData, Date.now());
   const st = computeStreak(childData.goalDays ?? [], Date.now());
   const songW = isTablet ? 240 : 300;
@@ -89,10 +96,35 @@ export default function Home() {
   return (
     <Screen testID="home">
       <View style={styles.header}>
-        <T v="h1" accessibilityRole="header">
+        <T v="h1" accessibilityRole="header" style={{ flex: 1 }}>
           {t(greetingKey(), { name })}
         </T>
+        <Pressable testID="home-settings" accessibilityRole="button" accessibilityLabel={t('settings.open')} onPress={() => router.push('/settings' as never)} style={styles.gear} hitSlop={8}>
+          <Icon name="gear" size={26} color={colors.ink} />
+        </Pressable>
       </View>
+
+      {bday ? (
+        <BirthdayBanner
+          name={name}
+          age={age}
+          badgeEarned={(childData.birthdays ?? []).includes(String(new Date(now).getFullYear()))}
+          onPlay={() => {
+            markAgeSeen();
+            router.push('/song/happy-birthday' as never);
+          }}
+        />
+      ) : ageUp ? (
+        <AgeUpCard
+          name={name}
+          age={age}
+          onSee={() => {
+            markAgeSeen();
+            router.navigate('/songs' as never);
+          }}
+          onClose={markAgeSeen}
+        />
+      ) : null}
 
       <View style={styles.stats} testID="home-stats">
         <Stat testID="stat-streak" icon="flame" tint={colors.streak} soft={colors.streakSoft} value={st.days} label={t('home.stats.streak')} onPress={() => setSheet(true)} />
@@ -162,19 +194,6 @@ export default function Home() {
         </Card>
       ) : null}
 
-      <View style={styles.mode}>
-        <T v="label">{t('home.modeToggleLabel')}</T>
-        <Segmented
-          testID="home-mode"
-          value={child?.playMode ?? 'real'}
-          onChange={setPlayMode}
-          options={[
-            { value: 'real', label: t('common.modes.real.name'), icon: 'piano' },
-            { value: 'screen', label: t('common.modes.screen.name'), icon: 'screen' },
-          ]}
-        />
-      </View>
-
       {watching.length ? (
         <View testID="row-continue">
           <SectionTitle>{t('home.continueWatching')}</SectionTitle>
@@ -200,6 +219,7 @@ export default function Home() {
 
       {songRow(t('home.pickedFor', { name, age }), picked, 'row-picked')}
       {songRow(t('home.easyTitle'), easy, 'row-easy')}
+      {songRow(t('home.discover'), disc, 'row-discover')}
       {songRow(t('home.newThisWeek'), fresh, 'row-new')}
 
       <View style={{ marginTop: space.xxl }}>
@@ -211,7 +231,8 @@ export default function Home() {
 }
 
 const styles = StyleSheet.create({
-  header: { paddingTop: space.xl },
+  header: { paddingTop: space.xl, flexDirection: 'row', alignItems: 'center', gap: space.md },
+  gear: { width: 48, height: 48, borderRadius: 24, backgroundColor: colors.surface, alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px -2px rgba(30,42,58,0.08)' },
   stats: { ...card, flexDirection: 'row', justifyContent: 'space-between', gap: 6, marginTop: space.lg, paddingVertical: space.lg, paddingHorizontal: space.md },
   stat: { flex: 1, alignItems: 'flex-start', gap: 6, minWidth: 0 },
   statTop: { flexDirection: 'row', alignItems: 'center', gap: 8 },

@@ -80,6 +80,8 @@ export interface BadgeContext {
   activityDays?: string[];
   modesUsed?: string[];
   stickerCount?: number;
+  /** Years a class was finished on the child's birthday. */
+  birthdays?: string[];
 }
 
 /** Badge rules for the badge set in copy/strings.en.json, plus age-group graduates. */
@@ -109,6 +111,7 @@ export function badges(songs: Song[], lessons: Record<string, Lesson>, map: Prog
     child('leftHand', doneOfType('left-hand') >= 1),
     child('stickerFan', (ctx.stickerCount ?? earnedStickerIds(songs, lessons, map).length) >= 20),
     child('allStars', stars >= 100),
+    child('birthday', (ctx.birthdays ?? []).length > 0),
     ...AGE_GROUPS.map(
       (g): Badge => ({
         id: `grad-${g.id}`,

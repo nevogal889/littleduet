@@ -121,6 +121,15 @@ if (!args.has('--no-media')) {
   }
 }
 
+// 4b. song stories (researched, sourced): content/song-stories.json -> src/data/stories.json
+const STORIES = path.join(CONTENT, 'song-stories.json');
+if (fs.existsSync(STORIES)) {
+  fs.copyFileSync(STORIES, path.join(DATA, 'stories.json'));
+  report.push(`stories: ${Object.keys(readJson(STORIES)).length} songs`);
+} else if (!fs.existsSync(path.join(DATA, 'stories.json'))) {
+  fs.writeFileSync(path.join(DATA, 'stories.json'), '{}\n');
+}
+
 // 5. song covers: founder's real photos win over the lesson-style covers.
 //    content/covers/<songId>.jpg -> public/media/<songId>/photo.jpg (native: <VIDEO_BASE_URL>/<songId>/photo.jpg)
 //    src/data/media.json tells the app which images exist so it never requests missing ones.

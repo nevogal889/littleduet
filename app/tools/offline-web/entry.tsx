@@ -15,6 +15,7 @@ import Celebrate from '../../app/celebrate';
 import PaywallRoute from '../../app/paywall';
 import Account from '../../app/account';
 import Licenses from '../../app/licenses';
+import Settings from '../../app/settings';
 
 const routes: RouteDef[] = [
   { pattern: '/', Component: Home, tab: true },
@@ -28,6 +29,7 @@ const routes: RouteDef[] = [
   { pattern: '/paywall', Component: PaywallRoute },
   { pattern: '/account', Component: Account },
   { pattern: '/licenses', Component: Licenses },
+  { pattern: '/settings', Component: Settings },
 ];
 
 createRoot(document.getElementById('root')!).render(

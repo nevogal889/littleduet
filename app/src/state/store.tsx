@@ -3,6 +3,7 @@ import { AppState } from 'react-native';
 import { LESSONS, SONGS } from '../data/catalog';
 import { FREE_ENTITLEMENT, isEntitled, type Entitlement, type Plan } from '../lib/entitlement';
 import { mergeProgress, recordCompletion, recordPosition } from '../lib/progress';
+import { childAge, isBirthday } from '../lib/birthday';
 import { localDay, newlyEarned, type Sticker } from '../lib/stickers';
 import { auth, sync, type AuthUser } from '../services/auth';
 import { payments, type PurchaseResult } from '../services/payments';
@@ -31,7 +32,7 @@ interface Ctx {
   entitlement: Entitlement;
   entitled: boolean;
   user: AuthUser | null;
-  addChild(name: string, age: number, playMode?: PlayMode): string;
+  addChild(name: string, age: number, playMode?: PlayMode, birthday?: string): string;
   updateChild(id: string, patch: Partial<Omit<ChildProfile, 'id'>>): void;
   removeChild(id: string): void;
   setActiveChild(id: string): void;
@@ -131,6 +132,15 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }, 3000);
   }, [data, user, ready]);
 
+  // Auto age-up: keep the stored age in step with the birthday (the age is what sync sends).
+  useEffect(() => {
+    if (!ready) return;
+    const now = Date.now();
+    if (data.children.some((c) => c.birthday && childAge(c, now) !== c.age)) {
+      setData((d) => ({ ...d, children: d.children.map((c) => (c.birthday ? { ...c, age: childAge(c, now) } : c)) }));
+    }
+  }, [data.children, ready]);
+
   const child = data.children.find((c) => c.id === data.activeChildId) ?? data.children[0] ?? null;
   const childData = (child && data.childData[child.id]) || emptyChild();
 
@@ -156,11 +166,12 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       entitlement,
       entitled: isEntitled(entitlement),
       user,
-      addChild(name, age, playMode = 'real') {
+      addChild(name, age, playMode = 'real', birthday) {
         const id = newId();
+        const a = childAge({ age, birthday }, Date.now());
         setData((d) => ({
           ...d,
-          children: [...d.children, { id, name: name.trim(), age, playMode, createdAt: Date.now() }],
+          children: [...d.children, { id, name: name.trim(), age: a, playMode, createdAt: Date.now(), ...(birthday ? { birthday, ageSeen: a } : {}) }],
           childData: { ...d.childData, [id]: emptyChild() },
           activeChildId: id,
         }));
@@ -201,6 +212,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         const before = (id && dataRef.current.childData[id]?.progress) || {};
         const after = recordCompletion(before, cls, stars, Date.now());
         const earned = newlyEarned(SONGS, LESSONS, before, after);
+        const kid = dataRef.current.children.find((c) => c.id === id);
+        const bday = isBirthday(kid?.birthday, Date.now());
         updateChildData((cd) => ({
           ...cd,
           progress: recordCompletion(cd.progress, cls, stars, Date.now()),
@@ -209,6 +222,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
           modesUsed: [...new Set([...(cd.modesUsed ?? []), mode])],
           goalDays: withToday(cd.goalDays ?? []),
           completions: [...(cd.completions ?? []), Date.now()].slice(-500),
+          ...(bday ? { birthdays: [...new Set([...(cd.birthdays ?? []), String(new Date().getFullYear())])] } : {}),
         }));
         return earned;
       },
