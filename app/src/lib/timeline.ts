@@ -335,3 +335,25 @@ export class LessonEngine {
     return { completed, playedAlong, perfect, stars: starsForInteractive({ completed, playedAlong, perfect }) };
   }
 }
+
+export interface ChildCue {
+  /** absolute class time the child's note starts / ends (video time) */
+  t: number;
+  tEnd: number;
+  p: string;
+  seg: number;
+  /** true for the last child note of its your_turn segment */
+  last: boolean;
+}
+
+/** Child notes the real-piano player waits for (your_turn segments), in video time. */
+export function childCues(cls: LessonClass, songBpm: number): ChildCue[] {
+  const starts = segmentStarts(cls);
+  const out: ChildCue[] = [];
+  cls.segments.forEach((seg, si) => {
+    if (seg.kind !== 'your_turn') return;
+    const notes = noteSchedule(seg, songBpm).filter((n) => n.who === 'child');
+    notes.forEach((n, k) => out.push({ t: round(starts[si] + n.startSec), tEnd: round(starts[si] + n.startSec + n.durSec), p: n.p, seg: si, last: k === notes.length - 1 }));
+  });
+  return out;
+}

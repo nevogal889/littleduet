@@ -69,7 +69,7 @@ Hand this list to the app teammate before the first build. Each item is a reason
 | 4 | Paywall price prominence | The **billed price** ("{annualPrice} per year") is the largest pricing text on the paywall. "7 days free" and "{monthlyEquivalent} a month" are smaller and come after it. Show every disclosure line in `paywall.disclosureIos` or `paywall.disclosureAndroid`, plus working Terms of Use and Privacy Policy links and a Restore purchases button. | Apple 3.1.2 (rejection wording); Google subscriptions policy |
 | 5 | Dismissible offer | The paywall always has a visible "Not now" or "Keep playing free classes" control. | Google subscriptions policy |
 | 6 | Delete account in the app | If v1 ships accounts, Grown-ups, Account must include Delete account, which removes the account from the server. Also publish a web page where people can request deletion (Google asks for the URL). | Apple 5.1.1(v); Google Data safety |
-| 7 | Child data minimization | Keep the child's nickname on the device only. Sync only random profile IDs, age group, picture choice and progress. Never ask for a birth date. Use no microphone, and no push-notification service (reminders are local notifications). | COPPA; Apple and Google kids rules |
+| 7 | Child data minimization | Keep the child's nickname on the device only. Sync only random profile IDs, age group, picture choice and progress. Keep the child's birthday on the device only (never synced). Use the microphone only for on-device note listening, never recording, and no push-notification service (reminders are local notifications). | COPPA; Apple and Google kids rules |
 | 8 | No streak-loss or guilt copy | Use only the strings provided. Never show "0 stars" or "You missed a day". | Brand promise; Google bans emotionally manipulative purchase tactics aimed at children |
 | 9 | Credits | Show `grownups.about.audioCredit` and `fontCredit` in About, and include the OFL font license and CC BY attribution on an "Open-source licenses" screen. The Salamander piano samples are CC BY 3.0, which requires attribution. | CC BY 3.0, SIL OFL 1.1 |
 | 10 | Export compliance | The app only uses standard HTTPS. Set `ITSAppUsesNonExemptEncryption` to false in app.json, so App Store Connect doesn't ask about encryption on every build. | Apple export compliance |
@@ -286,7 +286,7 @@ To see the subscriptions: open any song, tap Class 2 (marked as part of the full
 
 Two modes: Real piano (lesson video to copy on a home piano) and Screen piano (interactive on-screen keyboard). Switch with the mode toggle on Home.
 
-Privacy: no advertising, no third-party analytics, no tracking, no IDFA, no AdSupport framework, no microphone or camera. RevenueCat is used only to validate purchases, with anonymous IDs. All songs are in the public domain; we produced all arrangements, videos and recordings.
+Privacy: no advertising, no third-party analytics, no tracking, no IDFA, no AdSupport framework, no camera. The microphone is used only for on-device piano note detection in Real piano mode; nothing is recorded or sent. RevenueCat is used only to validate purchases, with anonymous IDs. All songs are in the public domain; we produced all arrangements, videos and recordings.
 ```
 
 ---
@@ -314,7 +314,7 @@ Privacy: no advertising, no third-party analytics, no tracking, no IDFA, no AdSu
 - [ ] Airplane mode shows the offline message, not a blank screen.
 - [ ] Create an account, sync, sign out, sign in on a second device, then delete the account. All work.
 - [ ] Erase data on this device works.
-- [ ] No tracking prompt appears, and no microphone, camera or location permission is ever requested.
+- [ ] No tracking prompt appears, and no camera or location permission is ever requested. The microphone prompt appears only in Real piano mode, with the on-device explanation.
 - [ ] Every class gives at least 1 star. No screen says "0 stars", "failed" or "missed".
 - [ ] No emoji anywhere. All copy matches strings.en.json.
 - [ ] About shows the piano-sample and font credits.

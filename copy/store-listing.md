@@ -53,7 +53,7 @@ PICK UP WHERE YOU LEFT OFF
 Little ones wander off. Little Duet saves your spot in every class, so Continue takes you right back.
 
 A CALM PLACE TO PLAY
-Little Duet is ad-free and has no third-party tracking or analytics. It never uses the microphone or camera. Play as a guest from the first minute; an account is optional and only syncs progress. Settings, links and purchases sit behind a grown-ups-only check.
+Little Duet is ad-free and has no third-party tracking or analytics. It never uses the camera. In Real piano mode it can listen to your piano to hear the right note; the sound stays on your phone and is never recorded. Play as a guest from the first minute; an account is optional and only syncs progress. Settings, links and purchases sit behind a grown-ups-only check.
 
 PLANS
 Class 1 of every song is free. To open every class of every song, choose Little Duet Monthly or Little Duet Annual. In the US, Little Duet Monthly is $9.99 per month and Little Duet Annual is $59.99 per year. Prices in other countries are shown in the app before you subscribe. New subscribers get a 7-day free trial. One plan covers every child on the device.
@@ -112,7 +112,7 @@ CONTINUE WHERE YOU LEFT OFF
 Kids wander off mid-song. Little Duet saves your spot in every class, so Continue takes you right back.
 
 BUILT FOR FAMILIES
-Little Duet is ad-free, with no third-party tracking or analytics, and it never uses the microphone or camera. Play as a guest straight away. A grown-up account is optional and only syncs progress between devices. Settings, links and purchases sit behind a grown-ups-only check.
+Little Duet is ad-free, with no third-party tracking or analytics, and it never uses the camera. In Real piano mode it can listen to your piano to hear the right note; the sound stays on the device and is never recorded. Play as a guest straight away. A grown-up account is optional and only syncs progress between devices. Settings, links and purchases sit behind a grown-ups-only check.
 
 PLANS
 Class 1 of every song is free. Open the full songbook with Little Duet Monthly or Little Duet Annual. In the US, Little Duet Monthly is $9.99 per month and Little Duet Annual is $59.99 per year; prices in other countries are shown before you subscribe. New subscribers get a 7-day free trial. If you cancel before the trial ends, you won't be charged. Subscriptions renew automatically until you cancel. Cancel any time in Google Play under Payments and subscriptions, then Subscriptions.

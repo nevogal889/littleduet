@@ -121,6 +121,21 @@ if (!args.has('--no-media')) {
   }
 }
 
+// 4a. teacher voice: moments (nudges, "I heard C"...), tutorials, and the line audio for web dev
+const VOICE_JSON = path.join(CONTENT, 'voice', 'moments.json');
+fs.writeFileSync(path.join(DATA, 'moments.json'), fs.existsSync(VOICE_JSON) ? fs.readFileSync(VOICE_JSON) : '{}\n');
+for (const mode of ['real', 'screen']) {
+  const src = path.join(CONTENT, 'tutorial', `tutorial-${mode}.json`);
+  if (fs.existsSync(src)) fs.copyFileSync(src, path.join(DATA, `tutorial-${mode}.json`));
+}
+const VOICE_OUT = path.join(CONTENT, 'voice', 'audio');
+if (!args.has('--no-media') && fs.existsSync(VOICE_OUT)) {
+  fs.mkdirSync(path.join(MEDIA, 'voice'), { recursive: true });
+  let nv = 0;
+  for (const f of fs.readdirSync(VOICE_OUT)) if (f.endsWith('.mp3')) (fs.copyFileSync(path.join(VOICE_OUT, f), path.join(MEDIA, 'voice', f)), nv++);
+  report.push(`voice: ${nv} lines copied to public/media/voice`);
+}
+
 // 4b. song stories (researched, sourced): content/song-stories.json -> src/data/stories.json
 const STORIES = path.join(CONTENT, 'song-stories.json');
 if (fs.existsSync(STORIES)) {

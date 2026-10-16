@@ -85,6 +85,22 @@ async function run(viewport, tag) {
   await shot('onboarding-welcome');
   await id('onb-start').click();
   await id('onb-name').fill('Maya');
+  // Required tutorial (first class in each mode): step through with Next, then continue to the class.
+  const throughTutorial = async (label) => {
+    await id('tutorial').waitFor();
+    const steps = Number(((await id('tutorial').innerText()).match(/Step \d+ of (\d+)/i) || [])[1] || 0);
+    check(`${tag}: ${label} tutorial is required before the first class`, steps >= 20, `${steps} steps`);
+    await shot(`tutorial-${label}-first`, true);
+    let seenScenes = 0;
+    for (let k = 0; k < 45 && !(await id('tutorial-done').count()); k++) {
+      if (await page.locator('[data-testid^="scene-"]').count()) seenScenes++;
+      if (k === 12) await shot(`tutorial-${label}-middle`, true);
+      await id('tutorial-next').click({ timeout: 3000 }).catch(() => {});
+    }
+    check(`${tag}: ${label} tutorial shows pictures`, seenScenes >= 10, `${seenScenes} pictures`);
+    await id('tutorial-done').waitFor();
+    await id('tutorial-continue').click();
+  };
   // Birthday today, 3 years ago: exercises the birthday banner on Home.
   const today = new Date();
   await id(`bday-y-${today.getFullYear() - 3}`).click();
@@ -139,7 +155,12 @@ async function run(viewport, tag) {
   check(`${tag}: class brief shows skills + thinking game`, briefChips >= 1 && (await id('brief-target').count()) === 1, `${briefChips} chips`);
   await shot('class-brief', true);
   await id('brief-start').click();
+  await throughTutorial('real');
   await id('player-real').waitFor();
+  await id('get-ready').waitFor();
+  check(`${tag}: class waits on a get-ready card`, (await id('stage-start').count()) === 1);
+  await shot('get-ready-real', true);
+  await id('stage-start').click();
   const playing = await page
     .waitForFunction(() => window.__video && window.__video.currentTime > 3, null, { timeout: 20000 })
     .then(() => true)
@@ -183,7 +204,10 @@ async function run(viewport, tag) {
   // Screen piano with a your_turn
   await id(`class-node-${yourTurnClass}`).click();
   await id('brief-start').click();
+  await throughTutorial('screen');
   await id('stage').waitFor();
+  await id('get-ready').waitFor();
+  await id('stage-start').click();
   check(`${tag}: screen piano close button always visible`, (await id('player-exit').isVisible()) && (await page.getByText(/hold to unlock|press and hold|hold for 3/i).count()) === 0);
   await shot('screen-piano-start');
   let sawWaiting = false;

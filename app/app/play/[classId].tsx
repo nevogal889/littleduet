@@ -56,6 +56,7 @@ export default function Player() {
           song={hit.song}
           cls={full ?? hit.cls}
           resumeSec={resumePositionFor(hit.cls, initial)}
+          listen={child?.listen !== false}
           onProgress={(sec) => !ended.current && savePosition(hit.cls, sec)}
           onFinish={finish}
           onExit={exit}

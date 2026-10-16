@@ -31,7 +31,7 @@
           "UIInterfaceOrientationLandscapeRight"
         ],
         "UIBackgroundModes": [],
-        "NSMicrophoneUsageDescription": "Little Duet does not use the microphone."
+        "NSMicrophoneUsageDescription": "Little Duet listens to your piano so it can tell when your child plays the right note. Sound is checked on this device only and is never recorded or sent."
       },
       "privacyManifests": {
         "NSPrivacyTracking": false,
@@ -55,9 +55,10 @@
         "backgroundColor": "#F26B4F"
       },
       "edgeToEdgeEnabled": true,
-      "permissions": [],
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
       "blockedPermissions": [
-        "android.permission.RECORD_AUDIO",
         "android.permission.ACCESS_FINE_LOCATION",
         "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.CAMERA",

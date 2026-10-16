@@ -16,6 +16,7 @@ import PaywallRoute from '../../app/paywall';
 import Account from '../../app/account';
 import Licenses from '../../app/licenses';
 import Settings from '../../app/settings';
+import Tutorial from '../../app/tutorial';
 
 const routes: RouteDef[] = [
   { pattern: '/', Component: Home, tab: true },
@@ -30,6 +31,7 @@ const routes: RouteDef[] = [
   { pattern: '/account', Component: Account },
   { pattern: '/licenses', Component: Licenses },
   { pattern: '/settings', Component: Settings },
+  { pattern: '/tutorial', Component: Tutorial },
 ];
 
 createRoot(document.getElementById('root')!).render(

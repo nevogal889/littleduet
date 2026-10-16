@@ -6,6 +6,9 @@ import { t } from '../i18n';
 import { karaokeLines, keyboardRange, pitchOf } from '../lib/music';
 import { LessonEngine, type EngineEvent } from '../lib/timeline';
 import { piano } from '../services/audio/piano';
+import { voice } from '../services/audio/voice';
+import { moment } from '../lib/moments';
+import { Scene } from './Scene';
 import { colors, fonts, radius, space, useLayout } from '../theme';
 import type { LessonClass, Song } from '../types';
 import { SongArt } from './art/SongArt';
@@ -33,6 +36,7 @@ export function LessonStage({
   onFinish,
   onExit,
   notice,
+  skipReady = false,
 }: {
   song: Song;
   cls: LessonClass;
@@ -42,6 +46,8 @@ export function LessonStage({
   onFinish: (r: StageResult) => void;
   onExit: (r: StageResult) => void;
   notice?: string | null;
+  /** Start immediately (tests, tutorials). Otherwise the class waits on a get-ready card. */
+  skipReady?: boolean;
 }) {
   const { width, height, isTablet, isLandscape } = useLayout();
   const insets = useSafeAreaInsets();
@@ -53,7 +59,12 @@ export function LessonStage({
     [cls.id],
   );
   const [, setFrame] = useState(0);
+  const [ready, setReady] = useState(skipReady);
   const [paused, setPaused] = useState(false);
+  const [waitSec, setWaitSec] = useState(0);
+  const nudged = useRef<Record<number, boolean>>({});
+  const lastOther = useRef(0);
+  const segSeen = useRef(-1);
   const [hint, setHint] = useState<string | null>(null);
   const [flash, setFlash] = useState<Record<string, boolean>>({});
   const [pulse, setPulse] = useState(0); // beat circle / cheer, decays
@@ -82,17 +93,31 @@ export function LessonStage({
         setFlash((f) => ({ ...f, [e.p]: true }));
         setTimeout(() => setFlash((f) => ({ ...f, [e.p]: false })), 260);
         setPulse(1);
-      } else if (e.type === 'hint') setHint(e.p);
+      } else if (e.type === 'hint') {
+        setHint(e.p);
+        if (Date.now() - lastOther.current > 6000) {
+          lastOther.current = Date.now();
+          const m = moment('otherKey', Date.now() / 1000);
+          if (m) voice.say(m.voiceId);
+        }
+      }
       else if (e.type === 'beatTap') setPulse(1);
       else if (e.type === 'sideOk') {
         setCheer(e.side);
         setTimeout(() => setCheer(null), 600);
       } else if (e.type === 'segmentStart') {
         setHint(null);
+        nudged.current = {};
         onProgress(engine.classTime, engine.segIndex);
+        if (segSeen.current !== engine.segIndex) {
+          segSeen.current = engine.segIndex;
+          if (engine.segment.voiceId) voice.say(engine.segment.voiceId);
+        }
       } else if (e.type === 'finished' && !finishedRef.current) {
         finishedRef.current = true;
         const r = engine.result();
+        const end = moment('classEnd', engine.classTime);
+        if (end) voice.say(end.voiceId);
         onFinish({ completed: r.completed, stars: watch ? 2 : r.stars });
       }
     }
@@ -109,7 +134,32 @@ export function LessonStage({
       const scale = Platform.OS === 'web' ? Number((globalThis as any).__LD_TIME_SCALE) || 1 : 1;
       const dt = Math.min(0.1, (now - last) / 1000) * scale;
       last = now;
-      if (!paused && !finishedRef.current) handle(engine.tick(dt));
+      if (ready && !paused && !finishedRef.current) {
+        // The very first segment's line plays when the class starts (no segmentStart event for it).
+        if (segSeen.current < 0) {
+          segSeen.current = engine.segIndex;
+          if (engine.segment.voiceId) voice.say(engine.segment.voiceId);
+        }
+        handle(engine.tick(dt));
+        // Nudge ladder while waiting for the child (spec 7.4): 6 s child nudge, 12 s grown-up + pointer, 20 s Skip.
+        if (engine.waitingFor) {
+          setWaitSec((w) => {
+            const nw = w + dt;
+            if (nw >= 6 && !nudged.current[6]) {
+              nudged.current[6] = true;
+              const m = moment('waitNudge', engine.classTime);
+              if (m) voice.say(m.voiceId);
+            }
+            if (nw >= 12 && !nudged.current[12]) {
+              nudged.current[12] = true;
+              setHint(engine.waitingFor);
+              const m = moment('waitNudgeGrownUp', engine.classTime);
+              if (m) voice.say(m.voiceId);
+            }
+            return nw;
+          });
+        } else if (waitSec) setWaitSec(0);
+      }
       if (now - lastSave.current > 5000) {
         lastSave.current = now;
         onProgress(engine.classTime, engine.segIndex);
@@ -125,11 +175,38 @@ export function LessonStage({
     raf = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(raf);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [paused, engine]);
+  }, [paused, engine, ready]);
+
+  useEffect(() => {
+    if (paused) voice.stop();
+  }, [paused]);
+  useEffect(() => () => voice.stop(), []);
+  // Get-ready voice (spec 2.1).
+  useEffect(() => {
+    if (ready) return;
+    const m = moment(startSegIndex > 0 ? 'resume' : watch ? 'getReadyReal' : 'getReadyScreen', cls.index);
+    const id = setTimeout(() => m && voice.say(m.voiceId), 400);
+    return () => clearTimeout(id);
+  }, [ready, startSegIndex, watch, cls.index]);
 
   const onKey = (p: string) => {
     piano.unlock();
+    if (!ready) {
+      // Get-ready card: a tap on C (any octave) starts the class, like the Start button.
+      piano.play(p);
+      if (p.startsWith('C') && !p.startsWith('C#')) start();
+      return;
+    }
     handle(engine.press(p));
+  };
+  const start = () => {
+    piano.unlock();
+    voice.stop();
+    setReady(true);
+  };
+  const skipNote = () => {
+    const p = engine.waitingFor;
+    if (p) handle(engine.press(p));
   };
 
   const exit = () => {
@@ -150,6 +227,14 @@ export function LessonStage({
   const isHL = seg.kind === 'high_low';
   const target = isHL ? seg.target ?? 'high' : null;
   const charSize = isTablet ? 120 : 84;
+  const phase =
+    seg.kind === 'listen' || seg.kind === 'demo'
+      ? { id: 'watch', color: colors.indigo, soft: colors.indigoSoft }
+      : seg.kind === 'your_turn' || seg.kind === 'high_low'
+        ? { id: 'yourTurn', color: colors.coralInk, soft: colors.coralSoft }
+        : seg.kind === 'together' || seg.kind === 'beat'
+          ? { id: 'together', color: '#9A6A00', soft: colors.marigoldSoft }
+          : null;
   const prompt = engine.waitingFor ? t('piano.tapGlowing') : seg.kind === 'beat' ? t('piano.tapBeat') : isHL ? t(target === 'low' ? 'piano.tapLow' : 'piano.tapHigh') : null;
 
   return (
@@ -174,17 +259,26 @@ export function LessonStage({
         </Text>
         {seg.subcaption ? <Text style={styles.cue}>{seg.subcaption}</Text> : null}
         {seg.parentCue ? (
-          <Text style={styles.cue} numberOfLines={2}>
-            {t('player.grownUpTip')}: {seg.parentCue}
-          </Text>
+          <View style={styles.cueRow}>
+            <Text style={styles.gu}>{t('stage.grownUp')}</Text>
+            <Text style={[styles.cue, { flex: 1 }]} numberOfLines={2}>
+              {seg.parentCue}
+            </Text>
+          </View>
         ) : null}
         {notice ? <Text style={styles.cue}>{notice}</Text> : null}
       </View>
 
       <View style={styles.middle}>
+        {phase ? (
+          <View style={[styles.phase, { backgroundColor: phase.soft }]} testID={`phase-${phase.id}`}>
+            <View style={[styles.phaseDot, { backgroundColor: phase.color }]} />
+            <Text style={[styles.phaseText, { color: phase.color }]}>{t(`stage.phase.${phase.id}`)}</Text>
+          </View>
+        ) : null}
         <View style={styles.chars}>
-          <View style={[styles.char, isHL && target === 'low' && styles.charOn, cheer === 'low' && { transform: [{ translateY: -12 }] }]}>
-            <SongArt icon="bear" size={charSize} />
+          <View style={[styles.char, isHL && target === 'low' && styles.charOn, cheer === 'low' && { transform: [{ translateY: -12 }] }, !isHL && styles.hidden]}>
+            <SongArt icon="bear" size={isHL && target !== 'low' ? charSize * 0.7 : charSize} />
           </View>
           <View style={styles.centerCol}>
             {seg.kind === 'beat' || (seg.kind === 'together' && !sched.some((n) => n.who === 'child')) ? (
@@ -199,8 +293,8 @@ export function LessonStage({
               </Text>
             ) : null}
           </View>
-          <View style={[styles.char, isHL && target === 'high' && styles.charOn, (cheer === 'high' || pulse > 0.5) && { transform: [{ translateY: -12 }] }]}>
-            <SongArt icon="bird" size={charSize} />
+          <View style={[styles.char, isHL && target === 'high' && styles.charOn, cheer === 'high' && { transform: [{ translateY: -12 }] }, !isHL && styles.hidden]}>
+            <SongArt icon="bird" size={isHL && target !== 'high' ? charSize * 0.7 : charSize} />
           </View>
         </View>
         {line ? (
@@ -256,6 +350,20 @@ export function LessonStage({
       <View style={[styles.progress, { width: kbWidth }]}>
         <ProgressBar value={engine.classTime / cls.durationSec} height={6} />
       </View>
+      {ready && waitSec >= 20 && engine.waitingFor ? (
+        <View style={styles.skipWrap}>
+          <Button testID="stage-skip" size="md" full={false} variant="secondary" label={t('stage.skip')} onPress={skipNote} />
+        </View>
+      ) : null}
+      {!ready ? (
+        <View style={styles.readyCard} testID="get-ready">
+          <Text style={styles.readyKicker}>{startSegIndex > 0 ? t('stage.resumeTitle') : t('stage.readyTitle')}</Text>
+          <Scene id={watch ? 'middle-c' : 'phone-flat'} width={Math.min(320, width - space.xl * 2)} labels={{ grownUp: t('stage.grownUp'), child: t('stage.child') }} />
+          <Text style={styles.readyBody}>{watch ? t('stage.readyReal') : t('stage.readyScreen')}</Text>
+          <Button testID="stage-start" icon="play" label={t('stage.start')} onPress={start} />
+          <Text style={styles.readyHint}>{t('stage.readyHint')}</Text>
+        </View>
+      ) : null}
       {paused ? (
         <View style={styles.pausedBadge} pointerEvents="none">
           <Icon name="pause" size={28} color={colors.white} />
@@ -268,6 +376,17 @@ export function LessonStage({
 
 const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: colors.ground, alignItems: 'stretch' },
+  cueRow: { flexDirection: 'row', alignItems: 'flex-start', gap: space.sm },
+  gu: { fontFamily: fonts.extra, fontSize: 12, letterSpacing: 0.8, color: colors.white, backgroundColor: colors.indigo, paddingHorizontal: 8, paddingVertical: 3, borderRadius: 999, overflow: 'hidden', marginTop: 2 },
+  phase: { position: 'absolute', top: space.sm, left: space.lg, flexDirection: 'row', alignItems: 'center', gap: 8, paddingHorizontal: 14, paddingVertical: 8, borderRadius: 999, zIndex: 2 },
+  phaseDot: { width: 12, height: 12, borderRadius: 6 },
+  phaseText: { fontFamily: fonts.extra, fontSize: 18, letterSpacing: 1 },
+  hidden: { opacity: 0 },
+  skipWrap: { position: 'absolute', right: space.lg, top: '38%' },
+  readyCard: { position: 'absolute', left: space.lg, right: space.lg, top: '12%', backgroundColor: colors.surface, borderRadius: radius.lg, padding: space.xl, gap: space.md, alignItems: 'center', boxShadow: '0 10px 30px -5px rgba(30,42,58,0.12)' },
+  readyKicker: { fontFamily: fonts.extra, fontSize: 26, color: colors.ink, textAlign: 'center' },
+  readyBody: { fontFamily: fonts.bold, fontSize: 17, lineHeight: 24, color: colors.body, textAlign: 'center' },
+  readyHint: { fontFamily: fonts.bold, fontSize: 14, color: colors.inkSoft, textAlign: 'center' },
   topBar: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: space.lg, paddingVertical: space.md, gap: space.md },
   band: {
     marginHorizontal: space.lg,

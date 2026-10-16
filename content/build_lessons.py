@@ -29,6 +29,8 @@ from collections import Counter, OrderedDict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import curriculum_overlay as ov  # noqa: E402
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'voice'))
+import teacher  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -114,11 +116,26 @@ def words(s):
     return len(s.split())
 
 
+# ---------------------------------------------------------------- teacher voice
+VCTX = {"song": None, "idx": 0}
+
+
+def _v(seg):
+    """Attach the teacher's spoken line (content/voice) and grow the segment so the line fits."""
+    song = VCTX["song"]
+    if song is None:
+        return seg
+    ctx = {"title": song.title, "age": song.age, "note": song.special,
+           "key": "%s|%d|%s|%s|%s" % (song.id, VCTX["idx"], seg["kind"], seg.get("caption", ""), seg.get("target", ""))}
+    return teacher.apply(seg, ctx, body_fn=lambda x: note_body_sec(x["notes"], x["bpm"], x.get("gapBeats", 0)),
+                         tail=TAIL_SEC)
+
+
 # ---------------------------------------------------------------- segments
 def seg_title(song, cls_index, cls_title):
-    return OrderedDict([("kind", "title"), ("caption", song.title),
-                        ("subcaption", "Class %d: %s" % (cls_index, cls_title)),
-                        ("durationSec", TITLE_SEC)])
+    return _v(OrderedDict([("kind", "title"), ("caption", song.title),
+                           ("subcaption", "Class %d: %s" % (cls_index, cls_title)),
+                           ("durationSec", TITLE_SEC)]))
 
 
 def seg_say(caption, cue=None, show_keys=None, sec=None):
@@ -129,11 +146,11 @@ def seg_say(caption, cue=None, show_keys=None, sec=None):
         s["showKeys"] = show_keys
     n = words(caption) + (words(cue) * 0.6 if cue else 0)
     s["durationSec"] = sec if sec else int(max(4, math.ceil(2.5 + 0.42 * n)))
-    return s
+    return _v(s)
 
 
 def seg_praise(caption):
-    return OrderedDict([("kind", "praise"), ("caption", caption), ("durationSec", PRAISE_SEC)])
+    return _v(OrderedDict([("kind", "praise"), ("caption", caption), ("durationSec", PRAISE_SEC)]))
 
 
 def seg_notes(kind, caption, notes, bpm, cue=None, lines=None, gap_beats=None,
@@ -155,7 +172,7 @@ def seg_notes(kind, caption, notes, bpm, cue=None, lines=None, gap_beats=None,
         s["lines"] = lines
     body = note_body_sec(notes, bpm, s.get("gapBeats", 0))
     s["durationSec"] = int(math.ceil(s["leadInSec"] + body + TAIL_SEC))
-    return s
+    return _v(s)
 
 
 def seq_dur(segs):
@@ -1286,7 +1303,9 @@ def build_classes(song, makers, targets, plan=None):
     for i, mk in enumerate(makers):
         song.cur_target = max(CLASS_MIN + 8, min(FILL_CEILING - 6, targets[i]))
         song.cur_overlay = plan["classes"][i] if plan else None
+        VCTX["song"], VCTX["idx"] = song, i + 1
         out.append(mk(i + 1))
+    VCTX["song"] = None
     return out
 
 
@@ -1384,6 +1403,13 @@ def validate_lesson(lesson, song=None):
                 errs.append("%s: caption empty or > 12 words: %r" % (sw, cap))
             if re.search(u"[\U0001F000-\U0001FFFF☀-➿]", json.dumps(s, ensure_ascii=False)):
                 errs.append("%s: emoji found" % sw)
+            if s.get("voice"):
+                if s.get("voiceId") != teacher.voice_id(s["voice"]):
+                    errs.append("%s: voiceId does not match the line" % sw)
+                vs = s.get("voiceSec", 0)
+                room = s.get("leadInSec", 0) if s.get("notes") else s.get("durationSec", 0)
+                if vs > room + 0.01:
+                    errs.append("%s: voice %.2fs does not fit (%.2fs)" % (sw, vs, room))
             if s.get("kind") in NOTE_KINDS:
                 ns = s.get("notes") or []
                 if not ns or not s.get("bpm"):

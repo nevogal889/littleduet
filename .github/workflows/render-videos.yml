@@ -1,4 +1,4 @@
-# Renders every lesson video (723 classes) on GitHub's machines, 8 jobs in parallel,
+# Renders every lesson video (all classes, teacher voice mixed in from content/voice/audio) on GitHub's machines, 8 jobs in parallel,
 # and uploads them to the video CDN (Cloudflare R2, S3-compatible) with the same folder
 # structure the app expects: <songId>/<classId>.mp4 and .jpg.
 #
@@ -68,6 +68,15 @@ jobs:
         run: |
           aws s3 sync video/out "s3://${{ vars.R2_BUCKET }}/" --endpoint-url "${{ vars.R2_ENDPOINT }}" \
             --exclude "*" --include "*.mp4" --include "*.jpg" --cache-control "public, max-age=31536000"
+      - name: Upload teacher voice lines to R2 (the app streams them in screen-piano mode)
+        if: ${{ vars.R2_BUCKET != '' && matrix.shard == 0 }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          aws s3 sync content/voice/audio "s3://${{ vars.R2_BUCKET }}/voice/" --endpoint-url "${{ vars.R2_ENDPOINT }}" \
+            --exclude "*" --include "*.mp3" --cache-control "public, max-age=31536000"
       - name: Keep as artifact (no R2 configured)
         if: ${{ vars.R2_BUCKET == '' }}
         uses: actions/upload-artifact@v4

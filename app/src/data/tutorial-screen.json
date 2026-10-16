@@ -1,0 +1,436 @@
+{
+ "songId": "tutorial-screen",
+ "title": "How Little Duet works",
+ "mode": "screen",
+ "ageGroup": "3-4",
+ "icon": "music",
+ "key": "C",
+ "timeSignature": "4/4",
+ "totalSec": 226,
+ "classes": [
+  {
+   "id": "tutorial-screen-c01",
+   "index": 1,
+   "title": "How Little Duet works",
+   "goal": "Learn how a class works",
+   "type": "tutorial",
+   "durationSec": 226,
+   "parentTip": "Watch together once before your first class.",
+   "video": "tutorial-screen/tutorial-screen-c01.mp4",
+   "thumb": "tutorial-screen/tutorial-screen-c01.jpg",
+   "segments": [
+    {
+     "kind": "say",
+     "caption": "Sit together",
+     "scene": "sit",
+     "parentCue": "Sit side by side, so you both see the screen",
+     "voice": "Hi, friends. I'm your music teacher. Let's get ready to play together.",
+     "voiceId": "ae1b72c1365ead4b",
+     "voiceSec": 5.54,
+     "durationSec": 8
+    },
+    {
+     "kind": "say",
+     "caption": "Phone flat",
+     "scene": "phone-flat",
+     "parentCue": "Or stand it up sideways in a stand, so it cannot slide",
+     "voice": "Lay the phone flat on the table, like a little piano.",
+     "voiceId": "79ad2a0af3f5ba7b",
+     "voiceSec": 5.12,
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Sound on",
+     "scene": "phone-flat",
+     "parentCue": "Turn the phone sideways for a bigger piano",
+     "voice": "Grown-up, turn the sound up and switch off silent mode.",
+     "voiceId": "3c7b59f89cec46a9",
+     "voiceSec": 4.7,
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "You play",
+     "scene": "roles",
+     "voice": "You are the piano player today.",
+     "voiceId": "e30732bbf8208d96",
+     "voiceSec": 3.02,
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Grown-up helps",
+     "scene": "roles",
+     "parentCue": "You never need to play perfectly",
+     "voice": "Grown-up, you are the helper. Point, cheer, and guide a finger when needed.",
+     "voiceId": "062c3a59083b6102",
+     "voiceSec": 5.96,
+     "durationSec": 8
+    },
+    {
+     "kind": "say",
+     "caption": "White and black keys",
+     "scene": "black-keys",
+     "voice": "Here are the piano keys. Long white keys, and little black keys.",
+     "voiceId": "82e47f43502b41ff",
+     "voiceSec": 5.54,
+     "durationSec": 8
+    },
+    {
+     "kind": "say",
+     "caption": "Two black keys",
+     "scene": "black-keys",
+     "showKeys": [
+      {
+       "p": "C#4"
+      },
+      {
+       "p": "D#4"
+      }
+     ],
+     "voice": "Find two black keys, side by side.",
+     "voiceId": "ba6dc4d98f67f079",
+     "voiceSec": 3.44,
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "This is C",
+     "scene": "middle-c",
+     "parentCue": "The same key is middle C on a real piano",
+     "showKeys": [
+      {
+       "p": "C4"
+      }
+     ],
+     "voice": "Just to the left of them lives C, our home key.",
+     "voiceId": "27aaebb905d362b3",
+     "voiceSec": 5.12,
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "One finger",
+     "scene": "hand-home",
+     "parentCue": "On a tablet, small hands can rest a curved hand on the keys",
+     "voice": "Hold up your pointer finger. That's your tapping finger.",
+     "voiceId": "35cb7bf054b77ba4",
+     "voiceSec": 4.28,
+     "durationSec": 6
+    },
+    {
+     "kind": "say",
+     "caption": "Gentle taps",
+     "scene": "hand-home",
+     "parentCue": "One tap at a time. Resting a palm on the glass presses keys",
+     "voice": "Tap gently, like touching a bubble. Then lift your finger up.",
+     "voiceId": "f230d6a54ac44f4c",
+     "voiceSec": 5.12,
+     "durationSec": 7
+    },
+    {
+     "kind": "listen",
+     "caption": "Listen: C",
+     "bpm": 60,
+     "leadInSec": 3.42,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "who": "parent"
+      }
+     ],
+     "voice": "Listen. This is how C sounds.",
+     "voiceId": "26fb6b65cc3abebb",
+     "voiceSec": 3.02,
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "The glowing key",
+     "scene": "glow",
+     "showKeys": [
+      {
+       "p": "C4"
+      }
+     ],
+     "voice": "When a key glows, that's the key to tap.",
+     "voiceId": "f6ef3d196fd0d41a",
+     "voiceSec": 4.28,
+     "durationSec": 6
+    },
+    {
+     "kind": "say",
+     "caption": "Falling blocks",
+     "scene": "falling",
+     "parentCue": "Coral blocks are your child's notes, blue ones play by themselves",
+     "voice": "Blocks fall down to the keys. When a block lands, tap.",
+     "voiceId": "0b976a7afc61b9dd",
+     "voiceSec": 5.12,
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Finger numbers",
+     "scene": "fingers",
+     "parentCue": "1 is the thumb, 5 is the little finger, as on a real piano",
+     "voice": "The numbers are finger names. Your thumb is number one.",
+     "voiceId": "d6faa95e77ee6570",
+     "voiceSec": 4.7,
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "One to five",
+     "scene": "fingers",
+     "parentCue": "Touch each finger as you count",
+     "voice": "Wiggle each one with me. One, two, three, four, five.",
+     "voiceId": "22d4aee6fdf2aaed",
+     "voiceSec": 4.7,
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Watch",
+     "scene": "watch",
+     "voice": "When you see the eye, it's watch time. Hands in your lap.",
+     "voiceId": "b6535fafd3dd56be",
+     "voiceSec": 5.54,
+     "durationSec": 8
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "bpm": 66,
+     "leadInSec": 4.26,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "who": "parent"
+      }
+     ],
+     "voice": "Watch the key light up. Here I go.",
+     "voiceId": "831fd5d068169d66",
+     "voiceSec": 3.86,
+     "durationSec": 10
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn",
+     "scene": "your-turn",
+     "voice": "When you see the hand, it's your turn. I wait for your tap.",
+     "voiceId": "493e5114b1878e0a",
+     "voiceSec": 5.96,
+     "durationSec": 8
+    },
+    {
+     "kind": "say",
+     "caption": "Together",
+     "scene": "together",
+     "voice": "When you see two friends, we play together, at the same time.",
+     "voiceId": "fbfa8626dfe08f11",
+     "voiceSec": 5.54,
+     "durationSec": 8
+    },
+    {
+     "kind": "say",
+     "caption": "Bear low, bird high",
+     "scene": "bear-bird",
+     "parentCue": "Keys on the right sound high, like a little bird",
+     "voice": "Keys on the left sound low, like a big bear.",
+     "voiceId": "f4ea0ec8383198c5",
+     "voiceSec": 4.7,
+     "durationSec": 7
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear! Tap down low",
+     "parentCue": "Any key on the left counts",
+     "target": "low",
+     "bpm": 80,
+     "leadInSec": 5.1,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "voice": "Tap any key on the bear's side, on the left.",
+     "voiceId": "05568ee897e7b9d3",
+     "voiceSec": 4.7,
+     "durationSec": 10
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bird! Tap up high",
+     "parentCue": "Any key on the right counts",
+     "target": "high",
+     "bpm": 80,
+     "leadInSec": 5.1,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "voice": "Now the little bird. Tap any key on the right.",
+     "voiceId": "1b0264b86fb56357",
+     "voiceSec": 4.7,
+     "durationSec": 10
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap the beat",
+     "parentCue": "Any key is fine on the beat",
+     "bpm": 80,
+     "leadInSec": 5.1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "voice": "When the circle grows, tap any key. Tap, tap, tap.",
+     "voiceId": "297bb1d91b4c294f",
+     "voiceSec": 4.7,
+     "durationSec": 10
+    },
+    {
+     "kind": "say",
+     "caption": "Pause or stop",
+     "scene": "controls",
+     "parentCue": "We save your place, so you can come back later",
+     "voice": "Grown-up, pause at the top any time. Close stops the class.",
+     "voiceId": "6173315c6569c1de",
+     "voiceSec": 5.12,
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Stars",
+     "scene": "stars",
+     "voice": "At the end of each class, you get stars for playing together.",
+     "voiceId": "4c5ef191a51f7a78",
+     "voiceSec": 5.54,
+     "durationSec": 8
+    },
+    {
+     "kind": "say",
+     "caption": "Mistakes are fine",
+     "scene": "mistakes-ok",
+     "parentCue": "There is never a fail sound. Cheer for trying",
+     "voice": "Tap a different key, and it just makes its sound. Then try the glowing one.",
+     "voiceId": "dee02a10ea1846c3",
+     "voiceSec": 6.8,
+     "durationSec": 9
+    },
+    {
+     "kind": "say",
+     "caption": "Your first note",
+     "scene": "ready",
+     "showKeys": [
+      {
+       "p": "C4"
+      }
+     ],
+     "voice": "Now your very first note. Find C, our home key.",
+     "voiceId": "584964c867389e80",
+     "voiceSec": 4.7,
+     "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Point to C if your child needs help",
+     "bpm": 60,
+     "leadInSec": 3.84,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1
+      }
+     ],
+     "voice": "Your turn. One gentle tap on C.",
+     "voiceId": "fc614017cc69b2c9",
+     "voiceSec": 3.44,
+     "durationSec": 9
+    },
+    {
+     "kind": "say",
+     "caption": "You did it!",
+     "scene": "stars",
+     "voice": "You did it! You played your very first note.",
+     "voiceId": "66d115c0a6002f83",
+     "voiceSec": 4.28,
+     "durationSec": 6
+    },
+    {
+     "kind": "say",
+     "caption": "Ready to play",
+     "scene": "stars",
+     "parentCue": "Pick a song from Home to start your first class",
+     "voice": "That's how Little Duet works. Now let's play a song together.",
+     "voiceId": "f5e1d6a5ce7b6546",
+     "voiceSec": 5.12,
+     "durationSec": 7
+    }
+   ]
+  }
+ ]
+}

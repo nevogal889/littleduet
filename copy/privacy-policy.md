@@ -10,7 +10,7 @@ Little Duet is a piano app for a grown-up and a child aged 2 to 6 to use togethe
 **The short version**
 
 - Little Duet has no ads, no third-party analytics and no tracking.
-- The app never uses the microphone or camera and never records your child.
+- The app never uses the camera and never records your child. In Real piano mode, if you allow it, the app listens through the microphone to tell which piano note was played. The sound is analysed on the device in real time and is never recorded, stored or sent anywhere. You can turn this off in Settings or in your device settings.
 - In guest mode, which is the default, your child's nickname, age group, progress, stars and stickers stay on your device.
 - If a grown-up chooses to create an account, we store the grown-up's email address and the child's progress so it can sync. Nicknames stay on the device.
 - Apple or Google handles payments. We never see card details.
@@ -31,7 +31,7 @@ Little Duet is made for young children, played with a grown-up. We designed it t
 - The child-facing parts of the app (songs, classes, the piano, stickers) collect no personal information from your child. Your child never types an email, a full name, a photo, a voice recording or a location.
 - There is no chat, no messaging, no social feed, and no way for children to share content or contact anyone.
 - Settings, the account screen, purchases and every link that leaves the app sit behind a grown-ups-only check (a "parental gate").
-- We do not use advertising identifiers (Apple IDFA or Android advertising ID), and we do not request location, contacts, photos, microphone or camera access.
+- We do not use advertising identifiers (Apple IDFA or Android advertising ID), and we do not request location, contacts, photos or camera access. Microphone access is requested only for listening to the piano in Real piano mode (see above).
 
 ## 3. Information we handle
 
@@ -83,7 +83,7 @@ If you email us, we receive your email address and whatever you include. We use 
 
 ### 3.6 What we do not collect
 
-No advertising identifiers. No location. No contacts. No photos, video or audio of you or your child. No microphone input. No third-party analytics or crash-reporting SDKs. No social logins. No data from other apps or websites. We do not track you across apps or websites, and we do not build advertising profiles.
+No advertising identifiers. No location. No contacts. No photos, video or audio of you or your child. Microphone sound used for note listening is processed on the device and never leaves it. No third-party analytics or crash-reporting SDKs. No social logins. No data from other apps or websites. We do not track you across apps or websites, and we do not build advertising profiles.
 
 ## 4. Children's privacy (COPPA)
 

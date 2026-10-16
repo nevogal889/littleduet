@@ -27,3 +27,8 @@ export const Defs = mk('defs');
 export const Mask = mk('mask');
 export const LinearGradient = mk('linearGradient');
 export const Stop = mk('stop');
+export function Text(p: any) {
+  const { rest, children } = clean(p);
+  const fontFamily = typeof rest.fontFamily === 'string' && rest.fontFamily.startsWith('Nunito') ? "'Nunito','DM Sans',system-ui,sans-serif" : rest.fontFamily;
+  return React.createElement('text', { ...rest, fontFamily, fontWeight: 800 }, children);
+}

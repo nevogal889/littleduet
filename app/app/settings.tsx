@@ -234,6 +234,26 @@ export default function Settings() {
         />
         <T v="small">{t(`common.modes.${child?.playMode ?? 'real'}.description`)}</T>
         <T v="small">{t('grownups.playing.volumeHint')}</T>
+        <T v="bodyStrong" style={{ marginTop: space.sm }}>
+          {t('listen.settingTitle')}
+        </T>
+        <Segmented
+          testID="listen-toggle"
+          value={child?.listen === false ? 'off' : 'on'}
+          onChange={(v) => child && app.updateChild(child.id, { listen: v === 'on' })}
+          options={[
+            { value: 'on', label: t('settings.on') },
+            { value: 'off', label: t('settings.off') },
+          ]}
+        />
+        <T v="small">{t('listen.settingBody')}</T>
+        <T v="bodyStrong" style={{ marginTop: space.sm }}>
+          {t('tutorial.settingTitle')}
+        </T>
+        <View style={{ flexDirection: 'row', gap: space.sm, flexWrap: 'wrap' }}>
+          <Button testID="tutorial-real" size="md" full={false} variant="secondary" icon="piano" label={t('common.modes.real.name')} onPress={() => router.push('/tutorial?mode=real&again=1' as never)} />
+          <Button testID="tutorial-screen" size="md" full={false} variant="secondary" icon="screen" label={t('common.modes.screen.name')} onPress={() => router.push('/tutorial?mode=screen&again=1' as never)} />
+        </View>
         <Button testID="reset-progress" variant="secondary" size="md" icon="restart" label={t('grownups.reset.button')} onPress={() => setConfirm('reset')} />
       </Card>
 

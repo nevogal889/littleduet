@@ -53,6 +53,7 @@ function Root() {
         <Stack.Screen name="account" options={{ presentation: 'modal' }} />
         <Stack.Screen name="licenses" />
         <Stack.Screen name="settings" />
+        <Stack.Screen name="tutorial" options={{ presentation: 'fullScreenModal', gestureEnabled: false, animation: 'fade' }} />
       </Stack>
     </>
   );

@@ -88,6 +88,12 @@ export interface Segment {
   dynamic?: 'loud' | 'soft';
   /** say: keys to light while the caption shows. */
   showKeys?: string[];
+  /** Teacher voice: the spoken line, its audio file (<media>/voice/<voiceId>.mp3) and length. */
+  voice?: string;
+  voiceId?: string;
+  voiceSec?: number;
+  /** Tutorials: the picture shown with this step (components/Scene). */
+  scene?: string;
 }
 
 /** Micro-Lesson Visualizer skill ids (content/curriculum_overlay.py SKILLS). */
@@ -155,6 +161,8 @@ export interface ChildProfile {
   createdAt: number;
   /** 'YYYY-MM-DD'. Device-only: never synced (the server gets the age only). */
   birthday?: string;
+  /** Real piano: listen to the piano through the microphone (default on). */
+  listen?: boolean;
   /** The age last shown to the family; when childAge() passes it, Home shows the age-up card. */
   ageSeen?: number;
 }

@@ -18,6 +18,8 @@ export interface AppData {
   children: ChildProfile[];
   activeChildId: string | null;
   childData: Record<string, ChildData>;
+  /** When each mode's required tutorial was finished (family-wide). */
+  tutorials?: Partial<Record<PlayMode, number>>;
 }
 
 const EMPTY: AppData = { version: 1, onboarded: false, children: [], activeChildId: null, childData: {} };
@@ -37,6 +39,7 @@ interface Ctx {
   removeChild(id: string): void;
   setActiveChild(id: string): void;
   finishOnboarding(): void;
+  markTutorial(mode: PlayMode): void;
   setPlayMode(mode: PlayMode): void;
   savePosition(cls: LessonClass, positionSec: number, segIndex?: number): void;
   /** Returns stickers newly earned by this completion. */
@@ -193,6 +196,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       },
       finishOnboarding() {
         setData((d) => ({ ...d, onboarded: true }));
+      },
+      markTutorial(mode) {
+        setData((d) => ({ ...d, tutorials: { ...(d.tutorials ?? {}), [mode]: Date.now() } }));
       },
       setPlayMode(mode) {
         setData((d) => {

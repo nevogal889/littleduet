@@ -411,6 +411,39 @@ def class_range(cls):
 
 
 # ------------------------------------------------------------------ audio
+VOICE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out", "voice")
+VOICE_AUDIO = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content", "voice", "audio")
+VOICE_GAIN = 0.9
+_voice_cache = {}
+
+
+def voice_audio(vid):
+    """Teacher line (video/out/voice/<id>.wav, 22.05 kHz mono) as 44.1 kHz stereo float, or None."""
+    if vid in _voice_cache:
+        return _voice_cache[vid]
+    path = os.path.join(VOICE_DIR, vid + ".wav")
+    mp3 = os.path.join(VOICE_AUDIO, vid + ".mp3")
+    buf = None
+    x = None
+    if os.path.exists(path):
+        import wave
+        from scipy.signal import resample_poly
+        w = wave.open(path)
+        x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768.0
+        sr = w.getframerate()
+        if sr != AU.SR:
+            g = math.gcd(sr, AU.SR)
+            x = resample_poly(x, AU.SR // g, sr // g).astype(np.float32)
+    elif os.path.exists(mp3):   # CI: decode the committed mp3 straight to 44.1 kHz mono
+        raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", mp3, "-ac", "1", "-ar", str(AU.SR), "-f", "f32le", "-"],
+                             capture_output=True, check=True).stdout
+        x = np.frombuffer(raw, np.float32)
+    if x is not None:
+        buf = np.stack([x, x], axis=1) * VOICE_GAIN
+    _voice_cache[vid] = buf
+    return buf
+
+
 def render_audio(segs, total):
     n = int(math.ceil(total * AU.SR)) + 1
     mixbuf = np.zeros((n, 2), np.float32)
@@ -423,6 +456,10 @@ def render_audio(segs, total):
         mixbuf[i:j] += buf[: j - i]
 
     for S in segs:
+        if S.get("voiceId"):
+            vb = voice_audio(S["voiceId"])
+            if vb is not None:
+                add(vb, S["t0"] + 0.15)
         for e in S["events"]:
             add(AU.note_audio(e.m, max(0.08, e.off - e.on - 0.02), e.vel), e.on)
         if S["kind"] == "beat":
@@ -594,8 +631,35 @@ class ClassRenderer:
                     self._light(fr, m, mix(CORAL_L, CORAL, pulse), k.get("f"), INK, big=True, black_pass=True)
         if S["events"] or kind in ("beat", "high_low"):
             self._notes(fr, S, t)
+        pill = self._phase_pill(kind)
+        if pill is not None:
+            fr.paste(pill, (24, ROLL_Y0 + 10), pill)
         self._progress(fr, t)
         return fr
+
+    PHASES = {"listen": ("WATCH", INDIGO, (226, 230, 246)), "demo": ("WATCH", INDIGO, (226, 230, 246)),
+              "your_turn": ("YOUR TURN", (181, 67, 43), (253, 227, 220)),
+              "high_low": ("YOUR TURN", (181, 67, 43), (253, 227, 220)),
+              "together": ("TOGETHER", (154, 106, 0), (253, 240, 210)), "beat": ("TOGETHER", (154, 106, 0), (253, 240, 210))}
+
+    def _phase_pill(self, kind):
+        """WATCH / YOUR TURN / TOGETHER banner (class-experience spec 4), same as the screen piano."""
+        ph = self.PHASES.get(kind)
+        if not ph:
+            return None
+        cache = self.__dict__.setdefault("_pills", {})
+        if kind not in cache:
+            label, fg, bg = ph
+            f = font("text", 24, 800)
+            tw = int(f.getlength(label))
+            w, h = tw + 64, 44
+            im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+            d = ImageDraw.Draw(im)
+            d.rounded_rectangle([0, 0, w - 1, h - 1], radius=h // 2, fill=bg + (245,))
+            d.ellipse([16, h / 2 - 7, 30, h / 2 + 7], fill=fg)
+            d.text((42, h / 2 + 1), label, font=f, fill=fg, anchor="lm")
+            cache[kind] = im
+        return cache[kind]
 
     def _seg_at(self, t):
         i = getattr(self, "_si", 0)
@@ -701,7 +765,7 @@ class ClassRenderer:
                     paste_center(fr, circle_sprite(r * 0.5, CORAL), cx, cy)
         # beat circle / high-low pulse
         if kind == "beat":
-            self._beat_circle(fr, S, t, CORAL)
+            self._beat_circle(fr, S, t, MARI)
         elif kind == "high_low":
             low = S.get("target") == "low"
             ons = [e.on for e in evs]
@@ -951,7 +1015,7 @@ def encode(renderer, mp4, crf, preset, threads, audio_kbps):
     return n_frames / float(FPS)
 
 
-RENDER_VERSION = "1"
+RENDER_VERSION = "2"   # 2: teacher voice, phase banners, marigold beat circle
 
 
 def class_hash(lesson, cls):
