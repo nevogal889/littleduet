@@ -1,0 +1,38 @@
+feature,area,priority,original,clone,notes
+Onboarding questionnaire (age / goals / music taste / has a piano),onboarding,must,yes,no,American Songwriter review; age drives kids vs adult experience (help 8053114)
+Microphone permission flow with troubleshooting,input,must,yes,no,help articles 12647864 and 5834411; parental-control Screen Time blocks are a known cause
+Acoustic note recognition through the device mic (on-device ML),input,must,yes,no,"Medium part 2: mic PCM -> 88-key activity vector per frame -> game logic; runs on device for latency, offline and privacy"
+MIDI input (USB / Bluetooth) as an alternative,input,could,yes,no,help collection 1512479; reviewers say MIDI is more reliable than the mic
+Touch on-screen keyboard courses (no piano),input,must,yes,no,"only 2 touch courses (Touch Intro free, Stay in Touch paid); rest needs a real piano (help 14588159). Little Duet makes on-screen piano a first-class mode"
+Headphones recommendation to stop the mic hearing the backing track,input,should,yes,no,help 6210583; impractical for toddlers
+Short concept video at the start of a lesson,lesson,must,yes,no,"Learnopoly, American Songwriter, Weizmann ('watch videos, complete exercises, play songs'); presenter/format not verified"
+Extra videos for kids profiles in the first courses,lesson,must,yes,no,help 8053114 (ages 4-10 up to Essentials II)
+Static stage that waits for the correct note,lesson,must,yes,no,"American Songwriter: app 'patiently waits'; help 7943490 says red appears only in moving stages"
+Moving stage: scrolling notation with cursor over a backing track,lesson,should,yes,no,Medium part 1; help 7943680 (blue cursor); Guest Hollow (scrolling notes)
+Colour feedback per note (blue right / yellow right-after-hint / red wrong),feedback,must,yes,no,help 7943490. Little Duet: avoid red for 2-6 year olds
+Hint keyboard: visual keyboard appears and highlights the correct key after a miss; grey keys show what the app heard,feedback,must,yes,no,help 7943490
+Auto slow-down (practice mode with metronome) after repeated misses,feedback,should,yes,no,"MusicRadar, Learnopoly"
+Pause menu: resume / restart stage / listen to visible notes / exit,lesson,must,yes,no,help 16945681
+End-of-song summary (notes correct / timing),feedback,should,yes,no,Guest Hollow
+Lenient timing judgement,feedback,should,yes,no,"Learnopoly (off-beat still passed), Guest Hollow ('very forgiving'); patent 9492756 describes adjustable 20/50/100 ms windows"
+Linear course path with mini-journeys,curriculum,must,yes,no,"Piano Basics -> Essentials -> Soloist (blue) / Chords (pink) / Lead Sheet; 27-28 courses (MusicRadar, Pianoers, help 2791299)"
+Hand-icon finger guides instead of finger numbers for kids,curriculum,must,yes,no,help 8053114; Guest Hollow (hand diagram with finger numbers)
+Kids song set (songs kids know) gated by unlocked courses,curriculum,must,yes,no,help 7943809; kids start with 'The Notes F & G' and 'Circle of Life'
+Song library sorted by level; three arrangement levels per song (Essentials / Intermediate / Pre-Advanced),content,should,yes,no,help 7943680; heavy simplification noted by Pianoers
+Teach Me: exercises per song stage then full song,lesson,must,yes,no,help 7943680
+Listen mode (hear the song or a section),lesson,must,yes,no,help 7943680
+Fixed tempo choices in songs (60 / 80 / 100%),lesson,should,yes,no,MusicRadar 2022
+Star levels (up to 3 stars per song; fraction gate to continue),motivation,should,yes,no,help 7943591
+5-minute workouts (flash cards / song training / on the go) regenerated weekly,motivation,could,yes,no,help 7939170; being replaced in newer versions
+Weekly streak with 2 freezes (+1 per 5 weeks),motivation,should,yes,no,help 15496066; weekly cadence suits families
+Practice reminders (days + time; local per device),motivation,must,yes,no,help 7939207
+Kids XP levels with unlockable rewards (Tempo Rush to 200% / Song Mix medley),motivation,should,yes,no,help 15913867 (iOS only)
+Time-limited challenges with weekly song drops / badges,motivation,could,yes,no,help 12175788
+Family plan: up to 5 profiles across 4 Simply apps,family,must,yes,no,"help 2749747, why-simply-works page"
+Parent can hide songs not right for the home,family,should,yes,no,hellosimply.com/family/piano-for-kids
+Free tier: two free courses then paywall,monetization,must,yes,no,App Store listing; top review complaint is the paywall surprise
+Subscription monthly / yearly; individual / duo / family; prices vary by country; trial 7 or 14 days,monetization,must,yes,no,"App Store IAPs, Pianoers, Learnopoly, help 2728030"
+Trinity College London certificate partnership,curriculum,could,yes,skip,partner deal; cannot be cloned
+Licensed pop / Disney catalogue (5000+ songs),content,could,yes,skip,licensed content; Little Duet uses public-domain songs
+Trained polyphonic recognition model (chords up to 5 notes),input,could,yes,skip,their data and models; Little Duet needs single-note recognition only
+Crowd-based per-device-model mic / speaker configuration,input,could,yes,skip,"patent US 12,243,437; needs a large install base, and is patented"
