@@ -263,6 +263,7 @@ async function run(viewport, tag) {
   await id('settings').waitFor();
   await shot('settings', true);
   check(`${tag}: settings has piano mode + birthday`, (await id('gu-mode').count()) === 1 && /Birthday:/.test(await page.locator('[data-testid^="child-age-"]').first().innerText()));
+  check(`${tag}: public-domain note lives in Settings`, (await id('public-domain-note').count()) === 1);
   check(`${tag}: About shows CC BY piano credit`, /CC BY 3\.0/.test(await id('audio-credit').innerText()));
 
   const real = errors.filter((e) => !/favicon|Failed to load resource/.test(e));

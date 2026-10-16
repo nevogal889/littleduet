@@ -311,6 +311,9 @@ export default function Settings() {
       <SectionTitle>{t('grownups.sections.about')}</SectionTitle>
       <Card style={styles.card} testID="about">
         <T v="bodyStrong">{t('grownups.about.version', { version: Constants.expoConfig?.version ?? '1.0.0' })}</T>
+        <T v="small" testID="public-domain-note">
+          {t('settings.publicDomain')}
+        </T>
         <T v="small">{t('grownups.about.credits')}</T>
         <T v="small" testID="audio-credit">
           {t('grownups.about.audioCredit')}

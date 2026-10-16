@@ -60,7 +60,6 @@ export function SongStoryCard({ song }: { song: Song }) {
               <T v="body">{st.myth}</T>
             </View>
           ) : null}
-          <T v="small">{t('song.aboutPublicDomain')}</T>
         </View>
       ) : null}
       {st || song.origin ? (
