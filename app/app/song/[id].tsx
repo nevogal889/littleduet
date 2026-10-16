@@ -4,6 +4,7 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { DifficultyDots, SongCover } from '../../src/components/bits';
 import { ClassRow, songMeta } from '../../src/components/cards';
 import { LessonPath, type PathItem } from '../../src/components/LessonPath';
+import { ClassBriefSheet, SkillMapCard } from '../../src/components/skills';
 import { BackButton, Button, Card, PercentBar, Screen, SectionTitle, Segmented, T } from '../../src/components/ui';
 import { LESSONS, songById } from '../../src/data/catalog';
 import { useOpenClass } from '../../src/hooks';
@@ -20,6 +21,7 @@ export default function SongPage() {
   const openClass = useOpenClass();
   const { isTablet, isLandscape, contentWidth } = useLayout();
   const [asList, setAsList] = useState(false);
+  const [brief, setBrief] = useState<string | null>(null);
   const song = songById(String(id));
   const lesson = song ? LESSONS[song.id] : undefined;
 
@@ -59,6 +61,9 @@ export default function SongPage() {
     current: !sp.finished && c.id === target.id,
   }));
 
+  const skillMap = <SkillMapCard summary={lesson.songSummary} map={lesson.skillMap} classes={lesson.classes} />;
+  const briefCls = brief ? lesson.classes.find((c) => c.id === brief) : undefined;
+
   const info = (
     <View style={styles.info}>
       {/* Hero card: cover bound inside the card (full bleed on top), details below. */}
@@ -94,6 +99,7 @@ export default function SongPage() {
           <T v="body">{target.parentTip}</T>
         </Card>
       ) : null}
+      {wide ? skillMap : null}
     </View>
   );
 
@@ -125,13 +131,14 @@ export default function SongPage() {
             percent={classPercent(c, progress[c.id])}
             locked={!canPlayClass(c, entitlement)}
             thumbWidth={isTablet ? 200 : 120}
-            onPress={() => openClass(c.id, mode)}
+            onPress={() => setBrief(c.id)}
           />
         ))
       ) : (
-        <LessonPath items={items} width={pathW} onOpen={(c) => openClass(c.id, mode)} />
+        <LessonPath items={items} width={pathW} onOpen={(c) => setBrief(c.id)} />
       )}
       <T v="small">{t('song.concertNote')}</T>
+      {!wide ? <View style={{ marginTop: space.md }}>{skillMap}</View> : null}
       {song.origin ? (
         <Card style={{ gap: 4, marginTop: space.md }}>
           <T v="bodyStrong">{t('song.aboutTitle')}</T>
@@ -158,6 +165,18 @@ export default function SongPage() {
           {classes}
         </>
       )}
+      <ClassBriefSheet
+        cls={briefCls}
+        visible={!!briefCls}
+        percent={briefCls ? classPercent(briefCls, progress[briefCls.id]) : 0}
+        locked={briefCls ? !canPlayClass(briefCls, entitlement) : false}
+        onClose={() => setBrief(null)}
+        onStart={() => {
+          const id = brief;
+          setBrief(null);
+          if (id) openClass(id, mode);
+        }}
+      />
     </Screen>
   );
 }

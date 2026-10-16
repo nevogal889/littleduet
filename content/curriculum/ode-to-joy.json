@@ -1,0 +1,268 @@
+{
+  "songId": "ode-to-joy",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finding keys by landmarks, mirror patterns, counting beats and the song's shape, while you and your child play Ode to Joy together.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Find your five-finger house",
+      "goal": "Hear the whole song and find C, the door of your five-finger house.",
+      "skill": { "primary": "space", "secondary": ["listening", "fingers"] },
+      "mathTarget": { "concept": "Spatial mapping with a landmark", "parentLine": "Using the two black keys as a sign to find C" },
+      "parentPrompt": "Point to the two black keys, then help your child rest the thumb on C.",
+      "childAction": "Find the two black keys, then put your thumb on C.",
+      "bridge": "Two black keys are a roof; C is the door just left of it.",
+      "intro": [
+        { "caption": "Find the two black keys", "parentCue": "Point to a pair of black keys" },
+        { "caption": "Thumb on the door, C", "parentCue": "Guide the thumb gently, never press it" }
+      ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "One finger, one key",
+          "parentCue": "Say the finger number for each key",
+          "bpm": 60,
+          "notes": [
+            { "p": "C4", "d": 2, "f": 1 },
+            { "p": "D4", "d": 2, "f": 2 },
+            { "p": "E4", "d": 2, "f": 3 },
+            { "p": "F4", "d": 2, "f": 4 },
+            { "p": "G4", "d": 2, "f": 5 }
+          ]
+        }
+      ],
+      "praise": "Your hand found home!",
+      "celebrate": "Today you practiced: finding C and one finger per key."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Up the stairs, down again",
+      "goal": "Play the first lines and feel how the tune climbs up and comes back down.",
+      "skill": { "primary": "patterns", "secondary": ["fingers", "pitch"] },
+      "mathTarget": { "concept": "Mirror symmetry", "parentLine": "The tune goes up three steps, then back down the same steps" },
+      "parentPrompt": "Walk two fingers up your child's arm on the way up, then back down.",
+      "childAction": "Fingers three, four, five climb up, then five, four, three come down.",
+      "bridge": "Each key is a stair: step up to G, then step back down.",
+      "intro": [
+        { "caption": "Up the stairs, down the stairs", "parentCue": "Walk your fingers up and down the arm" }
+      ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Climb up, climb down",
+          "parentCue": "Say three, four, five, five, four, three",
+          "bpm": 60,
+          "notes": [
+            { "p": "E4", "d": 1, "f": 3 },
+            { "p": "F4", "d": 1, "f": 4 },
+            { "p": "G4", "d": 1, "f": 5 },
+            { "p": "G4", "d": 1, "f": 5 },
+            { "p": "F4", "d": 1, "f": 4 },
+            { "p": "E4", "d": 1, "f": 3 }
+          ]
+        }
+      ],
+      "praise": "Up and down, together!",
+      "celebrate": "Today you practiced: a mirror pattern, up and back down."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Which line goes home?",
+      "goal": "Learn the next lines and hear which ending lands back home on C.",
+      "skill": { "primary": "form", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Same and different (comparison)", "parentLine": "Two lines start the same; only one ends on home C" },
+      "parentPrompt": "After each line, ask: did it land home? Cheer with a hug when it does.",
+      "childAction": "Listen to the ending and pat your lap when it lands on C.",
+      "bridge": "C is the front door: the last note walks right back inside.",
+      "intro": [
+        { "caption": "Is the song home yet?", "parentCue": "Ask your child after each line" }
+      ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Which one goes home?",
+          "parentCue": "Pat your lap together on the home note",
+          "notes": [
+            { "p": "C4", "d": 1 },
+            { "p": "C4", "d": 1 },
+            { "p": "D4", "d": 1 },
+            { "p": "E4", "d": 1 },
+            { "p": "E4", "d": 1.5 },
+            { "p": "D4", "d": 0.5 },
+            { "p": "D4", "d": 2 },
+            { "p": "C4", "d": 1 },
+            { "p": "C4", "d": 1 },
+            { "p": "D4", "d": 1 },
+            { "p": "E4", "d": 1 },
+            { "p": "D4", "d": 1.5 },
+            { "p": "C4", "d": 0.5 },
+            { "p": "C4", "d": 2 }
+          ]
+        }
+      ],
+      "praise": "You heard the way home!",
+      "celebrate": "Today you practiced: hearing same and different endings."
+    },
+    {
+      "index": 4,
+      "spineType": "phrase",
+      "title": "Little steps, big frog hop",
+      "goal": "Learn the dance line, with small steps and one big hop down to low G.",
+      "skill": { "primary": "space", "secondary": ["pitch", "fingers"] },
+      "mathTarget": { "concept": "Interval distance: step versus leap", "parentLine": "Notes next door are steps; the far low note is a hop" },
+      "parentPrompt": "Show your child the low G outside the house, then help the thumb hop there.",
+      "childAction": "Tiptoe the small steps, then hop your thumb down to low G.",
+      "bridge": "Steps are next-door keys; the frog hop jumps far left, where sounds are low.",
+      "intro": [
+        { "caption": "Small steps, then a frog hop", "parentCue": "Hop your hand down on your lap" }
+      ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Tiny steps, then hop!",
+          "parentCue": "Hop your hands down on the big jump",
+          "notes": [
+            { "p": "D4", "d": 1 },
+            { "p": "C4", "d": 1 },
+            { "p": "D4", "d": 1 },
+            { "p": "G3", "d": 2 },
+            { "p": "D4", "d": 1 },
+            { "p": "C4", "d": 1 },
+            { "p": "D4", "d": 1 },
+            { "p": "G3", "d": 2 }
+          ]
+        }
+      ],
+      "praise": "What a big hop!",
+      "celebrate": "Today you practiced: small steps, a big leap, low on the left."
+    },
+    {
+      "index": 5,
+      "spineType": "put-together",
+      "title": "Spot the happy tune",
+      "goal": "Play the whole song slowly and count how many times the happy tune returns.",
+      "skill": { "primary": "form", "secondary": ["counting", "patterns"] },
+      "mathTarget": { "concept": "Pattern repetition (A-B-A form)", "parentLine": "One tune comes back three times, like a chorus" },
+      "parentPrompt": "Each time 'Happy, happy' starts, hold up one more finger and count aloud.",
+      "childAction": "Play slowly and say the number each time the happy tune returns.",
+      "bridge": "The happy tune is a friend who visits three times; wave hello each time.",
+      "intro": [
+        { "caption": "Count the happy tune", "parentCue": "Hold up a finger each time it returns" },
+        { "caption": "One, two, three times!", "parentCue": "Count together, then cheer at three" }
+      ],
+      "games": [],
+      "praise": "You found all three!",
+      "celebrate": "Today you practiced: the song's shape and counting the repeats."
+    },
+    {
+      "index": 6,
+      "spineType": "review",
+      "title": "Walk, walk, run-ning",
+      "goal": "Practise the bouncy dance lines slowly, where two quick notes share one beat.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Ratio 2:1 (half and double)", "parentLine": "Two quick notes fit in the time of one walking note" },
+      "parentPrompt": "Say 'walk' for long notes and 'run-ning' for the two quick ones.",
+      "childAction": "Say walk and run-ning while your fingers play the dance line.",
+      "bridge": "A walking note is one big step; run-ning is two tiny mouse steps.",
+      "intro": [
+        { "caption": "Walk and run-ning", "parentCue": "Say the words with every note" }
+      ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Walk, run-ning, walk, walk",
+          "parentCue": "Say the words slowly with each key",
+          "bpm": 55,
+          "notes": [
+            { "p": "D4", "d": 1, "f": 2 },
+            { "p": "E4", "d": 0.5, "f": 3 },
+            { "p": "F4", "d": 0.5, "f": 4 },
+            { "p": "E4", "d": 1, "f": 3 },
+            { "p": "D4", "d": 1, "f": 2 },
+            { "p": "D4", "d": 1, "f": 2 },
+            { "p": "E4", "d": 0.5, "f": 3 },
+            { "p": "F4", "d": 0.5, "f": 4 },
+            { "p": "E4", "d": 1, "f": 3 },
+            { "p": "D4", "d": 1, "f": 2 }
+          ]
+        }
+      ],
+      "praise": "Walking and running, together!",
+      "celebrate": "Today you practiced: two quick notes in one beat."
+    },
+    {
+      "index": 7,
+      "spineType": "phrase",
+      "title": "Four beats, slow and even",
+      "goal": "Play the whole song slowly and evenly, feeling four beats in every bar.",
+      "skill": { "primary": "beat", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Grouping by four (meter)", "parentLine": "Beats come in groups of four, again and again" },
+      "parentPrompt": "Tap your child's shoulder on each beat and count 1, 2, 3, 4 softly.",
+      "childAction": "Play slowly and evenly while you count to four together.",
+      "bridge": "Each bar is a little train with four cars: one, two, three, four.",
+      "intro": [
+        { "caption": "Slow like a tortoise", "parentCue": "Count 1, 2, 3, 4 out loud" }
+      ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap and count to four",
+          "parentCue": "Count 1, 2, 3, 4 together out loud",
+          "bpm": 80,
+          "notes": [
+            { "p": "E4", "d": 1 },
+            { "p": "E4", "d": 1 },
+            { "p": "F4", "d": 1 },
+            { "p": "G4", "d": 1 },
+            { "p": "G4", "d": 1 },
+            { "p": "F4", "d": 1 },
+            { "p": "E4", "d": 1 },
+            { "p": "D4", "d": 1 }
+          ]
+        }
+      ],
+      "praise": "Slow and steady, together!",
+      "celebrate": "Today you practiced: steady beats in groups of four."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Keep up with the band",
+      "goal": "Play the whole song along with the music and keep going, even after a slip.",
+      "skill": { "primary": "together", "secondary": ["beat", "expression"] },
+      "mathTarget": { "concept": "Entrainment (matching a tempo)", "parentLine": "Matching your playing to the speed of the music" },
+      "parentPrompt": "Sing the words along and nod on each beat; if a note slips, keep going.",
+      "childAction": "Play with the music and keep going, like a train on its track.",
+      "bridge": "The music is a moving train; hop on and ride, even past bumps.",
+      "intro": [
+        { "caption": "Hop on the music train", "parentCue": "Sing along and keep the beat" }
+      ],
+      "games": [],
+      "praise": "You kept going together!",
+      "celebrate": "Today you practiced: keeping pace with the music together."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Concert for teddy",
+      "goal": "Play the whole song from start to end for a teddy, then bow and celebrate.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Ordinal sequence (start, middle, end)", "parentLine": "Knowing what comes first, next and last in the song" },
+      "parentPrompt": "Sit teddy as the audience; announce the song, then clap and bow together at the end.",
+      "childAction": "Bow, play the whole song for teddy, then bow again.",
+      "bridge": "Play it like a happy parade: proud start, bouncy middle, home at the end.",
+      "intro": [
+        { "caption": "Welcome to the concert!", "parentCue": "Sit teddy facing the piano" },
+        { "caption": "Bow, then play", "parentCue": "Bow together before you start" }
+      ],
+      "games": [],
+      "praise": "What a happy concert!",
+      "celebrate": "Today you practiced: playing start to end, and sharing music."
+    }
+  ]
+}

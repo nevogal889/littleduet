@@ -36,6 +36,9 @@ export function writeLessonIndex() {
     const l = JSON.parse(fs.readFileSync(path.join(DATA_LESSONS, f), 'utf8'));
     summary[f.replace(/\.json$/, '')] = {
       songId: l.songId,
+      ...(l.curriculum ? { curriculum: l.curriculum } : {}),
+      ...(l.songSummary ? { songSummary: l.songSummary } : {}),
+      ...(l.skillMap ? { skillMap: l.skillMap } : {}),
       classes: l.classes.map(({ segments, ...c }) => ({ ...c, segments: [] })),
     };
   }

@@ -2,6 +2,52 @@
  "songId": "hickory-dickory-dock",
  "title": "Hickory Dickory Dock",
  "ageGroup": "3-4",
+ "curriculum": "default",
+ "songSummary": "Practices listening memory, keyboard map and playing together, with a tune you can share.",
+ "skillMap": [
+  {
+   "id": "listening",
+   "label": "Listening memory",
+   "value": 1.0,
+   "classes": 6
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 0.5,
+   "classes": 3
+  },
+  {
+   "id": "together",
+   "label": "Playing together",
+   "value": 0.5,
+   "classes": 4
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.4,
+   "classes": 3
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 0.2,
+   "classes": 2
+  },
+  {
+   "id": "form",
+   "label": "Song shape",
+   "value": 0.2,
+   "classes": 1
+  },
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.1,
+   "classes": 1
+  }
+ ],
  "icon": "clock",
  "key": "C",
  "timeSignature": "6/8",
@@ -2280,7 +2326,22 @@
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "listening",
+    "secondary": [
+     "beat",
+     "together"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Auditory pattern recognition",
+    "parentLine": "Hearing the whole tune before playing it"
+   },
+   "parentPrompt": "Sit together at the piano. Sway side to side while the song plays.",
+   "childAction": "Sway and listen to the whole song.",
+   "bridge": "The keys light up where each sound lives.",
+   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
   },
   {
    "id": "hickory-dickory-dock-c02",
@@ -4078,7 +4139,21 @@
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "beat",
+    "secondary": [
+     "together"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Periodicity (steady pulse)",
+    "parentLine": "Feeling something that repeats at an even time"
+   },
+   "parentPrompt": "Any key is fine. Tap with your child's hand at first, then let go.",
+   "childAction": "Tap any key on every beat.",
+   "bridge": "The beat is a heartbeat: tap, tap, tap, never in a hurry.",
+   "celebrate": "Today you practiced keeping a steady beat and playing together."
   },
   {
    "id": "hickory-dickory-dock-c03",
@@ -4581,7 +4656,21 @@
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "space",
+    "secondary": [
+     "listening"
+    ]
+   },
+   "mathTarget": {
+    "concept": "One-to-one correspondence",
+    "parentLine": "Matching one sound to one key"
+   },
+   "parentPrompt": "Help your child find F. Use one finger and press gently, like a button.",
+   "childAction": "Find the special note and play it on cue.",
+   "bridge": "The special note is a doorbell: same key, same sound, every time.",
+   "celebrate": "Today you practiced finding the way on the keys and listening and remembering."
   },
   {
    "id": "hickory-dickory-dock-c04",
@@ -5423,7 +5512,21 @@
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "listening",
+    "secondary": [
+     "patterns"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Sequence memory",
+    "parentLine": "Holding a short tune in mind and repeating it"
+   },
+   "parentPrompt": "Watch first, then copy. If it's tricky, play just the first key together.",
+   "childAction": "Listen, then copy the little tune.",
+   "bridge": "Echo it back like a parrot copying a song.",
+   "celebrate": "Today you practiced listening and remembering and spotting patterns."
   },
   {
    "id": "hickory-dickory-dock-c05",
@@ -6265,7 +6368,21 @@
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "listening",
+    "secondary": [
+     "patterns"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Sequence memory",
+    "parentLine": "Holding a short tune in mind and repeating it"
+   },
+   "parentPrompt": "Watch first, then copy. If it's tricky, play just the first key together.",
+   "childAction": "Listen, then copy the little tune.",
+   "bridge": "Echo it back like a parrot copying a song.",
+   "celebrate": "Today you practiced listening and remembering and spotting patterns."
   },
   {
    "id": "hickory-dickory-dock-c06",
@@ -7979,7 +8096,21 @@
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "space",
+    "secondary": [
+     "listening"
+    ]
+   },
+   "mathTarget": {
+    "concept": "One-to-one correspondence",
+    "parentLine": "Matching one sound to one key"
+   },
+   "parentPrompt": "You play the blue keys, your child plays the coral one. Waiting is part of the game.",
+   "childAction": "Find the special note and play it on cue.",
+   "bridge": "The special note is a doorbell: same key, same sound, every time.",
+   "celebrate": "Today you practiced finding the way on the keys and listening and remembering."
   },
   {
    "id": "hickory-dickory-dock-c07",
@@ -9434,7 +9565,21 @@
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "listening",
+    "secondary": [
+     "space"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Two-category sorting",
+    "parentLine": "Telling two sounds apart and matching each to its key"
+   },
+   "parentPrompt": "Two notes means more waiting and watching. Celebrate each coral key your child catches.",
+   "childAction": "Play the two special notes when they come.",
+   "bridge": "Two doorbells: one for each friend at the door.",
+   "celebrate": "Today you practiced listening and remembering and finding the way on the keys."
   },
   {
    "id": "hickory-dickory-dock-c08",
@@ -11169,7 +11314,21 @@
      "caption": "Wonderful playing!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "together",
+    "secondary": [
+     "beat"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Synchrony",
+    "parentLine": "Keeping time with another person"
+   },
+   "parentPrompt": "Keep playing even if your child misses a note. The beat matters more than being perfect.",
+   "childAction": "Play along with your grown-up.",
+   "bridge": "Two players, one song, like walking in step.",
+   "celebrate": "Today you practiced playing together and keeping a steady beat."
   },
   {
    "id": "hickory-dickory-dock-c09",
@@ -12909,7 +13068,22 @@
      "caption": "You are a star pianist!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "form",
+    "secondary": [
+     "together",
+     "expression"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Sequencing start to end",
+    "parentLine": "Holding the whole song in order, first note to last"
+   },
+   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "childAction": "Play the whole song, then take a bow.",
+   "bridge": "From the first note to the last: one big journey.",
+   "celebrate": "Today you practiced the shape of a song and playing together."
   }
  ]
 }

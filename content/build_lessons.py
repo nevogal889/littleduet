@@ -27,6 +27,9 @@ import re
 import sys
 from collections import Counter, OrderedDict
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import curriculum_overlay as ov  # noqa: E402
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 CLASS_MIN, CLASS_MAX = 180, 300
@@ -375,6 +378,13 @@ def finish_class(song, idx, ctype, title, goal, tip, intro, required, extras,
     """intro + required units, then repeat extras (and opening-phrase practice) until the
     class reaches its planned length (song.cur_target, set by build_lesson), then praise."""
     cid = "%s-c%02d" % (song.id, idx)
+    ovl = getattr(song, "cur_overlay", None)
+    if ovl:
+        title, goal, tip = ovl["title"], ovl["goal"], ovl["parentPrompt"]
+        keep = [s for s in intro if s.get("showKeys")]          # hand-position cards stay
+        intro = [seg_say(it["caption"], it.get("parentCue")) for it in ovl["intro"]] + keep
+        required = [game_unit(song, g) for g in ovl.get("games", [])] + list(required)
+        outro_praise = ovl["praise"]
     target = getattr(song, "cur_target", FILL_TARGET)
     ceil_ = min(FILL_CEILING, target + 12)
     segs = [seg_title(song, idx, title)] + intro
@@ -430,6 +440,15 @@ def finish_class(song, idx, ctype, title, goal, tip, intro, required, extras,
         ("durationSec", total), ("parentTip", tip),
         ("video", "%s/%s.mp4" % (song.id, cid)), ("thumb", "%s/%s.jpg" % (song.id, cid)),
         ("segments", segs)])
+
+
+def game_unit(song, g):
+    """An agent micro-game (checked by curriculum_overlay.check_game) as one segment unit."""
+    kind = g["kind"]
+    who = None if kind == "your_turn" else "parent"
+    notes = [clean_note(n) if n.get("rest") else clean_note(n, who=who) for n in g["notes"]]
+    bpm = g.get("bpm") or (slow(song.bpm, 0.8) if kind in ("your_turn", "demo") else song.bpm)
+    return [seg_notes(kind, g["caption"], notes, bpm, cue=g.get("parentCue"), target=g.get("target"))]
 
 
 WIGGLES = [("Wiggle your fingers!", "Shake out both hands together"),
@@ -1262,29 +1281,31 @@ def plan_song(song):
     return T, n, targets
 
 
-def build_classes(song, makers, targets):
+def build_classes(song, makers, targets, plan=None):
     out = []
     for i, mk in enumerate(makers):
         song.cur_target = max(CLASS_MIN + 8, min(FILL_CEILING - 6, targets[i]))
+        song.cur_overlay = plan["classes"][i] if plan else None
         out.append(mk(i + 1))
     return out
 
 
-def build_lesson(song_dict):
+def build_lesson(song_dict, plan=None):
+    """plan: a checked curriculum-architect plan (content/curriculum/<id>.json) or None."""
     song = Song(song_dict)
     T, n, targets = plan_song(song)
     makers = PLANS[song.age](song, n)
     n = len(makers)
     if len(targets) != n:          # a plan had fewer options than asked: spread T over what we have
         targets = [T / n] * n
-    classes = build_classes(song, makers, targets)
+    classes = build_classes(song, makers, targets, plan)
     for _ in range(5):             # nudge class targets until the song total lands near T
         total = sum(c["durationSec"] for c in classes)
         if abs(total - T) <= 20:
             break
         delta = (T - total) / float(n)
         targets = [t + delta for t in targets]
-        classes = build_classes(song, makers, targets)
+        classes = build_classes(song, makers, targets, plan)
     for i, c in enumerate(classes):  # renumber and rebuild ids/paths
         idx = i + 1
         c["index"] = idx
@@ -1292,7 +1313,14 @@ def build_lesson(song_dict):
         c["video"] = "%s/%s.mp4" % (song.id, c["id"])
         c["thumb"] = "%s/%s.jpg" % (song.id, c["id"])
         c["segments"][0]["subcaption"] = "Class %d: %s" % (idx, c["title"])
+        layer = ov.plan_layer(plan["classes"][i]) if plan else ov.default_layer(c)
+        for k, v in layer.items():
+            c[k] = v
+    smap = ov.skill_map(classes)
+    summary = plan["songSummary"] if plan else ov.default_summary(smap)
     return OrderedDict([("songId", song.id), ("title", song.title), ("ageGroup", song.age),
+                        ("curriculum", "agent" if plan else "default"),
+                        ("songSummary", summary), ("skillMap", smap),
                         ("icon", song_dict.get("icon", "music")), ("key", song_dict.get("key", "C")),
                         ("timeSignature", song_dict.get("timeSignature", "4/4")),
                         ("totalSec", sum(c["durationSec"] for c in classes)),
@@ -1385,7 +1413,75 @@ def validate_lesson(lesson, song=None):
                         errs.append("%s: line index out of range" % sw)
     if classes and classes[-1].get("type") != "concert":
         errs.append("%s: last class must be concert" % sid)
+    # Micro-Lesson Visualizer layer
+    for i, c in enumerate(classes):
+        where = "%s class %d" % (sid, i + 1)
+        sk = c.get("skill") or {}
+        if sk.get("primary") not in ov.SKILLS or any(x not in ov.SKILLS for x in sk.get("secondary", [])):
+            errs.append("%s: skill missing or not in taxonomy" % where)
+        for k in ("parentPrompt", "childAction", "bridge", "celebrate"):
+            if not c.get(k):
+                errs.append("%s: missing %s" % (where, k))
+        mt = c.get("mathTarget") or {}
+        if not mt.get("concept") or not mt.get("parentLine"):
+            errs.append("%s: mathTarget incomplete" % where)
+    if not lesson.get("skillMap") or not lesson.get("songSummary"):
+        errs.append("%s: skillMap / songSummary missing" % sid)
     return errs
+
+
+PLAN_DIR = os.path.join(HERE, "curriculum")
+
+
+def load_plan(song_dict, spine=None):
+    """(plan or None, errors). A plan file that fails the check is an error, never silently skipped."""
+    path = os.path.join(PLAN_DIR, song_dict["id"] + ".json")
+    if not os.path.exists(path):
+        return None, []
+    try:
+        with open(path) as f:
+            plan = json.load(f)
+    except Exception as e:
+        return None, ["%s: plan unreadable: %r" % (song_dict["id"], e)]
+    spine = spine or json.loads(json.dumps(build_lesson(song_dict)))
+    errs = ov.check_plan(plan, spine, song_dict["ageGroup"])
+    return (None if errs else plan), ["%s plan: %s" % (song_dict["id"], e) for e in errs]
+
+
+def brief(song_dict):
+    """Song facts + musical spine, for the curriculum-architect agent."""
+    song = Song(song_dict)
+    spine = json.loads(json.dumps(build_lesson(song_dict)))
+    pitched = [n for n in song.all_notes if not n.get("rest")]
+    lo = min(pitched, key=lambda n: midi(n["p"]))["p"]
+    hi = max(pitched, key=lambda n: midi(n["p"]))["p"]
+    out = []
+    out.append("SONG %s  |  %s" % (song.id, song.title))
+    out.append("ageGroup %s  difficulty %s  key %s  bpm %s  time %s  range %s-%s  special note %s"
+               % (song.age, song.difficulty, song_dict.get("key"), song.bpm, song_dict.get("timeSignature"),
+                  lo, hi, song.special))
+    out.append("hand position: " + ", ".join("%s=f%d" % (k["p"], k["f"]) for k in song.hand))
+    out.append("PHRASES (lyric | notes p:d):")
+    for i, (lyric, ns) in enumerate(song.phrases):
+        reps = song.repeats_of(i)
+        out.append("  %2d. %s%s" % (i + 1, lyric, "   [repeats x%d]" % reps if reps > 1 else ""))
+        out.append("      " + " ".join("rest:%g" % n["d"] if n.get("rest") else "%s:%g" % (n["p"], n["d"]) for n in ns))
+    out.append("")
+    out.append("MUSICAL SPINE (%d classes, %.1f min) - keep order, count and types:" % (len(spine["classes"]), spine["totalSec"] / 60.0))
+    for c in spine["classes"]:
+        out.append("  class %d  type=%s  %ds  \"%s\"  goal: %s" % (c["index"], c["type"], c["durationSec"], c["title"], c["goal"]))
+        out.append("     tip: %s" % c["parentTip"])
+        kinds = Counter(s["kind"] for s in c["segments"] if s["kind"] in NOTE_KINDS)
+        caps = []
+        for s in c["segments"]:
+            if s["kind"] in NOTE_KINDS and s["caption"] not in caps:
+                caps.append(s["caption"])
+        out.append("     note segments: %s" % ", ".join("%s x%d" % kv for kv in kinds.items()))
+        out.append("     captions: %s" % " / ".join(caps[:6]))
+    out.append("")
+    out.append("SKILL IDS: " + ", ".join(ov.SKILLS))
+    out.append("GAME KINDS for this age: " + ", ".join(sorted(ov.GAME_KINDS_BY_AGE[song.age])))
+    return "\n".join(out)
 
 
 def load_songs(path):
@@ -1405,6 +1501,8 @@ def main():
                     help="one or more Song[] files; later files win on duplicate ids")
     ap.add_argument("--out", default=os.path.join(HERE, "lessons"))
     ap.add_argument("--validate-only", action="store_true")
+    ap.add_argument("--brief", metavar="SONG_ID", help="print the agent brief (song + musical spine) and exit")
+    ap.add_argument("--check-plan", metavar="PLAN_JSON", help="check one curriculum plan and exit")
     ap.add_argument("--prune", action="store_true",
                     help="delete lesson files whose song is not in --songs (e.g. seed songs dropped from songs.json)")
     a = ap.parse_args()
@@ -1417,6 +1515,28 @@ def main():
         set_catalog(songs)
     except Exception as e:      # a broken song is reported per song below
         print("catalog spacing skipped: %r" % e)
+    if a.brief:
+        print(brief(merged[a.brief]))
+        return
+    if a.check_plan:
+        with open(a.check_plan) as f:
+            sid = json.load(f).get("songId")
+        if sid not in merged:
+            print("ERROR: plan songId %r is not in the catalog" % sid)
+            sys.exit(1)
+        global PLAN_DIR
+        PLAN_DIR = os.path.dirname(os.path.abspath(a.check_plan))
+        plan, perrs = load_plan(merged[sid])
+        if not perrs:
+            lesson = json.loads(json.dumps(build_lesson(merged[sid], plan)))
+            perrs = validate_lesson(lesson, merged[sid])
+        if perrs:
+            print("PLAN FAILED: %d problems" % len(perrs))
+            for e in perrs:
+                print("  " + e)
+            sys.exit(1)
+        print("OK: %s plan is valid (%d classes, %.1f min)" % (sid, len(lesson["classes"]), lesson["totalSec"] / 60.0))
+        return
     os.makedirs(a.out, exist_ok=True)
     all_errs, n_classes, durs = [], 0, []
     song_totals, class_counts = [], []
@@ -1424,7 +1544,11 @@ def main():
         path = os.path.join(a.out, sd["id"] + ".json")
         if not a.validate_only:
             try:
-                lesson = build_lesson(sd)
+                plan, perrs = load_plan(sd)
+                if perrs:
+                    all_errs += perrs
+                    continue
+                lesson = build_lesson(sd, plan)
             except Exception as e:  # report per song, keep going
                 all_errs.append("%s: build failed: %r" % (sd.get("id"), e))
                 continue

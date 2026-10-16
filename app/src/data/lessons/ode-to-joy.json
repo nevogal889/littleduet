@@ -2,33 +2,103 @@
  "songId": "ode-to-joy",
  "title": "Ode to Joy",
  "ageGroup": "4-5",
+ "curriculum": "agent",
+ "songSummary": "Practices finding keys by landmarks, mirror patterns, counting beats and the song's shape, while you and your child play Ode to Joy together.",
+ "skillMap": [
+  {
+   "id": "fingers",
+   "label": "Finger control",
+   "value": 1.0,
+   "classes": 5
+  },
+  {
+   "id": "form",
+   "label": "Song shape",
+   "value": 1.0,
+   "classes": 3
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.8,
+   "classes": 3
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.8,
+   "classes": 3
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 0.8,
+   "classes": 3
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 0.8,
+   "classes": 2
+  },
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.6,
+   "classes": 2
+  },
+  {
+   "id": "together",
+   "label": "Playing together",
+   "value": 0.6,
+   "classes": 2
+  },
+  {
+   "id": "pitch",
+   "label": "High and low",
+   "value": 0.4,
+   "classes": 2
+  },
+  {
+   "id": "listening",
+   "label": "Listening memory",
+   "value": 0.4,
+   "classes": 2
+  }
+ ],
  "icon": "music",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 1969,
+ "totalSec": 1940,
  "classes": [
   {
    "id": "ode-to-joy-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "Find your five-finger house",
+   "goal": "Hear the whole song and find C, the door of your five-finger house.",
    "type": "listen",
-   "durationSec": 208,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 209,
+   "parentTip": "Point to the two black keys, then help your child rest the thumb on C.",
    "video": "ode-to-joy/ode-to-joy-c01.mp4",
    "thumb": "ode-to-joy/ode-to-joy-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Ode to Joy",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: Find your five-finger house",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5
+     "caption": "Find the two black keys",
+     "parentCue": "Point to a pair of black keys",
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Thumb on the door, C",
+     "parentCue": "Guide the thumb gently, never press it",
+     "durationSec": 7
     },
     {
      "kind": "say",
@@ -57,6 +127,42 @@
       }
      ],
      "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "One finger, one key",
+     "parentCue": "Say the finger number for each key",
+     "bpm": 60,
+     "leadInSec": 2.0,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 19
     },
     {
      "kind": "listen",
@@ -1314,16 +1420,17 @@
     },
     {
      "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6
     },
     {
-     "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
-     "bpm": 100,
-     "leadInSec": 1.2,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "E4",
@@ -1372,401 +1479,101 @@
        "d": 1,
        "f": 2,
        "s": "er"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "friends"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "are"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "sing"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ing"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "all"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "day"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "long"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hap"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "py"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "hap"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "py"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "to"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "geth"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "er"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "join"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "us"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "in"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "our"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "hap"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "py"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "song"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Clap"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "your"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "hands"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "stamp"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "your"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "feet"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "now"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dance"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "play"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "whole"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "day"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "f": 1,
-       "s": "long"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hap"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "py"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "hap"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "py"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "to"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "geth"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "er"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "join"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "us"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "in"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "our"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "hap"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "py"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "song"
       }
      ],
      "lines": [
       {
        "lyric": "Happy, happy, sing together",
        "from": 0
-      },
-      {
-       "lyric": "friends are singing all day long",
-       "from": 8
-      },
-      {
-       "lyric": "Happy, happy, sing together",
-       "from": 15
-      },
-      {
-       "lyric": "join us in our happy song",
-       "from": 23
-      },
-      {
-       "lyric": "Clap your hands and stamp your feet now",
-       "from": 30
-      },
-      {
-       "lyric": "dance and play the whole day long",
-       "from": 39
-      },
-      {
-       "lyric": "Happy, happy, sing together",
-       "from": 47
-      },
-      {
-       "lyric": "join us in our happy song",
-       "from": 55
       }
      ],
-     "durationSec": 42
+     "durationSec": 15
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Your hand found home!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "space",
+    "secondary": [
+     "listening",
+     "fingers"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Spatial mapping with a landmark",
+    "parentLine": "Using the two black keys as a sign to find C"
+   },
+   "parentPrompt": "Point to the two black keys, then help your child rest the thumb on C.",
+   "childAction": "Find the two black keys, then put your thumb on C.",
+   "bridge": "Two black keys are a roof; C is the door just left of it.",
+   "celebrate": "Today you practiced: finding C and one finger per key."
   },
   {
    "id": "ode-to-joy-c02",
    "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Up the stairs, down again",
+   "goal": "Play the first lines and feel how the tune climbs up and comes back down.",
    "type": "phrase",
-   "durationSec": 228,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 239,
+   "parentTip": "Walk two fingers up your child's arm on the way up, then back down.",
    "video": "ode-to-joy/ode-to-joy-c02.mp4",
    "thumb": "ode-to-joy/ode-to-joy-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Ode to Joy",
-     "subcaption": "Class 2: Part 1",
+     "subcaption": "Class 2: Up the stairs, down again",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Today: Happy, happy, sing together",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6
+     "caption": "Up the stairs, down the stairs",
+     "parentCue": "Walk your fingers up and down the arm",
+     "durationSec": 8
     },
     {
-     "kind": "say",
-     "caption": "This part comes back 3 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7
+     "kind": "your_turn",
+     "caption": "Climb up, climb down",
+     "parentCue": "Say three, four, five, five, four, three",
+     "bpm": 60,
+     "leadInSec": 2.0,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 16
     },
     {
      "kind": "demo",
@@ -2608,39 +2415,128 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Up and down, together!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "patterns",
+    "secondary": [
+     "fingers",
+     "pitch"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Mirror symmetry",
+    "parentLine": "The tune goes up three steps, then back down the same steps"
+   },
+   "parentPrompt": "Walk two fingers up your child's arm on the way up, then back down.",
+   "childAction": "Fingers three, four, five climb up, then five, four, three come down.",
+   "bridge": "Each key is a stair: step up to G, then step back down.",
+   "celebrate": "Today you practiced: a mirror pattern, up and back down."
   },
   {
    "id": "ode-to-joy-c03",
    "index": 3,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Which line goes home?",
+   "goal": "Learn the next lines and hear which ending lands back home on C.",
    "type": "phrase",
-   "durationSec": 219,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 223,
+   "parentTip": "After each line, ask: did it land home? Cheer with a hug when it does.",
    "video": "ode-to-joy/ode-to-joy-c03.mp4",
    "thumb": "ode-to-joy/ode-to-joy-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Ode to Joy",
-     "subcaption": "Class 3: Part 2",
+     "subcaption": "Class 3: Which line goes home?",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Today: join us in our happy",
-     "parentCue": "Listen first, then copy",
+     "caption": "Is the song home yet?",
+     "parentCue": "Ask your child after each line",
      "durationSec": 7
     },
     {
-     "kind": "say",
-     "caption": "This part comes back 2 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7
+     "kind": "listen",
+     "caption": "Which one goes home?",
+     "parentCue": "Pat your lap together on the home note",
+     "bpm": 100,
+     "leadInSec": 1.2,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13
     },
     {
      "kind": "demo",
@@ -3280,155 +3176,215 @@
     },
     {
      "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "Fingers ready on the lit keys",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 75,
-     "leadInSec": 1.6,
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
      "gapBeats": 1,
      "notes": [
       {
-       "p": "C4",
+       "p": "E4",
        "d": 1,
-       "f": 1,
-       "s": "join"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "us"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "in"
+       "f": 3,
+       "s": "Hap"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "our"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "hap"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
        "s": "py"
       },
       {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "song"
-      },
-      {
-       "p": "D4",
+       "p": "F4",
        "d": 1,
-       "f": 2,
-       "s": "Clap"
+       "f": 4,
+       "s": "hap"
       },
       {
-       "p": "D4",
+       "p": "G4",
        "d": 1,
-       "f": 2,
-       "s": "your"
+       "f": 5,
+       "s": "py"
       },
       {
-       "p": "E4",
+       "p": "G4",
        "d": 1,
-       "f": 3,
-       "s": "hands"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "stamp"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "your"
+       "f": 5,
+       "s": "sing"
       },
       {
        "p": "F4",
-       "d": 0.5,
-       "f": 4
+       "d": 1,
+       "f": 4,
+       "s": "to"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "feet"
+       "s": "geth"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "er"
       },
       {
        "p": "C4",
        "d": 1,
        "f": 1,
-       "s": "now"
+       "s": "friends"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "are"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "sing"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ing"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "all"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "day"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "long"
       }
      ],
      "lines": [
       {
-       "lyric": "join us in our happy song",
+       "lyric": "Happy, happy, sing together",
        "from": 0
       },
       {
-       "lyric": "Clap your hands and stamp your feet now",
-       "from": 7
+       "lyric": "friends are singing all day long",
+       "from": 8
       }
      ],
-     "durationSec": 29
+     "durationSec": 27
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You heard the way home!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "form",
+    "secondary": [
+     "listening",
+     "patterns"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Same and different (comparison)",
+    "parentLine": "Two lines start the same; only one ends on home C"
+   },
+   "parentPrompt": "After each line, ask: did it land home? Cheer with a hug when it does.",
+   "childAction": "Listen to the ending and pat your lap when it lands on C.",
+   "bridge": "C is the front door: the last note walks right back inside.",
+   "celebrate": "Today you practiced: hearing same and different endings."
   },
   {
    "id": "ode-to-joy-c04",
    "index": 4,
-   "title": "Part 3",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Little steps, big frog hop",
+   "goal": "Learn the dance line, with small steps and one big hop down to low G.",
    "type": "phrase",
-   "durationSec": 202,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 200,
+   "parentTip": "Show your child the low G outside the house, then help the thumb hop there.",
    "video": "ode-to-joy/ode-to-joy-c04.mp4",
    "thumb": "ode-to-joy/ode-to-joy-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Ode to Joy",
-     "subcaption": "Class 4: Part 3",
+     "subcaption": "Class 4: Little steps, big frog hop",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Today: dance and play the whole",
-     "parentCue": "Listen first, then copy",
+     "caption": "Small steps, then a frog hop",
+     "parentCue": "Hop your hand down on your lap",
      "durationSec": 7
+    },
+    {
+     "kind": "listen",
+     "caption": "Tiny steps, then hop!",
+     "parentCue": "Hop your hands down on the big jump",
+     "bpm": 100,
+     "leadInSec": 1.2,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 9
     },
     {
      "kind": "demo",
@@ -4055,44 +4011,54 @@
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5
-    },
-    {
-     "kind": "say",
-     "caption": "Wiggle your fingers!",
-     "parentCue": "Shake out both hands together",
-     "durationSec": 6
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "What a big hop!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "space",
+    "secondary": [
+     "pitch",
+     "fingers"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Interval distance: step versus leap",
+    "parentLine": "Notes next door are steps; the far low note is a hop"
+   },
+   "parentPrompt": "Show your child the low G outside the house, then help the thumb hop there.",
+   "childAction": "Tiptoe the small steps, then hop your thumb down to low G.",
+   "bridge": "Steps are next-door keys; the frog hop jumps far left, where sounds are low.",
+   "celebrate": "Today you practiced: small steps, a big leap, low on the left."
   },
   {
    "id": "ode-to-joy-c05",
    "index": 5,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "Spot the happy tune",
+   "goal": "Play the whole song slowly and count how many times the happy tune returns.",
    "type": "put-together",
-   "durationSec": 228,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 222,
+   "parentTip": "Each time 'Happy, happy' starts, hold up one more finger and count aloud.",
    "video": "ode-to-joy/ode-to-joy-c05.mp4",
    "thumb": "ode-to-joy/ode-to-joy-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Ode to Joy",
-     "subcaption": "Class 5: Put it together",
+     "subcaption": "Class 5: Spot the happy tune",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
+     "caption": "Count the happy tune",
+     "parentCue": "Hold up a finger each time it returns",
      "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "One, two, three times!",
+     "parentCue": "Count together, then cheer at three",
+     "durationSec": 6
     },
     {
      "kind": "say",
@@ -5054,54 +5020,6 @@
        "d": 2,
        "f": 2,
        "s": "long"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hap"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "py"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "hap"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "py"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "to"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "geth"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "er"
       }
      ],
      "lines": [
@@ -5112,49 +5030,115 @@
       {
        "lyric": "friends are singing all day long",
        "from": 8
-      },
-      {
-       "lyric": "Happy, happy, sing together",
-       "from": 15
       }
      ],
-     "durationSec": 39
+     "durationSec": 27
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found all three!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "form",
+    "secondary": [
+     "counting",
+     "patterns"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Pattern repetition (A-B-A form)",
+    "parentLine": "One tune comes back three times, like a chorus"
+   },
+   "parentPrompt": "Each time 'Happy, happy' starts, hold up one more finger and count aloud.",
+   "childAction": "Play slowly and say the number each time the happy tune returns.",
+   "bridge": "The happy tune is a friend who visits three times; wave hello each time.",
+   "celebrate": "Today you practiced: the song's shape and counting the repeats."
   },
   {
    "id": "ode-to-joy-c06",
    "index": 6,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Walk, walk, run-ning",
+   "goal": "Practise the bouncy dance lines slowly, where two quick notes share one beat.",
    "type": "review",
-   "durationSec": 237,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 236,
+   "parentTip": "Say 'walk' for long notes and 'run-ning' for the two quick ones.",
    "video": "ode-to-joy/ode-to-joy-c06.mp4",
    "thumb": "ode-to-joy/ode-to-joy-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Ode to Joy",
-     "subcaption": "Class 6: Tricky spots",
+     "subcaption": "Class 6: Walk, walk, run-ning",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
-     "durationSec": 7
+     "caption": "Walk and run-ning",
+     "parentCue": "Say the words with every note",
+     "durationSec": 6
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7
+     "kind": "your_turn",
+     "caption": "Walk, run-ning, walk, walk",
+     "parentCue": "Say the words slowly with each key",
+     "bpm": 55,
+     "leadInSec": 2.182,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "durationSec": 24
     },
     {
      "kind": "demo",
@@ -5795,160 +5779,169 @@
     },
     {
      "kind": "say",
-     "caption": "A little faster now",
-     "parentCue": "Only speed up if it feels easy",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Keep fingers close to the keys",
-     "bpm": 70,
-     "leadInSec": 1.714,
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 1.5,
      "gapBeats": 1,
      "notes": [
       {
-       "p": "D4",
+       "p": "E4",
        "d": 1,
-       "f": 2,
-       "s": "dance"
+       "f": 3,
+       "s": "Hap"
       },
       {
        "p": "E4",
-       "d": 0.5,
+       "d": 1,
        "f": 3,
-       "s": "and"
+       "s": "py"
       },
       {
        "p": "F4",
-       "d": 0.5,
-       "f": 4
-      },
-      {
-       "p": "E4",
        "d": 1,
-       "f": 3,
-       "s": "play"
+       "f": 4,
+       "s": "hap"
       },
       {
-       "p": "D4",
+       "p": "G4",
        "d": 1,
-       "f": 2,
-       "s": "the"
+       "f": 5,
+       "s": "py"
       },
       {
-       "p": "C4",
+       "p": "G4",
        "d": 1,
-       "f": 1,
-       "s": "whole"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "day"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "f": 1,
-       "s": "long"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Clap"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "your"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "hands"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "stamp"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "your"
+       "f": 5,
+       "s": "sing"
       },
       {
        "p": "F4",
-       "d": 0.5,
-       "f": 4
+       "d": 1,
+       "f": 4,
+       "s": "to"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "feet"
+       "s": "geth"
       },
       {
-       "p": "C4",
+       "p": "D4",
        "d": 1,
-       "f": 1,
-       "s": "now"
+       "f": 2,
+       "s": "er"
       }
      ],
      "lines": [
       {
-       "lyric": "dance and play the whole day long",
+       "lyric": "Happy, happy, sing together",
        "from": 0
-      },
-      {
-       "lyric": "Clap your hands and stamp your feet now",
-       "from": 8
       }
      ],
-     "durationSec": 32
+     "durationSec": 15
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Walking and running, together!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "counting",
+    "secondary": [
+     "fingers",
+     "beat"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Ratio 2:1 (half and double)",
+    "parentLine": "Two quick notes fit in the time of one walking note"
+   },
+   "parentPrompt": "Say 'walk' for long notes and 'run-ning' for the two quick ones.",
+   "childAction": "Say walk and run-ning while your fingers play the dance line.",
+   "bridge": "A walking note is one big step; run-ning is two tiny mouse steps.",
+   "celebrate": "Today you practiced: two quick notes in one beat."
   },
   {
    "id": "ode-to-joy-c07",
    "index": 7,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
+   "title": "Four beats, slow and even",
+   "goal": "Play the whole song slowly and evenly, feeling four beats in every bar.",
    "type": "phrase",
-   "durationSec": 213,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
+   "durationSec": 196,
+   "parentTip": "Tap your child's shoulder on each beat and count 1, 2, 3, 4 softly.",
    "video": "ode-to-joy/ode-to-joy-c07.mp4",
    "thumb": "ode-to-joy/ode-to-joy-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Ode to Joy",
-     "subcaption": "Class 7: Slow and steady",
+     "subcaption": "Class 7: Four beats, slow and even",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
+     "caption": "Slow like a tortoise",
+     "parentCue": "Count 1, 2, 3, 4 out loud",
      "durationSec": 6
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap and count to four",
+     "parentCue": "Count 1, 2, 3, 4 together out loud",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 9
     },
     {
      "kind": "demo",
@@ -6781,114 +6774,47 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 80,
-     "leadInSec": 1.5,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hap"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "py"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "hap"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "py"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "to"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "geth"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "er"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Happy, happy, sing together",
-       "from": 0
-      }
-     ],
-     "durationSec": 15
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Slow and steady, together!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "beat",
+    "secondary": [
+     "counting",
+     "fingers"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Grouping by four (meter)",
+    "parentLine": "Beats come in groups of four, again and again"
+   },
+   "parentPrompt": "Tap your child's shoulder on each beat and count 1, 2, 3, 4 softly.",
+   "childAction": "Play slowly and evenly while you count to four together.",
+   "bridge": "Each bar is a little train with four cars: one, two, three, four.",
+   "celebrate": "Today you practiced: steady beats in groups of four."
   },
   {
    "id": "ode-to-joy-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Keep up with the band",
+   "goal": "Play the whole song along with the music and keep going, even after a slip.",
    "type": "play-along",
-   "durationSec": 212,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 205,
+   "parentTip": "Sing the words along and nod on each beat; if a note slips, keep going.",
    "video": "ode-to-joy/ode-to-joy-c08.mp4",
    "thumb": "ode-to-joy/ode-to-joy-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Ode to Joy",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Keep up with the band",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
-     "durationSec": 7
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
+     "caption": "Hop on the music train",
+     "parentCue": "Sing along and keep the beat",
      "durationSec": 7
     },
     {
@@ -8566,39 +8492,54 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept going together!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "together",
+    "secondary": [
+     "beat",
+     "expression"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Entrainment (matching a tempo)",
+    "parentLine": "Matching your playing to the speed of the music"
+   },
+   "parentPrompt": "Sing the words along and nod on each beat; if a note slips, keep going.",
+   "childAction": "Play with the music and keep going, like a train on its track.",
+   "bridge": "The music is a moving train; hop on and ride, even past bumps.",
+   "celebrate": "Today you practiced: keeping pace with the music together."
   },
   {
    "id": "ode-to-joy-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Concert for teddy",
+   "goal": "Play the whole song from start to end for a teddy, then bow and celebrate.",
    "type": "concert",
-   "durationSec": 222,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 210,
+   "parentTip": "Sit teddy as the audience; announce the song, then clap and bow together at the end.",
    "video": "ode-to-joy/ode-to-joy-c09.mp4",
    "thumb": "ode-to-joy/ode-to-joy-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Ode to Joy",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: Concert for teddy",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5
+     "caption": "Welcome to the concert!",
+     "parentCue": "Sit teddy facing the piano",
+     "durationSec": 6
     },
     {
      "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7
+     "caption": "Bow, then play",
+     "parentCue": "Bow together before you start",
+     "durationSec": 6
     },
     {
      "kind": "together",
@@ -9972,54 +9913,6 @@
        "d": 2,
        "f": 2,
        "s": "long"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hap"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "py"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "hap"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "py"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "to"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "geth"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "er"
       }
      ],
      "lines": [
@@ -10030,20 +9923,31 @@
       {
        "lyric": "friends are singing all day long",
        "from": 8
-      },
-      {
-       "lyric": "Happy, happy, sing together",
-       "from": 15
       }
      ],
-     "durationSec": 39
+     "durationSec": 27
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "What a happy concert!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "expression",
+    "secondary": [
+     "together",
+     "form"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Ordinal sequence (start, middle, end)",
+    "parentLine": "Knowing what comes first, next and last in the song"
+   },
+   "parentPrompt": "Sit teddy as the audience; announce the song, then clap and bow together at the end.",
+   "childAction": "Bow, play the whole song for teddy, then bow again.",
+   "bridge": "Play it like a happy parade: proud start, bouncy middle, home at the end.",
+   "celebrate": "Today you practiced: playing start to end, and sharing music."
   }
  ]
 }

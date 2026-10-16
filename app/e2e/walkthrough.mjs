@@ -121,7 +121,13 @@ async function run(viewport, tag) {
   await shot('song', true);
 
   // Real piano: class 1 video
+  check(`${tag}: song page shows the skill map`, (await id('skill-map').count()) === 1);
   await id('song-primary').click();
+  await id('class-brief').waitFor();
+  const briefChips = await page.locator('[data-testid="class-brief"] [data-testid^="skill-chip-"]').count();
+  check(`${tag}: class brief shows skills + thinking game`, briefChips >= 1 && (await id('brief-target').count()) === 1, `${briefChips} chips`);
+  await shot('class-brief', true);
+  await id('brief-start').click();
   await id('player-real').waitFor();
   const playing = await page
     .waitForFunction(() => window.__video && window.__video.currentTime > 3, null, { timeout: 20000 })
@@ -150,6 +156,7 @@ async function run(viewport, tag) {
   await id('song-page').waitFor();
   const yourTurnClass = Number(process.env.YOUR_TURN_CLASS ?? 3);
   await id(`class-node-${yourTurnClass}`).click();
+  await id('brief-start').click();
   const gateShown = await id('gate').isVisible().catch(() => false);
   check(`${tag}: locked class opens the parental gate first`, gateShown);
   await shot('locked-gate');
@@ -164,6 +171,7 @@ async function run(viewport, tag) {
 
   // Screen piano with a your_turn
   await id(`class-node-${yourTurnClass}`).click();
+  await id('brief-start').click();
   await id('stage').waitFor();
   check(`${tag}: screen piano close button always visible`, (await id('player-exit').isVisible()) && (await page.getByText(/hold to unlock|press and hold|hold for 3/i).count()) === 0);
   await shot('screen-piano-start');
@@ -202,6 +210,7 @@ async function run(viewport, tag) {
   // Tabs
   const plus = await id('celebrate-plus').innerText();
   check(`${tag}: celebration counts +stars and shows the streak`, /^\+[1-3] stars?$/.test(plus.trim()) && (await id('celebrate-streak').count()) === 1, plus);
+  check(`${tag}: celebration shows what was practiced`, (await id('practiced-today').count()) === 1);
   await id('celebrate-continue').click();
   await id('song-page').waitFor();
   check(`${tag}: song page shows the lesson path`, (await id('lesson-path').count()) === 1 && (await id('song-primary').count()) === 1);

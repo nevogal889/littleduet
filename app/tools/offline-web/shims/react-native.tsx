@@ -264,6 +264,9 @@ export const Pressable = forwardRef<any, any>(function Pressable(p, ref) {
       aria-disabled={disabled || undefined}
       onPointerDown={(e) => {
         if (disabled) return;
+        // Like the RN responder system, only the innermost Pressable takes the touch; otherwise an
+        // outer Pressable (a sheet's scrim) steals the pointer capture and the inner press never fires.
+        e.stopPropagation();
         (e.currentTarget as any).setPointerCapture?.(e.pointerId);
         setPressed(true);
         p.onPressIn?.(e);

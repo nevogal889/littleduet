@@ -79,6 +79,18 @@ export interface Segment {
   showKeys?: string[];
 }
 
+/** Micro-Lesson Visualizer skill ids (content/curriculum_overlay.py SKILLS). */
+export type SkillId = 'beat' | 'pitch' | 'listening' | 'counting' | 'patterns' | 'space' | 'fingers' | 'form' | 'expression' | 'together';
+
+export interface SkillMapEntry {
+  id: SkillId;
+  label: string;
+  /** 0..1, relative to the song's strongest skill */
+  value: number;
+  /** classes that practise this skill */
+  classes: number;
+}
+
 export interface LessonClass {
   id: string;
   index: number;
@@ -87,6 +99,13 @@ export interface LessonClass {
   type: string;
   durationSec: number;
   parentTip: string;
+  /** Visualizer layer (curriculum agent or defaults). Optional so stand-in lessons still load. */
+  skill?: { primary: SkillId; secondary: SkillId[] };
+  mathTarget?: { concept: string; parentLine: string };
+  parentPrompt?: string;
+  childAction?: string;
+  bridge?: string;
+  celebrate?: string;
   video: string;
   thumb: string;
   segments: Segment[];
@@ -95,6 +114,10 @@ export interface LessonClass {
 export interface Lesson {
   songId: string;
   classes: LessonClass[];
+  /** 'agent' = written by the curriculum-architect agent; 'default' = generated defaults. */
+  curriculum?: 'agent' | 'default';
+  songSummary?: string;
+  skillMap?: SkillMapEntry[];
 }
 
 export type PlayMode = 'real' | 'screen';

@@ -2,27 +2,103 @@
  "songId": "fur-elise",
  "title": "Fur Elise",
  "ageGroup": "5-6",
+ "curriculum": "agent",
+ "songSummary": "Practices keyboard landmarks, see-saw patterns, counting in sixes, octaves and two-hand teamwork, using a famous tune about a little bird.",
+ "skillMap": [
+  {
+   "id": "fingers",
+   "label": "Finger control",
+   "value": 1.0,
+   "classes": 4
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.83,
+   "classes": 4
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 0.67,
+   "classes": 2
+  },
+  {
+   "id": "form",
+   "label": "Song shape",
+   "value": 0.67,
+   "classes": 2
+  },
+  {
+   "id": "together",
+   "label": "Playing together",
+   "value": 0.67,
+   "classes": 3
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.5,
+   "classes": 2
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 0.5,
+   "classes": 3
+  },
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.5,
+   "classes": 2
+  },
+  {
+   "id": "pitch",
+   "label": "High and low",
+   "value": 0.17,
+   "classes": 1
+  },
+  {
+   "id": "listening",
+   "label": "Listening memory",
+   "value": 0.17,
+   "classes": 1
+  }
+ ],
  "icon": "bird",
  "key": "Am",
  "timeSignature": "6/8",
- "totalSec": 2230,
+ "totalSec": 2217,
  "classes": [
   {
    "id": "fur-elise-c01",
    "index": 1,
-   "title": "Hands ready, first half",
+   "title": "Find the bird's perch",
    "goal": "Find the hand position and learn the first half",
    "type": "hand-position",
-   "durationSec": 244,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 239,
+   "parentTip": "Point to the two black keys together, then help your child slide the thumb just right of them.",
    "video": "fur-elise/fur-elise-c01.mp4",
    "thumb": "fur-elise/fur-elise-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Fur Elise",
-     "subcaption": "Class 1: Hands ready, first half",
+     "subcaption": "Class 1: Find the bird's perch",
      "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Where does the little bird sit?",
+     "parentCue": "Point to a group of two black keys",
+     "durationSec": 8
+    },
+    {
+     "kind": "say",
+     "caption": "One finger on each key",
+     "parentCue": "Say the finger numbers out loud together",
+     "durationSec": 7
     },
     {
      "kind": "say",
@@ -53,16 +129,44 @@
      "durationSec": 7
     },
     {
-     "kind": "say",
-     "caption": "Today: Little bird is singing in",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7
-    },
-    {
-     "kind": "say",
-     "caption": "This part comes back 2 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7
+     "kind": "demo",
+     "caption": "One finger, one key",
+     "parentCue": "Count fingers with your child: one to five",
+     "bpm": 60,
+     "leadInSec": 2.0,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 1,
+       "f": 2,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 3,
+       "who": "parent"
+      },
+      {
+       "p": "D#5",
+       "d": 1,
+       "f": 4,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10
     },
     {
      "kind": "demo",
@@ -943,120 +1047,103 @@
     },
     {
      "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
      "durationSec": 6
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 68,
-     "leadInSec": 1.765,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "can"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "you"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "hear"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 5,
-       "s": "it"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "can you hear it",
-       "from": 0
-      }
-     ],
-     "durationSec": 6
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 68,
-     "leadInSec": 1.765,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "can"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "you"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "hear"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 5,
-       "s": "it"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "can you hear it",
-       "from": 0
-      }
-     ],
-     "durationSec": 10
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found the perch!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "space",
+    "secondary": [
+     "fingers"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Landmark-based spatial anchoring",
+    "parentLine": "Using the black keys as signposts to find the right spot"
+   },
+   "parentPrompt": "Point to the two black keys together, then help your child slide the thumb just right of them.",
+   "childAction": "Find the white key right after two black keys. That's E!",
+   "bridge": "Two black keys are a little roof; E sits on the doorstep just to the right.",
+   "celebrate": "Today you practiced: finding your way with black-key signposts."
   },
   {
    "id": "fur-elise-c02",
    "index": 2,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Three hops and a long sit",
+   "goal": "Learn the climbing part and feel that three quick notes fill the time of one long note.",
    "type": "phrase",
-   "durationSec": 204,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 201,
+   "parentTip": "Say hop, hop, hop, sit with the notes, and tap your child's knee once on each hop.",
    "video": "fur-elise/fur-elise-c02.mp4",
    "thumb": "fur-elise/fur-elise-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Fur Elise",
-     "subcaption": "Class 2: Part 2",
+     "subcaption": "Class 2: Three hops and a long sit",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Today: fly away now",
-     "parentCue": "Listen first, then copy",
+     "caption": "Hop, hop, hop, sit!",
+     "parentCue": "Say it slowly with your child",
      "durationSec": 6
+    },
+    {
+     "kind": "listen",
+     "caption": "Count the hops up the branch",
+     "parentCue": "Hold up one finger for each hop",
+     "bpm": 70,
+     "leadInSec": 1.714,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G#4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 9
     },
     {
      "kind": "demo",
@@ -1620,43 +1707,47 @@
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5
-    },
-    {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 7
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Three hops, one sit!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "counting",
+    "secondary": [
+     "pitch",
+     "listening"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Ratio 3:1 (short to long)",
+    "parentLine": "Three quick notes take the same time as one long note"
+   },
+   "parentPrompt": "Say hop, hop, hop, sit with the notes, and tap your child's knee once on each hop.",
+   "childAction": "Hop up three keys, then sit on the long one.",
+   "bridge": "The bird hops up the branch, one, two, three, then sits still and sings.",
+   "celebrate": "Today you practiced: counting short and long notes as they climb."
   },
   {
    "id": "fur-elise-c03",
    "index": 3,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "Two endings, one song",
+   "goal": "Play the whole song slowly and notice that the first part comes back with a new ending.",
    "type": "put-together",
-   "durationSec": 225,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 207,
+   "parentTip": "Wave when the bird tune comes back. Sing the next word if your child gets stuck.",
    "video": "fur-elise/fur-elise-c03.mp4",
    "thumb": "fur-elise/fur-elise-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Fur Elise",
-     "subcaption": "Class 3: Put it together",
+     "subcaption": "Class 3: Two endings, one song",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
+     "caption": "The bird sings its song twice",
+     "parentCue": "Get ready to wave when it returns",
      "durationSec": 7
     },
     {
@@ -1686,6 +1777,56 @@
       }
      ],
      "durationSec": 7
+    },
+    {
+     "kind": "listen",
+     "caption": "Up like a question, down home",
+     "parentCue": "Point up for the first, down for the second",
+     "bpm": 70,
+     "leadInSec": 1.714,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G#4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 9
     },
     {
      "kind": "demo",
@@ -2688,121 +2829,83 @@
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 72,
-     "leadInSec": 1.667,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 5,
-       "s": "Lit"
-      },
-      {
-       "p": "D#5",
-       "d": 0.5,
-       "f": 4,
-       "s": "tle"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 5,
-       "s": "bird"
-      },
-      {
-       "p": "D#5",
-       "d": 0.5,
-       "f": 4,
-       "s": "is"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 1,
-       "s": "tree"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Little bird is singing in the tree",
-       "from": 0
-      }
-     ],
-     "durationSec": 16
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You played it all!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "form",
+    "secondary": [
+     "patterns"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Repetition with variation (A, A')",
+    "parentLine": "The song says the same thing twice, then ends differently"
+   },
+   "parentPrompt": "Wave when the bird tune comes back. Sing the next word if your child gets stuck.",
+   "childAction": "Wave hello when the bird tune comes back again.",
+   "bridge": "The first ending flies up like a question; the second flies home to A.",
+   "celebrate": "Today you practiced: a song that repeats with a new ending."
   },
   {
    "id": "fur-elise-c04",
    "index": 4,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "The see-saw notes",
+   "goal": "Practise the E and D sharp see-saw slowly, counting each side, then a little faster.",
    "type": "review",
-   "durationSec": 206,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 202,
+   "parentTip": "Rock gently side to side with your child: lean right on E, left on D sharp.",
    "video": "fur-elise/fur-elise-c04.mp4",
    "thumb": "fur-elise/fur-elise-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Fur Elise",
-     "subcaption": "Class 4: Tricky spots",
+     "subcaption": "Class 4: The see-saw notes",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
-     "durationSec": 7
+     "caption": "Let's ride the see-saw",
+     "parentCue": "Rock side to side together, slowly",
+     "durationSec": 6
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7
+     "kind": "your_turn",
+     "caption": "See-saw slowly: E, black, E",
+     "parentCue": "Count the white E's out loud: one, two, three",
+     "bpm": 55,
+     "leadInSec": 2.182,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "D#5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "D#5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 16
     },
     {
      "kind": "demo",
@@ -3387,38 +3490,48 @@
     },
     {
      "kind": "praise",
-     "caption": "Well done!",
-     "durationSec": 5
-    },
-    {
-     "kind": "say",
-     "caption": "Wiggle your fingers!",
-     "parentCue": "Shake out both hands together",
-     "durationSec": 7
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Smooth see-saw!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "fingers",
+    "secondary": [
+     "patterns",
+     "counting"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Alternating pattern (A-B-A-B-A)",
+    "parentLine": "Two neighbour keys taking turns, like a see-saw"
+   },
+   "parentPrompt": "Rock gently side to side with your child: lean right on E, left on D sharp.",
+   "childAction": "See-saw between the white E and the black key. Count the E's!",
+   "bridge": "Pinky on white E, ring finger on the black key: up, down, up, down.",
+   "celebrate": "Today you practiced: careful fingers on a see-saw pattern."
   },
   {
    "id": "fur-elise-c05",
    "index": 5,
-   "title": "Left hand helper",
-   "goal": "Play one low left hand note at the start of each bar",
+   "title": "Low A, the bird's tree",
+   "goal": "Play low A with the left hand at the start of each bar, the same note in a lower house.",
    "type": "left-hand",
-   "durationSec": 216,
-   "parentTip": "You play the tune, your child plays the low notes. Count bars out loud to help.",
+   "durationSec": 224,
+   "parentTip": "Play the tune while your child plays low A. Count the bars out loud: one, two, three.",
    "video": "fur-elise/fur-elise-c05.mp4",
    "thumb": "fur-elise/fur-elise-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Fur Elise",
-     "subcaption": "Class 5: Left hand helper",
+     "subcaption": "Class 5: Low A, the bird's tree",
      "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Meet the bird's tree: low A",
+     "parentCue": "Point to high A, then low A on the left",
+     "durationSec": 8
     },
     {
      "kind": "say",
@@ -3443,6 +3556,36 @@
       }
      ],
      "durationSec": 8
+    },
+    {
+     "kind": "listen",
+     "caption": "Same name, lower house",
+     "parentCue": "Point high, then low, with each sound",
+     "bpm": 70,
+     "leadInSec": 1.714,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 9
     },
     {
      "kind": "demo",
@@ -4557,96 +4700,124 @@
      "durationSec": 5
     },
     {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6
+    },
+    {
      "kind": "your_turn",
-     "caption": "Your turn! Left hand",
-     "parentCue": "Say the bar count out loud",
-     "bpm": 68,
-     "leadInSec": 1.765,
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 72,
+     "leadInSec": 1.667,
      "gapBeats": 1,
      "notes": [
       {
-       "rest": true,
-       "d": 2.5
+       "p": "E5",
+       "d": 0.5,
+       "f": 5,
+       "s": "Lit"
       },
       {
-       "p": "A3",
-       "d": 3.0,
-       "f": 5,
-       "h": "L"
+       "p": "D#5",
+       "d": 0.5,
+       "f": 4,
+       "s": "tle"
       },
       {
-       "p": "A3",
-       "d": 3.0,
+       "p": "E5",
+       "d": 0.5,
        "f": 5,
-       "h": "L"
+       "s": "bird"
       },
       {
-       "p": "A3",
-       "d": 3.0,
-       "f": 5,
-       "h": "L"
+       "p": "D#5",
+       "d": 0.5,
+       "f": 4,
+       "s": "is"
       },
       {
-       "p": "A3",
-       "d": 3.0,
+       "p": "E5",
+       "d": 0.5,
        "f": 5,
-       "h": "L"
+       "s": "sing"
       },
       {
-       "p": "A3",
-       "d": 3.0,
-       "f": 5,
-       "h": "L"
+       "p": "B4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing"
       },
       {
-       "p": "A3",
-       "d": 3.0,
-       "f": 5,
-       "h": "L"
+       "p": "D5",
+       "d": 0.5,
+       "f": 4,
+       "s": "in"
       },
       {
-       "p": "A3",
-       "d": 3.0,
-       "f": 5,
-       "h": "L"
+       "p": "C5",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 1,
+       "s": "tree"
       }
      ],
-     "durationSec": 31
+     "lines": [
+      {
+       "lyric": "Little bird is singing in the tree",
+       "from": 0
+      }
+     ],
+     "durationSec": 16
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Strong tree trunk!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "space",
+    "secondary": [
+     "counting"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Octave translation (same note, lower)",
+    "parentLine": "The song ends on A; the left hand plays A lower down"
+   },
+   "parentPrompt": "Play the tune while your child plays low A. Count the bars out loud: one, two, three.",
+   "childAction": "Play low A with your left pinky at the start of each bar.",
+   "bridge": "High A is the bird; low A is the tree trunk, same name, deeper sound.",
+   "celebrate": "Today you practiced: finding the same note in a lower house."
   },
   {
    "id": "fur-elise-c06",
    "index": 6,
-   "title": "Left hand, full speed",
-   "goal": "Keep the left hand notes going at full speed with the tune",
+   "title": "Count to six, land on one",
+   "goal": "Keep low A going at full speed, landing on the first count of every group of six.",
    "type": "left-hand",
-   "durationSec": 213,
-   "parentTip": "Your child only plays the low notes. Keeping going matters more than every note.",
+   "durationSec": 219,
+   "parentTip": "Count ONE-two-three-four-five-six with each bar, loud on ONE. Keep going if notes slip.",
    "video": "fur-elise/fur-elise-c06.mp4",
    "thumb": "fur-elise/fur-elise-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Fur Elise",
-     "subcaption": "Class 6: Left hand, full speed",
+     "subcaption": "Class 6: Count to six, land on one",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Left hand, full speed!",
-     "parentCue": "You play the tune, child plays low notes",
-     "durationSec": 7
-    },
-    {
-     "kind": "say",
-     "caption": "Count the bars: one, two, three",
-     "parentCue": "Count out loud together",
+     "caption": "ONE, two, three, four, five, six",
+     "parentCue": "Count with your child, clap on ONE",
      "durationSec": 7
     },
     {
@@ -6690,27 +6861,59 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 8
+    },
+    {
+     "kind": "praise",
+     "caption": "You kept it going!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "beat",
+    "secondary": [
+     "counting",
+     "together"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Grouping in sixes (periodicity)",
+    "parentLine": "Counting quick notes in groups and landing on one"
+   },
+   "parentPrompt": "Count ONE-two-three-four-five-six with each bar, loud on ONE. Keep going if notes slip.",
+   "childAction": "Play low A on every big ONE. Keep going, no stopping!",
+   "bridge": "Six little bird hops, then one deep thump from the tree. Again!",
+   "celebrate": "Today you practiced: steady counting in sixes, together."
   },
   {
    "id": "fur-elise-c07",
    "index": 7,
-   "title": "Hands together, slowly",
-   "goal": "Play the tune with a low left hand note on each bar",
+   "title": "Tree and bird together",
+   "goal": "Play the tune with low A on each bar: one hand holds still while the other runs.",
    "type": "hands-together",
-   "durationSec": 239,
-   "parentTip": "Two hands is hard work. Go very slowly and stop while it's still fun.",
+   "durationSec": 247,
+   "parentTip": "Rest a hand on your child's left shoulder and say tree on each low A. Go very slowly.",
    "video": "fur-elise/fur-elise-c07.mp4",
    "thumb": "fur-elise/fur-elise-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Fur Elise",
-     "subcaption": "Class 7: Hands together, slowly",
+     "subcaption": "Class 7: Tree and bird together",
      "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "The tree and the bird play together",
+     "parentCue": "Both hands on the keys, very slowly",
+     "durationSec": 8
     },
     {
      "kind": "say",
@@ -8054,27 +8257,47 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Two hands, one song!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "fingers",
+    "secondary": [
+     "patterns"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Ratio 1:6 (two streams)",
+    "parentLine": "One low note lasts while six quick notes run above"
+   },
+   "parentPrompt": "Rest a hand on your child's left shoulder and say tree on each low A. Go very slowly.",
+   "childAction": "Left hand holds low A while right hand hops the tune.",
+   "bridge": "Left hand is the tree, still and low; right hand is the bird hopping.",
+   "celebrate": "Today you practiced: two hands doing two different jobs."
   },
   {
    "id": "fur-elise-c08",
    "index": 8,
-   "title": "Hands together, a bit faster",
-   "goal": "Play both hands together closer to full speed",
+   "title": "Slow bird, quick bird",
+   "goal": "Play both hands a bit faster and notice the pattern stays the same at any speed.",
    "type": "hands-together",
-   "durationSec": 219,
-   "parentTip": "Speed comes last. If notes fall apart, go back to the slower tempo.",
+   "durationSec": 210,
+   "parentTip": "Flap your arms slowly for slow music, quicker for quick music. Go back to slow if needed.",
    "video": "fur-elise/fur-elise-c08.mp4",
    "thumb": "fur-elise/fur-elise-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Fur Elise",
-     "subcaption": "Class 8: Hands together, a bit faster",
+     "subcaption": "Class 8: Slow bird, quick bird",
      "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Is the bird sleepy or busy?",
+     "parentCue": "Flap your arms with the speed",
+     "durationSec": 7
     },
     {
      "kind": "say",
@@ -8103,6 +8326,116 @@
       }
      ],
      "durationSec": 7
+    },
+    {
+     "kind": "listen",
+     "caption": "The sleepy bird sings",
+     "parentCue": "Flap your arms slowly together",
+     "bpm": 55,
+     "leadInSec": 2.182,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D#5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D#5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "listen",
+     "caption": "Now the busy bird sings",
+     "parentCue": "Flap your arms quickly together",
+     "bpm": 100,
+     "leadInSec": 1.2,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D#5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D#5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 6
     },
     {
      "kind": "your_turn",
@@ -9570,336 +9903,46 @@
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5
-    },
-    {
-     "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Relax your shoulders",
-     "durationSec": 5
-    },
-    {
-     "kind": "together",
-     "caption": "Both hands together",
-     "parentCue": "Help with the left hand if needed",
-     "bpm": 76,
-     "leadInSec": 1.579,
-     "notes": [
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 5,
-       "s": "Lit"
-      },
-      {
-       "p": "D#5",
-       "d": 0.5,
-       "f": 4,
-       "s": "tle"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 5,
-       "s": "bird"
-      },
-      {
-       "p": "D#5",
-       "d": 0.5,
-       "f": 4,
-       "s": "is"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing",
-       "lh": {
-        "p": "A3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 1,
-       "s": "tree"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "can",
-       "lh": {
-        "p": "A3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "you"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "hear"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 5,
-       "s": "it"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "sing",
-       "lh": {
-        "p": "A3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G#4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 5,
-       "s": "long"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 5,
-       "s": "now"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "lh": {
-        "p": "A3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 5,
-       "s": "Lit"
-      },
-      {
-       "p": "D#5",
-       "d": 0.5,
-       "f": 4,
-       "s": "tle"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 5,
-       "s": "bird"
-      },
-      {
-       "p": "D#5",
-       "d": 0.5,
-       "f": 4,
-       "s": "is"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing",
-       "lh": {
-        "p": "A3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 1,
-       "s": "tree"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "can",
-       "lh": {
-        "p": "A3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "you"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "hear"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 5,
-       "s": "it"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "fly",
-       "lh": {
-        "p": "A3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "a"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 3,
-       "s": "now"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Little bird is singing in the tree",
-       "from": 0
-      },
-      {
-       "lyric": "can you hear it",
-       "from": 9
-      },
-      {
-       "lyric": "sing along now",
-       "from": 13
-      },
-      {
-       "lyric": "Little bird is singing in the tree",
-       "from": 17
-      },
-      {
-       "lyric": "can you hear it",
-       "from": 27
-      },
-      {
-       "lyric": "fly away now",
-       "from": 31
-      }
-     ],
-     "durationSec": 22
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Same song, new speed!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "expression",
+    "secondary": [
+     "fingers"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Tempo scaling (same pattern, faster)",
+    "parentLine": "The pattern stays the same when the speed changes"
+   },
+   "parentPrompt": "Flap your arms slowly for slow music, quicker for quick music. Go back to slow if needed.",
+   "childAction": "Play the bird song slow, then a little quicker.",
+   "bridge": "A sleepy bird and a busy bird sing the very same song.",
+   "celebrate": "Today you practiced: slow and quick, the same pattern."
   },
   {
    "id": "fur-elise-c09",
    "index": 9,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Fly with the music",
+   "goal": "Play the whole song along with the music at full speed, keeping in step.",
    "type": "play-along",
-   "durationSec": 237,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 242,
+   "parentTip": "Sit beside your child and nod on every big ONE. Cheer for keeping going, not for notes.",
    "video": "fur-elise/fur-elise-c09.mp4",
    "thumb": "fur-elise/fur-elise-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Fur Elise",
-     "subcaption": "Class 9: Play along",
+     "subcaption": "Class 9: Fly with the music",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
-     "durationSec": 7
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
+     "caption": "Fly along with the music!",
+     "parentCue": "Nod your head on every big ONE",
      "durationSec": 7
     },
     {
@@ -11925,39 +11968,85 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great job!",
+     "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 7
+    },
+    {
+     "kind": "praise",
+     "caption": "You flew all the way!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "together",
+    "secondary": [
+     "beat"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Synchrony with a moving pulse",
+    "parentLine": "Keeping your part in step while the music moves on"
+   },
+   "parentPrompt": "Sit beside your child and nod on every big ONE. Cheer for keeping going, not for notes.",
+   "childAction": "Fly along with the music. If a note slips, keep flying!",
+   "bridge": "The music is the wind; the bird keeps flapping and rides along.",
+   "celebrate": "Today you practiced: keeping in step with the music, together."
   },
   {
    "id": "fur-elise-c10",
    "index": 10,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "The bird's concert",
+   "goal": "Play the whole song from first note to last, end softly on home A, and bow.",
    "type": "concert",
-   "durationSec": 227,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 226,
+   "parentTip": "Seat teddy as the audience. Clap, cheer and bow together at the end.",
    "video": "fur-elise/fur-elise-c10.mp4",
    "thumb": "fur-elise/fur-elise-c10.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Fur Elise",
-     "subcaption": "Class 10: Concert time",
+     "subcaption": "Class 10: The bird's concert",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
+     "caption": "Concert time for teddy!",
+     "parentCue": "Sit teddy where it can see the keys",
      "durationSec": 7
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Fly away softly, land on A",
+     "parentCue": "Whisper fly away now as your child plays",
+     "bpm": 70,
+     "leadInSec": 1.714,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5
+      },
+      {
+       "p": "C5",
+       "d": 0.5
+      },
+      {
+       "p": "B4",
+       "d": 0.5
+      },
+      {
+       "p": "A4",
+       "d": 1.5
+      }
+     ],
+     "durationSec": 10
     },
     {
      "kind": "together",
@@ -13808,50 +13897,37 @@
        "d": 1.5,
        "f": 1,
        "s": "tree"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "can"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "you"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "hear"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 5,
-       "s": "it"
       }
      ],
      "lines": [
       {
        "lyric": "Little bird is singing in the tree",
        "from": 0
-      },
-      {
-       "lyric": "can you hear it",
-       "from": 9
       }
      ],
-     "durationSec": 22
+     "durationSec": 16
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, take a bow!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "form",
+    "secondary": [
+     "together",
+     "expression"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Sequencing and closure (ending home)",
+    "parentLine": "Holding the song in order and landing on the home note"
+   },
+   "parentPrompt": "Seat teddy as the audience. Clap, cheer and bow together at the end.",
+   "childAction": "Play the bird song for teddy, end softly, then bow.",
+   "bridge": "The bird flies away softly and lands home on A. The end!",
+   "celebrate": "Today you practiced: the whole song shape, start to end, together."
   }
  ]
 }

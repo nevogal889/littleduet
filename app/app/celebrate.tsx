@@ -4,6 +4,7 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { SongCover } from '../src/components/bits';
 import { Confetti } from '../src/components/Confetti';
 import { Icon } from '../src/components/Icon';
+import { PracticedToday } from '../src/components/skills';
 import { Button, ProgressBar, Screen, T } from '../src/components/ui';
 import { classById, songById } from '../src/data/catalog';
 import { useChildName } from '../src/hooks';
@@ -89,6 +90,8 @@ export default function Celebrate() {
           <T v="h3" style={[styles.center, { color: colors.body }]}>
             {t('celebration.parentHeadline')}
           </T>
+
+          <PracticedToday cls={hit?.cls} />
 
           <View style={styles.row}>
             <View style={[styles.pill, { backgroundColor: colors.streakSoft }]} testID="celebrate-streak">

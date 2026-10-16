@@ -1,0 +1,216 @@
+{
+  "songId": "mary-had-a-little-lamb",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices steady beat, finding one special note, echoing short patterns, counting to three and taking turns, with a gentle tune about a lamb.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Sway with the little lamb",
+      "goal": "Hear the whole song and notice that the first tune comes back again.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "beat"] },
+      "mathTarget": { "concept": "Pattern repetition (A and A)", "parentLine": "Noticing that a tune comes back the same" },
+      "parentPrompt": "Sway with your child; when the first tune comes back, gasp and point: again!",
+      "childAction": "Sway with the song and shout \"again!\" when it repeats.",
+      "bridge": "The lamb follows Mary everywhere, and the tune follows itself back.",
+      "intro": [
+        { "caption": "Let's sway like a lamb", "parentCue": "Sit together, sway side to side" },
+        { "caption": "Listen: does it come back?", "parentCue": "Cup your ear and smile" }
+      ],
+      "games": [],
+      "praise": "You heard it come back!",
+      "celebrate": "Today you practiced: listening for a tune that repeats."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Little lamb steps",
+      "goal": "Tap one steady beat, one tap for each lamb step, while the grown-up plays.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand on your child's hand and tap together, one tap per beat.",
+      "childAction": "Tap any key once for every lamb step.",
+      "bridge": "Each tap is one little hoof on the path: step, step, step.",
+      "intro": [ { "caption": "The lamb walks: step, step", "parentCue": "Pat your knees slowly together first" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Slow lamb steps",
+          "parentCue": "Tap slowly with your child, one per beat",
+          "bpm": 76,
+          "notes": [
+            { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 },
+            { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 }
+          ]
+        }
+      ],
+      "praise": "You stepped together!",
+      "celebrate": "Today you practiced: one tap for each beat, together."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "Find the lamb's note E",
+      "goal": "Find the special note E by using the two black keys as a landmark.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmarks", "parentLine": "Finding a place by what sits next to it" },
+      "parentPrompt": "Guide your child's finger over two black keys, then slide right to E.",
+      "childAction": "Touch the two black keys, slide right, and press E gently.",
+      "bridge": "E is the lamb's door, just right of the two black keys.",
+      "intro": [ { "caption": "Where does the lamb live?", "parentCue": "Point to two black keys together" } ],
+      "games": [],
+      "praise": "You found the lamb's door!",
+      "celebrate": "Today you practiced: finding E next to the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "octave",
+      "title": "Mama sheep, baby lamb",
+      "goal": "Find E in a low place and a high place and hear they match.",
+      "skill": { "primary": "space", "secondary": ["pitch"] },
+      "mathTarget": { "concept": "Octave equivalence (spatial mapping)", "parentLine": "One note lives in two houses: low left, high right" },
+      "parentPrompt": "Say \"mama\" in a deep voice for low E, \"baby\" in a tiny voice for high E.",
+      "childAction": "Hop between low E and high E, deep voice then tiny voice.",
+      "bridge": "Low E is mama sheep on the left; high E is baby lamb.",
+      "intro": [ { "caption": "Mama sheep says baa low", "parentCue": "Use a deep, slow baa voice" } ],
+      "games": [
+        {
+          "kind": "high_low",
+          "target": "high",
+          "caption": "Baby lamb sings up high",
+          "parentCue": "Point right, to the high side, together",
+          "bpm": 84,
+          "notes": [
+            { "p": "E5", "d": 1 }, { "p": "D5", "d": 1 }, { "p": "C5", "d": 1 }, { "p": "D5", "d": 1 },
+            { "p": "E5", "d": 1 }, { "p": "E5", "d": 1 }, { "p": "E5", "d": 2 }
+          ]
+        }
+      ],
+      "praise": "You found both houses!",
+      "celebrate": "Today you practiced: the same note, low and high."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Baa-baa echo",
+      "goal": "Hold two or three notes in mind, then copy them back on the keys.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Sequence recall (span 2-3)", "parentLine": "Keeping a short line of sounds in mind, in order" },
+      "parentPrompt": "Play the short call, then fold your hands and wait for your child's answer.",
+      "childAction": "Listen to the lamb's call, then call it back the same.",
+      "bridge": "The lamb calls baa-baa across the field; you call back the same.",
+      "intro": [ { "caption": "The lamb calls, you answer", "parentCue": "Sing baa-baa, let your child copy" } ],
+      "games": [],
+      "praise": "You answered the lamb!",
+      "celebrate": "Today you practiced: listening and copying short patterns."
+    },
+    {
+      "index": 6,
+      "spineType": "echo",
+      "title": "Down the hill and up",
+      "goal": "Echo patterns that walk down the hill and back up the same way.",
+      "skill": { "primary": "patterns", "secondary": ["pitch", "listening"] },
+      "mathTarget": { "concept": "Mirror symmetry (contour)", "parentLine": "Going down three steps, then up the same three" },
+      "parentPrompt": "Walk your fingers down your child's arm for E-D-C, back up for C-D-E.",
+      "childAction": "Walk down the hill, then walk back up the same way.",
+      "bridge": "E, D, C: the lamb walks down the hill to the left, then back up.",
+      "intro": [ { "caption": "The lamb walks down the hill", "parentCue": "Walk fingers down your child's arm" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Down the hill: E, D, C",
+          "parentCue": "Point to each lit key, nice and slow",
+          "bpm": 70,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "C4", "d": 2, "f": 1 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Up the hill: C, D, E",
+          "parentCue": "Cheer when the lamb reaches the top",
+          "bpm": 70,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "Down and up, together!",
+      "celebrate": "Today you practiced: a pattern going down and back up."
+    },
+    {
+      "index": 7,
+      "spineType": "special-note",
+      "title": "Wait for the lamb's E",
+      "goal": "Wait and listen, then play E at its moments in the song.",
+      "skill": { "primary": "together", "secondary": ["counting", "listening"] },
+      "mathTarget": { "concept": "Counting to three", "parentLine": "Little lamb ends with three Es: one, two, three" },
+      "parentPrompt": "Play your notes; count one, two, three out loud as your child plays E.",
+      "childAction": "Wait for your turn, then play E: one, two, three!",
+      "bridge": "Three Es in a row are three lamb hops: hop, hop, hop.",
+      "intro": [ { "caption": "Wait, wait, now it's E!", "parentCue": "Hands in lap until E comes" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Three hops: one, two, three",
+          "parentCue": "Count out loud with each E",
+          "bpm": 80,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "You waited for your turn!",
+      "celebrate": "Today you practiced: waiting your turn and counting three."
+    },
+    {
+      "index": 8,
+      "spineType": "special-note",
+      "title": "Two notes: D and E",
+      "goal": "Hear the difference between D and E and play each one when it comes.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Classification into two sets", "parentLine": "Sorting each sound: is it D or is it E?" },
+      "parentPrompt": "Point to D or E just before it comes, then let your child press it.",
+      "childAction": "Listen, choose D or E, and press the right one.",
+      "bridge": "D sits between the two black keys; E is next door, on the right.",
+      "intro": [ { "caption": "Two friends: D and E", "parentCue": "Touch D, then E, saying their names" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Little lamb: D, D, D",
+          "parentCue": "Hold up three fingers, count with each D",
+          "bpm": 80,
+          "notes": [ { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 2, "f": 2 } ]
+        }
+      ],
+      "praise": "You caught D and E!",
+      "celebrate": "Today you practiced: hearing D and E and taking turns."
+    },
+    {
+      "index": 9,
+      "spineType": "together",
+      "title": "One beat, two players",
+      "goal": "Play the whole song together and keep one shared beat, even after a miss.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Entrainment (shared pulse)", "parentLine": "Two players moving to one even beat" },
+      "parentPrompt": "Nod your head on every beat and keep going, whatever notes happen.",
+      "childAction": "Play your notes and nod along with your grown-up.",
+      "bridge": "You and your grown-up walk the lamb together, side by side.",
+      "intro": [ { "caption": "We play it together", "parentCue": "Nod the beat before you start" } ],
+      "games": [],
+      "praise": "You kept the beat together!",
+      "celebrate": "Today you practiced: playing together on one steady beat."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "A lamb concert for teddy",
+      "goal": "Play the song from start to end for teddy and feel the long last note.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Form: beginning and ending", "parentLine": "Every song has a start and a resting end" },
+      "parentPrompt": "Seat teddy as the audience; hold the last C long, then bow together.",
+      "childAction": "Play for teddy, hold the last note, then take a bow.",
+      "bridge": "The last note is low C, home: hold it long like a hug.",
+      "intro": [ { "caption": "Teddy came to listen!", "parentCue": "Sit teddy facing the piano" } ],
+      "games": [],
+      "praise": "What a concert, together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

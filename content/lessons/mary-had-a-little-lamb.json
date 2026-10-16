@@ -2,33 +2,103 @@
  "songId": "mary-had-a-little-lamb",
  "title": "Mary Had a Little Lamb",
  "ageGroup": "3-4",
+ "curriculum": "agent",
+ "songSummary": "Practices steady beat, finding one special note, echoing short patterns, counting to three and taking turns, with a gentle tune about a lamb.",
+ "skillMap": [
+  {
+   "id": "listening",
+   "label": "Listening memory",
+   "value": 1.0,
+   "classes": 6
+  },
+  {
+   "id": "together",
+   "label": "Playing together",
+   "value": 0.89,
+   "classes": 6
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 0.56,
+   "classes": 4
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.44,
+   "classes": 3
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 0.44,
+   "classes": 2
+  },
+  {
+   "id": "pitch",
+   "label": "High and low",
+   "value": 0.22,
+   "classes": 2
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.22,
+   "classes": 2
+  },
+  {
+   "id": "form",
+   "label": "Song shape",
+   "value": 0.22,
+   "classes": 1
+  },
+  {
+   "id": "fingers",
+   "label": "Finger control",
+   "value": 0.11,
+   "classes": 1
+  },
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.11,
+   "classes": 1
+  }
+ ],
  "icon": "sheep",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2336,
+ "totalSec": 2333,
  "classes": [
   {
    "id": "mary-had-a-little-lamb-c01",
    "index": 1,
-   "title": "Listen and sway",
-   "goal": "Hear the whole song and move to the beat",
+   "title": "Sway with the little lamb",
+   "goal": "Hear the whole song and notice that the first tune comes back again.",
    "type": "listen",
-   "durationSec": 237,
-   "parentTip": "Sit together at the piano. Sway side to side while the song plays.",
+   "durationSec": 232,
+   "parentTip": "Sway with your child; when the first tune comes back, gasp and point: again!",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c01.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 1: Listen and sway",
+     "subcaption": "Class 1: Sway with the little lamb",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5
+     "caption": "Let's sway like a lamb",
+     "parentCue": "Sit together, sway side to side",
+     "durationSec": 7
+    },
+    {
+     "kind": "say",
+     "caption": "Listen: does it come back?",
+     "parentCue": "Cup your ear and smile",
+     "durationSec": 6
     },
     {
      "kind": "listen",
@@ -1543,50 +1613,93 @@
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 8
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You heard it come back!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "listening",
+    "secondary": [
+     "patterns",
+     "beat"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Pattern repetition (A and A)",
+    "parentLine": "Noticing that a tune comes back the same"
+   },
+   "parentPrompt": "Sway with your child; when the first tune comes back, gasp and point: again!",
+   "childAction": "Sway with the song and shout \"again!\" when it repeats.",
+   "bridge": "The lamb follows Mary everywhere, and the tune follows itself back.",
+   "celebrate": "Today you practiced: listening for a tune that repeats."
   },
   {
    "id": "mary-had-a-little-lamb-c02",
    "index": 2,
-   "title": "Find the beat",
-   "goal": "Tap a steady beat while the grown-up plays the tune",
+   "title": "Little lamb steps",
+   "goal": "Tap one steady beat, one tap for each lamb step, while the grown-up plays.",
    "type": "beat",
-   "durationSec": 218,
-   "parentTip": "Any key is fine. Tap with your child's hand at first, then let go.",
+   "durationSec": 220,
+   "parentTip": "Rest your hand on your child's hand and tap together, one tap per beat.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c02.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 2: Find the beat",
+     "subcaption": "Class 2: Little lamb steps",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Tap any key on the beat",
-     "parentCue": "You play the tune, your child taps the beat",
-     "durationSec": 8
+     "caption": "The lamb walks: step, step",
+     "parentCue": "Pat your knees slowly together first",
+     "durationSec": 7
     },
     {
-     "kind": "say",
-     "caption": "Tap, tap, tap, like a heartbeat",
-     "parentCue": "Tap with your child first",
-     "durationSec": 7
+     "kind": "beat",
+     "caption": "Slow lamb steps",
+     "parentCue": "Tap slowly with your child, one per beat",
+     "bpm": 76,
+     "leadInSec": 1.579,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10
     },
     {
      "kind": "beat",
@@ -2900,27 +3013,48 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You stepped together!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "beat",
+    "secondary": [
+     "counting",
+     "together"
+    ]
+   },
+   "mathTarget": {
+    "concept": "One-to-one correspondence",
+    "parentLine": "One tap for each beat, no more, no less"
+   },
+   "parentPrompt": "Rest your hand on your child's hand and tap together, one tap per beat.",
+   "childAction": "Tap any key once for every lamb step.",
+   "bridge": "Each tap is one little hoof on the path: step, step, step.",
+   "celebrate": "Today you practiced: one tap for each beat, together."
   },
   {
    "id": "mary-had-a-little-lamb-c03",
    "index": 3,
-   "title": "Find the special note",
-   "goal": "Find and play the song's special note: E",
+   "title": "Find the lamb's note E",
+   "goal": "Find the special note E by using the two black keys as a landmark.",
    "type": "special-note",
    "durationSec": 236,
-   "parentTip": "Help your child find E. Use one finger and press gently, like a button.",
+   "parentTip": "Guide your child's finger over two black keys, then slide right to E.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c03.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 3: Find the special note",
+     "subcaption": "Class 3: Find the lamb's note E",
      "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Where does the lamb live?",
+     "parentCue": "Point to two black keys together",
+     "durationSec": 7
     },
     {
      "kind": "say",
@@ -2933,12 +3067,6 @@
       }
      ],
      "durationSec": 6
-    },
-    {
-     "kind": "say",
-     "caption": "It comes back again and again",
-     "parentCue": "Count how often you hear it",
-     "durationSec": 7
     },
     {
      "kind": "demo",
@@ -3403,27 +3531,48 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found the lamb's door!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "space",
+    "secondary": [
+     "fingers",
+     "listening"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Spatial landmarks",
+    "parentLine": "Finding a place by what sits next to it"
+   },
+   "parentPrompt": "Guide your child's finger over two black keys, then slide right to E.",
+   "childAction": "Touch the two black keys, slide right, and press E gently.",
+   "bridge": "E is the lamb's door, just right of the two black keys.",
+   "celebrate": "Today you practiced: finding E next to the two black keys."
   },
   {
    "id": "mary-had-a-little-lamb-c04",
    "index": 4,
-   "title": "E up high",
-   "goal": "Find the special note in a second place on the piano",
+   "title": "Mama sheep, baby lamb",
+   "goal": "Find E in a low place and a high place and hear they match.",
    "type": "octave",
-   "durationSec": 234,
-   "parentTip": "Notes repeat every eight white keys. Let your child hop between the two Es.",
+   "durationSec": 244,
+   "parentTip": "Say \"mama\" in a deep voice for low E, \"baby\" in a tiny voice for high E.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c04.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 4: E up high",
+     "subcaption": "Class 4: Mama sheep, baby lamb",
      "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Mama sheep says baa low",
+     "parentCue": "Use a deep, slow baa voice",
+     "durationSec": 7
     },
     {
      "kind": "say",
@@ -3440,10 +3589,50 @@
      "durationSec": 7
     },
     {
-     "kind": "say",
-     "caption": "Same name, same sound, higher",
-     "parentCue": "Play both and listen",
-     "durationSec": 6
+     "kind": "high_low",
+     "caption": "Baby lamb sings up high",
+     "parentCue": "Point right, to the high side, together",
+     "target": "high",
+     "bpm": 84,
+     "leadInSec": 1.429,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 9
     },
     {
      "kind": "demo",
@@ -4008,17 +4197,17 @@
      "leadInSec": 1.739,
      "notes": [
       {
-       "p": "E5",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "E5",
+       "p": "E4",
        "d": 1,
        "f": 3
       },
       {
        "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
        "d": 2,
        "f": 3
       }
@@ -4034,17 +4223,17 @@
      "gapBeats": 1,
      "notes": [
       {
-       "p": "E5",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "E5",
+       "p": "E4",
        "d": 1,
        "f": 3
       },
       {
        "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E5",
        "d": 2,
        "f": 3
       }
@@ -4053,38 +4242,46 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found both houses!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "space",
+    "secondary": [
+     "pitch"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Octave equivalence (spatial mapping)",
+    "parentLine": "One note lives in two houses: low left, high right"
+   },
+   "parentPrompt": "Say \"mama\" in a deep voice for low E, \"baby\" in a tiny voice for high E.",
+   "childAction": "Hop between low E and high E, deep voice then tiny voice.",
+   "bridge": "Low E is mama sheep on the left; high E is baby lamb.",
+   "celebrate": "Today you practiced: the same note, low and high."
   },
   {
    "id": "mary-had-a-little-lamb-c05",
    "index": 5,
-   "title": "Echo me",
-   "goal": "Copy short 2 and 3 note patterns from the song",
+   "title": "Baa-baa echo",
+   "goal": "Hold two or three notes in mind, then copy them back on the keys.",
    "type": "echo",
-   "durationSec": 229,
-   "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
+   "durationSec": 222,
+   "parentTip": "Play the short call, then fold your hands and wait for your child's answer.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c05.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 5: Echo me",
+     "subcaption": "Class 5: Baa-baa echo",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Echo me! I play, then you play",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7
-    },
-    {
-     "kind": "say",
-     "caption": "Just like an echo in a cave",
-     "parentCue": "Say hello and echo it back",
+     "caption": "The lamb calls, you answer",
+     "parentCue": "Sing baa-baa, let your child copy",
      "durationSec": 7
     },
     {
@@ -4816,39 +5013,100 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You answered the lamb!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "listening",
+    "secondary": [
+     "patterns",
+     "together"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Sequence recall (span 2-3)",
+    "parentLine": "Keeping a short line of sounds in mind, in order"
+   },
+   "parentPrompt": "Play the short call, then fold your hands and wait for your child's answer.",
+   "childAction": "Listen to the lamb's call, then call it back the same.",
+   "bridge": "The lamb calls baa-baa across the field; you call back the same.",
+   "celebrate": "Today you practiced: listening and copying short patterns."
   },
   {
    "id": "mary-had-a-little-lamb-c06",
    "index": 6,
-   "title": "Echo me again",
-   "goal": "Copy short 2 and 3 note patterns from the song",
+   "title": "Down the hill and up",
+   "goal": "Echo patterns that walk down the hill and back up the same way.",
    "type": "echo",
-   "durationSec": 207,
-   "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
+   "durationSec": 201,
+   "parentTip": "Walk your fingers down your child's arm for E-D-C, back up for C-D-E.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c06.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 6: Echo me again",
+     "subcaption": "Class 6: Down the hill and up",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Echo me! I play, then you play",
-     "parentCue": "Listen first, then copy",
+     "caption": "The lamb walks down the hill",
+     "parentCue": "Walk fingers down your child's arm",
      "durationSec": 7
     },
     {
-     "kind": "say",
-     "caption": "Just like an echo in a cave",
-     "parentCue": "Say hello and echo it back",
-     "durationSec": 7
+     "kind": "your_turn",
+     "caption": "Down the hill: E, D, C",
+     "parentCue": "Point to each lit key, nice and slow",
+     "bpm": 70,
+     "leadInSec": 1.714,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1
+      }
+     ],
+     "durationSec": 10
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Up the hill: C, D, E",
+     "parentCue": "Cheer when the lamb reaches the top",
+     "bpm": 70,
+     "leadInSec": 1.714,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 10
     },
     {
      "kind": "demo",
@@ -5382,89 +5640,74 @@
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 74,
-     "leadInSec": 1.622,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "tle"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "lamb"
-      }
-     ],
-     "durationSec": 6
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 74,
-     "leadInSec": 1.622,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "tle"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "lamb"
-      }
-     ],
-     "durationSec": 8
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Down and up, together!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "patterns",
+    "secondary": [
+     "pitch",
+     "listening"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Mirror symmetry (contour)",
+    "parentLine": "Going down three steps, then up the same three"
+   },
+   "parentPrompt": "Walk your fingers down your child's arm for E-D-C, back up for C-D-E.",
+   "childAction": "Walk down the hill, then walk back up the same way.",
+   "bridge": "E, D, C: the lamb walks down the hill to the left, then back up.",
+   "celebrate": "Today you practiced: a pattern going down and back up."
   },
   {
    "id": "mary-had-a-little-lamb-c07",
    "index": 7,
-   "title": "Special note in the song",
-   "goal": "Play the special note at the right moments in the song",
+   "title": "Wait for the lamb's E",
+   "goal": "Wait and listen, then play E at its moments in the song.",
    "type": "special-note",
-   "durationSec": 244,
-   "parentTip": "You play the blue keys, your child plays the coral one. Waiting is part of the game.",
+   "durationSec": 245,
+   "parentTip": "Play your notes; count one, two, three out loud as your child plays E.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c07.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 7: Special note in the song",
+     "subcaption": "Class 7: Wait for the lamb's E",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Now the special note in the song",
-     "parentCue": "You play the other notes",
+     "caption": "Wait, wait, now it's E!",
+     "parentCue": "Hands in lap until E comes",
      "durationSec": 7
     },
     {
-     "kind": "say",
-     "caption": "When E lights up, it's your turn",
-     "parentCue": "Your child plays only the coral key",
-     "durationSec": 8
+     "kind": "your_turn",
+     "caption": "Three hops: one, two, three",
+     "parentCue": "Count out loud with each E",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 9
     },
     {
      "kind": "demo",
@@ -6613,27 +6856,48 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You waited for your turn!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "together",
+    "secondary": [
+     "counting",
+     "listening"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Counting to three",
+    "parentLine": "Little lamb ends with three Es: one, two, three"
+   },
+   "parentPrompt": "Play your notes; count one, two, three out loud as your child plays E.",
+   "childAction": "Wait for your turn, then play E: one, two, three!",
+   "bridge": "Three Es in a row are three lamb hops: hop, hop, hop.",
+   "celebrate": "Today you practiced: waiting your turn and counting three."
   },
   {
    "id": "mary-had-a-little-lamb-c08",
    "index": 8,
-   "title": "Add a second note",
-   "goal": "Play two special notes, E and D, in the song",
+   "title": "Two notes: D and E",
+   "goal": "Hear the difference between D and E and play each one when it comes.",
    "type": "special-note",
-   "durationSec": 213,
-   "parentTip": "Two notes means more waiting and watching. Celebrate each coral key your child catches.",
+   "durationSec": 222,
+   "parentTip": "Point to D or E just before it comes, then let your child press it.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c08.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 8: Add a second note",
+     "subcaption": "Class 8: Two notes: D and E",
      "durationSec": 5
+    },
+    {
+     "kind": "say",
+     "caption": "Two friends: D and E",
+     "parentCue": "Touch D, then E, saying their names",
+     "durationSec": 7
     },
     {
      "kind": "say",
@@ -6650,10 +6914,30 @@
      "durationSec": 7
     },
     {
-     "kind": "say",
-     "caption": "Two coral keys to watch",
-     "parentCue": "You play the blue keys",
-     "durationSec": 6
+     "kind": "your_turn",
+     "caption": "Little lamb: D, D, D",
+     "parentCue": "Hold up three fingers, count with each D",
+     "bpm": 80,
+     "leadInSec": 1.5,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      }
+     ],
+     "durationSec": 9
     },
     {
      "kind": "demo",
@@ -7356,11 +7640,12 @@
      "durationSec": 26
     },
     {
-     "kind": "together",
-     "caption": "Play it together",
-     "parentCue": "Keep going after a miss",
-     "bpm": 83,
-     "leadInSec": 1.446,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "First half again",
+     "bpm": 69,
+     "leadInSec": 1.739,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "E4",
@@ -7442,86 +7727,6 @@
        "f": 5,
        "s": "lamb",
        "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Ma"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ry"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "had",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "lit"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tle"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "lamb"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "its"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "fleece"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "was"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "white"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "as"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "snow",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -7532,52 +7737,53 @@
       {
        "lyric": "Little lamb, little lamb",
        "from": 7
-      },
-      {
-       "lyric": "Mary had a little lamb, its",
-       "from": 13
-      },
-      {
-       "lyric": "fleece was white as snow",
-       "from": 21
       }
      ],
-     "durationSec": 27
+     "durationSec": 26
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You caught D and E!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "listening",
+    "secondary": [
+     "patterns",
+     "together"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Classification into two sets",
+    "parentLine": "Sorting each sound: is it D or is it E?"
+   },
+   "parentPrompt": "Point to D or E just before it comes, then let your child press it.",
+   "childAction": "Listen, choose D or E, and press the right one.",
+   "bridge": "D sits between the two black keys; E is next door, on the right.",
+   "celebrate": "Today you practiced: hearing D and E and taking turns."
   },
   {
    "id": "mary-had-a-little-lamb-c09",
    "index": 9,
-   "title": "Play together",
-   "goal": "Play the whole song together at full speed",
+   "title": "One beat, two players",
+   "goal": "Play the whole song together and keep one shared beat, even after a miss.",
    "type": "together",
-   "durationSec": 259,
-   "parentTip": "Keep playing even if your child misses a note. The beat matters more than being perfect.",
+   "durationSec": 257,
+   "parentTip": "Nod your head on every beat and keep going, whatever notes happen.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c09.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 9: Play together",
+     "subcaption": "Class 9: One beat, two players",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Let's play the song together",
-     "parentCue": "You on the tune, your child on E",
-     "durationSec": 7
-    },
-    {
-     "kind": "say",
-     "caption": "Ready, set, play!",
-     "parentCue": "Count four beats out loud",
+     "caption": "We play it together",
+     "parentCue": "Nod the beat before you start",
      "durationSec": 6
     },
     {
@@ -8978,6 +9184,40 @@
        "d": 1,
        "f": 3,
        "s": "its"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "fleece",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "was",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "white"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "as",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "snow",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -8992,45 +9232,57 @@
       {
        "lyric": "Mary had a little lamb, its",
        "from": 13
+      },
+      {
+       "lyric": "fleece was white as snow",
+       "from": 21
       }
      ],
-     "durationSec": 19
+     "durationSec": 24
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept the beat together!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "together",
+    "secondary": [
+     "beat"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Entrainment (shared pulse)",
+    "parentLine": "Two players moving to one even beat"
+   },
+   "parentPrompt": "Nod your head on every beat and keep going, whatever notes happen.",
+   "childAction": "Play your notes and nod along with your grown-up.",
+   "bridge": "You and your grown-up walk the lamb together, side by side.",
+   "celebrate": "Today you practiced: playing together on one steady beat."
   },
   {
    "id": "mary-had-a-little-lamb-c10",
    "index": 10,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "A lamb concert for teddy",
+   "goal": "Play the song from start to end for teddy and feel the long last note.",
    "type": "concert",
-   "durationSec": 259,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 254,
+   "parentTip": "Seat teddy as the audience; hold the last C long, then bow together.",
    "video": "mary-had-a-little-lamb/mary-had-a-little-lamb-c10.mp4",
    "thumb": "mary-had-a-little-lamb/mary-had-a-little-lamb-c10.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Mary Had a Little Lamb",
-     "subcaption": "Class 10: Concert time",
+     "subcaption": "Class 10: A lamb concert for teddy",
      "durationSec": 5
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7
+     "caption": "Teddy came to listen!",
+     "parentCue": "Sit teddy facing the piano",
+     "durationSec": 6
     },
     {
      "kind": "together",
@@ -10288,14 +10540,14 @@
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6
+     "caption": "Play it for someone you love",
+     "parentCue": "Call a family member to listen",
+     "durationSec": 7
     },
     {
      "kind": "together",
-     "caption": "Play it together",
-     "parentCue": "Your child plays the special note",
+     "caption": "A song for you",
+     "parentCue": "You play the tune, your child plays the special note",
      "bpm": 92,
      "leadInSec": 1.304,
      "notes": [
@@ -10493,10 +10745,25 @@
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "What a concert, together!",
      "durationSec": 5
     }
-   ]
+   ],
+   "skill": {
+    "primary": "form",
+    "secondary": [
+     "together",
+     "expression"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Form: beginning and ending",
+    "parentLine": "Every song has a start and a resting end"
+   },
+   "parentPrompt": "Seat teddy as the audience; hold the last C long, then bow together.",
+   "childAction": "Play for teddy, hold the last note, then take a bow.",
+   "bridge": "The last note is low C, home: hold it long like a hug.",
+   "celebrate": "Today you practiced: playing a whole song, start to end."
   }
  ]
 }
