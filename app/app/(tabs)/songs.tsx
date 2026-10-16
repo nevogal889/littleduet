@@ -9,7 +9,7 @@ import { t } from '../../src/i18n';
 import { AGE_GROUPS, DIFFICULTY_WORDS, ageGroupForAge, filterSongs, type DifficultyWord } from '../../src/lib/catalog';
 import { songPercent } from '../../src/lib/progress';
 import { useApp } from '../../src/state/store';
-import { colors, fonts, radius, space, touch, useLayout } from '../../src/theme';
+import { colors, fonts, radius, shadow, space, touch, useLayout } from '../../src/theme';
 import type { AgeGroupId } from '../../src/types';
 
 export default function Songs() {
@@ -19,6 +19,7 @@ export default function Songs() {
   const [group, setGroup] = useState<AgeGroupId | null>(ageGroupForAge(child?.age ?? 3));
   const [level, setLevel] = useState<DifficultyWord | null>(null);
   const [query, setQuery] = useState('');
+  const [searchFocus, setSearchFocus] = useState(false);
 
   const list = useMemo(() => filterSongs(SONGS, { ageGroup: group, difficulty: level, query }), [group, level, query]);
   const cols = width >= 1100 ? 5 : width >= 820 ? 4 : width >= 600 ? 3 : 2;
@@ -30,7 +31,7 @@ export default function Songs() {
       <T v="h1" accessibilityRole="header" style={{ paddingTop: space.xl }}>
         {t('songs.title')}
       </T>
-      <View style={styles.search}>
+      <View style={[styles.search, searchFocus && { borderColor: colors.focus }]}>
         <Icon name="search" size={26} color={colors.inkSoft} />
         <TextInput
           testID="songs-search"
@@ -42,6 +43,8 @@ export default function Songs() {
           returnKeyType="search"
           autoCorrect={false}
           style={styles.searchInput}
+          onFocus={() => setSearchFocus(true)}
+          onBlur={() => setSearchFocus(false)}
         />
       </View>
 
@@ -108,12 +111,13 @@ const styles = StyleSheet.create({
     minHeight: touch.primary,
     marginTop: space.lg,
     paddingHorizontal: space.lg,
-    borderWidth: 1,
-    borderColor: colors.lineStrong,
+    borderWidth: 2,
+    borderColor: 'transparent',
     borderRadius: radius.md,
+    ...shadow.card,
     backgroundColor: colors.surface,
   },
-  searchInput: { flex: 1, minHeight: touch.primary - 4, fontFamily: fonts.regular, fontSize: 17, color: colors.ink },
+  searchInput: { flex: 1, minHeight: touch.primary - 4, fontFamily: fonts.bold, fontSize: 17, color: colors.ink, outlineStyle: 'none' } as any,
   label: { marginTop: space.xl, marginBottom: space.sm },
   chips: { gap: space.sm, flexDirection: 'row', flexWrap: 'wrap' },
   levelDots: { flexDirection: 'row', gap: 3 },

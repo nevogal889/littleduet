@@ -138,10 +138,11 @@ for (const s of songs) {
     }
   }
   const hasCover = fs.existsSync(path.join(VIDEO_OUT, s.id, 'cover.jpg'));
-  manifest[s.id] = { photo: hasPhoto, cover: hasCover };
+  const hasSquare = fs.existsSync(path.join(VIDEO_OUT, s.id, 'cover-square.jpg'));
+  manifest[s.id] = { photo: hasPhoto, cover: hasCover, square: hasSquare };
 }
 fs.writeFileSync(path.join(DATA, 'media.json'), JSON.stringify(manifest));
-report.push(`covers: ${photos} real photos, ${Object.values(manifest).filter((m) => m.cover).length} lesson-style covers (manifest src/data/media.json)`);
+report.push(`covers: ${photos} founder covers, ${Object.values(manifest).filter((m) => m.square).length} square, ${Object.values(manifest).filter((m) => m.cover).length} lesson-style covers (manifest src/data/media.json)`);
 
 console.log(report.join('\n'));
 

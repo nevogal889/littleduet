@@ -157,7 +157,7 @@ export default function Progress() {
                 </View>
               ) : (
                 <View style={[styles.empty, { width: tileW * 0.7 + 12, height: tileW * 0.7 + 12 }]}>
-                  <Icon name={s.milestone === 'concert' ? 'trophy' : 'star'} size={tileW * 0.28} color={colors.line} />
+                  <Icon name={s.milestone === 'concert' ? 'trophy' : 'star'} size={tileW * 0.28} color={colors.lineStrong} />
                 </View>
               )}
               <Text style={[styles.stickerName, !has && { color: colors.inkSoft, fontFamily: fonts.bold }]} numberOfLines={2}>
@@ -211,17 +211,17 @@ const styles = StyleSheet.create({
   level: { gap: space.md, marginTop: space.lg },
   levelHead: { flexDirection: 'row', alignItems: 'center', gap: space.md },
   levelBadge: { width: 56, height: 56, borderRadius: 28, backgroundColor: colors.gold, borderBottomWidth: 4, borderColor: colors.goldEdge, alignItems: 'center', justifyContent: 'center' },
-  levelUp: { flexDirection: 'row', alignItems: 'center', gap: space.lg, marginTop: space.lg, borderColor: colors.gold },
+  levelUp: { flexDirection: 'row', alignItems: 'center', gap: space.lg, marginTop: space.lg },
   quest: { flexDirection: 'row', alignItems: 'center', gap: space.md },
   questIcon: { width: 48, height: 48, borderRadius: 24, backgroundColor: colors.blueSoft, alignItems: 'center', justifyContent: 'center' },
   questTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   questTitle: { fontFamily: fonts.extra, fontSize: 17, color: colors.ink },
   questCount: { fontFamily: fonts.extra, fontSize: 15, color: colors.inkSoft },
-  chestRow: { flexDirection: 'row', alignItems: 'center', gap: space.md, paddingTop: space.md, borderTopWidth: 2, borderTopColor: colors.line },
+  chestRow: { flexDirection: 'row', alignItems: 'center', gap: space.md, padding: space.md, borderRadius: radius.md, backgroundColor: colors.soft },
   grid: { flexDirection: 'row', flexWrap: 'wrap' },
   sticker: { alignItems: 'center', gap: 4 },
   ring: { borderRadius: 999, borderWidth: 4, padding: 2 },
-  empty: { borderRadius: 999, borderWidth: 2, borderColor: colors.line, borderStyle: 'dashed', alignItems: 'center', justifyContent: 'center' },
+  empty: { borderRadius: 999, backgroundColor: colors.soft, alignItems: 'center', justifyContent: 'center' },
   stickerName: { fontFamily: fonts.extra, fontSize: 14, lineHeight: 18, color: colors.ink, textAlign: 'center' },
   stickerSub: { fontFamily: fonts.bold, fontSize: 13, color: colors.inkSoft },
   badge: { ...card, alignItems: 'center', gap: 6, padding: space.md },
@@ -229,7 +229,7 @@ const styles = StyleSheet.create({
   badgeIcon: { width: 60, height: 60, borderRadius: 30, alignItems: 'center', justifyContent: 'center', borderBottomWidth: 4 },
   badgeGold: { backgroundColor: colors.gold, borderColor: colors.goldEdge },
   badgeBlue: { backgroundColor: colors.blue, borderColor: colors.blueEdge },
-  badgeIconOff: { backgroundColor: colors.white, borderWidth: 2, borderBottomWidth: 2, borderColor: colors.line },
+  badgeIconOff: { backgroundColor: colors.soft, borderBottomWidth: 0 },
   badgeName: { fontFamily: fonts.extra, fontSize: 14, lineHeight: 18, color: colors.ink, textAlign: 'center' },
   badgeDesc: { fontFamily: fonts.semibold, fontSize: 13, lineHeight: 17, color: colors.inkSoft, textAlign: 'center' },
   scrim: { flex: 1, backgroundColor: colors.scrim, alignItems: 'center', justifyContent: 'center', padding: space.lg },

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { AccessibilityInfo, StyleSheet, View } from 'react-native';
+import { AccessibilityInfo, StyleSheet, Text, View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { DifficultyDots, SongCover } from '../../src/components/bits';
 import { ClassRow, songMeta } from '../../src/components/cards';
@@ -11,7 +11,7 @@ import { t } from '../../src/i18n';
 import { canPlayClass } from '../../src/lib/entitlement';
 import { classPercent, classStates, continueRow, songPercent, songProgress } from '../../src/lib/progress';
 import { useApp } from '../../src/state/store';
-import { colors, space, useLayout } from '../../src/theme';
+import { card, colors, space, type, useLayout } from '../../src/theme';
 
 export default function SongPage() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -61,18 +61,21 @@ export default function SongPage() {
 
   const info = (
     <View style={styles.info}>
-      <SongCover song={song} kind="wide" width={coverW} rounded={16} />
-      <View style={styles.titleCol}>
-        <T v="h1" accessibilityRole="header" testID="song-title">
-          {song.title}
-        </T>
-        <T v="label">{t('song.bestFor', { ageLabel: t(`ageGroups.${song.ageGroup}.label`), ages: t(`ageGroups.${song.ageGroup}.ages`) })}</T>
+      {/* Hero card: cover bound inside the card (full bleed on top), details below. */}
+      <View style={styles.hero} testID="song-hero">
+        <SongCover song={song} kind="wide" width={coverW} rounded={0} />
+        <View style={styles.heroBody}>
+          <T v="h1" accessibilityRole="header" testID="song-title">
+            {song.title}
+          </T>
+          <Text style={type.meta}>{t('song.bestFor', { ageLabel: t(`ageGroups.${song.ageGroup}.label`), ages: t(`ageGroups.${song.ageGroup}.ages`) })}</Text>
+          <View style={styles.metaRow}>
+            <DifficultyDots level={song.difficulty} />
+            <Text style={type.meta}>{songMeta(lesson)}</Text>
+          </View>
+          <PercentBar percent={pct} doneLabel={t('song.done')} testID="song-pct" />
+        </View>
       </View>
-      <View style={styles.metaRow}>
-        <DifficultyDots level={song.difficulty} />
-        <T v="small">{songMeta(lesson)}</T>
-      </View>
-      <PercentBar percent={pct} doneLabel={t('song.done')} testID="song-pct" />
       <Segmented
         testID="song-mode"
         value={mode}
@@ -86,7 +89,7 @@ export default function SongPage() {
         <Button testID="song-primary" icon="play" label={t('song.playAgain')} onPress={() => openClass(lesson.classes[lesson.classes.length - 1].id, mode)} />
       ) : null}
       {target.parentTip ? (
-        <Card style={{ gap: 4, backgroundColor: colors.soft, borderColor: colors.soft }}>
+        <Card style={{ gap: 4, backgroundColor: colors.soft, boxShadow: 'none' }}>
           <T v="bodyStrong">{t('song.tipTitle')}</T>
           <T v="body">{target.parentTip}</T>
         </Card>
@@ -160,8 +163,9 @@ export default function SongPage() {
 }
 
 const styles = StyleSheet.create({
-  info: { gap: space.md },
-  titleCol: { gap: space.xs, marginTop: space.sm },
+  info: { gap: space.lg },
+  hero: { ...card, overflow: 'hidden' },
+  heroBody: { padding: space.lg, gap: space.sm },
   metaRow: { flexDirection: 'row', alignItems: 'center', gap: space.lg, flexWrap: 'wrap' },
   wide: { flexDirection: 'row', gap: space.xxl, alignItems: 'flex-start' },
 });

@@ -75,21 +75,17 @@ Set the email template to include `{{ .Token }}` so the sign-in email carries th
 RevenueCat: products `littleduet_monthly` ($9.99) and `littleduet_annual` ($59.99), 7-day trial, in the
 current offering's monthly and annual packages. Prices on the paywall come from the store; the mock uses the same values.
 
-## Design + gamification (current)
-- Tokens live only in `src/theme.ts` (game-style, own brand, no mascot): white/#F7F7F7 surfaces, 2 px #E5E5E5
-  borders, Nunito (800 headings/buttons), 3D buttons with a solid bottom edge. One meaning per colour: coral =
-  brand/current/progress, orange = streak, gold = stars, blue = info/selection, green = done, grey = locked.
-  Primary buttons use #CC452D (white text 4.7:1); brand coral #F2674E (3.1:1 with white) is used for non-text only.
-- Song page = lesson path (`src/components/LessonPath.tsx`), list fallback for screen readers ("Show as list").
-- Kind streak (`src/lib/streak.ts`): daily goal = 1 finished class; Sat/Sun never break it; a missed weekday shows
-  "Welcome back!" and starts again. Levels + weekly family quests + chest (`src/lib/rewards.ts`).
-- Parental gate = written math question only (no hold step). Players have no lock: Close, play/pause, back 10 s
-  and the scrubber are always visible, away from the keyboard.
-- Covers: one helper (`SongCover` + `coverSources`): real photo `content/covers/<songId>.jpg` (served as
-  `<songId>/photo.jpg`), else the lesson-style `video/out/<songId>/cover.jpg`, else the icon art.
-  `src/data/media.json` (written by sync) says which exist.
-- Lessons: `src/data/lessons/summary.json` (classes without segments) is bundled for the catalog; full timelines
-  load lazily per song when a class opens (`fullLesson`, `fullClass`).
+## Design (current spec)
+- All tokens in `src/theme.ts`: cream canvas #FAF8F5, white cards (radius 24) lifted by `shadow.card`
+  (RN `boxShadow`, no grey borders), Nunito, spacing scale +24%, metadata labels `type.meta` (uppercase, +0.6).
+- `SHADOW_VARIANT` ('spec' | 'strong') switches card elevation; on web `window.__LD_SHADOW` overrides it.
+  `node e2e/shadow-compare.mjs` renders Home + Song page with both (screenshots/compare-*-{spec,strong}.png).
+- Tactile buttons: coral #F2674E face, 4 px #CC452D edge, press drops 2 px in 150 ms (19 px labels = large text).
+- Inputs use `Field` (white, no border, coral 40% focus ring). Mode toggle = capsule with a sliding pill.
+- Song page = hero card (cover full-bleed on top) + lesson path; phones use side-by-side cards with squircle covers.
+- Covers: wide slots use `content/covers/<songId>.jpg` (served as photo.jpg) then `cover.jpg`; square/squircle
+  slots use `cover-square.jpg` (composed for square; titles are baked in, never overlaid). Helper: `coverSources`.
+- Gamification: kind streak (weekends protected, "Welcome back!"), levels, weekly quests + chest, badges.
 
 ## How content and videos are wired
 

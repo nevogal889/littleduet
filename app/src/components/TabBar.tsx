@@ -46,10 +46,10 @@ export function TabBar() {
 }
 
 const styles = StyleSheet.create({
-  bar: { flexDirection: 'row', backgroundColor: colors.surface, borderTopWidth: 2, borderTopColor: colors.line, paddingTop: 6, paddingHorizontal: space.sm },
+  bar: { flexDirection: 'row', backgroundColor: colors.surface, paddingTop: 8, paddingHorizontal: space.sm, boxShadow: '0 -6px 24px -8px rgba(30,42,58,0.10)' },
   tab: { flex: 1, minHeight: 60, alignItems: 'center', justifyContent: 'center' },
-  pill: { alignSelf: 'stretch', marginHorizontal: 4, alignItems: 'center', justifyContent: 'center', gap: 2, paddingHorizontal: 2, paddingVertical: 6, borderRadius: 14, borderWidth: 2, borderColor: 'transparent' },
-  pillOn: { backgroundColor: colors.brandSoft, borderColor: '#F9C2B6' },
+  pill: { alignSelf: 'stretch', marginHorizontal: 4, alignItems: 'center', justifyContent: 'center', gap: 2, paddingHorizontal: 2, paddingVertical: 6, borderRadius: 16 },
+  pillOn: { backgroundColor: colors.brandSoft },
   label: { fontFamily: fonts.bold, fontSize: 13, color: colors.inkSoft },
   labelOn: { fontFamily: fonts.extra, color: colors.ink },
 });

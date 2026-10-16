@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SongCover } from '../src/components/bits';
@@ -7,11 +7,11 @@ import { SONGS } from '../src/data/catalog';
 import { Icon } from '../src/components/Icon';
 import { ParentalGate } from '../src/components/ParentalGate';
 import { Paywall } from '../src/components/Paywall';
-import { BackButton, Button, T } from '../src/components/ui';
+import { BackButton, Button, Field, T } from '../src/components/ui';
 import { authEnabled } from '../src/config';
 import { t, tRaw } from '../src/i18n';
 import { useApp } from '../src/state/store';
-import { card, colors, fonts, radius, space, touch, useLayout } from '../src/theme';
+import { card, colors, fonts, radius, shadow, space, touch, useLayout } from '../src/theme';
 import type { PlayMode } from '../src/types';
 
 const TOTAL = 4;
@@ -85,7 +85,7 @@ export default function Onboarding() {
               <T v="bodyStrong" nativeID="name-label">
                 {t('onboarding.child.nameLabel')}
               </T>
-              <TextInput
+              <Field
                 testID="onb-name"
                 value={name}
                 onChangeText={(v) => setName(v.slice(0, 24))}
@@ -97,7 +97,7 @@ export default function Onboarding() {
                 autoCorrect={false}
                 autoComplete="off"
                 returnKeyType="done"
-                style={styles.input}
+                style={{ fontSize: 20 }}
               />
               <T v="small">{t('onboarding.child.nameHelper')}</T>
               <T v="h2" style={{ marginTop: space.lg }}>
@@ -143,7 +143,7 @@ export default function Onboarding() {
                     setMode(o.m);
                     setStep(4);
                   }}
-                  style={({ pressed }) => [styles.option, pressed && { backgroundColor: colors.blueSoft, borderColor: '#84D8FF' }]}
+                  style={({ pressed }) => [styles.option, pressed && { backgroundColor: colors.brandSoft }]}
                 >
                   <View style={styles.optionIcon}>
                     <Icon name={o.icon} size={32} color={colors.blueEdge} />
@@ -192,31 +192,17 @@ const styles = StyleSheet.create({
   stepRow: { flexDirection: 'row', gap: space.md, alignItems: 'flex-start' },
   stepNum: { width: 32, height: 32, borderRadius: 16, backgroundColor: colors.blueSoft, alignItems: 'center', justifyContent: 'center' },
   stepNumText: { fontFamily: fonts.extra, fontSize: 15, color: colors.ink },
-  input: {
-    minHeight: touch.primary,
-    borderWidth: 2,
-    borderColor: colors.line,
-    borderRadius: radius.md,
-    backgroundColor: colors.surface,
-    paddingHorizontal: space.lg,
-    fontFamily: fonts.bold,
-    fontSize: 20,
-    color: colors.ink,
-  },
   ages: { flexDirection: 'row', gap: space.sm },
   age: {
     flex: 1,
     maxWidth: 96,
     height: 64,
     borderRadius: radius.md,
-    borderWidth: 2,
-    borderBottomWidth: 4,
-    borderColor: colors.line,
-    backgroundColor: colors.surface,
+    backgroundColor: colors.soft,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  ageOn: { backgroundColor: colors.blueSoft, borderColor: '#84D8FF' },
+  ageOn: { backgroundColor: colors.surface, ...shadow.cardStrong },
   ageText: { fontFamily: fonts.bold, fontSize: 24, color: colors.ink },
   option: {
     flexDirection: 'row',
@@ -225,10 +211,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface,
     borderRadius: radius.card,
     padding: space.xl,
-    borderWidth: 2,
-    borderColor: colors.line,
     minHeight: 112,
-    borderBottomWidth: 4,
+    ...shadow.card,
   },
   optionIcon: { width: 56, height: 56, borderRadius: 28, backgroundColor: colors.blueSoft, alignItems: 'center', justifyContent: 'center' },
 });

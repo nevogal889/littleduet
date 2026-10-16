@@ -140,7 +140,7 @@ async function run(viewport, tag) {
   const heroClass = await id('hero-class').innerText();
   const heroProgress = await id('hero-progress').count();
   const heroPct = await id('hero-pct').innerText();
-  check(`${tag}: Continue hero shows the class with progress`, heroSong === songTitle && /^Class 1 of \d+$/.test(heroClass) && heroProgress === 1 && /^\d+%$/.test(heroPct.trim()), `${heroSong} / ${heroClass} / ${heroPct}`);
+  check(`${tag}: Continue hero shows the class with progress`, heroSong === songTitle && /^Class 1 of \d+$/i.test(heroClass) && heroProgress === 1 && /^\d+%$/.test(heroPct.trim()), `${heroSong} / ${heroClass} / ${heroPct}`);
   check(`${tag}: home stats (streak, stars, songs learned)`, (await id('stat-streak').count()) + (await id('stat-stars').count()) + (await id('stat-songs').count()) === 3);
   await shot('home-continue');
 

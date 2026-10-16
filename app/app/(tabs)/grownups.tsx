@@ -1,12 +1,12 @@
 import React, { useCallback, useState } from 'react';
-import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Constants from 'expo-constants';
 import { useFocusEffect, useRouter } from 'expo-router';
 import { ConfirmSheet } from '../../src/components/ConfirmSheet';
 import { ParentalGate, useGate } from '../../src/components/ParentalGate';
 import { storeName } from '../../src/components/Paywall';
 import { Pill } from '../../src/components/bits';
-import { Button, Card, Screen, SectionTitle, Segmented, T } from '../../src/components/ui';
+import { Button, Card, Field, Screen, SectionTitle, Segmented, T } from '../../src/components/ui';
 import { authEnabled, config } from '../../src/config';
 import { t, tRaw } from '../../src/i18n';
 import { isEntitled } from '../../src/lib/entitlement';
@@ -168,12 +168,11 @@ export default function GrownUps() {
         {adding ? (
           <Card style={styles.card}>
             <T v="bodyStrong">{t('grownups.children.nameLabel')}</T>
-            <TextInput
+            <Field
               testID="add-child-name"
               value={newName}
               onChangeText={(v) => setNewName(v.slice(0, 24))}
               placeholder={t('onboarding.child.namePlaceholder')}
-              placeholderTextColor={colors.inkSoft}
               accessibilityLabel={t('grownups.children.nameLabel')}
               style={styles.input}
             />
@@ -322,19 +321,9 @@ const styles = StyleSheet.create({
   childRow: { flexDirection: 'row', alignItems: 'center', gap: space.md, flexWrap: 'wrap' },
   avatar: { width: 48, height: 48, borderRadius: 24, backgroundColor: colors.selectedSoft, alignItems: 'center', justifyContent: 'center' },
   avatarText: { fontFamily: fonts.bold, fontSize: 20, color: colors.ink },
-  input: {
-    minHeight: touch.primary,
-    borderWidth: 2,
-    borderColor: colors.line,
-    borderRadius: radius.md,
-    paddingHorizontal: space.lg,
-    fontFamily: fonts.bold,
-    fontSize: 20,
-    color: colors.ink,
-    backgroundColor: colors.surface,
-  },
+  input: { fontSize: 20 },
   ages: { flexDirection: 'row', gap: space.sm },
-  age: { flex: 1, maxWidth: 88, height: 56, borderRadius: radius.md, borderWidth: 2, borderBottomWidth: 4, borderColor: colors.line, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.surface },
-  ageOn: { backgroundColor: colors.blueSoft, borderColor: '#84D8FF' },
+  age: { flex: 1, maxWidth: 88, height: 56, borderRadius: radius.md, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.soft },
+  ageOn: { backgroundColor: colors.surface, boxShadow: '0 10px 30px -5px rgba(30,42,58,0.08), 0 4px 12px -2px rgba(30,42,58,0.05)' },
   ageText: { fontFamily: fonts.bold, fontSize: 22, color: colors.ink },
 });

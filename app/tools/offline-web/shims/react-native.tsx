@@ -392,3 +392,108 @@ export type StyleProp<T> = any;
 export type TextProps = any;
 export type TextStyle = any;
 export type ViewStyle = any;
+
+// ---- Minimal Animated + Easing (offline preview only) ----------------------
+type Listener = (v: number) => void;
+class AnimatedValue {
+  _v: number;
+  _ls = new Set<Listener>();
+  _raf = 0;
+  constructor(v: number) {
+    this._v = v;
+  }
+  setValue(v: number) {
+    this._v = v;
+    this._ls.forEach((f) => f(v));
+  }
+  __get() {
+    return this._v;
+  }
+  addListener(f: Listener) {
+    this._ls.add(f);
+    return () => this._ls.delete(f);
+  }
+  interpolate(cfg: { inputRange: number[]; outputRange: number[] }) {
+    return new AnimatedInterpolation(this, cfg);
+  }
+  stopAnimation() {
+    cancelAnimationFrame(this._raf);
+  }
+}
+class AnimatedInterpolation {
+  constructor(public parent: AnimatedValue, public cfg: { inputRange: number[]; outputRange: number[] }) {}
+  __get() {
+    const v = this.parent.__get();
+    const [i0, i1] = this.cfg.inputRange;
+    const [o0, o1] = this.cfg.outputRange;
+    const t = i1 === i0 ? 0 : (v - i0) / (i1 - i0);
+    return o0 + (o1 - o0) * Math.max(0, Math.min(1, t));
+  }
+  addListener(f: Listener) {
+    return this.parent.addListener(() => f(this.__get()));
+  }
+}
+function animateTo(value: AnimatedValue, toValue: number, duration: number, easing: (t: number) => number) {
+  return {
+    start(cb?: (r: { finished: boolean }) => void) {
+      cancelAnimationFrame(value._raf);
+      const from = value._v;
+      const t0 = performance.now();
+      const step = () => {
+        const t = Math.min(1, (performance.now() - t0) / Math.max(1, duration));
+        value.setValue(from + (toValue - from) * easing(t));
+        if (t < 1) value._raf = requestAnimationFrame(step);
+        else cb?.({ finished: true });
+      };
+      value._raf = requestAnimationFrame(step);
+    },
+    stop() {
+      cancelAnimationFrame(value._raf);
+    },
+  };
+}
+const isAnim = (v: any) => v instanceof AnimatedValue || v instanceof AnimatedInterpolation;
+function resolveStyle(style: any): any {
+  if (Array.isArray(style)) return style.map(resolveStyle);
+  if (!style || typeof style !== 'object') return style;
+  const out: any = {};
+  for (const [k, v] of Object.entries(style)) {
+    if (k === 'transform' && Array.isArray(v)) out.transform = v.map((t: any) => Object.fromEntries(Object.entries(t).map(([a, b]) => [a, isAnim(b) ? (b as any).__get() : b])));
+    else out[k] = isAnim(v) ? (v as any).__get() : v;
+  }
+  return out;
+}
+function collect(style: any, acc: any[] = []): any[] {
+  if (Array.isArray(style)) style.forEach((s) => collect(s, acc));
+  else if (style && typeof style === 'object')
+    for (const [k, v] of Object.entries(style)) {
+      if (k === 'transform' && Array.isArray(v)) v.forEach((t: any) => Object.values(t).forEach((b) => isAnim(b) && acc.push(b)));
+      else if (isAnim(v)) acc.push(v);
+    }
+  return acc;
+}
+function AnimatedView(p: any) {
+  const [, force] = useState(0);
+  const vals = collect(p.style);
+  useEffect(() => {
+    const offs = vals.map((v) => v.addListener(() => force((n) => n + 1)));
+    return () => offs.forEach((o) => o());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [vals.length]);
+  return <View {...p} style={resolveStyle(p.style)} />;
+}
+export const Animated = {
+  Value: AnimatedValue,
+  View: AnimatedView,
+  timing: (v: AnimatedValue, c: { toValue: number; duration?: number; easing?: (t: number) => number }) => animateTo(v, c.toValue, c.duration ?? 250, c.easing ?? ((t) => t)),
+  spring: (v: AnimatedValue, c: { toValue: number }) => animateTo(v, c.toValue, 250, (t) => 1 - Math.pow(1 - t, 3)),
+};
+export const Easing = {
+  linear: (t: number) => t,
+  quad: (t: number) => t * t,
+  cubic: (t: number) => t * t * t,
+  ease: (t: number) => t * t * (3 - 2 * t),
+  out: (f: (t: number) => number) => (t: number) => 1 - f(1 - t),
+  in: (f: (t: number) => number) => f,
+  inOut: (f: (t: number) => number) => (t: number) => (t < 0.5 ? f(t * 2) / 2 : 1 - f((1 - t) * 2) / 2),
+};

@@ -1,9 +1,9 @@
 import React, { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react';
-import { Linking, Modal, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Linking, Modal, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { checkGateAnswer, gateQuestion, t } from '../i18n';
 import { colors, fonts, radius, space, touch, type } from '../theme';
-import { Button, T } from './ui';
+import { Button, Field, T } from './ui';
 
 export type GatePurpose = 'paywall' | 'settings' | 'link' | 'account' | 'email';
 
@@ -65,12 +65,11 @@ export function ParentalGate({
       <T v="h2" testID="gate-question" nativeID="gate-question">
         {q.text}
       </T>
-      <TextInput
+      <Field
         testID="gate-answer"
         accessibilityLabel={`${t('gate.inputLabel')}: ${q.text}`}
         accessibilityLabelledBy="gate-question"
         placeholder={t('gate.inputLabel')}
-        placeholderTextColor={colors.inkSoft}
         value={answer}
         onChangeText={(v) => setAnswer(v.replace(/[^0-9]/g, '').slice(0, 4))}
         keyboardType="number-pad"
@@ -169,16 +168,5 @@ const styles = StyleSheet.create({
   wrap: { width: '100%', maxWidth: 520, alignSelf: 'center', gap: space.md },
   inset: { padding: space.xl, paddingTop: space.xxxl },
   kicker: { fontFamily: fonts.extra, fontSize: 13, color: colors.inkSoft, textTransform: 'uppercase', letterSpacing: 1.2 },
-  input: {
-    minHeight: touch.primary,
-    borderWidth: 2,
-    borderColor: colors.line,
-    borderRadius: radius.md,
-    backgroundColor: colors.surface,
-    paddingHorizontal: space.lg,
-    ...type.h2,
-    fontFamily: fonts.bold,
-    fontSize: 24,
-    color: colors.ink,
-  },
+  input: { fontFamily: fonts.extra, fontSize: 24 },
 });

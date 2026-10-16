@@ -53,9 +53,9 @@ const styles = StyleSheet.create({
   head: { alignItems: 'center', gap: space.sm },
   week: { flexDirection: 'row', justifyContent: 'space-between' },
   day: { alignItems: 'center', gap: 4 },
-  dot: { width: 38, height: 38, borderRadius: 19, borderWidth: 2, borderColor: colors.line, alignItems: 'center', justifyContent: 'center' },
-  dotOn: { backgroundColor: colors.streak, borderColor: colors.streakEdge },
-  dotWeekend: { borderStyle: 'dashed' },
+  dot: { width: 38, height: 38, borderRadius: 19, backgroundColor: colors.soft, alignItems: 'center', justifyContent: 'center' },
+  dotOn: { backgroundColor: colors.streak },
+  dotWeekend: { backgroundColor: '#F7F3EE' },
   dayText: { fontFamily: fonts.bold, fontSize: 13, color: colors.inkSoft },
-  note: { flexDirection: 'row', gap: space.sm, alignItems: 'flex-start', backgroundColor: colors.blueSoft, padding: space.md, borderRadius: radius.md },
+  note: { flexDirection: 'row', gap: space.sm, alignItems: 'flex-start', backgroundColor: colors.blueSoft, padding: space.md, borderRadius: radius.card },
 });

@@ -53,3 +53,11 @@ They live in `app/src/data/strings.app.json`; your file always wins when it defi
 ## New app strings (overlay, please review)
 streak.*, progress.*, quests.*, path.*, celebration.plusStars/continue/trophy/streakUp, home.stats.streak,
 gate.compactTitle "For grown-ups", grownups.minutesThisWeek*, song.done/percent, tabs.stickers is now "Progress".
+
+## Principal-designer overhaul + cover change (2026-10-16)
+- Tokens in app/src/theme.ts: cream #FAF8F5, white cards radius 24, `shadow.card` boxShadow, no grey borders, spacing +24%, `type.meta` uppercase labels, Nunito.
+- `SHADOW_VARIANT` ('spec' | 'strong'); on web `window.__LD_SHADOW` overrides. `node e2e/shadow-compare.mjs` -> screenshots/compare-{home,song}-{spec,strong}.png. The spec values are close to invisible on cream; founder to pick.
+- Tactile buttons (coral face, 4 px #CC452D edge, 2 px / 150 ms press); `Field` inputs (no border, coral 40% focus ring); capsule toggle with a sliding pill (jumps under Reduce Motion).
+- Covers: square/squircle slots use video/out/<id>/cover-square.jpg first; wide slots use content/covers/<id>.jpg (photo.jpg) then cover.jpg. Titles are baked in and never overlaid. There was no Pixabay credit to remove.
+- Preview: DM Sans stands in for Nunito offline; the native build loads Nunito via @expo-google-fonts/nunito.
+- Checks: 116/116 unit, tsc logic clean, E2E 44/44 at 390x844 and 1180x820.

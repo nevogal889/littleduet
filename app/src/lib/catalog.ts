@@ -105,17 +105,21 @@ export function coverPath(songId: string, kind: 'wide' | 'square'): string {
   return `${songId}/${kind === 'wide' ? 'cover.jpg' : 'cover-square.jpg'}`;
 }
 
-export type MediaManifest = Record<string, { photo?: boolean; cover?: boolean }>;
+export type MediaManifest = Record<string, { photo?: boolean; cover?: boolean; square?: boolean }>;
 
 /**
- * Cover image sources for a song, best first: the founder's real photo (<songId>/photo.jpg),
- * then the lesson-style cover (cover.jpg / cover-square.jpg). Empty list = draw the icon art.
- * Square tiles crop the same photo (resizeMode cover). Songs missing from the manifest try both.
+ * Cover image sources for a song slot, best first. Empty list = draw the icon art.
+ * - wide (16:9) slots: the founder's cover content/covers/<songId>.jpg (served as <songId>/photo.jpg),
+ *   then the lesson-style video/out/<songId>/cover.jpg. Shown with resizeMode cover, centred.
+ * - square / squircle slots: the square-composed cover-square.jpg first (titles are baked into
+ *   the images, so a square crop of a wide cover would cut them), then the wide cover cropped.
+ * Songs missing from the manifest try every source (falling through on load errors).
  */
 export function coverSources(songId: string, kind: 'wide' | 'square', manifest: MediaManifest): string[] {
   const m = manifest[songId];
   const out: string[] = [];
+  if (kind === 'square' && (!m || m.square)) out.push(coverPath(songId, 'square'));
   if (!m || m.photo) out.push(`${songId}/photo.jpg`);
-  if (!m || m.cover) out.push(coverPath(songId, kind));
+  if (kind === 'wide' && (!m || m.cover)) out.push(coverPath(songId, 'wide'));
   return out;
 }

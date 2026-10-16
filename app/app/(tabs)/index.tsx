@@ -15,7 +15,7 @@ import { classPercent, heroItem, inProgressRow, songPercent } from '../../src/li
 import { homeStats } from '../../src/lib/stickers';
 import { streak as computeStreak } from '../../src/lib/streak';
 import { useApp } from '../../src/state/store';
-import { card, colors, fonts, radius, space, useLayout } from '../../src/theme';
+import { card, colors, fonts, radius, space, type, useLayout } from '../../src/theme';
 import type { Song } from '../../src/types';
 
 function greetingKey() {
@@ -23,12 +23,14 @@ function greetingKey() {
   return h < 12 ? 'home.greetingMorning' : h < 18 ? 'home.greetingAfternoon' : 'home.greetingEvening';
 }
 
-/** Child-readable stat: big icon, big number, tiny label. */
-function StatTile({ icon, tint, value, label, testID, onPress }: { icon: IconName; tint: string; value: number; label: string; testID: string; onPress?: () => void }) {
+/** One stat inside the stats bar: icon in a soft tinted circle, big number, small label. */
+function Stat({ icon, tint, soft, value, label, testID, onPress }: { icon: IconName; tint: string; soft: string; value: number; label: string; testID: string; onPress?: () => void }) {
   const body = (
     <>
       <View style={styles.statTop}>
-        <Icon name={icon} size={32} color={tint} />
+        <View style={[styles.statCircle, { backgroundColor: soft }]}>
+          <Icon name={icon} size={24} color={tint} />
+        </View>
         <Text style={styles.statNum}>{value}</Text>
       </View>
       <Text style={styles.statLabel} numberOfLines={2}>
@@ -36,14 +38,11 @@ function StatTile({ icon, tint, value, label, testID, onPress }: { icon: IconNam
       </Text>
     </>
   );
-  if (onPress) {
-    return (
-      <Pressable testID={testID} accessibilityRole="button" accessibilityLabel={`${label}: ${value}`} onPress={onPress} style={({ pressed }) => [styles.stat, pressed && { backgroundColor: colors.soft }]}>
-        {body}
-      </Pressable>
-    );
-  }
-  return (
+  return onPress ? (
+    <Pressable testID={testID} accessibilityRole="button" accessibilityLabel={`${label}: ${value}`} onPress={onPress} style={({ pressed }) => [styles.stat, pressed && { opacity: 0.7 }]}>
+      {body}
+    </Pressable>
+  ) : (
     <View testID={testID} style={styles.stat} accessible accessibilityLabel={`${label}: ${value}`}>
       {body}
     </View>
@@ -67,8 +66,8 @@ export default function Home() {
   const fresh = useMemo(() => newThisWeek(SONGS, Date.now()), []);
   const stats = homeStats(SONGS, LESSONS, childData, Date.now());
   const st = computeStreak(childData.goalDays ?? [], Date.now());
-  const songW = isTablet ? 220 : 172;
-  const classW = isTablet ? 320 : 260;
+  const songW = isTablet ? 240 : 300;
+  const classW = isTablet ? 340 : 300;
 
   const songRow = (title: string, list: Song[], testID: string) =>
     list.length ? (
@@ -76,7 +75,7 @@ export default function Home() {
         <SectionTitle>{title}</SectionTitle>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row}>
           {list.map((s) => (
-            <SongCard key={s.id} song={s} lesson={LESSONS[s.id]} width={songW} percent={songPercent(LESSONS[s.id], progress)} onPress={() => router.push(`/song/${s.id}` as never)} />
+            <SongCard key={s.id} layout={isTablet ? 'grid' : 'row'} song={s} lesson={LESSONS[s.id]} width={songW} percent={songPercent(LESSONS[s.id], progress)} onPress={() => router.push(`/song/${s.id}` as never)} />
           ))}
         </ScrollView>
       </View>
@@ -84,7 +83,7 @@ export default function Home() {
 
   const heroHit = hero ? classById(hero.classId) : undefined;
   const heroLocked = heroHit ? !canPlayClass(heroHit.cls, entitlement) : false;
-  const heroCoverW = isTablet ? Math.min(460, contentWidth * 0.45) : contentWidth - space.lg * 2 - 4;
+  const heroCoverW = isTablet ? Math.min(460, contentWidth * 0.45) : contentWidth - space.lg * 2;
   const first = picked[0] ?? SONGS[0];
 
   return (
@@ -96,9 +95,9 @@ export default function Home() {
       </View>
 
       <View style={styles.stats} testID="home-stats">
-        <StatTile testID="stat-streak" icon="flame" tint={st.days ? colors.streak : colors.faint} value={st.days} label={t('home.stats.streak')} onPress={() => setSheet(true)} />
-        <StatTile testID="stat-stars" icon="star" tint={colors.gold} value={stats.stars} label={t('home.stats.stars')} />
-        <StatTile testID="stat-songs" icon="songs" tint={colors.blue} value={stats.songsLearned} label={t('home.stats.songs')} />
+        <Stat testID="stat-streak" icon="flame" tint={colors.streak} soft={colors.streakSoft} value={st.days} label={t('home.stats.streak')} onPress={() => setSheet(true)} />
+        <Stat testID="stat-stars" icon="star" tint={colors.gold} soft={colors.goldSoft} value={stats.stars} label={t('home.stats.stars')} />
+        <Stat testID="stat-songs" icon="songs" tint={colors.blue} soft={colors.blueSoft} value={stats.songsLearned} label={t('home.stats.songs')} />
       </View>
 
       <View style={[styles.goal, st.welcomeBack && styles.goalWelcome]} testID="daily-goal" accessible>
@@ -111,21 +110,38 @@ export default function Home() {
 
       {hero && heroHit ? (
         <Card style={[styles.hero, isTablet && styles.heroWide]} testID="continue-hero">
-          <SongCover song={heroHit.song} kind="wide" width={heroCoverW} rounded={12}>
+          <View style={!isTablet ? styles.heroTop : undefined}>
+          <SongCover song={heroHit.song} kind={isTablet ? 'wide' : 'square'} width={isTablet ? heroCoverW : 104} rounded={isTablet ? radius.card : radius.squircle}>
             {heroLocked ? (
               <View style={styles.lockPos}>
-                <LockBadge label={t('song.statusLocked')} />
+                <LockBadge iconOnly={!isTablet} label={t('song.statusLocked')} />
               </View>
             ) : null}
           </SongCover>
+          {!isTablet ? (
+            <View style={{ flex: 1, gap: 4 }}>
+              <Text style={styles.kicker}>{hero.kind === 'next' ? t('home.continueUpNext') : t('home.continueTitle')}</Text>
+              <T v="h3" numberOfLines={2} testID="hero-song">
+                {heroHit.song.title}
+              </T>
+              <Text style={type.meta} testID="hero-class">
+                {t('home.continueClassOf', { index: heroHit.cls.index, total: heroHit.lesson.classes.length })}
+              </Text>
+            </View>
+          ) : null}
+          </View>
           <View style={[styles.heroBody, isTablet && { flex: 1 }]}>
-            <Text style={styles.kicker}>{hero.kind === 'next' ? t('home.continueUpNext') : t('home.continueTitle')}</Text>
-            <T v="h2" numberOfLines={2} testID="hero-song">
-              {heroHit.song.title}
-            </T>
-            <T v="label" testID="hero-class">
-              {t('home.continueClassOf', { index: heroHit.cls.index, total: heroHit.lesson.classes.length })}
-            </T>
+            {isTablet ? (
+              <>
+                <Text style={styles.kicker}>{hero.kind === 'next' ? t('home.continueUpNext') : t('home.continueTitle')}</Text>
+                <T v="h2" numberOfLines={2} testID="hero-song">
+                  {heroHit.song.title}
+                </T>
+                <Text style={type.meta} testID="hero-class">
+                  {t('home.continueClassOf', { index: heroHit.cls.index, total: heroHit.lesson.classes.length })}
+                </Text>
+              </>
+            ) : null}
             <T v="bodyStrong" numberOfLines={2}>
               {heroHit.cls.title}
             </T>
@@ -137,7 +153,7 @@ export default function Home() {
         </Card>
       ) : first ? (
         <Card style={[styles.hero, isTablet && styles.heroWide]} testID="start-first">
-          <SongCover song={first} kind="wide" width={heroCoverW} rounded={12} />
+          <SongCover song={first} kind="wide" width={heroCoverW} rounded={radius.card} />
           <View style={[styles.heroBody, isTablet && { flex: 1 }]}>
             <T v="h2">{t('home.startFirstTitle')}</T>
             <T v="body">{t('home.startFirstBody', { songTitle: first.title })}</T>
@@ -196,20 +212,22 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   header: { paddingTop: space.xl },
-  stats: { flexDirection: 'row', gap: space.sm, marginTop: space.lg },
-  stat: { ...card, flex: 1, borderBottomWidth: 4, paddingVertical: space.md, paddingHorizontal: space.sm, gap: 4, alignItems: 'center', justifyContent: 'center' },
-  statTop: { flexDirection: 'row', alignItems: 'center', gap: 6 },
-  statNum: { fontFamily: fonts.extra, fontSize: 30, lineHeight: 36, color: colors.ink },
-  statLabel: { fontFamily: fonts.bold, fontSize: 13, lineHeight: 17, color: colors.inkSoft, textAlign: 'center' },
-  goal: { flexDirection: 'row', alignItems: 'center', gap: space.md, marginTop: space.md, marginBottom: space.xl, paddingVertical: space.md, paddingHorizontal: space.lg, borderRadius: radius.md, backgroundColor: colors.streakSoft },
+  stats: { ...card, flexDirection: 'row', justifyContent: 'space-between', gap: 6, marginTop: space.lg, paddingVertical: space.lg, paddingHorizontal: space.md },
+  stat: { flex: 1, alignItems: 'flex-start', gap: 6, minWidth: 0 },
+  statTop: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  statCircle: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
+  statNum: { fontFamily: fonts.extra, fontSize: 22, lineHeight: 26, color: colors.ink },
+  statLabel: { ...type.meta, fontSize: 12, lineHeight: 15 },
+  goal: { flexDirection: 'row', alignItems: 'center', gap: space.md, marginTop: space.md, marginBottom: space.xl, paddingVertical: space.md, paddingHorizontal: space.lg, borderRadius: radius.card, backgroundColor: colors.streakSoft },
   goalWelcome: { backgroundColor: colors.blueSoft },
   goalTitle: { fontFamily: fonts.extra, fontSize: 17, color: colors.ink },
   goalText: { fontFamily: fonts.bold, fontSize: 15, color: colors.body },
   mode: { gap: space.sm, marginTop: space.xl, maxWidth: 520 },
   hero: { gap: space.lg },
+  heroTop: { flexDirection: 'row', alignItems: 'center', gap: space.md },
   heroWide: { flexDirection: 'row', alignItems: 'center', gap: space.xl },
-  heroBody: { gap: 6 },
-  kicker: { fontFamily: fonts.extra, fontSize: 13, color: colors.inkSoft, textTransform: 'uppercase', letterSpacing: 1 },
-  lockPos: { position: 'absolute', top: 10, left: 10 },
-  row: { gap: space.md, paddingBottom: space.lg, paddingRight: space.lg },
+  heroBody: { gap: 8 },
+  kicker: { ...type.meta, color: colors.brandEdge },
+  lockPos: { position: 'absolute', bottom: 8, left: 8 },
+  row: { gap: space.md, paddingBottom: space.xl, paddingRight: space.lg, paddingTop: 4, paddingLeft: 2 },
 });

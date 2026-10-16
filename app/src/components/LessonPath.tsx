@@ -2,7 +2,7 @@ import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { t } from '../i18n';
 import type { ClassState } from '../lib/progress';
-import { colors, fonts, radius, space } from '../theme';
+import { colors, fonts, radius, shadow, space, type } from '../theme';
 import type { LessonClass } from '../types';
 import { Stars } from './bits';
 import { Icon } from './Icon';
@@ -94,11 +94,11 @@ const styles = StyleSheet.create({
   nodeHit: { borderRadius: NODE / 2 },
   circle: { position: 'absolute', left: 0, top: 0, width: NODE, height: NODE, borderRadius: NODE / 2, alignItems: 'center', justifyContent: 'center' },
   edge: {},
-  lock: { position: 'absolute', right: -4, top: -2, width: 28, height: 28, borderRadius: 14, backgroundColor: colors.white, borderWidth: 2, borderColor: colors.line, alignItems: 'center', justifyContent: 'center' },
-  nodeLabel: { fontFamily: fonts.bold, fontSize: 13, color: colors.inkSoft },
+  lock: { position: 'absolute', right: -4, top: -2, width: 28, height: 28, borderRadius: 14, backgroundColor: colors.white, alignItems: 'center', justifyContent: 'center', ...shadow.cardStrong },
+  nodeLabel: { ...type.meta, fontSize: 12 },
   nodeTitle: { fontFamily: fonts.extra, fontSize: 15, lineHeight: 19, color: colors.ink, textAlign: 'center' },
-  bubble: { backgroundColor: colors.white, borderWidth: 2, borderColor: colors.line, borderBottomWidth: 4, borderRadius: radius.md, paddingHorizontal: space.lg, paddingVertical: space.sm, alignItems: 'center', marginBottom: 6, minHeight: 56, justifyContent: 'center' },
-  bubbleCta: { fontFamily: fonts.extra, fontSize: 17, color: colors.accent, textTransform: 'uppercase', letterSpacing: 0.8 },
-  bubbleMeta: { fontFamily: fonts.bold, fontSize: 13, color: colors.inkSoft },
-  bubbleTail: { position: 'absolute', bottom: -10, width: 14, height: 14, backgroundColor: colors.white, borderRightWidth: 2, borderBottomWidth: 2, borderColor: colors.line, transform: [{ rotate: '45deg' }] },
+  bubble: { backgroundColor: colors.white, borderRadius: radius.md, paddingHorizontal: space.lg, paddingVertical: space.sm, alignItems: 'center', marginBottom: 8, minHeight: 56, justifyContent: 'center', ...shadow.cardStrong },
+  bubbleCta: { fontFamily: fonts.extra, fontSize: 17, color: colors.brandEdge, textTransform: 'uppercase', letterSpacing: 0.8 },
+  bubbleMeta: { ...type.meta, fontSize: 12 },
+  bubbleTail: { position: 'absolute', bottom: -6, width: 14, height: 14, backgroundColor: colors.white, transform: [{ rotate: '45deg' }] },
 });

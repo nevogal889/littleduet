@@ -87,18 +87,20 @@ describe('weekly family quests', () => {
   });
 });
 
-describe('cover sources (real photo -> lesson-style cover -> icon art)', () => {
-  it('prefers the real photo, then the lesson cover', () => {
+describe('cover sources (wide: founder cover -> lesson cover; square: square-composed cover)', () => {
+  it('wide slots prefer content/covers (served as photo.jpg), then the lesson-style cover', () => {
     expect(coverSources('twinkle', 'wide', { twinkle: { photo: true, cover: true } })).toEqual(['twinkle/photo.jpg', 'twinkle/cover.jpg']);
-    expect(coverSources('twinkle', 'square', { twinkle: { photo: true, cover: true } })).toEqual(['twinkle/photo.jpg', 'twinkle/cover-square.jpg']);
-  });
-
-  it('skips sources the manifest says are missing (icon art when none)', () => {
     expect(coverSources('twinkle', 'wide', { twinkle: { photo: false, cover: true } })).toEqual(['twinkle/cover.jpg']);
-    expect(coverSources('twinkle', 'wide', { twinkle: { photo: false, cover: false } })).toEqual([]);
   });
 
-  it('without a manifest entry tries both (falls through on load errors)', () => {
+  it('square and squircle slots use the square-composed cover (titles are baked into the images)', () => {
+    expect(coverSources('twinkle', 'square', { twinkle: { photo: true, cover: true, square: true } })).toEqual(['twinkle/cover-square.jpg', 'twinkle/photo.jpg']);
+    expect(coverSources('twinkle', 'square', { twinkle: { photo: true, cover: true, square: false } })).toEqual(['twinkle/photo.jpg']);
+  });
+
+  it('icon art when nothing exists; songs missing from the manifest try every source', () => {
+    expect(coverSources('twinkle', 'wide', { twinkle: { photo: false, cover: false } })).toEqual([]);
     expect(coverSources('x', 'wide', {})).toEqual(['x/photo.jpg', 'x/cover.jpg']);
+    expect(coverSources('x', 'square', {})).toEqual(['x/cover-square.jpg', 'x/photo.jpg']);
   });
 });

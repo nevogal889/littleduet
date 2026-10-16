@@ -4,7 +4,7 @@ import { coverSources, difficultyWord, type MediaManifest } from '../lib/catalog
 import mediaManifest from '../data/media.json';
 import { t } from '../i18n';
 import { mediaUrl } from '../services/media';
-import { AGE_TINT, colors, fonts, radius, space } from '../theme';
+import { AGE_TINT, colors, fonts, radius, shadow, space, type } from '../theme';
 import type { AgeGroupId, Song } from '../types';
 import { SongArt } from './art/SongArt';
 import { Icon } from './Icon';
@@ -19,7 +19,7 @@ export function DifficultyDots({ level, showWord = true }: { level: number; show
           <View key={i} style={[styles.dot, { backgroundColor: i <= level ? colors.blue : colors.line }]} />
         ))}
       </View>
-      {showWord ? <Text style={styles.dotWord}>{word}</Text> : null}
+      {showWord ? <Text style={type.meta}>{word}</Text> : null}
     </View>
   );
 }
@@ -131,10 +131,10 @@ const styles = StyleSheet.create({
   starsRow: { flexDirection: 'row', gap: 2 },
   cover: { overflow: 'hidden', alignItems: 'center', justifyContent: 'center', backgroundColor: colors.soft },
   fill: { alignItems: 'center', justifyContent: 'center' },
-  lock: { flexDirection: 'row', alignItems: 'center', gap: 5, backgroundColor: colors.white, borderWidth: 2, borderColor: colors.line, paddingHorizontal: 8, paddingVertical: 4, borderRadius: radius.sm },
-  lockText: { fontFamily: fonts.bold, fontSize: 13, color: colors.inkSoft },
-  pill: { paddingHorizontal: 10, paddingVertical: 3, borderRadius: radius.sm, alignSelf: 'flex-start' },
-  pillText: { fontFamily: fonts.extra, fontSize: 13, textTransform: 'uppercase', letterSpacing: 0.5 },
+  lock: { flexDirection: 'row', alignItems: 'center', gap: 5, backgroundColor: colors.white, paddingHorizontal: 8, paddingVertical: 4, borderRadius: radius.pill, ...shadow.cardStrong },
+  lockText: { ...type.meta },
+  pill: { paddingHorizontal: 10, paddingVertical: 3, borderRadius: radius.pill, alignSelf: 'flex-start' },
+  pillText: { fontFamily: fonts.extra, fontSize: 12, textTransform: 'uppercase', letterSpacing: 0.6 },
   doneRow: { flexDirection: 'row', alignItems: 'center', gap: 6 },
   doneText: { fontFamily: fonts.extra, fontSize: 15, color: colors.ink },
 });

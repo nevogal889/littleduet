@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, TextInput, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { ParentalGate, useGate } from '../src/components/ParentalGate';
-import { BackButton, Button, Screen, T } from '../src/components/ui';
+import { BackButton, Button, Field, Screen, T } from '../src/components/ui';
 import { t } from '../src/i18n';
 import { auth } from '../src/services/auth';
 import { colors, fonts, radius, space, touch } from '../src/theme';
@@ -63,11 +63,10 @@ export default function Account() {
               <T v="bodyStrong" nativeID="email-label">
                 {t('grownups.account.emailLabel')}
               </T>
-              <TextInput
+              <Field
                 value={email}
                 onChangeText={setEmail}
                 placeholder={t('grownups.account.emailPlaceholder')}
-                placeholderTextColor={colors.inkSoft}
                 accessibilityLabel={t('grownups.account.emailLabel')}
                 accessibilityLabelledBy="email-label"
                 keyboardType="email-address"
@@ -98,7 +97,7 @@ export default function Account() {
               <T v="bodyStrong" nativeID="code-label">
                 {t('grownups.account.codeLabel')}
               </T>
-              <TextInput
+              <Field
                 value={code}
                 onChangeText={(v) => setCode(v.replace(/[^0-9]/g, '').slice(0, 6))}
                 keyboardType="number-pad"
@@ -127,15 +126,5 @@ export default function Account() {
 
 const styles = StyleSheet.create({
   col: { width: '100%', maxWidth: 560, alignSelf: 'center', gap: space.md, paddingTop: space.md },
-  input: {
-    minHeight: touch.primary,
-    borderWidth: 2,
-    borderColor: colors.lineStrong,
-    borderRadius: radius.md,
-    backgroundColor: colors.surface,
-    paddingHorizontal: space.lg,
-    fontFamily: fonts.bold,
-    fontSize: 20,
-    color: colors.ink,
-  },
+  input: { fontSize: 20 },
 });
