@@ -101,6 +101,8 @@ def mix(c1, c2, a):
 
 # ------------------------------------------------------------------ keyboard
 class Keyboard:
+    ky0, ky1 = KB_Y0, KB_Y1     # lesson-video keyboard band (covers pass their own)
+
     def __init__(self, lo, hi, y0=None, y1=None, width=None, max_kw=112.0, margin=64.0):
         self.ky0 = self.ky0 if y0 is None else y0
         self.ky1 = self.ky1 if y1 is None else y1

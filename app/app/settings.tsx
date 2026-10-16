@@ -338,6 +338,9 @@ export default function Settings() {
         <T v="small" testID="audio-credit">
           {t('grownups.about.audioCredit')}
         </T>
+        <T v="small" testID="voice-credit">
+          {t('settings.voiceCredit')}
+        </T>
         <T v="small">{t('grownups.about.fontCredit')}</T>
         <T v="small">{t('grownups.about.madeFor')}</T>
         <Button variant="secondary" size="md" label={t('grownups.about.licenses')} onPress={() => router.push('/licenses' as never)} />

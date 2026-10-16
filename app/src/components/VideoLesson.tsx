@@ -153,6 +153,12 @@ function RealVideo({ song, cls, resumeSec, onProgress, onFinish, onExit, url, on
   useEventListener(player, 'statusChange', ({ status }) => {
     if (status === 'error') onFail();
     if (status === 'readyToPlay' && !started.current) {
+      // A video rendered for an older version of this class (different length) would put the voice,
+      // banners and listening pauses out of step: use the on-screen lesson instead.
+      if (player.duration > 0 && Math.abs(player.duration - cls.durationSec) > 3) {
+        onFail();
+        return;
+      }
       started.current = true;
       if (resumeSec > 0) player.currentTime = resumeSec;
       if (readyRef.current) player.play();
