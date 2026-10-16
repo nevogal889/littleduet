@@ -29,7 +29,8 @@ export type IconName =
   | 'chest'
   | 'list'
   | 'gear'
-  | 'cake';
+  | 'cake'
+  | 'google';
 
 /** One stroke family (2.4 on a 24 grid, round caps). Decorative by default: pair with visible text. */
 export function Icon({ name, size = 28, color = colors.ink }: { name: IconName; size?: number; color?: string }) {
@@ -199,6 +200,17 @@ export function Icon({ name, size = 28, color = colors.ink }: { name: IconName; 
           d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.2.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.3-2.5 1.3-2.6-.1 0-2.5-1-2.5-3.8zM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3z"
           fill={color}
         />
+      );
+      break;
+    case 'google':
+      // Google's own multicolour "G", as its sign-in branding guidelines require (colours are fixed).
+      body = (
+        <>
+          <Path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3z" fill="#4285F4" />
+          <Path d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z" fill="#34A853" />
+          <Path d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1A10 10 0 0 0 2 12c0 1.6.4 3.1 1.1 4.6L6.4 14z" fill="#FBBC05" />
+          <Path d="M12 6c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.4L6.4 10C7.2 7.7 9.4 6 12 6z" fill="#EA4335" />
+        </>
       );
       break;
   }

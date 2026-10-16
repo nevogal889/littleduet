@@ -64,6 +64,8 @@ const result = await esbuild.build({
     'process.env.EXPO_PUBLIC_VIDEO_BASE_URL': '""',
     'process.env.EXPO_PUBLIC_SUPABASE_URL': '""',
     'process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY': '""',
+    // The preview has no server: demo accounts let reviewers walk sign-up and log in.
+    'process.env.EXPO_PUBLIC_DEMO_AUTH': '"1"',
     'process.env.EXPO_PUBLIC_REVENUECAT_IOS_KEY': '""',
     'process.env.EXPO_PUBLIC_REVENUECAT_ANDROID_KEY': '""',
     'process.env.EXPO_PUBLIC_REVENUECAT_ENTITLEMENT': '"premium"',

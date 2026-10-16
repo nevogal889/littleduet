@@ -1,4 +1,5 @@
-import { authEnabled } from '../../config';
+import { authEnabled, config } from '../../config';
+import { DemoAuth } from './demo';
 import type { AuthService, SyncService } from './types';
 
 export type { AuthService, AuthUser, SyncService, SyncSnapshot, AuthResult } from './types';
@@ -21,6 +22,12 @@ class GuestOnly implements AuthService {
   async signInWithApple() {
     return { ok: false };
   }
+  async googleAvailable() {
+    return false;
+  }
+  async signInWithGoogle() {
+    return { ok: false };
+  }
   async signOut() {}
   async deleteAccount() {
     return { ok: false };
@@ -30,7 +37,7 @@ class GuestOnly implements AuthService {
   }
 }
 
-let authImpl: AuthService = new GuestOnly();
+let authImpl: AuthService = config.demoAuth ? new DemoAuth() : new GuestOnly();
 let syncImpl: SyncService | null = null;
 
 if (authEnabled) {

@@ -4,6 +4,7 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { config } from '../../config';
 import type { ChildData, ChildProfile, ClassProgress } from '../../types';
 import { appleIdentityToken, appleSignInAvailable } from './apple';
+import { googleAuthCode, googleRedirectUrl } from './google';
 import type { AuthResult, AuthService, AuthUser, SyncService, SyncSnapshot } from './types';
 
 let client: SupabaseClient | null = null;
@@ -43,6 +44,19 @@ export class SupabaseAuth implements AuthService {
     if (!token) return { ok: false };
     const { error } = await sb().auth.signInWithIdToken({ provider: 'apple', token });
     return error ? { ok: false, error: 'errors.genericBody' } : { ok: true };
+  }
+  async googleAvailable() {
+    return true;
+  }
+  async signInWithGoogle(): Promise<AuthResult> {
+    // Supabase: enable the Google provider and add littleduet://auth/callback to the redirect URLs (README).
+    const redirectTo = googleRedirectUrl();
+    const { data, error } = await sb().auth.signInWithOAuth({ provider: 'google', options: { redirectTo, skipBrowserRedirect: true } });
+    if (error || !data?.url) return { ok: false, error: 'errors.genericBody' };
+    const code = await googleAuthCode(data.url, redirectTo);
+    if (!code) return { ok: false };
+    const r = await sb().auth.exchangeCodeForSession(code);
+    return r.error ? { ok: false, error: 'errors.genericBody' } : { ok: true };
   }
   async signOut() {
     await sb().auth.signOut();

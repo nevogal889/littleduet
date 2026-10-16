@@ -64,13 +64,22 @@ Icons: `node scripts/make-icons.mjs` regenerates `assets/images/*` (needs sharp)
 | Variable | Effect when set | When empty |
 |---|---|---|
 | `EXPO_PUBLIC_VIDEO_BASE_URL` | Videos/thumbs from `<base>/<songId>/<classId>.mp4/.jpg` | Web uses `/media` (public/media); native falls back to the on-screen lesson |
-| `EXPO_PUBLIC_SUPABASE_URL`, `EXPO_PUBLIC_SUPABASE_ANON_KEY` | Accounts on: email 6-digit code + Sign in with Apple (iOS), progress sync, in-app account deletion | Guest only, accounts hidden |
+| `EXPO_PUBLIC_SUPABASE_URL`, `EXPO_PUBLIC_SUPABASE_ANON_KEY` | Accounts on: email 6-digit code + Sign in with Apple (iOS) + Google, progress sync, in-app account deletion | Guest only, accounts hidden |
 | `EXPO_PUBLIC_REVENUECAT_IOS_KEY`, `..._ANDROID_KEY` | RevenueCat on that platform (anonymous app user id) | MockPayments (also always on web) |
 | `EXPO_PUBLIC_REVENUECAT_ENTITLEMENT` | Entitlement id that unlocks all classes (default `premium`) | |
 
 Supabase: run `supabase/schema.sql` (profiles, children, progress, activity_days, RLS on every table,
 `delete_my_account()`). Children are synced as random ids + age + mode only: the nickname never leaves the device.
 Set the email template to include `{{ .Token }}` so the sign-in email carries the 6-digit code.
+Google: in Supabase › Authentication › Providers turn on Google (a Google Cloud OAuth "Web application" client ID and
+secret) and add `littleduet://auth/callback` to Authentication › URL Configuration › Redirect URLs. Sign-in opens
+Google's page in a browser session (`expo-web-browser`), so it sits behind the parental gate like every link out.
+Apple: turn on the Apple provider with the app's bundle ID.
+
+Where sign-up appears: the welcome screen has "Already have an account? Log in"; a new parent is offered the
+account right after starting the free trial (always skippable: Apple 5.1.1 forbids requiring an account for a
+subscription); Settings › Account has Create account and Log in. `EXPO_PUBLIC_DEMO_AUTH=1` turns on fake
+accounts (any 6-digit code works) for previews only; the offline web preview sets it.
 
 RevenueCat: products `littleduet_monthly` ($9.99) and `littleduet_annual` ($59.99), 7-day trial, in the
 current offering's monthly and annual packages. Prices on the paywall come from the store; the mock uses the same values.

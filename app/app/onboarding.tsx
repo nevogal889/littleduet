@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SongCover } from '../src/components/bits';
 import { SONGS } from '../src/data/catalog';
@@ -8,7 +8,8 @@ import { Icon } from '../src/components/Icon';
 import { ParentalGate } from '../src/components/ParentalGate';
 import { Paywall } from '../src/components/Paywall';
 import { BackButton, Button, Field, T } from '../src/components/ui';
-import { authEnabled } from '../src/config';
+import { accountsOn } from '../src/config';
+import { LogoLockup } from '../src/components/Logo';
 import { t, tRaw } from '../src/i18n';
 import { useApp } from '../src/state/store';
 import { card, colors, fonts, radius, shadow, space, touch, useLayout } from '../src/theme';
@@ -20,9 +21,10 @@ const TOTAL = 4;
 
 export default function Onboarding() {
   const router = useRouter();
-  const { addChild, finishOnboarding, data } = useApp();
+  const params = useLocalSearchParams<{ start?: string; returning?: string }>();
+  const { addChild, finishOnboarding, data, user } = useApp();
   const { gutter, isTablet } = useLayout();
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(params.start === '2' ? 2 : 1);
   const [name, setName] = useState('');
   const [age, setAge] = useState<number | null>(null);
   const [birthday, setBirthday] = useState<string | undefined>(undefined);
@@ -30,14 +32,15 @@ export default function Onboarding() {
   const [mode, setMode] = useState<PlayMode>('real');
   const [gatePassed, setGatePassed] = useState(false);
 
-  const finish = () => {
+  /** A trial that just started is the moment to save progress: offer the account then (always skippable). */
+  const finish = (trialStarted = false) => {
     if (!data.children.length) {
       const bd = ageOnly ? undefined : birthday;
       addChild(name.trim(), bd ? childAge({ age: 3, birthday: bd }, Date.now()) : age ?? 3, mode, bd);
     }
     finishOnboarding();
-    if (authEnabled) router.replace('/account?from=onboarding');
-    else router.replace('/');
+    router.replace('/');
+    if (trialStarted && accountsOn && !user) router.push('/account?mode=signup&from=trial' as never);
   };
 
   return (
@@ -54,6 +57,9 @@ export default function Onboarding() {
         <View style={styles.col}>
           {step === 1 ? (
             <>
+              <View style={styles.logo}>
+                <LogoLockup size={44} />
+              </View>
               <View style={styles.hero} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
                 {SONGS.slice(0, 3).map((s, i) => (
                   <View key={s.id} style={i === 1 ? styles.heroMid : styles.heroSide}>
@@ -81,11 +87,22 @@ export default function Onboarding() {
                 ))}
               </View>
               <Button testID="onb-start" label={t('onboarding.welcome.cta')} onPress={() => setStep(2)} />
+              {accountsOn ? (
+                <Pressable testID="onb-login" accessibilityRole="button" onPress={() => router.push('/account?mode=login&from=welcome' as never)} hitSlop={8} style={styles.loginRow}>
+                  <Text style={styles.loginText}>{t('auth.haveAccount')} </Text>
+                  <Text style={styles.link}>{t('auth.logIn')}</Text>
+                </Pressable>
+              ) : null}
             </>
           ) : null}
 
           {step === 2 ? (
             <>
+              {params.returning ? (
+                <T v="body" testID="onb-returning" style={styles.returning}>
+                  {t('auth.noSavedProgress')}
+                </T>
+              ) : null}
               <T v="h1" accessibilityRole="header">
                 {t('onboarding.child.title')}
               </T>
@@ -189,9 +206,9 @@ export default function Onboarding() {
 
           {step === 4 ? (
             gatePassed ? (
-              <Paywall onDone={finish} onLater={finish} childName={name.trim()} />
+              <Paywall onDone={() => finish(true)} onLater={() => finish()} childName={name.trim()} />
             ) : (
-              <ParentalGate compact purpose="paywall" onPass={() => setGatePassed(true)} onCancel={finish} cancelLabel={t('paywall.keepFree')} />
+              <ParentalGate compact purpose="paywall" onPass={() => setGatePassed(true)} onCancel={() => finish()} cancelLabel={t('paywall.keepFree')} />
             )
           ) : null}
         </View>
@@ -202,6 +219,10 @@ export default function Onboarding() {
 
 const styles = StyleSheet.create({
   link: { fontFamily: fonts.extra, fontSize: 16, color: colors.brandEdge, textDecorationLine: 'underline' },
+  logo: { alignItems: 'center', paddingTop: space.sm },
+  loginRow: { flexDirection: 'row', justifyContent: 'center', alignItems: 'center', minHeight: touch.min, flexWrap: 'wrap' },
+  loginText: { fontFamily: fonts.body, fontSize: 16, color: colors.ink },
+  returning: { backgroundColor: colors.blueSoft, padding: space.md, borderRadius: radius.md, overflow: 'hidden' },
   root: { flex: 1, backgroundColor: colors.ground },
   top: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', minHeight: 64 },
   dots: { flexDirection: 'row', gap: 6, paddingRight: space.sm },

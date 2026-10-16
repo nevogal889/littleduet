@@ -5,6 +5,8 @@ export const config = {
   supabaseAnonKey: process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || '',
   revenueCatIosKey: process.env.EXPO_PUBLIC_REVENUECAT_IOS_KEY || '',
   revenueCatAndroidKey: process.env.EXPO_PUBLIC_REVENUECAT_ANDROID_KEY || '',
+  /** Preview only: fake accounts so the sign-up screens can be tried without a server. */
+  demoAuth: process.env.EXPO_PUBLIC_DEMO_AUTH === '1',
   revenueCatEntitlement: process.env.EXPO_PUBLIC_REVENUECAT_ENTITLEMENT || 'premium',
   links: {
     privacy: 'https://littleduet.app/privacy',
@@ -18,3 +20,6 @@ export const config = {
 };
 
 export const authEnabled = !!(config.supabaseUrl && config.supabaseAnonKey);
+
+/** Whether the app offers sign-up / log in at all (real Supabase accounts, or the preview's demo accounts). */
+export const accountsOn = authEnabled || config.demoAuth;

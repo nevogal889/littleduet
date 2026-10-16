@@ -83,6 +83,20 @@ async function run(viewport, tag) {
   await id('onboarding-step-1').waitFor({ timeout: 15000 });
   await page.waitForTimeout(600);
   await shot('onboarding-welcome');
+  // Welcome: logo + "Already have an account? Log in" (demo accounts in the preview).
+  check(`${tag}: welcome shows the logo`, (await page.getByText('Little Duet', { exact: true }).count()) >= 1);
+  check(`${tag}: welcome offers log in`, (await id('onb-login').count()) === 1);
+  await id('onb-login').click();
+  await passGate();
+  await id('gate-submit').click();
+  await id('account-login').waitFor();
+  await shot('login', true);
+  check(`${tag}: log in offers Apple, Google and email code`, (await id('auth-apple').count()) === 1 && (await id('auth-google').count()) === 1 && (await id('auth-email').count()) === 1);
+  await id('auth-switch').click();
+  await id('account-signup').waitFor();
+  check(`${tag}: log in switches to sign up`, /Save your progress/.test(await id('account-title').innerText()));
+  await id('account-back').click();
+  await id('onboarding-step-1').waitFor();
   await id('onb-start').click();
   await id('onb-name').fill('Maya');
   // Required tutorial (first class in each mode): step through with Next, then continue to the class.
@@ -289,6 +303,20 @@ async function run(viewport, tag) {
   check(`${tag}: settings has piano mode + birthday`, (await id('gu-mode').count()) === 1 && /Birthday:/.test(await page.locator('[data-testid^="child-age-"]').first().innerText()));
   check(`${tag}: public-domain note lives in Settings`, (await id('public-domain-note').count()) === 1);
   check(`${tag}: About shows CC BY piano credit`, /CC BY 3\.0/.test(await id('audio-credit').innerText()));
+
+  // Sign up from Settings with an email code (demo accounts), then the card shows the signed-in state.
+  check(`${tag}: settings offers create account + log in`, (await id('settings-create-account').count()) === 1 && (await id('settings-login').count()) === 1);
+  await id('settings-create-account').click();
+  await id('account-signup').waitFor();
+  check(`${tag}: sign up is personalised`, /Save Maya's progress/.test(await id('account-title').innerText()));
+  await id('auth-email').fill('parent@example.com');
+  await id('auth-send').click();
+  await id('auth-code').fill('123456');
+  await shot('signup-code');
+  await id('auth-verify').click();
+  await id('settings').waitFor();
+  await page.waitForTimeout(300);
+  check(`${tag}: signed in after the email code`, (await page.getByText('Signed in as parent@example.com').count()) === 1);
 
   const real = errors.filter((e) => !/favicon|Failed to load resource/.test(e));
   check(`${tag}: no page errors`, real.length === 0, real.slice(0, 3).join(' | '));

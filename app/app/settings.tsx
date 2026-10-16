@@ -9,7 +9,7 @@ import { Pill } from '../src/components/bits';
 import { BackButton, Button, Card, Field, Screen, SectionTitle, Segmented, T } from '../src/components/ui';
 import { BirthdayPicker } from '../src/components/BirthdayPicker';
 import { ageOn, childAge, parseDay } from '../src/lib/birthday';
-import { authEnabled, config } from '../src/config';
+import { accountsOn, config } from '../src/config';
 import { t, tRaw } from '../src/i18n';
 import { isEntitled } from '../src/lib/entitlement';
 import { useApp } from '../src/state/store';
@@ -282,7 +282,7 @@ export default function Settings() {
 
       <SectionTitle>{t('grownups.sections.account')}</SectionTitle>
       <Card style={styles.card}>
-        {!authEnabled ? (
+        {!accountsOn ? (
           <>
             <T v="h3">{t('grownups.account.guestTitle')}</T>
             <T v="body">{t('grownups.account.offBody')}</T>
@@ -299,7 +299,8 @@ export default function Settings() {
           <>
             <T v="h3">{t('grownups.account.guestTitle')}</T>
             <T v="body">{t('grownups.account.guestBody')}</T>
-            <Button variant="secondary" label={t('grownups.account.create')} onPress={() => router.push('/account' as never)} />
+            <Button testID="settings-create-account" variant="secondary" label={t('auth.createAccount')} onPress={() => router.push('/account?mode=signup&from=settings' as never)} />
+            <Button testID="settings-login" variant="ghost" size="md" label={t('auth.logIn')} onPress={() => router.push('/account?mode=login&from=settings' as never)} />
           </>
         )}
       </Card>
