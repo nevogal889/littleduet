@@ -2,41 +2,55 @@
  "songId": "moonlight-au-clair-de-la-lune",
  "title": "By the Moonlight (Au Clair de la Lune)",
  "ageGroup": "4-5",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and listening memory, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices a new hand home, counting three knocks, steps and leaps, long notes and a tune that comes back, with an old French moonlight song.",
  "skillMap": [
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 1.0,
+   "classes": 3,
+   "total": 9
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.33,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.33,
+   "classes": 1,
+   "total": 9
+  },
   {
    "id": "fingers",
    "label": "Finger control",
-   "value": 1.0,
-   "classes": 4,
+   "value": 0.33,
+   "classes": 1,
    "total": 9
   },
   {
    "id": "form",
    "label": "Song shape",
-   "value": 0.5,
-   "classes": 2,
-   "total": 9
-  },
-  {
-   "id": "listening",
-   "label": "Listening memory",
-   "value": 0.25,
+   "value": 0.33,
    "classes": 1,
    "total": 9
   },
   {
-   "id": "space",
-   "label": "Keyboard map",
-   "value": 0.25,
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.33,
    "classes": 1,
    "total": 9
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.25,
+   "value": 0.33,
    "classes": 1,
    "total": 9
   }
@@ -44,36 +58,65 @@
  "icon": "moon",
  "key": "F",
  "timeSignature": "4/4",
- "totalSec": 1930,
+ "totalSec": 1949,
  "classes": [
   {
    "id": "moonlight-au-clair-de-la-lune-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "Thumb on D, by the moon",
+   "goal": "Hear the song and rest five fingers on the five keys from D to A.",
    "type": "listen",
-   "durationSec": 221,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 192,
+   "parentTip": "Point to the two black keys; help your child rest the thumb on D, between them.",
    "video": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c01.mp4",
    "thumb": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "By the Moonlight (Au Clair de la Lune)",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: Thumb on D, by the moon",
      "durationSec": 8,
      "voice": "Hello again. It's By the Moonlight (Au Clair de la Lune) time. Grown-up, sit close to help.",
      "voiceId": "3b68069e77ac2e21",
      "voiceSec": 6.91
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 69,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Sway slowly, like moonlight",
+     "parentCue": "then find D, between the two black keys",
+     "durationSec": 8,
+     "voice": "Sway slowly, like moonlight. Grown-up, then find D, between the two black keys.",
+     "voiceId": "75165f87859be73b",
+     "voiceSec": 6.69
     },
     {
      "kind": "say",
@@ -105,6 +148,45 @@
      "voice": "Thumb on D. Curve your fingers, like holding a little ball.",
      "voiceId": "5b496bfeef100fb1",
      "voiceSec": 4.07
+    },
+    {
+     "kind": "your_turn",
+     "caption": "One finger, one key",
+     "parentCue": "Say the finger numbers together, one to five",
+     "bpm": 66,
+     "leadInSec": 4.36,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 20,
+     "voice": "Your turn. One finger on each key, one by one.",
+     "voiceId": "be3fc90a0fdacab7",
+     "voiceSec": 3.96
     },
     {
      "kind": "listen",
@@ -739,1058 +821,6 @@
     },
     {
      "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 92,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "By"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "shin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "moon"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "light"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "good"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "friend"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "Pier"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "rot"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "Lend"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "your"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pen"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "write"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "with"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "just"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "word"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "or"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "so"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "My"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "can"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "dle"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "is"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "out"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "now"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "fire"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "is"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "low"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "O"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "pen"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "up"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "your"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "door"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "friend"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "let"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "me"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "Pier"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "rot"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "By the shining moonlight",
-       "from": 0
-      },
-      {
-       "lyric": "my good friend Pierrot",
-       "from": 6
-      },
-      {
-       "lyric": "Lend your pen to write with",
-       "from": 11
-      },
-      {
-       "lyric": "just a word or so",
-       "from": 17
-      },
-      {
-       "lyric": "My candle is out now",
-       "from": 22
-      },
-      {
-       "lyric": "and the fire is low",
-       "from": 28
-      },
-      {
-       "lyric": "Open up your door, friend",
-       "from": 33
-      },
-      {
-       "lyric": "let me in, Pierrot",
-       "from": 39
-      }
-     ],
-     "durationSec": 47,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
-     "voiceSec": 2.66
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 74,
-     "leadInSec": 3.93,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "By"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "shin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "moon"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "light"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "good"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "friend"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "Pier"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "rot"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "Lend"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "your"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pen"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "write"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "with"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "By the shining moonlight",
-       "from": 0
-      },
-      {
-       "lyric": "my good friend Pierrot",
-       "from": 6
-      },
-      {
-       "lyric": "Lend your pen to write with",
-       "from": 11
-      }
-     ],
-     "durationSec": 39,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    }
-   ],
-   "skill": {
-    "primary": "listening",
-    "secondary": [
-     "beat",
-     "together"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
-   },
-   "parentPrompt": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
-  },
-  {
-   "id": "moonlight-au-clair-de-la-lune-c02",
-   "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
-   "type": "phrase",
-   "durationSec": 229,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "video": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c02.mp4",
-   "thumb": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c02.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "By the Moonlight (Au Clair de la Lune)",
-     "subcaption": "Class 2: Part 1",
-     "durationSec": 8,
-     "voice": "Hello again. It's By the Moonlight (Au Clair de la Lune) time. Grown-up, sit close to help.",
-     "voiceId": "3b68069e77ac2e21",
-     "voiceSec": 6.91
-    },
-    {
-     "kind": "say",
-     "caption": "Today: By the shining moonlight",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6,
-     "voice": "Today we learn a new bit: By the shining moonlight.",
-     "voiceId": "178a7e4b00c90293",
-     "voiceSec": 3.62
-    },
-    {
-     "kind": "say",
-     "caption": "This part comes back 3 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7,
-     "voice": "This part comes back three times. Listen for it.",
-     "voiceId": "62e49033797bfc87",
-     "voiceSec": 3.7
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch the lights",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 69,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "By"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "shin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "moon"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "light"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "good"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "friend"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "Pier"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "rot"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "By the shining moonlight",
-       "from": 0
-      },
-      {
-       "lyric": "my good friend Pierrot",
-       "from": 6
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Point to each key if needed",
-     "bpm": 69,
-     "leadInSec": 3.93,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "By"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "shin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "moon"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "light"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "good"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "friend"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "Pier"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "rot"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "By the shining moonlight",
-       "from": 0
-      },
-      {
-       "lyric": "my good friend Pierrot",
-       "from": 6
-      }
-     ],
-     "durationSec": 29,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 69,
-     "leadInSec": 3.3,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "By"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "shin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "moon"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "light"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "By the shining moonlight",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 69,
-     "leadInSec": 3.93,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "By"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "shin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "moon"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "light"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "By the shining moonlight",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 69,
-     "leadInSec": 3.3,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "good"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "friend"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "Pier"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "rot"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "my good friend Pierrot",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 69,
-     "leadInSec": 3.93,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "good"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "friend"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "Pier"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "rot"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "my good friend Pierrot",
-       "from": 0
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.93,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "By"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "shin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "moon"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "light"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "good"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "friend"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "Pier"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "rot"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "By the shining moonlight",
-       "from": 0
-      },
-      {
-       "lyric": "my good friend Pierrot",
-       "from": 6
-      }
-     ],
-     "durationSec": 29,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
      "caption": "The start once more",
      "parentCue": "Play the beginning again",
      "durationSec": 6,
@@ -1890,43 +920,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Your hand found home!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Your hand found home.",
+     "voiceId": "a2d7ea9dd5a6de6a",
+     "voiceSec": 1.59
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "space",
     "secondary": [
-     "form"
+     "listening",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Spatial mapping with a landmark",
+    "parentLine": "Using the two black keys to find where the hand lives"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Point to the two black keys; help your child rest the thumb on D, between them.",
+   "childAction": "Put your thumb on D, in the middle of two black keys.",
+   "bridge": "D sits snug between the two black keys; the other fingers line up to its right.",
+   "celebrate": "Today you practiced: finding a new hand home from D."
   },
   {
-   "id": "moonlight-au-clair-de-la-lune-c03",
-   "index": 3,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "id": "moonlight-au-clair-de-la-lune-c02",
+   "index": 2,
+   "title": "Knock, knock, knock",
+   "goal": "Play the first line: three knocks on F, then a climb up and back.",
    "type": "phrase",
-   "durationSec": 214,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "video": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c03.mp4",
-   "thumb": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c03.jpg",
+   "durationSec": 200,
+   "parentTip": "Knock three times on the piano lid together, then play the three Fs.",
+   "video": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c02.mp4",
+   "thumb": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "By the Moonlight (Au Clair de la Lune)",
-     "subcaption": "Class 3: Part 2",
+     "subcaption": "Class 2: Knock, knock, knock",
      "durationSec": 8,
      "voice": "Hello again. It's By the Moonlight (Au Clair de la Lune) time. Grown-up, sit close to help.",
      "voiceId": "3b68069e77ac2e21",
@@ -1934,19 +965,678 @@
     },
     {
      "kind": "say",
-     "caption": "Today: My candle is out now",
-     "parentCue": "Listen first, then copy",
+     "caption": "Knock, knock, knock",
+     "parentCue": "Knock three times on the lid together",
      "durationSec": 7,
-     "voice": "Today we learn a new bit: My candle is out now.",
-     "voiceId": "ef635fc516c5ae39",
-     "voiceSec": 4.05
+     "voice": "Knock, knock, knock. Grown-up, knock three times on the lid together.",
+     "voiceId": "de8e78b4d39255c0",
+     "voiceSec": 5.25
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Knock, knock, knock, then climb",
+     "parentCue": "Count one, two, three on the Fs",
+     "bpm": 66,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 69,
-     "leadInSec": 3.26,
+     "leadInSec": 2.78,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "By"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "shin"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "moon"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "light"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "good"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "friend"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "Pier"
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "f": 3,
+       "s": "rot"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "By the shining moonlight",
+       "from": 0
+      },
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 6
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Point to each key if needed",
+     "bpm": 69,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "By"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "shin"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "moon"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "light"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "good"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "friend"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "Pier"
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "f": 3,
+       "s": "rot"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "By the shining moonlight",
+       "from": 0
+      },
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 6
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 69,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "By"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "shin"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "moon"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "light"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "By the shining moonlight",
+       "from": 0
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 69,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "By"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "shin"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "moon"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "light"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "By the shining moonlight",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 69,
+     "leadInSec": 2.32,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "good"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "friend"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "Pier"
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "f": 3,
+       "s": "rot"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 0
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 69,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "good"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "friend"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "Pier"
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "f": 3,
+       "s": "rot"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 0
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "One more time.",
+     "voiceId": "b4c800d6a3120ebd",
+     "voiceSec": 1.34
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 69,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "By"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "shin"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "moon"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "light"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "good"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "friend"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "Pier"
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "f": 3,
+       "s": "rot"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "By the shining moonlight",
+       "from": 0
+      },
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 6
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "praise",
+     "caption": "Three knocks, well done!",
+     "durationSec": 5,
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
+    }
+   ],
+   "skill": {
+    "primary": "counting",
+    "secondary": [
+     "fingers",
+     "patterns"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Subitizing and cardinality (three)",
+    "parentLine": "Hearing 'three' at once: knock, knock, knock"
+   },
+   "parentPrompt": "Knock three times on the piano lid together, then play the three Fs.",
+   "childAction": "Finger 3 knocks F three times, then climbs to A and back.",
+   "bridge": "Three knocks on the friend's door, then tiptoe up the steps and wait.",
+   "celebrate": "Today you practiced: hearing and playing three."
+  },
+  {
+   "id": "moonlight-au-clair-de-la-lune-c03",
+   "index": 3,
+   "title": "Skip up, step home",
+   "goal": "Play the second line: skip from F up to A, then step down home to F.",
+   "type": "phrase",
+   "durationSec": 197,
+   "parentTip": "Point to G and say 'skip over it', then 'step, step' on the way home.",
+   "video": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c03.mp4",
+   "thumb": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c03.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "By the Moonlight (Au Clair de la Lune)",
+     "subcaption": "Class 3: Skip up, step home",
+     "durationSec": 8,
+     "voice": "Hello again. It's By the Moonlight (Au Clair de la Lune) time. Grown-up, sit close to help.",
+     "voiceId": "3b68069e77ac2e21",
+     "voiceSec": 6.91
+    },
+    {
+     "kind": "say",
+     "caption": "Skip up, step home",
+     "parentCue": "Point to G: this is the key we skip",
+     "durationSec": 7,
+     "voice": "Skip up, step home. Grown-up, point to G: this is the key we skip.",
+     "voiceId": "0f8e3c349048f366",
+     "voiceSec": 5.87
+    },
+    {
+     "kind": "your_turn",
+     "caption": "F, skip to A, step home",
+     "parentCue": "Say 'skip!' on A, 'home' on F",
+     "bpm": 66,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "f": 3
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the lights",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 69,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -2026,9 +1716,9 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -2134,7 +1824,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 69,
-     "leadInSec": 3.79,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "G4",
@@ -2179,17 +1869,17 @@
        "from": 0
       }
      ],
-     "durationSec": 13,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 11,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 69,
-     "leadInSec": 3.98,
+     "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
       {
@@ -2235,18 +1925,18 @@
        "from": 0
       }
      ],
-     "durationSec": 18,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "durationSec": 17,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -2262,7 +1952,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 69,
-     "leadInSec": 3.79,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "G4",
@@ -2301,17 +1991,17 @@
        "from": 0
       }
      ],
-     "durationSec": 13,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 11,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 69,
-     "leadInSec": 3.98,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2352,124 +2042,17 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "My"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "can"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "dle"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "is"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "out"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "now"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "fire"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "is"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "low"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "My candle is out now",
-       "from": 0
-      },
-      {
-       "lyric": "and the fire is low",
-       "from": 6
-      }
-     ],
-     "durationSec": 29,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -2485,7 +2068,7 @@
      "caption": "Your turn!",
      "parentCue": "The first part again",
      "bpm": 74,
-     "leadInSec": 3.98,
+     "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
       {
@@ -2523,71 +2106,135 @@
        "d": 2,
        "f": 4,
        "s": "light"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "good"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "friend"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "Pier"
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "f": 3,
+       "s": "rot"
       }
      ],
      "lines": [
       {
        "lyric": "By the shining moonlight",
        "from": 0
+      },
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 6
       }
      ],
-     "durationSec": 17,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "durationSec": 27,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great skip, home safe!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "space",
     "secondary": [
-     "form"
+     "fingers",
+     "pitch"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Interval distance: step versus skip",
+    "parentLine": "Jumping over one key, then walking back next door"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Point to G and say 'skip over it', then 'step, step' on the way home.",
+   "childAction": "Play F, skip to A, then G, G, home to F.",
+   "bridge": "A skip hops over a key like a puddle; a step goes next door.",
+   "celebrate": "Today you practiced: telling a step from a skip."
   },
   {
    "id": "moonlight-au-clair-de-la-lune-c04",
    "index": 4,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "The knock tune comes back",
+   "goal": "Play the whole song slowly and spot the tune that returns three times.",
    "type": "put-together",
-   "durationSec": 220,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 270,
+   "parentTip": "Each time the knock tune starts, hold up one more finger and count aloud.",
    "video": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c04.mp4",
    "thumb": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "By the Moonlight (Au Clair de la Lune)",
-     "subcaption": "Class 4: Put it together",
+     "subcaption": "Class 4: The knock tune comes back",
      "durationSec": 9,
      "voice": "Hi there. Our song today is By the Moonlight (Au Clair de la Lune). Let's warm up our fingers.",
      "voiceId": "86be03c707f434fc",
      "voiceSec": 7.49
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 69,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
+     "caption": "The knock tune comes back",
+     "parentCue": "Hold up a finger each time the knocks return",
      "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "voice": "The knock tune comes back. Grown-up, hold up a finger each time the knocks return.",
+     "voiceId": "85822b46e782e025",
+     "voiceSec": 5.94
     },
     {
      "kind": "say",
@@ -2621,11 +2268,54 @@
      "voiceSec": 2.14
     },
     {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 74,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
+    },
+    {
      "kind": "demo",
-     "caption": "Watch the whole song",
+     "caption": "Watch the first part",
      "parentCue": "Watch together",
      "bpm": 69,
-     "leadInSec": 2.51,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "F4",
@@ -2758,7 +2448,202 @@
        "d": 4,
        "f": 3,
        "s": "so"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "By the shining moonlight",
+       "from": 0
       },
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 6
+      },
+      {
+       "lyric": "Lend your pen to write with",
+       "from": 11
+      },
+      {
+       "lyric": "just a word or so",
+       "from": 17
+      }
+     ],
+     "durationSec": 33,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 69,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "By"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "shin"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "moon"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "light"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "good"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "friend"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "Pier"
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "f": 3,
+       "s": "rot"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "Lend"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "your"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "pen"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "write"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "with"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "just"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "a"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "word"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "or"
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "f": 3,
+       "s": "so"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "By the shining moonlight",
+       "from": 0
+      },
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 6
+      },
+      {
+       "lyric": "Lend your pen to write with",
+       "from": 11
+      },
+      {
+       "lyric": "just a word or so",
+       "from": 17
+      }
+     ],
+     "durationSec": 53,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 69,
+     "leadInSec": 2.42,
+     "notes": [
       {
        "p": "G4",
        "d": 1,
@@ -2894,42 +2779,26 @@
      ],
      "lines": [
       {
-       "lyric": "By the shining moonlight",
+       "lyric": "My candle is out now",
        "from": 0
       },
       {
-       "lyric": "my good friend Pierrot",
+       "lyric": "and the fire is low",
        "from": 6
       },
       {
-       "lyric": "Lend your pen to write with",
+       "lyric": "Open up your door, friend",
        "from": 11
       },
       {
-       "lyric": "just a word or so",
-       "from": 17
-      },
-      {
-       "lyric": "My candle is out now",
-       "from": 22
-      },
-      {
-       "lyric": "and the fire is low",
-       "from": 28
-      },
-      {
-       "lyric": "Open up your door, friend",
-       "from": 33
-      },
-      {
        "lyric": "let me in, Pierrot",
-       "from": 39
+       "from": 17
       }
      ],
-     "durationSec": 60,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 32,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -3244,143 +3113,45 @@
      "voiceSec": 2.58
     },
     {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 74,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "By"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "shin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "moon"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "light"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "good"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "friend"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "Pier"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "rot"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "By the shining moonlight",
-       "from": 0
-      },
-      {
-       "lyric": "my good friend Pierrot",
-       "from": 6
-      }
-     ],
-     "durationSec": 27,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You spotted it coming back!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
-     "patterns"
+     "patterns",
+     "counting"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Pattern repetition (A-A-B-A form)",
+    "parentLine": "One tune comes back, with a different part in the middle"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Each time the knock tune starts, hold up one more finger and count aloud.",
+   "childAction": "Play slowly and say the number each time the knocks return.",
+   "bridge": "Knock tune, knock tune, a new middle part, then the knock tune again.",
+   "celebrate": "Today you practiced: finding the part of a song that returns."
   },
   {
    "id": "moonlight-au-clair-de-la-lune-c05",
    "index": 5,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Candle out: a big leap",
+   "goal": "Practise the middle line slowly, with its big leap from G down to D.",
    "type": "review",
-   "durationSec": 193,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 184,
+   "parentTip": "Show finger 4 on G and the thumb on D; you play the last low C.",
    "video": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c05.mp4",
    "thumb": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "By the Moonlight (Au Clair de la Lune)",
-     "subcaption": "Class 5: Tricky spots",
+     "subcaption": "Class 5: Candle out: a big leap",
      "durationSec": 9,
      "voice": "Hi there. Our song today is By the Moonlight (Au Clair de la Lune). Let's warm up our fingers.",
      "voiceId": "86be03c707f434fc",
@@ -3388,21 +3159,90 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
-     "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "caption": "Watch slowly",
+     "parentCue": "Show your child finger 4 and the thumb",
+     "durationSec": 6,
+     "voice": "Watch me, nice and slow.",
+     "voiceId": "54fd49a18bfae05f",
+     "voiceSec": 1.85
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "G, G, G, G, leap to D",
+     "parentCue": "Say 'leap!' as the thumb plays D",
+     "bpm": 60,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 1
+      }
+     ],
+     "durationSec": 20,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Walk down: G, F, E, D",
+     "parentCue": "Then you play the low C to finish",
+     "bpm": 60,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 1
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "demo",
@@ -3668,9 +3508,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -3767,144 +3607,44 @@
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "What a brave leap!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
-     "caption": "Nearly full speed",
-     "parentCue": "Only speed up if it feels easy",
-     "durationSec": 6,
-     "voice": "Nearly full speed now.",
-     "voiceId": "9c534e859be017a5",
-     "voiceSec": 1.72
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Keep fingers close to the keys",
-     "bpm": 83,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "fire"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "is"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "low"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "good"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "friend"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "Pier"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "rot"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "and the fire is low",
-       "from": 0
-      },
-      {
-       "lyric": "my good friend Pierrot",
-       "from": 5
-      }
-     ],
-     "durationSec": 25,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "patterns"
+     "space",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Interval distance: leap",
+    "parentLine": "Jumping far, from one end of the hand to the other"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Show finger 4 on G and the thumb on D; you play the last low C.",
+   "childAction": "Four Gs, then the thumb leaps down to D.",
+   "bridge": "The candle goes out: the tune jumps down from G to D, then walks lower.",
+   "celebrate": "Today you practiced: a big leap with your fingers."
   },
   {
    "id": "moonlight-au-clair-de-la-lune-c06",
    "index": 6,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
+   "title": "Hold the moon note",
+   "goal": "Play the whole song slowly and hold each long note for its full count.",
    "type": "phrase",
-   "durationSec": 203,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
+   "durationSec": 267,
+   "parentTip": "Count the long notes aloud: 'one, two' for A and G, 'one, two, three, four' for F.",
    "video": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c06.mp4",
    "thumb": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "By the Moonlight (Au Clair de la Lune)",
-     "subcaption": "Class 6: Slow and steady",
+     "subcaption": "Class 6: Hold the moon note",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today we play By the Moonlight (Au Clair de la Lune). Grown-up, sit beside the keys.",
      "voiceId": "7499d08a9e757b39",
@@ -3912,19 +3652,57 @@
     },
     {
      "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
+     "caption": "Hold the moon note",
+     "parentCue": "Count the long notes out loud together",
      "durationSec": 6,
-     "voice": "Slow and steady practice today.",
-     "voiceId": "aeb4883c0cf279a5",
-     "voiceSec": 2.42
+     "voice": "Hold the moon note. Grown-up, count the long notes out loud together.",
+     "voiceId": "66171df383e7ff63",
+     "voiceSec": 4.76
+    },
+    {
+     "kind": "beat",
+     "caption": "Hold F for four",
+     "parentCue": "Count 1, 2, 3, 4 on the long F",
+     "bpm": 66,
+     "leadInSec": 3.93,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "A long F. Tap and count with me, one to four.",
+     "voiceId": "43ebb663d1be55d3",
+     "voiceSec": 3.53
     },
     {
      "kind": "demo",
-     "caption": "Watch",
+     "caption": "Watch the first part",
      "parentCue": "Watch the finger numbers",
      "bpm": 64,
-     "leadInSec": 3.79,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "F4",
@@ -4057,7 +3835,202 @@
        "d": 4,
        "f": 3,
        "s": "so"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "By the shining moonlight",
+       "from": 0
       },
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 6
+      },
+      {
+       "lyric": "Lend your pen to write with",
+       "from": 11
+      },
+      {
+       "lyric": "just a word or so",
+       "from": 17
+      }
+     ],
+     "durationSec": 35,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 64,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "By"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "shin"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "moon"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "light"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "good"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "friend"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "Pier"
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "f": 3,
+       "s": "rot"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "Lend"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "your"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "pen"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "write"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "with"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "just"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "a"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "word"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "or"
+      },
+      {
+       "p": "F4",
+       "d": 4,
+       "f": 3,
+       "s": "so"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "By the shining moonlight",
+       "from": 0
+      },
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 6
+      },
+      {
+       "lyric": "Lend your pen to write with",
+       "from": 11
+      },
+      {
+       "lyric": "just a word or so",
+       "from": 17
+      }
+     ],
+     "durationSec": 57,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 64,
+     "leadInSec": 3.38,
+     "notes": [
       {
        "p": "G4",
        "d": 1,
@@ -4193,42 +4166,26 @@
      ],
      "lines": [
       {
-       "lyric": "By the shining moonlight",
+       "lyric": "My candle is out now",
        "from": 0
       },
       {
-       "lyric": "my good friend Pierrot",
+       "lyric": "and the fire is low",
        "from": 6
       },
       {
-       "lyric": "Lend your pen to write with",
+       "lyric": "Open up your door, friend",
        "from": 11
       },
       {
-       "lyric": "just a word or so",
-       "from": 17
-      },
-      {
-       "lyric": "My candle is out now",
-       "from": 22
-      },
-      {
-       "lyric": "and the fire is low",
-       "from": 28
-      },
-      {
-       "lyric": "Open up your door, friend",
-       "from": 33
-      },
-      {
        "lyric": "let me in, Pierrot",
-       "from": 39
+       "from": 17
       }
      ],
-     "durationSec": 66,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 35,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -4544,64 +4501,86 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "You held it so long!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 5,
-     "voice": "Shake, shake, shake your hands.",
-     "voiceId": "69041444bf86c15c",
-     "voiceSec": 2.85
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "beat",
     "secondary": [
-     "beat"
+     "counting",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Tempo control",
-    "parentLine": "Doing a task slowly and evenly"
+    "concept": "Ratio 2:1 (long and longer)",
+    "parentLine": "Some notes last two beats, the last one lasts four"
    },
-   "parentPrompt": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "childAction": "Play the tune slowly, every note even.",
-   "bridge": "Slow fingers, like a cat walking on tiptoe.",
-   "celebrate": "Today you practiced careful fingers and keeping a steady beat."
+   "parentPrompt": "Count the long notes aloud: 'one, two' for A and G, 'one, two, three, four' for F.",
+   "childAction": "Keep your finger down on long notes while you count.",
+   "bridge": "Long notes are the moon resting: press, keep holding, and count.",
+   "celebrate": "Today you practiced: holding long notes for their full count."
   },
   {
    "id": "moonlight-au-clair-de-la-lune-c07",
    "index": 7,
-   "title": "Same song, up high",
-   "goal": "Play the song in a new place with the same fingers",
+   "title": "Moon up high",
+   "goal": "Move the hand to a higher D and play the song with the same fingers.",
    "type": "octave",
-   "durationSec": 230,
-   "parentTip": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
+   "durationSec": 259,
+   "parentTip": "Help your child find the next D to the right, then ask which sounds nicer.",
    "video": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c07.mp4",
    "thumb": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "By the Moonlight (Au Clair de la Lune)",
-     "subcaption": "Class 7: Same song, up high",
+     "subcaption": "Class 7: Moon up high",
      "durationSec": 8,
      "voice": "Hello, friends. Today it's By the Moonlight (Au Clair de la Lune). Sit in the middle of the piano.",
      "voiceId": "e637cb2e4cd9158b",
      "voiceSec": 6.55
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 69,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Watch: same song, up high",
+     "parentCue": "Find the next two black keys to the right",
+     "durationSec": 7,
+     "voice": "Watch. Same song, up high.",
+     "voiceId": "8a53251b1d6c839e",
+     "voiceSec": 2.8
     },
     {
      "kind": "say",
@@ -4635,20 +4614,55 @@
      "voiceSec": 2.49
     },
     {
-     "kind": "say",
-     "caption": "Same fingers, new place",
-     "parentCue": "Fingers keep the same numbers",
-     "durationSec": 6,
-     "voice": "Same fingers, new place.",
-     "voiceId": "f1984f5f115ff332",
-     "voiceSec": 2.38
+     "kind": "your_turn",
+     "caption": "Knock, knock, knock, up high",
+     "parentCue": "Whisper the words, like a night-time secret",
+     "bpm": 66,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "A5",
+       "d": 2,
+       "f": 5
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "demo",
-     "caption": "Watch: same song, up high",
+     "caption": "Watch the first part",
      "parentCue": "Watch the hand move",
      "bpm": 74,
-     "leadInSec": 3.2,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "F5",
@@ -4781,7 +4795,202 @@
        "d": 4,
        "f": 3,
        "s": "so"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "By the shining moonlight",
+       "from": 0
       },
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 6
+      },
+      {
+       "lyric": "Lend your pen to write with",
+       "from": 11
+      },
+      {
+       "lyric": "just a word or so",
+       "from": 17
+      }
+     ],
+     "durationSec": 31,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 74,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 3,
+       "s": "By"
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 3,
+       "s": "shin"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "A5",
+       "d": 2,
+       "f": 5,
+       "s": "moon"
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4,
+       "s": "light"
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "f": 5,
+       "s": "good"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4,
+       "s": "friend"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4,
+       "s": "Pier"
+      },
+      {
+       "p": "F5",
+       "d": 4,
+       "f": 3,
+       "s": "rot"
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 3,
+       "s": "Lend"
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 3,
+       "s": "your"
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 3,
+       "s": "pen"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4,
+       "s": "to"
+      },
+      {
+       "p": "A5",
+       "d": 2,
+       "f": 5,
+       "s": "write"
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 4,
+       "s": "with"
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 3,
+       "s": "just"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "f": 5,
+       "s": "a"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4,
+       "s": "word"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 4,
+       "s": "or"
+      },
+      {
+       "p": "F5",
+       "d": 4,
+       "f": 3,
+       "s": "so"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "By the shining moonlight",
+       "from": 0
+      },
+      {
+       "lyric": "my good friend Pierrot",
+       "from": 6
+      },
+      {
+       "lyric": "Lend your pen to write with",
+       "from": 11
+      },
+      {
+       "lyric": "just a word or so",
+       "from": 17
+      }
+     ],
+     "durationSec": 49,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the hand move",
+     "bpm": 74,
+     "leadInSec": 2.21,
+     "notes": [
       {
        "p": "G5",
        "d": 1,
@@ -4917,42 +5126,26 @@
      ],
      "lines": [
       {
-       "lyric": "By the shining moonlight",
+       "lyric": "My candle is out now",
        "from": 0
       },
       {
-       "lyric": "my good friend Pierrot",
+       "lyric": "and the fire is low",
        "from": 6
       },
       {
-       "lyric": "Lend your pen to write with",
+       "lyric": "Open up your door, friend",
        "from": 11
       },
       {
-       "lyric": "just a word or so",
-       "from": 17
-      },
-      {
-       "lyric": "My candle is out now",
-       "from": 22
-      },
-      {
-       "lyric": "and the fire is low",
-       "from": 28
-      },
-      {
-       "lyric": "Open up your door, friend",
-       "from": 33
-      },
-      {
        "lyric": "let me in, Pierrot",
-       "from": 39
+       "from": 17
       }
      ],
-     "durationSec": 57,
-     "voice": "Watch. Same song, up high.",
-     "voiceId": "8a53251b1d6c839e",
-     "voiceSec": 2.8
+     "durationSec": 30,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
@@ -5267,217 +5460,45 @@
      "voiceSec": 1.75
     },
     {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 74,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "By"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "shin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "moon"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "light"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "good"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "friend"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "Pier"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "rot"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "Lend"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "your"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pen"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "write"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "with"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "just"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "word"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "or"
-      },
-      {
-       "p": "F4",
-       "d": 4,
-       "f": 3,
-       "s": "so"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "By the shining moonlight",
-       "from": 0
-      },
-      {
-       "lyric": "my good friend Pierrot",
-       "from": 6
-      },
-      {
-       "lyric": "Lend your pen to write with",
-       "from": 11
-      },
-      {
-       "lyric": "just a word or so",
-       "from": 17
-      }
-     ],
-     "durationSec": 49,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Same song, new home!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
     "primary": "space",
     "secondary": [
-     "pitch"
+     "pitch",
+     "fingers"
     ]
    },
    "mathTarget": {
     "concept": "Translation (same shape, new place)",
-    "parentLine": "Finding the same note higher or lower on the keyboard"
+    "parentLine": "The same song and fingers, moved to a higher home"
    },
-   "parentPrompt": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
-   "childAction": "Play the same note in its high and low homes.",
-   "bridge": "Every note has a family: same name, a different house.",
-   "celebrate": "Today you practiced finding the way on the keys and hearing high and low."
+   "parentPrompt": "Help your child find the next D to the right, then ask which sounds nicer.",
+   "childAction": "Move your thumb up to high D and play the same notes.",
+   "bridge": "Same hand shape, a new house to the right, up near the moon.",
+   "celebrate": "Today you practiced: moving a song to a new place."
   },
   {
    "id": "moonlight-au-clair-de-la-lune-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Walk in the moonlight",
+   "goal": "Play the whole song along with the music and keep going.",
    "type": "play-along",
-   "durationSec": 204,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 197,
+   "parentTip": "Sing the words along and nod on each beat; if a note slips, keep going.",
    "video": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c08.mp4",
    "thumb": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "By the Moonlight (Au Clair de la Lune)",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Walk in the moonlight",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today we play By the Moonlight (Au Clair de la Lune). Grown-up, sit beside the keys.",
      "voiceId": "7499d08a9e757b39",
@@ -5485,21 +5506,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
-     "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "caption": "Play along",
+     "parentCue": "Sing the words softly with your child",
+     "durationSec": 6,
+     "voice": "Play along. Grown-up, sing the words softly with your child.",
+     "voiceId": "5feab1170c0c7b11",
+     "voiceSec": 4.51
     },
     {
      "kind": "together",
@@ -6137,7 +6149,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 92,
-     "leadInSec": 2.47,
+     "leadInSec": 3.0,
      "notes": [
       {
        "p": "F4",
@@ -6438,18 +6450,18 @@
        "from": 39
       }
      ],
-     "durationSec": 46,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 47,
+     "voice": "Together time. Big smiles.",
+     "voiceId": "a441a4bce0e6e1e6",
+     "voiceSec": 2.6
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -6518,43 +6530,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept going together!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat",
+     "expression"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Entrainment (matching a tempo)",
+    "parentLine": "Keeping your playing in time with the music"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Sing the words along and nod on each beat; if a note slips, keep going.",
+   "childAction": "Play with the music and keep going to the end.",
+   "bridge": "Walk with the music to the friend's door, step by step.",
+   "celebrate": "Today you practiced: keeping in time with the music."
   },
   {
    "id": "moonlight-au-clair-de-la-lune-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Moonlight concert",
+   "goal": "Play the whole song softly for teddy, from first note to last.",
    "type": "concert",
-   "durationSec": 216,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 183,
+   "parentTip": "Dim the lights a little, sit teddy in front, then clap and bow together.",
    "video": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c09.mp4",
    "thumb": "moonlight-au-clair-de-la-lune/moonlight-au-clair-de-la-lune-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "By the Moonlight (Au Clair de la Lune)",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: Moonlight concert",
      "durationSec": 8,
      "voice": "Hello, friends. Today it's By the Moonlight (Au Clair de la Lune). Sit in the middle of the piano.",
      "voiceId": "e637cb2e4cd9158b",
@@ -6562,21 +6575,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
+     "caption": "Play the whole song!",
+     "parentCue": "Sit teddy in front and announce the song",
      "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "voice": "Now the whole song.",
+     "voiceId": "6464c9862221b967",
+     "voiceSec": 2.02
     },
     {
      "kind": "together",
@@ -7221,9 +7225,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -7547,101 +7551,28 @@
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "Bravo, soft and lovely!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 74,
-     "leadInSec": 3.24,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "By"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "shin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "moon"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "light"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "By the shining moonlight",
-       "from": 0
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
-    },
-    {
-     "kind": "praise",
-     "caption": "You are a star pianist!",
-     "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "expression",
     "secondary": [
      "together",
-     "expression"
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Ordinal sequence (start, middle, end)",
+    "parentLine": "A song has a start, a middle and an end"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Dim the lights a little, sit teddy in front, then clap and bow together.",
+   "childAction": "Bow, play softly for teddy, then bow again.",
+   "bridge": "Night-time music is soft, like moonlight on the keys.",
+   "celebrate": "Today you practiced: playing a whole song softly, start to end."
   }
  ]
 }

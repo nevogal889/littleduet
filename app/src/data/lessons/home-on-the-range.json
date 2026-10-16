@@ -2,27 +2,48 @@
  "songId": "home-on-the-range",
  "title": "Home on the Range",
  "ageGroup": "5-6",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and playing together, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices the keyboard from low G to high G, run-ning and long notes, A-B-A-B song form, a big leap, counting in threes and two-hand teamwork.",
  "skillMap": [
   {
-   "id": "fingers",
-   "label": "Finger control",
+   "id": "counting",
+   "label": "Counting",
    "value": 1.0,
-   "classes": 6,
+   "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 1.0,
+   "classes": 2,
    "total": 9
   },
   {
    "id": "form",
    "label": "Song shape",
-   "value": 0.33,
+   "value": 1.0,
    "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "fingers",
+   "label": "Finger control",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.5,
+   "classes": 1,
    "total": 9
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.17,
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -30,35 +51,73 @@
  "icon": "cow",
  "key": "C",
  "timeSignature": "3/4",
- "totalSec": 1955,
+ "totalSec": 1957,
  "classes": [
   {
    "id": "home-on-the-range-c01",
    "index": 1,
-   "title": "Hands ready, first half",
+   "title": "From low G to high G",
    "goal": "Find the hand position and learn the first half",
    "type": "hand-position",
-   "durationSec": 190,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 209,
+   "parentTip": "Point to low G, then high G, eight white keys apart; the song lives in between.",
    "video": "home-on-the-range/home-on-the-range-c01.mp4",
    "thumb": "home-on-the-range/home-on-the-range-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Home on the Range",
-     "subcaption": "Class 1: Hands ready, first half",
+     "subcaption": "Class 1: From low G to high G",
      "durationSec": 8,
      "voice": "Hello again. Home on the Range is waiting for us. Shoulders soft, fingers ready.",
      "voiceId": "238bd25f86bfbf03",
      "voiceSec": 6.18
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Thumb on G, fingers curved",
+     "caption": "Find the two fences: G and G",
+     "parentCue": "point low G, then high G, together",
+     "durationSec": 8,
+     "voice": "Find the two fences: G and G. Grown-up, point low G, then high G, together.",
+     "voiceId": "12040fcf6b7aa34e",
+     "voiceSec": 6.19
+    },
+    {
+     "kind": "say",
+     "caption": "Thumb on C, fingers curved",
      "parentCue": "Help place one finger on each lit key",
      "showKeys": [
       {
-       "p": "G3",
+       "p": "C4",
        "f": 1
       },
       {
@@ -74,39 +133,54 @@
        "f": 4
       },
       {
-       "p": "D4",
+       "p": "G4",
        "f": 5
       }
      ],
      "durationSec": 7,
-     "voice": "Thumb on G. Curve your fingers, like holding a little ball.",
-     "voiceId": "1fde154d663011a3",
-     "voiceSec": 3.96
+     "voice": "Thumb on C. Curve your fingers, like holding a little ball.",
+     "voiceId": "df5c6ecc923ce75c",
+     "voiceSec": 3.73
     },
     {
-     "kind": "say",
-     "caption": "Today: Oh, give me a home",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: Oh, give me a home where the buffalo roam.",
-     "voiceId": "86b96a883ac372a3",
-     "voiceSec": 4.61
-    },
-    {
-     "kind": "say",
-     "caption": "This part comes back 2 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7,
-     "voice": "This part comes back two times. Listen for it.",
-     "voiceId": "9581ea7be1c58405",
-     "voiceSec": 3.94
+     "kind": "listen",
+     "caption": "Low G, high G: same name",
+     "parentCue": "Point left, then right, with each sound",
+     "bpm": 72,
+     "leadInSec": 5.56,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Low G, then high G, the same name. Point left, then right.",
+     "voiceId": "5069d8a9fbcd31b2",
+     "voiceSec": 5.16
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 72,
-     "leadInSec": 3.26,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G3",
@@ -239,10 +313,10 @@
        "from": 11
       }
      ],
-     "durationSec": 24,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "durationSec": 23,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -402,7 +476,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 72,
-     "leadInSec": 3.3,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "G3",
@@ -477,10 +551,10 @@
        "from": 0
       }
      ],
-     "durationSec": 15,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 14,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
@@ -572,9 +646,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -590,7 +664,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 72,
-     "leadInSec": 3.3,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "E4",
@@ -654,16 +728,16 @@
       }
      ],
      "durationSec": 14,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 72,
-     "leadInSec": 3.38,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -727,50 +801,51 @@
        "from": 0
       }
      ],
-     "durationSec": 21,
-     "voice": "Your turn. I'll wait for each note.",
-     "voiceId": "ef1c63536da8b5d7",
-     "voiceSec": 2.98
+     "durationSec": 22,
+     "voice": "Now you play. Look ahead to the next key.",
+     "voiceId": "3d6af857ff139541",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found both fences!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "space",
     "secondary": [
-     "space"
+     "fingers",
+     "pitch"
     ]
    },
    "mathTarget": {
-    "concept": "Spatial anchoring",
-    "parentLine": "Finding a home spot for the hand"
+    "concept": "Octave span (G to G)",
+    "parentLine": "The whole song lives between two Gs, low and high"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Put one finger on each lit key.",
-   "bridge": "Fingers curved, like holding a little ball.",
-   "celebrate": "Today you practiced careful fingers and finding the way on the keys."
+   "parentPrompt": "Point to low G, then high G, eight white keys apart; the song lives in between.",
+   "childAction": "Find low G and high G. Then play the first line.",
+   "bridge": "Low G and high G are the two fences of the open range.",
+   "celebrate": "Today you practiced: the song's space from low G to high G."
   },
   {
    "id": "home-on-the-range-c02",
    "index": 2,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Run-ning up to the sky",
+   "goal": "Learn the second line: two quick notes run up to a long G.",
    "type": "phrase",
-   "durationSec": 204,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 210,
+   "parentTip": "Say 'run-ning' on the quick notes, then 'sky' and hold it while counting 1, 2.",
    "video": "home-on-the-range/home-on-the-range-c02.mp4",
    "thumb": "home-on-the-range/home-on-the-range-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Home on the Range",
-     "subcaption": "Class 2: Part 2",
+     "subcaption": "Class 2: Run-ning up to the sky",
      "durationSec": 7,
      "voice": "Welcome back. Time for Home on the Range. Sit tall, in the middle of the piano.",
      "voiceId": "269ad471f56fe53b",
@@ -778,19 +853,57 @@
     },
     {
      "kind": "say",
-     "caption": "Today: and the skies are not",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: and the skies are not cloudy all day.",
-     "voiceId": "b0a3cedece83d1ea",
-     "voiceSec": 5.28
+     "caption": "Run-ning... up to the sky!",
+     "parentCue": "say it slowly, then hold the long note",
+     "durationSec": 8,
+     "voice": "Run-ning... up to the sky. Grown-up, say it slowly, then hold the long note.",
+     "voiceId": "2045ca3c0d60471d",
+     "voiceSec": 6.86
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Where the deer: run-ning, sky",
+     "parentCue": "Count 1, 2 on the long G",
+     "bpm": 72,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5
+      },
+      {
+       "p": "F4",
+       "d": 0.5
+      },
+      {
+       "p": "G4",
+       "d": 2
+      },
+      {
+       "p": "E4",
+       "d": 0.5
+      },
+      {
+       "p": "E4",
+       "d": 0.5
+      },
+      {
+       "p": "E4",
+       "d": 1
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 77,
-     "leadInSec": 2.33,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "E4",
@@ -853,10 +966,10 @@
        "from": 0
       }
      ],
-     "durationSec": 12,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 13,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -946,7 +1059,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 77,
-     "leadInSec": 3.33,
+     "leadInSec": 4.41,
      "gapBeats": 1,
      "notes": [
       {
@@ -1010,18 +1123,18 @@
        "from": 0
       }
      ],
-     "durationSec": 20,
-     "voice": "Your turn. Slow and steady wins.",
-     "voiceId": "1641c55b696104d1",
-     "voiceSec": 2.93
+     "durationSec": 21,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -1183,9 +1296,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -1201,7 +1314,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 77,
-     "leadInSec": 3.33,
+     "leadInSec": 3.2,
      "gapBeats": 1,
      "notes": [
       {
@@ -1266,17 +1379,17 @@
       }
      ],
      "durationSec": 20,
-     "voice": "Your turn. Slow and steady wins.",
-     "voiceId": "1641c55b696104d1",
-     "voiceSec": 2.93
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -1292,7 +1405,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 77,
-     "leadInSec": 3.33,
+     "leadInSec": 3.38,
      "gapBeats": 1,
      "notes": [
       {
@@ -1357,9 +1470,9 @@
       }
      ],
      "durationSec": 20,
-     "voice": "Your turn. Slow and steady wins.",
-     "voiceId": "1641c55b696104d1",
-     "voiceSec": 2.93
+     "voice": "Your turn. I'll wait for each note.",
+     "voiceId": "ef1c63536da8b5d7",
+     "voiceSec": 2.98
     },
     {
      "kind": "together",
@@ -1436,81 +1549,94 @@
     },
     {
      "kind": "praise",
-     "caption": "Yes, that's it!",
+     "caption": "What a big sky!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 6,
-     "voice": "Shake, shake, shake your hands.",
-     "voiceId": "69041444bf86c15c",
-     "voiceSec": 2.85
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "counting",
     "secondary": [
-     "form"
+     "fingers",
+     "beat"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Ratio 1:4 (quick and long)",
+    "parentLine": "The long G lasts as long as four quick notes"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Say 'run-ning' on the quick notes, then 'sky' and hold it while counting 1, 2.",
+   "childAction": "Run-ning up E, F, then hold the big sky G.",
+   "bridge": "Quick notes are the deer running; the long G is the wide sky.",
+   "celebrate": "Today you practiced: quick notes and a long note."
   },
   {
    "id": "home-on-the-range-c03",
    "index": 3,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "Spot the twin lines",
+   "goal": "Play the whole song slowly and find which lines share the same music.",
    "type": "put-together",
-   "durationSec": 219,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 214,
+   "parentTip": "Say 'A' for the buffalo music and 'B' for the sky music as each line starts.",
    "video": "home-on-the-range/home-on-the-range-c03.mp4",
    "thumb": "home-on-the-range/home-on-the-range-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Home on the Range",
-     "subcaption": "Class 3: Put it together",
+     "subcaption": "Class 3: Spot the twin lines",
      "durationSec": 8,
      "voice": "Hello again. Home on the Range is waiting for us. Shoulders soft, fingers ready.",
      "voiceId": "238bd25f86bfbf03",
      "voiceSec": 6.18
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
+     "caption": "Which lines are twins?",
+     "parentCue": "say A or B as each line starts",
      "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "voice": "Which lines are twins. Grown-up, say A or B as each line starts.",
+     "voiceId": "0feade51846bcb9e",
+     "voiceSec": 5.25
     },
     {
      "kind": "say",
      "caption": "Fingers on the lit keys",
-     "parentCue": "Check the thumb is on G",
+     "parentCue": "Check the thumb is on C",
      "showKeys": [
       {
-       "p": "G3",
+       "p": "C4",
        "f": 1
       },
       {
@@ -1526,7 +1652,7 @@
        "f": 4
       },
       {
-       "p": "D4",
+       "p": "G4",
        "f": 5
       }
      ],
@@ -1536,11 +1662,64 @@
      "voiceSec": 2.14
     },
     {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 77,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
+    },
+    {
      "kind": "demo",
-     "caption": "Watch the whole song",
+     "caption": "Watch the first part",
      "parentCue": "Watch together",
      "bpm": 72,
-     "leadInSec": 2.51,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "G3",
@@ -1661,7 +1840,174 @@
        "d": 3,
        "f": 2,
        "s": "play"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Oh, give me a home where the buffalo roam",
+       "from": 0
       },
+      {
+       "lyric": "where the deer and the antelope play",
+       "from": 11
+      }
+     ],
+     "durationSec": 24,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 72,
+     "leadInSec": 4.26,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "Oh"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "give"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "me"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 5,
+       "s": "home"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 3,
+       "s": "where"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 1,
+       "s": "buf"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "fa"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "lo"
+      },
+      {
+       "p": "F4",
+       "d": 3,
+       "f": 4,
+       "s": "roam"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "where"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "deer"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "an"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "te"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "lope"
+      },
+      {
+       "p": "D4",
+       "d": 3,
+       "f": 2,
+       "s": "play"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Oh, give me a home where the buffalo roam",
+       "from": 0
+      },
+      {
+       "lyric": "where the deer and the antelope play",
+       "from": 11
+      }
+     ],
+     "durationSec": 41,
+     "voice": "Your turn. Keep your fingers close to the keys.",
+     "voiceId": "d35facfe41c89462",
+     "voiceSec": 3.86
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 72,
+     "leadInSec": 2.32,
+     "notes": [
       {
        "p": "G3",
        "d": 0.5,
@@ -1785,26 +2131,18 @@
      ],
      "lines": [
       {
-       "lyric": "Oh, give me a home where the buffalo roam",
+       "lyric": "where seldom is heard a discouraging word",
        "from": 0
       },
       {
-       "lyric": "where the deer and the antelope play",
-       "from": 11
-      },
-      {
-       "lyric": "where seldom is heard a discouraging word",
-       "from": 20
-      },
-      {
        "lyric": "and the skies are not cloudy all day",
-       "from": 31
+       "from": 11
       }
      ],
-     "durationSec": 41,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 23,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
@@ -2079,449 +2417,125 @@
      "voiceSec": 2.58
     },
     {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Take a breath between lines",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 82,
-     "leadInSec": 1.84,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "Oh"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "give"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "me"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "a"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "home"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "where"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "buf"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "fa"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "lo"
-      },
-      {
-       "p": "F4",
-       "d": 3,
-       "f": 4,
-       "s": "roam"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "where"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "deer"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "an"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "te"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lope"
-      },
-      {
-       "p": "D4",
-       "d": 3,
-       "f": 2,
-       "s": "play"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "where"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "sel"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "dom"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "is"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "heard"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "dis"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "cour"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ag"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "F4",
-       "d": 3,
-       "f": 4,
-       "s": "word"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "skies"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "not"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cloud"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "y"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "all"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 2,
-       "s": "day"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Oh, give me a home where the buffalo roam",
-       "from": 0
-      },
-      {
-       "lyric": "where the deer and the antelope play",
-       "from": 11
-      },
-      {
-       "lyric": "where seldom is heard a discouraging word",
-       "from": 20
-      },
-      {
-       "lyric": "and the skies are not cloudy all day",
-       "from": 31
-      }
-     ],
-     "durationSec": 36,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
-    },
-    {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "You found the twins!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 77,
-     "leadInSec": 3.33,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "Oh"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "give"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "me"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "a"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "home"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "where"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "buf"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "fa"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "lo"
-      },
-      {
-       "p": "F4",
-       "d": 3,
-       "f": 4,
-       "s": "roam"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Oh, give me a home where the buffalo roam",
-       "from": 0
-      }
-     ],
-     "durationSec": 23,
-     "voice": "Your turn. Slow and steady wins.",
-     "voiceId": "1641c55b696104d1",
-     "voiceSec": 2.93
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
-     "patterns"
+     "patterns",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Song form (A, B, A, B')",
+    "parentLine": "Two lines are twins; the other two are almost twins"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Say 'A' for the buffalo music and 'B' for the sky music as each line starts.",
+   "childAction": "Play slowly and say 'A!' or 'B!' as each line starts.",
+   "bridge": "The buffalo line comes twice with new words; the music is the same.",
+   "celebrate": "Today you practiced: hearing which lines repeat, A and B."
   },
   {
    "id": "home-on-the-range-c04",
    "index": 4,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "The buffalo's big leap",
+   "goal": "Practise the big jump from A up to F slowly, then a little faster.",
    "type": "review",
-   "durationSec": 240,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 232,
+   "parentTip": "Count the white keys from A to F with your child: A, B, C, D, E, F.",
    "video": "home-on-the-range/home-on-the-range-c04.mp4",
    "thumb": "home-on-the-range/home-on-the-range-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Home on the Range",
-     "subcaption": "Class 4: Tricky spots",
+     "subcaption": "Class 4: The buffalo's big leap",
      "durationSec": 8,
      "voice": "Hello again. Home on the Range is waiting for us. Shoulders soft, fingers ready.",
      "voiceId": "238bd25f86bfbf03",
      "voiceSec": 6.18
     },
     {
-     "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
-     "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
     },
     {
      "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "caption": "How far does the buffalo jump?",
+     "parentCue": "count the white keys from A to F",
+     "durationSec": 8,
+     "voice": "How far does the buffalo jump. Grown-up, count the white keys from A to F.",
+     "voiceId": "4c7675925d3858c3",
+     "voiceSec": 4.94
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Buffalo roam: leap to F",
+     "parentCue": "Say 'jump!' just before the F",
+     "bpm": 66,
+     "leadInSec": 4.41,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5
+      },
+      {
+       "p": "B3",
+       "d": 0.5
+      },
+      {
+       "p": "A3",
+       "d": 1
+      },
+      {
+       "p": "F4",
+       "d": 1
+      },
+      {
+       "p": "F4",
+       "d": 1
+      },
+      {
+       "p": "F4",
+       "d": 3
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
     },
     {
      "kind": "demo",
@@ -2793,9 +2807,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -2811,7 +2825,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 77,
-     "leadInSec": 3.33,
+     "leadInSec": 3.2,
      "gapBeats": 1,
      "notes": [
       {
@@ -2888,17 +2902,17 @@
       }
      ],
      "durationSec": 23,
-     "voice": "Your turn. Slow and steady wins.",
-     "voiceId": "1641c55b696104d1",
-     "voiceSec": 2.93
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -2914,7 +2928,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 86,
-     "leadInSec": 3.33,
+     "leadInSec": 3.38,
      "gapBeats": 1,
      "notes": [
       {
@@ -2991,9 +3005,9 @@
       }
      ],
      "durationSec": 21,
-     "voice": "Your turn. Slow and steady wins.",
-     "voiceId": "1641c55b696104d1",
-     "voiceSec": 2.93
+     "voice": "Your turn. I'll wait for each note.",
+     "voiceId": "ef1c63536da8b5d7",
+     "voiceSec": 2.98
     },
     {
      "kind": "praise",
@@ -3017,7 +3031,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 67,
-     "leadInSec": 3.33,
+     "leadInSec": 3.2,
      "gapBeats": 1,
      "notes": [
       {
@@ -3094,161 +3108,97 @@
       }
      ],
      "durationSec": 26,
-     "voice": "Your turn. Slow and steady wins.",
-     "voiceId": "1641c55b696104d1",
-     "voiceSec": 2.93
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "What a leap!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Nearly full speed",
-     "parentCue": "Only speed up if it feels easy",
-     "durationSec": 6,
-     "voice": "Nearly full speed now.",
-     "voiceId": "9c534e859be017a5",
-     "voiceSec": 1.72
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Keep fingers close to the keys",
-     "bpm": 86,
-     "leadInSec": 3.33,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "Oh"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "give"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "me"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "a"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "home"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "where"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "buf"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "fa"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "lo"
-      },
-      {
-       "p": "F4",
-       "d": 3,
-       "f": 4,
-       "s": "roam"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Oh, give me a home where the buffalo roam",
-       "from": 0
-      }
-     ],
-     "durationSec": 21,
-     "voice": "Your turn. Slow and steady wins.",
-     "voiceId": "1641c55b696104d1",
-     "voiceSec": 2.93
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "space",
     "secondary": [
-     "patterns"
+     "fingers",
+     "counting"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Interval distance (a big leap)",
+    "parentLine": "Counting the keys between two notes tells how far to jump"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Count the white keys from A to F with your child: A, B, C, D, E, F.",
+   "childAction": "Count the keys from A to F, then jump the buffalo there.",
+   "bridge": "Most notes walk next door; this one leaps far to the right, like a buffalo.",
+   "celebrate": "Today you practiced: measuring and making a big leap."
   },
   {
    "id": "home-on-the-range-c05",
    "index": 5,
-   "title": "Left hand helper",
-   "goal": "Play one low left hand note at the start of each bar",
+   "title": "One-two-three, low on one",
+   "goal": "Play one low left-hand note at the start of each bar of three.",
    "type": "left-hand",
-   "durationSec": 214,
-   "parentTip": "You play the tune, your child plays the low notes. Count bars out loud to help.",
+   "durationSec": 210,
+   "parentTip": "Play the tune and count 'one, two, three' out loud, loudest on one.",
    "video": "home-on-the-range/home-on-the-range-c05.mp4",
    "thumb": "home-on-the-range/home-on-the-range-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Home on the Range",
-     "subcaption": "Class 5: Left hand helper",
+     "subcaption": "Class 5: One-two-three, low on one",
      "durationSec": 8,
      "voice": "Hi, everyone. Let's make music with Home on the Range. Grown-up, sit close to cheer.",
      "voiceId": "5f54a5befd38cdec",
      "voiceSec": 6.11
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "One, two, three, one, two, three",
+     "parentCue": "sway together on one",
+     "durationSec": 7,
+     "voice": "One, two, three, one, two, three. Grown-up, sway together on one.",
+     "voiceId": "bb8d2c9cc740414d",
+     "voiceSec": 4.89
+    },
+    {
      "kind": "say",
      "caption": "Meet your left hand!",
-     "parentCue": "Left hand sits low on the left side",
+     "parentCue": "Low on the left: C and F and G, one per bar",
      "showKeys": [
       {
        "p": "C3",
@@ -3263,40 +3213,46 @@
        "f": 1
       }
      ],
-     "durationSec": 7,
+     "durationSec": 8,
      "voice": "Meet your left hand. It plays the low notes.",
      "voiceId": "9431a702419226a1",
      "voiceSec": 3.05
     },
     {
-     "kind": "say",
-     "caption": "One low note at the start of each bar",
-     "parentCue": "The low notes are C and F and G",
-     "showKeys": [
+     "kind": "your_turn",
+     "caption": "Find the low notes",
+     "parentCue": "Point to each low key first",
+     "bpm": 67,
+     "leadInSec": 4.39,
+     "gapBeats": 1,
+     "notes": [
       {
        "p": "C3",
+       "d": 2,
        "f": 5
       },
       {
        "p": "F3",
+       "d": 2,
        "f": 2
       },
       {
        "p": "G3",
+       "d": 2,
        "f": 1
       }
      ],
-     "durationSec": 9,
-     "voice": "Left hand plays one low note at the start of each bar.",
-     "voiceId": "316eb49e5ef32058",
-     "voiceSec": 3.68
+     "durationSec": 14,
+     "voice": "Left hand, down low. Play each low key when it glows.",
+     "voiceId": "215141b515252911",
+     "voiceSec": 3.99
     },
     {
      "kind": "demo",
-     "caption": "Watch the low notes",
+     "caption": "Watch the first part",
      "parentCue": "Count one, two, three, four",
      "bpm": 72,
-     "leadInSec": 2.05,
+     "leadInSec": 3.05,
      "notes": [
       {
        "rest": true,
@@ -3337,7 +3293,74 @@
        "d": 3.0,
        "f": 1,
        "h": "L"
+      }
+     ],
+     "durationSec": 22,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 72,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "rest": true,
+       "d": 2.0
       },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "F3",
+       "d": 3.0,
+       "f": 2,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      }
+     ],
+     "durationSec": 27,
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Count one, two, three, four",
+     "bpm": 72,
+     "leadInSec": 3.05,
+     "notes": [
       {
        "p": "G3",
        "d": 3.0,
@@ -3387,10 +3410,10 @@
        "h": "L"
       }
      ],
-     "durationSec": 41,
-     "voice": "Watch the low notes.",
-     "voiceId": "f59982b35009de01",
-     "voiceSec": 1.65
+     "durationSec": 25,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
@@ -3496,803 +3519,181 @@
     },
     {
      "kind": "say",
-     "caption": "One more time",
-     "parentCue": "You play the tune, child plays low notes",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
-     "kind": "together",
-     "caption": "Low notes with the tune",
-     "parentCue": "You play the blue keys",
-     "bpm": 72,
-     "leadInSec": 2.78,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 77,
+     "leadInSec": 3.33,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "G3",
        "d": 0.5,
        "f": 1,
-       "s": "Oh",
-       "who": "parent"
+       "s": "Oh"
       },
       {
        "p": "G3",
        "d": 0.5,
        "f": 1,
-       "s": "give",
-       "who": "parent"
+       "s": "give"
       },
       {
        "p": "C4",
        "d": 1,
        "f": 4,
-       "s": "me",
-       "who": "parent"
+       "s": "me"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 5,
-       "s": "a",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
+       "s": "a"
       },
       {
        "p": "E4",
        "d": 2,
        "f": 5,
-       "s": "home",
-       "who": "parent"
+       "s": "home"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 3,
-       "s": "where",
-       "who": "parent",
-       "lh": {
-        "p": "F3",
-        "d": 3.0,
-        "f": 2,
-        "h": "L"
-       }
+       "s": "where"
       },
       {
        "p": "B3",
        "d": 0.5,
        "f": 2,
-       "s": "the",
-       "who": "parent"
+       "s": "the"
       },
       {
        "p": "A3",
        "d": 1,
        "f": 1,
-       "s": "buf",
-       "who": "parent"
+       "s": "buf"
       },
       {
        "p": "F4",
        "d": 1,
        "f": 4,
-       "s": "fa",
-       "who": "parent"
+       "s": "fa"
       },
       {
        "p": "F4",
        "d": 1,
        "f": 4,
-       "s": "lo",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
+       "s": "lo"
       },
       {
        "p": "F4",
        "d": 3,
        "f": 4,
-       "s": "roam",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "where",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "deer",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "an",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "te",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lope",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 3,
-       "f": 2,
-       "s": "play",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "where",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "sel",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "dom",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "is",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "heard",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "dis",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "cour",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ag",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 3,
-       "f": 4,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "skies",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "are",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "not",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cloud",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "y",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 2,
-       "s": "day",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
+       "s": "roam"
       }
      ],
      "lines": [
       {
        "lyric": "Oh, give me a home where the buffalo roam",
        "from": 0
-      },
-      {
-       "lyric": "where the deer and the antelope play",
-       "from": 11
-      },
-      {
-       "lyric": "where seldom is heard a discouraging word",
-       "from": 20
-      },
-      {
-       "lyric": "and the skies are not cloudy all day",
-       "from": 31
       }
      ],
-     "durationSec": 41,
-     "voice": "Left hand low notes, with the tune.",
-     "voiceId": "189d258c6ca31d51",
-     "voiceSec": 2.38
+     "durationSec": 23,
+     "voice": "Your turn. Slow and steady wins.",
+     "voiceId": "1641c55b696104d1",
+     "voiceSec": 2.93
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "Strong low notes on one!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "You play the tune, child plays low notes",
-     "durationSec": 7,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Low notes with the tune",
-     "parentCue": "You play the blue keys",
-     "bpm": 96,
-     "leadInSec": 2.78,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "Oh",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "give",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "me",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "home",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "where",
-       "who": "parent",
-       "lh": {
-        "p": "F3",
-        "d": 3.0,
-        "f": 2,
-        "h": "L"
-       }
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "buf",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "fa",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "lo",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 3,
-       "f": 4,
-       "s": "roam",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "where",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "deer",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "an",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "te",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lope",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 3,
-       "f": 2,
-       "s": "play",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "where",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "sel",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "dom",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "is",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "heard",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "dis",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "cour",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ag",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 3,
-       "f": 4,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "skies",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "are",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "not",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cloud",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "y",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 2,
-       "s": "day",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Oh, give me a home where the buffalo roam",
-       "from": 0
-      },
-      {
-       "lyric": "where the deer and the antelope play",
-       "from": 11
-      },
-      {
-       "lyric": "where seldom is heard a discouraging word",
-       "from": 20
-      },
-      {
-       "lyric": "and the skies are not cloudy all day",
-       "from": 31
-      }
-     ],
-     "durationSec": 32,
-     "voice": "Left hand low notes, with the tune.",
-     "voiceId": "189d258c6ca31d51",
-     "voiceSec": 2.38
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "counting",
     "secondary": [
+     "beat",
      "space"
     ]
    },
    "mathTarget": {
-    "concept": "Bilateral mapping",
-    "parentLine": "Giving the other hand its own job"
+    "concept": "Grouping in threes (waltz meter)",
+    "parentLine": "This song counts in threes: One, two, three"
    },
-   "parentPrompt": "You play the tune, your child plays the low notes. Count bars out loud to help.",
-   "childAction": "Play the low notes with the left hand.",
-   "bridge": "The left hand plays the deep low notes, like a big drum.",
-   "celebrate": "Today you practiced careful fingers and finding the way on the keys."
+   "parentPrompt": "Play the tune and count 'one, two, three' out loud, loudest on one.",
+   "childAction": "Left hand plays one low note on every one. Then wait two.",
+   "bridge": "Low notes live on the left, like the ground under the buffalo's hooves.",
+   "celebrate": "Today you practiced: counting in threes, landing on one."
   },
   {
    "id": "home-on-the-range-c06",
    "index": 6,
-   "title": "Hands together, slowly",
-   "goal": "Play the tune with a low left hand note on each bar",
+   "title": "Ground below, sky above",
+   "goal": "Play the tune with one low note per bar: one hand holds while the other moves.",
    "type": "hands-together",
    "durationSec": 220,
-   "parentTip": "Two hands is hard work. Go very slowly and stop while it's still fun.",
+   "parentTip": "Rest a hand on your child's left shoulder and say 'ground' on each low note. Go slowly.",
    "video": "home-on-the-range/home-on-the-range-c06.mp4",
    "thumb": "home-on-the-range/home-on-the-range-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Home on the Range",
-     "subcaption": "Class 6: Hands together, slowly",
+     "subcaption": "Class 6: Ground below, sky above",
      "durationSec": 7,
      "voice": "Hello, friends. Today it's Home on the Range. Both hands on your knees to start.",
      "voiceId": "956537dfabf1c42d",
      "voiceSec": 5.75
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Two hands, two jobs",
+     "parentCue": "both hands on the keys, very slowly",
+     "durationSec": 7,
+     "voice": "Two hands, two jobs. Grown-up, both hands on the keys, very slowly.",
+     "voiceId": "7a35cdfeca57646e",
+     "voiceSec": 5.23
     },
     {
      "kind": "say",
@@ -4300,7 +3701,7 @@
      "parentCue": "Left hand low, right hand ready",
      "showKeys": [
       {
-       "p": "G3",
+       "p": "C4",
        "f": 1
       },
       {
@@ -4316,14 +3717,48 @@
        "f": 4
       },
       {
-       "p": "D4",
+       "p": "G4",
        "f": 5
       }
      ],
      "durationSec": 7,
-     "voice": "Now both hands together, very slowly.",
-     "voiceId": "067f3e698afdefd5",
-     "voiceSec": 2.68
+     "voice": "Today both hands play together, very slowly.",
+     "voiceId": "480919ea0ce23ca6",
+     "voiceSec": 3.01
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Left hand first",
+     "parentCue": "Point to each low key",
+     "bpm": 67,
+     "leadInSec": 4.44,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 2,
+       "f": 5
+      },
+      {
+       "p": "F3",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Left hand first. Play each low key when it glows.",
+     "voiceId": "999b53a367c0de16",
+     "voiceSec": 4.04
     },
     {
      "kind": "demo",
@@ -4497,7 +3932,7 @@
      "caption": "Your turn! Both hands",
      "parentCue": "Slow is perfect",
      "bpm": 62,
-     "leadInSec": 3.9,
+     "leadInSec": 3.81,
      "gapBeats": 1,
      "notes": [
       {
@@ -4655,10 +4090,10 @@
        "from": 11
       }
      ],
-     "durationSec": 47,
-     "voice": "Your turn. Both hands, nice and slow.",
-     "voiceId": "7c39a0349582d84b",
-     "voiceSec": 3.5
+     "durationSec": 46,
+     "voice": "Your turn. Both hands, nice and steady.",
+     "voiceId": "cd70d130fe2096c9",
+     "voiceSec": 3.41
     },
     {
      "kind": "say",
@@ -4674,7 +4109,7 @@
      "caption": "Your turn! Both hands",
      "parentCue": "Keep it slow",
      "bpm": 62,
-     "leadInSec": 3.9,
+     "leadInSec": 3.81,
      "gapBeats": 1,
      "notes": [
       {
@@ -4991,156 +4426,92 @@
       }
      ],
      "durationSec": 87,
-     "voice": "Your turn. Both hands, nice and slow.",
-     "voiceId": "7c39a0349582d84b",
-     "voiceSec": 3.5
+     "voice": "Your turn. Both hands, nice and steady.",
+     "voiceId": "cd70d130fe2096c9",
+     "voiceSec": 3.41
     },
     {
      "kind": "praise",
-     "caption": "Two hands, wow!",
+     "caption": "Two hands, one song!",
      "durationSec": 5,
-     "voice": "Two hands at once. Wow.",
-     "voiceId": "634ff696e35387b7",
-     "voiceSec": 2.72
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 77,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "Oh"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "give"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "me"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "a"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "home"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "where"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "buf"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "fa"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "lo"
-      },
-      {
-       "p": "F4",
-       "d": 3,
-       "f": 4,
-       "s": "roam"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Oh, give me a home where the buffalo roam",
-       "from": 0
-      }
-     ],
-     "durationSec": 24,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Two hands, one song.",
+     "voiceId": "4e379d8510d3d91f",
+     "voiceSec": 1.62
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "patterns"
+     "patterns",
+     "counting"
     ]
    },
    "mathTarget": {
-    "concept": "Coordinating two streams",
-    "parentLine": "Two hands doing different jobs at once"
+    "concept": "Ratio 1:3 (two streams)",
+    "parentLine": "One low note lasts while three beats pass above"
    },
-   "parentPrompt": "Two hands is hard work. Go very slowly and stop while it's still fun.",
-   "childAction": "Play both hands together, slowly.",
-   "bridge": "Left hand is the drum; right hand sings the song.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Rest a hand on your child's left shoulder and say 'ground' on each low note. Go slowly.",
+   "childAction": "Left hand holds the low ground; right hand plays the tune.",
+   "bridge": "Left hand is the ground, still and low; right hand is the sky moving.",
+   "celebrate": "Today you practiced: two hands doing two different jobs."
   },
   {
    "id": "home-on-the-range-c07",
    "index": 7,
-   "title": "Hands together, a bit faster",
-   "goal": "Play both hands together closer to full speed",
+   "title": "Strong, light, light",
+   "goal": "Play both hands a little faster, with a strong one and two light beats.",
    "type": "hands-together",
-   "durationSec": 220,
-   "parentTip": "Speed comes last. If notes fall apart, go back to the slower tempo.",
+   "durationSec": 193,
+   "parentTip": "Sway beside your child: a big sway on one, small sways on two, three.",
    "video": "home-on-the-range/home-on-the-range-c07.mp4",
    "thumb": "home-on-the-range/home-on-the-range-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Home on the Range",
-     "subcaption": "Class 7: Hands together, a bit faster",
+     "subcaption": "Class 7: Strong, light, light",
      "durationSec": 7,
      "voice": "Hello, friends. Today it's Home on the Range. Both hands on your knees to start.",
      "voiceId": "956537dfabf1c42d",
      "voiceSec": 5.75
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Strong, light, light",
+     "parentCue": "big sway on one, small on two, three",
+     "durationSec": 7,
+     "voice": "Strong, light, light. Grown-up, big sway on one, small on two, three.",
+     "voiceId": "6313ad02078a97f0",
+     "voiceSec": 5.44
     },
     {
      "kind": "say",
@@ -5148,7 +4519,7 @@
      "parentCue": "Only if the slow class felt good",
      "showKeys": [
       {
-       "p": "G3",
+       "p": "C4",
        "f": 1
       },
       {
@@ -5164,7 +4535,7 @@
        "f": 4
       },
       {
-       "p": "D4",
+       "p": "G4",
        "f": 5
       }
      ],
@@ -5178,7 +4549,7 @@
      "caption": "Your turn! Both hands",
      "parentCue": "Warm up slowly",
      "bpm": 72,
-     "leadInSec": 3.9,
+     "leadInSec": 3.81,
      "gapBeats": 1,
      "notes": [
       {
@@ -5495,9 +4866,9 @@
       }
      ],
      "durationSec": 76,
-     "voice": "Your turn. Both hands, nice and slow.",
-     "voiceId": "7c39a0349582d84b",
-     "voiceSec": 3.5
+     "voice": "Your turn. Both hands, nice and steady.",
+     "voiceId": "cd70d130fe2096c9",
+     "voiceSec": 3.41
     },
     {
      "kind": "together",
@@ -6160,385 +5531,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "Lovely strong and light!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Relax your shoulders",
-     "durationSec": 5,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Both hands together",
-     "parentCue": "Help with the left hand if needed",
-     "bpm": 82,
-     "leadInSec": 2.02,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "Oh"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "give"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "me"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "home"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "where",
-       "lh": {
-        "p": "F3",
-        "d": 3.0,
-        "f": 2,
-        "h": "L"
-       }
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "buf"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "fa"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "lo",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 3,
-       "f": 4,
-       "s": "roam"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "where"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "deer"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "an"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "te",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lope"
-      },
-      {
-       "p": "D4",
-       "d": 3,
-       "f": 2,
-       "s": "play"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "where"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "sel"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "dom",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "is"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "heard"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "dis"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "cour"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ag",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "F4",
-       "d": 3,
-       "f": 4,
-       "s": "word"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "skies",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "not"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cloud",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "y"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "all"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 2,
-       "s": "day",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Oh, give me a home where the buffalo roam",
-       "from": 0
-      },
-      {
-       "lyric": "where the deer and the antelope play",
-       "from": 11
-      },
-      {
-       "lyric": "where seldom is heard a discouraging word",
-       "from": 20
-      },
-      {
-       "lyric": "and the skies are not cloudy all day",
-       "from": 31
-      }
-     ],
-     "durationSec": 36,
-     "voice": "Both hands together.",
-     "voiceId": "616b6beec5a0bdd4",
-     "voiceSec": 1.62
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "expression",
     "secondary": [
-     "patterns"
+     "beat",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Coordinating two streams",
-    "parentLine": "Two hands doing different jobs at once"
+    "concept": "Accent pattern (strong, weak, weak)",
+    "parentLine": "One strong beat, then two light ones, again and again"
    },
-   "parentPrompt": "Speed comes last. If notes fall apart, go back to the slower tempo.",
-   "childAction": "Play both hands together, slowly.",
-   "bridge": "Left hand is the drum; right hand sings the song.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Sway beside your child: a big sway on one, small sways on two, three.",
+   "childAction": "Play a strong one and two light beats. Too fast? Slow down.",
+   "bridge": "One is a big buffalo step; two and three are light deer steps.",
+   "celebrate": "Today you practiced: a strong beat and two light beats."
   },
   {
    "id": "home-on-the-range-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Ride the open range",
+   "goal": "Play the whole song along with the music at full speed and keep going.",
    "type": "play-along",
-   "durationSec": 216,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 243,
+   "parentTip": "Sing the words beside your child; if notes are missed, keep going and smile.",
    "video": "home-on-the-range/home-on-the-range-c08.mp4",
    "thumb": "home-on-the-range/home-on-the-range-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Home on the Range",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Ride the open range",
      "durationSec": 8,
      "voice": "Hello again. Home on the Range is waiting for us. Shoulders soft, fingers ready.",
      "voiceId": "238bd25f86bfbf03",
@@ -6546,21 +5576,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
+     "caption": "Ride along with the music",
+     "parentCue": "sing the words softly beside your child",
      "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "voice": "Ride along with the music. Grown-up, sing the words softly beside your child.",
+     "voiceId": "eb48221ce13620b4",
+     "voiceSec": 5.23
     },
     {
      "kind": "together",
@@ -7118,7 +6139,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 96,
-     "leadInSec": 2.26,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "G3",
@@ -7379,18 +6400,18 @@
        "from": 31
       }
      ],
-     "durationSec": 32,
-     "voice": "Here we go, all together.",
-     "voiceId": "860c30d743a9b5a8",
-     "voiceSec": 1.86
+     "durationSec": 31,
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -7676,9 +6697,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -7694,7 +6715,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 96,
-     "leadInSec": 2.26,
+     "leadInSec": 3.0,
      "notes": [
       {
        "p": "G3",
@@ -7956,49 +6977,153 @@
       }
      ],
      "durationSec": 32,
-     "voice": "Here we go, all together.",
-     "voiceId": "860c30d743a9b5a8",
-     "voiceSec": 1.86
+     "voice": "Together time. Big smiles.",
+     "voiceId": "a441a4bce0e6e1e6",
+     "voiceSec": 2.6
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 77,
+     "leadInSec": 4.41,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "Oh"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "give"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "me"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "a"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 5,
+       "s": "home"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 3,
+       "s": "where"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 1,
+       "s": "buf"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "fa"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "lo"
+      },
+      {
+       "p": "F4",
+       "d": 3,
+       "f": 4,
+       "s": "roam"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Oh, give me a home where the buffalo roam",
+       "from": 0
+      }
+     ],
+     "durationSec": 24,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
+    },
+    {
+     "kind": "praise",
+     "caption": "You kept riding!",
+     "durationSec": 5,
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Entrainment (matching a tempo)",
+    "parentLine": "Fitting your playing to a speed you did not choose"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Sing the words beside your child; if notes are missed, keep going and smile.",
+   "childAction": "Play along with the music. Missed notes? Keep riding!",
+   "bridge": "Cowboys and settlers carried this song west across the wide open land.",
+   "celebrate": "Today you practiced: keeping up with the music."
   },
   {
    "id": "home-on-the-range-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Home under big skies",
+   "goal": "Play the whole song for teddy and hear the open ending, then the home ending.",
    "type": "concert",
-   "durationSec": 232,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 226,
+   "parentTip": "Sit teddy as the audience; hold the last C long, then bow together.",
    "video": "home-on-the-range/home-on-the-range-c09.mp4",
    "thumb": "home-on-the-range/home-on-the-range-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Home on the Range",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: Home under big skies",
      "durationSec": 8,
      "voice": "Hello again. Home on the Range is waiting for us. Shoulders soft, fingers ready.",
      "voiceId": "238bd25f86bfbf03",
@@ -8006,21 +7131,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "A song for teddy!",
+     "parentCue": "put teddy in front as the audience",
+     "durationSec": 6,
+     "voice": "A song for teddy. Grown-up, put teddy in front as the audience.",
+     "voiceId": "fe0fcf2bdc47db5c",
+     "voiceSec": 4.44
     },
     {
      "kind": "together",
@@ -8693,9 +7809,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -9377,9 +8493,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -9717,11 +8833,11 @@
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, home at last!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
@@ -9732,13 +8848,13 @@
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Open and closed endings",
+    "parentLine": "Line two stops on D, open; the last lands home on C"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; hold the last C long, then bow together.",
+   "childAction": "Play to the end, land home on C, and take a bow.",
+   "bridge": "D is a cabin door left open; C closes it, home at last.",
+   "celebrate": "Today you practiced: a whole song, an open and a home ending."
   }
  ]
 }

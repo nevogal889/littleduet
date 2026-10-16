@@ -1,0 +1,230 @@
+{
+  "songId": "oh-susanna",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finger control, lines that ask and answer, taking turns on the chorus and verse-and-chorus shape, using a cheerful banjo travelling song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Banjo hand on the keys",
+      "goal": "Hear the song, find C by the two black keys and place five fingers.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmark (two black keys)", "parentLine": "Using the two black keys as a sign to find C" },
+      "parentPrompt": "Strum a pretend banjo on your knee, then help your child rest the thumb on C.",
+      "childAction": "Strum your knee, then put your thumb on C and fingers beside it.",
+      "bridge": "C sits just left of the two black keys, where the journey starts.",
+      "intro": [ { "caption": "Strum a banjo on your knee", "parentCue": "strum along together as the song plays" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "One finger, one key",
+          "parentCue": "Say the finger number for each key",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Ready for the journey!",
+      "celebrate": "Today you practiced: finding C and placing five fingers."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Finger four takes a nap",
+      "goal": "Learn the first line, climbing with fingers one, two, three, then five.",
+      "skill": { "primary": "fingers", "secondary": ["patterns", "counting"] },
+      "mathTarget": { "concept": "Ordinal sequence with a gap", "parentLine": "Counting fingers in order, then skipping one" },
+      "parentPrompt": "Gently tap finger four and say 'nap time'. You play the high A in 'Alabama'.",
+      "childAction": "Play 1, 2, 3, then hop to 5. Finger four rests.",
+      "bridge": "Step, step, step, then a hop over F, where finger four sleeps.",
+      "intro": [ { "caption": "Finger four takes a nap", "parentCue": "tap finger four gently and say nap time" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "I came from: C, D, E, G",
+          "parentCue": "Say one, two, three, five",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Finger four had a nap!",
+      "celebrate": "Today you practiced: playing fingers in order and skipping one."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Two lines, two endings",
+      "goal": "Learn the next lines and hear one end on D and the other land home on C.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "form"] },
+      "mathTarget": { "concept": "Same start, different ending", "parentLine": "Two lines begin alike; only one ends at home" },
+      "parentPrompt": "After each line, ask: 'Home yet?' Shrug for D, hug for C.",
+      "childAction": "Play each line; shrug on D, smile big on home C.",
+      "bridge": "D is a step before the door; C is home, where the journey rests.",
+      "intro": [ { "caption": "Is the traveller home yet?", "parentCue": "ask after each line; shrug or hug" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Banjo on my knee",
+          "parentCue": "Shrug together on the last D",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 1.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "True love for to see",
+          "parentCue": "Hug on the last C",
+          "bpm": 60,
+          "notes": [ { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "C4", "d": 3, "f": 1 } ]
+        }
+      ],
+      "praise": "You found the way home!",
+      "celebrate": "Today you practiced: hearing two lines that end differently."
+    },
+    {
+      "index": 4,
+      "spineType": "phrase",
+      "title": "Oh, Susanna: you and me",
+      "goal": "Share the chorus call: the child plays F, the grown-up answers on high A.",
+      "skill": { "primary": "together", "secondary": ["listening", "fingers"] },
+      "mathTarget": { "concept": "Call and response (two players)", "parentLine": "One player calls, the other answers, taking turns" },
+      "parentPrompt": "After your child plays 'Oh, Su', you answer 'san-na' on the high A.",
+      "childAction": "Play F, F with finger four, then listen for the answer.",
+      "bridge": "Oh, Su-san-na: you call on F, your grown-up answers high on A.",
+      "intro": [ { "caption": "You call, I answer", "parentCue": "you play the high A answer each time" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Oh, Su: F, F",
+          "parentCue": "Answer with A, A right after",
+          "bpm": 60,
+          "notes": [ { "p": "F4", "d": 2, "f": 4 }, { "p": "F4", "d": 1, "f": 4 } ]
+        }
+      ],
+      "praise": "What a great call!",
+      "celebrate": "Today you practiced: taking turns, call and answer."
+    },
+    {
+      "index": 5,
+      "spineType": "phrase",
+      "title": "Don't you cry, slide down",
+      "goal": "Learn the 'don't you cry' line, which slides down in skips: G, E, C.",
+      "skill": { "primary": "pitch", "secondary": ["fingers", "patterns"] },
+      "mathTarget": { "concept": "Contour (descending skips)", "parentLine": "The tune goes down, skipping a key each time" },
+      "parentPrompt": "Slide your hand down your child's arm in three hops as the tune goes down.",
+      "childAction": "Play G, G, E, C, then D, D: down the slide.",
+      "bridge": "Five, three, one: hop down the slide, skipping a step each time.",
+      "intro": [ { "caption": "Down the slide we go", "parentCue": "hop your hand down your child's arm" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Don't you cry for me",
+          "parentCue": "Say five, five, three, one, two, two",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "C4", "d": 1.5, "f": 1 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "D4", "d": 3, "f": 2 } ]
+        }
+      ],
+      "praise": "Wheee, down the slide!",
+      "celebrate": "Today you practiced: hearing a tune skip downwards."
+    },
+    {
+      "index": 6,
+      "spineType": "phrase",
+      "title": "I know this line!",
+      "goal": "Learn the last lines and recognise the banjo line from the start, coming back.",
+      "skill": { "primary": "listening", "secondary": ["form", "fingers"] },
+      "mathTarget": { "concept": "Recognition (a line returns)", "parentLine": "Hearing a line and knowing we met it before" },
+      "parentPrompt": "Play the line first and ask: 'Have we heard this before?' Cheer when your child says yes.",
+      "childAction": "Listen, say 'I know this one!', then play it.",
+      "bridge": "The banjo line comes back like a friend waving at the end of the trip.",
+      "intro": [ { "caption": "Have we heard this before?", "parentCue": "let your child answer before they play" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "With my banjo on my knee",
+          "parentCue": "Sing the words softly as they play",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "C4", "d": 1.5, "f": 1 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "C4", "d": 3, "f": 1 } ]
+        }
+      ],
+      "praise": "You remembered it!",
+      "celebrate": "Today you practiced: recognising a line that comes back."
+    },
+    {
+      "index": 7,
+      "spineType": "put-together",
+      "title": "Verse and chorus",
+      "goal": "Play the whole song slowly and hear the story part and the 'Oh, Susanna' part.",
+      "skill": { "primary": "form", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Form: verse and chorus", "parentLine": "A story part, then a singing-together part that repeats" },
+      "parentPrompt": "Sit still for the verse; bounce together when the 'Oh, Susanna' chorus starts.",
+      "childAction": "Play slowly; bounce when the chorus comes.",
+      "bridge": "The verse is the road; the chorus is the happy song at each stop.",
+      "intro": [ { "caption": "Story part, then chorus", "parentCue": "bounce together when the chorus begins" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 83,
+          "notes": [ { "p": "C4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 } ]
+        }
+      ],
+      "praise": "You found the chorus!",
+      "celebrate": "Today you practiced: hearing a verse and a chorus."
+    },
+    {
+      "index": 8,
+      "spineType": "review",
+      "title": "Run-ning, walk",
+      "goal": "Practise the quick start, 'I came from', slowly: two quick notes, then a walk.",
+      "skill": { "primary": "beat", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Ratio 2:1 (short and long)", "parentLine": "Two quick notes fit in the time of one walking note" },
+      "parentPrompt": "Say 'run-ning, walk' with the notes and clap it once before your child plays.",
+      "childAction": "Play C, D quickly, then E, like 'run-ning, walk'.",
+      "bridge": "Two quick steps fit into one walking step, like a skip on the road.",
+      "intro": [ { "caption": "Run-ning, walk!", "parentCue": "clap it once together before they play" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "I came from: run-ning, walk",
+          "parentCue": "Say run-ning, walk with the notes",
+          "bpm": 56,
+          "notes": [ { "p": "C4", "d": 0.5, "f": 1 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "C4", "d": 0.5, "f": 1 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "Great running and walking!",
+      "celebrate": "Today you practiced: quick notes and walking notes."
+    },
+    {
+      "index": 9,
+      "spineType": "play-along",
+      "title": "Banjo band play-along",
+      "goal": "Play the whole song along with the music and keep going to the end.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Synchrony with a moving pulse", "parentLine": "Keeping pace with the music, all the way to the end" },
+      "parentPrompt": "Sing the chorus loudly beside your child; if they miss a note, keep singing.",
+      "childAction": "Play along with the music; keep going after a slip.",
+      "bridge": "You and the music walk the long road side by side.",
+      "intro": [ { "caption": "Join the banjo band!", "parentCue": "sing beside your child and keep going" } ],
+      "games": [],
+      "praise": "You kept going together!",
+      "celebrate": "Today you practiced: keeping pace with the music to the end."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "Don't cry, teddy!",
+      "goal": "Play the whole song for teddy with a happy, bouncy sound.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Character (happy, bouncy touch)", "parentLine": "Choosing a happy, bouncy way to play" },
+      "parentPrompt": "Sit teddy as the audience; play with bouncy fingers, then clap and bow.",
+      "childAction": "Play a happy, bouncy song for teddy, then bow.",
+      "bridge": "Bouncy fingers sound like a banjo; the last C is the journey's end.",
+      "intro": [ { "caption": "A happy song for teddy!", "parentCue": "sit teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, happy travellers!",
+      "celebrate": "Today you practiced: playing a whole song with a happy sound."
+    }
+  ]
+}

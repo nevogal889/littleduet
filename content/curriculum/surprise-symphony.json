@@ -1,0 +1,176 @@
+{
+  "songId": "surprise-symphony",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices skipping keys with fingers 1-3-5, notes in pairs, patterns going up and down, predicting a surprise and soft-versus-loud playing, with Haydn's tiptoe tune.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Tiptoe fingers 1, 3, 5",
+      "goal": "Place the hand on C and find the skip-a-key notes C, E and G.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Skip pattern (every other key)", "parentLine": "Play one key, skip one, play the next" },
+      "parentPrompt": "Help your child rest the thumb on C, then touch C, E, G, skipping a key each time.",
+      "childAction": "Thumb on C. Tiptoe C, E, G: skip a key each time.",
+      "bridge": "The tune tiptoes over every other key, like stepping on stones across a stream.",
+      "intro": [ { "caption": "Shh... tiptoe fingers, ready", "parentCue": "whisper, and curve your child's fingers gently" } ],
+      "games": [],
+      "praise": "Lovely tiptoe fingers!",
+      "celebrate": "Today you practiced: finding C, E and G by skipping keys."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Tiptoe in pairs",
+      "goal": "Play the first line and notice every note comes twice, in pairs.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "patterns"] },
+      "mathTarget": { "concept": "Grouping in twos (pairs)", "parentLine": "Each note comes twice: two Cs, two Es, two Gs" },
+      "parentPrompt": "Whisper 'one, two' for each pair as your child plays it.",
+      "childAction": "Play each note twice: C, C, E, E, G, G, then E.",
+      "bridge": "Every note brings a twin: two tiptoes on each stepping stone.",
+      "intro": [ { "caption": "Two tiptoes on every stone", "parentCue": "whisper 'one, two' for each pair" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Tiptoe, tiptoe, quiet now",
+          "parentCue": "Whisper the finger numbers: 1, 1, 3, 3",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "Perfect pairs of tiptoes!",
+      "celebrate": "Today you practiced: noticing notes that come in pairs."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Tiptoe back down",
+      "goal": "Play the second line, which skips down; the grown-up plays the low notes.",
+      "skill": { "primary": "patterns", "secondary": ["pitch", "together"] },
+      "mathTarget": { "concept": "Mirror (skipping up, skipping down)", "parentLine": "Line one skips up; line two skips back down" },
+      "parentPrompt": "Grown-up, you play the low B and G; your child plays F, F, D, D.",
+      "childAction": "Play F, F, D, D; then your grown-up tiptoes lower.",
+      "bridge": "Line one tiptoes up the stones to the right; line two tiptoes back left.",
+      "intro": [ { "caption": "Now we tiptoe down", "parentCue": "you play the low B and G" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Everybody, shh, shh, shh",
+          "parentCue": "Lower your hand as the lights go down",
+          "bpm": 72,
+          "notes": [ { "p": "F4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "B3", "d": 1 }, { "p": "B3", "d": 1 }, { "p": "G3", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Your part: F, F, D, D",
+          "parentCue": "Whisper 'shh' as your child plays",
+          "bpm": 72,
+          "notes": [ { "p": "F4", "d": 1, "f": 4 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 2, "f": 2 } ]
+        }
+      ],
+      "praise": "Down we tiptoed!",
+      "celebrate": "Today you practiced: a pattern going up, then down."
+    },
+    {
+      "index": 4,
+      "spineType": "put-together",
+      "title": "Where is the surprise?",
+      "goal": "Play the whole song slowly and guess where the pattern changes into a surprise.",
+      "skill": { "primary": "form", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Prediction (pattern break)", "parentLine": "Line three starts like line one, then breaks the pattern" },
+      "parentPrompt": "Grown-up, you play the high boo note; ask 'when is it coming?' before line three.",
+      "childAction": "Play slowly and guess: when will the boo come?",
+      "bridge": "Line three walks the same stones, then jumps to a high stone: Boo!",
+      "intro": [ { "caption": "Somewhere hides a boo!", "parentCue": "you play the high C, the boo" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 77,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found the surprise!",
+      "celebrate": "Today you practiced: guessing where a pattern changes."
+    },
+    {
+      "index": 5,
+      "spineType": "review",
+      "title": "Skip, don't step",
+      "goal": "Practise skipping keys slowly with fingers 1, 3 and 5.",
+      "skill": { "primary": "fingers", "secondary": ["space"] },
+      "mathTarget": { "concept": "Interval distance (skip versus step)", "parentLine": "A skip jumps over one key; a step goes next door" },
+      "parentPrompt": "Rest a hand lightly on your child's wrist so the hand stays still; only fingers move.",
+      "childAction": "Play C, E, G, E with fingers 1, 3, 5, 3.",
+      "bridge": "Fingers 2 and 4 rest their feet; fingers 1, 3, 5 hop the stones.",
+      "intro": [ { "caption": "Hop over one key", "parentCue": "go slowly; the hand stays in its place" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Hop: 1, 3, 5, 3",
+          "parentCue": "Say the finger numbers with each key",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "Great hopping fingers!",
+      "celebrate": "Today you practiced: skipping keys with fingers 1, 3 and 5."
+    },
+    {
+      "index": 6,
+      "spineType": "phrase",
+      "title": "Count four tiptoes",
+      "goal": "Play the whole song slowly and evenly while counting four beats in each bar.",
+      "skill": { "primary": "beat", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Grouping by four (meter)", "parentLine": "Beats come in groups of four: one, two, three, four" },
+      "parentPrompt": "Whisper '1, 2, 3, 4' slowly and evenly; tap your child's shoulder on 1.",
+      "childAction": "Play slowly and evenly while your grown-up counts to four.",
+      "bridge": "Four tiptoes, then start again: one, two, three, four.",
+      "intro": [ { "caption": "Tiptoe, tiptoe: 1, 2, 3, 4", "parentCue": "whisper the count slowly and evenly" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap four tiptoe beats",
+          "parentCue": "Whisper 1, 2, 3, 4 with the taps",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "Slow and even, well done!",
+      "celebrate": "Today you practiced: counting four beats in a bar."
+    },
+    {
+      "index": 7,
+      "spineType": "play-along",
+      "title": "Tiptoe with the orchestra",
+      "goal": "Play the song along with the music at full speed and keep going.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Entrainment (matching a tempo)", "parentLine": "Fitting your playing to a speed you did not choose" },
+      "parentPrompt": "Tiptoe your fingers on your knee beside your child; if notes are missed, keep going.",
+      "childAction": "Play along with the music. Missed notes? Keep tiptoeing!",
+      "bridge": "Haydn wrote this tune for a whole orchestra; your fingers tiptoe with them.",
+      "intro": [ { "caption": "The orchestra is tiptoeing too", "parentCue": "tiptoe your fingers on your knee to help" } ],
+      "games": [],
+      "praise": "You kept going!",
+      "celebrate": "Today you practiced: keeping up with the music."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "A surprise for teddy",
+      "goal": "Play softly for teddy, then the grown-up plays the big boo.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Contrast (soft, then sudden loud)", "parentLine": "Very quiet, then one big sound: the contrast is the fun" },
+      "parentPrompt": "Sit teddy as the audience; play the boo loud, then laugh and bow together.",
+      "childAction": "Play soft tiptoe notes, then jump with teddy at the boo.",
+      "bridge": "Haydn hid one big loud chord in a quiet tune; that is the surprise.",
+      "intro": [ { "caption": "Shh... teddy doesn't know!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, what a surprise!",
+      "celebrate": "Today you practiced: playing very softly, then a surprise."
+    }
+  ]
+}

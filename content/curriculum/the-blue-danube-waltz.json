@@ -1,0 +1,177 @@
+{
+  "songId": "the-blue-danube-waltz",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices skip-a-key fingers, silent beats, shifted patterns, three Cs across the keyboard, counting in threes and interlocking hands, with Strauss's river waltz.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "Skip-a-key: 1, 3, 5",
+      "goal": "Place the thumb on C and climb C, E, G with fingers 1, 3 and 5.",
+      "skill": { "primary": "fingers", "secondary": ["space", "counting"] },
+      "mathTarget": { "concept": "Skip pattern (every other key)", "parentLine": "Play one key, skip one, play the next" },
+      "parentPrompt": "Help your child rest the thumb on C, then touch C, E, G, skipping a key each time.",
+      "childAction": "Thumb on C. Climb C, E, G with fingers 1, 3, 5.",
+      "bridge": "C, E, G are stepping stones across the river, one stone skipped each time.",
+      "intro": [ { "caption": "Three stones across the river", "parentCue": "thumb on C, just left of the two black keys" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "C, C, E, G: up the stones",
+          "parentCue": "Say the fingers: 1, 1, 3, 5",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "G4", "d": 3, "f": 5 } ]
+        }
+      ],
+      "praise": "Lovely stepping stones!",
+      "celebrate": "Today you practiced: skipping keys with fingers 1, 3 and 5."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Shh, then ta-ta",
+      "goal": "Learn the high answer and feel the silent beat before each ta-ta.",
+      "skill": { "primary": "beat", "secondary": ["counting", "space"] },
+      "mathTarget": { "concept": "Silent beat (rest)", "parentLine": "The beat keeps going, even when no note plays" },
+      "parentPrompt": "Whisper 'shh' on the silent beat and say 'ta-ta' on the two notes after it.",
+      "childAction": "Shh on one, then play ta-ta up high. Shh, ta-ta!",
+      "bridge": "The silent beat is a dancer's spin; ta-ta are two steps landing up high.",
+      "intro": [ { "caption": "Shh, ta-ta. Shh, ta-ta.", "parentCue": "whisper shh on the silent beat" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Hear the silent beat",
+          "parentCue": "Whisper 'shh' on each silent beat",
+          "bpm": 72,
+          "notes": [ { "rest": true, "d": 1 }, { "p": "G5", "d": 1 }, { "p": "G5", "d": 1 }, { "rest": true, "d": 1 }, { "p": "E5", "d": 1 }, { "p": "E5", "d": 1 } ]
+        }
+      ],
+      "praise": "Shh, ta-ta, perfect!",
+      "celebrate": "Today you practiced: keeping the beat through a silent beat."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Same shape, one key lower",
+      "goal": "Learn part three: the same climbing shape, moved one key lower.",
+      "skill": { "primary": "patterns", "secondary": ["space", "fingers"] },
+      "mathTarget": { "concept": "Sequence (shape shifted down)", "parentLine": "The same climbing shape, starting one key lower" },
+      "parentPrompt": "Help your child start one key lower, thumb on B; the hand hops up for A.",
+      "childAction": "Thumb on B, one key lower. Climb the same shape again.",
+      "bridge": "The river bends: the same stones, one step to the left.",
+      "intro": [ { "caption": "The river moves one step", "parentCue": "slide the hand one key left, thumb on B" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "One key lower: B, B, D, A",
+          "parentCue": "Say 'same shape, lower' as your child plays",
+          "bpm": 66,
+          "notes": [ { "p": "B3", "d": 1 }, { "p": "B3", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "A4", "d": 3 } ]
+        }
+      ],
+      "praise": "Same shape, new place!",
+      "celebrate": "Today you practiced: the same shape, moved lower."
+    },
+    {
+      "index": 4,
+      "spineType": "put-together",
+      "title": "Three Cs on the river",
+      "goal": "Play the whole waltz slowly and find the three Cs the climb reaches.",
+      "skill": { "primary": "space", "secondary": ["form", "pitch"] },
+      "mathTarget": { "concept": "Octave map (three Cs)", "parentLine": "C lives in many houses: low, middle and high" },
+      "parentPrompt": "Point to each C before the climb: this C, the next C, the high C.",
+      "childAction": "Play slowly and point to each C the climb reaches.",
+      "bridge": "Each C is the same house on the river; the high one is far right.",
+      "intro": [ { "caption": "Find three Cs, low to high", "parentCue": "point to three Cs, left to right" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Three Cs: same name",
+          "parentCue": "Point to each C as it lights",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 2 }, { "p": "C5", "d": 2 }, { "p": "C6", "d": 2 } ]
+        }
+      ],
+      "praise": "You found all three Cs!",
+      "celebrate": "Today you practiced: the same note in three places."
+    },
+    {
+      "index": 5,
+      "spineType": "left-hand",
+      "title": "Oom-pah-pah, low on one",
+      "goal": "Play one low left-hand note on one of each bar of three.",
+      "skill": { "primary": "counting", "secondary": ["beat", "space"] },
+      "mathTarget": { "concept": "Grouping in threes (oom-pah-pah)", "parentLine": "A waltz counts in threes: One, two, three" },
+      "parentPrompt": "Play the tune and say 'oom, pah, pah' out loud; your child plays on oom.",
+      "childAction": "Left hand plays one low note on every oom.",
+      "bridge": "The low note is the dancer's big step; pah, pah are two little twirls.",
+      "intro": [ { "caption": "Oom, pah, pah", "parentCue": "say it together, sway on oom" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Find the low notes",
+          "parentCue": "Point to each low key first",
+          "bpm": 73,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "G3", "d": 2, "f": 1 }, { "p": "F3", "d": 2, "f": 2 } ]
+        }
+      ],
+      "praise": "What a waltz bass!",
+      "celebrate": "Today you practiced: counting in threes, landing on one."
+    },
+    {
+      "index": 6,
+      "spineType": "hands-together",
+      "title": "Left fills the gap",
+      "goal": "Play both hands slowly: the left hand plays where the right hand rests.",
+      "skill": { "primary": "patterns", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Interlocking patterns (fill the gap)", "parentLine": "Left hand plays in the gap where the right hand rests" },
+      "parentPrompt": "Say 'left' on one and 'right, right' on two, three. Go very slowly.",
+      "childAction": "Left on one, right on two, three. Hands take turns.",
+      "bridge": "Two dancers take turns: the left one steps, then the right one twirls.",
+      "intro": [ { "caption": "Two hands take turns", "parentCue": "say left, right, right, very slowly" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 73,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Hands taking turns, beautiful!",
+      "celebrate": "Today you practiced: two hands taking turns in one tune."
+    },
+    {
+      "index": 7,
+      "spineType": "play-along",
+      "title": "Waltz with the orchestra",
+      "goal": "Play the waltz along with the music at full speed and keep going.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Entrainment (matching a tempo)", "parentLine": "Fitting your playing to a speed you did not choose" },
+      "parentPrompt": "Sway 'oom, pah, pah' beside your child; if notes are missed, keep going and smile.",
+      "childAction": "Play along with the music. Missed notes? Keep dancing!",
+      "bridge": "Strauss first wrote this for a choir, then for a whole orchestra.",
+      "intro": [ { "caption": "The orchestra is waltzing!", "parentCue": "sway beside your child with the music" } ],
+      "games": [],
+      "praise": "You kept dancing!",
+      "celebrate": "Today you practiced: keeping up with the music."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Waltz home to C",
+      "goal": "Play the whole waltz for teddy and hear it end on the C where it began.",
+      "skill": { "primary": "form", "secondary": ["expression", "together"] },
+      "mathTarget": { "concept": "Return to the start", "parentLine": "The waltz begins on C and comes back to the same C" },
+      "parentPrompt": "Sit teddy as the audience; point to the first C before you start and at the end.",
+      "childAction": "Play to the end, land on the first C, and take a bow.",
+      "bridge": "The river flows far away and high, then carries you home to C.",
+      "intro": [ { "caption": "A waltz for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, home again!",
+      "celebrate": "Today you practiced: a whole song that returns to its start."
+    }
+  ]
+}

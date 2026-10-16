@@ -1,0 +1,160 @@
+{
+  "songId": "mulberry-bush",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices a swinging steady beat, high and low, loud and soft, stop and go, and playing together, with an old circle game.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Round and round we go",
+      "goal": "Feel the swinging beat of the song by moving in a little circle together.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (a swinging pulse)", "parentLine": "Feeling a swing that comes back again and again" },
+      "parentPrompt": "Hold your child and walk or rock in a small circle, stepping on each big beat.",
+      "childAction": "Go round and round with your grown-up, swaying to the song.",
+      "bridge": "The beat swings like a gentle hammock: swing, swing, round the bush.",
+      "intro": [ { "caption": "Round and round we go", "parentCue": "hold your child and step in a small circle" } ],
+      "games": [],
+      "praise": "You went round together!",
+      "celebrate": "Today you practiced: feeling the swinging beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Two big swings",
+      "goal": "Tap one steady tap on each big swinging beat while the grown-up plays.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Grouping in two (compound pulse)", "parentLine": "This song swings in twos: one, two, one, two" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key on each big swing. Any key is right.",
+      "bridge": "Each tap is one swing of the hammock: one, two, one, two.",
+      "intro": [ { "caption": "One swing, one tap", "parentCue": "say 'one, two' softly with the swings" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Here we go round",
+          "parentCue": "Tap two big taps with this line",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "C4", "d": 1 } ]
+        }
+      ],
+      "praise": "You kept the swing!",
+      "celebrate": "Today you practiced: tapping a swinging beat in twos."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping (pitch to place)", "parentLine": "Low sounds live on the left, high sounds on the right" },
+      "parentPrompt": "Crouch and growl for the bear; stretch up and flap for the bird.",
+      "childAction": "Bear sound: tap the left side. Bird sound: tap the right.",
+      "bridge": "The bear sits low under the bush; the bird sits high on top.",
+      "intro": [ { "caption": "Bear lives low, bird lives high", "parentCue": "point left for bear, right for bird" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Down low, then up high",
+          "parentCue": "Crouch on the low notes, stretch on high",
+          "bpm": 66,
+          "notes": [ { "p": "G3", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Stomp, stomp, tiptoe",
+      "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "Noticing big and small: the same tap, more or less" },
+      "parentPrompt": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
+      "childAction": "Loud: big stomping taps. Soft: tiny tiptoe taps.",
+      "bridge": "Loud taps are big boots round the bush; soft taps are tiptoes.",
+      "intro": [ { "caption": "Big stomps, tiny tiptoes", "parentCue": "loud means strong arms, not banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Turtle and bunny circle",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "Same tune, same shape, only the speed changes" },
+      "parentPrompt": "Circle your finger on your child's back, slowly then quickly, matching the music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "Slow taps are a turtle going round the bush; fast taps are a bunny.",
+      "intro": [ { "caption": "Turtle slow, bunny fast", "parentCue": "slow down if the taps get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle goes round",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 54,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "C4", "d": 1 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny goes round",
+          "parentCue": "Same song, now quick and light",
+          "bpm": 96,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "C4", "d": 1 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Freeze and wash hands",
+      "goal": "Tap while the music plays; when it stops, freeze, then pretend to wash hands.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "When the music stops, freeze, then rub your hands together like washing; cheer at the restart.",
+      "childAction": "Tap while music plays. Freeze when it stops, then wash hands.",
+      "bridge": "Music on, we go round the bush; music off, we stop and wash.",
+      "intro": [ { "caption": "Tap, tap... freeze!", "parentCue": "after each freeze, pretend to wash your hands" } ],
+      "games": [],
+      "praise": "Great freezing!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "together",
+      "title": "You and me, round we go",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together to make one song" },
+      "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Tap the beat on any key while your grown-up plays the tune.",
+      "bridge": "Two friends go round the bush hand in hand: one tune, one beat.",
+      "intro": [ { "caption": "I play, you tap", "parentCue": "sit side by side at the piano" } ],
+      "games": [],
+      "praise": "What a duet together!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Mulberry concert for teddy",
+      "goal": "Play the whole song from the first note to the last, then bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+      "childAction": "Tap the beat to the very end, then take a big bow.",
+      "bridge": "The song goes once round the bush and stops where it began.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

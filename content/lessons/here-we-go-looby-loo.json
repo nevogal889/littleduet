@@ -2,41 +2,48 @@
  "songId": "here-we-go-looby-loo",
  "title": "Here We Go Looby Loo",
  "ageGroup": "3-4",
- "curriculum": "default",
- "songSummary": "Practices listening memory, keyboard map and steady beat, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices a swinging beat, finding a special note, echoing skipping patterns and taking turns, with an old circle-and-shake game.",
  "skillMap": [
   {
    "id": "listening",
    "label": "Listening memory",
    "value": 1.0,
-   "classes": 4,
+   "classes": 2,
    "total": 9
   },
   {
-   "id": "space",
-   "label": "Keyboard map",
-   "value": 0.5,
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 1.0,
+   "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "together",
+   "label": "Playing together",
+   "value": 1.0,
    "classes": 2,
    "total": 9
   },
   {
    "id": "beat",
    "label": "Steady beat",
-   "value": 0.25,
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 0.5,
    "classes": 1,
    "total": 9
   },
   {
    "id": "form",
    "label": "Song shape",
-   "value": 0.25,
-   "classes": 1,
-   "total": 9
-  },
-  {
-   "id": "together",
-   "label": "Playing together",
-   "value": 0.25,
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -44,36 +51,65 @@
  "icon": "music",
  "key": "C",
  "timeSignature": "6/8",
- "totalSec": 2302,
+ "totalSec": 2306,
  "classes": [
   {
    "id": "here-we-go-looby-loo-c01",
    "index": 1,
-   "title": "Listen and sway",
-   "goal": "Hear the whole song and move to the beat",
+   "title": "Shake when it comes back",
+   "goal": "Listen for the first line each time it returns, and shake your hands when it does.",
    "type": "listen",
-   "durationSec": 247,
-   "parentTip": "Sit together at the piano. Sway side to side while the song plays.",
+   "durationSec": 256,
+   "parentTip": "Sway with your child; each time 'here we go looby loo' returns, shake your hands together.",
    "video": "here-we-go-looby-loo/here-we-go-looby-loo-c01.mp4",
    "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Here We Go Looby Loo",
-     "subcaption": "Class 1: Listen and sway",
+     "subcaption": "Class 1: Shake when it comes back",
      "durationSec": 7,
      "voice": "Hi there, music friends. Our song today is Here We Go Looby Loo.",
      "voiceId": "ff44e2d3838ffddc",
      "voiceSec": 5.09
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm up on C",
+     "parentCue": "Help one finger find it",
+     "bpm": 83,
+     "leadInSec": 5.13,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Let's warm up on C. One finger, three gentle presses.",
+     "voiceId": "da6be30fbb9ef99c",
+     "voiceSec": 4.73
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Shake when you hear it again",
+     "parentCue": "sway together, then shake hands on the repeat",
+     "durationSec": 8,
+     "voice": "Shake when you hear it again. Grown-up, sway together, then shake hands on the repeat.",
+     "voiceId": "210d6c98258ae039",
+     "voiceSec": 5.85
     },
     {
      "kind": "listen",
@@ -725,7 +761,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 104,
-     "leadInSec": 3.1,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -922,17 +958,17 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Here comes the music. Listen.",
-     "voiceId": "851e2f513b5871ee",
-     "voiceSec": 2.7
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -1378,7 +1414,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 104,
-     "leadInSec": 3.1,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -1575,17 +1611,17 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Here comes the music. Listen.",
-     "voiceId": "851e2f513b5871ee",
-     "voiceSec": 2.7
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -2018,54 +2054,45 @@
      "voiceSec": 2.66
     },
     {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 5,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You heard it come back!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
     "primary": "listening",
     "secondary": [
-     "beat",
+     "patterns",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Pattern recognition (repeat)",
+    "parentLine": "Noticing when the same line comes back"
    },
-   "parentPrompt": "Sit together at the piano. Sway side to side while the song plays.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Sway with your child; each time 'here we go looby loo' returns, shake your hands together.",
+   "childAction": "Sway with the song. Shake your hands when the line comes back.",
+   "bridge": "The first line is a friend who keeps coming back round the circle.",
+   "celebrate": "Today you practiced: noticing a line that repeats."
   },
   {
    "id": "here-we-go-looby-loo-c02",
    "index": 2,
-   "title": "Find the beat",
-   "goal": "Tap a steady beat while the grown-up plays the tune",
+   "title": "Swing in the circle",
+   "goal": "Tap one steady tap on each big swinging beat while the grown-up plays.",
    "type": "beat",
-   "durationSec": 234,
-   "parentTip": "Any key is fine. Tap with your child's hand at first, then let go.",
+   "durationSec": 232,
+   "parentTip": "Rest your hand over your child's hand and tap together, then slowly let go.",
    "video": "here-we-go-looby-loo/here-we-go-looby-loo-c02.mp4",
    "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Here We Go Looby Loo",
-     "subcaption": "Class 2: Find the beat",
+     "subcaption": "Class 2: Swing in the circle",
      "durationSec": 8,
      "voice": "Welcome back. Let's play Here We Go Looby Loo. Grown-up, sit right beside the keys.",
      "voiceId": "7911c8e1a823f463",
@@ -2073,21 +2100,55 @@
     },
     {
      "kind": "say",
-     "caption": "Tap any key on the beat",
-     "parentCue": "You play the tune, your child taps the beat",
-     "durationSec": 8,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
+     "caption": "One skip, one tap",
+     "parentCue": "say 'one, two' softly with the swings",
+     "durationSec": 7,
+     "voice": "One skip, one tap. Grown-up, say 'one, two' softly with the swings.",
+     "voiceId": "e54fe10256b91c92",
+     "voiceSec": 5.11
     },
     {
-     "kind": "say",
-     "caption": "Tap, tap, tap, like a heartbeat",
-     "parentCue": "Tap with your child first",
-     "durationSec": 7,
-     "voice": "Tap, tap, tap, like a heartbeat.",
-     "voiceId": "07ab7f7da2eb6f0e",
-     "voiceSec": 2.82
+     "kind": "beat",
+     "caption": "Here we go looby loo",
+     "parentCue": "Tap two big taps with this line",
+     "bpm": 72,
+     "leadInSec": 3.99,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Here we go looby loo. Two big taps with me.",
+     "voiceId": "1e7119e25c0193bf",
+     "voiceSec": 3.59
     },
     {
      "kind": "beat",
@@ -2514,9 +2575,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -2960,9 +3021,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -2978,7 +3039,7 @@
      "caption": "Tap on every beat",
      "parentCue": "You play, your child taps",
      "bpm": 104,
-     "leadInSec": 4.26,
+     "leadInSec": 2.45,
      "notes": [
       {
        "p": "C4",
@@ -3174,18 +3235,18 @@
        "from": 18
       }
      ],
-     "durationSec": 20,
-     "voice": "Any key is fine. Tap when the circle grows.",
-     "voiceId": "015b37b18f728b6c",
-     "voiceSec": 3.86
+     "durationSec": 18,
+     "voice": "Tap any key on the beat.",
+     "voiceId": "4802ab3c0193975b",
+     "voiceSec": 2.05
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -3406,9 +3467,9 @@
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -3424,7 +3485,7 @@
      "caption": "Tap, tap, tap",
      "parentCue": "You play, your child taps",
      "bpm": 104,
-     "leadInSec": 3.27,
+     "leadInSec": 3.54,
      "notes": [
       {
        "p": "C4",
@@ -3621,70 +3682,109 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Tap with the circle. Nice and steady.",
-     "voiceId": "d916f37a4d2a5a53",
-     "voiceSec": 2.87
+     "voice": "Grown-up plays the song. You tap the beat.",
+     "voiceId": "4517efb7c8c0ff3d",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
      "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
      "caption": "Shake, shake, shake!",
      "parentCue": "Shake hands loose for a moment",
-     "durationSec": 7,
+     "durationSec": 4,
      "voice": "Shake, shake, shake your hands.",
      "voiceId": "69041444bf86c15c",
      "voiceSec": 2.85
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept the swing!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
     "primary": "beat",
     "secondary": [
+     "counting",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Periodicity (steady pulse)",
-    "parentLine": "Feeling something that repeats at an even time"
+    "concept": "Grouping in two (compound pulse)",
+    "parentLine": "This song swings in twos: one, two, one, two"
    },
-   "parentPrompt": "Any key is fine. Tap with your child's hand at first, then let go.",
-   "childAction": "Tap any key on every beat.",
-   "bridge": "The beat is a heartbeat: tap, tap, tap, never in a hurry.",
-   "celebrate": "Today you practiced keeping a steady beat and playing together."
+   "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+   "childAction": "Tap any key on each big swing. Any key is right.",
+   "bridge": "Each tap is one skip around the circle: skip, skip, skip.",
+   "celebrate": "Today you practiced: tapping a swinging beat."
   },
   {
    "id": "here-we-go-looby-loo-c03",
    "index": 3,
-   "title": "Find the special note",
-   "goal": "Find and play the song's special note: C",
+   "title": "Find home note C",
+   "goal": "Find C by touch: it sits just left of the two black keys.",
    "type": "special-note",
-   "durationSec": 244,
-   "parentTip": "Help your child find C. Use one finger and press gently, like a button.",
+   "durationSec": 248,
+   "parentTip": "Guide your child's finger to the two black keys, then slide left onto C.",
    "video": "here-we-go-looby-loo/here-we-go-looby-loo-c03.mp4",
    "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Here We Go Looby Loo",
-     "subcaption": "Class 3: Find the special note",
+     "subcaption": "Class 3: Find home note C",
      "durationSec": 8,
      "voice": "Hello, piano friends. Today's song is Here We Go Looby Loo. Hands on your knees to start.",
      "voiceId": "b2fc16412a92c070",
      "voiceSec": 6.5
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm up on C",
+     "parentCue": "Help one finger find it",
+     "bpm": 83,
+     "leadInSec": 5.13,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Let's warm up on C. One finger, three gentle presses.",
+     "voiceId": "da6be30fbb9ef99c",
+     "voiceSec": 4.73
+    },
+    {
+     "kind": "say",
+     "caption": "Find the two black keys",
+     "parentCue": "let your child touch them first, then find C",
+     "durationSec": 7,
+     "voice": "Find the two black keys, side by side.",
+     "voiceId": "342cccd6285d7d0f",
+     "voiceSec": 2.61
     },
     {
      "kind": "say",
@@ -3702,13 +3802,30 @@
      "voiceSec": 2.87
     },
     {
-     "kind": "say",
-     "caption": "It comes back again and again",
-     "parentCue": "Count how often you hear it",
-     "durationSec": 7,
-     "voice": "It comes back again and again. Listen for it.",
-     "voiceId": "7ba5c7f096c3563c",
-     "voiceSec": 3.53
+     "kind": "your_turn",
+     "caption": "C, C, C: one, two, three",
+     "parentCue": "Count softly with each press",
+     "bpm": 72,
+     "leadInSec": 3.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "C4",
+       "d": 2
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
     },
     {
      "kind": "demo",
@@ -3791,7 +3908,7 @@
      "caption": "Listen first",
      "parentCue": "Watch the key",
      "bpm": 83,
-     "leadInSec": 2.33,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "C4",
@@ -3804,17 +3921,17 @@
        "f": 1
       }
      ],
-     "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 8,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child press it",
      "bpm": 83,
-     "leadInSec": 2.84,
+     "leadInSec": 3.71,
      "gapBeats": 1,
      "notes": [
       {
@@ -3828,18 +3945,18 @@
        "f": 1
       }
      ],
-     "durationSec": 9,
-     "voice": "Your turn. I'll wait for you.",
-     "voiceId": "30da762511a45127",
-     "voiceSec": 2.44
+     "durationSec": 10,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -3855,7 +3972,7 @@
      "caption": "Listen first",
      "parentCue": "Watch the key",
      "bpm": 83,
-     "leadInSec": 2.33,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "C4",
@@ -3874,16 +3991,16 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child press it",
      "bpm": 83,
-     "leadInSec": 2.84,
+     "leadInSec": 3.9,
      "gapBeats": 1,
      "notes": [
       {
@@ -3902,18 +4019,18 @@
        "f": 1
       }
      ],
-     "durationSec": 10,
-     "voice": "Your turn. I'll wait for you.",
-     "voiceId": "30da762511a45127",
-     "voiceSec": 2.44
+     "durationSec": 11,
+     "voice": "Your turn. Wait for the glow, then press.",
+     "voiceId": "e03bd593ae91d1cb",
+     "voiceSec": 3.5
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -3929,7 +4046,7 @@
      "caption": "Listen first",
      "parentCue": "Watch the key",
      "bpm": 83,
-     "leadInSec": 2.33,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "C4",
@@ -3942,17 +4059,17 @@
        "f": 1
       }
      ],
-     "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 8,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child press it",
      "bpm": 83,
-     "leadInSec": 2.84,
+     "leadInSec": 3.82,
      "gapBeats": 1,
      "notes": [
       {
@@ -3966,10 +4083,10 @@
        "f": 1
       }
      ],
-     "durationSec": 9,
-     "voice": "Your turn. I'll wait for you.",
-     "voiceId": "30da762511a45127",
-     "voiceSec": 2.44
+     "durationSec": 10,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
     },
     {
      "kind": "praise",
@@ -3993,7 +4110,7 @@
      "caption": "Listen first",
      "parentCue": "Watch the key",
      "bpm": 83,
-     "leadInSec": 2.33,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "C4",
@@ -4012,16 +4129,16 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child press it",
      "bpm": 83,
-     "leadInSec": 2.84,
+     "leadInSec": 3.82,
      "gapBeats": 1,
      "notes": [
       {
@@ -4040,18 +4157,18 @@
        "f": 1
       }
      ],
-     "durationSec": 10,
-     "voice": "Your turn. I'll wait for you.",
-     "voiceId": "30da762511a45127",
-     "voiceSec": 2.44
+     "durationSec": 11,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -4067,7 +4184,7 @@
      "caption": "Listen first",
      "parentCue": "Watch the key",
      "bpm": 83,
-     "leadInSec": 2.33,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "C4",
@@ -4081,16 +4198,16 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child press it",
      "bpm": 83,
-     "leadInSec": 2.84,
+     "leadInSec": 4.18,
      "gapBeats": 1,
      "notes": [
       {
@@ -4104,18 +4221,18 @@
        "f": 1
       }
      ],
-     "durationSec": 9,
-     "voice": "Your turn. I'll wait for you.",
-     "voiceId": "30da762511a45127",
-     "voiceSec": 2.44
+     "durationSec": 11,
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -4131,7 +4248,7 @@
      "caption": "Listen first",
      "parentCue": "Watch the key",
      "bpm": 83,
-     "leadInSec": 2.33,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "C4",
@@ -4149,17 +4266,17 @@
        "f": 1
       }
      ],
-     "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 8,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child press it",
      "bpm": 83,
-     "leadInSec": 2.84,
+     "leadInSec": 3.82,
      "gapBeats": 1,
      "notes": [
       {
@@ -4178,10 +4295,1295 @@
        "f": 1
       }
      ],
+     "durationSec": 11,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
+    },
+    {
+     "kind": "praise",
+     "caption": "Yes, that's it!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
+    },
+    {
+     "kind": "say",
+     "caption": "Big breath in and out",
+     "parentCue": "Breathe slowly together",
+     "durationSec": 4,
+     "voice": "Big breath in, and out.",
+     "voiceId": "67a43f157c55d975",
+     "voiceSec": 2.01
+    },
+    {
+     "kind": "praise",
+     "caption": "You found the C!",
+     "durationSec": 5,
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
+    }
+   ],
+   "skill": {
+    "primary": "space",
+    "secondary": [
+     "fingers",
+     "listening"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Spatial landmarks (black-key groups)",
+    "parentLine": "Using the two black keys to find one white key"
+   },
+   "parentPrompt": "Guide your child's finger to the two black keys, then slide left onto C.",
+   "childAction": "Touch the two black keys, slide left, and press C gently.",
+   "bridge": "The two black keys are a little hut; C waits just outside on the left.",
+   "celebrate": "Today you practiced: finding one key by its landmark."
+  },
+  {
+   "id": "here-we-go-looby-loo-c04",
+   "index": 4,
+   "title": "Skip, skip, skip",
+   "goal": "Copy a pattern that skips over a key each time: C, E, G.",
+   "type": "echo",
+   "durationSec": 239,
+   "parentTip": "Play C-E-G slowly, touching the skipped keys with a finger, then let your child copy.",
+   "video": "here-we-go-looby-loo/here-we-go-looby-loo-c04.mp4",
+   "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c04.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Here We Go Looby Loo",
+     "subcaption": "Class 4: Skip, skip, skip",
+     "durationSec": 8,
+     "voice": "Hi, everyone. It's time for Here We Go Looby Loo. Grown-up, sit close by.",
+     "voiceId": "9e2c50e4aae64766",
+     "voiceSec": 6.14
+    },
+    {
+     "kind": "say",
+     "caption": "Hop over one key",
+     "parentCue": "touch the skipped key so your child sees it",
+     "durationSec": 7,
+     "voice": "Hop over one key. Grown-up, touch the skipped key so your child sees it.",
+     "voiceId": "c99d16498ecd5eef",
+     "voiceSec": 4.72
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Hop, hop: C, E, G",
+     "parentCue": "Point to each landing key first",
+     "bpm": 69,
+     "leadInSec": 4.7,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "G4",
+       "d": 2
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Your turn. Press the glowing key with one finger.",
+     "voiceId": "47631c6d2adadecd",
+     "voiceSec": 4.3
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.42,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "we"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "we"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
      "durationSec": 10,
-     "voice": "Your turn. I'll wait for you.",
-     "voiceId": "30da762511a45127",
-     "voiceSec": 2.44
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.8,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.8,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.8,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "we"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "we"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 3.38,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.42,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5,
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.32,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "we"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "we"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.42,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "praise",
+     "caption": "Great hopping!",
+     "durationSec": 5,
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
+    }
+   ],
+   "skill": {
+    "primary": "patterns",
+    "secondary": [
+     "listening",
+     "space"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Skip pattern (every other key)",
+    "parentLine": "Jumping over one key each time, like hopscotch"
+   },
+   "parentPrompt": "Play C-E-G slowly, touching the skipped keys with a finger, then let your child copy.",
+   "childAction": "Listen, then play C, E, G, hopping over a key each time.",
+   "bridge": "C, E, G is hopscotch on the keys: hop over one, land, hop again.",
+   "celebrate": "Today you practiced: copying a pattern that skips keys."
+  },
+  {
+   "id": "here-we-go-looby-loo-c05",
+   "index": 5,
+   "title": "Same jump, one step up",
+   "goal": "Hear the first line move one step higher, then copy both.",
+   "type": "echo",
+   "durationSec": 239,
+   "parentTip": "Play the first jump, then the same jump one key to the right; let your child copy each.",
+   "video": "here-we-go-looby-loo/here-we-go-looby-loo-c05.mp4",
+   "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c05.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Here We Go Looby Loo",
+     "subcaption": "Class 5: Same jump, one step up",
+     "durationSec": 8,
+     "voice": "Hello, friends. Today we play Here We Go Looby Loo. Grown-up, sit beside your little one.",
+     "voiceId": "9c4bfe9dff94d431",
+     "voiceSec": 6.32
+    },
+    {
+     "kind": "say",
+     "caption": "Same jump, one step up",
+     "parentCue": "show each jump once, then let your child copy",
+     "durationSec": 8,
+     "voice": "Same jump, one step up. Grown-up, show each jump once, then let your child copy.",
+     "voiceId": "b753412dcea914d7",
+     "voiceSec": 6.61
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Jump from C: C, E, C",
+     "parentCue": "Point to C, then E",
+     "bpm": 69,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "C4",
+       "d": 2
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "One step up: D, F, D",
+     "parentCue": "Slide your child's hand one key right",
+     "bpm": 69,
+     "leadInSec": 4.7,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1
+      },
+      {
+       "p": "F4",
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 2
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Your turn. Press the glowing key with one finger.",
+     "voiceId": "47631c6d2adadecd",
+     "voiceSec": 4.3
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.8,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go"
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.8,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 1,
+       "s": "light"
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 1,
+       "s": "light"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 3.05,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we"
+      }
+     ],
+     "durationSec": 6,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 1,
+       "s": "light"
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 1,
+       "s": "light"
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.42,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "we"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "we"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go"
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
     },
     {
      "kind": "praise",
@@ -4192,81 +5594,312 @@
      "voiceSec": 1.92
     },
     {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Use the finger number shown",
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go"
+      }
+     ],
      "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen first",
-     "parentCue": "Watch the key",
-     "bpm": 83,
-     "leadInSec": 2.33,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child press it",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
      "bpm": 83,
-     "leadInSec": 2.84,
+     "leadInSec": 2.56,
      "gapBeats": 1,
      "notes": [
       {
-       "p": "C4",
-       "d": 2,
-       "f": 1
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here"
       },
       {
-       "p": "C4",
-       "d": 2,
-       "f": 1
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go"
       }
      ],
      "durationSec": 9,
-     "voice": "Your turn. I'll wait for you.",
-     "voiceId": "30da762511a45127",
-     "voiceSec": 2.44
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 1,
+       "s": "light"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 1,
+       "s": "light"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
-     "kind": "say",
-     "caption": "Big breath in and out",
-     "parentCue": "Breathe slowly together",
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.32,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we"
+      }
+     ],
      "durationSec": 6,
-     "voice": "Big breath in, and out.",
-     "voiceId": "67a43f157c55d975",
-     "voiceSec": 2.01
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "loo"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Super listening!",
+     "durationSec": 5,
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 83,
+     "leadInSec": 3.05,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 1,
+       "s": "light"
+      }
+     ],
+     "durationSec": 7,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 83,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 1,
+       "s": "light"
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 5,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
+    },
+    {
+     "kind": "praise",
+     "caption": "You moved the pattern!",
      "durationSec": 5,
      "voice": "Great job, you two.",
      "voiceId": "78285fece9f091ba",
@@ -4274,1629 +5907,78 @@
     }
    ],
    "skill": {
-    "primary": "space",
+    "primary": "patterns",
     "secondary": [
-     "listening"
+     "listening",
+     "pitch"
     ]
    },
    "mathTarget": {
-    "concept": "One-to-one correspondence",
-    "parentLine": "Matching one sound to one key"
+    "concept": "Sequence (pattern moved one step)",
+    "parentLine": "The same shape, starting one key higher"
    },
-   "parentPrompt": "Help your child find C. Use one finger and press gently, like a button.",
-   "childAction": "Find the special note and play it on cue.",
-   "bridge": "The special note is a doorbell: same key, same sound, every time.",
-   "celebrate": "Today you practiced finding the way on the keys and listening and remembering."
-  },
-  {
-   "id": "here-we-go-looby-loo-c04",
-   "index": 4,
-   "title": "Echo me",
-   "goal": "Copy short 2 and 3 note patterns from the song",
-   "type": "echo",
-   "durationSec": 241,
-   "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
-   "video": "here-we-go-looby-loo/here-we-go-looby-loo-c04.mp4",
-   "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c04.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Here We Go Looby Loo",
-     "subcaption": "Class 4: Echo me",
-     "durationSec": 8,
-     "voice": "Hi, everyone. It's time for Here We Go Looby Loo. Grown-up, sit close by.",
-     "voiceId": "9e2c50e4aae64766",
-     "voiceSec": 6.14
-    },
-    {
-     "kind": "say",
-     "caption": "Echo me! I play, then you play",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Echo me. I play, then you play.",
-     "voiceId": "b2c22595419bf84e",
-     "voiceSec": 2.79
-    },
-    {
-     "kind": "say",
-     "caption": "Just like an echo in a cave",
-     "parentCue": "Say hello and echo it back",
-     "durationSec": 7,
-     "voice": "Just like an echo in a cave. Hello, hello.",
-     "voiceId": "9be674bc49434504",
-     "voiceSec": 3.47
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    }
-   ],
-   "skill": {
-    "primary": "listening",
-    "secondary": [
-     "patterns"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Sequence memory",
-    "parentLine": "Holding a short tune in mind and repeating it"
-   },
-   "parentPrompt": "Watch first, then copy. If it's tricky, play just the first key together.",
-   "childAction": "Listen, then copy the little tune.",
-   "bridge": "Echo it back like a parrot copying a song.",
-   "celebrate": "Today you practiced listening and remembering and spotting patterns."
-  },
-  {
-   "id": "here-we-go-looby-loo-c05",
-   "index": 5,
-   "title": "Echo me again",
-   "goal": "Copy short 2 and 3 note patterns from the song",
-   "type": "echo",
-   "durationSec": 246,
-   "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
-   "video": "here-we-go-looby-loo/here-we-go-looby-loo-c05.mp4",
-   "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c05.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Here We Go Looby Loo",
-     "subcaption": "Class 5: Echo me again",
-     "durationSec": 8,
-     "voice": "Hello, friends. Today we play Here We Go Looby Loo. Grown-up, sit beside your little one.",
-     "voiceId": "9c4bfe9dff94d431",
-     "voiceSec": 6.32
-    },
-    {
-     "kind": "say",
-     "caption": "Echo me! I play, then you play",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Echo me. I play, then you play.",
-     "voiceId": "b2c22595419bf84e",
-     "voiceSec": 2.79
-    },
-    {
-     "kind": "say",
-     "caption": "Just like an echo in a cave",
-     "parentCue": "Say hello and echo it back",
-     "durationSec": 7,
-     "voice": "Just like an echo in a cave. Hello, hello.",
-     "voiceId": "9be674bc49434504",
-     "voiceSec": 3.47
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light"
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light"
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "Yes, that's it!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light"
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light"
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "loo"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 83,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 83,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    }
-   ],
-   "skill": {
-    "primary": "listening",
-    "secondary": [
-     "patterns"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Sequence memory",
-    "parentLine": "Holding a short tune in mind and repeating it"
-   },
-   "parentPrompt": "Watch first, then copy. If it's tricky, play just the first key together.",
-   "childAction": "Listen, then copy the little tune.",
-   "bridge": "Echo it back like a parrot copying a song.",
-   "celebrate": "Today you practiced listening and remembering and spotting patterns."
+   "parentPrompt": "Play the first jump, then the same jump one key to the right; let your child copy each.",
+   "childAction": "Copy the jump, then copy it again one key higher.",
+   "bridge": "The second line is the same game, played one step up the stairs.",
+   "celebrate": "Today you practiced: noticing the same pattern, one step higher."
   },
   {
    "id": "here-we-go-looby-loo-c06",
    "index": 6,
-   "title": "Special note in the song",
-   "goal": "Play the special note at the right moments in the song",
+   "title": "Wait for home C",
+   "goal": "Wait while the grown-up plays, then play C when it is your turn.",
    "type": "special-note",
    "durationSec": 285,
-   "parentTip": "You play the blue keys, your child plays the coral one. Waiting is part of the game.",
+   "parentTip": "Play your part, then nod to your child just before each C; smile while they wait.",
    "video": "here-we-go-looby-loo/here-we-go-looby-loo-c06.mp4",
    "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Here We Go Looby Loo",
-     "subcaption": "Class 6: Special note in the song",
+     "subcaption": "Class 6: Wait for home C",
      "durationSec": 7,
      "voice": "Hi there, music friends. Our song today is Here We Go Looby Loo.",
      "voiceId": "ff44e2d3838ffddc",
      "voiceSec": 5.09
     },
     {
-     "kind": "say",
-     "caption": "Now the special note in the song",
-     "parentCue": "You play the other notes",
-     "durationSec": 7,
-     "voice": "Now we find the special note inside the song.",
-     "voiceId": "9f2d6a44f1a38be9",
-     "voiceSec": 3.29
+     "kind": "your_turn",
+     "caption": "Warm up on C",
+     "parentCue": "Help one finger find it",
+     "bpm": 83,
+     "leadInSec": 5.13,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Let's warm up on C. One finger, three gentle presses.",
+     "voiceId": "da6be30fbb9ef99c",
+     "voiceSec": 4.73
     },
     {
      "kind": "say",
-     "caption": "When C lights up, it's your turn",
-     "parentCue": "Your child plays only the coral key",
+     "caption": "Wait, wait... hand in on C!",
+     "parentCue": "nod to your child when it is their turn",
      "durationSec": 8,
-     "voice": "When C lights up, it's your turn to press it.",
-     "voiceId": "83a89585622cf1da",
-     "voiceSec": 2.72
+     "voice": "Wait, wait... hand in on C. Grown-up, nod to your child when it is their turn.",
+     "voiceId": "732984b40879f716",
+     "voiceSec": 5.31
     },
     {
      "kind": "demo",
@@ -6632,9 +6714,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -6849,16 +6931,16 @@
      "kind": "praise",
      "caption": "Perfect timing!",
      "durationSec": 5,
-     "voice": "You waited for your note. Lovely.",
-     "voiceId": "d1ad3ad0dcb403ba",
-     "voiceSec": 2.5
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "together",
      "caption": "Play it together",
      "parentCue": "Keep going, even after a miss",
      "bpm": 104,
-     "leadInSec": 4.12,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "C4",
@@ -7047,17 +7129,17 @@
        "from": 18
       }
      ],
-     "durationSec": 20,
-     "voice": "Together now. Keep going, even after a slip.",
-     "voiceId": "6ef58099ced29d5c",
-     "voiceSec": 3.72
+     "durationSec": 18,
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "You play the blue keys",
      "bpm": 78,
-     "leadInSec": 4.18,
+     "leadInSec": 3.9,
      "gapBeats": 1,
      "notes": [
       {
@@ -7152,18 +7234,18 @@
        "from": 6
       }
      ],
-     "durationSec": 18,
-     "voice": "Now you play. One finger, nice and gentle.",
-     "voiceId": "be385d54bac93081",
-     "voiceSec": 3.78
+     "durationSec": 17,
+     "voice": "Your turn. Wait for the glow, then press.",
+     "voiceId": "e03bd593ae91d1cb",
+     "voiceSec": 3.5
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -7378,16 +7460,16 @@
      "kind": "praise",
      "caption": "Perfect timing!",
      "durationSec": 5,
-     "voice": "You waited for your note. Lovely.",
-     "voiceId": "d1ad3ad0dcb403ba",
-     "voiceSec": 2.5
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "together",
      "caption": "Play it together",
      "parentCue": "Keep going, even after a miss",
      "bpm": 104,
-     "leadInSec": 4.12,
+     "leadInSec": 3.0,
      "notes": [
       {
        "p": "C4",
@@ -7576,54 +7658,93 @@
        "from": 18
       }
      ],
-     "durationSec": 20,
-     "voice": "Together now. Keep going, even after a slip.",
-     "voiceId": "6ef58099ced29d5c",
-     "voiceSec": 3.72
+     "durationSec": 19,
+     "voice": "Together time. Big smiles.",
+     "voiceId": "a441a4bce0e6e1e6",
+     "voiceSec": 2.6
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great waiting!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
-    "primary": "space",
+    "primary": "together",
     "secondary": [
-     "listening"
+     "listening",
+     "beat"
     ]
    },
    "mathTarget": {
-    "concept": "One-to-one correspondence",
-    "parentLine": "Matching one sound to one key"
+    "concept": "Turn-taking (call and response)",
+    "parentLine": "Waiting for your part, then joining in"
    },
-   "parentPrompt": "You play the blue keys, your child plays the coral one. Waiting is part of the game.",
-   "childAction": "Find the special note and play it on cue.",
-   "bridge": "The special note is a doorbell: same key, same sound, every time.",
-   "celebrate": "Today you practiced finding the way on the keys and listening and remembering."
+   "parentPrompt": "Play your part, then nod to your child just before each C; smile while they wait.",
+   "childAction": "Wait for the nod, then press C.",
+   "bridge": "Like the circle game, everyone waits, then puts their hand in on C.",
+   "celebrate": "Today you practiced: waiting for a turn, then joining in."
   },
   {
    "id": "here-we-go-looby-loo-c07",
    "index": 7,
-   "title": "Add a second note",
-   "goal": "Play two special notes, C and E, in the song",
+   "title": "C or E? Pick one",
+   "goal": "Play two special notes, C and E, choosing the right one by listening.",
    "type": "special-note",
-   "durationSec": 257,
-   "parentTip": "Two notes means more waiting and watching. Celebrate each coral key your child catches.",
+   "durationSec": 253,
+   "parentTip": "Point to C or E before each turn at first, then let your child choose.",
    "video": "here-we-go-looby-loo/here-we-go-looby-loo-c07.mp4",
    "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Here We Go Looby Loo",
-     "subcaption": "Class 7: Add a second note",
+     "subcaption": "Class 7: C or E? Pick one",
      "durationSec": 7,
      "voice": "Hi there, music friends. Our song today is Here We Go Looby Loo.",
      "voiceId": "ff44e2d3838ffddc",
      "voiceSec": 5.09
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm up on C",
+     "parentCue": "Help one finger find it",
+     "bpm": 83,
+     "leadInSec": 5.13,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Let's warm up on C. One finger, three gentle presses.",
+     "voiceId": "da6be30fbb9ef99c",
+     "voiceSec": 4.73
+    },
+    {
+     "kind": "say",
+     "caption": "Home C, or hop to E?",
+     "parentCue": "point first, then let your child choose alone",
+     "durationSec": 8,
+     "voice": "Home C, or hop to E. Grown-up, point first, then let your child choose alone.",
+     "voiceId": "f6b2e873d5a4d7c2",
+     "voiceSec": 6.08
     },
     {
      "kind": "say",
@@ -7641,15 +7762,6 @@
      "voice": "Here's a second special note. This is E.",
      "voiceId": "cf05aabb438d91b0",
      "voiceSec": 3.27
-    },
-    {
-     "kind": "say",
-     "caption": "Two coral keys to watch",
-     "parentCue": "You play the blue keys",
-     "durationSec": 6,
-     "voice": "Now two special keys glow for you.",
-     "voiceId": "3b965ab458d3cec8",
-     "voiceSec": 2.65
     },
     {
      "kind": "demo",
@@ -8266,16 +8378,16 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "First half again",
      "bpm": 78,
-     "leadInSec": 3.9,
+     "leadInSec": 3.82,
      "gapBeats": 1,
      "notes": [
       {
@@ -8369,9 +8481,9 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Your turn. Wait for the glow, then press.",
-     "voiceId": "e03bd593ae91d1cb",
-     "voiceSec": 3.5
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
     },
     {
      "kind": "say",
@@ -8387,7 +8499,7 @@
      "caption": "Your turn!",
      "parentCue": "Wait for the coral keys",
      "bpm": 78,
-     "leadInSec": 3.9,
+     "leadInSec": 3.71,
      "gapBeats": 1,
      "notes": [
       {
@@ -8572,25 +8684,25 @@
        "from": 18
       }
      ],
-     "durationSec": 34,
-     "voice": "Your turn. Wait for the glow, then press.",
-     "voiceId": "e03bd593ae91d1cb",
-     "voiceSec": 3.5
+     "durationSec": 33,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "praise",
      "caption": "Two notes, wow!",
      "durationSec": 5,
-     "voice": "Two special notes. Wow.",
-     "voiceId": "769651fea97c6f8a",
-     "voiceSec": 2.74
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "together",
      "caption": "Play it together",
      "parentCue": "Keep going after a miss",
      "bpm": 94,
-     "leadInSec": 3.0,
+     "leadInSec": 2.47,
      "notes": [
       {
        "p": "C4",
@@ -8775,24 +8887,24 @@
       }
      ],
      "durationSec": 20,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
+     "voice": "Let's make music together.",
+     "voiceId": "ce491b22b46d8348",
+     "voiceSec": 2.07
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "First half again",
      "bpm": 78,
-     "leadInSec": 3.9,
+     "leadInSec": 3.71,
      "gapBeats": 1,
      "notes": [
       {
@@ -8886,243 +8998,59 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Your turn. Wait for the glow, then press.",
-     "voiceId": "e03bd593ae91d1cb",
-     "voiceSec": 3.5
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
-     "kind": "together",
-     "caption": "Play it together",
-     "parentCue": "Keep going after a miss",
-     "bpm": 94,
-     "leadInSec": 3.0,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "here"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Sat",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ur",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "day",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "s": "night"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Here we go looby loo",
-       "from": 0
-      },
-      {
-       "lyric": "here we go looby light",
-       "from": 6
-      },
-      {
-       "lyric": "here we go looby loo",
-       "from": 12
-      },
-      {
-       "lyric": "all on a Saturday night",
-       "from": 18
-      }
-     ],
-     "durationSec": 20,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
+     "kind": "say",
+     "caption": "Big breath in and out",
+     "parentCue": "Breathe slowly together",
+     "durationSec": 4,
+     "voice": "Big breath in, and out.",
+     "voiceId": "67a43f157c55d975",
+     "voiceSec": 2.01
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great choosing!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
     "primary": "listening",
     "secondary": [
-     "space"
+     "space",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Two-category sorting",
-    "parentLine": "Telling two sounds apart and matching each to its key"
+    "concept": "Classification into two sets",
+    "parentLine": "Sorting each sound into one of two boxes"
    },
-   "parentPrompt": "Two notes means more waiting and watching. Celebrate each coral key your child catches.",
-   "childAction": "Play the two special notes when they come.",
-   "bridge": "Two doorbells: one for each friend at the door.",
-   "celebrate": "Today you practiced listening and remembering and finding the way on the keys."
+   "parentPrompt": "Point to C or E before each turn at first, then let your child choose.",
+   "childAction": "Listen, choose C or E, and press the right one.",
+   "bridge": "C is home, left of the black keys; E is one hop over, on the right.",
+   "celebrate": "Today you practiced: telling two sounds apart and choosing one."
   },
   {
    "id": "here-we-go-looby-loo-c08",
    "index": 8,
-   "title": "Play together",
-   "goal": "Play the whole song together at full speed",
+   "title": "Round the circle together",
+   "goal": "Play the whole song together, sharing one swinging beat.",
    "type": "together",
-   "durationSec": 270,
-   "parentTip": "Keep playing even if your child misses a note. The beat matters more than being perfect.",
+   "durationSec": 278,
+   "parentTip": "Play the tune and nod the swing with your head; keep going if your child misses.",
    "video": "here-we-go-looby-loo/here-we-go-looby-loo-c08.mp4",
    "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Here We Go Looby Loo",
-     "subcaption": "Class 8: Play together",
+     "subcaption": "Class 8: Round the circle together",
      "durationSec": 8,
      "voice": "Hi, everyone. It's time for Here We Go Looby Loo. Grown-up, sit close by.",
      "voiceId": "9e2c50e4aae64766",
@@ -9130,21 +9058,12 @@
     },
     {
      "kind": "say",
-     "caption": "Let's play the song together",
-     "parentCue": "You on the tune, your child on C",
+     "caption": "Two players, one swing",
+     "parentCue": "nod the beat so your child can see it",
      "durationSec": 7,
-     "voice": "Let's play the song together.",
-     "voiceId": "ea05d75afdb5318b",
-     "voiceSec": 2.13
-    },
-    {
-     "kind": "say",
-     "caption": "Ready, set, play!",
-     "parentCue": "Count four beats out loud",
-     "durationSec": 6,
-     "voice": "Ready, set, play.",
-     "voiceId": "4678550cf62122a6",
-     "voiceSec": 1.6
+     "voice": "Two players, one swing. Grown-up, nod the beat so your child can see it.",
+     "voiceId": "6f82efb743d50cb1",
+     "voiceSec": 5.61
     },
     {
      "kind": "together",
@@ -9557,9 +9476,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -9773,9 +9692,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -9791,7 +9710,7 @@
      "caption": "Together again",
      "parentCue": "Smile and keep going",
      "bpm": 88,
-     "leadInSec": 3.0,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "C4",
@@ -9981,17 +9900,17 @@
       }
      ],
      "durationSec": 21,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -10007,7 +9926,7 @@
      "caption": "Together again",
      "parentCue": "Smile and keep going",
      "bpm": 104,
-     "leadInSec": 3.0,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "C4",
@@ -10196,18 +10115,18 @@
        "from": 18
       }
      ],
-     "durationSec": 19,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
+     "durationSec": 18,
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -10223,7 +10142,7 @@
      "caption": "Together again",
      "parentCue": "Smile and keep going",
      "bpm": 88,
-     "leadInSec": 3.0,
+     "leadInSec": 2.47,
      "notes": [
       {
        "p": "C4",
@@ -10413,17 +10332,17 @@
       }
      ],
      "durationSec": 21,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
+     "voice": "Let's make music together.",
+     "voiceId": "ce491b22b46d8348",
+     "voiceSec": 2.07
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -10439,7 +10358,7 @@
      "caption": "Together again",
      "parentCue": "Smile and keep going",
      "bpm": 88,
-     "leadInSec": 3.0,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "C4",
@@ -10628,18 +10547,18 @@
        "from": 18
       }
      ],
-     "durationSec": 21,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
+     "durationSec": 20,
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -10853,58 +10772,258 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
-     "caption": "Wiggle your fingers!",
-     "parentCue": "Shake out both hands together",
-     "durationSec": 8,
-     "voice": "Wiggle your fingers. Wiggle, wiggle.",
-     "voiceId": "640ef443bc914f6c",
-     "voiceSec": 2.99
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
+    },
+    {
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Your child plays the special note",
+     "bpm": 104,
+     "leadInSec": 2.26,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "we"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 1,
+       "s": "light",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "here"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "we"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "all",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Sat",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ur",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "day",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 2,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Here we go looby loo",
+       "from": 0
+      },
+      {
+       "lyric": "here we go looby light",
+       "from": 6
+      },
+      {
+       "lyric": "here we go looby loo",
+       "from": 12
+      },
+      {
+       "lyric": "all on a Saturday night",
+       "from": 18
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You played together!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "beat"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping time with another person"
+    "concept": "Entrainment (shared pulse)",
+    "parentLine": "Two players keep one beat together"
    },
-   "parentPrompt": "Keep playing even if your child misses a note. The beat matters more than being perfect.",
-   "childAction": "Play along with your grown-up.",
-   "bridge": "Two players, one song, like walking in step.",
-   "celebrate": "Today you practiced playing together and keeping a steady beat."
+   "parentPrompt": "Play the tune and nod the swing with your head; keep going if your child misses.",
+   "childAction": "Play your notes and nod along with your grown-up.",
+   "bridge": "Holding hands in the circle, we all skip at the same speed.",
+   "celebrate": "Today you practiced: playing one song together, one beat."
   },
   {
    "id": "here-we-go-looby-loo-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Looby concert for teddy",
+   "goal": "Play the whole song for teddy, end on the home note and bow.",
    "type": "concert",
-   "durationSec": 278,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 276,
+   "parentTip": "Sit teddy as the audience; hold the last note together, then shake hands and bow.",
    "video": "here-we-go-looby-loo/here-we-go-looby-loo-c09.mp4",
    "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Here We Go Looby Loo",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: Looby concert for teddy",
      "durationSec": 6,
      "voice": "Get ready for Here We Go Looby Loo. Sit up tall, like a tree.",
      "voiceId": "9ddc335ca2416e37",
@@ -10912,21 +11031,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "Concert time for teddy!",
+     "parentCue": "put teddy in front as the audience",
+     "durationSec": 6,
+     "voice": "Concert time. Teddy is listening.",
+     "voiceId": "5981e6766e72b3d1",
+     "voiceSec": 2.73
     },
     {
      "kind": "together",
@@ -11347,9 +11457,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -11779,9 +11889,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -12211,9 +12321,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -12427,9 +12537,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -12643,9 +12753,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -12782,6 +12892,54 @@
        "d": 1.5,
        "f": 1,
        "s": "loo"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "all",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Sat",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ur",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "day",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 2,
+       "s": "night"
       }
      ],
      "lines": [
@@ -12796,20 +12954,24 @@
       {
        "lyric": "here we go looby loo",
        "from": 12
+      },
+      {
+       "lyric": "all on a Saturday night",
+       "from": 18
       }
      ],
-     "durationSec": 14,
+     "durationSec": 18,
      "voice": "Let's play together.",
      "voiceId": "b9d074678a65d0e2",
      "voiceSec": 1.57
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, you played together!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
@@ -12820,13 +12982,13 @@
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Form: repeat and return",
+    "parentLine": "The first line comes back, then the song ends home"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; hold the last note together, then shake hands and bow.",
+   "childAction": "Play for teddy, hold the last note, then take a bow.",
+   "bridge": "The circle goes round and round, then everyone stops at home on C.",
+   "celebrate": "Today you practiced: playing a whole song, start to end."
   }
  ]
 }

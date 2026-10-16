@@ -1,0 +1,198 @@
+{
+  "songId": "little-bo-peep",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finding E and G, echoing short patterns, waiting for a turn and hearing how lines end, using a gentle rhyme about patient Bo-Peep.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Peekaboo, Bo-Peep",
+      "goal": "Hear the whole song and play peekaboo at the long note that ends each line.",
+      "skill": { "primary": "listening", "secondary": ["form", "together"] },
+      "mathTarget": { "concept": "Phrase grouping (line endings)", "parentLine": "Hearing where each line of the song stops and rests" },
+      "parentPrompt": "Hide your eyes during each line; pop out with 'peekaboo' on the long last note.",
+      "childAction": "Hide your eyes, then say 'peekaboo' when the line ends.",
+      "bridge": "Each line is a little hiding game; the long note is peekaboo.",
+      "intro": [ { "caption": "Bo-peep means peekaboo!", "parentCue": "hide your eyes and wait for the long note" } ],
+      "games": [],
+      "praise": "Peekaboo, great listening!",
+      "celebrate": "Today you practiced: hearing where each line of a song ends."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Trot like little sheep",
+      "goal": "Tap the big rocking beat on any key while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["together", "listening"] },
+      "mathTarget": { "concept": "Periodicity (compound pulse)", "parentLine": "A rocking beat that comes back again and again" },
+      "parentPrompt": "Rest your hand over your child's hand and tap the big beats, then slowly let go.",
+      "childAction": "Tap any key on each big beat, like trotting sheep.",
+      "bridge": "Lit-tle Bo-Peep: the taps land on 'Lit' and 'Peep', trot, trot.",
+      "intro": [ { "caption": "Trot, trot, little sheep", "parentCue": "bounce your child gently on each big beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Little Bo-Peep, trot trot",
+          "parentCue": "Say 'trot, trot' on the big beats",
+          "bpm": 66,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "F4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "C4", "d": 1.5 }, { "p": "D4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "G4", "d": 1.5 }, { "p": "D4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "You trotted on the beat!",
+      "celebrate": "Today you practiced: tapping a steady rocking beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "Peekaboo E",
+      "goal": "Find E, just right of the two black keys, and play it with one finger.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmarks", "parentLine": "Using the two black keys as a sign to find E" },
+      "parentPrompt": "Cover E with your hand, then lift it: 'Peekaboo, E!' Guide your child's finger there.",
+      "childAction": "Find two black keys, then press E like a button.",
+      "bridge": "Two black keys are the sheep's fence; E waits just past the fence.",
+      "intro": [ { "caption": "Where is E hiding?", "parentCue": "cover E with your hand, then lift it" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Peekaboo: E, E, E",
+          "parentCue": "Say 'peekaboo' before each E",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "Peekaboo, you found E!",
+      "celebrate": "Today you practiced: finding E by the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "echo",
+      "title": "Call the sheep",
+      "goal": "Listen to short calls of two or three notes and copy them back.",
+      "skill": { "primary": "listening", "secondary": ["together", "patterns"] },
+      "mathTarget": { "concept": "Sequence recall (span 2-3)", "parentLine": "Hearing a tiny tune and keeping it in mind to copy" },
+      "parentPrompt": "Play or sing each call, pause, then nod to your child: 'Your turn.'",
+      "childAction": "Listen to the call, then play it back the same way.",
+      "bridge": "Bo-Peep calls her sheep; you call back the very same way.",
+      "intro": [ { "caption": "I call, you call back", "parentCue": "nod to your child for their turn" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Bo-Peep: G, E",
+          "parentCue": "Sing 'Bo-Peep' with the two notes",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1, "f": 5 }, { "p": "E4", "d": 2, "f": 3 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Find them: E, F, G",
+          "parentCue": "Say 'up, up, up' as they play",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "The sheep heard you!",
+      "celebrate": "Today you practiced: hearing short calls and copying them back."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Hop down, hop down",
+      "goal": "Echo two little hops down and hear that they are the same hop, one step apart.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "pitch"] },
+      "mathTarget": { "concept": "Sequence (same skip, lower)", "parentLine": "The same little hop down, moved one step lower" },
+      "parentPrompt": "Hop two fingers down your child's arm, then do the same hop a little lower.",
+      "childAction": "Echo G then E, then the same hop: F then D.",
+      "bridge": "A sheep hops over one key, then hops over one key again, lower.",
+      "intro": [ { "caption": "Hop over one key", "parentCue": "hop your fingers down your child's arm" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "First hop: G, E",
+          "parentCue": "Point to the key that gets skipped",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1, "f": 5 }, { "p": "E4", "d": 2, "f": 3 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Same hop, lower: F, D",
+          "parentCue": "Start one key to the left this time",
+          "bpm": 60,
+          "notes": [ { "p": "F4", "d": 1, "f": 4 }, { "p": "D4", "d": 2, "f": 2 } ]
+        }
+      ],
+      "praise": "Same hop, well done!",
+      "celebrate": "Today you practiced: spotting the same pattern, one step lower."
+    },
+    {
+      "index": 6,
+      "spineType": "special-note",
+      "title": "Wait for the sheep's E",
+      "goal": "Wait and play E at the right moments while the grown-up plays the rest.",
+      "skill": { "primary": "together", "secondary": ["listening"] },
+      "mathTarget": { "concept": "Turn-taking (alternation)", "parentLine": "I play my notes, you play yours: we take turns" },
+      "parentPrompt": "Play your notes, then look at your child and nod just before each E.",
+      "childAction": "Finger ready, wait, then play E when it lights.",
+      "bridge": "Leave them alone and they'll come home: wait, and E comes.",
+      "intro": [ { "caption": "Wait for E, like Bo-Peep", "parentCue": "nod just before each E comes" } ],
+      "games": [],
+      "praise": "Such patient waiting!",
+      "celebrate": "Today you practiced: waiting patiently and playing on your turn."
+    },
+    {
+      "index": 7,
+      "spineType": "special-note",
+      "title": "Bo-Peep G, sheep E",
+      "goal": "Play two special notes, G and E, and tell them apart by ear and by place.",
+      "skill": { "primary": "listening", "secondary": ["space", "together"] },
+      "mathTarget": { "concept": "Classification into two sets", "parentLine": "Sorting notes into two groups: G notes and E notes" },
+      "parentPrompt": "Say 'G' or 'E' aloud before each one; cheer for every one your child catches.",
+      "childAction": "Play G or E when it lights. G is higher, E is lower.",
+      "bridge": "G stands up high like Bo-Peep; E sits lower, like a little sheep.",
+      "intro": [ { "caption": "Two notes: G and E", "parentCue": "touch G, then E, and name each one" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Bo-Peep, sheep: G, E",
+          "parentCue": "Name each note as it lights",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1, "f": 5 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "You caught both notes!",
+      "celebrate": "Today you practiced: telling two notes apart by ear and place."
+    },
+    {
+      "index": 8,
+      "spineType": "together",
+      "title": "Bringing the sheep home",
+      "goal": "Play the whole song together, sharing one steady rocking beat.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Entrainment (shared pulse)", "parentLine": "Two players keeping the same steady beat" },
+      "parentPrompt": "Keep the beat going even if a note is missed; smile and nod at each turn.",
+      "childAction": "Play your notes in time with your grown-up's beat.",
+      "bridge": "Bo-Peep and her sheep walk home together, step by step.",
+      "intro": [ { "caption": "Let's bring the sheep home", "parentCue": "sit close and keep the beat steady" } ],
+      "games": [],
+      "praise": "You played as a team!",
+      "celebrate": "Today you practiced: sharing one beat and taking turns."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "The sheep come home",
+      "goal": "Play the whole song for teddy and hear how lost becomes found at the end.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Same start, different ending", "parentLine": "Two lines start the same; one ends low, one ends high" },
+      "parentPrompt": "Sit teddy as the audience; play, then wiggle like wagging tails, clap and bow.",
+      "childAction": "Play for teddy, then wag your tail and bow.",
+      "bridge": "Lost sheep end low and sad; found sheep end high and happy.",
+      "intro": [ { "caption": "A song for teddy!", "parentCue": "sit teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, the sheep are home!",
+      "celebrate": "Today you practiced: hearing how two similar lines end differently."
+    }
+  ]
+}

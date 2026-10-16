@@ -1,0 +1,222 @@
+{
+  "songId": "can-can",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices the hand home, three hops and a twirl, an octave leap, two endings, a low left hand beat and speeding up, with a dance.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "Kick! Thumb on C",
+      "goal": "Find the hand home on C and play the first 'kick' line slowly.",
+      "skill": { "primary": "space", "secondary": ["fingers"] },
+      "mathTarget": { "concept": "Spatial anchoring with a landmark", "parentLine": "Using the two black keys to place the whole hand" },
+      "parentPrompt": "Point to the two black keys; help your child rest the thumb on C and curve the fingers.",
+      "childAction": "Hold C long like a kick, then D, F, E, D.",
+      "bridge": "C is the dancer's starting spot, left of the two black keys.",
+      "intro": [ { "caption": "Kick! Thumb on C", "parentCue": "point to the two black keys first" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Kick, then quick feet",
+          "parentCue": "Say 'kiiick, quick quick quick quick'",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 2, "f": 1 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "F4", "d": 0.5, "f": 4 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "D4", "d": 0.5, "f": 2 } ]
+        }
+      ],
+      "praise": "Big kick, quick feet!",
+      "celebrate": "Today you practiced: placing the whole hand with a landmark."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Three hops and a twirl",
+      "goal": "Play the clap line: three walking notes, then four quick ones.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "patterns"] },
+      "mathTarget": { "concept": "Ratio 2:1 (walk and run-ning)", "parentLine": "Three slow hops, then quick notes twice as fast" },
+      "parentPrompt": "Clap three times with your child, then wiggle your fingers fast for the twirl.",
+      "childAction": "Finger 2 hops D three times, then twirls F, E, D.",
+      "bridge": "Hop, hop, hop are walking steps; the twirl is run-ning feet, twice as fast.",
+      "intro": [ { "caption": "Three hops and a twirl", "parentCue": "Clap three times together, then wiggle fingers" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Hop, hop, hop and twirl",
+          "parentCue": "Count one, two, three on the hops",
+          "bpm": 60,
+          "notes": [ { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "F4", "d": 0.5, "f": 4 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "D4", "d": 0.5, "f": 2 } ]
+        }
+      ],
+      "praise": "Three hops, great twirl!",
+      "celebrate": "Today you practiced: slow notes and notes twice as fast."
+    },
+    {
+      "index": 3,
+      "spineType": "put-together",
+      "title": "Same dance, two endings",
+      "goal": "Play the whole song slowly and notice the dance comes twice, with new endings.",
+      "skill": { "primary": "form", "secondary": ["patterns", "listening"] },
+      "mathTarget": { "concept": "Same start, different endings", "parentLine": "The dance repeats, but the first and second endings differ" },
+      "parentPrompt": "Run your fingers up and down at the first ending; take a bow at the second.",
+      "childAction": "Play slowly; first ending runs the stairs, second ending bows.",
+      "bridge": "The dance goes round twice: first it runs the stairs, then it takes a bow.",
+      "intro": [ { "caption": "Same dance, two endings", "parentCue": "Bow together when the second ending comes" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 96,
+          "notes": [ { "p": "C4", "d": 2 }, { "p": "D4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 0.5 } ]
+        }
+      ],
+      "praise": "You found both endings!",
+      "celebrate": "Today you practiced: hearing a repeat with two endings."
+    },
+    {
+      "index": 4,
+      "spineType": "review",
+      "title": "Leap up, run down",
+      "goal": "Practise the stairs line: a big leap from C to high C, then running down.",
+      "skill": { "primary": "space", "secondary": ["pitch", "fingers"] },
+      "mathTarget": { "concept": "Octave leap and descending scale", "parentLine": "Jumping eight keys up to the same note, then stepping down" },
+      "parentPrompt": "Watch the leap together, then help your child play the last four steps down.",
+      "childAction": "Watch the big leap, then run down G, F, E, D.",
+      "bridge": "Low C leaps to high C, the same name one house up, then runs downstairs.",
+      "intro": [ { "caption": "Watch slowly", "parentCue": "Same name, different house: point to both Cs" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Leap up to high C",
+          "parentCue": "Point to both Cs, then count the steps down",
+          "bpm": 56,
+          "notes": [ { "p": "C4", "d": 0.5 }, { "p": "C5", "d": 0.5 }, { "p": "B4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 1 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Run down: G, F, E, D",
+          "parentCue": "Say 'run, run, run, stop!'",
+          "bpm": 56,
+          "notes": [ { "p": "G4", "d": 0.5, "f": 5 }, { "p": "F4", "d": 0.5, "f": 4 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "D4", "d": 1, "f": 2 } ]
+        }
+      ],
+      "praise": "What a leap!",
+      "celebrate": "Today you practiced: an octave leap and running down."
+    },
+    {
+      "index": 5,
+      "spineType": "left-hand",
+      "title": "Big boots on one",
+      "goal": "Play one low left hand note, C or G, at the start of each bar.",
+      "skill": { "primary": "beat", "secondary": ["counting", "space"] },
+      "mathTarget": { "concept": "Grouping by four (meter)", "parentLine": "Four beats in each bar; the left hand plays on one" },
+      "parentPrompt": "Play the tune; count one-two-three-four, loud on one, for your child's low note.",
+      "childAction": "Left hand stomps low C or low G on every one.",
+      "bridge": "Low C is C in a lower house; it stomps like big dancing boots.",
+      "intro": [ { "caption": "Big boots on one", "parentCue": "count to four, loud on one" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Stomp on one",
+          "parentCue": "Stomp a foot gently with each low note",
+          "bpm": 72,
+          "notes": [ { "p": "C3", "d": 4 }, { "p": "C3", "d": 4 }, { "p": "G3", "d": 4 }, { "p": "C3", "d": 4 } ]
+        }
+      ],
+      "praise": "Every one, right on time!",
+      "celebrate": "Today you practiced: counting four beats and playing on one."
+    },
+    {
+      "index": 6,
+      "spineType": "left-hand",
+      "title": "Keep the boots going",
+      "goal": "Keep the low left hand notes going at full speed under the tune.",
+      "skill": { "primary": "together", "secondary": ["beat", "expression"] },
+      "mathTarget": { "concept": "Entrainment at speed", "parentLine": "Keeping a steady part going while the music runs fast" },
+      "parentPrompt": "Play the tune at full speed; if your child misses a one, keep going and smile.",
+      "childAction": "Keep stomping low notes on one, even when it is fast.",
+      "bridge": "The tune races; your low notes are the floor the dancers land on.",
+      "intro": [ { "caption": "Keep the boots going", "parentCue": "keep going even if a note is missed" } ],
+      "games": [],
+      "praise": "You kept the boots going!",
+      "celebrate": "Today you practiced: keeping your part steady at speed."
+    },
+    {
+      "index": 7,
+      "spineType": "hands-together",
+      "title": "Boots and quick feet",
+      "goal": "Play the tune with a low left hand note on each bar, very slowly.",
+      "skill": { "primary": "fingers", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Ratio 1:4 (two streams)", "parentLine": "One low note lasts while four beats go by above" },
+      "parentPrompt": "Rest a hand on your child's left shoulder and say 'boot' on each low note.",
+      "childAction": "Left hand stomps and holds; right hand dances the tune.",
+      "bridge": "Left hand is the big boot, still and low; right hand is the quick feet.",
+      "intro": [ { "caption": "Boots and quick feet", "parentCue": "Say 'boot' softly on each low note" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 84,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "G3", "d": 2, "f": 1 }, { "p": "C3", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Two hands, wow!",
+      "celebrate": "Today you practiced: two hands doing two jobs at once."
+    },
+    {
+      "index": 8,
+      "spineType": "hands-together",
+      "title": "Faster and faster",
+      "goal": "Play both hands together a little faster, then slow again if needed.",
+      "skill": { "primary": "expression", "secondary": ["fingers"] },
+      "mathTarget": { "concept": "Tempo scaling (same pattern, faster)", "parentLine": "The pattern stays the same when the speed changes" },
+      "parentPrompt": "Tap the lid slowly, then faster, with your child; go back to slow if notes fall apart.",
+      "childAction": "Play both hands slowly, then a little quicker.",
+      "bridge": "A dance can be a slow walk or a giggly gallop: same steps, new speed.",
+      "intro": [ { "caption": "Faster and faster", "parentCue": "Go back to slow if notes fall apart" } ],
+      "games": [],
+      "praise": "Steady at both speeds!",
+      "celebrate": "Today you practiced: the same song at two speeds."
+    },
+    {
+      "index": 9,
+      "spineType": "play-along",
+      "title": "Dance with the band",
+      "goal": "Play the whole song along with the music at full speed and keep going.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Synchrony with a moving pulse", "parentLine": "Keeping your part in step while the music moves on" },
+      "parentPrompt": "Sit beside your child and nod on every one; cheer for keeping going, not for notes.",
+      "childAction": "Dance along with the music. If a note slips, keep dancing!",
+      "bridge": "The band is the dance floor; keep your feet moving to the end.",
+      "intro": [ { "caption": "Play along", "parentCue": "Nod on every one together" } ],
+      "games": [],
+      "praise": "You kept dancing together!",
+      "celebrate": "Today you practiced: keeping your part in step with the music."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "Take a bow, the end!",
+      "goal": "Play the whole dance for teddy and take a bow on the very last note.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Sequencing and closure (ending home)", "parentLine": "Holding the song in order and landing on the home note" },
+      "parentPrompt": "Seat teddy as the audience; on 'take a bow', bow together and cheer.",
+      "childAction": "Play for teddy, land on C, then take a big bow.",
+      "bridge": "The last line even says it: take a bow, the end, home on C.",
+      "intro": [ { "caption": "A song for teddy", "parentCue": "Seat teddy and announce the dance together" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Take a bow, the end",
+          "parentCue": "Sing 'take a bow, the end' together",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 0.5, "f": 1 }, { "p": "G4", "d": 0.5, "f": 5 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "C4", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "Bravo, big bow!",
+      "celebrate": "Today you practiced: playing a whole song and ending at home."
+    }
+  ]
+}

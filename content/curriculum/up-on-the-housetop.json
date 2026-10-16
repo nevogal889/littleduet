@@ -1,0 +1,207 @@
+{
+  "songId": "up-on-the-housetop",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finding the hand's place, falling lines, a pattern moved lower, verse and chorus, and counting beats, with a Christmas rooftop song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Land on the rooftop",
+      "goal": "Find D between the two black keys and rest the hand on D, E, G and A.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping with a landmark", "parentLine": "Using the two black keys to find where the hand lives" },
+      "parentPrompt": "Point to the two black keys; help the thumb rest on D, right between them.",
+      "childAction": "Thumb on D, finger 2 on E, then G and A.",
+      "bridge": "The two black keys are the chimney; the thumb lands softly right between them.",
+      "intro": [ { "caption": "Land softly, like the reindeer", "parentCue": "help the thumb rest on D, between the black keys" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Line up: D, E, G, A",
+          "parentCue": "Say the finger numbers as each key lights",
+          "bpm": 63,
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "A4", "d": 2 } ]
+        }
+      ],
+      "praise": "A soft landing!",
+      "celebrate": "Today you practiced: finding the hand's place by a landmark."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Hop up and back to G",
+      "goal": "Play the start of 'Up on the housetop': G, a little hop to A, back to G.",
+      "skill": { "primary": "patterns", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Neighbour pattern (step and return)", "parentLine": "Stepping to the next key and coming right back" },
+      "parentPrompt": "Say the finger numbers aloud; you play the low C in this line.",
+      "childAction": "Play G, hop up to A, come back to G, then E.",
+      "bridge": "The reindeer hop on the roof: G, a little hop up to A, back to G.",
+      "intro": [ { "caption": "Hop up and back", "parentCue": "you play the low C; your child plays the rest" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Up on the housetop, slowly",
+          "parentCue": "Say the finger numbers out loud together",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "Steady fingers!",
+      "celebrate": "Today you practiced: a pattern that steps away and back."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Down the chimney",
+      "goal": "Play the line where the tune slides down, from A down to D.",
+      "skill": { "primary": "pitch", "secondary": ["fingers", "space"] },
+      "mathTarget": { "concept": "Contour (falling line)", "parentLine": "The tune walks downhill, key by key, to the left" },
+      "parentPrompt": "Slide your hand gently down your child's back as the tune goes down.",
+      "childAction": "Play A, A, G, E, D, walking down the chimney.",
+      "bridge": "Going left on the keys is climbing down the chimney: lower and lower.",
+      "intro": [ { "caption": "Down, down the chimney", "parentCue": "slide your hand down your child's back" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Out jumps Santa: A, A, G, E, D",
+          "parentCue": "Slide your hand down your child's arm",
+          "bpm": 60,
+          "notes": [ { "p": "A4", "d": 1 }, { "p": "A4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "Down you went!",
+      "celebrate": "Today you practiced: playing a tune that walks down."
+    },
+    {
+      "index": 4,
+      "spineType": "phrase",
+      "title": "Ho, ho, ho, then lower",
+      "goal": "Hear the 'Ho, ho, ho' shape played once, then again a little lower.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "pitch"] },
+      "mathTarget": { "concept": "Sequence (pattern moved lower)", "parentLine": "The same shape again, starting lower" },
+      "parentPrompt": "Play the 'Ho, ho, ho' notes for your child; they answer with 'who wouldn't go?'",
+      "childAction": "Listen for the ho-ho-ho, then answer: who wouldn't go?",
+      "bridge": "The second ho-ho-ho is the same jump, one floor down the house.",
+      "intro": [ { "caption": "Same ho-ho-ho, one floor down", "parentCue": "you play the ho-ho-hos; your child answers" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Ho, ho, ho, then lower",
+          "parentCue": "Pat your tummy on each 'ho'",
+          "bpm": 69,
+          "notes": [ { "p": "F4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "A4", "d": 2 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "F4", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Who wouldn't go?",
+          "parentCue": "Sing the words as your child plays",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great answering!",
+      "celebrate": "Today you practiced: hearing the same pattern played lower."
+    },
+    {
+      "index": 5,
+      "spineType": "put-together",
+      "title": "Rooftop and ho-ho-ho",
+      "goal": "Play the whole song slowly and notice the rooftop verse and the ho-ho-ho chorus.",
+      "skill": { "primary": "form", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Form: verse and chorus", "parentLine": "A song can have a story part and a cheering part" },
+      "parentPrompt": "Wave your arms like reindeer on the verse; pat your tummy on the ho-ho-hos. Sing stuck words.",
+      "childAction": "Play slowly and spot when the ho-ho-ho part comes.",
+      "bridge": "The verse is the rooftop story; the chorus is everyone cheering 'ho, ho, ho'.",
+      "intro": [ { "caption": "Story part, cheering part", "parentCue": "pat your tummy when the ho-ho-hos come" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 86,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found the chorus!",
+      "celebrate": "Today you practiced: hearing the verse and chorus of a song."
+    },
+    {
+      "index": 6,
+      "spineType": "review",
+      "title": "Walk, run-ning, walk",
+      "goal": "Play the quick 'little ones' notes slowly: two quick notes for one walking beat.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Ratio 2:1 (half and double)", "parentLine": "Quick notes come two for every one walking step" },
+      "parentPrompt": "Say 'walk' for slow notes and 'run-ning' for quick pairs while your child plays.",
+      "childAction": "Play the quick pairs as run-ning, the slow notes as walk.",
+      "bridge": "A walking note is one reindeer step; run-ning is two quick hooves.",
+      "intro": [ { "caption": "Walk, walk, run-ning", "parentCue": "say the words slowly as your child plays" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "All for the little ones, slowly",
+          "parentCue": "Say 'walk' and 'run-ning' with the notes",
+          "bpm": 56,
+          "notes": [ { "p": "A4", "d": 1 }, { "p": "A4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "Even and steady!",
+      "celebrate": "Today you practiced: fitting two quick notes into one beat."
+    },
+    {
+      "index": 7,
+      "spineType": "phrase",
+      "title": "Four beats, slow and even",
+      "goal": "Play the whole song slowly while counting four beats in every bar.",
+      "skill": { "primary": "beat", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Grouping by four (meter)", "parentLine": "Each bar holds four even beats" },
+      "parentPrompt": "Tap your child's shoulder on each beat, count 1, 2, 3, 4. You play C and F.",
+      "childAction": "Play slowly while your grown-up counts to four.",
+      "bridge": "Each bar is four reindeer steps across the roof: one, two, three, four.",
+      "intro": [ { "caption": "Slow and even is best", "parentCue": "tap your child's shoulder and count to four" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap and count to four",
+          "parentCue": "Count softly as your child taps",
+          "bpm": 81,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "Slow and steady!",
+      "celebrate": "Today you practiced: playing slowly and evenly in fours."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Ride with the sleigh",
+      "goal": "Play the whole song along with the music at full speed.",
+      "skill": { "primary": "together", "secondary": ["beat", "fingers"] },
+      "mathTarget": { "concept": "Entrainment (matching a tempo)", "parentLine": "Keeping up with a beat that does not wait" },
+      "parentPrompt": "Nod on each beat and play the C and F notes; if a note slips, keep going.",
+      "childAction": "Play along with the music and keep going, even after a slip.",
+      "bridge": "The sleigh keeps moving; ride along with it, even past a bump.",
+      "intro": [ { "caption": "Hop on the sleigh", "parentCue": "nod the beat and smile at slips" } ],
+      "games": [],
+      "praise": "You kept going together!",
+      "celebrate": "Today you practiced: keeping up with the music together."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Rooftop concert for teddy",
+      "goal": "Play the whole song for teddy with a jolly, bouncy sound, then bow.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Character (jolly and bouncy)", "parentLine": "Playing the same notes with a cheerful feel" },
+      "parentPrompt": "Sit teddy as the audience; announce the song, shout 'ho, ho, ho!' together, then bow.",
+      "childAction": "Play jolly and bouncy for teddy, then take a bow.",
+      "bridge": "Soft like reindeer landing on the verse, big and jolly on the ho-ho-hos.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song with a jolly feel."
+    }
+  ]
+}

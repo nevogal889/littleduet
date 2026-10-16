@@ -1,0 +1,175 @@
+{
+  "songId": "polly-put-the-kettle-on",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices counting to three, finding G by the three black keys, echoing short patterns and taking turns, using a cosy tea-time song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "How many Pollys?",
+      "goal": "Hear the whole song and count the three Polly lines before tea time.",
+      "skill": { "primary": "counting", "secondary": ["listening", "form"] },
+      "mathTarget": { "concept": "Counting repeated phrases", "parentLine": "Counting how many times the same line comes back" },
+      "parentPrompt": "Hold up one, two, then three fingers for each Polly line. Pretend to sip on 'tea'.",
+      "childAction": "Show one, two, three fingers for each Polly line.",
+      "bridge": "Polly, Polly, Polly: three times, then the kettle is ready for tea.",
+      "intro": [ { "caption": "Count the Pollys with me", "parentCue": "hold up a finger for each Polly line" } ],
+      "games": [],
+      "praise": "One, two, three Pollys!",
+      "celebrate": "Today you practiced: counting lines that come back, up to three."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Tick-tock tea time",
+      "goal": "Tap a steady beat on any key while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["together", "listening"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more and no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key on every beat, like a ticking clock.",
+      "bridge": "The beat is the kitchen clock: tick, tock, tick, tock, until tea.",
+      "intro": [ { "caption": "Tick-tock, it's nearly tea time", "parentCue": "tap your child's knee on every beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tick-tock, Polly",
+          "parentCue": "Say 'tick, tock' with each tap",
+          "bpm": 72,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "G4", "d": 2 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the clock steady!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "Find the kettle's G",
+      "goal": "Find G inside the group of three black keys and play it with one finger.",
+      "skill": { "primary": "space", "secondary": ["fingers", "counting"] },
+      "mathTarget": { "concept": "Spatial landmarks (groups of three)", "parentLine": "Using the three black keys as a sign to find G" },
+      "parentPrompt": "Touch three black keys together, then guide one finger to the white key after the first one.",
+      "childAction": "Find three black keys, then press G like a button.",
+      "bridge": "Three black keys are the kettle's lid; G hides after the first one.",
+      "intro": [ { "caption": "G hides after the first black key", "parentCue": "count the three black keys together first" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "G, G, G, kettle on",
+          "parentCue": "Count each G aloud",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1, "f": 4 }, { "p": "G4", "d": 1, "f": 4 }, { "p": "G4", "d": 2, "f": 4 } ]
+        }
+      ],
+      "praise": "You found the kettle's G!",
+      "celebrate": "Today you practiced: finding G by the three black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "echo",
+      "title": "Echo Polly",
+      "goal": "Listen to short patterns of two or three notes and copy them back.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Sequence recall (span 2-3)", "parentLine": "Hearing a tiny tune and keeping it in mind to copy" },
+      "parentPrompt": "Play or sing the pattern, pause, then nod to your child: 'Your turn.'",
+      "childAction": "Listen, then copy the notes the same way.",
+      "bridge": "Kettle on: three steps up, like steam rising from the spout.",
+      "intro": [ { "caption": "I play first, then you", "parentCue": "nod to your child for their turn" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Kettle on: E, F, G",
+          "parentCue": "Say 'up, up, up' as they play",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 2 }, { "p": "F4", "d": 1, "f": 3 }, { "p": "G4", "d": 2, "f": 4 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Pol-ly: G, A, G",
+          "parentCue": "Sing 'Pol-ly-put' with the three notes",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1, "f": 4 }, { "p": "A4", "d": 1, "f": 5 }, { "p": "G4", "d": 2, "f": 4 } ]
+        }
+      ],
+      "praise": "What a great echo!",
+      "celebrate": "Today you practiced: hearing short patterns and copying them back."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Same steps, one lower",
+      "goal": "Echo two patterns and hear that the second is the first, one step lower.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "pitch"] },
+      "mathTarget": { "concept": "Sequence (pattern shifted down)", "parentLine": "The same little tune, moved one step lower" },
+      "parentPrompt": "Walk your fingers up your child's arm, then do it again starting a little lower.",
+      "childAction": "Echo three steps up, then the same steps one lower.",
+      "bridge": "The second Polly line climbs the same stairs, starting one stair down.",
+      "intro": [ { "caption": "Same stairs, one step lower", "parentCue": "walk your fingers up their arm twice" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "High stairs: E, F, G",
+          "parentCue": "Point to the first key, E",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 2 }, { "p": "F4", "d": 1, "f": 3 }, { "p": "G4", "d": 2, "f": 4 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Lower stairs: D, E, F",
+          "parentCue": "Same steps, start one key to the left",
+          "bpm": 60,
+          "notes": [ { "p": "D4", "d": 1, "f": 1 }, { "p": "E4", "d": 1, "f": 2 }, { "p": "F4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "You found the same stairs!",
+      "celebrate": "Today you practiced: spotting the same pattern, one step lower."
+    },
+    {
+      "index": 6,
+      "spineType": "special-note",
+      "title": "You are the kettle G",
+      "goal": "Wait and play G at the right moments while the grown-up plays the rest.",
+      "skill": { "primary": "together", "secondary": ["counting", "listening"] },
+      "mathTarget": { "concept": "Turn-taking (alternation)", "parentLine": "I play my notes, you play yours: we take turns" },
+      "parentPrompt": "Play your notes, then look at your child and nod just before each G.",
+      "childAction": "Finger ready on G. Play it when it lights up.",
+      "bridge": "The grown-up fills the kettle; your G is the whistle when it's ready.",
+      "intro": [ { "caption": "You play the kettle's G", "parentCue": "nod just before each G comes" } ],
+      "games": [],
+      "praise": "Great waiting and playing!",
+      "celebrate": "Today you practiced: waiting for your turn and playing on time."
+    },
+    {
+      "index": 7,
+      "spineType": "together",
+      "title": "Two cooks, one kettle",
+      "goal": "Play the whole song together, sharing one steady beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Entrainment (shared pulse)", "parentLine": "Two players keeping the same steady beat" },
+      "parentPrompt": "Keep the beat going even if a note is missed; smile and nod at each G.",
+      "childAction": "Play your G in time with your grown-up's beat.",
+      "bridge": "Two cooks in one kitchen, moving to the same tick-tock.",
+      "intro": [ { "caption": "Two cooks, one kitchen", "parentCue": "sit close and keep the beat steady" } ],
+      "games": [],
+      "praise": "You played as a team!",
+      "celebrate": "Today you practiced: sharing one beat and taking turns."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Tea party for teddy",
+      "goal": "Play the whole song for teddy: three Polly lines, then tea time at the end.",
+      "skill": { "primary": "form", "secondary": ["together", "counting"] },
+      "mathTarget": { "concept": "Form: repetition, then ending", "parentLine": "The same line three times, then a new line to finish" },
+      "parentPrompt": "Sit teddy as the guest; play, then pretend to pour tea, clap and bow.",
+      "childAction": "Play for teddy, then pretend to pour the tea.",
+      "bridge": "Polly, Polly, Polly, then the last line walks down: tea is ready!",
+      "intro": [ { "caption": "Teddy is coming for tea!", "parentCue": "sit teddy in front as the guest" } ],
+      "games": [],
+      "praise": "Bravo, tea is served!",
+      "celebrate": "Today you practiced: a song with three repeats and an ending."
+    }
+  ]
+}

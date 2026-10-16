@@ -1,0 +1,215 @@
+{
+  "songId": "going-home-largo",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices a calm slow beat, finding E, echoing short up and down patterns and taking turns, with Dvorak's gentle Going Home melody.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Up a little, down home",
+      "goal": "Listen to the slow tune and move your arms up and down with it.",
+      "skill": { "primary": "listening", "secondary": ["pitch", "together"] },
+      "mathTarget": { "concept": "Contour (up, then down)", "parentLine": "The tune climbs a little, then walks back down" },
+      "parentPrompt": "Sway slowly together; lift your arms on the first 'going home', lower them on the next.",
+      "childAction": "Sway slowly. Arms up, then arms down, with the tune.",
+      "bridge": "The tune is a slow walk: a little hill up, then down to the door.",
+      "intro": [ { "caption": "A slow, cozy song", "parentCue": "take one big slow breath together first" } ],
+      "games": [],
+      "praise": "You moved so calmly!",
+      "celebrate": "Today you practiced: hearing a tune go up and down."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Slow footsteps home",
+      "goal": "Tap one slow, steady tap for every beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["expression", "together"] },
+      "mathTarget": { "concept": "Periodicity (slow steady pulse)", "parentLine": "Even taps, spaced out slowly, like calm footsteps" },
+      "parentPrompt": "Rest your hand over your child's hand and tap slowly together, then gently let go.",
+      "childAction": "Tap any key once for each slow footstep.",
+      "bridge": "Each beat is one slow footstep on the path home.",
+      "intro": [ { "caption": "Slow steps, all the way home", "parentCue": "tap your child's shoulder slowly on each beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Walk slowly, we are going home",
+          "parentCue": "Keep tapping slowly through the long last note",
+          "bpm": 60,
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 4 } ]
+        }
+      ],
+      "praise": "Such calm, steady steps!",
+      "celebrate": "Today you practiced: keeping a slow, steady beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "Find E, the home key",
+      "goal": "Find the special note E by using the two black keys as a landmark.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmarks", "parentLine": "Finding a place by what sits next to it" },
+      "parentPrompt": "Guide your child's finger over two black keys, then slide right to E.",
+      "childAction": "Touch the two black keys, slide right, and press E gently.",
+      "bridge": "E is the front door, just right of the two black keys.",
+      "intro": [ { "caption": "Where does E live?", "parentCue": "touch the two black keys together first" } ],
+      "games": [],
+      "praise": "You found E's door!",
+      "celebrate": "Today you practiced: finding E next to the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "octave",
+      "title": "Two houses for E",
+      "goal": "Find E in a low place and a high place and hear that they match.",
+      "skill": { "primary": "space", "secondary": ["pitch"] },
+      "mathTarget": { "concept": "Octave equivalence (spatial mapping)", "parentLine": "One note lives in two houses: low left, high right" },
+      "parentPrompt": "Hum E in a deep voice for the low one, a tiny voice for the high one.",
+      "childAction": "Hop between low E and high E, deep voice then tiny voice.",
+      "bridge": "Low E is the big house on the left; high E is the little house.",
+      "intro": [ { "caption": "E lives in two houses", "parentCue": "point to both Es, low then high" } ],
+      "games": [
+        {
+          "kind": "high_low",
+          "target": "high",
+          "caption": "Going home, up high",
+          "parentCue": "Point right, to the high side, together",
+          "bpm": 66,
+          "notes": [ { "p": "E5", "d": 1 }, { "p": "G5", "d": 1 }, { "p": "G5", "d": 2 }, { "p": "E5", "d": 1 }, { "p": "D5", "d": 1 }, { "p": "C5", "d": 2 } ]
+        }
+      ],
+      "praise": "You found both houses!",
+      "celebrate": "Today you practiced: the same note, low and high."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Echo the slow call",
+      "goal": "Hold two or three notes in mind, then copy them back on the keys.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Sequence recall (span 2-3)", "parentLine": "Keeping a short line of sounds in mind, in order" },
+      "parentPrompt": "Play the short call, then fold your hands and wait calmly for your child's answer.",
+      "childAction": "Listen to the call, then play it back the same way.",
+      "bridge": "The tune calls softly across the field; you call back the same.",
+      "intro": [ { "caption": "I call, you answer", "parentCue": "sing 'going home', let your child copy" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Going home: E, G, G",
+          "parentCue": "Point to each lit key, nice and slow",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "You answered the call!",
+      "celebrate": "Today you practiced: listening and copying short patterns."
+    },
+    {
+      "index": 6,
+      "spineType": "echo",
+      "title": "Up the hill, down the hill",
+      "goal": "Echo a pattern that climbs up from E and one that walks down from E.",
+      "skill": { "primary": "patterns", "secondary": ["pitch", "listening"] },
+      "mathTarget": { "concept": "Mirror symmetry (around E)", "parentLine": "From E the tune steps up, then steps down the same way" },
+      "parentPrompt": "Walk your fingers up your child's arm for E-G, down for E-D-C.",
+      "childAction": "Start on E. Climb up the hill, then walk down.",
+      "bridge": "E is the middle of the path: one way climbs up, one goes down.",
+      "intro": [ { "caption": "Up the hill, down the hill", "parentCue": "walk your fingers up, then down your child's arm" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Up the hill: E, G, G",
+          "parentCue": "Lift your hand as the notes go up",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 2, "f": 5 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Down the hill: E, D, C",
+          "parentCue": "Lower your hand as the notes go down",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "C4", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "Up and down, together!",
+      "celebrate": "Today you practiced: a pattern going up and coming down."
+    },
+    {
+      "index": 7,
+      "spineType": "special-note",
+      "title": "Wait for E",
+      "goal": "Wait and listen, then play E each time it starts a line of the song.",
+      "skill": { "primary": "together", "secondary": ["listening", "counting"] },
+      "mathTarget": { "concept": "Turn-taking (cue and response)", "parentLine": "Waiting for your moment, then playing your note" },
+      "parentPrompt": "Play your notes; nod to your child just before each E comes.",
+      "childAction": "Hands in your lap, wait for the nod, then play E.",
+      "bridge": "E opens the door each time we say 'going home'.",
+      "intro": [ { "caption": "Wait, wait, now it's E!", "parentCue": "hands in lap until the E comes" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Going home, going home",
+          "parentCue": "Nod before each E: one, two",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 2, "f": 3 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "You waited for your turn!",
+      "celebrate": "Today you practiced: waiting your turn and playing on cue."
+    },
+    {
+      "index": 8,
+      "spineType": "special-note",
+      "title": "Two friends: E and D",
+      "goal": "Hear the difference between E and D and play each one when it comes.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Classification into two sets", "parentLine": "Sorting each sound: is it E or is it D?" },
+      "parentPrompt": "Point to E or D just before it comes, then let your child press it.",
+      "childAction": "Listen, choose E or D, and press the right one.",
+      "bridge": "D sits between the two black keys; E is next door, on the right.",
+      "intro": [ { "caption": "Two friends: E and D", "parentCue": "touch E, then D, saying their names" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "E, then D, then E",
+          "parentCue": "Say each name as your child presses",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "You caught E and D!",
+      "celebrate": "Today you practiced: hearing E and D and taking turns."
+    },
+    {
+      "index": 9,
+      "spineType": "together",
+      "title": "Walking home together",
+      "goal": "Play the whole song together, sharing one slow, calm beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "expression"] },
+      "mathTarget": { "concept": "Entrainment (shared slow pulse)", "parentLine": "Two players keeping one slow beat together" },
+      "parentPrompt": "Play slowly and breathe with your child; if they miss a note, keep going and smile.",
+      "childAction": "Play your E and D notes with your grown-up, slow and soft.",
+      "bridge": "We walk home side by side, step by step, at the same slow speed.",
+      "intro": [ { "caption": "Let's walk home together", "parentCue": "sit close and take one slow breath" } ],
+      "games": [],
+      "praise": "We walked home together!",
+      "celebrate": "Today you practiced: playing one slow song together."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "Quiet concert for teddy",
+      "goal": "Play the whole song for teddy and hear how it ends, home on C.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Closure (ending on home note)", "parentLine": "The last line lands on C, so the song feels finished" },
+      "parentPrompt": "Sit teddy as the audience; play softly, then whisper 'we're home' and bow together.",
+      "childAction": "Play your notes softly, then take a slow, quiet bow.",
+      "bridge": "The last note is the front door: C, we are home.",
+      "intro": [ { "caption": "A quiet song for teddy", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, we're home!",
+      "celebrate": "Today you practiced: playing a whole song and hearing it end."
+    }
+  ]
+}

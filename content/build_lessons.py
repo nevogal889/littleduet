@@ -68,6 +68,21 @@ def pname(n):
     return "%s%d" % (NOTE_NAMES[n % 12], n // 12 - 1)
 
 
+def white_index(m):
+    """Index of a white key counted from MIDI 0 (black keys share their left neighbour's index)."""
+    return sum(1 for n in range(0, m) if "#" not in NOTE_NAMES[n % 12])
+
+
+def white_at(i):
+    c = -1
+    for m in range(0, 128):
+        if "#" not in NOTE_NAMES[m % 12]:
+            c += 1
+            if c == i:
+                return m
+    return 60
+
+
 def white_steps(lo, hi):
     """Number of white keys from lo to hi (lo counted as 0)."""
     return sum(1 for n in range(lo + 1, hi + 1) if "#" not in NOTE_NAMES[n % 12])
@@ -125,8 +140,14 @@ def _v(seg):
     song = VCTX["song"]
     if song is None:
         return seg
-    ctx = {"title": song.title, "age": song.age, "note": song.special,
-           "key": "%s|%d|%s|%s|%s" % (song.id, VCTX["idx"], seg["kind"], seg.get("caption", ""), seg.get("target", ""))}
+    extra = ""
+    if seg["kind"] == "praise":          # rotate praise lines within a class (spec 8: no repeats back to back)
+        VCTX["praise"] = VCTX.get("praise", 0) + 1
+        extra = "|p%d" % VCTX["praise"]
+    elif VCTX.get("occ", 0) > 1:         # a repeated caption gets a different line (spec 3)
+        extra = "|o%d" % VCTX["occ"]
+    ctx = {"title": song.title, "age": song.age, "note": song.special, "rot": VCTX.get("praise") if extra else None,
+           "key": "%s|%d|%s|%s|%s%s" % (song.id, VCTX["idx"], seg["kind"], seg.get("caption", ""), seg.get("target", ""), extra)}
     return teacher.apply(seg, ctx, body_fn=lambda x: note_body_sec(x["notes"], x["bpm"], x.get("gapBeats", 0)),
                          tail=TAIL_SEC)
 
@@ -211,6 +232,12 @@ class Song:
                 by_f.setdefault(n["f"], Counter())[n["p"]] += 1
         self.hand = [OrderedDict([("p", by_f[f].most_common(1)[0][0]), ("f", f)])
                      for f in sorted(by_f)]
+        # Better: the single five-finger position (thumb on a white key) that fits the most fingered notes.
+        fit = Counter(white_index(midi(n["p"])) - (n["f"] - 1) for n in pitched
+                      if n.get("f") and n.get("h") != "L" and "#" not in n["p"])
+        if fit:
+            th = fit.most_common(1)[0][0]
+            self.hand = [OrderedDict([("p", pname(white_at(th + k))), ("f", k + 1)]) for k in range(5)]
         self.thumb = next((k["p"] for k in self.hand if k["f"] == 1), pitched[0]["p"])
 
     # -- phrase material
@@ -404,7 +431,12 @@ def finish_class(song, idx, ctype, title, goal, tip, intro, required, extras,
         outro_praise = ovl["praise"]
     target = getattr(song, "cur_target", FILL_TARGET)
     ceil_ = min(FILL_CEILING, target + 12)
-    segs = [seg_title(song, idx, title)] + intro
+    required = [split_long_demos(song, u) for u in required]
+    extras = [split_long_demos(song, u) for u in extras]
+    segs = [seg_title(song, idx, title)]
+    if first_play_sec(segs + intro + [x for u in required[:1] for x in u]) > FIRST_PLAY_MAX:
+        segs += warm_up(song)            # spec 8: the child plays within 20 s of the start
+    segs += intro
     praise = seg_praise(outro_praise)
     for unit in required:
         if seq_dur(segs) + seq_dur(unit) + PRAISE_SEC <= FILL_CEILING:
@@ -451,12 +483,99 @@ def finish_class(song, idx, ctype, title, goal, tip, intro, required, extras,
         segs[-1] = praise          # never two praise cards in a row at the end
     else:
         segs.append(praise)
+    # Units are reused while filling, so praise cards can be the same object: give each its own line, in order.
+    out, n, seen = [], 0, Counter()
+    for x in segs:
+        x = OrderedDict(x)
+        if VCTX["song"] is not None and teacher.enabled() and x["kind"] != "title":
+            for k in ("voice", "voiceId", "voiceSec"):
+                x.pop(k, None)
+            if x["kind"] == "praise":
+                n += 1
+                x["durationSec"] = PRAISE_SEC
+                VCTX["praise"] = n - 1
+            else:
+                seen[(x["kind"], x.get("caption"), x.get("target"))] += 1
+                VCTX["occ"] = seen[(x["kind"], x.get("caption"), x.get("target"))]
+                if x.get("notes"):
+                    x["leadInSec"] = lead_in_sec(x["bpm"])
+                    x["durationSec"] = int(math.ceil(x["leadInSec"] + note_body_sec(x["notes"], x["bpm"], x.get("gapBeats", 0)) + TAIL_SEC))
+            x = _v(x)
+            VCTX["occ"] = 0
+        out.append(x)
+    segs = out
+    short = CLASS_MIN - seq_dur(segs)
+    if short > 0:                        # re-voicing can shave a few seconds: a movement break fills it
+        w = WIGGLES[idx % len(WIGGLES)]
+        segs.insert(len(segs) - 1, seg_say(w[0], w[1], sec=int(max(4, short))))
     total = seq_dur(segs)
     return OrderedDict([
         ("id", cid), ("index", idx), ("title", title), ("goal", goal), ("type", ctype),
         ("durationSec", total), ("parentTip", tip),
         ("video", "%s/%s.mp4" % (song.id, cid)), ("thumb", "%s/%s.jpg" % (song.id, cid)),
         ("segments", segs)])
+
+
+FIRST_PLAY_MAX = 20.0
+
+
+def _child_plays(seg):
+    if seg["kind"] in ("beat", "high_low"):
+        return True
+    return seg["kind"] in ("your_turn", "together") and any(
+        n.get("who") != "parent" and not n.get("rest") for n in seg.get("notes", []))
+
+
+def first_play_sec(segs):
+    t = 0.0
+    for x in segs:
+        if _child_plays(x):
+            return t + x.get("leadInSec", 0)
+        t += x["durationSec"]
+    return 1e9
+
+
+def warm_up(song):
+    """A 3-4 note warm-up right after the title, so the child plays straight away."""
+    pitched = [n for n in song.all_notes if not n.get("rest")]
+    if song.age == "2-3":
+        notes = [clean_note(dict(n, d=1), who="parent") for n in pitched[:4]]
+        return [seg_notes("beat", "Warm-up taps", notes, song.bpm, cue="Tap any key together")]
+    if song.age == "3-4":
+        f = song.special_finger
+        notes = [clean_note({"p": song.special, "d": 1, **({"f": f} if f else {})}) for _ in range(3)]
+        return [seg_notes("your_turn", "Warm up on %s" % song.special[:-1].replace("#", " sharp"), notes,
+                          slow(song.bpm, 0.8), cue="Help one finger find it")]
+    keys = song.hand[:3] if len(song.hand) >= 3 else [OrderedDict([("p", song.thumb), ("f", 1)])] * 3
+    notes = [clean_note({"p": k["p"], "d": 1, "f": k["f"]}) for k in keys]
+    return [seg_notes("your_turn", "Warm-up fingers", notes, slow(song.bpm, 0.75), cue="Curved fingers, gentle presses")]
+
+
+DEMO_MAX = 25
+
+
+def split_long_demos(song, unit):
+    """Spec 8 (the child acts every 30 s): a demo longer than DEMO_MAX becomes
+    watch part 1 -> your turn part 1 -> watch part 2."""
+    out = []
+    for x in unit:
+        if x["kind"] != "demo" or x["durationSec"] <= DEMO_MAX or len(x.get("notes", [])) < 6:
+            out.append(x)
+            continue
+        ns = x["notes"]
+        lines = x.get("lines") or []
+        cut = len(ns) // 2
+        if len(lines) >= 2:   # cut at the lyric line closest to the middle
+            cut = min((ln["from"] for ln in lines[1:]), key=lambda f: abs(f - len(ns) / 2.0))
+        a, b = ns[:cut], ns[cut:]
+        la = [ln for ln in lines if ln["from"] < cut]
+        lb = [OrderedDict([("lyric", ln["lyric"]), ("from", ln["from"] - cut)]) for ln in lines if ln["from"] >= cut]
+        bpm = x["bpm"]
+        out.append(seg_notes("demo", "Watch the first part", a, bpm, cue=x.get("parentCue"), lines=la))
+        if any(n.get("who") != "parent" and not n.get("rest") for n in a):
+            out.append(seg_notes("your_turn", "Your turn: the first part", a, bpm, cue="Slow and gentle", lines=la))
+        out.append(seg_notes("demo", "Watch the next part", b, bpm, cue=x.get("parentCue"), lines=lb))
+    return out
 
 
 def game_unit(song, g):
@@ -875,8 +994,7 @@ def cls_left_hand(song, idx):
     keys = [OrderedDict([("p", p), ("f", f)]) for p, f in sorted(fingers.items(), key=lambda x: midi(x[0]))]
     lows = " and ".join(p[:-1] for p in [k["p"] for k in keys])
     bpm_s = slow(song.bpm, 0.75)
-    intro = [seg_say("Meet your left hand!", "Left hand sits low on the left side", show_keys=keys),
-             seg_say("One low note at the start of each bar", "The low notes are %s" % lows, show_keys=keys)]
+    intro = [seg_say("Meet your left hand!", "Low on the left: %s, one per bar" % lows, show_keys=keys)]
     required = [[seg_notes("demo", "Watch the low notes", lh, bpm_s, cue="Count one, two, three, four")],
                 [seg_notes("your_turn", "Your turn! Left hand", lh, bpm_s, cue="Left hand only")]]
     extras = [[seg_say(again(i), "You play the tune, child plays low notes"),
@@ -1086,7 +1204,7 @@ def cls_octave_song(song, idx):
                            lines=lines)]]
     extras = [[seg_say(again(i), "Listen to how it sounds now"),
                seg_notes("together", "Play along %s" % where, notes, slow(song.bpm, 0.9 if i % 2 else 0.8),
-                         cue="Is it like a bird or a bear?", lines=lines), seg_praise(praise_word(i))]
+                         cue="Is it high or low?", lines=lines), seg_praise(praise_word(i))]
               for i in range(4)]
     return finish_class(song, idx, "octave", "Same song, %s" % where,
                         "Play the song in a new place with the same fingers",
@@ -1303,7 +1421,7 @@ def build_classes(song, makers, targets, plan=None):
     for i, mk in enumerate(makers):
         song.cur_target = max(CLASS_MIN + 8, min(FILL_CEILING - 6, targets[i]))
         song.cur_overlay = plan["classes"][i] if plan else None
-        VCTX["song"], VCTX["idx"] = song, i + 1
+        VCTX["song"], VCTX["idx"], VCTX["praise"] = song, i + 1, 0
         out.append(mk(i + 1))
     VCTX["song"] = None
     return out

@@ -161,6 +161,20 @@ Write `content/curriculum/<songId>.json` exactly in this shape:
 `classes` must have the same length as the spine and `index` and `spineType` must match the spine
 one to one.
 
+# Rollout rules (decided after the 5-song pilot, apply to every song)
+
+1. **Counting at ages 2-3** never goes above 2 ("two taps", "one, two"). Counting may be the primary
+   skill only when the song gives a natural pair.
+2. **Notes outside the five-finger position** are the grown-up's. Never put a leap outside the child's hand
+   position into a `your_turn` or `demo` game for ages 4-5; write "Grown-up, you play the low G" instead.
+3. **Concert classes at ages 2-3** use `together` as the primary skill (`form` may be secondary).
+4. **Spine captions stay as they are** (for example "Bear!" and "Bird!" in high-low classes). Use them in
+   your intro lines and images instead of inventing new characters the screen will not show.
+5. **Your intro lines are spoken by the teacher voice**: the caption, then "Grown-up, <cue>". Write them to
+   sound natural aloud, and do not repeat the same idea in the caption and the cue.
+6. **Stay faithful to the song's real story** (`content/song-stories.json` has who wrote it, when and what it
+   is about); never invent history in a title or a line.
+
 # Self-check before you finish
 
 Run `python3 content/build_lessons.py --check-plan content/curriculum/<songId>.json`. Fix every

@@ -2,55 +2,41 @@
  "songId": "rain-rain-go-away",
  "title": "Rain, Rain, Go Away",
  "ageGroup": "2-3",
- "curriculum": "default",
- "songSummary": "Practices listening memory, loud, soft, fast, slow and steady beat, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices steady beat, high and low, loud and soft, stop and go, and playing together, with an old three-note rain chant.",
  "skillMap": [
   {
    "id": "listening",
    "label": "Listening memory",
    "value": 1.0,
-   "classes": 2,
+   "classes": 3,
    "total": 9
   },
   {
    "id": "expression",
    "label": "Loud, soft, fast, slow",
-   "value": 1.0,
+   "value": 0.67,
+   "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "together",
+   "label": "Playing together",
+   "value": 0.67,
    "classes": 2,
    "total": 9
   },
   {
    "id": "beat",
    "label": "Steady beat",
-   "value": 0.5,
+   "value": 0.33,
    "classes": 1,
    "total": 9
   },
   {
    "id": "pitch",
    "label": "High and low",
-   "value": 0.5,
-   "classes": 1,
-   "total": 9
-  },
-  {
-   "id": "patterns",
-   "label": "Patterns",
-   "value": 0.5,
-   "classes": 1,
-   "total": 9
-  },
-  {
-   "id": "form",
-   "label": "Song shape",
-   "value": 0.5,
-   "classes": 1,
-   "total": 9
-  },
-  {
-   "id": "together",
-   "label": "Playing together",
-   "value": 0.5,
+   "value": 0.33,
    "classes": 1,
    "total": 9
   }
@@ -58,36 +44,77 @@
  "icon": "rain",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 1917,
+ "totalSec": 1923,
  "classes": [
   {
    "id": "rain-rain-go-away-c01",
    "index": 1,
-   "title": "Listen and sway",
-   "goal": "Hear the whole song and move to the beat",
+   "title": "Sway in the rain",
+   "goal": "Hear the whole rain song and sway to its steady beat together.",
    "type": "listen",
-   "durationSec": 208,
-   "parentTip": "Sit together at the piano. Sway side to side while the song plays.",
+   "durationSec": 207,
+   "parentTip": "Hold your child on your lap and sway side to side on every beat.",
    "video": "rain-rain-go-away/rain-rain-go-away-c01.mp4",
    "thumb": "rain-rain-go-away/rain-rain-go-away-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Rain, Rain, Go Away",
-     "subcaption": "Class 1: Listen and sway",
+     "subcaption": "Class 1: Sway in the rain",
      "durationSec": 7,
      "voice": "Hello again. Wave your fingers hello. Today's song is Rain, Rain, Go Away.",
      "voiceId": "f26d8e864905b362",
      "voiceSec": 6.0
     },
     {
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 88,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Listen to the rain song",
+     "parentCue": "hold your child close and sway together",
+     "durationSec": 7,
+     "voice": "Listen to the rain song. Grown-up, hold your child close and sway together.",
+     "voiceId": "5d7071296688208b",
+     "voiceSec": 5.24
     },
     {
      "kind": "listen",
@@ -718,7 +745,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 88,
-     "leadInSec": 3.86,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -907,18 +934,18 @@
        "from": 19
       }
      ],
-     "durationSec": 21,
-     "voice": "Let's listen first. Watch the keys light up.",
-     "voiceId": "87c2bbd9d2891005",
-     "voiceSec": 3.46
+     "durationSec": 20,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -1350,7 +1377,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 88,
-     "leadInSec": 3.86,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -1539,35 +1566,18 @@
        "from": 19
       }
      ],
-     "durationSec": 21,
-     "voice": "Let's listen first. Watch the keys light up.",
-     "voiceId": "87c2bbd9d2891005",
-     "voiceSec": 3.46
+     "durationSec": 20,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "You swayed together!",
      "durationSec": 5,
      "voice": "High five, grown-up. High five, little one.",
      "voiceId": "02217b24bc257a87",
      "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 6,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
     }
    ],
    "skill": {
@@ -1578,51 +1588,124 @@
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Periodicity (steady pulse)",
+    "parentLine": "Feeling something that comes again and again, evenly spaced"
    },
-   "parentPrompt": "Sit together at the piano. Sway side to side while the song plays.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Hold your child on your lap and sway side to side on every beat.",
+   "childAction": "Sway, clap and pat your knees with the song.",
+   "bridge": "The beat is raindrops on the roof: drip, drip, drip, nice and even.",
+   "celebrate": "Today you practiced: listening and swaying to the beat."
   },
   {
    "id": "rain-rain-go-away-c02",
    "index": 2,
-   "title": "Find the beat",
-   "goal": "Tap a steady beat while the grown-up plays the tune",
+   "title": "Rain, rain: two taps",
+   "goal": "Tap one steady tap on every beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 227,
-   "parentTip": "Any key is fine. Tap with your child's hand at first, then let go.",
+   "durationSec": 214,
+   "parentTip": "Rest your hand over your child's hand and tap together, then slowly let go.",
    "video": "rain-rain-go-away/rain-rain-go-away-c02.mp4",
    "thumb": "rain-rain-go-away/rain-rain-go-away-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Rain, Rain, Go Away",
-     "subcaption": "Class 2: Find the beat",
+     "subcaption": "Class 2: Rain, rain: two taps",
      "durationSec": 9,
      "voice": "Hello, friends. Today we play Rain, Rain, Go Away. Grown-up, sit close beside your little one.",
      "voiceId": "3fda4f4426e14fc9",
      "voiceSec": 7.23
     },
     {
-     "kind": "say",
-     "caption": "Tap any key on the beat",
-     "parentCue": "You play the tune, your child taps the beat",
-     "durationSec": 8,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 88,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
-     "caption": "Tap, tap, tap, like a heartbeat",
-     "parentCue": "Tap with your child first",
+     "caption": "Every beat is a raindrop",
+     "parentCue": "tap your child's shoulder on each beat",
      "durationSec": 7,
-     "voice": "Tap, tap, tap, like a heartbeat.",
-     "voiceId": "07ab7f7da2eb6f0e",
-     "voiceSec": 2.82
+     "voice": "Every beat is a raindrop. Grown-up, tap your child's shoulder on each beat.",
+     "voiceId": "89b1bb6d3df6ed4d",
+     "voiceSec": 5.52
+    },
+    {
+     "kind": "beat",
+     "caption": "Rain, rain: one, two",
+     "parentCue": "Say 'one, two' softly on 'rain, rain'",
+     "bpm": 72,
+     "leadInSec": 5.22,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "rest": true,
+       "d": 2
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "rest": true,
+       "d": 2
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Rain, rain. One, two. Tap softly with me.",
+     "voiceId": "b0af2f1ec94639a5",
+     "voiceSec": 4.82
     },
     {
      "kind": "beat",
@@ -2035,9 +2118,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -2251,9 +2334,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -2467,9 +2550,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -2485,7 +2568,7 @@
      "caption": "Tap on every beat",
      "parentCue": "You play, your child taps",
      "bpm": 88,
-     "leadInSec": 4.26,
+     "leadInSec": 3.54,
      "notes": [
       {
        "p": "G4",
@@ -2675,17 +2758,17 @@
       }
      ],
      "durationSec": 21,
-     "voice": "Any key is fine. Tap when the circle grows.",
-     "voiceId": "015b37b18f728b6c",
-     "voiceSec": 3.86
+     "voice": "Grown-up plays the song. You tap the beat.",
+     "voiceId": "4517efb7c8c0ff3d",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -2897,213 +2980,37 @@
     },
     {
      "kind": "praise",
-     "caption": "Well done!",
+     "caption": "You kept the beat!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap the beat",
-     "parentCue": "You play, your child taps",
-     "bpm": 88,
-     "leadInSec": 4.26,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Come",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "gain",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "an",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "oth",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "er",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "day",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Lit",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "chil",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "dren",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 4,
-       "s": "want",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "play",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      },
-      {
-       "lyric": "Come again another day",
-       "from": 5
-      },
-      {
-       "lyric": "Little children want to play",
-       "from": 12
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Any key is fine. Tap when the circle grows.",
-     "voiceId": "015b37b18f728b6c",
-     "voiceSec": 3.86
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
     "primary": "beat",
     "secondary": [
+     "counting",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Periodicity (steady pulse)",
-    "parentLine": "Feeling something that repeats at an even time"
+    "concept": "One-to-one correspondence",
+    "parentLine": "One tap for each beat, no more, no less"
    },
-   "parentPrompt": "Any key is fine. Tap with your child's hand at first, then let go.",
-   "childAction": "Tap any key on every beat.",
-   "bridge": "The beat is a heartbeat: tap, tap, tap, never in a hurry.",
-   "celebrate": "Today you practiced keeping a steady beat and playing together."
+   "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+   "childAction": "Tap any key once on each beat. Any key is right.",
+   "bridge": "\"Rain, rain\" is two big drops: one, two, on any key.",
+   "celebrate": "Today you practiced: one tap for each beat."
   },
   {
    "id": "rain-rain-go-away-c03",
    "index": 3,
    "title": "Bear low, bird high",
-   "goal": "Hear the difference between low and high sounds",
+   "goal": "Hear low and high sounds and tap the matching side of the piano.",
    "type": "high-low",
-   "durationSec": 191,
-   "parentTip": "Low keys are on the left, high keys on the right. Any key on the correct side counts.",
+   "durationSec": 192,
+   "parentTip": "Growl and crouch for the bear; flap your arms and stretch up for the bird.",
    "video": "rain-rain-go-away/rain-rain-go-away-c03.mp4",
    "thumb": "rain-rain-go-away/rain-rain-go-away-c03.jpg",
    "segments": [
@@ -3118,21 +3025,80 @@
     },
     {
      "kind": "say",
-     "caption": "Low keys sound like a big bear",
-     "parentCue": "Show the low end of the piano",
+     "caption": "Here comes the bear, here comes the bird",
+     "parentCue": "point left for bear, right for bird",
      "durationSec": 8,
-     "voice": "Low keys, on the left, sound like a big bear.",
-     "voiceId": "ded72c2c5908831d",
-     "voiceSec": 3.44
+     "voice": "Here comes the bear, here comes the bird. Grown-up, point left for bear, right for bird.",
+     "voiceId": "f6d65b2e716af00c",
+     "voiceSec": 6.23
     },
     {
-     "kind": "say",
-     "caption": "High keys sound like a little bird",
-     "parentCue": "Show the high end of the piano",
-     "durationSec": 8,
-     "voice": "High keys, on the right, sound like a little bird.",
-     "voiceId": "89552428549ec22e",
-     "voiceSec": 3.29
+     "kind": "high_low",
+     "caption": "Bear stomps in puddles",
+     "parentCue": "Growl together, then tap the left side",
+     "target": "low",
+     "bpm": 66,
+     "leadInSec": 4.69,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "The bear stomps in puddles. Tap down low, on the left.",
+     "voiceId": "37b2a1dac41057a2",
+     "voiceSec": 4.29
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bird flies over the rain",
+     "parentCue": "Chirp together, then tap the right side",
+     "target": "high",
+     "bpm": 66,
+     "leadInSec": 4.41,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "The bird flies over the rain. Tap up high, on the right.",
+     "voiceId": "652ee3deed333428",
+     "voiceSec": 4.01
     },
     {
      "kind": "high_low",
@@ -3447,9 +3413,9 @@
      "kind": "praise",
      "caption": "Great listening!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "high_low",
@@ -3555,9 +3521,9 @@
      "kind": "praise",
      "caption": "You know high and low!",
      "durationSec": 5,
-     "voice": "You know high and low now.",
-     "voiceId": "4389997f0bd28169",
-     "voiceSec": 1.88
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "high_low",
@@ -3615,7 +3581,7 @@
      "parentCue": "Tap any high key",
      "target": "high",
      "bpm": 88,
-     "leadInSec": 3.91,
+     "leadInSec": 3.61,
      "notes": [
       {
        "p": "G5",
@@ -3655,9 +3621,9 @@
       }
      ],
      "durationSec": 9,
-     "voice": "Bird time. Tap the high keys, up on the right.",
-     "voiceId": "9386cba13e71d01f",
-     "voiceSec": 3.51
+     "voice": "High and light, like a bird. Tap up high.",
+     "voiceId": "d7bc92a8270a074f",
+     "voiceSec": 3.21
     },
     {
      "kind": "say",
@@ -3674,7 +3640,7 @@
      "parentCue": "Tap any low key",
      "target": "low",
      "bpm": 88,
-     "leadInSec": 4.22,
+     "leadInSec": 4.3,
      "notes": [
       {
        "p": "G3",
@@ -3714,9 +3680,9 @@
       }
      ],
      "durationSec": 10,
-     "voice": "Listen, a big bear. Tap down low.",
-     "voiceId": "12ea2dbc14ca23b5",
-     "voiceSec": 3.82
+     "voice": "Big bear steps. Tap low, on the left side.",
+     "voiceId": "610d2546ef1c0c22",
+     "voiceSec": 3.9
     },
     {
      "kind": "high_low",
@@ -3772,9 +3738,9 @@
      "kind": "praise",
      "caption": "Great listening!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "high_low",
@@ -3782,7 +3748,7 @@
      "parentCue": "Tap any low key",
      "target": "low",
      "bpm": 88,
-     "leadInSec": 4.3,
+     "leadInSec": 3.56,
      "notes": [
       {
        "p": "G3",
@@ -3821,64 +3787,14 @@
        "from": 0
       }
      ],
-     "durationSec": 10,
-     "voice": "Big bear steps. Tap low, on the left side.",
-     "voiceId": "610d2546ef1c0c22",
-     "voiceSec": 3.9
-    },
-    {
-     "kind": "high_low",
-     "caption": "Little bird song",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 88,
-     "leadInSec": 4.47,
-     "notes": [
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 2,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Here comes the little bird. Tap a high key, up on the right.",
-     "voiceId": "fddf06316df8346e",
-     "voiceSec": 4.07
+     "durationSec": 9,
+     "voice": "Low and deep, like a bear. Tap down low.",
+     "voiceId": "01122bae862343ea",
+     "voiceSec": 3.16
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great bear, great bird!",
      "durationSec": 5,
      "voice": "I love how you kept going.",
      "voiceId": "5edf54ba234e9d32",
@@ -3888,33 +3804,34 @@
    "skill": {
     "primary": "pitch",
     "secondary": [
-     "space"
+     "space",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Spatial mapping of pitch",
+    "concept": "Spatial mapping (pitch to place)",
     "parentLine": "Low sounds live on the left, high sounds on the right"
    },
-   "parentPrompt": "Low keys are on the left, high keys on the right. Any key on the correct side counts.",
-   "childAction": "Tap low for the bear, high for the bird.",
-   "bridge": "Low notes are heavy bears on the left; high notes are little birds.",
-   "celebrate": "Today you practiced hearing high and low and finding the way on the keys."
+   "parentPrompt": "Growl and crouch for the bear; flap your arms and stretch up for the bird.",
+   "childAction": "Bear: tap the left side. Bird: tap the right side.",
+   "bridge": "The bear stomps in low puddles on the left; the bird flies high.",
+   "celebrate": "Today you practiced: hearing high and low sounds."
   },
   {
    "id": "rain-rain-go-away-c04",
    "index": 4,
-   "title": "Loud and soft",
-   "goal": "Tap the beat loudly, then softly",
+   "title": "Big storm, tiny drizzle",
+   "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
    "type": "loud-soft",
-   "durationSec": 210,
-   "parentTip": "Loud means strong, not banging. Whisper when it's time to play soft.",
+   "durationSec": 218,
+   "parentTip": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
    "video": "rain-rain-go-away/rain-rain-go-away-c04.mp4",
    "thumb": "rain-rain-go-away/rain-rain-go-away-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Rain, Rain, Go Away",
-     "subcaption": "Class 4: Loud and soft",
+     "subcaption": "Class 4: Big storm, tiny drizzle",
      "durationSec": 9,
      "voice": "Hello, friends. Today we play Rain, Rain, Go Away. Grown-up, sit close beside your little one.",
      "voiceId": "3fda4f4426e14fc9",
@@ -3922,21 +3839,12 @@
     },
     {
      "kind": "say",
-     "caption": "Let's play loud and soft",
-     "parentCue": "Show a big tap and a tiny tap",
-     "durationSec": 7,
-     "voice": "Let's play loud and soft.",
-     "voiceId": "38969fa644979c6c",
-     "voiceSec": 2.07
-    },
-    {
-     "kind": "say",
-     "caption": "Loud like a drum, soft like a whisper",
-     "parentCue": "Whisper the word soft",
-     "durationSec": 7,
-     "voice": "Loud like a drum. Soft like a whisper.",
-     "voiceId": "e6a88f8294c33b42",
-     "voiceSec": 3.13
+     "caption": "Big storm, tiny drizzle",
+     "parentCue": "loud means strong arms, not banging",
+     "durationSec": 8,
+     "voice": "Big storm, tiny drizzle. Grown-up, loud means strong arms, not banging.",
+     "voiceId": "7352e8fa17fdb6e3",
+     "voiceSec": 6.08
     },
     {
      "kind": "beat",
@@ -4800,9 +4708,9 @@
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -5226,9 +5134,9 @@
      "kind": "praise",
      "caption": "Lovely and soft!",
      "durationSec": 5,
-     "voice": "Lovely and soft.",
-     "voiceId": "2d2fef45b78f8335",
-     "voiceSec": 1.59
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "beat",
@@ -5448,65 +5356,191 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Well done!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
+    },
+    {
+     "kind": "say",
+     "caption": "Wiggle your fingers!",
+     "parentCue": "Shake out both hands together",
+     "durationSec": 9,
+     "voice": "Wiggle your fingers. Wiggle, wiggle.",
+     "voiceId": "640ef443bc914f6c",
+     "voiceSec": 2.99
+    },
+    {
+     "kind": "praise",
+     "caption": "You found loud and soft!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
     "primary": "expression",
     "secondary": [
+     "beat",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Magnitude contrast",
-    "parentLine": "Telling a big sound from a small one"
+    "concept": "Opposites (magnitude contrast)",
+    "parentLine": "Noticing big and small: the same tap, more or less"
    },
-   "parentPrompt": "Loud means strong, not banging. Whisper when it's time to play soft.",
-   "childAction": "Tap loud like a drum, soft like a whisper.",
-   "bridge": "Loud is a big drum; soft is a whisper on the keys.",
-   "celebrate": "Today you practiced loud and soft, fast and slow and playing together."
+   "parentPrompt": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
+   "childAction": "Loud: big storm taps. Soft: tiny drizzle taps.",
+   "bridge": "Loud taps are a big storm; soft taps are drizzle on the window.",
+   "celebrate": "Today you practiced: playing loud and soft."
   },
   {
    "id": "rain-rain-go-away-c05",
    "index": 5,
-   "title": "Slow and fast",
-   "goal": "Follow the music when it goes slow and fast",
+   "title": "Turtle and bunny in rain",
+   "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
    "type": "fast-slow",
-   "durationSec": 228,
-   "parentTip": "Let the tempo lead your child. Slow down if taps get wild, then try fast again.",
+   "durationSec": 224,
+   "parentTip": "Walk your fingers up your child's back, slowly then quickly, matching the music.",
    "video": "rain-rain-go-away/rain-rain-go-away-c05.mp4",
    "thumb": "rain-rain-go-away/rain-rain-go-away-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Rain, Rain, Go Away",
-     "subcaption": "Class 5: Slow and fast",
+     "subcaption": "Class 5: Turtle and bunny in rain",
      "durationSec": 9,
      "voice": "It's music time. Today we play Rain, Rain, Go Away. Grown-up, sit side by side.",
      "voiceId": "eabf6d4e07f2b819",
      "voiceSec": 7.39
     },
     {
-     "kind": "say",
-     "caption": "Songs can go slow or fast",
-     "parentCue": "Move your arms slowly, then quickly",
-     "durationSec": 7,
-     "voice": "Songs can go slow, or fast.",
-     "voiceId": "aafd9004389208dd",
-     "voiceSec": 2.4
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 88,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
-     "caption": "Slow like a turtle, fast like a bunny",
-     "parentCue": "Walk your fingers slowly, then fast",
-     "durationSec": 8,
-     "voice": "Slow like a turtle. Fast like a bunny.",
-     "voiceId": "e4f86f78454f08b3",
-     "voiceSec": 3.02
+     "caption": "Turtle slow, bunny fast",
+     "parentCue": "slow down if the taps get wild",
+     "durationSec": 6,
+     "voice": "Slow like a turtle, then fast like a bunny.",
+     "voiceId": "5adbb272412d293f",
+     "voiceSec": 2.9
+    },
+    {
+     "kind": "beat",
+     "caption": "Turtle sings the rain song",
+     "parentCue": "Tap together, slow and heavy",
+     "bpm": 56,
+     "leadInSec": 5.14,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "The turtle sings it slowly. Slow, heavy taps, like a sleepy turtle.",
+     "voiceId": "5150909a52a3adb3",
+     "voiceSec": 4.74
+    },
+    {
+     "kind": "beat",
+     "caption": "Bunny sings the rain song",
+     "parentCue": "Same song, now quick and light",
+     "bpm": 104,
+     "leadInSec": 4.94,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "The bunny sings it quickly. Quick, light taps, like a hopping bunny.",
+     "voiceId": "c7be67e48264409b",
+     "voiceSec": 4.54
     },
     {
      "kind": "beat",
@@ -6364,9 +6398,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -6786,259 +6820,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Speedy fingers!",
+     "caption": "You followed the music!",
      "durationSec": 5,
-     "voice": "Quick little fingers.",
-     "voiceId": "07d002604f064b53",
-     "voiceSec": 1.45
-    },
-    {
-     "kind": "say",
-     "caption": "Whole song, fast!",
-     "parentCue": "Play it a bit faster",
-     "durationSec": 6,
-     "voice": "Now the whole song, quick like a bunny.",
-     "voiceId": "0b07ab84bbeed5da",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "beat",
-     "caption": "Fast, fast, fast!",
-     "parentCue": "Quick, like a running bunny",
-     "bpm": 114,
-     "leadInSec": 2.43,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Come",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "gain",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "an",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "oth",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "er",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "day",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Lit",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "chil",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "dren",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 4,
-       "s": "want",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "play",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      },
-      {
-       "lyric": "Come again another day",
-       "from": 5
-      },
-      {
-       "lyric": "Little children want to play",
-       "from": 12
-      },
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 19
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Fast, fast, fast.",
-     "voiceId": "6ad0ee14bbd640bd",
-     "voiceSec": 2.03
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
     "primary": "expression",
     "secondary": [
-     "beat"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Rate (fast versus slow)",
-    "parentLine": "Matching the speed of a pattern"
+    "concept": "Invariance under tempo change",
+    "parentLine": "Same tune, same shape, only the speed changes"
    },
-   "parentPrompt": "Let the tempo lead your child. Slow down if taps get wild, then try fast again.",
-   "childAction": "Tap fast like a rabbit, slow like a turtle.",
-   "bridge": "Fast taps are rabbit hops; slow taps are turtle steps.",
-   "celebrate": "Today you practiced loud and soft, fast and slow and keeping a steady beat."
+   "parentPrompt": "Walk your fingers up your child's back, slowly then quickly, matching the music.",
+   "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+   "bridge": "Slow taps are turtle steps; fast taps are bunny hops between puddles.",
+   "celebrate": "Today you practiced: following slow and fast music."
   },
   {
    "id": "rain-rain-go-away-c06",
    "index": 6,
-   "title": "Stop and go",
-   "goal": "Tap when the music plays and freeze when it stops",
+   "title": "Rain stops: freeze!",
+   "goal": "Tap while the music plays and freeze when it stops.",
    "type": "stop-go",
-   "durationSec": 230,
-   "parentTip": "Make freezing silly and fun. Holding still is a big skill for little ones.",
+   "durationSec": 235,
+   "parentTip": "Freeze with a funny face when the music stops; cheer when it starts again.",
    "video": "rain-rain-go-away/rain-rain-go-away-c06.mp4",
    "thumb": "rain-rain-go-away/rain-rain-go-away-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Rain, Rain, Go Away",
-     "subcaption": "Class 6: Stop and go",
+     "subcaption": "Class 6: Rain stops: freeze!",
      "durationSec": 8,
      "voice": "Hi, everyone. Hands on your knees. Today we play Rain, Rain, Go Away.",
      "voiceId": "7dfab39ce1e0607f",
@@ -7046,21 +6865,12 @@
     },
     {
      "kind": "say",
-     "caption": "When the music stops, we freeze!",
-     "parentCue": "Freeze like a statue together",
+     "caption": "Go! Tap the beat",
+     "parentCue": "when the music stops, freeze with a silly face",
      "durationSec": 7,
-     "voice": "When the music stops, we freeze.",
-     "voiceId": "437bd8027fc8f488",
-     "voiceSec": 2.3
-    },
-    {
-     "kind": "say",
-     "caption": "Go means tap, stop means freeze",
-     "parentCue": "Practice one freeze now",
-     "durationSec": 7,
-     "voice": "Go means tap. Stop means freeze.",
-     "voiceId": "b3994b162070ad3a",
-     "voiceSec": 2.82
+     "voice": "Go. Tap the beat.",
+     "voiceId": "9a3d3dd642048105",
+     "voiceSec": 2.34
     },
     {
      "kind": "beat",
@@ -7774,9 +7584,9 @@
      "kind": "praise",
      "caption": "Great freezing!",
      "durationSec": 5,
-     "voice": "Great freezing. Still as statues.",
-     "voiceId": "79a8715bd81be4f4",
-     "voiceSec": 2.89
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "beat",
@@ -8062,9 +7872,9 @@
      "kind": "praise",
      "caption": "Great freezing!",
      "durationSec": 5,
-     "voice": "Great freezing. Still as statues.",
-     "voiceId": "79a8715bd81be4f4",
-     "voiceSec": 2.89
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "beat",
@@ -8144,124 +7954,11 @@
      "voiceSec": 2.6
     },
     {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    }
-   ],
-   "skill": {
-    "primary": "listening",
-    "secondary": [
-     "beat"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Inhibitory control (start and stop)",
-    "parentLine": "Stopping and starting exactly with the sound"
-   },
-   "parentPrompt": "Make freezing silly and fun. Holding still is a big skill for little ones.",
-   "childAction": "Play when the music goes, freeze when it stops.",
-   "bridge": "Music on, hands dance; music off, hands freeze like statues.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
-  },
-  {
-   "id": "rain-rain-go-away-c07",
-   "index": 7,
-   "title": "Music games mix",
-   "goal": "Switch quickly between the games: high and low, loud and soft, fast and slow",
-   "type": "review",
-   "durationSec": 191,
-   "parentTip": "Let your child guess the game before the picture shows. Guessing is listening.",
-   "video": "rain-rain-go-away/rain-rain-go-away-c07.mp4",
-   "thumb": "rain-rain-go-away/rain-rain-go-away-c07.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Rain, Rain, Go Away",
-     "subcaption": "Class 7: Music games mix",
-     "durationSec": 8,
-     "voice": "Hi there. It's music time. Today's song is Rain, Rain, Go Away.",
-     "voiceId": "69f0a75a3450681a",
-     "voiceSec": 6.29
-    },
-    {
-     "kind": "say",
-     "caption": "Game time: listen and choose!",
-     "parentCue": "Mix all the games you know",
-     "durationSec": 7,
-     "voice": "Game time. Listen, then choose.",
-     "voiceId": "2ff81f35a4f07fd3",
-     "voiceSec": 3.0
-    },
-    {
-     "kind": "say",
-     "caption": "Listen first, then tap",
-     "parentCue": "Let your child guess the game",
-     "durationSec": 6,
-     "voice": "Listen first, then tap.",
-     "voiceId": "221cbf263012916e",
-     "voiceSec": 2.5
-    },
-    {
-     "kind": "high_low",
-     "caption": "Bear or bird? Bear!",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 88,
-     "leadInSec": 2.75,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 2,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Listen. Bear or bird?",
-     "voiceId": "a19b0e215608835e",
-     "voiceSec": 2.35
-    },
-    {
      "kind": "beat",
-     "caption": "Loud taps!",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
+     "caption": "Go! Tap the beat",
+     "parentCue": "Play this line",
      "bpm": 88,
-     "leadInSec": 2.51,
+     "leadInSec": 2.74,
      "notes": [
       {
        "p": "G4",
@@ -8306,851 +8003,22 @@
       }
      ],
      "durationSec": 8,
-     "voice": "Loud taps, like a drum.",
-     "voiceId": "866bdfe59808cd7c",
-     "voiceSec": 2.11
-    },
-    {
-     "kind": "high_low",
-     "caption": "Bear or bird? Bird!",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 88,
-     "leadInSec": 2.75,
-     "notes": [
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 2,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Listen. Bear or bird?",
-     "voiceId": "a19b0e215608835e",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "beat",
-     "caption": "Soft taps",
-     "parentCue": "Tap gently",
-     "dynamic": "soft",
-     "bpm": 88,
-     "leadInSec": 3.57,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Soft taps, like a whisper.",
-     "voiceId": "c55d0e3a7c865977",
-     "voiceSec": 3.17
+     "voice": "Go. Tap the beat.",
+     "voiceId": "9a3d3dd642048105",
+     "voiceSec": 2.34
     },
     {
      "kind": "say",
      "caption": "Stop! Freeze!",
-     "parentCue": "Freeze together",
+     "parentCue": "Stop playing and freeze together",
      "durationSec": 4,
      "voice": "Stop. Freeze like a statue.",
      "voiceId": "baf3cadfe3548ad6",
      "voiceSec": 2.6
     },
     {
-     "kind": "beat",
-     "caption": "Slow taps",
-     "parentCue": "Slow like a turtle",
-     "bpm": 57,
-     "leadInSec": 2.42,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Slow taps, like a turtle.",
-     "voiceId": "1d385ecfcbf20698",
-     "voiceSec": 2.02
-    },
-    {
      "kind": "praise",
-     "caption": "You know all the games!",
-     "durationSec": 5,
-     "voice": "You played every game.",
-     "voiceId": "d6aa38b98b122671",
-     "voiceSec": 1.8
-    },
-    {
-     "kind": "beat",
-     "caption": "Fast taps!",
-     "parentCue": "Quick like a bunny",
-     "bpm": 114,
-     "leadInSec": 2.15,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Quick taps, like a bunny.",
-     "voiceId": "1249fbc9e6bd459c",
-     "voiceSec": 1.75
-    },
-    {
-     "kind": "high_low",
-     "caption": "Bear or bird? Bear!",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 88,
-     "leadInSec": 2.75,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 2,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Listen. Bear or bird?",
-     "voiceId": "a19b0e215608835e",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "beat",
-     "caption": "Loud taps!",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
-     "bpm": 88,
-     "leadInSec": 2.51,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Loud taps, like a drum.",
-     "voiceId": "866bdfe59808cd7c",
-     "voiceSec": 2.11
-    },
-    {
-     "kind": "high_low",
-     "caption": "Bear or bird? Bird!",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 88,
-     "leadInSec": 2.75,
-     "notes": [
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 2,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Listen. Bear or bird?",
-     "voiceId": "a19b0e215608835e",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "beat",
-     "caption": "Soft taps",
-     "parentCue": "Tap gently",
-     "dynamic": "soft",
-     "bpm": 88,
-     "leadInSec": 3.57,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Soft taps, like a whisper.",
-     "voiceId": "c55d0e3a7c865977",
-     "voiceSec": 3.17
-    },
-    {
-     "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Freeze together",
-     "durationSec": 4,
-     "voice": "Stop. Freeze like a statue.",
-     "voiceId": "baf3cadfe3548ad6",
-     "voiceSec": 2.6
-    },
-    {
-     "kind": "beat",
-     "caption": "Slow taps",
-     "parentCue": "Slow like a turtle",
-     "bpm": 57,
-     "leadInSec": 2.42,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Slow taps, like a turtle.",
-     "voiceId": "1d385ecfcbf20698",
-     "voiceSec": 2.02
-    },
-    {
-     "kind": "praise",
-     "caption": "You know all the games!",
-     "durationSec": 5,
-     "voice": "You played every game.",
-     "voiceId": "d6aa38b98b122671",
-     "voiceSec": 1.8
-    },
-    {
-     "kind": "beat",
-     "caption": "Fast taps!",
-     "parentCue": "Quick like a bunny",
-     "bpm": 114,
-     "leadInSec": 2.15,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Quick taps, like a bunny.",
-     "voiceId": "1249fbc9e6bd459c",
-     "voiceSec": 1.75
-    },
-    {
-     "kind": "high_low",
-     "caption": "Bear or bird? Bear!",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 88,
-     "leadInSec": 2.75,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 2,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Listen. Bear or bird?",
-     "voiceId": "a19b0e215608835e",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "beat",
-     "caption": "Loud taps!",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
-     "bpm": 88,
-     "leadInSec": 2.51,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Loud taps, like a drum.",
-     "voiceId": "866bdfe59808cd7c",
-     "voiceSec": 2.11
-    },
-    {
-     "kind": "high_low",
-     "caption": "Bear or bird? Bird!",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 88,
-     "leadInSec": 2.75,
-     "notes": [
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 2,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Listen. Bear or bird?",
-     "voiceId": "a19b0e215608835e",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "beat",
-     "caption": "Soft taps",
-     "parentCue": "Tap gently",
-     "dynamic": "soft",
-     "bpm": 88,
-     "leadInSec": 3.57,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Soft taps, like a whisper.",
-     "voiceId": "c55d0e3a7c865977",
-     "voiceSec": 3.17
-    },
-    {
-     "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Freeze together",
-     "durationSec": 4,
-     "voice": "Stop. Freeze like a statue.",
-     "voiceId": "baf3cadfe3548ad6",
-     "voiceSec": 2.6
-    },
-    {
-     "kind": "beat",
-     "caption": "Slow taps",
-     "parentCue": "Slow like a turtle",
-     "bpm": 57,
-     "leadInSec": 2.42,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "Rain",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "rain",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "way",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Rain, rain, go away",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Slow taps, like a turtle.",
-     "voiceId": "1d385ecfcbf20698",
-     "voiceSec": 2.02
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great freezing!",
      "durationSec": 5,
      "voice": "Great job, you two.",
      "voiceId": "78285fece9f091ba",
@@ -9158,57 +8026,1087 @@
     }
    ],
    "skill": {
-    "primary": "patterns",
+    "primary": "listening",
     "secondary": [
-     "listening"
+     "beat",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Retrieval practice",
-    "parentLine": "Bringing back games from earlier classes"
+    "concept": "Cause and effect (sound, silence)",
+    "parentLine": "When the sound stops, the hands stop too"
    },
-   "parentPrompt": "Let your child guess the game before the picture shows. Guessing is listening.",
-   "childAction": "Play the favourite games again.",
-   "bridge": "Each game is a door you already know how to open.",
-   "celebrate": "Today you practiced spotting patterns and listening and remembering."
+   "parentPrompt": "Freeze with a funny face when the music stops; cheer when it starts again.",
+   "childAction": "Tap while music plays. Freeze like a statue when it stops.",
+   "bridge": "Music on, the rain falls; music off, every drop holds still.",
+   "celebrate": "Today you practiced: listening for stop and go."
+  },
+  {
+   "id": "rain-rain-go-away-c07",
+   "index": 7,
+   "title": "Rainy day game mix",
+   "goal": "Listen and switch between games: high and low, loud and soft, fast and slow.",
+   "type": "review",
+   "durationSec": 187,
+   "parentTip": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
+   "video": "rain-rain-go-away/rain-rain-go-away-c07.mp4",
+   "thumb": "rain-rain-go-away/rain-rain-go-away-c07.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Rain, Rain, Go Away",
+     "subcaption": "Class 7: Rainy day game mix",
+     "durationSec": 8,
+     "voice": "Hi there. It's music time. Today's song is Rain, Rain, Go Away.",
+     "voiceId": "69f0a75a3450681a",
+     "voiceSec": 6.29
+    },
+    {
+     "kind": "say",
+     "caption": "Bear or bird? Loud or soft?",
+     "parentCue": "let your child guess first; any guess is fine",
+     "durationSec": 9,
+     "voice": "Bear or bird? Loud or soft. Grown-up, let your child guess first; any guess is fine.",
+     "voiceId": "d3a93aed79301243",
+     "voiceSec": 7.57
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 88,
+     "leadInSec": 2.75,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 2,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen. Bear or bird?",
+     "voiceId": "a19b0e215608835e",
+     "voiceSec": 2.35
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud taps!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 88,
+     "leadInSec": 2.51,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Loud taps, like a drum.",
+     "voiceId": "866bdfe59808cd7c",
+     "voiceSec": 2.11
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 88,
+     "leadInSec": 2.75,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 0.5,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 0.5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen. Bear or bird?",
+     "voiceId": "a19b0e215608835e",
+     "voiceSec": 2.35
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft taps",
+     "parentCue": "Tap gently",
+     "dynamic": "soft",
+     "bpm": 88,
+     "leadInSec": 3.57,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Soft taps, like a whisper.",
+     "voiceId": "c55d0e3a7c865977",
+     "voiceSec": 3.17
+    },
+    {
+     "kind": "say",
+     "caption": "Stop! Freeze!",
+     "parentCue": "Freeze together",
+     "durationSec": 4,
+     "voice": "Stop. Freeze like a statue.",
+     "voiceId": "baf3cadfe3548ad6",
+     "voiceSec": 2.6
+    },
+    {
+     "kind": "beat",
+     "caption": "Slow taps",
+     "parentCue": "Slow like a turtle",
+     "bpm": 57,
+     "leadInSec": 2.42,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Slow taps, like a turtle.",
+     "voiceId": "1d385ecfcbf20698",
+     "voiceSec": 2.02
+    },
+    {
+     "kind": "praise",
+     "caption": "You know all the games!",
+     "durationSec": 5,
+     "voice": "You played every game.",
+     "voiceId": "d6aa38b98b122671",
+     "voiceSec": 1.8
+    },
+    {
+     "kind": "beat",
+     "caption": "Fast taps!",
+     "parentCue": "Quick like a bunny",
+     "bpm": 114,
+     "leadInSec": 2.15,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Quick taps, like a bunny.",
+     "voiceId": "1249fbc9e6bd459c",
+     "voiceSec": 1.75
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 88,
+     "leadInSec": 2.75,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 2,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen. Bear or bird?",
+     "voiceId": "a19b0e215608835e",
+     "voiceSec": 2.35
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud taps!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 88,
+     "leadInSec": 2.51,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Loud taps, like a drum.",
+     "voiceId": "866bdfe59808cd7c",
+     "voiceSec": 2.11
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 88,
+     "leadInSec": 2.75,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 0.5,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 0.5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen. Bear or bird?",
+     "voiceId": "a19b0e215608835e",
+     "voiceSec": 2.35
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft taps",
+     "parentCue": "Tap gently",
+     "dynamic": "soft",
+     "bpm": 88,
+     "leadInSec": 3.57,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Soft taps, like a whisper.",
+     "voiceId": "c55d0e3a7c865977",
+     "voiceSec": 3.17
+    },
+    {
+     "kind": "say",
+     "caption": "Stop! Freeze!",
+     "parentCue": "Freeze together",
+     "durationSec": 4,
+     "voice": "Stop. Freeze like a statue.",
+     "voiceId": "baf3cadfe3548ad6",
+     "voiceSec": 2.6
+    },
+    {
+     "kind": "beat",
+     "caption": "Slow taps",
+     "parentCue": "Slow like a turtle",
+     "bpm": 57,
+     "leadInSec": 2.42,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Slow taps, like a turtle.",
+     "voiceId": "1d385ecfcbf20698",
+     "voiceSec": 2.02
+    },
+    {
+     "kind": "praise",
+     "caption": "You know all the games!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
+    },
+    {
+     "kind": "beat",
+     "caption": "Fast taps!",
+     "parentCue": "Quick like a bunny",
+     "bpm": 114,
+     "leadInSec": 2.15,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Quick taps, like a bunny.",
+     "voiceId": "1249fbc9e6bd459c",
+     "voiceSec": 1.75
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 88,
+     "leadInSec": 2.75,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 2,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen. Bear or bird?",
+     "voiceId": "a19b0e215608835e",
+     "voiceSec": 2.35
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud taps!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 88,
+     "leadInSec": 2.51,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Loud taps, like a drum.",
+     "voiceId": "866bdfe59808cd7c",
+     "voiceSec": 2.11
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bear or bird? Bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 88,
+     "leadInSec": 2.75,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 0.5,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 0.5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen. Bear or bird?",
+     "voiceId": "a19b0e215608835e",
+     "voiceSec": 2.35
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft taps",
+     "parentCue": "Tap gently",
+     "dynamic": "soft",
+     "bpm": 88,
+     "leadInSec": 3.57,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Soft taps, like a whisper.",
+     "voiceId": "c55d0e3a7c865977",
+     "voiceSec": 3.17
+    },
+    {
+     "kind": "say",
+     "caption": "Stop! Freeze!",
+     "parentCue": "Freeze together",
+     "durationSec": 4,
+     "voice": "Stop. Freeze like a statue.",
+     "voiceId": "baf3cadfe3548ad6",
+     "voiceSec": 2.6
+    },
+    {
+     "kind": "beat",
+     "caption": "Slow taps",
+     "parentCue": "Slow like a turtle",
+     "bpm": 57,
+     "leadInSec": 2.42,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Slow taps, like a turtle.",
+     "voiceId": "1d385ecfcbf20698",
+     "voiceSec": 2.02
+    },
+    {
+     "kind": "praise",
+     "caption": "Great listening ears!",
+     "durationSec": 5,
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
+    }
+   ],
+   "skill": {
+    "primary": "listening",
+    "secondary": [
+     "pitch",
+     "expression"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Classification (sorting by feature)",
+    "parentLine": "Sorting each sound: high or low, loud or soft?"
+   },
+   "parentPrompt": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
+   "childAction": "Guess the game, then tap high, low, loud, soft, slow or fast.",
+   "bridge": "Every sound wears a costume: bear, bird, storm, drizzle, turtle or bunny.",
+   "celebrate": "Today you practiced: telling sounds apart and switching games."
   },
   {
    "id": "rain-rain-go-away-c08",
    "index": 8,
-   "title": "Play together",
-   "goal": "Play the song together, grown-up on the tune, child on the beat",
+   "title": "You and me, rain duet",
+   "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
    "type": "together",
-   "durationSec": 208,
-   "parentTip": "Follow your child's lead. If they stop to listen, keep playing and smile.",
+   "durationSec": 221,
+   "parentTip": "Play the tune and watch your child; if they stop, keep playing and smile.",
    "video": "rain-rain-go-away/rain-rain-go-away-c08.mp4",
    "thumb": "rain-rain-go-away/rain-rain-go-away-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Rain, Rain, Go Away",
-     "subcaption": "Class 8: Play together",
+     "subcaption": "Class 8: You and me, rain duet",
      "durationSec": 6,
      "voice": "Hello, music friends. Let's play Rain, Rain, Go Away together.",
      "voiceId": "c960a4fbf8627133",
      "voiceSec": 4.3
     },
     {
-     "kind": "say",
-     "caption": "Let's play together",
-     "parentCue": "You play the tune, your child taps along",
-     "durationSec": 6,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 88,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
-     "caption": "Sing, tap and smile",
-     "parentCue": "Sing the words while you play",
+     "caption": "Play it together",
+     "parentCue": "sit side by side, you on the tune",
      "durationSec": 6,
-     "voice": "Sing, tap, and smile.",
-     "voiceId": "10b3a90e8c14f1b5",
-     "voiceSec": 1.91
+     "voice": "Play it together. Grown-up, sit side by side, you on the tune.",
+     "voiceId": "1fed97241c49cf55",
+     "voiceSec": 4.53
     },
     {
      "kind": "together",
@@ -9621,9 +9519,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -9639,7 +9537,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 88,
-     "leadInSec": 2.22,
+     "leadInSec": 3.54,
      "notes": [
       {
        "p": "G4",
@@ -9828,18 +9726,18 @@
        "from": 19
       }
      ],
-     "durationSec": 19,
-     "voice": "Tap the beat, like a heartbeat.",
-     "voiceId": "0cf68adb12e1c639",
-     "voiceSec": 1.82
+     "durationSec": 21,
+     "voice": "Grown-up plays the song. You tap the beat.",
+     "voiceId": "4517efb7c8c0ff3d",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -9855,7 +9753,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 88,
-     "leadInSec": 2.22,
+     "leadInSec": 3.27,
      "notes": [
       {
        "p": "G4",
@@ -10044,18 +9942,18 @@
        "from": 19
       }
      ],
-     "durationSec": 19,
-     "voice": "Tap the beat, like a heartbeat.",
-     "voiceId": "0cf68adb12e1c639",
-     "voiceSec": 1.82
+     "durationSec": 20,
+     "voice": "Tap with the circle. Nice and steady.",
+     "voiceId": "d916f37a4d2a5a53",
+     "voiceSec": 2.87
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -10071,7 +9969,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 88,
-     "leadInSec": 2.22,
+     "leadInSec": 3.63,
      "notes": [
       {
        "p": "G4",
@@ -10260,25 +10158,25 @@
        "from": 19
       }
      ],
-     "durationSec": 19,
-     "voice": "Tap the beat, like a heartbeat.",
-     "voiceId": "0cf68adb12e1c639",
-     "voiceSec": 1.82
+     "durationSec": 21,
+     "voice": "Tap with the big circle. Tap, tap, tap.",
+     "voiceId": "faf2ee285af584e0",
+     "voiceSec": 3.23
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "together",
      "caption": "Play it together",
      "parentCue": "Your child taps along",
      "bpm": 88,
-     "leadInSec": 2.26,
+     "leadInSec": 4.12,
      "notes": [
       {
        "p": "G4",
@@ -10467,10 +10365,10 @@
        "from": 19
       }
      ],
-     "durationSec": 19,
-     "voice": "Here we go, all together.",
-     "voiceId": "860c30d743a9b5a8",
-     "voiceSec": 1.86
+     "durationSec": 21,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "say",
@@ -10486,7 +10384,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 88,
-     "leadInSec": 2.22,
+     "leadInSec": 3.54,
      "notes": [
       {
        "p": "G4",
@@ -10675,50 +10573,51 @@
        "from": 19
       }
      ],
-     "durationSec": 19,
-     "voice": "Tap the beat, like a heartbeat.",
-     "voiceId": "0cf68adb12e1c639",
-     "voiceSec": 1.82
+     "durationSec": 21,
+     "voice": "Grown-up plays the song. You tap the beat.",
+     "voiceId": "4517efb7c8c0ff3d",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "What a duet together!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "beat"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping time with another person"
+    "concept": "Interlocking parts (two roles)",
+    "parentLine": "Two different jobs fit together to make one song"
    },
-   "parentPrompt": "Follow your child's lead. If they stop to listen, keep playing and smile.",
-   "childAction": "Play along with your grown-up.",
-   "bridge": "Two players, one song, like walking in step.",
-   "celebrate": "Today you practiced playing together and keeping a steady beat."
+   "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+   "childAction": "Tap the beat on any key while your grown-up plays.",
+   "bridge": "The tune is the rain cloud; your beat is the drops falling down.",
+   "celebrate": "Today you practiced: playing one song together, two jobs."
   },
   {
    "id": "rain-rain-go-away-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Rain song for teddy",
+   "goal": "Play the whole song from the first note to the last, then bow together.",
    "type": "concert",
-   "durationSec": 224,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 225,
+   "parentTip": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
    "video": "rain-rain-go-away/rain-rain-go-away-c09.mp4",
    "thumb": "rain-rain-go-away/rain-rain-go-away-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Rain, Rain, Go Away",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: Rain song for teddy",
      "durationSec": 7,
      "voice": "Hello again. Wave your fingers hello. Today's song is Rain, Rain, Go Away.",
      "voiceId": "f26d8e864905b362",
@@ -10726,21 +10625,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "A song for teddy",
+     "parentCue": "put teddy in front as the audience",
+     "durationSec": 6,
+     "voice": "This one is for teddy.",
+     "voiceId": "137fd3d6182c1ad5",
+     "voiceSec": 1.77
     },
     {
      "kind": "beat",
@@ -11161,9 +11051,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -11377,9 +11267,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -11593,9 +11483,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -11809,9 +11699,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -12025,9 +11915,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -12128,6 +12018,90 @@
        "f": 1,
        "s": "day",
        "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Lit",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "chil",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dren",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 4,
+       "s": "want",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "play",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "Rain",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "rain",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "way",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -12138,37 +12112,44 @@
       {
        "lyric": "Come again another day",
        "from": 5
+      },
+      {
+       "lyric": "Little children want to play",
+       "from": 12
+      },
+      {
+       "lyric": "Rain, rain, go away",
+       "from": 19
       }
      ],
-     "durationSec": 14,
+     "durationSec": 21,
      "voice": "Any key is fine. Tap when the circle grows.",
      "voiceId": "015b37b18f728b6c",
      "voiceSec": 3.86
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, you played together!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "together",
     "secondary": [
-     "together",
-     "expression"
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Sequence: beginning, middle, end",
+    "parentLine": "A song starts, goes on, and ends; we finish together"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+   "childAction": "Tap the beat to the very end, then take a big bow.",
+   "bridge": "The song asks the rain to go, so we can go and play.",
+   "celebrate": "Today you practiced: playing a whole song, start to end."
   }
  ]
 }

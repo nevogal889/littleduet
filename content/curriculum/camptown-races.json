@@ -1,0 +1,177 @@
+{
+  "songId": "camptown-races",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finding the hand's place, call and response, short and long notes, and counting beats, with Stephen Foster's racing song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Find your racing hand",
+      "goal": "Find D between the two black keys and rest the hand on D, E, G and A.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping with a landmark", "parentLine": "Using the two black keys to find where the hand lives" },
+      "parentPrompt": "Point to the two black keys; help the thumb rest on D, right between them.",
+      "childAction": "Thumb on D, finger 2 on E, then 4 and 5 on G, A.",
+      "bridge": "D is the starting gate between the two black keys; the other fingers line up.",
+      "intro": [ { "caption": "Thumb in the starting gate", "parentCue": "help the thumb rest on D, between the black keys" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Line up: D, E, G, A",
+          "parentCue": "Say the finger numbers: 1, 2, 4, 5",
+          "bpm": 63,
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "A4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found your hand!",
+      "celebrate": "Today you practiced: finding the hand's place by a landmark."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "G is the home stable",
+      "goal": "Play 'Camptown ladies' and notice how the tune keeps coming back to G.",
+      "skill": { "primary": "patterns", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Pivot pattern (return to G)", "parentLine": "The tune leaves one note and keeps coming back to it" },
+      "parentPrompt": "Tap finger 4 on your child's hand each time the tune lands on G.",
+      "childAction": "Play finger 4 on G, hop away, and come back to G.",
+      "bridge": "G is the stable; the horse trots out to E or A, then home to G.",
+      "intro": [ { "caption": "Out and back to G", "parentCue": "tap finger 4 each time G comes back" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Camptown ladies, nice and slow",
+          "parentCue": "Say the finger numbers out loud together",
+          "bpm": 63,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "A4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "Steady fingers!",
+      "celebrate": "Today you practiced: noticing a note the tune returns to."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Doo-dah, short and long",
+      "goal": "Play 'doo-dah, doo-dah': a short note, then a long one, twice.",
+      "skill": { "primary": "patterns", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Ratio (short to long)", "parentLine": "A quick note, then one that lasts much longer" },
+      "parentPrompt": "Say 'doo' quickly and 'daaah' long while your child plays E, then D.",
+      "childAction": "Play E quickly, then hold D long: doo-daaah, doo-daaah.",
+      "bridge": "Doo is a quick hop; dah is a long gallop stretch across the field.",
+      "intro": [ { "caption": "Doo is quick, dah is long", "parentCue": "stretch the 'dah' with your voice" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Doo-dah! Doo-dah!",
+          "parentCue": "Sing 'doo-daaah' with each pair",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 1.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "Great doo-dahs!",
+      "celebrate": "Today you practiced: playing short and long notes."
+    },
+    {
+      "index": 4,
+      "spineType": "put-together",
+      "title": "You call, I answer",
+      "goal": "Play the whole song slowly as a call and answer between grown-up and child.",
+      "skill": { "primary": "form", "secondary": ["together", "listening"] },
+      "mathTarget": { "concept": "Form: call and response", "parentLine": "One part asks, the other part answers" },
+      "parentPrompt": "Sing the Camptown lines; your child answers the doo-dahs. You play the last low C.",
+      "childAction": "Listen to the call, then answer with your doo-dahs.",
+      "bridge": "The singer calls across the racetrack; the crowd answers back: doo-dah!",
+      "intro": [ { "caption": "I call, you answer", "parentCue": "sing the call lines; your child plays the doo-dahs" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 86,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 1 } ]
+        }
+      ],
+      "praise": "What a great answer!",
+      "celebrate": "Today you practiced: calling and answering, taking turns."
+    },
+    {
+      "index": 5,
+      "spineType": "review",
+      "title": "Gallop, gal-lop",
+      "goal": "Play the quick 'Camptown ladies' notes slowly, two quick notes to each beat.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Ratio 2:1 (half and double)", "parentLine": "Quick notes come two for every one beat" },
+      "parentPrompt": "Say 'gal-lop' on each beat while your child plays; go slow, then a little faster.",
+      "childAction": "Play two quick notes for every gallop beat.",
+      "bridge": "A beat is one gallop; the quick notes are two hooves, gal-lop.",
+      "intro": [ { "caption": "Two quick notes, one gallop", "parentCue": "say 'gal-lop' on every beat" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Gal-lop, gal-lop, slowly",
+          "parentCue": "Say 'gal-lop' on each beat",
+          "bpm": 56,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 1 } ]
+        }
+      ],
+      "praise": "You galloped evenly!",
+      "celebrate": "Today you practiced: fitting two quick notes into one beat."
+    },
+    {
+      "index": 6,
+      "spineType": "phrase",
+      "title": "Four beats round the track",
+      "goal": "Play the whole song slowly while counting four beats in every bar.",
+      "skill": { "primary": "beat", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Grouping by four (meter)", "parentLine": "Each bar holds four even beats" },
+      "parentPrompt": "Tap your child's shoulder on each beat, count 1, 2, 3, 4. You play the low C.",
+      "childAction": "Play slowly while your grown-up counts to four.",
+      "bridge": "Each bar is one lap with four steps: one, two, three, four.",
+      "intro": [ { "caption": "Slow and even wins the race", "parentCue": "tap your child's shoulder and count to four" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap and count to four",
+          "parentCue": "Count '1, 2, 3, 4' softly as you tap",
+          "bpm": 69,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "A4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "Slow and steady!",
+      "celebrate": "Today you practiced: playing slowly and evenly in fours."
+    },
+    {
+      "index": 7,
+      "spineType": "play-along",
+      "title": "Run with the horses",
+      "goal": "Play the whole song along with the music at full speed.",
+      "skill": { "primary": "together", "secondary": ["beat", "fingers"] },
+      "mathTarget": { "concept": "Entrainment (matching a tempo)", "parentLine": "Keeping up with a beat that does not wait" },
+      "parentPrompt": "Nod on each beat, sing the calls and play the low C; if a note slips, keep going.",
+      "childAction": "Play along with the music and keep going, even after a slip.",
+      "bridge": "The horses run all day; hop on and keep racing, even past bumps.",
+      "intro": [ { "caption": "Hop on and keep racing", "parentCue": "nod the beat and smile at slips" } ],
+      "games": [],
+      "praise": "You kept going together!",
+      "celebrate": "Today you practiced: keeping up with the music together."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Race-day concert for teddy",
+      "goal": "Play the whole song for teddy with a cheering, bouncy sound, then bow.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Character (bouncy versus smooth)", "parentLine": "Playing the same notes with a cheerful, bouncy feel" },
+      "parentPrompt": "Sit teddy as the audience; announce the song, cheer 'doo-dah!' together, then bow.",
+      "childAction": "Play bouncy and proud for teddy, then take a bow.",
+      "bridge": "Play like a cheering crowd at the races: bouncy, bright, then a big finish.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song with a bouncy feel."
+    }
+  ]
+}

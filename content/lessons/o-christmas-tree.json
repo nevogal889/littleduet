@@ -2,41 +2,55 @@
  "songId": "o-christmas-tree",
  "title": "O Christmas Tree",
  "ageGroup": "4-5",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and listening memory, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices beats in threes, counting groups of notes, spotting the line that returns, and playing strong and soft, with a German fir-tree song.",
  "skillMap": [
   {
-   "id": "fingers",
-   "label": "Finger control",
+   "id": "beat",
+   "label": "Steady beat",
    "value": 1.0,
-   "classes": 4,
-   "total": 9
-  },
-  {
-   "id": "form",
-   "label": "Song shape",
-   "value": 0.5,
    "classes": 2,
    "total": 9
   },
   {
-   "id": "listening",
-   "label": "Listening memory",
-   "value": 0.25,
+   "id": "fingers",
+   "label": "Finger control",
+   "value": 1.0,
+   "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.5,
    "classes": 1,
    "total": 9
   },
   {
    "id": "space",
    "label": "Keyboard map",
-   "value": 0.25,
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "form",
+   "label": "Song shape",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.5,
    "classes": 1,
    "total": 9
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.25,
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -44,44 +58,73 @@
  "icon": "tree",
  "key": "C",
  "timeSignature": "3/4",
- "totalSec": 2267,
+ "totalSec": 2271,
  "classes": [
   {
    "id": "o-christmas-tree-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "Sway like a fir tree",
+   "goal": "Hear the song, sway to its beats in threes, then rest fingers on the lit keys.",
    "type": "listen",
-   "durationSec": 275,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 264,
+   "parentTip": "Sway with your child: a big lean on 'one', small on 'two, three'.",
    "video": "o-christmas-tree/o-christmas-tree-c01.mp4",
    "thumb": "o-christmas-tree/o-christmas-tree-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "O Christmas Tree",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: Sway like a fir tree",
      "durationSec": 7,
      "voice": "Hello again. It's O Christmas Tree time. Grown-up, sit close to help.",
      "voiceId": "4dcfe174213a8ed8",
      "voiceSec": 5.37
     },
     {
-     "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 69,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
     },
     {
      "kind": "say",
-     "caption": "Thumb on G, fingers curved",
+     "caption": "Let's sway like a fir tree",
+     "parentCue": "lean big on 'one', small on 'two, three'.",
+     "durationSec": 8,
+     "voice": "Let's sway like a fir tree. Grown-up, lean big on 'one', small on 'two, three'.",
+     "voiceId": "f1836c2ca8352816",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "say",
+     "caption": "Thumb on B, fingers curved",
      "parentCue": "Help place one finger on each lit key",
      "showKeys": [
       {
-       "p": "G3",
+       "p": "B3",
        "f": 1
       },
       {
@@ -97,14 +140,14 @@
        "f": 4
       },
       {
-       "p": "D4",
+       "p": "F4",
        "f": 5
       }
      ],
      "durationSec": 7,
-     "voice": "Thumb on G. Curve your fingers, like holding a little ball.",
-     "voiceId": "1fde154d663011a3",
-     "voiceSec": 3.96
+     "voice": "Thumb on B. Curve your fingers, like holding a little ball.",
+     "voiceId": "14b5b7be116870bc",
+     "voiceSec": 4.37
     },
     {
      "kind": "listen",
@@ -1377,7 +1420,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 92,
-     "leadInSec": 3.1,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G3",
@@ -1781,13 +1824,1723 @@
       }
      ],
      "durationSec": 45,
-     "voice": "Here comes the music. Listen.",
-     "voiceId": "851e2f513b5871ee",
-     "voiceSec": 2.7
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 74,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "praise",
+     "caption": "You swayed in threes!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
+    }
+   ],
+   "skill": {
+    "primary": "beat",
+    "secondary": [
+     "counting",
+     "space"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Periodicity (groups of three)",
+    "parentLine": "Feeling beats that come in threes: One, two, three"
+   },
+   "parentPrompt": "Sway with your child: a big lean on 'one', small on 'two, three'.",
+   "childAction": "Sway like a tree: big on one, small on two, three.",
+   "bridge": "The beat sways in threes, like a fir tree in the winter wind.",
+   "celebrate": "Today you practiced: feeling beats that come in threes."
+  },
+  {
+   "id": "o-christmas-tree-c02",
+   "index": 2,
+   "title": "Climb the branches",
+   "goal": "Learn the first line: three C's, one D, three E's.",
+   "type": "phrase",
+   "durationSec": 248,
+   "parentTip": "Play the low G yourself; count the three C's and three E's aloud together.",
+   "video": "o-christmas-tree/o-christmas-tree-c02.mp4",
+   "thumb": "o-christmas-tree/o-christmas-tree-c02.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "O Christmas Tree",
+     "subcaption": "Class 2: Climb the branches",
+     "durationSec": 7,
+     "voice": "Hello again. It's O Christmas Tree time. Grown-up, sit close to help.",
+     "voiceId": "4dcfe174213a8ed8",
+     "voiceSec": 5.37
+    },
+    {
+     "kind": "say",
+     "caption": "Climb the tree, branch by branch",
+     "parentCue": "you play the low G, then your child starts.",
+     "durationSec": 8,
+     "voice": "Climb the tree, branch by branch. Grown-up, you play the low G, then your child starts.",
+     "voiceId": "9ad8390c1a558dc6",
+     "voiceSec": 6.56
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Three C's, a D, three E's",
+     "parentCue": "Count each group aloud: one, two, three",
+     "bpm": 72,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1.5
+      },
+      {
+       "p": "C4",
+       "d": 0.5
+      },
+      {
+       "p": "C4",
+       "d": 1.5
+      },
+      {
+       "p": "D4",
+       "d": 0.5
+      },
+      {
+       "p": "E4",
+       "d": 1.5
+      },
+      {
+       "p": "E4",
+       "d": 0.5
+      },
+      {
+       "p": "E4",
+       "d": 1
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the lights",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 69,
+     "leadInSec": 2.78,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 8
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Point to each key if needed",
+     "bpm": 69,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 8
+      }
+     ],
+     "durationSec": 31,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 69,
+     "leadInSec": 3.05,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
+      }
+     ],
+     "durationSec": 12,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 69,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5,
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 69,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "How lovely are your branches",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 69,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "How lovely are your branches",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "One more time.",
+     "voiceId": "b4c800d6a3120ebd",
+     "voiceSec": 1.34
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 69,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 8
+      }
+     ],
+     "durationSec": 32,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
+    },
+    {
+     "kind": "say",
+     "caption": "Let's do it again",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "Let's do it again.",
+     "voiceId": "5608b20dfb890c6e",
+     "voiceSec": 1.58
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 69,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 8
+      }
+     ],
+     "durationSec": 32,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "praise",
+     "caption": "Great counting branches!",
+     "durationSec": 5,
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
+    }
+   ],
+   "skill": {
+    "primary": "counting",
+    "secondary": [
+     "patterns",
+     "fingers"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Grouping (threes)",
+    "parentLine": "Three C's, one D, three E's: counting groups of the same"
+   },
+   "parentPrompt": "Play the low G yourself; count the three C's and three E's aloud together.",
+   "childAction": "Play three C's, one D, then three E's up the branches.",
+   "bridge": "C, C, C is the low branch; E, E, E is the next branch up.",
+   "celebrate": "Today you practiced: counting groups of three same notes."
+  },
+  {
+   "id": "o-christmas-tree-c03",
+   "index": 3,
+   "title": "Bend and spring back",
+   "goal": "Learn the branches line: step down one key and right back up.",
+   "type": "phrase",
+   "durationSec": 237,
+   "parentTip": "Play the low B yourself; your child plays E, D, E, F, then D, C.",
+   "video": "o-christmas-tree/o-christmas-tree-c03.mp4",
+   "thumb": "o-christmas-tree/o-christmas-tree-c03.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "O Christmas Tree",
+     "subcaption": "Class 3: Bend and spring back",
+     "durationSec": 7,
+     "voice": "Hello again. It's O Christmas Tree time. Grown-up, sit close to help.",
+     "voiceId": "4dcfe174213a8ed8",
+     "voiceSec": 5.37
+    },
+    {
+     "kind": "say",
+     "caption": "The branches bend in the wind",
+     "parentCue": "you play the low B; your child plays the rest.",
+     "durationSec": 8,
+     "voice": "The branches bend in the wind. Grown-up, you play the low B; your child plays the rest.",
+     "voiceId": "709a01732753f675",
+     "voiceSec": 6.34
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Bend and back: E, D, E, F",
+     "parentCue": "Point to each key before it lights",
+     "bpm": 66,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5
+      },
+      {
+       "p": "D4",
+       "d": 0.5
+      },
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "F4",
+       "d": 2
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the lights",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 69,
+     "leadInSec": 2.78,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "You"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "stand"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "so"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "green"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "in"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "sum"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "mer"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3,
+       "s": "time"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "win"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ter"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "snow"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "y"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 2,
+       "s": "white"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "You stand so green in summertime",
+       "from": 0
+      },
+      {
+       "lyric": "and in the winter snowy white",
+       "from": 8
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Point to each key if needed",
+     "bpm": 69,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "You"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "stand"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "so"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "green"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "in"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "sum"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "mer"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3,
+       "s": "time"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "win"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ter"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "snow"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "y"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 2,
+       "s": "white"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "You stand so green in summertime",
+       "from": 0
+      },
+      {
+       "lyric": "and in the winter snowy white",
+       "from": 8
+      }
+     ],
+     "durationSec": 33,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 69,
+     "leadInSec": 3.05,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "You"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "stand"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "so"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "green"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "in"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "sum"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "mer"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3,
+       "s": "time"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "You stand so green in summertime",
+       "from": 0
+      }
+     ],
+     "durationSec": 12,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 69,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "You"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "stand"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "so"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "green"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "in"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "sum"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "mer"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3,
+       "s": "time"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "You stand so green in summertime",
+       "from": 0
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "praise",
+     "caption": "Well done!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 69,
+     "leadInSec": 2.32,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "win"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ter"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "snow"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "y"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 2,
+       "s": "white"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "and in the winter snowy white",
+       "from": 0
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 69,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "win"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ter"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "snow"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "y"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 2,
+       "s": "white"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "and in the winter snowy white",
+       "from": 0
+      }
+     ],
+     "durationSec": 20,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "praise",
+     "caption": "Yes, that's it!",
+     "durationSec": 5,
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "One more time.",
+     "voiceId": "b4c800d6a3120ebd",
+     "voiceSec": 1.34
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 69,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "You"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "stand"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "so"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "green"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "in"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "sum"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "mer"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3,
+       "s": "time"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "win"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ter"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "snow"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "y"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 2,
+       "s": "white"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "You stand so green in summertime",
+       "from": 0
+      },
+      {
+       "lyric": "and in the winter snowy white",
+       "from": 8
+      }
+     ],
+     "durationSec": 33,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
@@ -1795,798 +3548,19 @@
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
      "voiceSec": 2.25
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 92,
-     "leadInSec": 1.93,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "You"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "stand"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "so"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "green"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sum"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "mer"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "time"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "win"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "snow"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "white"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 0
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 8
-      },
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 15
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 23
-      },
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 30
-      },
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 38
-      },
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 46
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 54
-      }
-     ],
-     "durationSec": 44,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    }
-   ],
-   "skill": {
-    "primary": "listening",
-    "secondary": [
-     "beat",
-     "together"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
-   },
-   "parentPrompt": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
-  },
-  {
-   "id": "o-christmas-tree-c02",
-   "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
-   "type": "phrase",
-   "durationSec": 262,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "video": "o-christmas-tree/o-christmas-tree-c02.mp4",
-   "thumb": "o-christmas-tree/o-christmas-tree-c02.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "O Christmas Tree",
-     "subcaption": "Class 2: Part 1",
-     "durationSec": 7,
-     "voice": "Hello again. It's O Christmas Tree time. Grown-up, sit close to help.",
-     "voiceId": "4dcfe174213a8ed8",
-     "voiceSec": 5.37
-    },
-    {
-     "kind": "say",
-     "caption": "Today: O Christmas tree, O Christmas",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: O Christmas tree, O Christmas tree.",
-     "voiceId": "61b76d215800bb30",
-     "voiceSec": 5.17
-    },
-    {
-     "kind": "say",
-     "caption": "This part comes back 3 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7,
-     "voice": "This part comes back three times. Listen for it.",
-     "voiceId": "62e49033797bfc87",
-     "voiceSec": 3.7
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch the lights",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 69,
-     "leadInSec": 2.33,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 0
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 8
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
-    },
-    {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Point to each key if needed",
-     "bpm": 69,
-     "leadInSec": 3.24,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 0
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 8
-      }
-     ],
-     "durationSec": 31,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 69,
-     "leadInSec": 3.47,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 69,
-     "leadInSec": 3.24,
+     "parentCue": "The first part again",
+     "bpm": 74,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -2644,1584 +3618,101 @@
        "from": 0
       }
      ],
-     "durationSec": 19,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
+     "durationSec": 18,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
+    },
+    {
+     "kind": "praise",
+     "caption": "Bendy branches, well done!",
+     "durationSec": 5,
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
      "voiceSec": 2.84
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 69,
-     "leadInSec": 3.47,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "How lovely are your branches",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 69,
-     "leadInSec": 3.24,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "How lovely are your branches",
-       "from": 0
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.24,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 0
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 8
-      }
-     ],
-     "durationSec": 31,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.24,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 0
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 8
-      }
-     ],
-     "durationSec": 31,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 83,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 0
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 8
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 6,
-     "voice": "Shake, shake, shake your hands.",
-     "voiceId": "69041444bf86c15c",
-     "voiceSec": 2.85
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "form"
+     "listening",
+     "pitch"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Neighbour tone (step away, back)",
+    "parentLine": "The tune steps down one key and comes right back"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
-  },
-  {
-   "id": "o-christmas-tree-c03",
-   "index": 3,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
-   "type": "phrase",
-   "durationSec": 255,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "video": "o-christmas-tree/o-christmas-tree-c03.mp4",
-   "thumb": "o-christmas-tree/o-christmas-tree-c03.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "O Christmas Tree",
-     "subcaption": "Class 3: Part 2",
-     "durationSec": 7,
-     "voice": "Hello again. It's O Christmas Tree time. Grown-up, sit close to help.",
-     "voiceId": "4dcfe174213a8ed8",
-     "voiceSec": 5.37
-    },
-    {
-     "kind": "say",
-     "caption": "Today: You stand so green in",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: You stand so green in summertime.",
-     "voiceId": "9c8fa3dcc56c388d",
-     "voiceSec": 4.11
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch the lights",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 69,
-     "leadInSec": 3.79,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "You"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "stand"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "so"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "green"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sum"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "mer"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "time"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "win"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "snow"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "white"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 0
-      },
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 8
-      }
-     ],
-     "durationSec": 20,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Point to each key if needed",
-     "bpm": 69,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "You"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "stand"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "so"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "green"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sum"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "mer"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "time"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "win"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "snow"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "white"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 0
-      },
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 8
-      }
-     ],
-     "durationSec": 33,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 69,
-     "leadInSec": 3.47,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "You"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "stand"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "so"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "green"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sum"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "mer"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "time"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 69,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "You"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "stand"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "so"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "green"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sum"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "mer"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "time"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "praise",
-     "caption": "Well done!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 69,
-     "leadInSec": 3.47,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "win"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "snow"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "white"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 69,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "win"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "snow"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "white"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "praise",
-     "caption": "Yes, that's it!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "You"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "stand"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "so"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "green"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sum"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "mer"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "time"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "win"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "snow"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "white"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 0
-      },
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 8
-      }
-     ],
-     "durationSec": 33,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "You"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "stand"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "so"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "green"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sum"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "mer"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "time"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "win"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "snow"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "white"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 0
-      },
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 8
-      }
-     ],
-     "durationSec": 33,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 83,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "You"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "stand"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "so"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "green"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sum"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "mer"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "time"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "win"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "snow"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "white"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 0
-      },
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 8
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    }
-   ],
-   "skill": {
-    "primary": "fingers",
-    "secondary": [
-     "form"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
-   },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Play the low B yourself; your child plays E, D, E, F, then D, C.",
+   "childAction": "Play E, D, E, F, wait for the low note, then D, C.",
+   "bridge": "E, D, E is a branch bending in the wind and springing back.",
+   "celebrate": "Today you practiced: stepping one key away and back."
   },
   {
    "id": "o-christmas-tree-c04",
    "index": 4,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "The tree line comes back",
+   "goal": "Play the whole song slowly and clap each time the tree line returns.",
    "type": "put-together",
-   "durationSec": 254,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 288,
+   "parentTip": "Clap when 'O Christmas tree' comes back; sing the words if your child stalls.",
    "video": "o-christmas-tree/o-christmas-tree-c04.mp4",
    "thumb": "o-christmas-tree/o-christmas-tree-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "O Christmas Tree",
-     "subcaption": "Class 4: Put it together",
+     "subcaption": "Class 4: The tree line comes back",
      "durationSec": 7,
      "voice": "Hi there. Our song today is O Christmas Tree. Let's warm up our fingers.",
      "voiceId": "541b3d5f8be5fb57",
      "voiceSec": 5.75
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 69,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
+     "caption": "Listen for the tree line",
+     "parentCue": "clap together each time it comes back.",
      "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "voice": "Listen for the tree line. Grown-up, clap together each time it comes back.",
+     "voiceId": "76f4fcacf07a3894",
+     "voiceSec": 5.25
     },
     {
      "kind": "say",
      "caption": "Fingers on the lit keys",
-     "parentCue": "Check the thumb is on G",
+     "parentCue": "Check the thumb is on B",
      "showKeys": [
       {
-       "p": "G3",
+       "p": "B3",
        "f": 1
       },
       {
@@ -4237,7 +3728,7 @@
        "f": 4
       },
       {
-       "p": "D4",
+       "p": "F4",
        "f": 5
       }
      ],
@@ -4247,11 +3738,104 @@
      "voiceSec": 2.14
     },
     {
+     "kind": "listen",
+     "caption": "Summer line, winter line",
+     "parentCue": "Ask: is the winter line higher or lower?",
+     "bpm": 88,
+     "leadInSec": 5.36,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Summer line, then winter line. Point up or down as it moves.",
+     "voiceId": "8a57866ff8980304",
+     "voiceSec": 4.96
+    },
+    {
      "kind": "demo",
-     "caption": "Watch the whole song",
+     "caption": "Watch the first part",
      "parentCue": "Watch together",
      "bpm": 69,
-     "leadInSec": 2.51,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "G3",
@@ -4432,7 +4016,250 @@
        "d": 2,
        "f": 2,
        "s": "ches"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
       },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 8
+      },
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 15
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 23
+      }
+     ],
+     "durationSec": 31,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 69,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 8
+      },
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 15
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 23
+      }
+     ],
+     "durationSec": 58,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 69,
+     "leadInSec": 3.05,
+     "notes": [
       {
        "p": "G4",
        "d": 1,
@@ -4622,42 +4449,26 @@
      ],
      "lines": [
       {
-       "lyric": "O Christmas tree, O Christmas tree",
+       "lyric": "You stand so green in summertime",
        "from": 0
       },
       {
-       "lyric": "How lovely are your branches",
+       "lyric": "and in the winter snowy white",
        "from": 8
       },
       {
        "lyric": "O Christmas tree, O Christmas tree",
-       "from": 15
+       "from": 16
       },
       {
        "lyric": "How lovely are your branches",
-       "from": 23
-      },
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 30
-      },
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 38
-      },
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 46
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 54
+       "from": 24
       }
      ],
-     "durationSec": 58,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 32,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
@@ -5074,466 +4885,45 @@
      "voiceSec": 2.58
     },
     {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Take a breath between lines",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 78,
-     "leadInSec": 4.12,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "You"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "stand"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "so"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "green"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sum"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "mer"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "time"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "win"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "snow"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "white"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 0
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 8
-      },
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 15
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 23
-      },
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 30
-      },
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 38
-      },
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 46
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 54
-      }
-     ],
-     "durationSec": 53,
-     "voice": "Together now. Keep going, even after a slip.",
-     "voiceId": "6ef58099ced29d5c",
-     "voiceSec": 3.72
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found the pattern!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
-     "patterns"
+     "patterns",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Form (A A B A)",
+    "parentLine": "The tree line comes three times; the summer line is new"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Clap when 'O Christmas tree' comes back; sing the words if your child stalls.",
+   "childAction": "Play the song slowly; clap when the tree line comes back.",
+   "bridge": "Tree, tree, a new summer-and-winter line, then the tree comes home.",
+   "celebrate": "Today you practiced: hearing which line comes back."
   },
   {
    "id": "o-christmas-tree-c05",
    "index": 5,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Tall branch, tiny twig",
+   "goal": "Practise the long-short spot slowly, then a little faster.",
    "type": "review",
-   "durationSec": 250,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 229,
+   "parentTip": "Play it slowly, saying 'looong-short', then try it a little faster.",
    "video": "o-christmas-tree/o-christmas-tree-c05.mp4",
    "thumb": "o-christmas-tree/o-christmas-tree-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "O Christmas Tree",
-     "subcaption": "Class 5: Tricky spots",
+     "subcaption": "Class 5: Tall branch, tiny twig",
      "durationSec": 7,
      "voice": "Welcome back. Time for O Christmas Tree. Sit up tall, feet still.",
      "voiceId": "3cc9f1f7daa6c9c6",
@@ -5541,21 +4931,46 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
-     "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "caption": "Looong-short, looong-short",
+     "parentCue": "say it aloud as your child plays.",
+     "durationSec": 8,
+     "voice": "Looong-short, looong-short. Grown-up, say it aloud as your child plays.",
+     "voiceId": "c1b6c502d9bece08",
+     "voiceSec": 6.02
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Looong-short, up the tree",
+     "parentCue": "Say 'looong-short' as it plays",
+     "bpm": 60,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1.5
+      },
+      {
+       "p": "C4",
+       "d": 0.5
+      },
+      {
+       "p": "C4",
+       "d": 1.5
+      },
+      {
+       "p": "D4",
+       "d": 0.5
+      },
+      {
+       "p": "E4",
+       "d": 2
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "demo",
@@ -5911,9 +5326,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -5929,7 +5344,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 74,
-     "leadInSec": 3.98,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -6033,18 +5448,18 @@
        "from": 7
       }
      ],
-     "durationSec": 30,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "durationSec": 29,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -6060,7 +5475,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 83,
-     "leadInSec": 3.98,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -6164,181 +5579,68 @@
        "from": 7
       }
      ],
-     "durationSec": 28,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "durationSec": 27,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
-     "caption": "A little faster now",
-     "parentCue": "Only speed up if it feels easy",
-     "durationSec": 6,
-     "voice": "A little faster now.",
-     "voiceId": "c045f3637dd94536",
-     "voiceSec": 1.7
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Keep fingers close to the keys",
-     "bpm": 64,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "How lovely are your branches",
-       "from": 0
-      },
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 7
-      }
-     ],
-     "durationSec": 34,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 11,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Steady branches, well done!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
+     "beat",
      "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Uneven rhythm (long, short)",
+    "parentLine": "One long note, then one quick note, again and again"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Play it slowly, saying 'looong-short', then try it a little faster.",
+   "childAction": "Hold the first note long, then play a quick one.",
+   "bridge": "Long-short is a tall branch, then a tiny twig.",
+   "celebrate": "Today you practiced: a long note and a quick note."
   },
   {
    "id": "o-christmas-tree-c06",
    "index": 6,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
+   "title": "Slow, even steps in three",
+   "goal": "Play the whole song slowly and evenly, counting three beats in each bar.",
    "type": "phrase",
-   "durationSec": 266,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
+   "durationSec": 281,
+   "parentTip": "Count 'one, two, three' softly while your child plays slowly.",
    "video": "o-christmas-tree/o-christmas-tree-c06.mp4",
    "thumb": "o-christmas-tree/o-christmas-tree-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "O Christmas Tree",
-     "subcaption": "Class 6: Slow and steady",
+     "subcaption": "Class 6: Slow, even steps in three",
      "durationSec": 7,
      "voice": "Hi there. Our song today is O Christmas Tree. Let's warm up our fingers.",
      "voiceId": "541b3d5f8be5fb57",
@@ -6346,19 +5648,72 @@
     },
     {
      "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
-     "durationSec": 6,
-     "voice": "Slow and steady practice today.",
-     "voiceId": "aeb4883c0cf279a5",
-     "voiceSec": 2.42
+     "caption": "Slow and steady wins",
+     "parentCue": "count one, two, three softly as you go.",
+     "durationSec": 7,
+     "voice": "Slow and steady wins. Grown-up, count one, two, three softly as you go.",
+     "voiceId": "a04b494fa18884fe",
+     "voiceSec": 5.83
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap and count to three",
+     "parentCue": "Count one, two, three out loud",
+     "bpm": 72,
+     "leadInSec": 4.4,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Tap any key and count with me. One, two, three.",
+     "voiceId": "a762ac5eeb026b5a",
+     "voiceSec": 4.0
     },
     {
      "kind": "demo",
-     "caption": "Watch",
+     "caption": "Watch the first part",
      "parentCue": "Watch the finger numbers",
      "bpm": 64,
-     "leadInSec": 2.33,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "G3",
@@ -6539,7 +5894,250 @@
        "d": 2,
        "f": 2,
        "s": "ches"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
       },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 8
+      },
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 15
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 23
+      }
+     ],
+     "durationSec": 34,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 64,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 8
+      },
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 15
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 23
+      }
+     ],
+     "durationSec": 62,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 64,
+     "leadInSec": 2.42,
+     "notes": [
       {
        "p": "G4",
        "d": 1,
@@ -6729,42 +6327,26 @@
      ],
      "lines": [
       {
-       "lyric": "O Christmas tree, O Christmas tree",
+       "lyric": "You stand so green in summertime",
        "from": 0
       },
       {
-       "lyric": "How lovely are your branches",
+       "lyric": "and in the winter snowy white",
        "from": 8
       },
       {
        "lyric": "O Christmas tree, O Christmas tree",
-       "from": 15
+       "from": 16
       },
       {
        "lyric": "How lovely are your branches",
-       "from": 23
-      },
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 30
-      },
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 38
-      },
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 46
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 54
+       "from": 24
       }
      ],
-     "durationSec": 62,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 33,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -7182,205 +6764,606 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "Slow and steady, bravo!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
+    }
+   ],
+   "skill": {
+    "primary": "beat",
+    "secondary": [
+     "counting",
+     "fingers"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Steady pulse (three per bar)",
+    "parentLine": "Counting one, two, three keeps every note evenly spaced"
+   },
+   "parentPrompt": "Count 'one, two, three' softly while your child plays slowly.",
+   "childAction": "Play slowly while you count to three with your grown-up.",
+   "bridge": "Each bar is three even steps around the tree.",
+   "celebrate": "Today you practiced: playing evenly, counting to three."
+  },
+  {
+   "id": "o-christmas-tree-c07",
+   "index": 7,
+   "title": "The tree on the hilltop",
+   "goal": "Play the song in a higher place on the piano with the same fingers.",
+   "type": "octave",
+   "durationSec": 274,
+   "parentTip": "Slide your child's hand up to the higher keys: same fingers, same song.",
+   "video": "o-christmas-tree/o-christmas-tree-c07.mp4",
+   "thumb": "o-christmas-tree/o-christmas-tree-c07.jpg",
+   "segments": [
     {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
+     "kind": "title",
+     "caption": "O Christmas Tree",
+     "subcaption": "Class 7: The tree on the hilltop",
+     "durationSec": 7,
+     "voice": "Hello again. It's O Christmas Tree time. Grown-up, sit close to help.",
+     "voiceId": "4dcfe174213a8ed8",
+     "voiceSec": 5.37
     },
     {
      "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 74,
-     "leadInSec": 3.93,
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 69,
+     "leadInSec": 4.82,
      "gapBeats": 1,
      "notes": [
       {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Same song, up high",
+     "parentCue": "slide your child's hand up to the right.",
+     "durationSec": 7,
+     "voice": "Same song, up high. Grown-up, slide your child's hand up to the right.",
+     "voiceId": "1321f07293031476",
+     "voiceSec": 5.4
+    },
+    {
+     "kind": "say",
+     "caption": "The same song, up high!",
+     "parentCue": "Move the whole hand to the next C",
+     "showKeys": [
+      {
+       "p": "B4",
+       "f": 1
+      },
+      {
+       "p": "C5",
+       "f": 2
+      },
+      {
+       "p": "D5",
+       "f": 3
+      },
+      {
+       "p": "E5",
+       "f": 4
+      },
+      {
+       "p": "F5",
+       "f": 5
+      }
+     ],
+     "durationSec": 7,
+     "voice": "The same song, up high.",
+     "voiceId": "5a2f358b758b604b",
+     "voiceSec": 2.49
+    },
+    {
+     "kind": "listen",
+     "caption": "Same tree, two places",
+     "parentCue": "Ask: which one sounds like snow?",
+     "bpm": 88,
+     "leadInSec": 5.38,
+     "notes": [
+      {
        "p": "G3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Same tree, two places. Point to the one that sounds like snow.",
+     "voiceId": "6cfdcddcbffd032e",
+     "voiceSec": 4.98
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the first part",
+     "parentCue": "Watch the hand move",
+     "bpm": 74,
+     "leadInSec": 3.38,
+     "notes": [
+      {
+       "p": "G4",
        "d": 1,
        "f": 1,
        "s": "O"
       },
       {
-       "p": "C4",
+       "p": "C5",
        "d": 1.5,
        "f": 4,
        "s": "Christ"
       },
       {
-       "p": "C4",
+       "p": "C5",
        "d": 0.5,
        "f": 4,
        "s": "mas"
       },
       {
-       "p": "C4",
+       "p": "C5",
        "d": 1.5,
        "f": 4,
        "s": "tree"
       },
       {
-       "p": "D4",
+       "p": "D5",
        "d": 0.5,
        "f": 5,
        "s": "O"
       },
       {
-       "p": "E4",
+       "p": "E5",
        "d": 1.5,
        "f": 4,
        "s": "Christ"
       },
       {
-       "p": "E4",
+       "p": "E5",
        "d": 0.5,
        "f": 4,
        "s": "mas"
       },
       {
-       "p": "E4",
+       "p": "E5",
        "d": 1,
        "f": 4,
        "s": "tree"
       },
       {
-       "p": "E4",
+       "p": "E5",
        "d": 0.5,
        "f": 4,
        "s": "How"
       },
       {
-       "p": "D4",
+       "p": "D5",
        "d": 0.5,
        "f": 3,
        "s": "love"
       },
       {
-       "p": "E4",
+       "p": "E5",
        "d": 1,
        "f": 4,
        "s": "ly"
       },
       {
-       "p": "F4",
+       "p": "F5",
        "d": 1,
        "f": 5,
        "s": "are"
       },
       {
-       "p": "B3",
+       "p": "B4",
        "d": 1,
        "f": 1,
        "s": "your"
       },
       {
-       "p": "D4",
+       "p": "D5",
        "d": 1,
        "f": 3,
        "s": "bran"
       },
       {
-       "p": "C4",
+       "p": "C5",
        "d": 2,
        "f": 2,
        "s": "ches"
       },
       {
-       "p": "G3",
+       "p": "G4",
        "d": 1,
        "f": 1,
        "s": "O"
       },
       {
-       "p": "C4",
+       "p": "C5",
        "d": 1.5,
        "f": 4,
        "s": "Christ"
       },
       {
-       "p": "C4",
+       "p": "C5",
        "d": 0.5,
        "f": 4,
        "s": "mas"
       },
       {
-       "p": "C4",
+       "p": "C5",
        "d": 1.5,
        "f": 4,
        "s": "tree"
       },
       {
-       "p": "D4",
+       "p": "D5",
        "d": 0.5,
        "f": 5,
        "s": "O"
       },
       {
-       "p": "E4",
+       "p": "E5",
        "d": 1.5,
        "f": 4,
        "s": "Christ"
       },
       {
-       "p": "E4",
+       "p": "E5",
        "d": 0.5,
        "f": 4,
        "s": "mas"
       },
       {
-       "p": "E4",
+       "p": "E5",
        "d": 1,
        "f": 4,
        "s": "tree"
       },
       {
-       "p": "E4",
+       "p": "E5",
        "d": 0.5,
        "f": 4,
        "s": "How"
       },
       {
-       "p": "D4",
+       "p": "D5",
        "d": 0.5,
        "f": 3,
        "s": "love"
       },
       {
-       "p": "E4",
+       "p": "E5",
        "d": 1,
        "f": 4,
        "s": "ly"
       },
       {
-       "p": "F4",
+       "p": "F5",
        "d": 1,
        "f": 5,
        "s": "are"
       },
       {
-       "p": "B3",
+       "p": "B4",
        "d": 1,
        "f": 1,
        "s": "your"
       },
       {
-       "p": "D4",
+       "p": "D5",
        "d": 1,
        "f": 3,
        "s": "bran"
       },
       {
-       "p": "C4",
+       "p": "C5",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 0
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 8
+      },
+      {
+       "lyric": "O Christmas tree, O Christmas tree",
+       "from": 15
+      },
+      {
+       "lyric": "How lovely are your branches",
+       "from": 23
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 74,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E5",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B4",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 2,
+       "s": "ches"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 1,
+       "s": "O"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 5,
+       "s": "O"
+      },
+      {
+       "p": "E5",
+       "d": 1.5,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "f": 4,
+       "s": "mas"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 4,
+       "s": "tree"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "f": 4,
+       "s": "How"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 3,
+       "s": "love"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 4,
+       "s": "ly"
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 5,
+       "s": "are"
+      },
+      {
+       "p": "B4",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "f": 3,
+       "s": "bran"
+      },
+      {
+       "p": "C5",
        "d": 2,
        "f": 2,
        "s": "ches"
@@ -7410,276 +7393,12 @@
      "voiceSec": 3.53
     },
     {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    }
-   ],
-   "skill": {
-    "primary": "fingers",
-    "secondary": [
-     "beat"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Tempo control",
-    "parentLine": "Doing a task slowly and evenly"
-   },
-   "parentPrompt": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "childAction": "Play the tune slowly, every note even.",
-   "bridge": "Slow fingers, like a cat walking on tiptoe.",
-   "celebrate": "Today you practiced careful fingers and keeping a steady beat."
-  },
-  {
-   "id": "o-christmas-tree-c07",
-   "index": 7,
-   "title": "Same song, up high",
-   "goal": "Play the song in a new place with the same fingers",
-   "type": "octave",
-   "durationSec": 243,
-   "parentTip": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
-   "video": "o-christmas-tree/o-christmas-tree-c07.mp4",
-   "thumb": "o-christmas-tree/o-christmas-tree-c07.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "O Christmas Tree",
-     "subcaption": "Class 7: Same song, up high",
-     "durationSec": 7,
-     "voice": "Hello again. It's O Christmas Tree time. Grown-up, sit close to help.",
-     "voiceId": "4dcfe174213a8ed8",
-     "voiceSec": 5.37
-    },
-    {
-     "kind": "say",
-     "caption": "The same song, up high!",
-     "parentCue": "Move the whole hand to the next C",
-     "showKeys": [
-      {
-       "p": "G4",
-       "f": 1
-      },
-      {
-       "p": "C5",
-       "f": 2
-      },
-      {
-       "p": "D5",
-       "f": 3
-      },
-      {
-       "p": "E5",
-       "f": 4
-      },
-      {
-       "p": "D5",
-       "f": 5
-      }
-     ],
-     "durationSec": 7,
-     "voice": "The same song, up high.",
-     "voiceId": "5a2f358b758b604b",
-     "voiceSec": 2.49
-    },
-    {
-     "kind": "say",
-     "caption": "Same fingers, new place",
-     "parentCue": "Fingers keep the same numbers",
-     "durationSec": 6,
-     "voice": "Same fingers, new place.",
-     "voiceId": "f1984f5f115ff332",
-     "voiceSec": 2.38
-    },
-    {
      "kind": "demo",
-     "caption": "Watch: same song, up high",
+     "caption": "Watch the next part",
      "parentCue": "Watch the hand move",
      "bpm": 74,
-     "leadInSec": 3.2,
+     "leadInSec": 2.42,
      "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E5",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B4",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E5",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B4",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      },
       {
        "p": "G5",
        "d": 1,
@@ -7869,42 +7588,26 @@
      ],
      "lines": [
       {
-       "lyric": "O Christmas tree, O Christmas tree",
+       "lyric": "You stand so green in summertime",
        "from": 0
       },
       {
-       "lyric": "How lovely are your branches",
+       "lyric": "and in the winter snowy white",
        "from": 8
       },
       {
        "lyric": "O Christmas tree, O Christmas tree",
-       "from": 15
+       "from": 16
       },
       {
        "lyric": "How lovely are your branches",
-       "from": 23
-      },
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 30
-      },
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 38
-      },
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 46
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 54
+       "from": 24
       }
      ],
-     "durationSec": 55,
-     "voice": "Watch. Same song, up high.",
-     "voiceId": "8a53251b1d6c839e",
-     "voiceSec": 2.8
+     "durationSec": 30,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -8321,466 +8024,45 @@
      "voiceSec": 1.75
     },
     {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Listen to how it sounds now",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "together",
-     "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
-     "bpm": 74,
-     "leadInSec": 2.25,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E5",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B4",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E5",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B4",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 4,
-       "s": "You"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "f": 4,
-       "s": "stand"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 2,
-       "s": "so"
-      },
-      {
-       "p": "A5",
-       "d": 1.5,
-       "f": 5,
-       "s": "green"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 4,
-       "s": "sum"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 3,
-       "s": "mer"
-      },
-      {
-       "p": "F5",
-       "d": 2,
-       "f": 3,
-       "s": "time"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F5",
-       "d": 0.5,
-       "f": 3,
-       "s": "in"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G5",
-       "d": 1.5,
-       "f": 4,
-       "s": "win"
-      },
-      {
-       "p": "F5",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 3,
-       "s": "snow"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "E5",
-       "d": 2,
-       "f": 2,
-       "s": "white"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "O"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 5,
-       "s": "O"
-      },
-      {
-       "p": "E5",
-       "d": 1.5,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 4,
-       "s": "mas"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 4,
-       "s": "tree"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 4,
-       "s": "How"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 3,
-       "s": "love"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 4,
-       "s": "ly"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 5,
-       "s": "are"
-      },
-      {
-       "p": "B4",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 3,
-       "s": "bran"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 2,
-       "s": "ches"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 0
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 8
-      },
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 15
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 23
-      },
-      {
-       "lyric": "You stand so green in summertime",
-       "from": 30
-      },
-      {
-       "lyric": "and in the winter snowy white",
-       "from": 38
-      },
-      {
-       "lyric": "O Christmas tree, O Christmas tree",
-       "from": 46
-      },
-      {
-       "lyric": "How lovely are your branches",
-       "from": 54
-      }
-     ],
-     "durationSec": 54,
-     "voice": "Play along, up high.",
-     "voiceId": "6ee60273cf4e390f",
-     "voiceSec": 1.85
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Hilltop music, bravo!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
     "primary": "space",
     "secondary": [
-     "pitch"
+     "pitch",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Translation (same shape, new place)",
-    "parentLine": "Finding the same note higher or lower on the keyboard"
+    "concept": "Translation (same shape, higher)",
+    "parentLine": "The same song, moved to a higher home, sounds brighter"
    },
-   "parentPrompt": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
-   "childAction": "Play the same note in its high and low homes.",
-   "bridge": "Every note has a family: same name, a different house.",
-   "celebrate": "Today you practiced finding the way on the keys and hearing high and low."
+   "parentPrompt": "Slide your child's hand up to the higher keys: same fingers, same song.",
+   "childAction": "Move your hand up high and play the same song.",
+   "bridge": "The same tree on a hilltop to the right sounds bright as snow.",
+   "celebrate": "Today you practiced: playing the same song in a new place."
   },
   {
    "id": "o-christmas-tree-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Play along with the tree",
+   "goal": "Play the whole song along with the music at full speed.",
    "type": "play-along",
-   "durationSec": 225,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 219,
+   "parentTip": "Sit close and nod the beat; if a note is missed, keep going.",
    "video": "o-christmas-tree/o-christmas-tree-c08.mp4",
    "thumb": "o-christmas-tree/o-christmas-tree-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "O Christmas Tree",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Play along with the tree",
      "durationSec": 9,
      "voice": "Hi, everyone. Let's play O Christmas Tree. Curved fingers, like holding a little ball.",
      "voiceId": "344f1b20608dddfa",
@@ -8788,21 +8070,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
+     "caption": "Play along with the music",
+     "parentCue": "nod the beat and keep going, whatever happens.",
      "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "voice": "Play along with the music. Grown-up, nod the beat and keep going, whatever happens.",
+     "voiceId": "5e872edcb20e97f0",
+     "voiceSec": 5.54
     },
     {
      "kind": "together",
@@ -9644,7 +8917,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 92,
-     "leadInSec": 2.47,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "G3",
@@ -10048,17 +9321,17 @@
       }
      ],
      "durationSec": 44,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -10074,7 +9347,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 92,
-     "leadInSec": 2.47,
+     "leadInSec": 3.0,
      "notes": [
       {
        "p": "G3",
@@ -10477,50 +9750,51 @@
        "from": 54
       }
      ],
-     "durationSec": 44,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 45,
+     "voice": "Together time. Big smiles.",
+     "voiceId": "a441a4bce0e6e1e6",
+     "voiceSec": 2.6
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept up!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat",
+     "expression"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
+    "concept": "Synchrony (keeping up)",
     "parentLine": "Keeping your part going while the music moves on"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Sit close and nod the beat; if a note is missed, keep going.",
+   "childAction": "Play along with the music. Missed notes are fine; keep going!",
+   "bridge": "The music is a sleigh ride; hold on and keep riding.",
+   "celebrate": "Today you practiced: keeping up with the music, together."
   },
   {
    "id": "o-christmas-tree-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Tree concert for teddy",
+   "goal": "Play the whole song for teddy: summer strong, winter soft.",
    "type": "concert",
-   "durationSec": 237,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 231,
+   "parentTip": "Sit teddy as the audience; whisper 'soft' before the winter line, then bow together.",
    "video": "o-christmas-tree/o-christmas-tree-c09.mp4",
    "thumb": "o-christmas-tree/o-christmas-tree-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "O Christmas Tree",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: Tree concert for teddy",
      "durationSec": 7,
      "voice": "Hi there. Our song today is O Christmas Tree. Let's warm up our fingers.",
      "voiceId": "541b3d5f8be5fb57",
@@ -10528,21 +9802,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "Concert time for teddy!",
+     "parentCue": "whisper 'soft' just before the winter line.",
+     "durationSec": 6,
+     "voice": "Concert time. Teddy is listening.",
+     "voiceId": "5981e6766e72b3d1",
+     "voiceSec": 2.73
     },
     {
      "kind": "together",
@@ -11391,9 +10656,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -11821,9 +11086,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -12249,28 +11514,28 @@
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, strong and soft!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "expression",
     "secondary": [
      "together",
-     "expression"
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Contrast (summer strong, winter soft)",
+    "parentLine": "Playing the summer line strong and the winter line soft"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; whisper 'soft' before the winter line, then bow together.",
+   "childAction": "Play summer strong, winter soft, then bow for teddy.",
+   "bridge": "Summer is bright and strong; winter is soft as falling snow.",
+   "celebrate": "Today you practiced: playing strong and soft, start to end."
   }
  ]
 }

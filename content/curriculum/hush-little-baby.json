@@ -1,0 +1,207 @@
+{
+  "songId": "hush-little-baby",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices steady beat, high and low, soft and loud, word rhythm and calm playing together, with a gentle old lullaby.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Rock teddy to sleep",
+      "goal": "Feel the slow, steady beat of the lullaby with the whole body.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (steady pulse)", "parentLine": "Feeling something that comes again and again, evenly spaced" },
+      "parentPrompt": "Hold your child on your lap and rock slowly side to side on every beat.",
+      "childAction": "Hug teddy and rock with the song.",
+      "bridge": "The beat is a rocking cradle: side, side, slow and soft.",
+      "intro": [ { "caption": "Let's rock teddy to sleep", "parentCue": "hold your child and rock slowly with them" } ],
+      "games": [],
+      "praise": "You rocked so gently!",
+      "celebrate": "Today you practiced: feeling a slow steady beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Pat-pat, sleepy beat",
+      "goal": "Tap one gentle tap for every beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key once for each beat, like patting a baby.",
+      "bridge": "Each beat is one soft pat on a sleepy baby's back.",
+      "intro": [ { "caption": "Pat, pat, one beat, one tap", "parentCue": "pat your child's back softly on each beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Pat the mockingbird beat",
+          "parentCue": "Pat softly, never in a hurry",
+          "bpm": 66,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one gentle tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping (pitch to place)", "parentLine": "Low sounds live on the left, high sounds on the right" },
+      "parentPrompt": "Crouch and growl softly for the bear; flap your arms and chirp for the bird.",
+      "childAction": "Bear sound: tap the left side. Bird sound: tap the right.",
+      "bridge": "Low notes are a sleepy bear on the left; high notes are the mockingbird.",
+      "intro": [ { "caption": "Bear lives low, bird lives high", "parentCue": "point left for the bear, right for the bird" } ],
+      "games": [
+        {
+          "kind": "high_low",
+          "target": "high",
+          "caption": "Bird! The mockingbird sings",
+          "parentCue": "Chirp together, then tap the right side",
+          "bpm": 80,
+          "notes": [ { "p": "G5", "d": 1 }, { "p": "E5", "d": 1 }, { "p": "G5", "d": 1 }, { "p": "E5", "d": 1 }, { "p": "A5", "d": 2 } ]
+        },
+        {
+          "kind": "high_low",
+          "target": "low",
+          "caption": "Bear! Big sleepy bear",
+          "parentCue": "Growl softly, then tap the left side",
+          "bpm": 72,
+          "notes": [ { "p": "C3", "d": 2 }, { "p": "G3", "d": 2 }, { "p": "C3", "d": 2 }, { "p": "G3", "d": 2 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Big taps, hush taps",
+      "goal": "Tap the beat with big loud taps, then with tiny hush taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "Noticing big and small: the same tap, more or less" },
+      "parentPrompt": "Make strong arms for loud taps; whisper 'shh' and tiptoe your fingers for soft.",
+      "childAction": "Loud: big strong taps. Soft: tiny hush taps.",
+      "bridge": "Loud taps are a big drum; soft taps are a whisper to the baby.",
+      "intro": [ { "caption": "Big taps, then hush taps", "parentCue": "loud means strong arms, not banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Sleepy slow, awake fast",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "Same tune, same shape, only the speed changes" },
+      "parentPrompt": "Walk your fingers up your child's arm, slowly then quickly, matching the music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "Slow taps are a sleepy turtle; fast taps are a wide-awake bunny.",
+      "intro": [ { "caption": "Turtle slow, bunny fast", "parentCue": "slow down if the taps get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle time, sleepy song",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 54,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny time, awake song!",
+          "parentCue": "Same tune, now quick and light",
+          "bpm": 100,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Hush! Freeze, baby",
+      "goal": "Tap while the music plays and freeze with a quiet 'shh' when it stops.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "When the music stops, put a finger to your lips and freeze; cheer when it restarts.",
+      "childAction": "Tap while music plays. Freeze and say 'shh' when it stops.",
+      "bridge": "Music on, we tap; music off, the baby sleeps, so we freeze.",
+      "intro": [ { "caption": "Tap, tap... hush and freeze!", "parentCue": "finger to your lips when the music stops" } ],
+      "games": [],
+      "praise": "Great hush and freeze!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "rhythm",
+      "title": "Ma-ma: two taps",
+      "goal": "Tap once for each piece of a word, like Ma-ma, two taps.",
+      "skill": { "primary": "counting", "secondary": ["listening", "beat"] },
+      "mathTarget": { "concept": "One-to-one correspondence (syllable to tap)", "parentLine": "One tap for each piece of a word you sing" },
+      "parentPrompt": "Say the words slowly and tap your child's hand once for each word piece.",
+      "childAction": "Ma-ma: two taps, one for each piece.",
+      "bridge": "Each word piece is one soft footstep on the keys: Ma, ma.",
+      "intro": [ { "caption": "Ma-ma: one, two taps", "parentCue": "say Ma-ma slowly and tap twice" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Mama's gonna buy you",
+          "parentCue": "Say each word piece with each light",
+          "bpm": 60,
+          "notes": [ { "p": "F4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "Ma-ma, two taps!",
+      "celebrate": "Today you practiced: one tap for each word piece."
+    },
+    {
+      "index": 8,
+      "spineType": "review",
+      "title": "Guess the lullaby game",
+      "goal": "Listen and switch between games: high and low, loud and soft, fast and slow.",
+      "skill": { "primary": "listening", "secondary": ["pitch", "expression"] },
+      "mathTarget": { "concept": "Classification (sorting by feature)", "parentLine": "Sorting each sound: high or low, loud or soft?" },
+      "parentPrompt": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
+      "childAction": "Guess the game, then tap high, low, loud, soft, slow or fast.",
+      "bridge": "Every sound wears a costume: bear, bird, drum, whisper, turtle or bunny.",
+      "intro": [ { "caption": "What game is it?", "parentCue": "let your child guess first; any guess is fine" } ],
+      "games": [],
+      "praise": "Great listening ears!",
+      "celebrate": "Today you practiced: telling sounds apart and switching games."
+    },
+    {
+      "index": 9,
+      "spineType": "together",
+      "title": "Lullaby duet",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together to make one song" },
+      "parentPrompt": "Play the tune softly and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Tap the beat on any key while your grown-up plays the tune.",
+      "bridge": "The tune is the lullaby; your beat is the cradle rocking under it.",
+      "intro": [ { "caption": "I play, you tap", "parentCue": "sit side by side at the piano" } ],
+      "games": [],
+      "praise": "What a gentle duet!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "Goodnight concert for teddy",
+      "goal": "Play the whole lullaby from start to end, then tuck teddy in together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on, and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then clap softly and tuck teddy in.",
+      "childAction": "Tap the beat to the very end, then whisper goodnight to teddy.",
+      "bridge": "The song is a bedtime walk: start awake, end with a goodnight.",
+      "intro": [ { "caption": "A song for teddy", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, goodnight, teddy!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

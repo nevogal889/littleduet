@@ -1,0 +1,177 @@
+{
+  "songId": "polly-wolly-doodle",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices skip patterns, counting repeated notes, a pattern moved lower, verse and chorus, and two-hand teamwork, with a silly old singalong.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "Hop, hop: 1, 3, 5",
+      "goal": "Find the five-finger place on C and play the hopping C, E, G pattern.",
+      "skill": { "primary": "space", "secondary": ["fingers", "patterns"] },
+      "mathTarget": { "concept": "Skip pattern (1, 3, 5)", "parentLine": "Hopping over one key each time" },
+      "parentPrompt": "Help the thumb find C, left of the two black keys; touch the keys that get skipped.",
+      "childAction": "Five fingers on C to G, then hop: thumb, middle, pinky.",
+      "bridge": "C, E, G is hopscotch: land, hop over one, land, hop over one, land.",
+      "intro": [ { "caption": "Hop over one key", "parentCue": "touch the skipped keys so your child sees them" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Hop up and back: C, E, G",
+          "parentCue": "Say the fingers: 1, 3, 5, 5, 3, 1",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "C4", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "Great hopping!",
+      "celebrate": "Today you practiced: finding the hand's place and a skipping pattern."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "How many Ds?",
+      "goal": "Play 'sing Polly wolly doodle' and count the same-note run: six Ds in a row.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Cardinality (counting repeated notes)", "parentLine": "Counting how many times the same key plays" },
+      "parentPrompt": "Hold up one finger for each D your child plays; count aloud together to six.",
+      "childAction": "Play the Ds and count them out loud: one to six.",
+      "bridge": "Six quick Ds are six little doodle hops on one spot before moving on.",
+      "intro": [ { "caption": "Count the doodle hops", "parentCue": "hold up one finger for each D" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Polly wolly doodle, slowly",
+          "parentCue": "Count the six Ds aloud",
+          "bpm": 56,
+          "notes": [ { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 1 } ]
+        }
+      ],
+      "praise": "Six! Great counting!",
+      "celebrate": "Today you practiced: counting repeated notes while playing."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Fare thee well, step down",
+      "goal": "Play 'fare thee well' twice: the same shape, the second time one key lower.",
+      "skill": { "primary": "patterns", "secondary": ["fingers", "pitch"] },
+      "mathTarget": { "concept": "Sequence (pattern moved lower)", "parentLine": "The same shape again, starting one key lower" },
+      "parentPrompt": "Play the first 'fare thee well', then slide your child's hand one key left for the second.",
+      "childAction": "Play G, G, E, then the same shape lower: F, F, D.",
+      "bridge": "The second wave goodbye is the same wave, one step down the stairs.",
+      "intro": [ { "caption": "Same wave, one step lower", "parentCue": "wave goodbye on each 'fare thee well'" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Fare thee well, fare thee well",
+          "parentCue": "Wave goodbye on each one",
+          "bpm": 56,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "D4", "d": 1 } ]
+        }
+      ],
+      "praise": "You moved the pattern!",
+      "celebrate": "Today you practiced: playing the same pattern one step lower."
+    },
+    {
+      "index": 4,
+      "spineType": "put-together",
+      "title": "Story part, goodbye part",
+      "goal": "Play the whole song slowly and notice the verse and the 'fare thee well' chorus.",
+      "skill": { "primary": "form", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Form: verse and chorus", "parentLine": "A song can have a story part and a chorus part" },
+      "parentPrompt": "Sway on the verse; wave on 'fare thee well'. Sing the next word if your child gets stuck.",
+      "childAction": "Play slowly and spot when the 'fare thee well' part starts.",
+      "bridge": "The verse is the silly trip; the chorus is waving goodbye at the door.",
+      "intro": [ { "caption": "Story part, goodbye part", "parentCue": "wave together when the chorus starts" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 90,
+          "notes": [ { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 } ]
+        }
+      ],
+      "praise": "You found the chorus!",
+      "celebrate": "Today you practiced: hearing the verse and chorus of a song."
+    },
+    {
+      "index": 5,
+      "spineType": "left-hand",
+      "title": "Low note, same name",
+      "goal": "Play one low left-hand note at the start of each bar while the grown-up plays the tune.",
+      "skill": { "primary": "space", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Octave translation (same note, lower)", "parentLine": "The same note name lives lower on the left" },
+      "parentPrompt": "Play the tune while your child plays the low notes. Count bars out loud: one, two, three.",
+      "childAction": "Play one low note with your left hand at each 'one'.",
+      "bridge": "The low note is the same name in a lower house, far to the left.",
+      "intro": [ { "caption": "Same name, lower house", "parentCue": "count each bar out loud" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Same name, lower house",
+          "parentCue": "Point left on each low C",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C3", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "C3", "d": 1 } ]
+        }
+      ],
+      "praise": "Strong low notes!",
+      "celebrate": "Today you practiced: playing low notes with the left hand."
+    },
+    {
+      "index": 6,
+      "spineType": "hands-together",
+      "title": "One slow, eight quick",
+      "goal": "Play the quick tune with one low left-hand note per bar, very slowly.",
+      "skill": { "primary": "fingers", "secondary": ["counting", "patterns"] },
+      "mathTarget": { "concept": "Ratio 1:8 (two streams)", "parentLine": "One low note while the right hand plays eight quick ones" },
+      "parentPrompt": "Rest a hand on your child's left shoulder and say 'low' on each bar. Go very slowly.",
+      "childAction": "Left hand plays one low note; right hand runs eight quick notes.",
+      "bridge": "The left hand is a big slow drum; the right hand is quick running feet.",
+      "intro": [ { "caption": "One slow, eight quick", "parentCue": "say 'low' on each bar, very slowly" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 78,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "G3", "d": 2, "f": 1 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Both hands working!",
+      "celebrate": "Today you practiced: playing a slow part and a quick part together."
+    },
+    {
+      "index": 7,
+      "spineType": "play-along",
+      "title": "Sing along all the day",
+      "goal": "Play the whole song along with the music at full speed.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Synchrony with a moving pulse", "parentLine": "Keeping up with a beat that does not wait" },
+      "parentPrompt": "Sit beside your child, sing the silly words and nod on every one; keep going past slips.",
+      "childAction": "Play along with the music and keep going, even after a slip.",
+      "bridge": "The music is a bouncy wagon ride; hold on and keep rolling past bumps.",
+      "intro": [ { "caption": "Hop on and keep going", "parentCue": "sing along and smile at slips" } ],
+      "games": [],
+      "praise": "You kept going together!",
+      "celebrate": "Today you practiced: keeping up with the music together."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Silly concert for teddy",
+      "goal": "Play the whole song for teddy with a bouncy, silly sound, then bow.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Character (bouncy and light)", "parentLine": "Playing the same notes with a light, bouncy feel" },
+      "parentPrompt": "Seat teddy as the audience; sing 'polly wolly doodle' in your silliest voice, then bow.",
+      "childAction": "Play light and bouncy for teddy, then take a big bow.",
+      "bridge": "Light fingers bounce like a ball; the chorus waves goodbye with a smile.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "seat teddy as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song with a bouncy feel."
+    }
+  ]
+}

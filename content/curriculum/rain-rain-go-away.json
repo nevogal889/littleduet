@@ -1,0 +1,184 @@
+{
+  "songId": "rain-rain-go-away",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices steady beat, high and low, loud and soft, stop and go, and playing together, with an old three-note rain chant.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Sway in the rain",
+      "goal": "Hear the whole rain song and sway to its steady beat together.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Periodicity (steady pulse)", "parentLine": "Feeling something that comes again and again, evenly spaced" },
+      "parentPrompt": "Hold your child on your lap and sway side to side on every beat.",
+      "childAction": "Sway, clap and pat your knees with the song.",
+      "bridge": "The beat is raindrops on the roof: drip, drip, drip, nice and even.",
+      "intro": [ { "caption": "Listen to the rain song", "parentCue": "hold your child close and sway together" } ],
+      "games": [],
+      "praise": "You swayed together!",
+      "celebrate": "Today you practiced: listening and swaying to the beat."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Rain, rain: two taps",
+      "goal": "Tap one steady tap on every beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key once on each beat. Any key is right.",
+      "bridge": "\"Rain, rain\" is two big drops: one, two, on any key.",
+      "intro": [ { "caption": "Every beat is a raindrop", "parentCue": "tap your child's shoulder on each beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Rain, rain: one, two",
+          "parentCue": "Say 'one, two' softly on 'rain, rain'",
+          "bpm": 72,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "rest": true, "d": 2 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "rest": true, "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping (pitch to place)", "parentLine": "Low sounds live on the left, high sounds on the right" },
+      "parentPrompt": "Growl and crouch for the bear; flap your arms and stretch up for the bird.",
+      "childAction": "Bear: tap the left side. Bird: tap the right side.",
+      "bridge": "The bear stomps in low puddles on the left; the bird flies high.",
+      "intro": [ { "caption": "Here comes the bear, here comes the bird", "parentCue": "point left for bear, right for bird" } ],
+      "games": [
+        {
+          "kind": "high_low",
+          "target": "low",
+          "caption": "Bear stomps in puddles",
+          "parentCue": "Growl together, then tap the left side",
+          "bpm": 66,
+          "notes": [ { "p": "C3", "d": 1 }, { "p": "C3", "d": 1 }, { "p": "E3", "d": 1 }, { "p": "C3", "d": 1 } ]
+        },
+        {
+          "kind": "high_low",
+          "target": "high",
+          "caption": "Bird flies over the rain",
+          "parentCue": "Chirp together, then tap the right side",
+          "bpm": 66,
+          "notes": [ { "p": "G5", "d": 1 }, { "p": "E5", "d": 1 }, { "p": "G5", "d": 1 }, { "p": "A5", "d": 1 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Big storm, tiny drizzle",
+      "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "Noticing big and small: the same tap, more or less" },
+      "parentPrompt": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
+      "childAction": "Loud: big storm taps. Soft: tiny drizzle taps.",
+      "bridge": "Loud taps are a big storm; soft taps are drizzle on the window.",
+      "intro": [ { "caption": "Big storm, tiny drizzle", "parentCue": "loud means strong arms, not banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Turtle and bunny in rain",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "Same tune, same shape, only the speed changes" },
+      "parentPrompt": "Walk your fingers up your child's back, slowly then quickly, matching the music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "Slow taps are turtle steps; fast taps are bunny hops between puddles.",
+      "intro": [ { "caption": "Turtle slow, bunny fast", "parentCue": "slow down if the taps get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle sings the rain song",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 56,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 2 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny sings the rain song",
+          "parentCue": "Same song, now quick and light",
+          "bpm": 104,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Rain stops: freeze!",
+      "goal": "Tap while the music plays and freeze when it stops.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "Freeze with a funny face when the music stops; cheer when it starts again.",
+      "childAction": "Tap while music plays. Freeze like a statue when it stops.",
+      "bridge": "Music on, the rain falls; music off, every drop holds still.",
+      "intro": [ { "caption": "Go! Tap the beat", "parentCue": "when the music stops, freeze with a silly face" } ],
+      "games": [],
+      "praise": "Great freezing!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "review",
+      "title": "Rainy day game mix",
+      "goal": "Listen and switch between games: high and low, loud and soft, fast and slow.",
+      "skill": { "primary": "listening", "secondary": ["pitch", "expression"] },
+      "mathTarget": { "concept": "Classification (sorting by feature)", "parentLine": "Sorting each sound: high or low, loud or soft?" },
+      "parentPrompt": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
+      "childAction": "Guess the game, then tap high, low, loud, soft, slow or fast.",
+      "bridge": "Every sound wears a costume: bear, bird, storm, drizzle, turtle or bunny.",
+      "intro": [ { "caption": "Bear or bird? Loud or soft?", "parentCue": "let your child guess first; any guess is fine" } ],
+      "games": [],
+      "praise": "Great listening ears!",
+      "celebrate": "Today you practiced: telling sounds apart and switching games."
+    },
+    {
+      "index": 8,
+      "spineType": "together",
+      "title": "You and me, rain duet",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together to make one song" },
+      "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Tap the beat on any key while your grown-up plays.",
+      "bridge": "The tune is the rain cloud; your beat is the drops falling down.",
+      "intro": [ { "caption": "Play it together", "parentCue": "sit side by side, you on the tune" } ],
+      "games": [],
+      "praise": "What a duet together!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Rain song for teddy",
+      "goal": "Play the whole song from the first note to the last, then bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on, and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+      "childAction": "Tap the beat to the very end, then take a big bow.",
+      "bridge": "The song asks the rain to go, so we can go and play.",
+      "intro": [ { "caption": "A song for teddy", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

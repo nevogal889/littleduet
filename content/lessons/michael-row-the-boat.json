@@ -2,34 +2,55 @@
  "songId": "michael-row-the-boat",
  "title": "Michael, Row the Boat Ashore",
  "ageGroup": "4-5",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and listening memory, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices keys that skip, counting long notes, hearing a question and its answer, and rowing together, with a traditional spiritual.",
  "skillMap": [
   {
-   "id": "fingers",
-   "label": "Finger control",
+   "id": "beat",
+   "label": "Steady beat",
    "value": 1.0,
-   "classes": 5,
+   "classes": 2,
    "total": 9
   },
   {
    "id": "form",
    "label": "Song shape",
-   "value": 0.4,
+   "value": 1.0,
    "classes": 2,
    "total": 9
   },
   {
    "id": "listening",
    "label": "Listening memory",
-   "value": 0.2,
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "fingers",
+   "label": "Finger control",
+   "value": 0.5,
    "classes": 1,
    "total": 9
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.2,
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -37,44 +58,73 @@
  "icon": "boat",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2348,
+ "totalSec": 2368,
  "classes": [
   {
    "id": "michael-row-the-boat-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "Pull the oars together",
+   "goal": "Hear the song, row to its beat, then rest five fingers on five keys.",
    "type": "listen",
-   "durationSec": 269,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 281,
+   "parentTip": "Sit facing your child, hold hands, and row back and forth to the beat.",
    "video": "michael-row-the-boat/michael-row-the-boat-c01.mp4",
    "thumb": "michael-row-the-boat/michael-row-the-boat-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Michael, Row the Boat Ashore",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: Pull the oars together",
      "durationSec": 8,
      "voice": "Welcome back. Time for Michael, Row the Boat Ashore. Sit up tall, feet still.",
      "voiceId": "221f5158bd5d8455",
      "voiceSec": 6.39
     },
     {
-     "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 69,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
     },
     {
      "kind": "say",
-     "caption": "Thumb on C, fingers curved",
+     "caption": "Let's row the boat together",
+     "parentCue": "hold hands and row back and forth.",
+     "durationSec": 7,
+     "voice": "Let's row the boat together. Grown-up, hold hands and row back and forth.",
+     "voiceId": "9229b2499dec9af5",
+     "voiceSec": 4.91
+    },
+    {
+     "kind": "say",
+     "caption": "Thumb on D, fingers curved",
      "parentCue": "Help place one finger on each lit key",
      "showKeys": [
       {
-       "p": "C4",
+       "p": "D4",
        "f": 1
       },
       {
@@ -82,7 +132,7 @@
        "f": 2
       },
       {
-       "p": "E4",
+       "p": "F4",
        "f": 3
       },
       {
@@ -90,14 +140,48 @@
        "f": 4
       },
       {
-       "p": "G4",
+       "p": "A4",
        "f": 5
       }
      ],
      "durationSec": 7,
-     "voice": "Thumb on C. Curve your fingers, like holding a little ball.",
-     "voiceId": "df5c6ecc923ce75c",
-     "voiceSec": 3.73
+     "voice": "Thumb on D. Curve your fingers, like holding a little ball.",
+     "voiceId": "5b496bfeef100fb1",
+     "voiceSec": 4.07
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Thumb on C, five keys",
+     "parentCue": "Thumb on C, left of the two black keys",
+     "bpm": 70,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 1
+      },
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "F4",
+       "d": 1
+      },
+      {
+       "p": "G4",
+       "d": 2
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "listen",
@@ -635,7 +719,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 92,
-     "leadInSec": 3.64,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -793,18 +877,18 @@
        "from": 18
       }
      ],
-     "durationSec": 28,
-     "voice": "Let's listen. Watch for the glowing keys.",
-     "voiceId": "b8bdf2a204161ef7",
-     "voiceSec": 3.24
+     "durationSec": 27,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -1174,7 +1258,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 92,
-     "leadInSec": 3.64,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -1332,88 +1416,126 @@
        "from": 18
       }
      ],
-     "durationSec": 28,
-     "voice": "Let's listen. Watch for the glowing keys.",
-     "voiceId": "b8bdf2a204161ef7",
-     "voiceSec": 3.24
+     "durationSec": 27,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "You rowed together!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 10,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "beat",
     "secondary": [
-     "beat",
-     "together"
+     "together",
+     "space"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Periodicity (rowing pulse)",
+    "parentLine": "Feeling pulls that come evenly, one after another"
    },
-   "parentPrompt": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Sit facing your child, hold hands, and row back and forth to the beat.",
+   "childAction": "Row with your arms, then rest five fingers on five keys.",
+   "bridge": "Each pull of the oars is one beat; the boat glides between pulls.",
+   "celebrate": "Today you practiced: feeling the beat and finding the hand's home."
   },
   {
    "id": "michael-row-the-boat-c02",
    "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Stepping stones: C, E, G",
+   "goal": "Learn the first line, where C, E and G each skip one key.",
    "type": "phrase",
-   "durationSec": 275,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 276,
+   "parentTip": "Point to C, E and G; show how each one skips over a key.",
    "video": "michael-row-the-boat/michael-row-the-boat-c02.mp4",
    "thumb": "michael-row-the-boat/michael-row-the-boat-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Michael, Row the Boat Ashore",
-     "subcaption": "Class 2: Part 1",
+     "subcaption": "Class 2: Stepping stones: C, E, G",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today we play Michael, Row the Boat Ashore. Grown-up, sit beside the keys.",
      "voiceId": "6ce3abd20e10cd37",
      "voiceSec": 7.34
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 69,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Today: Michael, row the boat ashore",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: Michael, row the boat ashore.",
-     "voiceId": "acf11070733ac53e",
-     "voiceSec": 4.16
+     "caption": "Hop the stepping stones",
+     "parentCue": "point to C, E and G before you start.",
+     "durationSec": 8,
+     "voice": "Hop the stepping stones. Grown-up, point to C, E and G before you start.",
+     "voiceId": "6c44e889f1b0df0c",
+     "voiceSec": 6.03
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Stepping stones: C, E, G",
+     "parentCue": "Say 'hop, hop' as it plays",
+     "bpm": 76,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "G4",
+       "d": 2
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 69,
-     "leadInSec": 2.33,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -1492,10 +1614,10 @@
        "from": 7
       }
      ],
-     "durationSec": 18,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 19,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -1601,7 +1723,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 69,
-     "leadInSec": 3.79,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "C4",
@@ -1652,17 +1774,17 @@
        "from": 0
       }
      ],
-     "durationSec": 13,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 11,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 69,
-     "leadInSec": 2.95,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -1714,18 +1836,18 @@
        "from": 0
       }
      ],
-     "durationSec": 18,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 19,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -1741,7 +1863,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 69,
-     "leadInSec": 3.79,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "E4",
@@ -1774,17 +1896,17 @@
        "from": 0
       }
      ],
-     "durationSec": 13,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 12,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 69,
-     "leadInSec": 2.95,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -1818,18 +1940,18 @@
        "from": 0
       }
      ],
-     "durationSec": 15,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 16,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -1845,7 +1967,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 69,
-     "leadInSec": 2.95,
+     "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
       {
@@ -1925,18 +2047,18 @@
        "from": 7
       }
      ],
-     "durationSec": 28,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 29,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -1952,7 +2074,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 69,
-     "leadInSec": 2.95,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -2032,10 +2154,10 @@
        "from": 7
       }
      ],
-     "durationSec": 28,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 29,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "together",
@@ -2130,112 +2252,22 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 74,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Mi"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "chael"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "boat"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "shore"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Hal"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "le"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "lu"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 0
-      },
-      {
-       "lyric": "Hallelujah",
-       "from": 7
-      }
-     ],
-     "durationSec": 27,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 8,
+     "voice": "Shake, shake, shake your hands.",
+     "voiceId": "69041444bf86c15c",
+     "voiceSec": 2.85
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great stepping stones!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
@@ -2243,35 +2275,36 @@
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "space",
     "secondary": [
-     "form"
+     "fingers",
+     "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Interval pattern (skipping keys)",
+    "parentLine": "C, E and G each skip over one white key"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Point to C, E and G; show how each one skips over a key.",
+   "childAction": "Play C, E, G, hopping over one key each time.",
+   "bridge": "C, E, G are stepping stones across the river, one key apart.",
+   "celebrate": "Today you practiced: playing keys that skip over one."
   },
   {
    "id": "michael-row-the-boat-c03",
    "index": 3,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Hallelujah, hold for four",
+   "goal": "Learn the Hallelujah and hold its long note for four beats.",
    "type": "phrase",
-   "durationSec": 257,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 256,
+   "parentTip": "Count 'one, two, three, four' aloud while the long note sings.",
    "video": "michael-row-the-boat/michael-row-the-boat-c03.mp4",
    "thumb": "michael-row-the-boat/michael-row-the-boat-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Michael, Row the Boat Ashore",
-     "subcaption": "Class 3: Part 2",
+     "subcaption": "Class 3: Hallelujah, hold for four",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Michael, Row the Boat Ashore. Let's warm up our fingers.",
      "voiceId": "173a71aa6144adf1",
@@ -2279,19 +2312,52 @@
     },
     {
      "kind": "say",
-     "caption": "Today: Michael, row the boat ashore",
-     "parentCue": "Listen first, then copy",
+     "caption": "Let the boat glide",
+     "parentCue": "count one to four on the long note.",
      "durationSec": 7,
-     "voice": "Today we learn a new bit: Michael, row the boat ashore.",
-     "voiceId": "acf11070733ac53e",
-     "voiceSec": 4.16
+     "voice": "Let the boat glide. Grown-up, count one to four on the long note.",
+     "voiceId": "cfa6d20215436a21",
+     "voiceSec": 4.64
+    },
+    {
+     "kind": "beat",
+     "caption": "Glide for four",
+     "parentCue": "Count one to four on the long G",
+     "bpm": 80,
+     "leadInSec": 4.23,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Glide for four. Tap and count with me, one to four.",
+     "voiceId": "ea86bac2aa2f9c24",
+     "voiceSec": 3.83
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 69,
-     "leadInSec": 3.3,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "E4",
@@ -2343,9 +2409,9 @@
       }
      ],
      "durationSec": 12,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -2484,9 +2550,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -2502,7 +2568,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 69,
-     "leadInSec": 3.98,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -2555,9 +2621,9 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "together",
@@ -2624,9 +2690,9 @@
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -2642,7 +2708,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 69,
-     "leadInSec": 3.98,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -2695,896 +2761,13 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
      "caption": "Yes, that's it!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 5,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Mi"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "chael"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "boat"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "shore"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 83,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Mi"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "chael"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "boat"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "shore"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Mi"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "chael"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "boat"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "shore"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Mi"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "chael"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "boat"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "shore"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Big breath in and out",
-     "parentCue": "Breathe slowly together",
-     "durationSec": 6,
-     "voice": "Big breath in, and out.",
-     "voiceId": "67a43f157c55d975",
-     "voiceSec": 2.01
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    }
-   ],
-   "skill": {
-    "primary": "fingers",
-    "secondary": [
-     "form"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
-   },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
-  },
-  {
-   "id": "michael-row-the-boat-c04",
-   "index": 4,
-   "title": "Part 3",
-   "goal": "Learn the next part, one finger per key",
-   "type": "phrase",
-   "durationSec": 262,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "video": "michael-row-the-boat/michael-row-the-boat-c04.mp4",
-   "thumb": "michael-row-the-boat/michael-row-the-boat-c04.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Michael, Row the Boat Ashore",
-     "subcaption": "Class 4: Part 3",
-     "durationSec": 8,
-     "voice": "Welcome back. Time for Michael, Row the Boat Ashore. Sit up tall, feet still.",
-     "voiceId": "221f5158bd5d8455",
-     "voiceSec": 6.39
-    },
-    {
-     "kind": "say",
-     "caption": "Today: Hallelujah",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 5,
-     "voice": "Today we learn a new part. It sings Hallelujah.",
-     "voiceId": "c94256bbf058df5b",
-     "voiceSec": 3.81
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch the lights",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 69,
-     "leadInSec": 3.85,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hallelujah",
-       "from": 0
-      }
-     ],
-     "durationSec": 15,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Point to each key if needed",
-     "bpm": 69,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hallelujah",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hallelujah",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "praise",
-     "caption": "Well done!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hallelujah",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 83,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hallelujah",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "Yes, that's it!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hallelujah",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 5,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hallelujah",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 83,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hallelujah",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 69,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hallelujah",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
      "durationSec": 5,
      "voice": "That was real music, together.",
      "voiceId": "3da26e0fa12ffe07",
@@ -3592,6 +2775,560 @@
     },
     {
      "kind": "say",
+     "caption": "And again!",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 5,
+     "voice": "And again.",
+     "voiceId": "be3897a52d81cfa7",
+     "voiceSec": 1.2
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 69,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Mi"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "chael"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "row"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "boat"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 1,
+       "s": "shore"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Michael, row the boat ashore",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "together",
+     "caption": "Now together, a bit faster",
+     "parentCue": "Play the same keys an octave up",
+     "bpm": 83,
+     "leadInSec": 2.67,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Mi"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "chael"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "row"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "boat"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 1,
+       "s": "shore"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Michael, row the boat ashore",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Now together, a little faster.",
+     "voiceId": "5e2a76445306320d",
+     "voiceSec": 2.27
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5,
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
+    },
+    {
+     "kind": "say",
+     "caption": "Can you do it once more?",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 7,
+     "voice": "Let's try it once more.",
+     "voiceId": "d11a6527d0be0436",
+     "voiceSec": 1.85
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 69,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Mi"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "chael"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "row"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "boat"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 1,
+       "s": "shore"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Michael, row the boat ashore",
+       "from": 0
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "One more time.",
+     "voiceId": "b4c800d6a3120ebd",
+     "voiceSec": 1.34
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 69,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Mi"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "chael"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "row"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "boat"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 1,
+       "s": "shore"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Michael, row the boat ashore",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "praise",
+     "caption": "Great gliding, great counting!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
+    }
+   ],
+   "skill": {
+    "primary": "counting",
+    "secondary": [
+     "beat",
+     "listening"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Duration (counting four beats)",
+    "parentLine": "A long note lasts four beats; we count them together"
+   },
+   "parentPrompt": "Count 'one, two, three, four' aloud while the long note sings.",
+   "childAction": "Hold the long note while you count to four together.",
+   "bridge": "A long note is the boat gliding: hold it while we count to four.",
+   "celebrate": "Today you practiced: counting four beats on a long note."
+  },
+  {
+   "id": "michael-row-the-boat-c04",
+   "index": 4,
+   "title": "Float up, row home",
+   "goal": "Learn the last lines and hear one Hallelujah float, the other land home.",
+   "type": "phrase",
+   "durationSec": 265,
+   "parentTip": "Lift your hands on the first Hallelujah; land them in your lap on the second.",
+   "video": "michael-row-the-boat/michael-row-the-boat-c04.mp4",
+   "thumb": "michael-row-the-boat/michael-row-the-boat-c04.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Michael, Row the Boat Ashore",
+     "subcaption": "Class 4: Float up, row home",
+     "durationSec": 8,
+     "voice": "Welcome back. Time for Michael, Row the Boat Ashore. Sit up tall, feet still.",
+     "voiceId": "221f5158bd5d8455",
+     "voiceSec": 6.39
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 69,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Which one lands home?",
+     "parentCue": "lift your hands, then land them in your lap.",
+     "durationSec": 7,
+     "voice": "Which one lands home. Grown-up, lift your hands, then land them in your lap.",
+     "voiceId": "b2c11a311a9e028e",
+     "voiceSec": 5.34
+    },
+    {
+     "kind": "listen",
+     "caption": "Floating up, then landing home",
+     "parentCue": "Ask: which one sounds finished?",
+     "bpm": 80,
+     "leadInSec": 4.51,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 20,
+     "voice": "Floating up, then landing home. Point to the one that sounds finished.",
+     "voiceId": "11a91dbd3a75ed4b",
+     "voiceSec": 4.11
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Row ashore: E, D, C",
+     "parentCue": "Land your hands in your lap on C",
+     "bpm": 80,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 2
+      },
+      {
+       "p": "D4",
+       "d": 2
+      },
+      {
+       "p": "C4",
+       "d": 4
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the lights",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 69,
+     "leadInSec": 2.78,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Hal"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "le"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lu"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hallelujah",
+       "from": 0
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Point to each key if needed",
+     "bpm": 69,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Hal"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "le"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lu"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hallelujah",
+       "from": 0
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "say",
      "caption": "One more time",
      "parentCue": "Fingers ready on the lit keys",
      "durationSec": 6,
@@ -3658,73 +3395,446 @@
     },
     {
      "kind": "say",
-     "caption": "Wiggle your fingers!",
-     "parentCue": "Shake out both hands together",
+     "caption": "Again, nice and easy",
+     "parentCue": "Fingers ready on the lit keys",
      "durationSec": 6,
-     "voice": "Wiggle your fingers. Wiggle, wiggle.",
-     "voiceId": "640ef443bc914f6c",
-     "voiceSec": 2.99
+     "voice": "Again, nice and easy.",
+     "voiceId": "6f32e8daa73a3ba6",
+     "voiceSec": 2.2
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 69,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Hal"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "le"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lu"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hallelujah",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "together",
+     "caption": "Now together, a bit faster",
+     "parentCue": "Play the same keys an octave up",
+     "bpm": 83,
+     "leadInSec": 2.67,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Hal"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "le"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lu"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hallelujah",
+       "from": 0
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Now together, a little faster.",
+     "voiceId": "5e2a76445306320d",
+     "voiceSec": 2.27
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
+    },
+    {
+     "kind": "say",
+     "caption": "Let's do it again",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "Let's do it again.",
+     "voiceId": "5608b20dfb890c6e",
+     "voiceSec": 1.58
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 69,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Hal"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "le"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lu"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hallelujah",
+       "from": 0
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5,
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "say",
+     "caption": "And again!",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 5,
+     "voice": "And again.",
+     "voiceId": "be3897a52d81cfa7",
+     "voiceSec": 1.2
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 69,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Hal"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "le"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lu"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hallelujah",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "together",
+     "caption": "Now together, a bit faster",
+     "parentCue": "Play the same keys an octave up",
+     "bpm": 83,
+     "leadInSec": 2.67,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Hal"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "le"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lu"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hallelujah",
+       "from": 0
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Now together, a little faster.",
+     "voiceId": "5e2a76445306320d",
+     "voiceSec": 2.27
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
+    },
+    {
+     "kind": "say",
+     "caption": "Can you do it once more?",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 7,
+     "voice": "Let's try it once more.",
+     "voiceId": "d11a6527d0be0436",
+     "voiceSec": 1.85
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 69,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Hal"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "le"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lu"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hallelujah",
+       "from": 0
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "praise",
+     "caption": "You found home!",
+     "durationSec": 5,
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "listening",
     "secondary": [
-     "form"
+     "form",
+     "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Call and response (question, answer)",
+    "parentLine": "The first Hallelujah floats up; the second one lands home"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Lift your hands on the first Hallelujah; land them in your lap on the second.",
+   "childAction": "Hear which Hallelujah floats and which one lands home.",
+   "bridge": "The first Hallelujah stays on the water; the second rows ashore to C.",
+   "celebrate": "Today you practiced: hearing an ending that sounds finished."
   },
   {
    "id": "michael-row-the-boat-c05",
    "index": 5,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "Row all the way across",
+   "goal": "Play the whole song slowly, all four lines in order.",
    "type": "put-together",
-   "durationSec": 261,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 266,
+   "parentTip": "Sing the first word of each line if your child gets stuck; don't fix notes.",
    "video": "michael-row-the-boat/michael-row-the-boat-c05.mp4",
    "thumb": "michael-row-the-boat/michael-row-the-boat-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Michael, Row the Boat Ashore",
-     "subcaption": "Class 5: Put it together",
+     "subcaption": "Class 5: Row all the way across",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Michael, Row the Boat Ashore. Let's warm up our fingers.",
      "voiceId": "173a71aa6144adf1",
      "voiceSec": 6.08
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 69,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
+     "caption": "Row across the whole river",
+     "parentCue": "sing the next word if your child gets stuck.",
      "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "voice": "Row across the whole river. Grown-up, sing the next word if your child gets stuck.",
+     "voiceId": "d4cc221785154ed2",
+     "voiceSec": 5.82
     },
     {
      "kind": "say",
      "caption": "Fingers on the lit keys",
-     "parentCue": "Check the thumb is on C",
+     "parentCue": "Check the thumb is on D",
      "showKeys": [
       {
-       "p": "C4",
+       "p": "D4",
        "f": 1
       },
       {
@@ -3732,7 +3842,7 @@
        "f": 2
       },
       {
-       "p": "E4",
+       "p": "F4",
        "f": 3
       },
       {
@@ -3740,7 +3850,7 @@
        "f": 4
       },
       {
-       "p": "G4",
+       "p": "A4",
        "f": 5
       }
      ],
@@ -3750,11 +3860,59 @@
      "voiceSec": 2.14
     },
     {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 74,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
+    },
+    {
      "kind": "demo",
-     "caption": "Watch the whole song",
+     "caption": "Watch the first part",
      "parentCue": "Watch together",
      "bpm": 69,
-     "leadInSec": 2.51,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "C4",
@@ -3821,7 +3979,120 @@
        "d": 4,
        "f": 4,
        "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Michael, row the boat ashore",
+       "from": 0
       },
+      {
+       "lyric": "Hallelujah",
+       "from": 7
+      }
+     ],
+     "durationSec": 19,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 69,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Mi"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "chael"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "row"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "boat"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "a"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "shore"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Hal"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "le"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "lu"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "f": 4,
+       "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Michael, row the boat ashore",
+       "from": 0
+      },
+      {
+       "lyric": "Hallelujah",
+       "from": 7
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 69,
+     "leadInSec": 2.42,
+     "notes": [
       {
        "p": "E4",
        "d": 1,
@@ -3902,20 +4173,12 @@
       {
        "lyric": "Hallelujah",
        "from": 7
-      },
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 11
-      },
-      {
-       "lyric": "Hallelujah",
-       "from": 18
       }
      ],
-     "durationSec": 34,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 20,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -4268,25 +4531,26 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Take a breath between lines",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 78,
-     "leadInSec": 2.47,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 74,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "C4",
@@ -4329,314 +4593,22 @@
        "d": 2,
        "f": 4,
        "s": "shore"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Hal"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "le"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "lu"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "jah"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Mi"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "chael"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "boat"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "shore"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
       }
      ],
      "lines": [
       {
        "lyric": "Michael, row the boat ashore",
        "from": 0
-      },
-      {
-       "lyric": "Hallelujah",
-       "from": 7
-      },
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 11
-      },
-      {
-       "lyric": "Hallelujah",
-       "from": 18
       }
      ],
-     "durationSec": 31,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 18,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Take a breath between lines",
-     "durationSec": 5,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
-    },
-    {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 78,
-     "leadInSec": 2.47,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Mi"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "chael"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "boat"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "shore"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Hal"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "le"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "lu"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "jah"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Mi"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "chael"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "boat"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "shore"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 0
-      },
-      {
-       "lyric": "Hallelujah",
-       "from": 7
-      },
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 11
-      },
-      {
-       "lyric": "Hallelujah",
-       "from": 18
-      }
-     ],
-     "durationSec": 31,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You crossed the river!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
@@ -4646,33 +4618,34 @@
    "skill": {
     "primary": "form",
     "secondary": [
-     "patterns"
+     "patterns",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Alternation (call, answer, call, answer)",
+    "parentLine": "Four lines in order: row, Hallelujah, row, Hallelujah"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Sing the first word of each line if your child gets stuck; don't fix notes.",
+   "childAction": "Play the four lines in order, from shore to shore.",
+   "bridge": "Row, Hallelujah, row again, Hallelujah: four pulls to reach the shore.",
+   "celebrate": "Today you practiced: playing four lines in order."
   },
   {
    "id": "michael-row-the-boat-c06",
    "index": 6,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "The big oar pull",
+   "goal": "Practise the long-short spot slowly, then a little faster.",
    "type": "review",
-   "durationSec": 280,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 289,
+   "parentTip": "Play it slowly, saying 'looong-short', then try it a little faster.",
    "video": "michael-row-the-boat/michael-row-the-boat-c06.mp4",
    "thumb": "michael-row-the-boat/michael-row-the-boat-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Michael, Row the Boat Ashore",
-     "subcaption": "Class 6: Tricky spots",
+     "subcaption": "Class 6: The big oar pull",
      "durationSec": 8,
      "voice": "Hello again. It's Michael, Row the Boat Ashore time. Grown-up, sit close to help.",
      "voiceId": "09b2a6c889d97750",
@@ -4680,21 +4653,46 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
+     "caption": "Pull long, splash quick",
+     "parentCue": "say 'looong-short' as your child plays.",
      "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "voice": "Pull long, splash quick. Grown-up, say 'looong-short' as your child plays.",
+     "voiceId": "abafe63da5a92ba6",
+     "voiceSec": 5.3
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Long, short, then down",
+     "parentCue": "Say 'looong-short' as it plays",
+     "bpm": 66,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5
+      },
+      {
+       "p": "E4",
+       "d": 0.5
+      },
+      {
+       "p": "F4",
+       "d": 1
+      },
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 2
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "demo",
@@ -5032,9 +5030,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -5050,7 +5048,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 74,
-     "leadInSec": 3.42,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -5149,17 +5147,17 @@
       }
      ],
      "durationSec": 30,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -5175,7 +5173,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 83,
-     "leadInSec": 3.42,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -5273,18 +5271,18 @@
        "from": 7
       }
      ],
-     "durationSec": 27,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 28,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -5300,7 +5298,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 64,
-     "leadInSec": 3.42,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -5399,17 +5397,17 @@
       }
      ],
      "durationSec": 34,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -5425,7 +5423,7 @@
      "caption": "Your turn!",
      "parentCue": "The first part again",
      "bpm": 74,
-     "leadInSec": 3.42,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -5478,49 +5476,50 @@
       }
      ],
      "durationSec": 18,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Strong pulls, well done!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
+     "beat",
      "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Uneven rhythm (long, short)",
+    "parentLine": "One long note and one quick note, like a big oar pull"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Play it slowly, saying 'looong-short', then try it a little faster.",
+   "childAction": "Play G long and E quick, slowly first, then faster.",
+   "bridge": "Long-short is a big oar pull, then a quick splash.",
+   "celebrate": "Today you practiced: a long note and a quick note."
   },
   {
    "id": "michael-row-the-boat-c07",
    "index": 7,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
+   "title": "Steady oars, slow boat",
+   "goal": "Play the whole song slowly and evenly, counting four beats in each bar.",
    "type": "phrase",
-   "durationSec": 229,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
+   "durationSec": 235,
+   "parentTip": "Count 'one, two, three, four' softly while your child plays slowly.",
    "video": "michael-row-the-boat/michael-row-the-boat-c07.mp4",
    "thumb": "michael-row-the-boat/michael-row-the-boat-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Michael, Row the Boat Ashore",
-     "subcaption": "Class 7: Slow and steady",
+     "subcaption": "Class 7: Steady oars, slow boat",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Michael, Row the Boat Ashore. Let's warm up our fingers.",
      "voiceId": "173a71aa6144adf1",
@@ -5528,19 +5527,67 @@
     },
     {
      "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
-     "durationSec": 6,
-     "voice": "Slow and steady practice today.",
-     "voiceId": "aeb4883c0cf279a5",
-     "voiceSec": 2.42
+     "caption": "Slow and steady oars",
+     "parentCue": "count one to four softly as you go.",
+     "durationSec": 7,
+     "voice": "Slow and steady oars. Grown-up, count one to four softly as you go.",
+     "voiceId": "59105081ab985f9d",
+     "voiceSec": 4.59
+    },
+    {
+     "kind": "beat",
+     "caption": "Row and count to four",
+     "parentCue": "Count one to four out loud",
+     "bpm": 72,
+     "leadInSec": 3.36,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Row and count to four. Tap with me.",
+     "voiceId": "7dcee230a2974e80",
+     "voiceSec": 2.96
     },
     {
      "kind": "demo",
-     "caption": "Watch",
+     "caption": "Watch the first part",
      "parentCue": "Watch the finger numbers",
      "bpm": 64,
-     "leadInSec": 3.26,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "C4",
@@ -5607,7 +5654,120 @@
        "d": 4,
        "f": 4,
        "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Michael, row the boat ashore",
+       "from": 0
       },
+      {
+       "lyric": "Hallelujah",
+       "from": 7
+      }
+     ],
+     "durationSec": 20,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 64,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Mi"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "chael"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "row"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "boat"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "a"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "shore"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Hal"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "le"
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5,
+       "s": "lu"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "f": 4,
+       "s": "jah"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Michael, row the boat ashore",
+       "from": 0
+      },
+      {
+       "lyric": "Hallelujah",
+       "from": 7
+      }
+     ],
+     "durationSec": 31,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 64,
+     "leadInSec": 3.38,
+     "notes": [
       {
        "p": "E4",
        "d": 1,
@@ -5688,20 +5848,12 @@
       {
        "lyric": "Hallelujah",
        "from": 7
-      },
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 11
-      },
-      {
-       "lyric": "Hallelujah",
-       "from": 18
       }
      ],
-     "durationSec": 37,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "durationSec": 22,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -5876,184 +6028,25 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 64,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Mi"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "chael"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "boat"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "shore"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Hal"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "le"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "lu"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "jah"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Mi"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "chael"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "boat"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "shore"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Hal"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "le"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "lu"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "jah"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 0
-      },
-      {
-       "lyric": "Hallelujah",
-       "from": 7
-      },
-      {
-       "lyric": "Michael, row the boat ashore",
-       "from": 11
-      },
-      {
-       "lyric": "Hallelujah",
-       "from": 18
-      }
-     ],
-     "durationSec": 37,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Help only if stuck",
-     "bpm": 64,
-     "leadInSec": 2.95,
+     "parentCue": "The first part again",
+     "bpm": 74,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -6212,67 +6205,60 @@
        "from": 18
       }
      ],
-     "durationSec": 58,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "durationSec": 52,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "say",
      "caption": "Big breath in and out",
      "parentCue": "Breathe slowly together",
-     "durationSec": 10,
+     "durationSec": 9,
      "voice": "Big breath in, and out.",
      "voiceId": "67a43f157c55d975",
      "voiceSec": 2.01
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Slow and steady, bravo!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "beat",
     "secondary": [
-     "beat"
+     "counting",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Tempo control",
-    "parentLine": "Doing a task slowly and evenly"
+    "concept": "Steady pulse (four per bar)",
+    "parentLine": "Counting one to four keeps every note evenly spaced"
    },
-   "parentPrompt": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "childAction": "Play the tune slowly, every note even.",
-   "bridge": "Slow fingers, like a cat walking on tiptoe.",
-   "celebrate": "Today you practiced careful fingers and keeping a steady beat."
+   "parentPrompt": "Count 'one, two, three, four' softly while your child plays slowly.",
+   "childAction": "Play slowly while you count to four with your grown-up.",
+   "bridge": "Slow, even oars keep the boat straight across the river.",
+   "celebrate": "Today you practiced: playing evenly, counting to four."
   },
   {
    "id": "michael-row-the-boat-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Row with the music",
+   "goal": "Play the whole song along with the music at full speed.",
    "type": "play-along",
-   "durationSec": 271,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 262,
+   "parentTip": "Sit close and nod the beat; if a note is missed, keep going.",
    "video": "michael-row-the-boat/michael-row-the-boat-c08.mp4",
    "thumb": "michael-row-the-boat/michael-row-the-boat-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Michael, Row the Boat Ashore",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Row with the music",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Michael, Row the Boat Ashore. Let's warm up our fingers.",
      "voiceId": "173a71aa6144adf1",
@@ -6280,21 +6266,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
+     "caption": "Row along with the music",
+     "parentCue": "nod the beat and keep going, whatever happens.",
      "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "voice": "Row along with the music. Grown-up, nod the beat and keep going, whatever happens.",
+     "voiceId": "b902e3b7402d1400",
+     "voiceSec": 5.8
     },
     {
      "kind": "together",
@@ -6646,7 +6623,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 92,
-     "leadInSec": 4.12,
+     "leadInSec": 2.47,
      "notes": [
       {
        "p": "C4",
@@ -6804,18 +6781,18 @@
        "from": 18
       }
      ],
-     "durationSec": 28,
-     "voice": "Together now. Keep going, even after a slip.",
-     "voiceId": "6ef58099ced29d5c",
-     "voiceSec": 3.72
+     "durationSec": 27,
+     "voice": "Let's make music together.",
+     "voiceId": "ce491b22b46d8348",
+     "voiceSec": 2.07
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -6831,7 +6808,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 92,
-     "leadInSec": 4.12,
+     "leadInSec": 1.97,
      "notes": [
       {
        "p": "C4",
@@ -6989,18 +6966,18 @@
        "from": 18
       }
      ],
-     "durationSec": 28,
-     "voice": "Together now. Keep going, even after a slip.",
-     "voiceId": "6ef58099ced29d5c",
-     "voiceSec": 3.72
+     "durationSec": 26,
+     "voice": "Let's play together.",
+     "voiceId": "b9d074678a65d0e2",
+     "voiceSec": 1.57
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -7183,9 +7160,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -7368,26 +7345,25 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
+     "caption": "Can you do it once more?",
+     "parentCue": "Sing the words together",
+     "durationSec": 7,
+     "voice": "Let's try it once more.",
+     "voiceId": "d11a6527d0be0436",
+     "voiceSec": 1.85
     },
     {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 74,
-     "leadInSec": 3.24,
-     "gapBeats": 1,
+     "kind": "together",
+     "caption": "Play along",
+     "parentCue": "Sing while you play",
+     "bpm": 92,
+     "leadInSec": 3.0,
      "notes": [
       {
        "p": "C4",
@@ -7454,6 +7430,77 @@
        "d": 4,
        "f": 4,
        "s": "jah"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Mi"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "chael"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "row"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "boat"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 1,
+       "s": "shore"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Hal"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "le"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lu"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "jah"
       }
      ],
      "lines": [
@@ -7464,52 +7511,61 @@
       {
        "lyric": "Hallelujah",
        "from": 7
+      },
+      {
+       "lyric": "Michael, row the boat ashore",
+       "from": 11
+      },
+      {
+       "lyric": "Hallelujah",
+       "from": 18
       }
      ],
      "durationSec": 27,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
+     "voice": "Together time. Big smiles.",
+     "voiceId": "a441a4bce0e6e1e6",
+     "voiceSec": 2.6
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept rowing!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat",
+     "expression"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
+    "concept": "Synchrony (keeping up)",
     "parentLine": "Keeping your part going while the music moves on"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Sit close and nod the beat; if a note is missed, keep going.",
+   "childAction": "Play along with the music. Missed notes are fine; keep rowing!",
+   "bridge": "The music is the river; keep rowing and it carries you along.",
+   "celebrate": "Today you practiced: keeping up with the music, together."
   },
   {
    "id": "michael-row-the-boat-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Row ashore for teddy",
+   "goal": "Play the whole song for teddy, singing the Hallelujahs together.",
    "type": "concert",
-   "durationSec": 244,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 238,
+   "parentTip": "Sit teddy as the audience; sing the Hallelujahs together while your child plays.",
    "video": "michael-row-the-boat/michael-row-the-boat-c09.mp4",
    "thumb": "michael-row-the-boat/michael-row-the-boat-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Michael, Row the Boat Ashore",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: Row ashore for teddy",
      "durationSec": 9,
      "voice": "Hi, everyone. Let's play Michael, Row the Boat Ashore. Curved fingers, like holding a little ball.",
      "voiceId": "9c3a353a08e99623",
@@ -7517,21 +7573,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "Concert time for teddy!",
+     "parentCue": "sing the Hallelujahs together.",
+     "durationSec": 6,
+     "voice": "Concert time. Teddy is listening.",
+     "voiceId": "5981e6766e72b3d1",
+     "voiceSec": 2.73
     },
     {
      "kind": "together",
@@ -7890,9 +7937,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -8075,9 +8122,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -8260,9 +8307,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -8445,26 +8492,25 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
+     "caption": "Encore! Play it again",
+     "parentCue": "Clap, then play once more",
      "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
+     "voice": "Encore. Let's play it again.",
+     "voiceId": "c02b3b5c3f95778a",
+     "voiceSec": 2.5
     },
     {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 74,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
+     "kind": "together",
+     "caption": "Encore!",
+     "parentCue": "Sit tall and play along",
+     "bpm": 92,
+     "leadInSec": 3.04,
      "notes": [
       {
        "p": "C4",
@@ -8531,6 +8577,77 @@
        "d": 4,
        "f": 4,
        "s": "jah"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Mi"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "chael"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "row"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "boat"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 1,
+       "s": "shore"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Hal"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "le"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "lu"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "jah"
       }
      ],
      "lines": [
@@ -8541,20 +8658,28 @@
       {
        "lyric": "Hallelujah",
        "from": 7
+      },
+      {
+       "lyric": "Michael, row the boat ashore",
+       "from": 11
+      },
+      {
+       "lyric": "Hallelujah",
+       "from": 18
       }
      ],
      "durationSec": 27,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "voice": "Encore. Here we go.",
+     "voiceId": "c4c88c4ddd375061",
+     "voiceSec": 2.64
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, you rowed ashore!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
@@ -8565,13 +8690,13 @@
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Call and response",
+    "parentLine": "One part calls, another answers; together they make the song"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; sing the Hallelujahs together while your child plays.",
+   "childAction": "Play the whole song for teddy, then take a big bow.",
+   "bridge": "Push off from the shore, row across, and land home on C.",
+   "celebrate": "Today you practiced: playing a whole song, call and answer."
   }
  ]
 }

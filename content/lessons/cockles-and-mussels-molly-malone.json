@@ -2,27 +2,55 @@
  "songId": "cockles-and-mussels-molly-malone",
  "title": "Molly Malone (Cockles and Mussels)",
  "ageGroup": "5-6",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and playing together, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices a hand home from B, patterns that step up, a song sung twice, counting in threes and two-hand teamwork, with a Dublin street song.",
  "skillMap": [
   {
    "id": "fingers",
    "label": "Finger control",
    "value": 1.0,
-   "classes": 6,
+   "classes": 2,
    "total": 9
   },
   {
    "id": "form",
    "label": "Song shape",
-   "value": 0.33,
+   "value": 1.0,
    "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.5,
+   "classes": 1,
    "total": 9
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.17,
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -30,27 +58,65 @@
  "icon": "fish",
  "key": "C",
  "timeSignature": "3/4",
- "totalSec": 1972,
+ "totalSec": 1973,
  "classes": [
   {
    "id": "cockles-and-mussels-molly-malone-c01",
    "index": 1,
-   "title": "Hands ready, first half",
+   "title": "Thumb on B, next to C",
    "goal": "Find the hand position and learn the first half",
    "type": "hand-position",
-   "durationSec": 213,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 211,
+   "parentTip": "Find C left of the two black keys; help your child set the thumb one key left.",
    "video": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c01.mp4",
    "thumb": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Molly Malone (Cockles and Mussels)",
-     "subcaption": "Class 1: Hands ready, first half",
+     "subcaption": "Class 1: Thumb on B, next to C",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Molly Malone (Cockles and Mussels). Slow and steady wins.",
      "voiceId": "6839e187fbe364ff",
      "voiceSec": 6.85
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Find B, just left of C",
+     "parentCue": "Point to C first, then the key to its left",
+     "durationSec": 8,
+     "voice": "Find B, just left of C. Grown-up, point to C first, then the key to its left.",
+     "voiceId": "93c4f5b3b2c1b25b",
+     "voiceSec": 6.4
     },
     {
      "kind": "say",
@@ -70,7 +136,7 @@
        "f": 3
       },
       {
-       "p": "C4",
+       "p": "E4",
        "f": 4
       },
       {
@@ -84,20 +150,50 @@
      "voiceSec": 4.37
     },
     {
-     "kind": "say",
-     "caption": "Today: In Dublin's fair city",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6,
-     "voice": "Today we learn a new bit: In Dublin's fair city.",
-     "voiceId": "2b1c81c12b372088",
-     "voiceSec": 4.46
+     "kind": "your_turn",
+     "caption": "One finger, one key",
+     "parentCue": "Say the finger numbers together, one to five",
+     "bpm": 66,
+     "leadInSec": 4.36,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Your turn. One finger on each key, one by one.",
+     "voiceId": "be3fc90a0fdacab7",
+     "voiceSec": 3.96
     },
     {
      "kind": "demo",
-     "caption": "Watch the lights",
+     "caption": "Watch the first part",
      "parentCue": "Watch the finger numbers",
      "bpm": 75,
-     "leadInSec": 3.47,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "G3",
@@ -176,7 +272,132 @@
        "d": 2,
        "f": 3,
        "s": "ty"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In Dublin's fair city",
+       "from": 0
       },
+      {
+       "lyric": "where the girls are so pretty",
+       "from": 6
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 75,
+     "leadInSec": 3.38,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "Dub"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "lin's"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "fair"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "cit"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "y"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "where"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 3,
+       "s": "girls"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "are"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "so"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "pret"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 3,
+       "s": "ty"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In Dublin's fair city",
+       "from": 0
+      },
+      {
+       "lyric": "where the girls are so pretty",
+       "from": 6
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. I'll wait for each note.",
+     "voiceId": "ef1c63536da8b5d7",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 75,
+     "leadInSec": 3.38,
+     "notes": [
       {
        "p": "E4",
        "d": 1,
@@ -288,26 +509,18 @@
      ],
      "lines": [
       {
-       "lyric": "In Dublin's fair city",
+       "lyric": "I first set my eyes on sweet Molly Malone",
        "from": 0
       },
       {
-       "lyric": "where the girls are so pretty",
-       "from": 6
-      },
-      {
-       "lyric": "I first set my eyes on sweet Molly Malone",
-       "from": 13
-      },
-      {
        "lyric": "As she wheeled her wheelbarrow",
-       "from": 24
+       "from": 11
       }
      ],
-     "durationSec": 37,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
+     "durationSec": 23,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -529,74 +742,19 @@
     },
     {
      "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 75,
-     "leadInSec": 3.47,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "In"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "Dub"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "lin's"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "fair"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "cit"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "y"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "In Dublin's fair city",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 75,
-     "leadInSec": 3.83,
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 4.26,
      "gapBeats": 1,
      "notes": [
       {
@@ -643,226 +801,165 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
+     "voice": "Your turn. Keep your fingers close to the keys.",
+     "voiceId": "d35facfe41c89462",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "Hand home found!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 75,
-     "leadInSec": 3.47,
-     "notes": [
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "where"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "girls"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "so"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "pret"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "ty"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "where the girls are so pretty",
-       "from": 0
-      }
-     ],
-     "durationSec": 13,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 75,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "where"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "girls"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "so"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "pret"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "ty"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "where the girls are so pretty",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 5,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "space",
     "secondary": [
-     "space"
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Spatial anchoring",
-    "parentLine": "Finding a home spot for the hand"
+    "concept": "Spatial anchoring with a landmark",
+    "parentLine": "Using C and the black keys to place the whole hand"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Put one finger on each lit key.",
-   "bridge": "Fingers curved, like holding a little ball.",
-   "celebrate": "Today you practiced careful fingers and finding the way on the keys."
+   "parentPrompt": "Find C left of the two black keys; help your child set the thumb one key left.",
+   "childAction": "Thumb on B, then one finger on each key up to F.",
+   "bridge": "C sits left of the two black keys; B is the doorstep just before it.",
+   "celebrate": "Today you practiced: placing the whole hand with a landmark."
   },
   {
    "id": "cockles-and-mussels-molly-malone-c02",
    "index": 2,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Same shape, one step up",
+   "goal": "Hear and play the second line: the first line's shape, one key higher.",
    "type": "phrase",
-   "durationSec": 211,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 208,
+   "parentTip": "Play line one, then line two; ask your child what changed and what stayed.",
    "video": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c02.mp4",
    "thumb": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Molly Malone (Cockles and Mussels)",
-     "subcaption": "Class 2: Part 2",
+     "subcaption": "Class 2: Same shape, one step up",
      "durationSec": 8,
      "voice": "Welcome back. Time for Molly Malone (Cockles and Mussels). Sit tall, in the middle of the piano.",
      "voiceId": "ed8ac7256536bc2c",
      "voiceSec": 6.97
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Today: through streets broad and narrow",
-     "parentCue": "Listen first, then copy",
+     "caption": "Same shape, one step up",
+     "parentCue": "ask what stayed the same, what moved",
      "durationSec": 7,
-     "voice": "Today we learn a new bit: through streets broad and narrow.",
-     "voiceId": "442a90f4bec20928",
-     "voiceSec": 4.27
+     "voice": "Same shape, one step up. Grown-up, ask what stayed the same, what moved.",
+     "voiceId": "f1f6d04151356138",
+     "voiceSec": 5.88
+    },
+    {
+     "kind": "listen",
+     "caption": "On C, then one step up",
+     "parentCue": "Point one key right when line two starts",
+     "bpm": 72,
+     "leadInSec": 4.3,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "rest": true,
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 19,
+     "voice": "On C, then one step up. Point when it moves.",
+     "voiceId": "5c060578d4d93e6e",
+     "voiceSec": 3.9
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "B3",
@@ -984,9 +1081,9 @@
       }
      ],
      "durationSec": 21,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -1134,7 +1231,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 80,
-     "leadInSec": 3.26,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "B3",
@@ -1179,17 +1276,17 @@
        "from": 0
       }
      ],
-     "durationSec": 11,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "durationSec": 10,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 80,
-     "leadInSec": 4.26,
+     "leadInSec": 4.41,
      "gapBeats": 1,
      "notes": [
       {
@@ -1236,17 +1333,17 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Your turn. Keep your fingers close to the keys.",
-     "voiceId": "d35facfe41c89462",
-     "voiceSec": 3.86
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -1262,7 +1359,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 80,
-     "leadInSec": 3.26,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "E4",
@@ -1344,16 +1441,16 @@
       }
      ],
      "durationSec": 16,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 80,
-     "leadInSec": 4.26,
+     "leadInSec": 3.38,
      "gapBeats": 1,
      "notes": [
       {
@@ -1435,212 +1532,110 @@
        "from": 0
       }
      ],
-     "durationSec": 26,
-     "voice": "Your turn. Keep your fingers close to the keys.",
-     "voiceId": "d35facfe41c89462",
-     "voiceSec": 3.86
+     "durationSec": 25,
+     "voice": "Your turn. I'll wait for each note.",
+     "voiceId": "ef1c63536da8b5d7",
+     "voiceSec": 2.98
     },
     {
      "kind": "praise",
      "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 80,
-     "leadInSec": 4.26,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "streets"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "broad"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "nar"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "cry"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "coc"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "kles"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "mus"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "sels"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "live"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "live"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 2,
-       "s": "o"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "through streets broad and narrow",
-       "from": 0
-      },
-      {
-       "lyric": "crying cockles and mussels, alive, alive-o",
-       "from": 6
-      }
-     ],
-     "durationSec": 36,
-     "voice": "Your turn. Keep your fingers close to the keys.",
-     "voiceId": "d35facfe41c89462",
-     "voiceSec": 3.86
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 10,
+     "voice": "Shake, shake, shake your hands.",
+     "voiceId": "69041444bf86c15c",
+     "voiceSec": 2.85
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You spotted the step up!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "patterns",
     "secondary": [
-     "form"
+     "listening",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Sequence (pattern shifted up)",
+    "parentLine": "The same little tune, moved one key higher"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Play line one, then line two; ask your child what changed and what stayed.",
+   "childAction": "Play the C pattern, then the same shape on D.",
+   "bridge": "C, C, C, hop to E, back to C; then the same walk one key up.",
+   "celebrate": "Today you practiced: spotting a pattern moved one key higher."
   },
   {
    "id": "cockles-and-mussels-molly-malone-c03",
    "index": 3,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "One tune, sung twice",
+   "goal": "Play the whole song slowly and find where the tune starts again.",
    "type": "put-together",
-   "durationSec": 229,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 253,
+   "parentTip": "When the tune starts over at 'As she wheeled', say 'again!' and clap.",
    "video": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c03.mp4",
    "thumb": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Molly Malone (Cockles and Mussels)",
-     "subcaption": "Class 3: Put it together",
+     "subcaption": "Class 3: One tune, sung twice",
      "durationSec": 9,
      "voice": "Hello, pianists. Today we play Molly Malone (Cockles and Mussels). Grown-up, sit beside the keys.",
      "voiceId": "8ae69f475bbc8d8c",
      "voiceSec": 7.4
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
+     "caption": "One tune, sung twice",
+     "parentCue": "Say 'again!' when the tune starts over",
      "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "voice": "One tune, sung twice. Grown-up, say 'again!' when the tune starts over.",
+     "voiceId": "0b02b8178e8dce55",
+     "voiceSec": 5.72
     },
     {
      "kind": "say",
@@ -1660,7 +1655,7 @@
        "f": 3
       },
       {
-       "p": "C4",
+       "p": "E4",
        "f": 4
       },
       {
@@ -1674,11 +1669,54 @@
      "voiceSec": 2.14
     },
     {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 80,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
+    },
+    {
      "kind": "demo",
-     "caption": "Watch the whole song",
+     "caption": "Watch the first part",
      "parentCue": "Watch together",
      "bpm": 75,
-     "leadInSec": 2.51,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "G3",
@@ -1823,7 +1861,206 @@
        "d": 3,
        "f": 4,
        "s": "lone"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In Dublin's fair city",
+       "from": 0
       },
+      {
+       "lyric": "where the girls are so pretty",
+       "from": 6
+      },
+      {
+       "lyric": "I first set my eyes on sweet Molly Malone",
+       "from": 13
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 75,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "Dub"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "lin's"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "fair"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "cit"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "y"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "where"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 3,
+       "s": "girls"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "are"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "so"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "pret"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 3,
+       "s": "ty"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "I"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "first"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "set"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "my"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "eyes"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "on"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "sweet"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Mol"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ly"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "Ma"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 4,
+       "s": "lone"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In Dublin's fair city",
+       "from": 0
+      },
+      {
+       "lyric": "where the girls are so pretty",
+       "from": 6
+      },
+      {
+       "lyric": "I first set my eyes on sweet Molly Malone",
+       "from": 13
+      }
+     ],
+     "durationSec": 49,
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 75,
+     "leadInSec": 3.38,
+     "notes": [
       {
        "p": "G3",
        "d": 0.5,
@@ -1977,34 +2214,22 @@
      ],
      "lines": [
       {
-       "lyric": "In Dublin's fair city",
+       "lyric": "As she wheeled her wheelbarrow",
        "from": 0
       },
       {
-       "lyric": "where the girls are so pretty",
-       "from": 6
-      },
-      {
-       "lyric": "I first set my eyes on sweet Molly Malone",
-       "from": 13
-      },
-      {
-       "lyric": "As she wheeled her wheelbarrow",
-       "from": 24
-      },
-      {
        "lyric": "through streets broad and narrow",
-       "from": 31
+       "from": 7
       },
       {
        "lyric": "crying cockles and mussels, alive, alive-o",
-       "from": 37
+       "from": 13
       }
      ],
-     "durationSec": 53,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 29,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -2341,386 +2566,45 @@
      "voiceSec": 2.58
     },
     {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Take a breath between lines",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 85,
-     "leadInSec": 4.12,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "In"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "Dub"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "lin's"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "fair"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "cit"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "where"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "girls"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "so"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "pret"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "ty"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "I"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "first"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "set"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "eyes"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "on"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "sweet"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Mol"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "Ma"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 4,
-       "s": "lone"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "As"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "she"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "wheeled"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "her"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "wheel"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "bar"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "row"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "streets"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "broad"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "nar"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "cry"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "coc"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "kles"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "mus"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "sels"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "live"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "live"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 2,
-       "s": "o"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "In Dublin's fair city",
-       "from": 0
-      },
-      {
-       "lyric": "where the girls are so pretty",
-       "from": 6
-      },
-      {
-       "lyric": "I first set my eyes on sweet Molly Malone",
-       "from": 13
-      },
-      {
-       "lyric": "As she wheeled her wheelbarrow",
-       "from": 24
-      },
-      {
-       "lyric": "through streets broad and narrow",
-       "from": 31
-      },
-      {
-       "lyric": "crying cockles and mussels, alive, alive-o",
-       "from": 37
-      }
-     ],
-     "durationSec": 49,
-     "voice": "Together now. Keep going, even after a slip.",
-     "voiceId": "6ef58099ced29d5c",
-     "voiceSec": 3.72
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found the repeat!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
-     "patterns"
+     "patterns",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Pattern repetition (A A form)",
+    "parentLine": "The second half is the first half again, new words"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "When the tune starts over at 'As she wheeled', say 'again!' and clap.",
+   "childAction": "Play slowly and say 'again!' when the tune starts over.",
+   "bridge": "The song is two trips down the same street: same turns, new words.",
+   "celebrate": "Today you practiced: finding where a song repeats."
   },
   {
    "id": "cockles-and-mussels-molly-malone-c04",
    "index": 4,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Alive, alive-o",
+   "goal": "Practise the ending slowly: down past C to B, then back home.",
    "type": "review",
-   "durationSec": 242,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 234,
+   "parentTip": "Say the finger numbers with your child: four, three, two, one, two.",
    "video": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c04.mp4",
    "thumb": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Molly Malone (Cockles and Mussels)",
-     "subcaption": "Class 4: Tricky spots",
+     "subcaption": "Class 4: Alive, alive-o",
      "durationSec": 9,
      "voice": "Hello again. Molly Malone (Cockles and Mussels) is waiting for us. Shoulders soft, fingers ready.",
      "voiceId": "c71cf536d9eb070b",
@@ -2728,21 +2612,51 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
-     "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "caption": "Watch slowly",
+     "parentCue": "Say the finger numbers aloud together",
+     "durationSec": 5,
+     "voice": "Watch me, nice and slow.",
+     "voiceId": "54fd49a18bfae05f",
+     "voiceSec": 1.85
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Alive, alive-o: back home",
+     "parentCue": "Sing 'alive, alive-o' slowly with the keys",
+     "bpm": 60,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 2
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
     },
     {
      "kind": "demo",
@@ -3014,9 +2928,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -3117,9 +3031,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -3135,7 +3049,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 90,
-     "leadInSec": 3.33,
+     "leadInSec": 3.38,
      "gapBeats": 1,
      "notes": [
       {
@@ -3212,9 +3126,9 @@
       }
      ],
      "durationSec": 22,
-     "voice": "Your turn. Slow and steady wins.",
-     "voiceId": "1641c55b696104d1",
-     "voiceSec": 2.93
+     "voice": "Your turn. I'll wait for each note.",
+     "voiceId": "ef1c63536da8b5d7",
+     "voiceSec": 2.98
     },
     {
      "kind": "praise",
@@ -3238,7 +3152,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 70,
-     "leadInSec": 3.33,
+     "leadInSec": 4.26,
      "gapBeats": 1,
      "notes": [
       {
@@ -3314,132 +3228,115 @@
        "from": 0
       }
      ],
-     "durationSec": 27,
-     "voice": "Your turn. Slow and steady wins.",
-     "voiceId": "1641c55b696104d1",
-     "voiceSec": 2.93
+     "durationSec": 28,
+     "voice": "Your turn. Keep your fingers close to the keys.",
+     "voiceId": "d35facfe41c89462",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 80,
-     "leadInSec": 3.33,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "In"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "Dub"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "lin's"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "fair"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "cit"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "y"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "In Dublin's fair city",
-       "from": 0
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Your turn. Slow and steady wins.",
-     "voiceId": "1641c55b696104d1",
-     "voiceSec": 2.93
+     "caption": "Wiggle your fingers!",
+     "parentCue": "Shake out both hands together",
+     "durationSec": 5,
+     "voice": "Wiggle your fingers. Wiggle, wiggle.",
+     "voiceId": "640ef443bc914f6c",
+     "voiceSec": 2.99
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Home again, well done!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "patterns"
+     "patterns",
+     "space"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Lower neighbour (approach from below)",
+    "parentLine": "Stepping just past home, then coming back to it"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Say the finger numbers with your child: four, three, two, one, two.",
+   "childAction": "Walk down to your thumb on B, then step home to C.",
+   "bridge": "Molly walks one door past home to B, then turns back to C.",
+   "celebrate": "Today you practiced: a step past home and back."
   },
   {
    "id": "cockles-and-mussels-molly-malone-c05",
    "index": 5,
-   "title": "Left hand helper",
-   "goal": "Play one low left hand note at the start of each bar",
+   "title": "Low C, low G: the wheel",
+   "goal": "Play one low left hand note, C or G, on the first beat of each bar.",
    "type": "left-hand",
-   "durationSec": 223,
-   "parentTip": "You play the tune, your child plays the low notes. Count bars out loud to help.",
+   "durationSec": 219,
+   "parentTip": "Play the tune; count one-two-three each bar, loud on one, for your child's low note.",
    "video": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c05.mp4",
    "thumb": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Molly Malone (Cockles and Mussels)",
-     "subcaption": "Class 5: Left hand helper",
+     "subcaption": "Class 5: Low C, low G: the wheel",
      "durationSec": 8,
      "voice": "Hello, friends. Today it's Molly Malone (Cockles and Mussels). Both hands on your knees to start.",
      "voiceId": "83dc833b80541072",
      "voiceSec": 6.84
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "The wheel turns on one",
+     "parentCue": "count to three, loud on one",
+     "durationSec": 7,
+     "voice": "The wheel turns on one. Grown-up, count to three, loud on one.",
+     "voiceId": "d2ab5027438a8fcd",
+     "voiceSec": 5.04
+    },
+    {
      "kind": "say",
      "caption": "Meet your left hand!",
-     "parentCue": "Left hand sits low on the left side",
+     "parentCue": "Low on the left: C and G, one per bar",
      "showKeys": [
       {
        "p": "C3",
@@ -3456,30 +3353,44 @@
      "voiceSec": 3.05
     },
     {
-     "kind": "say",
-     "caption": "One low note at the start of each bar",
-     "parentCue": "The low notes are C and G",
-     "showKeys": [
+     "kind": "listen",
+     "caption": "One two three, one two three",
+     "parentCue": "Say one loud with each low note",
+     "bpm": 72,
+     "leadInSec": 4.0,
+     "notes": [
       {
        "p": "C3",
-       "f": 5
+       "d": 3,
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 3,
+       "who": "parent"
       },
       {
        "p": "G3",
-       "f": 1
+       "d": 3,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 3,
+       "who": "parent"
       }
      ],
-     "durationSec": 9,
-     "voice": "Left hand plays one low note at the start of each bar.",
-     "voiceId": "316eb49e5ef32058",
-     "voiceSec": 3.68
+     "durationSec": 16,
+     "voice": "One, two, three. Nod your head on every one.",
+     "voiceId": "3ef1c1b17efd50cb",
+     "voiceSec": 3.6
     },
     {
      "kind": "demo",
-     "caption": "Watch the low notes",
+     "caption": "Watch the first part",
      "parentCue": "Count one, two, three, four",
      "bpm": 75,
-     "leadInSec": 2.05,
+     "leadInSec": 2.8,
      "notes": [
       {
        "rest": true,
@@ -3538,7 +3449,92 @@
        "d": 3.0,
        "f": 1,
        "h": "L"
+      }
+     ],
+     "durationSec": 27,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 75,
+     "leadInSec": 4.26,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "rest": true,
+       "d": 1.0
       },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 3.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 3.0,
+       "f": 1,
+       "h": "L"
+      }
+     ],
+     "durationSec": 36,
+     "voice": "Your turn. Keep your fingers close to the keys.",
+     "voiceId": "d35facfe41c89462",
+     "voiceSec": 3.86
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Count one, two, three, four",
+     "bpm": 75,
+     "leadInSec": 2.32,
+     "notes": [
       {
        "p": "C3",
        "d": 3.0,
@@ -3606,10 +3602,10 @@
        "h": "L"
       }
      ],
-     "durationSec": 53,
-     "voice": "Watch the low notes.",
-     "voiceId": "f59982b35009de01",
-     "voiceSec": 1.65
+     "durationSec": 31,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
@@ -3750,552 +3746,87 @@
      "voiceSec": 2.59
     },
     {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "You play the tune, child plays low notes",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "together",
-     "caption": "Low notes with the tune",
-     "parentCue": "You play the blue keys",
-     "bpm": 75,
-     "leadInSec": 2.78,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "In",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "Dub",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "lin's",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "fair",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "cit",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "y",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "where",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "girls",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "are",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "so",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "pret",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "ty",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "first",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "set",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "eyes",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "sweet",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Mol",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 4,
-       "s": "lone",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "As",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "she",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "wheeled",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "her",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "wheel",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "bar",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "row",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "through",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "streets",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "broad",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "and",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "nar",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "row",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "cry",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "coc",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "kles",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "mus",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "sels",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "live",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "live",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 2,
-       "s": "o",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "In Dublin's fair city",
-       "from": 0
-      },
-      {
-       "lyric": "where the girls are so pretty",
-       "from": 6
-      },
-      {
-       "lyric": "I first set my eyes on sweet Molly Malone",
-       "from": 13
-      },
-      {
-       "lyric": "As she wheeled her wheelbarrow",
-       "from": 24
-      },
-      {
-       "lyric": "through streets broad and narrow",
-       "from": 31
-      },
-      {
-       "lyric": "crying cockles and mussels, alive, alive-o",
-       "from": 37
-      }
-     ],
-     "durationSec": 54,
-     "voice": "Left hand low notes, with the tune.",
-     "voiceId": "189d258c6ca31d51",
-     "voiceSec": 2.38
-    },
-    {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "Every one, right on time!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 6,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "beat",
     "secondary": [
+     "counting",
      "space"
     ]
    },
    "mathTarget": {
-    "concept": "Bilateral mapping",
-    "parentLine": "Giving the other hand its own job"
+    "concept": "Grouping in threes (waltz bar)",
+    "parentLine": "Each bar has three beats; the left hand plays on one"
    },
-   "parentPrompt": "You play the tune, your child plays the low notes. Count bars out loud to help.",
-   "childAction": "Play the low notes with the left hand.",
-   "bridge": "The left hand plays the deep low notes, like a big drum.",
-   "celebrate": "Today you practiced careful fingers and finding the way on the keys."
+   "parentPrompt": "Play the tune; count one-two-three each bar, loud on one, for your child's low note.",
+   "childAction": "Left hand plays low C or low G on every one.",
+   "bridge": "Low C is C in a lower house; low G lives a few doors up.",
+   "celebrate": "Today you practiced: counting three beats and playing on one."
   },
   {
    "id": "cockles-and-mussels-molly-malone-c06",
    "index": 6,
-   "title": "Hands together, slowly",
-   "goal": "Play the tune with a low left hand note on each bar",
+   "title": "The wheelbarrow rolls",
+   "goal": "Play the tune with a low left hand note on each bar, very slowly.",
    "type": "hands-together",
-   "durationSec": 217,
-   "parentTip": "Two hands is hard work. Go very slowly and stop while it's still fun.",
+   "durationSec": 221,
+   "parentTip": "Rest a hand on your child's left shoulder and say 'wheel' on each low note.",
    "video": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c06.mp4",
    "thumb": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Molly Malone (Cockles and Mussels)",
-     "subcaption": "Class 6: Hands together, slowly",
+     "subcaption": "Class 6: The wheelbarrow rolls",
      "durationSec": 9,
      "voice": "Hello again. Molly Malone (Cockles and Mussels) is waiting for us. Shoulders soft, fingers ready.",
      "voiceId": "c71cf536d9eb070b",
      "voiceSec": 7.05
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "The wheelbarrow rolls",
+     "parentCue": "Say 'wheel' softly on each low note",
+     "durationSec": 7,
+     "voice": "The wheelbarrow rolls. Grown-up, say 'wheel' softly on each low note.",
+     "voiceId": "226b696f28fa77c4",
+     "voiceSec": 5.04
     },
     {
      "kind": "say",
@@ -4315,7 +3846,7 @@
        "f": 3
       },
       {
-       "p": "C4",
+       "p": "E4",
        "f": 4
       },
       {
@@ -4324,16 +3855,50 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Now both hands together, very slowly.",
-     "voiceId": "067f3e698afdefd5",
-     "voiceSec": 2.68
+     "voice": "Today both hands play together, very slowly.",
+     "voiceId": "480919ea0ce23ca6",
+     "voiceSec": 3.01
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Left hand first",
+     "parentCue": "Point to each low key",
+     "bpm": 70,
+     "leadInSec": 4.44,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 2,
+       "f": 5
+      },
+      {
+       "p": "C3",
+       "d": 2,
+       "f": 5
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Left hand first. Play each low key when it glows.",
+     "voiceId": "999b53a367c0de16",
+     "voiceSec": 4.04
     },
     {
      "kind": "demo",
-     "caption": "Watch both hands",
+     "caption": "Watch the first part",
      "parentCue": "Low note and tune start together",
      "bpm": 65,
-     "leadInSec": 1.99,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "G3",
@@ -4436,7 +4001,156 @@
        "d": 2,
        "f": 3,
        "s": "ty"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In Dublin's fair city",
+       "from": 0
       },
+      {
+       "lyric": "where the girls are so pretty",
+       "from": 6
+      }
+     ],
+     "durationSec": 21,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 65,
+     "leadInSec": 4.41,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "In"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 4,
+       "s": "Dub",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "lin's"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "fair",
+       "lh": {
+        "p": "C3",
+        "d": 3.0,
+        "f": 5,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "cit"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 2,
+       "s": "y"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "where"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 3,
+       "s": "girls",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "are"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "so",
+       "lh": {
+        "p": "G3",
+        "d": 3.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "pret"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 3,
+       "s": "ty"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "In Dublin's fair city",
+       "from": 0
+      },
+      {
+       "lyric": "where the girls are so pretty",
+       "from": 6
+      }
+     ],
+     "durationSec": 34,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Low note and tune start together",
+     "bpm": 65,
+     "leadInSec": 2.8,
+     "notes": [
       {
        "p": "E4",
        "d": 1,
@@ -4524,29 +4238,21 @@
      ],
      "lines": [
       {
-       "lyric": "In Dublin's fair city",
-       "from": 0
-      },
-      {
-       "lyric": "where the girls are so pretty",
-       "from": 6
-      },
-      {
        "lyric": "I first set my eyes on sweet Molly Malone",
-       "from": 13
+       "from": 0
       }
      ],
-     "durationSec": 33,
-     "voice": "Watch both hands.",
-     "voiceId": "b9e8c430fcb997a7",
-     "voiceSec": 1.59
+     "durationSec": 18,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
      "caption": "Your turn! Both hands",
      "parentCue": "Slow is perfect",
      "bpm": 65,
-     "leadInSec": 3.9,
+     "leadInSec": 3.81,
      "gapBeats": 1,
      "notes": [
       {
@@ -4751,446 +4457,9 @@
       }
      ],
      "durationSec": 57,
-     "voice": "Your turn. Both hands, nice and slow.",
-     "voiceId": "7c39a0349582d84b",
-     "voiceSec": 3.5
-    },
-    {
-     "kind": "together",
-     "caption": "Together, slowly",
-     "parentCue": "Play along slowly",
-     "bpm": 65,
-     "leadInSec": 2.25,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "In"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "Dub",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "lin's"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "fair",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "cit"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "y"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "where"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "girls",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "so",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "pret"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "ty"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "I"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "first"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "set",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "eyes"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "on"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "sweet"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Mol",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "Ma"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 4,
-       "s": "lone",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "As",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "she"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "wheeled"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "her",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "wheel"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "bar"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "row",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "streets",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "broad"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "and",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "nar"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "cry"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "coc",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "kles"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "mus",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "sels"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "live",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "live"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 2,
-       "s": "o",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "In Dublin's fair city",
-       "from": 0
-      },
-      {
-       "lyric": "where the girls are so pretty",
-       "from": 6
-      },
-      {
-       "lyric": "I first set my eyes on sweet Molly Malone",
-       "from": 13
-      },
-      {
-       "lyric": "As she wheeled her wheelbarrow",
-       "from": 24
-      },
-      {
-       "lyric": "through streets broad and narrow",
-       "from": 31
-      },
-      {
-       "lyric": "crying cockles and mussels, alive, alive-o",
-       "from": 37
-      }
-     ],
-     "durationSec": 61,
-     "voice": "Together, nice and slow.",
-     "voiceId": "e56c837ee278d694",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Your turn. Both hands, nice and steady.",
+     "voiceId": "cd70d130fe2096c9",
+     "voiceSec": 3.41
     },
     {
      "kind": "say",
@@ -5304,57 +4573,87 @@
      "voiceSec": 3.43
     },
     {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 6,
-     "voice": "Shake, shake, shake your hands.",
-     "voiceId": "69041444bf86c15c",
-     "voiceSec": 2.85
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Two hands, wow!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Two hands at once. Wow.",
+     "voiceId": "634ff696e35387b7",
+     "voiceSec": 2.72
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "patterns"
+     "counting",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Coordinating two streams",
-    "parentLine": "Two hands doing different jobs at once"
+    "concept": "Ratio 1:3 (two streams)",
+    "parentLine": "One low note lasts while three beats go by above"
    },
-   "parentPrompt": "Two hands is hard work. Go very slowly and stop while it's still fun.",
-   "childAction": "Play both hands together, slowly.",
-   "bridge": "Left hand is the drum; right hand sings the song.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Rest a hand on your child's left shoulder and say 'wheel' on each low note.",
+   "childAction": "Left hand holds the low note while the right hand walks the tune.",
+   "bridge": "Left hand is the barrow wheel, turning once a bar; right hand is Molly singing.",
+   "celebrate": "Today you practiced: two hands doing two jobs at once."
   },
   {
    "id": "cockles-and-mussels-molly-malone-c07",
    "index": 7,
-   "title": "Hands together, a bit faster",
-   "goal": "Play both hands together closer to full speed",
+   "title": "Slow street, busy street",
+   "goal": "Play both hands together a little faster, then slow again if needed.",
    "type": "hands-together",
-   "durationSec": 216,
-   "parentTip": "Speed comes last. If notes fall apart, go back to the slower tempo.",
+   "durationSec": 215,
+   "parentTip": "Walk two fingers slowly on the lid, then faster; go back to slow if notes fall apart.",
    "video": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c07.mp4",
    "thumb": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Molly Malone (Cockles and Mussels)",
-     "subcaption": "Class 7: Hands together, a bit faster",
+     "subcaption": "Class 7: Slow street, busy street",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Molly Malone (Cockles and Mussels). Slow and steady wins.",
      "voiceId": "6839e187fbe364ff",
      "voiceSec": 6.85
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Slow street, busy street",
+     "parentCue": "Go back to slow if notes fall apart",
+     "durationSec": 8,
+     "voice": "Slow street, busy street. Grown-up, go back to slow if notes fall apart.",
+     "voiceId": "fe9315e7d31eac91",
+     "voiceSec": 6.27
     },
     {
      "kind": "say",
@@ -5374,7 +4673,7 @@
        "f": 3
       },
       {
-       "p": "C4",
+       "p": "E4",
        "f": 4
       },
       {
@@ -5392,7 +4691,7 @@
      "caption": "Your turn! Both hands",
      "parentCue": "Warm up slowly",
      "bpm": 75,
-     "leadInSec": 3.9,
+     "leadInSec": 3.81,
      "gapBeats": 1,
      "notes": [
       {
@@ -5813,9 +5112,9 @@
       }
      ],
      "durationSec": 94,
-     "voice": "Your turn. Both hands, nice and slow.",
-     "voiceId": "7c39a0349582d84b",
-     "voiceSec": 3.5
+     "voice": "Your turn. Both hands, nice and steady.",
+     "voiceId": "cd70d130fe2096c9",
+     "voiceSec": 3.41
     },
     {
      "kind": "together",
@@ -6248,19 +5547,20 @@
     },
     {
      "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Relax your shoulders",
-     "durationSec": 5,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
-     "kind": "together",
-     "caption": "Both hands together",
-     "parentCue": "Help with the left hand if needed",
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
      "bpm": 80,
-     "leadInSec": 2.02,
+     "leadInSec": 3.38,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "G3",
@@ -6272,13 +5572,7 @@
        "p": "C4",
        "d": 2,
        "f": 4,
-       "s": "Dub",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
+       "s": "Dub"
       },
       {
        "p": "C4",
@@ -6290,13 +5584,7 @@
        "p": "C4",
        "d": 1,
        "f": 4,
-       "s": "fair",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
+       "s": "fair"
       },
       {
        "p": "E4",
@@ -6326,13 +5614,7 @@
        "p": "D4",
        "d": 2,
        "f": 3,
-       "s": "girls",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
+       "s": "girls"
       },
       {
        "p": "D4",
@@ -6344,13 +5626,7 @@
        "p": "D4",
        "d": 1,
        "f": 3,
-       "s": "so",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
+       "s": "so"
       },
       {
        "p": "F4",
@@ -6363,294 +5639,6 @@
        "d": 2,
        "f": 3,
        "s": "ty"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "I"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "first"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "set",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "eyes"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "on"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "sweet"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Mol",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "Ma"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 4,
-       "s": "lone",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "As",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "she"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "wheeled"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "her",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "wheel"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "bar"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 2,
-       "s": "row",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "streets",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "broad"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "and",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "nar"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "row"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "cry"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "coc",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "kles"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "mus",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "sels"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "live",
-       "lh": {
-        "p": "G3",
-        "d": 3.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "live"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 2,
-       "s": "o",
-       "lh": {
-        "p": "C3",
-        "d": 3.0,
-        "f": 5,
-        "h": "L"
-       }
       }
      ],
      "lines": [
@@ -6661,68 +5649,52 @@
       {
        "lyric": "where the girls are so pretty",
        "from": 6
-      },
-      {
-       "lyric": "I first set my eyes on sweet Molly Malone",
-       "from": 13
-      },
-      {
-       "lyric": "As she wheeled her wheelbarrow",
-       "from": 24
-      },
-      {
-       "lyric": "through streets broad and narrow",
-       "from": 31
-      },
-      {
-       "lyric": "crying cockles and mussels, alive, alive-o",
-       "from": 37
       }
      ],
-     "durationSec": 50,
-     "voice": "Both hands together.",
-     "voiceId": "616b6beec5a0bdd4",
-     "voiceSec": 1.62
+     "durationSec": 28,
+     "voice": "Your turn. I'll wait for each note.",
+     "voiceId": "ef1c63536da8b5d7",
+     "voiceSec": 2.98
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Steady at both speeds!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "expression",
     "secondary": [
-     "patterns"
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Coordinating two streams",
-    "parentLine": "Two hands doing different jobs at once"
+    "concept": "Tempo scaling (same pattern, faster)",
+    "parentLine": "The pattern stays the same when the speed changes"
    },
-   "parentPrompt": "Speed comes last. If notes fall apart, go back to the slower tempo.",
-   "childAction": "Play both hands together, slowly.",
-   "bridge": "Left hand is the drum; right hand sings the song.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Walk two fingers slowly on the lid, then faster; go back to slow if notes fall apart.",
+   "childAction": "Play both hands slowly, then a little quicker.",
+   "bridge": "A quiet morning street and a busy market street: the same walk, different speed.",
+   "celebrate": "Today you practiced: the same song at two speeds."
   },
   {
    "id": "cockles-and-mussels-molly-malone-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Down the Dublin streets",
+   "goal": "Play the whole song along with the music and keep going.",
    "type": "play-along",
-   "durationSec": 208,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 203,
+   "parentTip": "Sit beside your child and nod on every one; cheer for keeping going, not for notes.",
    "video": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c08.mp4",
    "thumb": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Molly Malone (Cockles and Mussels)",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Down the Dublin streets",
      "durationSec": 8,
      "voice": "Welcome back. Time for Molly Malone (Cockles and Mussels). Sit tall, in the middle of the piano.",
      "voiceId": "ed8ac7256536bc2c",
@@ -6730,21 +5702,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
-     "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "caption": "Play along",
+     "parentCue": "Nod on every one together",
+     "durationSec": 5,
+     "voice": "Play along. Grown-up, nod on every one together.",
+     "voiceId": "a0f144f38ab101b2",
+     "voiceSec": 3.9
     },
     {
      "kind": "together",
@@ -7426,7 +6389,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 100,
-     "leadInSec": 1.84,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "G3",
@@ -7749,18 +6712,18 @@
        "from": 37
       }
      ],
-     "durationSec": 40,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
+     "durationSec": 41,
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -7776,7 +6739,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 100,
-     "leadInSec": 1.84,
+     "leadInSec": 4.12,
      "notes": [
       {
        "p": "G3",
@@ -8099,50 +7062,50 @@
        "from": 37
       }
      ],
-     "durationSec": 40,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
+     "durationSec": 43,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept going together!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Synchrony with a moving pulse",
+    "parentLine": "Keeping your part in step while the music moves on"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Sit beside your child and nod on every one; cheer for keeping going, not for notes.",
+   "childAction": "Play along with the music. If a note slips, keep walking!",
+   "bridge": "The music is the street; keep pushing the barrow to the end.",
+   "celebrate": "Today you practiced: keeping your part in step with the music."
   },
   {
    "id": "cockles-and-mussels-molly-malone-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Molly's street concert",
+   "goal": "Play the whole song for teddy and land softly home on C.",
    "type": "concert",
-   "durationSec": 213,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 209,
+   "parentTip": "Seat teddy as the audience; clap, cheer and bow together at the end.",
    "video": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c09.mp4",
    "thumb": "cockles-and-mussels-molly-malone/cockles-and-mussels-molly-malone-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Molly Malone (Cockles and Mussels)",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: Molly's street concert",
      "durationSec": 8,
      "voice": "Welcome back. Time for Molly Malone (Cockles and Mussels). Sit tall, in the middle of the piano.",
      "voiceId": "ed8ac7256536bc2c",
@@ -8150,21 +7113,46 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
+     "caption": "A song for teddy",
+     "parentCue": "Seat teddy and announce the song together",
+     "durationSec": 6,
+     "voice": "This one is for teddy.",
+     "voiceId": "137fd3d6182c1ad5",
+     "voiceSec": 1.77
     },
     {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "kind": "your_turn",
+     "caption": "Softly home: alive-o",
+     "parentCue": "Whisper 'alive-o' as your child plays",
+     "bpm": 66,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 2
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
     },
     {
      "kind": "together",
@@ -9045,9 +8033,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -9491,9 +8479,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -9547,72 +8535,26 @@
        "d": 2,
        "f": 2,
        "s": "y"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "where"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "girls"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "so"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "pret"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 3,
-       "s": "ty"
       }
      ],
      "lines": [
       {
        "lyric": "In Dublin's fair city",
        "from": 0
-      },
-      {
-       "lyric": "where the girls are so pretty",
-       "from": 6
       }
      ],
-     "durationSec": 29,
+     "durationSec": 17,
      "voice": "Now you. Follow the lights, nice and even.",
      "voiceId": "9d70144f071be819",
      "voiceSec": 4.01
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, what a concert!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
@@ -9623,13 +8565,13 @@
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Sequencing and closure (ending home)",
+    "parentLine": "Holding the song in order and landing on the home note"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Seat teddy as the audience; clap, cheer and bow together at the end.",
+   "childAction": "Play for teddy, end softly on C, then bow.",
+   "bridge": "Molly calls out one last time, then the song rests at home on C.",
+   "celebrate": "Today you practiced: playing a whole song and ending at home."
   }
  ]
 }

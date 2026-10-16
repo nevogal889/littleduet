@@ -1,0 +1,229 @@
+{
+  "songId": "deck-the-halls",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices five-finger scales, counting fa-las, long-short rhythm, A-A-B-A song shape and two-hand teamwork, with a Welsh New Year tune.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "Five stairs down to C",
+      "goal": "Find the five-finger place on C and walk down the stairs: 5, 4, 3, 2, 1.",
+      "skill": { "primary": "space", "secondary": ["fingers", "counting"] },
+      "mathTarget": { "concept": "Ordinal sequence (counting down)", "parentLine": "Counting down the fingers, five to one" },
+      "parentPrompt": "Help the thumb find C, left of the two black keys; count down: 5, 4, 3, 2, 1.",
+      "childAction": "Put five fingers on C to G, then walk down from 5 to 1.",
+      "bridge": "Each finger is a stair in the hall; walk down from the top, G, to C.",
+      "intro": [ { "caption": "Five stairs down the hall", "parentCue": "count down the fingers aloud: 5, 4, 3, 2, 1" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Walk down: 5, 4, 3, 2, 1",
+          "parentCue": "Count down with each key",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1, "f": 5 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "C4", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "Down the stairs!",
+      "celebrate": "Today you practiced: finding the hand's place and counting fingers down."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Count the fa-las",
+      "goal": "Play the 'fa la la' answer and count its sounds: five, then four.",
+      "skill": { "primary": "counting", "secondary": ["listening", "fingers"] },
+      "mathTarget": { "concept": "Counting syllables (five, then four)", "parentLine": "Counting the sounds: five fa-las, then four" },
+      "parentPrompt": "Sing 'fa la la la la', holding up a finger per sound, then 'la la la la'.",
+      "childAction": "Sing and count the fa-las: five, then four.",
+      "bridge": "Fa-la-la is five quick hops, then four more to land home.",
+      "intro": [ { "caption": "Five fa-las, then four", "parentCue": "hold up one finger for each sound" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Listen: five fa-las, then four",
+          "parentCue": "Hold up a finger on each sound",
+          "bpm": 69,
+          "notes": [ { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1.5 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "B3", "d": 1 }, { "p": "C4", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Your fa-las, slowly",
+          "parentCue": "Count the five sounds together",
+          "bpm": 56,
+          "notes": [ { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great counting!",
+      "celebrate": "Today you practiced: counting the sounds in a line."
+    },
+    {
+      "index": 3,
+      "spineType": "put-together",
+      "title": "Same, same, new, same",
+      "goal": "Play the whole song slowly and spot the one line that is different.",
+      "skill": { "primary": "form", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Form: A-A-B-A", "parentLine": "Three lines match; one new line sits in the middle" },
+      "parentPrompt": "After each line, ask: same or new? Cheer when 'Don we now' arrives. Sing stuck words.",
+      "childAction": "Play slowly and spot the one new line.",
+      "bridge": "Three lines are the same holly branch; 'Don we now' is a shiny new ornament.",
+      "intro": [ { "caption": "Same, same, new, same", "parentCue": "ask after each line: same or new?" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 90,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 } ]
+        }
+      ],
+      "praise": "You found the new line!",
+      "celebrate": "Today you practiced: spotting which lines repeat and which is new."
+    },
+    {
+      "index": 4,
+      "spineType": "review",
+      "title": "Long, short, deck the halls",
+      "goal": "Play the long-short start of 'Deck the halls' slowly and evenly.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Ratio 3:1 (long to short)", "parentLine": "One long note that lasts three times a short one" },
+      "parentPrompt": "Say 'lo-o-ong, short' on the first two notes, then 'walk' on the rest; go slow first.",
+      "childAction": "Hold G long, quick F, then walk down evenly.",
+      "bridge": "Deck is a long, proud step; the is a tiny hop; then we walk.",
+      "intro": [ { "caption": "Lo-o-ong, short, walk, walk", "parentCue": "say it with the notes, nice and slow" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Deck the halls, slowly",
+          "parentCue": "Say 'lo-o-ong, short' on the first two",
+          "bpm": 56,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 } ]
+        }
+      ],
+      "praise": "Even and steady!",
+      "celebrate": "Today you practiced: playing long-short rhythms evenly."
+    },
+    {
+      "index": 5,
+      "spineType": "left-hand",
+      "title": "Low C, same name",
+      "goal": "Play one low left-hand note at the start of each bar while the grown-up plays the tune.",
+      "skill": { "primary": "space", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Octave translation (same note, lower)", "parentLine": "The same note name lives lower on the left" },
+      "parentPrompt": "Play the tune while your child plays the low notes. Count bars out loud: one, two, three.",
+      "childAction": "Play one low note with your left hand at each 'one'.",
+      "bridge": "Low C is the same name in the basement, far to the left.",
+      "intro": [ { "caption": "Same name, lower house", "parentCue": "count each bar out loud" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Same name, lower house",
+          "parentCue": "Point left on each low C",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C3", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "C3", "d": 1 } ]
+        }
+      ],
+      "praise": "Strong low notes!",
+      "celebrate": "Today you practiced: playing low notes with the left hand."
+    },
+    {
+      "index": 6,
+      "spineType": "left-hand",
+      "title": "One-two-three-four",
+      "goal": "Keep the left-hand notes going at full speed, landing on each 'one'.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Grouping by four (periodicity)", "parentLine": "Each bar has four beats; the low note lands on one" },
+      "parentPrompt": "Count one-two-three-four with each bar, loud on one. Keep going if notes slip.",
+      "childAction": "Play your low note on every big one, then wait three beats.",
+      "bridge": "Four steps round the hall; the low note is the first big stomp.",
+      "intro": [ { "caption": "Low note on one", "parentCue": "count loud on one, soft on two, three, four" } ],
+      "games": [],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: landing on the first beat of each bar."
+    },
+    {
+      "index": 7,
+      "spineType": "hands-together",
+      "title": "Two hands, two jobs",
+      "goal": "Play the tune with a low left-hand note at the start of each bar, very slowly.",
+      "skill": { "primary": "fingers", "secondary": ["patterns", "counting"] },
+      "mathTarget": { "concept": "Two streams (ratio 1:4)", "parentLine": "One low note for every four beats of tune" },
+      "parentPrompt": "Rest a hand on your child's left shoulder and say 'low' on each bar. Go very slowly.",
+      "childAction": "Right hand plays the tune; left hand plays one low note each bar.",
+      "bridge": "The left hand is the steady floor; the right hand dances on top.",
+      "intro": [ { "caption": "Two hands, two jobs", "parentCue": "say 'low' on each bar, very slowly" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 78,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Both hands working!",
+      "celebrate": "Today you practiced: playing two hands with two different jobs."
+    },
+    {
+      "index": 8,
+      "spineType": "hands-together",
+      "title": "Slow halls, quicker halls",
+      "goal": "Play both hands a little faster, and go back to slow when notes fall apart.",
+      "skill": { "primary": "expression", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Tempo scaling (same pattern, faster)", "parentLine": "The same song, only the speed changes" },
+      "parentPrompt": "Listen together to slow, then quicker; go back to slow if it gets messy.",
+      "childAction": "Play slowly, then a bit faster, the very same notes.",
+      "bridge": "A slow walk and a quick march go down the same hall.",
+      "intro": [ { "caption": "Same song, a little faster", "parentCue": "go back to slow whenever needed" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "The slow walk",
+          "parentCue": "Sway slowly with the tune",
+          "bpm": 66,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 } ]
+        },
+        {
+          "kind": "listen",
+          "caption": "Now the quick march",
+          "parentCue": "Same sway, a little quicker",
+          "bpm": 100,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 } ]
+        }
+      ],
+      "praise": "Steady and brave!",
+      "celebrate": "Today you practiced: keeping a song together at two speeds."
+    },
+    {
+      "index": 9,
+      "spineType": "play-along",
+      "title": "March with the music",
+      "goal": "Play the whole song along with the music at full speed.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Synchrony with a moving pulse", "parentLine": "Keeping up with a beat that does not wait" },
+      "parentPrompt": "Sit beside your child and nod on every one; cheer for keeping going, not for notes.",
+      "childAction": "Play along with the music and keep going, even after a slip.",
+      "bridge": "The music is a big parade through the hall; keep marching past bumps.",
+      "intro": [ { "caption": "March along and keep going", "parentCue": "nod on every one and smile at slips" } ],
+      "games": [],
+      "praise": "You kept going together!",
+      "celebrate": "Today you practiced: keeping up with the music together."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "Fa-la-la concert for teddy",
+      "goal": "Play the whole song for teddy while the family sings the fa-las.",
+      "skill": { "primary": "together", "secondary": ["form", "expression"] },
+      "mathTarget": { "concept": "Call and response", "parentLine": "One part sings the line, everyone answers" },
+      "parentPrompt": "Seat teddy as the audience; sing every 'fa la la' loudly together, then bow.",
+      "childAction": "Play for teddy while everyone sings fa-la-la, then bow.",
+      "bridge": "The tune tells the line; the whole family answers with a silly fa-la-la.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "everyone sings the fa-las together" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song with a family chorus."
+    }
+  ]
+}

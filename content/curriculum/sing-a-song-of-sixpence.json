@@ -1,0 +1,195 @@
+{
+  "songId": "sing-a-song-of-sixpence",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finding E and F, counting three same notes, hearing lines that start alike, and playing together, with the blackbird pie rhyme.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Swing with the blackbirds",
+      "goal": "Hear the whole song and sway to its swinging beat.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (swinging pulse)", "parentLine": "Feeling a swing that comes again and again, evenly spaced" },
+      "parentPrompt": "Sit side by side and sway together in big, slow swings to the music.",
+      "childAction": "Sway, and flap your wings when the birds begin to sing.",
+      "bridge": "The beat swings like a bird's wings: up and down, up and down.",
+      "intro": [ { "caption": "Let's swing with the blackbirds", "parentCue": "sway together in big, slow swings." } ],
+      "games": [],
+      "praise": "You swung together!",
+      "celebrate": "Today you practiced: feeling the swinging beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Tap the swinging beat",
+      "goal": "Tap one steady tap on each beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand on your child's hand; tap together, then slowly let go.",
+      "childAction": "Tap any key once for every beat you hear.",
+      "bridge": "Each beat is one wing flap; one tap for every flap.",
+      "intro": [ { "caption": "One beat, one tap", "parentCue": "tap your child's shoulder on each beat." } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Sing a song of sixpence",
+          "parentCue": "Tap together, slow and even",
+          "bpm": 90,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 1.5 }, { "p": "E4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "E, the king's key",
+      "goal": "Find E by touching the two black keys, then sliding right.",
+      "skill": { "primary": "space", "secondary": ["fingers", "counting"] },
+      "mathTarget": { "concept": "Landmark navigation (black-key pair)", "parentLine": "Two black keys help us find the same key every time" },
+      "parentPrompt": "Guide your child's finger to touch two black keys, then slide right to E.",
+      "childAction": "Find the two black keys, slide right, and play E!",
+      "bridge": "E sits just right of the two black keys, like a king beside two guards.",
+      "intro": [ { "caption": "Let's find the king's key", "parentCue": "touch the two black keys together first." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Sing a song: E, E, E",
+          "parentCue": "Count the three E's together",
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found E!",
+      "celebrate": "Today you practiced: finding E by the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "echo",
+      "title": "Hop up the branch",
+      "goal": "Copy short patterns of two or three notes, right after the grown-up.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "counting"] },
+      "mathTarget": { "concept": "Auditory sequence memory", "parentLine": "Holding a short tune in mind, then playing it back" },
+      "parentPrompt": "Play a short pattern, then point to your child: your turn. Cheer every try.",
+      "childAction": "Listen to two or three notes, then play them back.",
+      "bridge": "E, F, G climb three white keys, like a bird hopping up a branch.",
+      "intro": [ { "caption": "I play, then you echo", "parentCue": "play first, then point to your child." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Hop up the branch: E, F, G",
+          "parentCue": "Play it first, then point: your turn",
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great echo!",
+      "celebrate": "Today you practiced: listening and playing short tunes back."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "The birds fly up!",
+      "goal": "Hear two lines that start the same, then one flies up high.",
+      "skill": { "primary": "patterns", "secondary": ["pitch", "listening"] },
+      "mathTarget": { "concept": "Same start, different ending", "parentLine": "Two lines begin the same, then one flies up high" },
+      "parentPrompt": "Keep your hands low for the first line; lift them high when the birds fly.",
+      "childAction": "Listen for the birds flying up, then echo G, F, E home.",
+      "bridge": "The pie opens and the tune flies up high, to the right.",
+      "intro": [ { "caption": "Listen: which line flies up?", "parentCue": "lift your arms high when the tune flies up." } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Same start, two endings",
+          "parentCue": "Raise your arms high on the last note",
+          "bpm": 88,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 1.5 }, { "p": "C5", "d": 1.5 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Fly back home: G, F, E",
+          "parentCue": "Point to each key as it lights",
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You heard the birds fly!",
+      "celebrate": "Today you practiced: hearing lines that start the same."
+    },
+    {
+      "index": 6,
+      "spineType": "special-note",
+      "title": "Wait for the E",
+      "goal": "Listen to the song and play E at the right moments.",
+      "skill": { "primary": "together", "secondary": ["listening", "counting"] },
+      "mathTarget": { "concept": "Turn-taking (wait, then play)", "parentLine": "Waiting for your part is part of the music" },
+      "parentPrompt": "Play the blue keys; nod to your child just before each E.",
+      "childAction": "Wait and listen, then play E when it's your turn.",
+      "bridge": "The tune sings along; E is your turn to sing too.",
+      "intro": [ { "caption": "Listen for your E", "parentCue": "nod to your child just before each E." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Find your E",
+          "parentCue": "Point to the key, then let them press",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 } ]
+        }
+      ],
+      "praise": "Great waiting, great playing!",
+      "celebrate": "Today you practiced: waiting for your turn, then playing."
+    },
+    {
+      "index": 7,
+      "spineType": "special-note",
+      "title": "E and F, holding hands",
+      "goal": "Play two special notes, E and F, when they light up in the song.",
+      "skill": { "primary": "space", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Adjacency (neighbours, no black key)", "parentLine": "E and F sit side by side, with no black key between" },
+      "parentPrompt": "Show your child that E and F touch, with no black key between. Then play along.",
+      "childAction": "Play E or F when its key lights up in the song.",
+      "bridge": "E and F are two white friends holding hands, no black key between.",
+      "intro": [ { "caption": "Now we have two keys", "parentCue": "point to E, then F, before the song starts." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Dainty dish: E, E, F, F",
+          "parentCue": "Point to the key before it lights",
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "F4", "d": 2 } ]
+        }
+      ],
+      "praise": "Two keys, great listening!",
+      "celebrate": "Today you practiced: finding E and F side by side."
+    },
+    {
+      "index": 8,
+      "spineType": "together",
+      "title": "A song for the king",
+      "goal": "Play the whole song together, the grown-up on the tune, the child on E and F.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Synchrony (shared pulse)", "parentLine": "Two players keep the same beat, so the song stays together" },
+      "parentPrompt": "Keep playing even if a note is missed; nod the beat with your head.",
+      "childAction": "Play your E and F while your grown-up plays the rest.",
+      "bridge": "You and your grown-up sing like two blackbirds, side by side.",
+      "intro": [ { "caption": "Let's play it together", "parentCue": "keep going, even if a note is missed." } ],
+      "games": [],
+      "praise": "You stayed together!",
+      "celebrate": "Today you practiced: keeping one beat with two players."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Teddy is the king today",
+      "goal": "Play the whole song for teddy the king, from start to end, then bow.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Form (repeat with new endings)", "parentLine": "The same opening comes back four times, each with a new ending" },
+      "parentPrompt": "Make teddy the king; play the whole song for him, then bow to the king.",
+      "childAction": "Play your E and F to the very end, then bow to the king.",
+      "bridge": "Sing, sing, the birds fly up, the pie opens, and the king smiles.",
+      "intro": [ { "caption": "Concert time for King Teddy!", "parentCue": "sit teddy up tall like a king." } ],
+      "games": [],
+      "praise": "Bravo, the king claps!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

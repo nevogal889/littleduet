@@ -2,34 +2,55 @@
  "songId": "all-through-the-night",
  "title": "All Through the Night",
  "ageGroup": "4-5",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and listening memory, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices a new hand position, the rocking shape of a tune, A-A-B-A song shape and soft calm playing, using an old Welsh lullaby.",
  "skillMap": [
   {
-   "id": "fingers",
-   "label": "Finger control",
+   "id": "space",
+   "label": "Keyboard map",
    "value": 1.0,
-   "classes": 5,
-   "total": 9
-  },
-  {
-   "id": "form",
-   "label": "Song shape",
-   "value": 0.4,
    "classes": 2,
-   "total": 9
-  },
-  {
-   "id": "listening",
-   "label": "Listening memory",
-   "value": 0.2,
-   "classes": 1,
    "total": 9
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.2,
+   "value": 1.0,
+   "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "pitch",
+   "label": "High and low",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "form",
+   "label": "Song shape",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -37,36 +58,65 @@
  "icon": "moon",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2299,
+ "totalSec": 2324,
  "classes": [
   {
    "id": "all-through-the-night-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "A new bed for the hand",
+   "goal": "Hear the lullaby, then find G by the three black keys and place five fingers.",
    "type": "listen",
-   "durationSec": 252,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 255,
+   "parentTip": "Find the three black keys left of middle C; help the thumb rest on G inside them.",
    "video": "all-through-the-night/all-through-the-night-c01.mp4",
    "thumb": "all-through-the-night/all-through-the-night-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "All Through the Night",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: A new bed for the hand",
      "durationSec": 8,
      "voice": "Hi, everyone. Let's play All Through the Night. Curved fingers, like holding a little ball.",
      "voiceId": "031010a9ca641413",
      "voiceSec": 6.8
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 57,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Find the three black keys",
+     "parentCue": "G sits between the first two",
+     "durationSec": 7,
+     "voice": "Find the three black keys. Grown-up, g sits between the first two.",
+     "voiceId": "0043be3a51ef43cc",
+     "voiceSec": 4.86
     },
     {
      "kind": "say",
@@ -97,6 +147,45 @@
      "durationSec": 7,
      "voice": "Thumb on G. Curve your fingers, like holding a little ball.",
      "voiceId": "1fde154d663011a3",
+     "voiceSec": 3.96
+    },
+    {
+     "kind": "your_turn",
+     "caption": "One finger, one key",
+     "parentCue": "Say the finger number for each key",
+     "bpm": 56,
+     "leadInSec": 4.36,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. One finger on each key, one by one.",
+     "voiceId": "be3fc90a0fdacab7",
      "voiceSec": 3.96
     },
     {
@@ -1196,19 +1285,20 @@
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
      "voiceSec": 2.25
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 76,
-     "leadInSec": 1.93,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 61,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "C4",
@@ -1257,351 +1347,59 @@
        "d": 1,
        "f": 1,
        "s": "thee"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "B3",
-       "d": 4,
-       "f": 3,
-       "s": "night"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Guar"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "dian"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "an"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "gels"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 5,
-       "s": "God"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "will"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "send"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "thee"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 4,
-       "s": "night"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Soft"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drow"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sy"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hours"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "creep"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "hill"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "vale"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "slum"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ber"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "sleep"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "ing"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "I"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "lov"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 5,
-       "s": "vi"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "gil"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "keep"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "ing"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 4,
-       "s": "night"
       }
      ],
      "lines": [
       {
        "lyric": "Sleep, my child, and peace attend thee",
        "from": 0
-      },
-      {
-       "lyric": "all through the night",
-       "from": 8
-      },
-      {
-       "lyric": "Guardian angels God will send thee",
-       "from": 12
-      },
-      {
-       "lyric": "all through the night",
-       "from": 20
-      },
-      {
-       "lyric": "Soft the drowsy hours are creeping",
-       "from": 24
-      },
-      {
-       "lyric": "hill and vale in slumber sleeping",
-       "from": 32
-      },
-      {
-       "lyric": "I my loving vigil keeping",
-       "from": 40
-      },
-      {
-       "lyric": "all through the night",
-       "from": 48
       }
      ],
-     "durationSec": 52,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 22,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Your hand is tucked in!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "space",
     "secondary": [
-     "beat",
-     "together"
+     "fingers",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Spatial landmark (three black keys)",
+    "parentLine": "Using the three black keys as a sign to find G"
    },
-   "parentPrompt": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Find the three black keys left of middle C; help the thumb rest on G inside them.",
+   "childAction": "Thumb on G, then one finger on each key up to D.",
+   "bridge": "G tucks in after the first of three black keys, like a child in bed.",
+   "celebrate": "Today you practiced: finding G and placing five fingers."
   },
   {
    "id": "all-through-the-night-c02",
    "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Rock the cradle",
+   "goal": "Learn the first line and feel the tune rock down and up like a cradle.",
    "type": "phrase",
-   "durationSec": 252,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 229,
+   "parentTip": "Rock your child gently left and right as the tune goes down and up.",
    "video": "all-through-the-night/all-through-the-night-c02.mp4",
    "thumb": "all-through-the-night/all-through-the-night-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "All Through the Night",
-     "subcaption": "Class 2: Part 1",
+     "subcaption": "Class 2: Rock the cradle",
      "durationSec": 8,
      "voice": "Hi, everyone. Let's play All Through the Night. Curved fingers, like holding a little ball.",
      "voiceId": "031010a9ca641413",
@@ -1609,28 +1407,87 @@
     },
     {
      "kind": "say",
-     "caption": "Today: Sleep, my child, and peace",
-     "parentCue": "Listen first, then copy",
+     "caption": "Rock, rock, little cradle",
+     "parentCue": "rock your child gently with the tune",
      "durationSec": 7,
-     "voice": "Today we learn a new bit: Sleep, my child, and peace attend thee.",
-     "voiceId": "8c502f6f7549246f",
-     "voiceSec": 5.13
+     "voice": "Rock, rock, little cradle. Grown-up, rock your child gently with the tune.",
+     "voiceId": "0fb1f92866f06f1d",
+     "voiceSec": 5.75
     },
     {
-     "kind": "say",
-     "caption": "This part comes back 3 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7,
-     "voice": "This part comes back three times. Listen for it.",
-     "voiceId": "62e49033797bfc87",
-     "voiceSec": 3.7
+     "kind": "your_turn",
+     "caption": "Sleep, my child",
+     "parentCue": "Say four, three, two, four",
+     "bpm": 56,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
+    },
+    {
+     "kind": "your_turn",
+     "caption": "And peace attend thee",
+     "parentCue": "Say five, four, three, one",
+     "bpm": 56,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 57,
-     "leadInSec": 3.79,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -1715,10 +1572,10 @@
        "from": 8
       }
      ],
-     "durationSec": 22,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 21,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -1830,7 +1687,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 57,
-     "leadInSec": 3.26,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "C4",
@@ -1887,17 +1744,17 @@
        "from": 0
       }
      ],
-     "durationSec": 14,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "durationSec": 13,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 57,
-     "leadInSec": 3.42,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -1955,18 +1812,18 @@
        "from": 0
       }
      ],
-     "durationSec": 22,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 23,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -1982,7 +1839,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 57,
-     "leadInSec": 3.26,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "A3",
@@ -2015,17 +1872,17 @@
        "from": 0
       }
      ],
-     "durationSec": 13,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "durationSec": 12,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 57,
-     "leadInSec": 3.42,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -2060,9 +1917,9 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "praise",
@@ -2086,7 +1943,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 57,
-     "leadInSec": 3.42,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -2172,183 +2029,167 @@
        "from": 8
       }
      ],
-     "durationSec": 34,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 33,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
+     "caption": "Such gentle rocking!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 57,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "B3",
-       "d": 4,
-       "f": 3,
-       "s": "night"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "all through the night",
-       "from": 0
-      }
-     ],
-     "durationSec": 13,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 57,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "B3",
-       "d": 4,
-       "f": 3,
-       "s": "night"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "all through the night",
-       "from": 0
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "pitch",
     "secondary": [
-     "form"
+     "fingers",
+     "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Contour (wave shape)",
+    "parentLine": "The tune goes down, up, then down, like a gentle wave"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Rock your child gently left and right as the tune goes down and up.",
+   "childAction": "Play C, B, A, then back up to C: rock the cradle.",
+   "bridge": "Sleep, my child: the notes rock down to the left, then back up.",
+   "celebrate": "Today you practiced: following a tune that goes down and up."
   },
   {
    "id": "all-through-the-night-c03",
    "index": 3,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Nearly asleep, then asleep",
+   "goal": "Learn the next lines and hear one end on B, still awake, and one end on C.",
    "type": "phrase",
-   "durationSec": 256,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 260,
+   "parentTip": "Open your eyes wide on the B ending; close them sleepily on the C ending.",
    "video": "all-through-the-night/all-through-the-night-c03.mp4",
    "thumb": "all-through-the-night/all-through-the-night-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "All Through the Night",
-     "subcaption": "Class 3: Part 2",
+     "subcaption": "Class 3: Nearly asleep, then asleep",
      "durationSec": 7,
      "voice": "Hi there. Our song today is All Through the Night. Let's warm up our fingers.",
      "voiceId": "4d8d7c6479611212",
      "voiceSec": 5.76
     },
     {
-     "kind": "say",
-     "caption": "Today: all through the night",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6,
-     "voice": "Today we learn a new bit: all through the night.",
-     "voiceId": "d4eff95ef4c1eb87",
-     "voiceSec": 3.28
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 57,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
     },
     {
      "kind": "say",
-     "caption": "This part comes back 2 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7,
-     "voice": "This part comes back two times. Listen for it.",
-     "voiceId": "9581ea7be1c58405",
-     "voiceSec": 3.94
+     "caption": "Nearly asleep, or fast asleep?",
+     "parentCue": "eyes wide for B, eyes closed for C",
+     "durationSec": 8,
+     "voice": "Nearly asleep, or fast asleep. Grown-up, eyes wide for B, eyes closed for C.",
+     "voiceId": "5be55b9fa780be55",
+     "voiceSec": 6.57
+    },
+    {
+     "kind": "listen",
+     "caption": "Nearly asleep: ends on B",
+     "parentCue": "Keep your eyes open on the end",
+     "bpm": 60,
+     "leadInSec": 3.89,
+     "notes": [
+      {
+       "p": "A3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 4,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Nearly asleep, but not yet. Rock gently with me.",
+     "voiceId": "ef9e7590f07314ef",
+     "voiceSec": 3.49
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Fast asleep: ends on C",
+     "parentCue": "Say two, three, three, four",
+     "bpm": 56,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 4
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 57,
-     "leadInSec": 3.85,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "A3",
@@ -2433,10 +2274,10 @@
        "from": 4
       }
      ],
-     "durationSec": 22,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 21,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -2548,7 +2389,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 57,
-     "leadInSec": 3.79,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "A3",
@@ -2581,17 +2422,17 @@
        "from": 0
       }
      ],
-     "durationSec": 13,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 12,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 57,
-     "leadInSec": 3.98,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2626,17 +2467,17 @@
       }
      ],
      "durationSec": 18,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -2652,7 +2493,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 57,
-     "leadInSec": 3.79,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "G4",
@@ -2709,17 +2550,17 @@
        "from": 0
       }
      ],
-     "durationSec": 14,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 13,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 57,
-     "leadInSec": 3.98,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2778,17 +2619,17 @@
       }
      ],
      "durationSec": 23,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -2804,7 +2645,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 57,
-     "leadInSec": 3.98,
+     "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
       {
@@ -2891,182 +2732,169 @@
       }
      ],
      "durationSec": 34,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 57,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 4,
-       "s": "night"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Soft"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drow"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sy"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hours"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "creep"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "ing"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "all through the night",
-       "from": 0
-      },
-      {
-       "lyric": "Soft the drowsy hours are creeping",
-       "from": 4
-      }
-     ],
-     "durationSec": 34,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
      "voice": "Great job, you two.",
      "voiceId": "78285fece9f091ba",
      "voiceSec": 1.93
+    },
+    {
+     "kind": "say",
+     "caption": "Big breath in and out",
+     "parentCue": "Breathe slowly together",
+     "durationSec": 8,
+     "voice": "Big breath in, and out.",
+     "voiceId": "67a43f157c55d975",
+     "voiceSec": 2.01
+    },
+    {
+     "kind": "praise",
+     "caption": "Fast asleep, well done!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "patterns",
     "secondary": [
+     "listening",
      "form"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Repetition with a changed ending",
+    "parentLine": "The same line comes back, but the ending changes"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Open your eyes wide on the B ending; close them sleepily on the C ending.",
+   "childAction": "Eyes open on the B ending, eyes closed on C.",
+   "bridge": "B is a yawn, nearly asleep; C is home, fast asleep.",
+   "celebrate": "Today you practiced: hearing a line that ends in a new way."
   },
   {
    "id": "all-through-the-night-c04",
    "index": 4,
-   "title": "Part 3",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Up to the moon and back",
+   "goal": "Hear the middle part float higher, then play the sleepy line when it returns.",
    "type": "phrase",
-   "durationSec": 210,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 236,
+   "parentTip": "You play the high middle part; nod when the sleepy line comes back for your child.",
    "video": "all-through-the-night/all-through-the-night-c04.mp4",
    "thumb": "all-through-the-night/all-through-the-night-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "All Through the Night",
-     "subcaption": "Class 4: Part 3",
+     "subcaption": "Class 4: Up to the moon and back",
      "durationSec": 7,
      "voice": "Hi there. Our song today is All Through the Night. Let's warm up our fingers.",
      "voiceId": "4d8d7c6479611212",
      "voiceSec": 5.76
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 57,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Today: hill and vale in slumber",
-     "parentCue": "Listen first, then copy",
+     "caption": "The song floats up high",
+     "parentCue": "you play the high part; your child listens",
      "durationSec": 7,
-     "voice": "Today we learn a new bit: hill and vale in slumber sleeping.",
-     "voiceId": "259d3f2eaaddb859",
-     "voiceSec": 4.38
+     "voice": "The song floats up high. Grown-up, you play the high part; your child listens.",
+     "voiceId": "58dd26688eadf0bf",
+     "voiceSec": 5.87
+    },
+    {
+     "kind": "listen",
+     "caption": "Soft the drowsy hours",
+     "parentCue": "Point up to the moon together",
+     "bpm": 60,
+     "leadInSec": 3.89,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Soft and sleepy. Point up to the moon with me.",
+     "voiceId": "54e13ad51d327dd9",
+     "voiceSec": 3.49
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 57,
-     "leadInSec": 3.26,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -3123,10 +2951,10 @@
        "from": 0
       }
      ],
-     "durationSec": 14,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "durationSec": 13,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -3210,7 +3038,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 57,
-     "leadInSec": 3.83,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -3269,17 +3097,17 @@
       }
      ],
      "durationSec": 23,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -3295,7 +3123,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 57,
-     "leadInSec": 3.83,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -3354,9 +3182,9 @@
       }
      ],
      "durationSec": 23,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "together",
@@ -3429,9 +3257,9 @@
      "kind": "praise",
      "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -3447,7 +3275,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 57,
-     "leadInSec": 3.83,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -3506,17 +3334,17 @@
       }
      ],
      "durationSec": 23,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -3664,56 +3492,86 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "To the moon and back!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "space",
     "secondary": [
-     "form"
+     "pitch",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Register shift (moving higher)",
+    "parentLine": "The middle part moves to the right, where sounds are higher"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "You play the high middle part; nod when the sleepy line comes back for your child.",
+   "childAction": "Point up for the high part, then play your sleepy line.",
+   "bridge": "The middle floats up to the moon on the right, then drifts back down.",
+   "celebrate": "Today you practiced: hearing a part that moves higher, then returns."
   },
   {
    "id": "all-through-the-night-c05",
    "index": 5,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "Same, same, new, same",
+   "goal": "Play the whole song slowly and find its shape: same, same, new, same.",
    "type": "put-together",
    "durationSec": 257,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "parentTip": "Hold up one hand for each sleepy line and wave both hands for the new high part.",
    "video": "all-through-the-night/all-through-the-night-c05.mp4",
    "thumb": "all-through-the-night/all-through-the-night-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "All Through the Night",
-     "subcaption": "Class 5: Put it together",
+     "subcaption": "Class 5: Same, same, new, same",
      "durationSec": 7,
      "voice": "Hello, friends. Today it's All Through the Night. Sit in the middle of the piano.",
      "voiceId": "39233c11c3637b2b",
      "voiceSec": 5.98
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 57,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
-     "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "caption": "Same, same, new, same",
+     "parentCue": "say it together after each part",
+     "durationSec": 8,
+     "voice": "Same, same, new, same. Grown-up, say it together after each part.",
+     "voiceId": "37e1da05b8fde63d",
+     "voiceSec": 6.25
     },
     {
      "kind": "say",
@@ -3747,11 +3605,64 @@
      "voiceSec": 2.14
     },
     {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 61,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
+    },
+    {
      "kind": "demo",
-     "caption": "Watch the whole song",
+     "caption": "Watch the first part",
      "parentCue": "Watch together",
      "bpm": 57,
-     "leadInSec": 2.51,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "C4",
@@ -3896,174 +3807,6 @@
        "d": 4,
        "f": 4,
        "s": "night"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Soft"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drow"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sy"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hours"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "creep"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "hill"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "vale"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "slum"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ber"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "sleep"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "ing"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "I"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "lov"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 5,
-       "s": "vi"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "gil"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "keep"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "ing"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 4,
-       "s": "night"
       }
      ],
      "lines": [
@@ -4082,35 +3825,19 @@
       {
        "lyric": "all through the night",
        "from": 20
-      },
-      {
-       "lyric": "Soft the drowsy hours are creeping",
-       "from": 24
-      },
-      {
-       "lyric": "hill and vale in slumber sleeping",
-       "from": 32
-      },
-      {
-       "lyric": "I my loving vigil keeping",
-       "from": 40
-      },
-      {
-       "lyric": "all through the night",
-       "from": 48
       }
      ],
-     "durationSec": 69,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 37,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
-     "caption": "Your turn! The whole song",
-     "parentCue": "Help only if stuck",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
      "bpm": 57,
-     "leadInSec": 2.98,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -4256,7 +3983,38 @@
        "d": 4,
        "f": 4,
        "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Sleep, my child, and peace attend thee",
+       "from": 0
       },
+      {
+       "lyric": "all through the night",
+       "from": 8
+      },
+      {
+       "lyric": "Guardian angels God will send thee",
+       "from": 12
+      },
+      {
+       "lyric": "all through the night",
+       "from": 20
+      }
+     ],
+     "durationSec": 62,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 57,
+     "leadInSec": 2.21,
+     "notes": [
       {
        "p": "G4",
        "d": 1.5,
@@ -4428,59 +4186,42 @@
      ],
      "lines": [
       {
-       "lyric": "Sleep, my child, and peace attend thee",
+       "lyric": "Soft the drowsy hours are creeping",
        "from": 0
       },
       {
-       "lyric": "all through the night",
+       "lyric": "hill and vale in slumber sleeping",
        "from": 8
       },
       {
-       "lyric": "Guardian angels God will send thee",
-       "from": 12
-      },
-      {
-       "lyric": "all through the night",
-       "from": 20
-      },
-      {
-       "lyric": "Soft the drowsy hours are creeping",
-       "from": 24
-      },
-      {
-       "lyric": "hill and vale in slumber sleeping",
-       "from": 32
-      },
-      {
        "lyric": "I my loving vigil keeping",
-       "from": 40
+       "from": 16
       },
       {
        "lyric": "all through the night",
-       "from": 48
+       "from": 24
       }
      ],
-     "durationSec": 124,
-     "voice": "Your turn. The whole song.",
-     "voiceId": "b4c9d0a5e6f783d4",
-     "voiceSec": 2.58
+     "durationSec": 37,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
+     "caption": "Again, nice and easy",
+     "parentCue": "Take a breath between lines",
      "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
+     "voice": "Again, nice and easy.",
+     "voiceId": "6f32e8daa73a3ba6",
+     "voiceSec": 2.2
     },
     {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 61,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
+     "kind": "together",
+     "caption": "Play along",
+     "parentCue": "Keep going after a slip",
+     "bpm": 65,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "C4",
@@ -4553,6 +4294,246 @@
        "d": 4,
        "f": 3,
        "s": "night"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Guar"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "dian"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "an"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "gels"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5,
+       "s": "God"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "will"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "send"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "thee"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "all"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "through"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 4,
+       "s": "night"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Soft"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "drow"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "sy"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "hours"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "are"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "creep"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "ing"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "hill"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "vale"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "in"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "slum"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ber"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "sleep"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "ing"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "I"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "lov"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5,
+       "s": "vi"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "gil"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "keep"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ing"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "all"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "through"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 4,
+       "s": "night"
       }
      ],
      "lines": [
@@ -4563,52 +4544,77 @@
       {
        "lyric": "all through the night",
        "from": 8
+      },
+      {
+       "lyric": "Guardian angels God will send thee",
+       "from": 12
+      },
+      {
+       "lyric": "all through the night",
+       "from": 20
+      },
+      {
+       "lyric": "Soft the drowsy hours are creeping",
+       "from": 24
+      },
+      {
+       "lyric": "hill and vale in slumber sleeping",
+       "from": 32
+      },
+      {
+       "lyric": "I my loving vigil keeping",
+       "from": 40
+      },
+      {
+       "lyric": "all through the night",
+       "from": 48
       }
      ],
-     "durationSec": 32,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 61,
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found the shape!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
-     "patterns"
+     "patterns",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Form: A A B A",
+    "parentLine": "A line, the same line, a new part, then the line again"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Hold up one hand for each sleepy line and wave both hands for the new high part.",
+   "childAction": "Play slowly; say 'same' or 'new' after each part.",
+   "bridge": "Sleepy, sleepy, moon, sleepy: the song makes a shape you can say.",
+   "celebrate": "Today you practiced: finding the same-same-new-same song shape."
   },
   {
    "id": "all-through-the-night-c06",
    "index": 6,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Long yawn, short sigh",
+   "goal": "Practise 'Sleep, my' slowly: one long note, then one short note.",
    "type": "review",
-   "durationSec": 277,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 281,
+   "parentTip": "Say 'yaaawn-sigh' with the notes; clap it once together before your child plays.",
    "video": "all-through-the-night/all-through-the-night-c06.mp4",
    "thumb": "all-through-the-night/all-through-the-night-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "All Through the Night",
-     "subcaption": "Class 6: Tricky spots",
+     "subcaption": "Class 6: Long yawn, short sigh",
      "durationSec": 7,
      "voice": "Hello, friends. Today it's All Through the Night. Sit in the middle of the piano.",
      "voiceId": "39233c11c3637b2b",
@@ -4616,21 +4622,56 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
+     "caption": "A long yawn, a short sigh",
+     "parentCue": "clap the rhythm once together first",
      "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "voice": "A long yawn, a short sigh. Grown-up, clap the rhythm once together first.",
+     "voiceId": "99771cc89792420f",
+     "voiceSec": 5.72
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Yaaawn, sigh: C, B",
+     "parentCue": "Say yaaawn-sigh with the notes",
+     "bpm": 52,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "A3",
+       "d": 2,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4
+      },
+      {
+       "p": "B3",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 22,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "demo",
@@ -5004,9 +5045,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -5022,7 +5063,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 61,
-     "leadInSec": 3.83,
+     "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
       {
@@ -5133,17 +5174,17 @@
       }
      ],
      "durationSec": 37,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -5278,9 +5319,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -5290,6 +5331,927 @@
      "voice": "Back to the start, once more.",
      "voiceId": "c91fd5fe16b303d2",
      "voiceSec": 2.25
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 61,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Sleep"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "child"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5,
+       "s": "peace"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "at"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "tend"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "thee"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Sleep, my child, and peace attend thee",
+       "from": 0
+      }
+     ],
+     "durationSec": 21,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "praise",
+     "caption": "What a long, sleepy yawn!",
+     "durationSec": 5,
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
+    }
+   ],
+   "skill": {
+    "primary": "beat",
+    "secondary": [
+     "counting",
+     "fingers"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Ratio 3:1 (long and short)",
+    "parentLine": "One note lasts three times longer than the next"
+   },
+   "parentPrompt": "Say 'yaaawn-sigh' with the notes; clap it once together before your child plays.",
+   "childAction": "Hold C long like a yawn, then a quick B like a sigh.",
+   "bridge": "Sleeeep-my: a long stretch on C, then a little hop down to B.",
+   "celebrate": "Today you practiced: long notes and short notes."
+  },
+  {
+   "id": "all-through-the-night-c07",
+   "index": 7,
+   "title": "Soft as a blanket",
+   "goal": "Play the whole song slowly, softly and smoothly, like a quiet lullaby.",
+   "type": "phrase",
+   "durationSec": 292,
+   "parentTip": "Whisper the words and breathe slowly together; pat a slow beat on your child's back.",
+   "video": "all-through-the-night/all-through-the-night-c07.mp4",
+   "thumb": "all-through-the-night/all-through-the-night-c07.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "All Through the Night",
+     "subcaption": "Class 7: Soft as a blanket",
+     "durationSec": 7,
+     "voice": "Welcome back. Time for All Through the Night. Sit up tall, feet still.",
+     "voiceId": "d288d198c5a3c420",
+     "voiceSec": 5.4
+    },
+    {
+     "kind": "say",
+     "caption": "Soft as a blanket",
+     "parentCue": "whisper the words and breathe slowly together",
+     "durationSec": 7,
+     "voice": "Soft as a blanket. Grown-up, whisper the words and breathe slowly together.",
+     "voiceId": "fffdccea79005c6b",
+     "voiceSec": 5.11
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap and count to four",
+     "parentCue": "Count softly as your child taps",
+     "bpm": 57,
+     "leadInSec": 4.26,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Tap any key and count with me. One, two, three, four.",
+     "voiceId": "8c616960af03108e",
+     "voiceSec": 3.86
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 61,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Sleep"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "child"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5,
+       "s": "peace"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "at"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "tend"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "thee"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "all"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "through"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "B3",
+       "d": 4,
+       "f": 3,
+       "s": "night"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Guar"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "dian"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "an"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "gels"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5,
+       "s": "God"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "will"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "send"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "thee"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "all"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "through"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 4,
+       "s": "night"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Soft"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "drow"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "sy"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "hours"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "are"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "creep"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "ing"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "hill"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "vale"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "in"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "slum"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ber"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "sleep"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "ing"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "I"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "lov"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5,
+       "s": "vi"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "gil"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "keep"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ing"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "all"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "through"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 4,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Sleep, my child, and peace attend thee",
+       "from": 0
+      },
+      {
+       "lyric": "all through the night",
+       "from": 8
+      },
+      {
+       "lyric": "Guardian angels God will send thee",
+       "from": 12
+      },
+      {
+       "lyric": "all through the night",
+       "from": 20
+      },
+      {
+       "lyric": "Soft the drowsy hours are creeping",
+       "from": 24
+      },
+      {
+       "lyric": "hill and vale in slumber sleeping",
+       "from": 32
+      },
+      {
+       "lyric": "I my loving vigil keeping",
+       "from": 40
+      },
+      {
+       "lyric": "all through the night",
+       "from": 48
+      }
+     ],
+     "durationSec": 117,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "say",
+     "caption": "From the top, a little bit",
+     "parentCue": "Only the first lines",
+     "durationSec": 7,
+     "voice": "Back to the start, just a little bit.",
+     "voiceId": "b54c465b1bac2e06",
+     "voiceSec": 2.17
+    },
+    {
+     "kind": "together",
+     "caption": "Play along",
+     "parentCue": "The first part again",
+     "bpm": 61,
+     "leadInSec": 1.967,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Sleep"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "child"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5,
+       "s": "peace"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "at"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "tend"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "thee"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "all"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "through"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "B3",
+       "d": 4,
+       "f": 3,
+       "s": "night"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Guar"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "dian"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "an"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "gels"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5,
+       "s": "God"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "will"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "send"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "thee"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "all"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "through"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 4,
+       "s": "night"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Soft"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "drow"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "sy"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "hours"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "are"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "creep"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "ing"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4,
+       "s": "hill"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "vale"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "in"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "slum"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ber"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "sleep"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "ing"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "I"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "my"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "lov"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "ing"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5,
+       "s": "vi"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "gil"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "keep"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "ing"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "all"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "through"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 4,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Sleep, my child, and peace attend thee",
+       "from": 0
+      },
+      {
+       "lyric": "all through the night",
+       "from": 8
+      },
+      {
+       "lyric": "Guardian angels God will send thee",
+       "from": 12
+      },
+      {
+       "lyric": "all through the night",
+       "from": 20
+      },
+      {
+       "lyric": "Soft the drowsy hours are creeping",
+       "from": 24
+      },
+      {
+       "lyric": "hill and vale in slumber sleeping",
+       "from": 32
+      },
+      {
+       "lyric": "I my loving vigil keeping",
+       "from": 40
+      },
+      {
+       "lyric": "all through the night",
+       "from": 48
+      }
+     ],
+     "durationSec": 64,
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
+    },
+    {
+     "kind": "say",
+     "caption": "Opening lines again",
+     "parentCue": "Slow and steady",
+     "durationSec": 5,
+     "voice": "The beginning again.",
+     "voiceId": "44868b0ec9079244",
+     "voiceSec": 1.59
     },
     {
      "kind": "your_turn",
@@ -5370,6 +6332,78 @@
        "d": 4,
        "f": 3,
        "s": "night"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Guar"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "dian"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "an"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "gels"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5,
+       "s": "God"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "will"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "send"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "thee"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "all"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "through"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 4,
+       "s": "night"
       }
      ],
      "lines": [
@@ -5380,989 +6414,61 @@
       {
        "lyric": "all through the night",
        "from": 8
+      },
+      {
+       "lyric": "Guardian angels God will send thee",
+       "from": 12
+      },
+      {
+       "lyric": "all through the night",
+       "from": 20
       }
      ],
-     "durationSec": 32,
+     "durationSec": 59,
      "voice": "Now you. Follow the glowing keys, one by one.",
      "voiceId": "caf3f4651442eb31",
      "voiceSec": 3.43
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "So soft and smooth!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "expression",
     "secondary": [
-     "patterns"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
-   },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
-  },
-  {
-   "id": "all-through-the-night-c07",
-   "index": 7,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
-   "type": "phrase",
-   "durationSec": 284,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "video": "all-through-the-night/all-through-the-night-c07.mp4",
-   "thumb": "all-through-the-night/all-through-the-night-c07.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "All Through the Night",
-     "subcaption": "Class 7: Slow and steady",
-     "durationSec": 7,
-     "voice": "Welcome back. Time for All Through the Night. Sit up tall, feet still.",
-     "voiceId": "d288d198c5a3c420",
-     "voiceSec": 5.4
-    },
-    {
-     "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
-     "durationSec": 6,
-     "voice": "Slow and steady practice today.",
-     "voiceId": "aeb4883c0cf279a5",
-     "voiceSec": 2.42
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 53,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Sleep"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "child"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 5,
-       "s": "peace"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "at"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "tend"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "thee"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "B3",
-       "d": 4,
-       "f": 3,
-       "s": "night"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Guar"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "dian"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "an"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "gels"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 5,
-       "s": "God"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "will"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "send"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "thee"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 4,
-       "s": "night"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Soft"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drow"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sy"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hours"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "creep"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "hill"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "vale"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "slum"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ber"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "sleep"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "ing"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "I"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "lov"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 5,
-       "s": "vi"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "gil"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "keep"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "ing"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 4,
-       "s": "night"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Sleep, my child, and peace attend thee",
-       "from": 0
-      },
-      {
-       "lyric": "all through the night",
-       "from": 8
-      },
-      {
-       "lyric": "Guardian angels God will send thee",
-       "from": 12
-      },
-      {
-       "lyric": "all through the night",
-       "from": 20
-      },
-      {
-       "lyric": "Soft the drowsy hours are creeping",
-       "from": 24
-      },
-      {
-       "lyric": "hill and vale in slumber sleeping",
-       "from": 32
-      },
-      {
-       "lyric": "I my loving vigil keeping",
-       "from": 40
-      },
-      {
-       "lyric": "all through the night",
-       "from": 48
-      }
-     ],
-     "durationSec": 74,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Help only if stuck",
-     "bpm": 53,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Sleep"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "child"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 5,
-       "s": "peace"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "at"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "tend"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "thee"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "B3",
-       "d": 4,
-       "f": 3,
-       "s": "night"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Guar"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "dian"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "an"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "gels"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 5,
-       "s": "God"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "will"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "send"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "thee"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 4,
-       "s": "night"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Soft"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drow"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "sy"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hours"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "creep"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "s": "hill"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "vale"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "in"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "slum"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ber"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "sleep"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "ing"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "I"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "lov"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "ing"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 5,
-       "s": "vi"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "gil"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "keep"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "ing"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 4,
-       "s": "night"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Sleep, my child, and peace attend thee",
-       "from": 0
-      },
-      {
-       "lyric": "all through the night",
-       "from": 8
-      },
-      {
-       "lyric": "Guardian angels God will send thee",
-       "from": 12
-      },
-      {
-       "lyric": "all through the night",
-       "from": 20
-      },
-      {
-       "lyric": "Soft the drowsy hours are creeping",
-       "from": 24
-      },
-      {
-       "lyric": "hill and vale in slumber sleeping",
-       "from": 32
-      },
-      {
-       "lyric": "I my loving vigil keeping",
-       "from": 40
-      },
-      {
-       "lyric": "all through the night",
-       "from": 48
-      }
-     ],
-     "durationSec": 133,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 61,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Sleep"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "child"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 5,
-       "s": "peace"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "at"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "tend"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "thee"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "all"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "through"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "B3",
-       "d": 4,
-       "f": 3,
-       "s": "night"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Guar"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 3,
-       "s": "dian"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 2,
-       "s": "an"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "gels"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 5,
-       "s": "God"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "will"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "send"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "thee"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Sleep, my child, and peace attend thee",
-       "from": 0
-      },
-      {
-       "lyric": "all through the night",
-       "from": 8
-      },
-      {
-       "lyric": "Guardian angels God will send thee",
-       "from": 12
-      }
-     ],
-     "durationSec": 48,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    }
-   ],
-   "skill": {
-    "primary": "fingers",
-    "secondary": [
+     "fingers",
      "beat"
     ]
    },
    "mathTarget": {
-    "concept": "Tempo control",
-    "parentLine": "Doing a task slowly and evenly"
+    "concept": "Dynamics (soft, smooth touch)",
+    "parentLine": "Playing softly and smoothly, one note melting into the next"
    },
-   "parentPrompt": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "childAction": "Play the tune slowly, every note even.",
-   "bridge": "Slow fingers, like a cat walking on tiptoe.",
-   "celebrate": "Today you practiced careful fingers and keeping a steady beat."
+   "parentPrompt": "Whisper the words and breathe slowly together; pat a slow beat on your child's back.",
+   "childAction": "Play slowly and softly, like tucking in a blanket.",
+   "bridge": "Soft fingers are a warm blanket; each note melts into the next.",
+   "celebrate": "Today you practiced: playing slowly, softly and smoothly."
   },
   {
    "id": "all-through-the-night-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Lullaby play-along",
+   "goal": "Play the whole song along with the music and keep going to the end.",
    "type": "play-along",
-   "durationSec": 240,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 248,
+   "parentTip": "Sing softly beside your child; you play the high middle part if needed.",
    "video": "all-through-the-night/all-through-the-night-c08.mp4",
    "thumb": "all-through-the-night/all-through-the-night-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "All Through the Night",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Lullaby play-along",
      "durationSec": 7,
      "voice": "Hi there. Our song today is All Through the Night. Let's warm up our fingers.",
      "voiceId": "4d8d7c6479611212",
@@ -6370,21 +6476,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
+     "caption": "Play with the music",
+     "parentCue": "sing softly beside your child and keep going",
      "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "voice": "Play with the music. Grown-up, sing softly beside your child and keep going.",
+     "voiceId": "ac5c19ead7de5d4f",
+     "voiceSec": 5.25
     },
     {
      "kind": "together",
@@ -7118,7 +7215,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 76,
-     "leadInSec": 4.12,
+     "leadInSec": 3.0,
      "notes": [
       {
        "p": "C4",
@@ -7467,10 +7564,10 @@
        "from": 48
       }
      ],
-     "durationSec": 54,
-     "voice": "Together now. Keep going, even after a slip.",
-     "voiceId": "6ef58099ced29d5c",
-     "voiceSec": 3.72
+     "durationSec": 53,
+     "voice": "Together time. Big smiles.",
+     "voiceId": "a441a4bce0e6e1e6",
+     "voiceSec": 2.6
     },
     {
      "kind": "praise",
@@ -7568,6 +7665,54 @@
        "d": 4,
        "f": 3,
        "s": "night"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Guar"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 3,
+       "s": "dian"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2,
+       "s": "an"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "gels"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 5,
+       "s": "God"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "will"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "send"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "thee"
       }
      ],
      "lines": [
@@ -7578,16 +7723,20 @@
       {
        "lyric": "all through the night",
        "from": 8
+      },
+      {
+       "lyric": "Guardian angels God will send thee",
+       "from": 12
       }
      ],
-     "durationSec": 32,
+     "durationSec": 48,
      "voice": "Your turn. Play each glowing key.",
      "voiceId": "21e079a5c0ab490e",
      "voiceSec": 3.02
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "So calm together!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
@@ -7597,33 +7746,34 @@
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat",
+     "expression"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Synchrony (shared slow pulse)",
+    "parentLine": "Keeping the same calm, slow beat as the music"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Sing softly beside your child; you play the high middle part if needed.",
+   "childAction": "Play along with the music; keep going after a slip.",
+   "bridge": "You and the music breathe together: slow, slow, all through the night.",
+   "celebrate": "Today you practiced: keeping a calm beat with the music."
   },
   {
    "id": "all-through-the-night-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Lullaby for teddy",
+   "goal": "Play the whole lullaby for teddy, softer and softer, until teddy falls asleep.",
    "type": "concert",
-   "durationSec": 271,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 266,
+   "parentTip": "Lay teddy down as the audience; play together, then whisper 'goodnight' and bow quietly.",
    "video": "all-through-the-night/all-through-the-night-c09.mp4",
    "thumb": "all-through-the-night/all-through-the-night-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "All Through the Night",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: Lullaby for teddy",
      "durationSec": 8,
      "voice": "Hi, everyone. Let's play All Through the Night. Curved fingers, like holding a little ball.",
      "voiceId": "031010a9ca641413",
@@ -7631,21 +7781,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
+     "caption": "A lullaby for teddy",
+     "parentCue": "lay teddy down in front as the audience",
      "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "voice": "A lullaby for teddy. Grown-up, lay teddy down in front as the audience.",
+     "voiceId": "ce1cca3233c8799b",
+     "voiceSec": 4.73
     },
     {
      "kind": "together",
@@ -8386,9 +8527,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -8762,9 +8903,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -9136,28 +9277,28 @@
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Teddy is fast asleep!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "together",
     "secondary": [
-     "together",
-     "expression"
+     "expression",
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Closure (ending softly at home)",
+    "parentLine": "A song can end by getting quieter and resting at home"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Lay teddy down as the audience; play together, then whisper 'goodnight' and bow quietly.",
+   "childAction": "Play for teddy, softer at the end, then whisper goodnight.",
+   "bridge": "The last long C is the pillow: the song lies down to sleep.",
+   "celebrate": "Today you practiced: playing a whole song softly to the end."
   }
  ]
 }

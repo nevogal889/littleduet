@@ -2,12 +2,12 @@
  "songId": "brahms-lullaby",
  "title": "Brahms' Lullaby",
  "ageGroup": "2-3",
- "curriculum": "default",
- "songSummary": "Practices listening memory, loud, soft, fast, slow and steady beat, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices a slow rocking beat, high and low, soft and loud, and calming down together, with the lullaby Brahms wrote for a friend's baby.",
  "skillMap": [
   {
-   "id": "listening",
-   "label": "Listening memory",
+   "id": "beat",
+   "label": "Steady beat",
    "value": 1.0,
    "classes": 2,
    "total": 8
@@ -20,10 +20,10 @@
    "total": 8
   },
   {
-   "id": "beat",
-   "label": "Steady beat",
-   "value": 0.5,
-   "classes": 1,
+   "id": "together",
+   "label": "Playing together",
+   "value": 1.0,
+   "classes": 2,
    "total": 8
   },
   {
@@ -34,15 +34,8 @@
    "total": 8
   },
   {
-   "id": "form",
-   "label": "Song shape",
-   "value": 0.5,
-   "classes": 1,
-   "total": 8
-  },
-  {
-   "id": "together",
-   "label": "Playing together",
+   "id": "listening",
+   "label": "Listening memory",
    "value": 0.5,
    "classes": 1,
    "total": 8
@@ -51,36 +44,77 @@
  "icon": "moon",
  "key": "C",
  "timeSignature": "3/4",
- "totalSec": 1834,
+ "totalSec": 1847,
  "classes": [
   {
    "id": "brahms-lullaby-c01",
    "index": 1,
-   "title": "Listen and sway",
-   "goal": "Hear the whole song and move to the beat",
+   "title": "Rock like a cradle",
+   "goal": "Hear the whole lullaby and rock slowly to its gentle beat.",
    "type": "listen",
-   "durationSec": 242,
-   "parentTip": "Sit together at the piano. Sway side to side while the song plays.",
+   "durationSec": 229,
+   "parentTip": "Hold your child close and rock slowly, one big rock for each swing of the tune.",
    "video": "brahms-lullaby/brahms-lullaby-c01.mp4",
    "thumb": "brahms-lullaby/brahms-lullaby-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Brahms' Lullaby",
-     "subcaption": "Class 1: Listen and sway",
+     "subcaption": "Class 1: Rock like a cradle",
      "durationSec": 7,
      "voice": "It's music time. Today we play Brahms' Lullaby. Grown-up, sit side by side.",
      "voiceId": "062e443dc2a25a5a",
      "voiceSec": 5.86
     },
     {
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 72,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "Lul",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "la",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Time for a sleepy song",
+     "parentCue": "hold your child close and rock slowly.",
+     "durationSec": 7,
+     "voice": "Time for a sleepy song. Grown-up, hold your child close and rock slowly.",
+     "voiceId": "9e9e7d6073d5f618",
+     "voiceSec": 5.33
     },
     {
      "kind": "listen",
@@ -1311,7 +1345,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 72,
-     "leadInSec": 3.15,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "E4",
@@ -1701,179 +1735,50 @@
       }
      ],
      "durationSec": 46,
-     "voice": "Hands on your knees. Just listen.",
-     "voiceId": "6ffe923cd9113f9b",
-     "voiceSec": 2.75
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "You rocked together!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap the beat",
-     "parentCue": "You play, your child taps",
-     "bpm": 72,
-     "leadInSec": 2.45,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Lul",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "la",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "good",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 3,
-       "s": "night",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "With",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ro",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "ses",
-       "who": "parent"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 4,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "dight",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Lullaby and good night",
-       "from": 0
-      },
-      {
-       "lyric": "With roses bedight",
-       "from": 6
-      }
-     ],
-     "durationSec": 14,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "beat",
     "secondary": [
-     "beat",
+     "listening",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Periodicity (slow rocking pulse)",
+    "parentLine": "Feeling a slow swing that comes again and again"
    },
-   "parentPrompt": "Sit together at the piano. Sway side to side while the song plays.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Hold your child close and rock slowly, one big rock for each swing of the tune.",
+   "childAction": "Rock slowly with the song, soft as a sleepy yawn.",
+   "bridge": "The beat is a cradle: rock... and rock... slow and gentle.",
+   "celebrate": "Today you practiced: feeling a slow beat and calming together."
   },
   {
    "id": "brahms-lullaby-c02",
    "index": 2,
-   "title": "Find the beat",
-   "goal": "Tap a steady beat while the grown-up plays the tune",
+   "title": "Good night, good night",
+   "goal": "Tap one gentle tap on each beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 220,
-   "parentTip": "Any key is fine. Tap with your child's hand at first, then let go.",
+   "durationSec": 224,
+   "parentTip": "Rest your hand on your child's hand; tap softly together, then slowly let go.",
    "video": "brahms-lullaby/brahms-lullaby-c02.mp4",
    "thumb": "brahms-lullaby/brahms-lullaby-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Brahms' Lullaby",
-     "subcaption": "Class 2: Find the beat",
+     "subcaption": "Class 2: Good night, good night",
      "durationSec": 6,
      "voice": "Hi there. It's music time. Today's song is Brahms' Lullaby.",
      "voiceId": "fb31fd64d202c3d8",
@@ -1881,21 +1786,55 @@
     },
     {
      "kind": "say",
-     "caption": "Tap any key on the beat",
-     "parentCue": "You play the tune, your child taps the beat",
+     "caption": "One beat, one gentle tap",
+     "parentCue": "tap your child's knee softly on each beat.",
      "durationSec": 8,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
+     "voice": "One beat, one gentle tap. Grown-up, tap your child's knee softly on each beat.",
+     "voiceId": "cbab44a38789d6f4",
+     "voiceSec": 6.57
     },
     {
-     "kind": "say",
-     "caption": "Tap, tap, tap, like a heartbeat",
-     "parentCue": "Tap with your child first",
-     "durationSec": 7,
-     "voice": "Tap, tap, tap, like a heartbeat.",
-     "voiceId": "07ab7f7da2eb6f0e",
-     "voiceSec": 2.82
+     "kind": "beat",
+     "caption": "Good night, and good night again",
+     "parentCue": "Whisper 'one, two' for the two good nights",
+     "bpm": 66,
+     "leadInSec": 3.65,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Good night, good night. Tap softly on the beat.",
+     "voiceId": "46f1155789fda553",
+     "voiceSec": 3.25
     },
     {
      "kind": "beat",
@@ -2708,9 +2647,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -3400,36 +3339,37 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept the beat!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
     "primary": "beat",
     "secondary": [
+     "counting",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Periodicity (steady pulse)",
-    "parentLine": "Feeling something that repeats at an even time"
+    "concept": "One-to-one correspondence",
+    "parentLine": "One tap for each beat, no more, no less"
    },
-   "parentPrompt": "Any key is fine. Tap with your child's hand at first, then let go.",
-   "childAction": "Tap any key on every beat.",
-   "bridge": "The beat is a heartbeat: tap, tap, tap, never in a hurry.",
-   "celebrate": "Today you practiced keeping a steady beat and playing together."
+   "parentPrompt": "Rest your hand on your child's hand; tap softly together, then slowly let go.",
+   "childAction": "Tap any key gently once on every beat.",
+   "bridge": "Each beat is one rock of the cradle; one soft tap for each.",
+   "celebrate": "Today you practiced: one gentle tap for each beat."
   },
   {
    "id": "brahms-lullaby-c03",
    "index": 3,
    "title": "Bear low, bird high",
-   "goal": "Hear the difference between low and high sounds",
+   "goal": "Hear low and high sounds, and hear the tune leap up and settle down.",
    "type": "high-low",
-   "durationSec": 213,
-   "parentTip": "Low keys are on the left, high keys on the right. Any key on the correct side counts.",
+   "durationSec": 211,
+   "parentTip": "Growl and crouch for the bear; flap your arms and stretch up for the bird.",
    "video": "brahms-lullaby/brahms-lullaby-c03.mp4",
    "thumb": "brahms-lullaby/brahms-lullaby-c03.jpg",
    "segments": [
@@ -3443,22 +3383,140 @@
      "voiceSec": 5.86
     },
     {
-     "kind": "say",
-     "caption": "Low keys sound like a big bear",
-     "parentCue": "Show the low end of the piano",
-     "durationSec": 8,
-     "voice": "Low keys, on the left, sound like a big bear.",
-     "voiceId": "ded72c2c5908831d",
-     "voiceSec": 3.44
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 72,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "Lul",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "la",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
-     "caption": "High keys sound like a little bird",
-     "parentCue": "Show the high end of the piano",
+     "caption": "The bear lives down low",
+     "parentCue": "point left for the bear, then right for the bird.",
      "durationSec": 8,
-     "voice": "High keys, on the right, sound like a little bird.",
-     "voiceId": "89552428549ec22e",
-     "voiceSec": 3.29
+     "voice": "The bear lives down low, on the left.",
+     "voiceId": "33ec8638cfb3ef57",
+     "voiceSec": 2.51
+    },
+    {
+     "kind": "listen",
+     "caption": "Low, then way up high",
+     "parentCue": "Lift your child's hands on the high note",
+     "bpm": 66,
+     "leadInSec": 4.76,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Low, then way up high. Point up on the high note.",
+     "voiceId": "55099cc6bb53619b",
+     "voiceSec": 4.36
+    },
+    {
+     "kind": "listen",
+     "caption": "Down, down, down to bed",
+     "parentCue": "Lower your hands slowly to the lap",
+     "bpm": 66,
+     "leadInSec": 4.35,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Down, down, down to bed. Move your hands slowly down.",
+     "voiceId": "12ce67fa6f6a9fae",
+     "voiceSec": 3.95
     },
     {
      "kind": "high_low",
@@ -3809,9 +3867,9 @@
      "kind": "praise",
      "caption": "Great listening!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "high_low",
@@ -3929,13 +3987,134 @@
      "kind": "praise",
      "caption": "You know high and low!",
      "durationSec": 5,
-     "voice": "You know high and low now.",
-     "voiceId": "4389997f0bd28169",
-     "voiceSec": 1.88
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "high_low",
      "caption": "Here comes the bear",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 72,
+     "leadInSec": 3.97,
+     "notes": [
+      {
+       "p": "E3",
+       "d": 0.5,
+       "s": "Lul",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 0.5,
+       "s": "la",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 0.5,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 0.5,
+       "s": "good",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "s": "night",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Lullaby and good night",
+       "from": 0
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Bear time. Tap the low keys, down on the left.",
+     "voiceId": "bc46a476caf185c7",
+     "voiceSec": 3.57
+    },
+    {
+     "kind": "high_low",
+     "caption": "Here comes the bird",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 72,
+     "leadInSec": 3.41,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 0.5,
+       "s": "Lul",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "s": "la",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "s": "good",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "s": "night",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Lullaby and good night",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "The bird is here. High keys, on the right.",
+     "voiceId": "99715525943a1f67",
+     "voiceSec": 3.01
+    },
+    {
+     "kind": "say",
+     "caption": "Is it the bear or the bird?",
+     "parentCue": "Let your child guess first",
+     "durationSec": 7,
+     "voice": "Is it the bear or the bird? Listen.",
+     "voiceId": "74985bd4e5d066df",
+     "voiceSec": 2.88
+    },
+    {
+     "kind": "high_low",
+     "caption": "The bear!",
      "parentCue": "Tap any low key",
      "target": "low",
      "bpm": 72,
@@ -3991,132 +4170,11 @@
     },
     {
      "kind": "high_low",
-     "caption": "Here comes the bird",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 72,
-     "leadInSec": 3.63,
-     "notes": [
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "Lul",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "la",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "good",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "s": "night",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Lullaby and good night",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Listen, a little bird. Tap up high.",
-     "voiceId": "0908c1595346fc80",
-     "voiceSec": 3.23
-    },
-    {
-     "kind": "say",
-     "caption": "Is it the bear or the bird?",
-     "parentCue": "Let your child guess first",
-     "durationSec": 7,
-     "voice": "Is it the bear or the bird? Listen.",
-     "voiceId": "74985bd4e5d066df",
-     "voiceSec": 2.88
-    },
-    {
-     "kind": "high_low",
-     "caption": "The bear!",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 72,
-     "leadInSec": 3.56,
-     "notes": [
-      {
-       "p": "E3",
-       "d": 0.5,
-       "s": "Lul",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 0.5,
-       "s": "la",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 0.5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 0.5,
-       "s": "good",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "s": "night",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Lullaby and good night",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Low and deep, like a bear. Tap down low.",
-     "voiceId": "01122bae862343ea",
-     "voiceSec": 3.16
-    },
-    {
-     "kind": "high_low",
      "caption": "The bird!",
      "parentCue": "Tap any high key",
      "target": "high",
      "bpm": 72,
-     "leadInSec": 3.63,
+     "leadInSec": 3.41,
      "notes": [
       {
        "p": "E5",
@@ -4161,170 +4219,51 @@
        "from": 0
       }
      ],
-     "durationSec": 11,
-     "voice": "Listen, a little bird. Tap up high.",
-     "voiceId": "0908c1595346fc80",
-     "voiceSec": 3.23
+     "durationSec": 10,
+     "voice": "The bird is here. High keys, on the right.",
+     "voiceId": "99715525943a1f67",
+     "voiceSec": 3.01
     },
     {
      "kind": "praise",
-     "caption": "Great listening!",
+     "caption": "Great bear, great bird!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "high_low",
-     "caption": "Big bear steps",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 72,
-     "leadInSec": 3.56,
-     "notes": [
-      {
-       "p": "E3",
-       "d": 0.5,
-       "s": "Lul",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 0.5,
-       "s": "la",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 0.5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 0.5,
-       "s": "good",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "s": "night",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Lullaby and good night",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Low and deep, like a bear. Tap down low.",
-     "voiceId": "01122bae862343ea",
-     "voiceSec": 3.16
-    },
-    {
-     "kind": "high_low",
-     "caption": "Little bird song",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 72,
-     "leadInSec": 3.63,
-     "notes": [
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "Lul",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "la",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "good",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "s": "night",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Lullaby and good night",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Listen, a little bird. Tap up high.",
-     "voiceId": "0908c1595346fc80",
-     "voiceSec": 3.23
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
     "primary": "pitch",
     "secondary": [
-     "space"
+     "space",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Spatial mapping of pitch",
-    "parentLine": "Low sounds live on the left, high sounds on the right"
+    "concept": "Contour (leap up, settle down)",
+    "parentLine": "Hearing the tune jump up high, then float back down low"
    },
-   "parentPrompt": "Low keys are on the left, high keys on the right. Any key on the correct side counts.",
-   "childAction": "Tap low for the bear, high for the bird.",
-   "bridge": "Low notes are heavy bears on the left; high notes are little birds.",
-   "celebrate": "Today you practiced hearing high and low and finding the way on the keys."
+   "parentPrompt": "Growl and crouch for the bear; flap your arms and stretch up for the bird.",
+   "childAction": "Bear: tap the left side. Bird: tap the right side.",
+   "bridge": "Low notes are a heavy bear on the left; high notes are a bird.",
+   "celebrate": "Today you practiced: hearing high and low, up and down."
   },
   {
    "id": "brahms-lullaby-c04",
    "index": 4,
-   "title": "Loud and soft",
-   "goal": "Tap the beat loudly, then softly",
+   "title": "Big stretch, tiny whisper",
+   "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
    "type": "loud-soft",
-   "durationSec": 240,
-   "parentTip": "Loud means strong, not banging. Whisper when it's time to play soft.",
+   "durationSec": 254,
+   "parentTip": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
    "video": "brahms-lullaby/brahms-lullaby-c04.mp4",
    "thumb": "brahms-lullaby/brahms-lullaby-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Brahms' Lullaby",
-     "subcaption": "Class 4: Loud and soft",
+     "subcaption": "Class 4: Big stretch, tiny whisper",
      "durationSec": 6,
      "voice": "Hi there. It's music time. Today's song is Brahms' Lullaby.",
      "voiceId": "fb31fd64d202c3d8",
@@ -4332,21 +4271,12 @@
     },
     {
      "kind": "say",
-     "caption": "Let's play loud and soft",
-     "parentCue": "Show a big tap and a tiny tap",
-     "durationSec": 7,
-     "voice": "Let's play loud and soft.",
-     "voiceId": "38969fa644979c6c",
-     "voiceSec": 2.07
-    },
-    {
-     "kind": "say",
-     "caption": "Loud like a drum, soft like a whisper",
-     "parentCue": "Whisper the word soft",
-     "durationSec": 7,
-     "voice": "Loud like a drum. Soft like a whisper.",
-     "voiceId": "e6a88f8294c33b42",
-     "voiceSec": 3.13
+     "caption": "Big loud taps, tiny soft taps",
+     "parentCue": "loud means strong arms, never banging.",
+     "durationSec": 8,
+     "voice": "Big loud taps, tiny soft taps. Grown-up, loud means strong arms, never banging.",
+     "voiceId": "97dd88c7a3225beb",
+     "voiceSec": 6.85
     },
     {
      "kind": "beat",
@@ -6042,80 +5972,362 @@
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
-     "caption": "Wiggle your fingers!",
-     "parentCue": "Shake out both hands together",
-     "durationSec": 5,
-     "voice": "Wiggle your fingers. Wiggle, wiggle.",
-     "voiceId": "640ef443bc914f6c",
-     "voiceSec": 2.99
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap the beat",
+     "parentCue": "You play, your child taps",
+     "bpm": 72,
+     "leadInSec": 2.22,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Lul",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "la",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "good",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 3,
+       "s": "night",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "With",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ro",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "ses",
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 1.5,
+       "f": 4,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "dight",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 2,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "With",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "lil",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "ies",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "o'er",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "f": 3,
+       "s": "spread",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Lullaby and good night",
+       "from": 0
+      },
+      {
+       "lyric": "With roses bedight",
+       "from": 6
+      },
+      {
+       "lyric": "With lilies o'erspread",
+       "from": 13
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Tap the beat, like a heartbeat.",
+     "voiceId": "0cf68adb12e1c639",
+     "voiceSec": 1.82
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found loud and soft!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "expression",
     "secondary": [
+     "beat",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Magnitude contrast",
-    "parentLine": "Telling a big sound from a small one"
+    "concept": "Opposites (magnitude contrast)",
+    "parentLine": "Noticing big and small: the same tap, more or less"
    },
-   "parentPrompt": "Loud means strong, not banging. Whisper when it's time to play soft.",
-   "childAction": "Tap loud like a drum, soft like a whisper.",
-   "bridge": "Loud is a big drum; soft is a whisper on the keys.",
-   "celebrate": "Today you practiced loud and soft, fast and slow and playing together."
+   "parentPrompt": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
+   "childAction": "Loud: big stretchy taps. Soft: tiny whisper taps.",
+   "bridge": "Loud taps are a big morning stretch; soft taps are a goodnight whisper.",
+   "celebrate": "Today you practiced: playing loud and soft."
   },
   {
    "id": "brahms-lullaby-c05",
    "index": 5,
-   "title": "Slow and fast",
-   "goal": "Follow the music when it goes slow and fast",
+   "title": "Sleepy slow, awake fast",
+   "goal": "Follow the music as it goes slow and sleepy, then fast and awake.",
    "type": "fast-slow",
-   "durationSec": 202,
-   "parentTip": "Let the tempo lead your child. Slow down if taps get wild, then try fast again.",
+   "durationSec": 215,
+   "parentTip": "Walk your fingers up your child's back, slowly then quickly, with the music.",
    "video": "brahms-lullaby/brahms-lullaby-c05.mp4",
    "thumb": "brahms-lullaby/brahms-lullaby-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Brahms' Lullaby",
-     "subcaption": "Class 5: Slow and fast",
+     "subcaption": "Class 5: Sleepy slow, awake fast",
      "durationSec": 8,
      "voice": "Hello again. Wave your fingers hello. Today's song is Brahms' Lullaby.",
      "voiceId": "db0718a9505bec8e",
      "voiceSec": 6.15
     },
     {
-     "kind": "say",
-     "caption": "Songs can go slow or fast",
-     "parentCue": "Move your arms slowly, then quickly",
-     "durationSec": 7,
-     "voice": "Songs can go slow, or fast.",
-     "voiceId": "aafd9004389208dd",
-     "voiceSec": 2.4
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 72,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "Lul",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "la",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
-     "caption": "Slow like a turtle, fast like a bunny",
-     "parentCue": "Walk your fingers slowly, then fast",
-     "durationSec": 8,
-     "voice": "Slow like a turtle. Fast like a bunny.",
-     "voiceId": "e4f86f78454f08b3",
-     "voiceSec": 3.02
+     "caption": "Sleepy slow, awake fast",
+     "parentCue": "slow down if the taps get wild.",
+     "durationSec": 7,
+     "voice": "Sleepy slow, awake fast. Grown-up, slow down if the taps get wild.",
+     "voiceId": "221b069045504305",
+     "voiceSec": 5.23
+    },
+    {
+     "kind": "beat",
+     "caption": "The sleepy lullaby",
+     "parentCue": "Tap together, slow and heavy",
+     "bpm": 54,
+     "leadInSec": 5.51,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 14,
+     "voice": "The sleepy lullaby. Slow, heavy taps, like a sleepy turtle.",
+     "voiceId": "aa88e8e8a0cd9577",
+     "voiceSec": 5.11
+    },
+    {
+     "kind": "beat",
+     "caption": "The wide-awake lullaby",
+     "parentCue": "Same song, now quick and light",
+     "bpm": 104,
+     "leadInSec": 4.91,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "The wide-awake lullaby. Quick, light taps, like a hopping bunny.",
+     "voiceId": "630e54314114a4d5",
+     "voiceSec": 4.51
     },
     {
      "kind": "beat",
@@ -6957,19 +7169,19 @@
     },
     {
      "kind": "say",
-     "caption": "Whole song, fast!",
-     "parentCue": "Play it a bit faster",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Now the whole song, quick like a bunny.",
-     "voiceId": "0b07ab84bbeed5da",
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
      "voiceSec": 2.25
     },
     {
      "kind": "beat",
-     "caption": "Fast, fast, fast!",
-     "parentCue": "Quick, like a running bunny",
-     "bpm": 94,
-     "leadInSec": 2.43,
+     "caption": "Tap the beat",
+     "parentCue": "You play, your child taps",
+     "bpm": 72,
+     "leadInSec": 3.27,
      "notes": [
       {
        "p": "E4",
@@ -7238,90 +7450,6 @@
        "f": 4,
        "s": "blessed",
        "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Lay",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "thee",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "down",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "now",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 2,
-       "s": "rest",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "May",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "thy",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "slum",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ber",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "blessed",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -7348,77 +7476,53 @@
       {
        "lyric": "May thy slumber be blessed",
        "from": 33
-      },
-      {
-       "lyric": "Lay thee down now and rest",
-       "from": 39
-      },
-      {
-       "lyric": "May thy slumber be blessed",
-       "from": 45
       }
      ],
-     "durationSec": 36,
-     "voice": "Fast, fast, fast.",
-     "voiceId": "6ad0ee14bbd640bd",
-     "voiceSec": 2.03
+     "durationSec": 35,
+     "voice": "Tap with the circle. Nice and steady.",
+     "voiceId": "d916f37a4d2a5a53",
+     "voiceSec": 2.87
     },
     {
      "kind": "praise",
-     "caption": "Speedy fingers!",
+     "caption": "You followed the music!",
      "durationSec": 5,
-     "voice": "Quick little fingers.",
-     "voiceId": "07d002604f064b53",
-     "voiceSec": 1.45
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 7,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "You followed the music.",
+     "voiceId": "538f60183a122fe9",
+     "voiceSec": 1.69
     }
    ],
    "skill": {
     "primary": "expression",
     "secondary": [
-     "beat"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Rate (fast versus slow)",
-    "parentLine": "Matching the speed of a pattern"
+    "concept": "Invariance under tempo change",
+    "parentLine": "Same tune, same shape, only the speed changes"
    },
-   "parentPrompt": "Let the tempo lead your child. Slow down if taps get wild, then try fast again.",
-   "childAction": "Tap fast like a rabbit, slow like a turtle.",
-   "bridge": "Fast taps are rabbit hops; slow taps are turtle steps.",
-   "celebrate": "Today you practiced loud and soft, fast and slow and keeping a steady beat."
+   "parentPrompt": "Walk your fingers up your child's back, slowly then quickly, with the music.",
+   "childAction": "Slow music: sleepy taps. Fast music: wide-awake taps.",
+   "bridge": "Slow taps are heavy sleepy eyes; fast taps are wide-awake wiggles.",
+   "celebrate": "Today you practiced: following slow and fast music."
   },
   {
    "id": "brahms-lullaby-c06",
    "index": 6,
-   "title": "Stop and go",
-   "goal": "Tap when the music plays and freeze when it stops",
+   "title": "Shh... and freeze",
+   "goal": "Tap while the music plays and freeze when it stops.",
    "type": "stop-go",
-   "durationSec": 242,
-   "parentTip": "Make freezing silly and fun. Holding still is a big skill for little ones.",
+   "durationSec": 235,
+   "parentTip": "Freeze with a sleepy face when the music stops; smile when it starts again.",
    "video": "brahms-lullaby/brahms-lullaby-c06.mp4",
    "thumb": "brahms-lullaby/brahms-lullaby-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Brahms' Lullaby",
-     "subcaption": "Class 6: Stop and go",
+     "subcaption": "Class 6: Shh... and freeze",
      "durationSec": 7,
      "voice": "Hi, everyone. Hands on your knees. Today we play Brahms' Lullaby.",
      "voiceId": "621b012b94baf0e5",
@@ -7426,21 +7530,12 @@
     },
     {
      "kind": "say",
-     "caption": "When the music stops, we freeze!",
-     "parentCue": "Freeze like a statue together",
+     "caption": "Tap, tap... and freeze!",
+     "parentCue": "make freezing a quiet game, eyes closed.",
      "durationSec": 7,
-     "voice": "When the music stops, we freeze.",
-     "voiceId": "437bd8027fc8f488",
-     "voiceSec": 2.3
-    },
-    {
-     "kind": "say",
-     "caption": "Go means tap, stop means freeze",
-     "parentCue": "Practice one freeze now",
-     "durationSec": 7,
-     "voice": "Go means tap. Stop means freeze.",
-     "voiceId": "b3994b162070ad3a",
-     "voiceSec": 2.82
+     "voice": "Tap, tap... and freeze. Grown-up, make freezing a quiet game, eyes closed.",
+     "voiceId": "7b14ac250106c186",
+     "voiceSec": 5.69
     },
     {
      "kind": "beat",
@@ -8534,65 +8629,98 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great quiet freezing!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
     "primary": "listening",
     "secondary": [
-     "beat"
+     "beat",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Inhibitory control (start and stop)",
-    "parentLine": "Stopping and starting exactly with the sound"
+    "concept": "Cause and effect (sound, silence)",
+    "parentLine": "When the sound stops, the hands stop too"
    },
-   "parentPrompt": "Make freezing silly and fun. Holding still is a big skill for little ones.",
-   "childAction": "Play when the music goes, freeze when it stops.",
-   "bridge": "Music on, hands dance; music off, hands freeze like statues.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Freeze with a sleepy face when the music stops; smile when it starts again.",
+   "childAction": "Tap while the music plays. Hold very still when it stops.",
+   "bridge": "Music on, the cradle rocks; music off, we hold still like sleeping babies.",
+   "celebrate": "Today you practiced: listening for stop and go."
   },
   {
    "id": "brahms-lullaby-c07",
    "index": 7,
-   "title": "Play together",
-   "goal": "Play the song together, grown-up on the tune, child on the beat",
+   "title": "Rock-a-bye duet",
+   "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
    "type": "together",
-   "durationSec": 238,
-   "parentTip": "Follow your child's lead. If they stop to listen, keep playing and smile.",
+   "durationSec": 243,
+   "parentTip": "Play the tune slowly and watch your child; if they stop, keep playing softly.",
    "video": "brahms-lullaby/brahms-lullaby-c07.mp4",
    "thumb": "brahms-lullaby/brahms-lullaby-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Brahms' Lullaby",
-     "subcaption": "Class 7: Play together",
+     "subcaption": "Class 7: Rock-a-bye duet",
      "durationSec": 8,
      "voice": "Hello, friends. Today we play Brahms' Lullaby. Grown-up, sit close beside your little one.",
      "voiceId": "4bc786cf846d583e",
      "voiceSec": 6.66
     },
     {
-     "kind": "say",
-     "caption": "Let's play together",
-     "parentCue": "You play the tune, your child taps along",
-     "durationSec": 6,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 72,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "Lul",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "la",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
-     "caption": "Sing, tap and smile",
-     "parentCue": "Sing the words while you play",
+     "caption": "I play, you tap",
+     "parentCue": "sit side by side at the piano.",
      "durationSec": 6,
-     "voice": "Sing, tap, and smile.",
-     "voiceId": "10b3a90e8c14f1b5",
-     "voiceSec": 1.91
+     "voice": "I play the song. You tap along.",
+     "voiceId": "1cc501382f86fc32",
+     "voiceSec": 2.88
     },
     {
      "kind": "together",
@@ -9423,7 +9551,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 72,
-     "leadInSec": 3.63,
+     "leadInSec": 4.26,
      "notes": [
       {
        "p": "E4",
@@ -9812,18 +9940,18 @@
        "from": 45
       }
      ],
-     "durationSec": 46,
-     "voice": "Tap with the big circle. Tap, tap, tap.",
-     "voiceId": "faf2ee285af584e0",
-     "voiceSec": 3.23
+     "durationSec": 47,
+     "voice": "Any key is fine. Tap when the circle grows.",
+     "voiceId": "015b37b18f728b6c",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -9839,7 +9967,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 72,
-     "leadInSec": 3.63,
+     "leadInSec": 3.54,
      "notes": [
       {
        "p": "E4",
@@ -10229,49 +10357,50 @@
       }
      ],
      "durationSec": 46,
-     "voice": "Tap with the big circle. Tap, tap, tap.",
-     "voiceId": "faf2ee285af584e0",
-     "voiceSec": 3.23
+     "voice": "Grown-up plays the song. You tap the beat.",
+     "voiceId": "4517efb7c8c0ff3d",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "What a gentle duet!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "beat"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping time with another person"
+    "concept": "Interlocking parts (two roles)",
+    "parentLine": "Two different jobs fit together to make one song"
    },
-   "parentPrompt": "Follow your child's lead. If they stop to listen, keep playing and smile.",
-   "childAction": "Play along with your grown-up.",
-   "bridge": "Two players, one song, like walking in step.",
-   "celebrate": "Today you practiced playing together and keeping a steady beat."
+   "parentPrompt": "Play the tune slowly and watch your child; if they stop, keep playing softly.",
+   "childAction": "Tap the beat softly on any key while your grown-up plays.",
+   "bridge": "The tune is the lullaby; your beat is the cradle that rocks it.",
+   "celebrate": "Today you practiced: playing one song together, two jobs."
   },
   {
    "id": "brahms-lullaby-c08",
    "index": 8,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "A lullaby for teddy",
+   "goal": "Play the whole song softly for teddy, then tuck teddy in together.",
    "type": "concert",
-   "durationSec": 237,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 236,
+   "parentTip": "Lay teddy down as the audience; play softly, then whisper 'good night' and bow.",
    "video": "brahms-lullaby/brahms-lullaby-c08.mp4",
    "thumb": "brahms-lullaby/brahms-lullaby-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Brahms' Lullaby",
-     "subcaption": "Class 8: Concert time",
+     "subcaption": "Class 8: A lullaby for teddy",
      "durationSec": 8,
      "voice": "Hello again. Wave your fingers hello. Today's song is Brahms' Lullaby.",
      "voiceId": "db0718a9505bec8e",
@@ -10279,21 +10408,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "Concert time for teddy",
+     "parentCue": "lay teddy down to listen.",
+     "durationSec": 6,
+     "voice": "Concert time for teddy. Grown-up, lay teddy down to listen.",
+     "voiceId": "89a1d66e481ea9b8",
+     "voiceSec": 4.17
     },
     {
      "kind": "beat",
@@ -11114,9 +11234,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -11530,25 +11650,25 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
+     "caption": "Play it for someone you love",
+     "parentCue": "Call a family member to listen",
+     "durationSec": 7,
+     "voice": "Let's play it for someone you love.",
+     "voiceId": "c5620ac87a810141",
+     "voiceSec": 2.16
     },
     {
      "kind": "beat",
-     "caption": "Tap the beat",
-     "parentCue": "You play, your child taps",
+     "caption": "A song for you",
+     "parentCue": "You play the tune, your child taps the beat",
      "bpm": 72,
-     "leadInSec": 4.26,
+     "leadInSec": 1.78,
      "notes": [
       {
        "p": "E4",
@@ -11859,6 +11979,48 @@
        "f": 2,
        "s": "rest",
        "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "May",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "thy",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "slum",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ber",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1,
+       "s": "blessed",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -11889,37 +12051,41 @@
       {
        "lyric": "Lay thee down now and rest",
        "from": 39
+      },
+      {
+       "lyric": "May thy slumber be blessed",
+       "from": 45
       }
      ],
-     "durationSec": 41,
-     "voice": "Any key is fine. Tap when the circle grows.",
-     "voiceId": "015b37b18f728b6c",
-     "voiceSec": 3.86
+     "durationSec": 45,
+     "voice": "This one is for you.",
+     "voiceId": "30767942db0cc425",
+     "voiceSec": 1.38
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Teddy is sleeping, bravo!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "together",
     "secondary": [
-     "together",
+     "form",
      "expression"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Ending (coming home to rest)",
+    "parentLine": "The song ends on a long, low home note, ready for sleep"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Lay teddy down as the audience; play softly, then whisper 'good night' and bow.",
+   "childAction": "Tap softly to the very end, then tuck teddy in.",
+   "bridge": "The song climbs up and drifts down, ending low, like closing eyes.",
+   "celebrate": "Today you practiced: playing a whole song softly, together."
   }
  ]
 }

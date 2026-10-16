@@ -27,22 +27,15 @@
    "total": 9
   },
   {
-   "id": "pitch",
-   "label": "High and low",
-   "value": 0.5,
-   "classes": 1,
-   "total": 9
-  },
-  {
-   "id": "form",
-   "label": "Song shape",
-   "value": 0.5,
-   "classes": 1,
-   "total": 9
-  },
-  {
    "id": "together",
    "label": "Playing together",
+   "value": 1.0,
+   "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "pitch",
+   "label": "High and low",
    "value": 0.5,
    "classes": 1,
    "total": 9
@@ -51,7 +44,7 @@
  "icon": "star",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2342,
+ "totalSec": 2329,
  "classes": [
   {
    "id": "twinkle-twinkle-c01",
@@ -59,7 +52,7 @@
    "title": "Rock the little star",
    "goal": "Feel the steady beat of the song with the whole body.",
    "type": "listen",
-   "durationSec": 284,
+   "durationSec": 282,
    "parentTip": "Hold your child on your lap and rock side to side on every beat.",
    "video": "twinkle-twinkle/twinkle-twinkle-c01.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c01.jpg",
@@ -72,6 +65,47 @@
      "voice": "Hi there. It's music time. Today's song is Twinkle Twinkle Little Star.",
      "voiceId": "1c151562a302d01e",
      "voiceSec": 5.29
+    },
+    {
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 80,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "kle",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
@@ -1113,7 +1147,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 80,
-     "leadInSec": 3.35,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -1437,17 +1471,17 @@
       }
      ],
      "durationSec": 41,
-     "voice": "Ears open. Listen to the song.",
-     "voiceId": "ac59edc6158a194e",
-     "voiceSec": 2.95
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -1904,104 +1938,6 @@
        "f": 1,
        "s": "are",
        "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Up",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "bove",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "world",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "so",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "high",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Like",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "sky",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -2012,17 +1948,9 @@
       {
        "lyric": "How I wonder what you are",
        "from": 7
-      },
-      {
-       "lyric": "Up above the world so high",
-       "from": 14
-      },
-      {
-       "lyric": "Like a diamond in the sky",
-       "from": 21
       }
      ],
-     "durationSec": 28,
+     "durationSec": 16,
      "voice": "Tap the beat, like a heartbeat.",
      "voiceId": "0cf68adb12e1c639",
      "voiceSec": 1.82
@@ -2031,9 +1959,9 @@
      "kind": "praise",
      "caption": "You swayed together!",
      "durationSec": 5,
-     "voice": "You swayed together.",
-     "voiceId": "a5c8e553b02258c5",
-     "voiceSec": 1.62
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
@@ -2058,7 +1986,7 @@
    "title": "Tap the star's heartbeat",
    "goal": "Tap one steady tap for every beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 246,
+   "durationSec": 237,
    "parentTip": "Rest your hand over your child's hand and tap together, then slowly let go.",
    "video": "twinkle-twinkle/twinkle-twinkle-c02.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c02.jpg",
@@ -2808,9 +2736,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -3158,9 +3086,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -3508,25 +3436,70 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 9,
+     "voice": "Shake, shake, shake your hands.",
+     "voiceId": "69041444bf86c15c",
+     "voiceSec": 2.85
+    },
+    {
+     "kind": "praise",
+     "caption": "You kept the beat!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
+    }
+   ],
+   "skill": {
+    "primary": "beat",
+    "secondary": [
+     "counting",
+     "together"
+    ]
+   },
+   "mathTarget": {
+    "concept": "One-to-one correspondence",
+    "parentLine": "One tap for each beat, no more, no less"
+   },
+   "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+   "childAction": "Tap any key once for each beat. Any key is right.",
+   "bridge": "Each beat is a stepping stone; one tap lands on each stone.",
+   "celebrate": "Today you practiced: one tap for each beat."
+  },
+  {
+   "id": "twinkle-twinkle-c03",
+   "index": 3,
+   "title": "Bear low, bird high",
+   "goal": "Hear low and high sounds and tap the matching side of the piano.",
+   "type": "high-low",
+   "durationSec": 244,
+   "parentTip": "Growl and crouch for low sounds; flap your arms and stretch up for high.",
+   "video": "twinkle-twinkle/twinkle-twinkle-c03.mp4",
+   "thumb": "twinkle-twinkle/twinkle-twinkle-c03.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Twinkle Twinkle Little Star",
+     "subcaption": "Class 3: Bear low, bird high",
+     "durationSec": 8,
+     "voice": "Hello again. Wave your fingers hello. Today's song is Twinkle Twinkle Little Star.",
+     "voiceId": "d2d99d6c750a9fad",
+     "voiceSec": 6.16
     },
     {
      "kind": "beat",
-     "caption": "Tap the beat",
-     "parentCue": "You play, your child taps",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
      "bpm": 80,
-     "leadInSec": 4.26,
+     "leadInSec": 4.96,
      "notes": [
       {
        "p": "C4",
@@ -3555,84 +3528,12 @@
        "f": 4,
        "s": "kle",
        "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
       }
      ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Any key is fine. Tap when the circle grows.",
-     "voiceId": "015b37b18f728b6c",
-     "voiceSec": 3.86
-    },
-    {
-     "kind": "praise",
-     "caption": "You kept the beat!",
-     "durationSec": 5,
-     "voice": "You kept the beat.",
-     "voiceId": "47b6f62f551f4550",
-     "voiceSec": 1.34
-    }
-   ],
-   "skill": {
-    "primary": "beat",
-    "secondary": [
-     "counting",
-     "together"
-    ]
-   },
-   "mathTarget": {
-    "concept": "One-to-one correspondence",
-    "parentLine": "One tap for each beat, no more, no less"
-   },
-   "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
-   "childAction": "Tap any key once for each beat. Any key is right.",
-   "bridge": "Each beat is a stepping stone; one tap lands on each stone.",
-   "celebrate": "Today you practiced: one tap for each beat."
-  },
-  {
-   "id": "twinkle-twinkle-c03",
-   "index": 3,
-   "title": "Bear low, bird high",
-   "goal": "Hear low and high sounds and tap the matching side of the piano.",
-   "type": "high-low",
-   "durationSec": 246,
-   "parentTip": "Growl and crouch for low sounds; flap your arms and stretch up for high.",
-   "video": "twinkle-twinkle/twinkle-twinkle-c03.mp4",
-   "thumb": "twinkle-twinkle/twinkle-twinkle-c03.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Twinkle Twinkle Little Star",
-     "subcaption": "Class 3: Bear low, bird high",
-     "durationSec": 8,
-     "voice": "Hello again. Wave your fingers hello. Today's song is Twinkle Twinkle Little Star.",
-     "voiceId": "d2d99d6c750a9fad",
-     "voiceSec": 6.16
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
@@ -3648,7 +3549,7 @@
      "caption": "Watch the lights walk down",
      "parentCue": "Walk your fingers down your child's arm",
      "bpm": 66,
-     "leadInSec": 2.49,
+     "leadInSec": 4.29,
      "notes": [
       {
        "p": "F4",
@@ -3686,10 +3587,10 @@
        "who": "parent"
       }
      ],
-     "durationSec": 12,
-     "voice": "Watch the lights walk down.",
-     "voiceId": "9fb1150e5a61335f",
-     "voiceSec": 2.09
+     "durationSec": 14,
+     "voice": "Watch the lights walk down. Point with one finger.",
+     "voiceId": "fca95f870b0d9e6a",
+     "voiceSec": 3.89
     },
     {
      "kind": "high_low",
@@ -4076,9 +3977,9 @@
      "kind": "praise",
      "caption": "Great listening!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "high_low",
@@ -4208,9 +4109,9 @@
      "kind": "praise",
      "caption": "You know high and low!",
      "durationSec": 5,
-     "voice": "You know high and low now.",
-     "voiceId": "4389997f0bd28169",
-     "voiceSec": 1.88
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "high_low",
@@ -4218,7 +4119,7 @@
      "parentCue": "Tap any low key",
      "target": "low",
      "bpm": 80,
-     "leadInSec": 3.97,
+     "leadInSec": 3.64,
      "notes": [
       {
        "p": "C3",
@@ -4270,9 +4171,9 @@
       }
      ],
      "durationSec": 12,
-     "voice": "Bear time. Tap the low keys, down on the left.",
-     "voiceId": "bc46a476caf185c7",
-     "voiceSec": 3.57
+     "voice": "The bear is here. Low keys, on the left.",
+     "voiceId": "8312dfedac9897c2",
+     "voiceSec": 3.24
     },
     {
      "kind": "high_low",
@@ -4351,270 +4252,6 @@
      "parentCue": "Tap any low key",
      "target": "low",
      "bpm": 80,
-     "leadInSec": 3.64,
-     "notes": [
-      {
-       "p": "C3",
-       "d": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C3",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "s": "star",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "The bear is here. Low keys, on the left.",
-     "voiceId": "8312dfedac9897c2",
-     "voiceSec": 3.24
-    },
-    {
-     "kind": "high_low",
-     "caption": "The bird!",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 80,
-     "leadInSec": 3.63,
-     "notes": [
-      {
-       "p": "C5",
-       "d": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A5",
-       "d": 1,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A5",
-       "d": 1,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "s": "star",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Listen, a little bird. Tap up high.",
-     "voiceId": "0908c1595346fc80",
-     "voiceSec": 3.23
-    },
-    {
-     "kind": "praise",
-     "caption": "Great listening!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "high_low",
-     "caption": "Big bear steps",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 80,
-     "leadInSec": 3.56,
-     "notes": [
-      {
-       "p": "C3",
-       "d": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C3",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "s": "star",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Low and deep, like a bear. Tap down low.",
-     "voiceId": "01122bae862343ea",
-     "voiceSec": 3.16
-    },
-    {
-     "kind": "high_low",
-     "caption": "Little bird song",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 80,
-     "leadInSec": 3.41,
-     "notes": [
-      {
-       "p": "C5",
-       "d": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A5",
-       "d": 1,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A5",
-       "d": 1,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "s": "star",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "The bird is here. High keys, on the right.",
-     "voiceId": "99715525943a1f67",
-     "voiceSec": 3.01
-    },
-    {
-     "kind": "praise",
-     "caption": "You know high and low!",
-     "durationSec": 5,
-     "voice": "You know high and low now.",
-     "voiceId": "4389997f0bd28169",
-     "voiceSec": 1.88
-    },
-    {
-     "kind": "high_low",
-     "caption": "Here comes the bear",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 80,
      "leadInSec": 3.97,
      "notes": [
       {
@@ -4672,12 +4309,206 @@
      "voiceSec": 3.57
     },
     {
+     "kind": "high_low",
+     "caption": "The bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 80,
+     "leadInSec": 4.47,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "s": "star",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Here comes the little bird. Tap a high key, up on the right.",
+     "voiceId": "fddf06316df8346e",
+     "voiceSec": 4.07
+    },
+    {
+     "kind": "praise",
+     "caption": "Great listening!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
+    },
+    {
+     "kind": "high_low",
+     "caption": "Big bear steps",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 80,
+     "leadInSec": 5.51,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "s": "star",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Here comes the big bear. Tap a low key, down on the left.",
+     "voiceId": "12a8fe0014ff7cb2",
+     "voiceSec": 5.11
+    },
+    {
+     "kind": "high_low",
+     "caption": "Little bird song",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 80,
+     "leadInSec": 4.47,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "A5",
+       "d": 1,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "s": "star",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Here comes the little bird. Tap a high key, up on the right.",
+     "voiceId": "fddf06316df8346e",
+     "voiceSec": 4.07
+    },
+    {
      "kind": "praise",
      "caption": "Great bear, great bird!",
      "durationSec": 5,
-     "voice": "Great bear. Great bird.",
-     "voiceId": "07c09dbd473a80e6",
-     "voiceSec": 2.34
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
@@ -6123,9 +5954,9 @@
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -6657,9 +6488,9 @@
      "kind": "praise",
      "caption": "You found loud and soft!",
      "durationSec": 5,
-     "voice": "You found loud and soft.",
-     "voiceId": "1a0910d4c1938893",
-     "voiceSec": 2.03
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
@@ -6684,7 +6515,7 @@
    "title": "Turtle and bunny",
    "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
    "type": "fast-slow",
-   "durationSec": 237,
+   "durationSec": 243,
    "parentTip": "Walk your fingers up your child's back, slowly then quickly, matching the music.",
    "video": "twinkle-twinkle/twinkle-twinkle-c05.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c05.jpg",
@@ -6712,7 +6543,7 @@
      "caption": "Turtle sings the star",
      "parentCue": "Tap together, slow and heavy",
      "bpm": 56,
-     "leadInSec": 2.21,
+     "leadInSec": 5.14,
      "notes": [
       {
        "p": "C4",
@@ -6750,17 +6581,17 @@
        "who": "parent"
       }
      ],
-     "durationSec": 13,
-     "voice": "The turtle sings it slowly.",
-     "voiceId": "ec3004d872c2d2f5",
-     "voiceSec": 1.81
+     "durationSec": 16,
+     "voice": "The turtle sings it slowly. Slow, heavy taps, like a sleepy turtle.",
+     "voiceId": "5150909a52a3adb3",
+     "voiceSec": 4.74
     },
     {
      "kind": "beat",
      "caption": "Bunny sings the star",
      "parentCue": "Same song, now quick and light",
      "bpm": 104,
-     "leadInSec": 2.2,
+     "leadInSec": 4.94,
      "notes": [
       {
        "p": "C4",
@@ -6798,10 +6629,10 @@
        "who": "parent"
       }
      ],
-     "durationSec": 9,
-     "voice": "The bunny sings it quickly.",
-     "voiceId": "2e250c7cc18dcde4",
-     "voiceSec": 1.8
+     "durationSec": 12,
+     "voice": "The bunny sings it quickly. Quick, light taps, like a hopping bunny.",
+     "voiceId": "c7be67e48264409b",
+     "voiceSec": 4.54
     },
     {
      "kind": "beat",
@@ -8189,9 +8020,9 @@
      "kind": "praise",
      "caption": "You followed the music!",
      "durationSec": 5,
-     "voice": "You followed the music.",
-     "voiceId": "538f60183a122fe9",
-     "voiceSec": 1.69
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
@@ -8216,7 +8047,7 @@
    "title": "Freeze, little star!",
    "goal": "Tap while the music plays and freeze when it stops.",
    "type": "stop-go",
-   "durationSec": 237,
+   "durationSec": 233,
    "parentTip": "Freeze with a funny face when the music stops; cheer when it starts again.",
    "video": "twinkle-twinkle/twinkle-twinkle-c06.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c06.jpg",
@@ -9326,21 +9157,12 @@
      "voiceSec": 2.6
     },
     {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 4,
-     "voice": "Shake, shake, shake your hands.",
-     "voiceId": "69041444bf86c15c",
-     "voiceSec": 2.85
-    },
-    {
      "kind": "praise",
      "caption": "Great freezing, star!",
      "durationSec": 5,
-     "voice": "Great freezing, little star.",
-     "voiceId": "7fed3de9b507df89",
-     "voiceSec": 1.91
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
@@ -10146,9 +9968,9 @@
      "kind": "praise",
      "caption": "You know all the games!",
      "durationSec": 5,
-     "voice": "You played every game.",
-     "voiceId": "d6aa38b98b122671",
-     "voiceSec": 1.8
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "beat",
@@ -10561,9 +10383,9 @@
      "kind": "praise",
      "caption": "You know all the games!",
      "durationSec": 5,
-     "voice": "You played every game.",
-     "voiceId": "d6aa38b98b122671",
-     "voiceSec": 1.8
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "beat",
@@ -10768,9 +10590,9 @@
      "kind": "praise",
      "caption": "Great listening ears!",
      "durationSec": 5,
-     "voice": "Great listening ears.",
-     "voiceId": "1efefd97fc2efcf0",
-     "voiceSec": 1.53
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
@@ -10795,7 +10617,7 @@
    "title": "You and me, star duet",
    "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
    "type": "together",
-   "durationSec": 275,
+   "durationSec": 273,
    "parentTip": "Play the tune and watch your child; if they stop, keep playing and smile.",
    "video": "twinkle-twinkle/twinkle-twinkle-c08.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c08.jpg",
@@ -10808,6 +10630,47 @@
      "voice": "Hello again. Wave your fingers hello. Today's song is Twinkle Twinkle Little Star.",
      "voiceId": "d2d99d6c750a9fad",
      "voiceSec": 6.16
+    },
+    {
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 80,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "kle",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
@@ -11497,9 +11360,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -11515,7 +11378,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 80,
-     "leadInSec": 3.27,
+     "leadInSec": 2.22,
      "notes": [
       {
        "p": "C4",
@@ -11838,18 +11701,18 @@
        "from": 35
       }
      ],
-     "durationSec": 41,
-     "voice": "Tap with the circle. Nice and steady.",
-     "voiceId": "d916f37a4d2a5a53",
-     "voiceSec": 2.87
+     "durationSec": 40,
+     "voice": "Tap the beat, like a heartbeat.",
+     "voiceId": "0cf68adb12e1c639",
+     "voiceSec": 1.82
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -11865,7 +11728,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 80,
-     "leadInSec": 3.27,
+     "leadInSec": 3.54,
      "notes": [
       {
        "p": "C4",
@@ -12188,18 +12051,18 @@
        "from": 35
       }
      ],
-     "durationSec": 41,
-     "voice": "Tap with the circle. Nice and steady.",
-     "voiceId": "d916f37a4d2a5a53",
-     "voiceSec": 2.87
+     "durationSec": 42,
+     "voice": "Grown-up plays the song. You tap the beat.",
+     "voiceId": "4517efb7c8c0ff3d",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -12215,7 +12078,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 80,
-     "leadInSec": 3.27,
+     "leadInSec": 2.22,
      "notes": [
       {
        "p": "C4",
@@ -12538,35 +12401,18 @@
        "from": 35
       }
      ],
-     "durationSec": 41,
-     "voice": "Tap with the circle. Nice and steady.",
-     "voiceId": "d916f37a4d2a5a53",
-     "voiceSec": 2.87
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "Wiggle your fingers!",
-     "parentCue": "Shake out both hands together",
-     "durationSec": 6,
-     "voice": "Wiggle your fingers. Wiggle, wiggle.",
-     "voiceId": "640ef443bc914f6c",
-     "voiceSec": 2.99
+     "durationSec": 40,
+     "voice": "Tap the beat, like a heartbeat.",
+     "voiceId": "0cf68adb12e1c639",
+     "voiceSec": 1.82
     },
     {
      "kind": "praise",
      "caption": "What a duet together!",
      "durationSec": 5,
-     "voice": "What a duet, together.",
-     "voiceId": "ccf36a73a9c955c9",
-     "voiceSec": 1.62
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
@@ -13301,9 +13147,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -14298,16 +14144,15 @@
      "kind": "praise",
      "caption": "Bravo, you played together!",
      "durationSec": 5,
-     "voice": "Bravo. You played together.",
-     "voiceId": "fdcf16b5ada14cab",
-     "voiceSec": 2.36
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "together",
     "secondary": [
-     "together",
-     "beat"
+     "form"
     ]
    },
    "mathTarget": {

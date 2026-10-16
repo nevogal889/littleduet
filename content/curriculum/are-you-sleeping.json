@@ -1,0 +1,199 @@
+{
+  "songId": "are-you-sleeping",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices steady beat, finding C, echoing short patterns, spotting lines that come twice and taking turns, with an old French wake-up song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Everything comes twice",
+      "goal": "Hear the whole song and notice that every line is sung two times.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "beat"] },
+      "mathTarget": { "concept": "Pattern repetition (A A)", "parentLine": "Every line is sung once, then the same line again" },
+      "parentPrompt": "Sway together; hold up one finger for each line, then two when it repeats.",
+      "childAction": "Sway, and show two fingers when a line comes again.",
+      "bridge": "Each line knocks twice on Brother John's door: knock, knock.",
+      "intro": [ { "caption": "Rock like a sleepy bell", "parentCue": "sit together and sway side to side" }, { "caption": "Does it come again? Two!", "parentCue": "Hold up two fingers when a line repeats" } ],
+      "games": [],
+      "praise": "You heard it twice!",
+      "celebrate": "Today you practiced: hearing lines that come two times."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Tick-tock, wake up!",
+      "goal": "Tap one steady tap on every beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["together", "counting"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rock side to side like a clock first, then tap the keys together.",
+      "childAction": "Tap any key once for every tick of the clock.",
+      "bridge": "The beat is the bedroom clock: tick, tock, tick, tock, never in a hurry.",
+      "intro": [ { "caption": "Tap with the circle", "parentCue": "Rock like a clock together, tick, tock" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tick-tock clock taps",
+          "parentCue": "Tap with your child, one tap per beat",
+          "bpm": 76,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "Find Brother John's C",
+      "goal": "Find C on the piano by touch, just left of the two black keys.",
+      "skill": { "primary": "space", "secondary": ["fingers", "counting"] },
+      "mathTarget": { "concept": "Spatial landmarks", "parentLine": "Using the two black keys as a signpost to find C" },
+      "parentPrompt": "Touch the two black keys together, then slide left to the white key C.",
+      "childAction": "Find two black keys, slide left, press C like a button.",
+      "bridge": "Two black keys are the bed; C sleeps just to the left of it.",
+      "intro": [ { "caption": "Where does C live?", "parentCue": "Touch the two black keys together first" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "C, C, C: one, two, three",
+          "parentCue": "Count out loud with each press",
+          "bpm": 70,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "You found C!",
+      "celebrate": "Today you practiced: finding C by the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "echo",
+      "title": "Climb out of bed",
+      "goal": "Listen to a 3 note call from the song, then copy it back.",
+      "skill": { "primary": "listening", "secondary": ["pitch", "fingers"] },
+      "mathTarget": { "concept": "Sequence recall (span 3)", "parentLine": "Holding three sounds in mind, then playing them back" },
+      "parentPrompt": "Play the call, then hold your hands in your lap while your child answers.",
+      "childAction": "Listen to the call, then play it back the same.",
+      "bridge": "Three steps up to the right, like climbing out of bed: C, D, E.",
+      "intro": [ { "caption": "Listen, then echo me", "parentCue": "Stretch up together like waking in the morning" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Wake-up steps: C, D, E",
+          "parentCue": "Point to each lit key, nice and slow",
+          "bpm": 70,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 2, "f": 3 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Brother John: E, F, G",
+          "parentCue": "Sing 'Brother John' with the three notes",
+          "bpm": 70,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "What a great echo!",
+      "celebrate": "Today you practiced: listening and copying three notes."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Knock, knock, again!",
+      "goal": "Echo a short pattern, then play it a second time, just like the song.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Pattern repetition (A A)", "parentLine": "Playing the same little tune two times in a row" },
+      "parentPrompt": "After the first pattern, knock twice on the piano lid and say 'again!'",
+      "childAction": "Echo the little tune, then play it once more.",
+      "bridge": "Up the steps and back to C, then the very same walk again.",
+      "intro": [ { "caption": "Listen, then echo me", "parentCue": "Knock twice and say 'again!' when it repeats" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "C, D, E, C, and again!",
+          "parentCue": "Say 'again!' before the second time",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "C4", "d": 1, "f": 1 } ]
+        }
+      ],
+      "praise": "Twice, just like the song!",
+      "celebrate": "Today you practiced: playing a pattern two times."
+    },
+    {
+      "index": 6,
+      "spineType": "special-note",
+      "title": "Ring the C bell",
+      "goal": "Wait and play C at the right moments while the grown-up plays the rest.",
+      "skill": { "primary": "together", "secondary": ["listening", "counting"] },
+      "mathTarget": { "concept": "Turn-taking (ordinal timing)", "parentLine": "Waiting for your turn, then playing exactly then" },
+      "parentPrompt": "Play the blue keys, including the low 'dang'; nod just before each coral C.",
+      "childAction": "Hands in your lap, then ring C when it lights up.",
+      "bridge": "Ding is your C; dang is the grown-up's low note; dong is C again.",
+      "intro": [ { "caption": "Ring the C bell", "parentCue": "Hands in laps until the coral C lights" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Ding, dang, dong bells",
+          "parentCue": "Sing ding, dang, dong with the lights",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "C4", "d": 2 }, { "p": "C4", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "C4", "d": 2 } ]
+        }
+      ],
+      "praise": "Perfect waiting, ding dong!",
+      "celebrate": "Today you practiced: waiting for your turn, then playing C."
+    },
+    {
+      "index": 7,
+      "spineType": "special-note",
+      "title": "Sleepy C, bell E",
+      "goal": "Listen and play the right one of two notes, C or E, in the song.",
+      "skill": { "primary": "listening", "secondary": ["space", "together"] },
+      "mathTarget": { "concept": "Classification into two sets", "parentLine": "Hearing which of two sounds it is, then choosing its key" },
+      "parentPrompt": "Touch C and say 'sleepy', touch E and say 'bell', then play.",
+      "childAction": "Play C or E, whichever key lights up.",
+      "bridge": "C is left of the two black keys, E is right; the black keys sit between.",
+      "intro": [ { "caption": "Listen for C and E", "parentCue": "Touch C, then E, saying their names" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Ringing, ringing: E, C, E, C",
+          "parentCue": "Say 'ring' on E and 'shh' on C",
+          "bpm": 66,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "C4", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "You picked the right key!",
+      "celebrate": "Today you practiced: telling C and E apart."
+    },
+    {
+      "index": 8,
+      "spineType": "together",
+      "title": "Morning bells together",
+      "goal": "Play the whole song together, each with your own notes, on a shared beat.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Entrainment (shared pulse)", "parentLine": "Two players keeping the same steady beat" },
+      "parentPrompt": "Nod the beat before you start; keep playing even if a note is missed.",
+      "childAction": "Play your notes and nod along with your grown-up.",
+      "bridge": "Two bell ringers, one bell tower: we ring on the same beat.",
+      "intro": [ { "caption": "Play it together", "parentCue": "Nod the beat together before you start" } ],
+      "games": [],
+      "praise": "You played as a team!",
+      "celebrate": "Today you practiced: playing together on one shared beat."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Wake up, teddy!",
+      "goal": "Play the whole song for a sleeping teddy, then wake teddy up and bow.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Form: beginning and ending", "parentLine": "A song has a start, a middle and an end" },
+      "parentPrompt": "Lay teddy down asleep; after the last 'dong', sit teddy up to clap.",
+      "childAction": "Play for sleeping teddy; on the last bell, teddy wakes up!",
+      "bridge": "The song starts in bed and ends with the bells: ding, dang, dong.",
+      "intro": [ { "caption": "A song for teddy", "parentCue": "Lay teddy down, pretending to sleep" } ],
+      "games": [],
+      "praise": "Bravo, teddy is awake!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

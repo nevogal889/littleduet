@@ -2,34 +2,62 @@
  "songId": "three-blind-mice",
  "title": "Three Blind Mice",
  "ageGroup": "4-5",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and listening memory, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices counting to three, a pattern that moves up, fingers in order and playing two parts together, using a very old round about scurrying mice.",
  "skillMap": [
   {
-   "id": "fingers",
-   "label": "Finger control",
+   "id": "counting",
+   "label": "Counting",
    "value": 1.0,
-   "classes": 6,
-   "total": 10
-  },
-  {
-   "id": "form",
-   "label": "Song shape",
-   "value": 0.33,
    "classes": 2,
-   "total": 10
-  },
-  {
-   "id": "listening",
-   "label": "Listening memory",
-   "value": 0.17,
-   "classes": 1,
    "total": 10
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.17,
+   "value": 1.0,
+   "classes": 2,
+   "total": 10
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.5,
+   "classes": 1,
+   "total": 10
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 0.5,
+   "classes": 1,
+   "total": 10
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 0.5,
+   "classes": 1,
+   "total": 10
+  },
+  {
+   "id": "fingers",
+   "label": "Finger control",
+   "value": 0.5,
+   "classes": 1,
+   "total": 10
+  },
+  {
+   "id": "form",
+   "label": "Song shape",
+   "value": 0.5,
+   "classes": 1,
+   "total": 10
+  },
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.5,
    "classes": 1,
    "total": 10
   }
@@ -37,44 +65,73 @@
  "icon": "mouse",
  "key": "C",
  "timeSignature": "6/8",
- "totalSec": 2102,
+ "totalSec": 2092,
  "classes": [
   {
    "id": "three-blind-mice-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "Five little mouse holes",
+   "goal": "Hear the song, find C by the two black keys and place five fingers.",
    "type": "listen",
-   "durationSec": 213,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 206,
+   "parentTip": "Point to two black keys, then help your child rest the thumb on C, fingers beside it.",
    "video": "three-blind-mice/three-blind-mice-c01.mp4",
    "thumb": "three-blind-mice/three-blind-mice-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Three Blind Mice",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: Five little mouse holes",
      "durationSec": 7,
      "voice": "Welcome back. Time for Three Blind Mice. Sit up tall, feet still.",
      "voiceId": "ed37821052d9d80e",
      "voiceSec": 5.18
     },
     {
-     "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
     },
     {
      "kind": "say",
-     "caption": "Thumb on C, fingers curved",
+     "caption": "One finger in each hole",
+     "parentCue": "say one to five as each finger lands",
+     "durationSec": 7,
+     "voice": "One finger in each hole. Grown-up, say one to five as each finger lands.",
+     "voiceId": "49b6f2d3d5663161",
+     "voiceSec": 5.9
+    },
+    {
+     "kind": "say",
+     "caption": "Thumb on F, fingers curved",
      "parentCue": "Help place one finger on each lit key",
      "showKeys": [
       {
-       "p": "C4",
+       "p": "F4",
        "f": 1
       },
       {
@@ -82,7 +139,7 @@
        "f": 2
       },
       {
-       "p": "E4",
+       "p": "A4",
        "f": 3
       },
       {
@@ -95,9 +152,48 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Thumb on C. Curve your fingers, like holding a little ball.",
-     "voiceId": "df5c6ecc923ce75c",
-     "voiceSec": 3.73
+     "voice": "Thumb on F. Curve your fingers, like holding a little ball.",
+     "voiceId": "c4aada0538da9543",
+     "voiceSec": 4.25
+    },
+    {
+     "kind": "your_turn",
+     "caption": "One finger, one key",
+     "parentCue": "Say the finger number for each key",
+     "bpm": 60,
+     "leadInSec": 4.36,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Your turn. One finger on each key, one by one.",
+     "voiceId": "be3fc90a0fdacab7",
+     "voiceSec": 3.96
     },
     {
      "kind": "listen",
@@ -1136,19 +1232,19 @@
     },
     {
      "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
+     "caption": "Sing along this time",
+     "parentCue": "Sing the words softly",
      "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
+     "voice": "This time, let's sing along.",
+     "voiceId": "fafc489034539c2a",
+     "voiceSec": 2.25
     },
     {
      "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
+     "caption": "Sing along",
+     "parentCue": "Sing with your child",
      "bpm": 100,
-     "leadInSec": 2.27,
+     "leadInSec": 1.93,
      "notes": [
       {
        "p": "E4",
@@ -1478,155 +1574,50 @@
       }
      ],
      "durationSec": 33,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Sing along with me.",
+     "voiceId": "1e3170cce5105aae",
+     "voiceSec": 1.53
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "Every hole has a finger!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 80,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "Three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "Three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "See"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "how"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "they"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 3,
-       "s": "run"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Three blind mice",
-       "from": 0
-      },
-      {
-       "lyric": "Three blind mice",
-       "from": 3
-      },
-      {
-       "lyric": "See how they run",
-       "from": 6
-      }
-     ],
-     "durationSec": 27,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "space",
     "secondary": [
-     "beat",
-     "together"
+     "fingers",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Spatial landmark (two black keys)",
+    "parentLine": "Using the two black keys as a sign to find C"
    },
-   "parentPrompt": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Point to two black keys, then help your child rest the thumb on C, fingers beside it.",
+   "childAction": "Thumb on C, then one finger in each mouse hole up to G.",
+   "bridge": "Five white keys are five mouse holes; one finger peeks into each.",
+   "celebrate": "Today you practiced: finding C and placing five fingers."
   },
   {
    "id": "three-blind-mice-c02",
    "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Three mice, three notes",
+   "goal": "Learn the first line: three mice, three notes, three fingers walking down.",
    "type": "phrase",
-   "durationSec": 196,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 193,
+   "parentTip": "Hold up three fingers and fold one down for each note: three, blind, mice.",
    "video": "three-blind-mice/three-blind-mice-c02.mp4",
    "thumb": "three-blind-mice/three-blind-mice-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Three Blind Mice",
-     "subcaption": "Class 2: Part 1",
+     "subcaption": "Class 2: Three mice, three notes",
      "durationSec": 7,
      "voice": "Welcome back. Time for Three Blind Mice. Sit up tall, feet still.",
      "voiceId": "ed37821052d9d80e",
@@ -1634,28 +1625,48 @@
     },
     {
      "kind": "say",
-     "caption": "Today: Three blind mice",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6,
-     "voice": "Today we learn a new bit: Three blind mice.",
-     "voiceId": "2d77596161f717f7",
-     "voiceSec": 3.39
+     "caption": "Three mice, three notes",
+     "parentCue": "hold up three fingers and count together",
+     "durationSec": 7,
+     "voice": "Three mice, three notes. Grown-up, hold up three fingers and count together.",
+     "voiceId": "9f2f8a715e5e2da3",
+     "voiceSec": 5.18
     },
     {
-     "kind": "say",
-     "caption": "This part comes back 2 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7,
-     "voice": "This part comes back two times. Listen for it.",
-     "voiceId": "9581ea7be1c58405",
-     "voiceSec": 3.94
+     "kind": "your_turn",
+     "caption": "Three blind mice",
+     "parentCue": "Say three, two, one",
+     "bpm": 60,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 75,
-     "leadInSec": 2.33,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "E4",
@@ -1711,9 +1722,9 @@
       }
      ],
      "durationSec": 14,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -1795,7 +1806,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 75,
-     "leadInSec": 3.47,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "E4",
@@ -1823,16 +1834,16 @@
       }
      ],
      "durationSec": 10,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 75,
-     "leadInSec": 2.95,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -1860,18 +1871,18 @@
        "from": 0
       }
      ],
-     "durationSec": 12,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 13,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -1887,7 +1898,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 75,
-     "leadInSec": 3.47,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "G4",
@@ -1920,17 +1931,17 @@
        "from": 0
       }
      ],
-     "durationSec": 10,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
+     "durationSec": 9,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 75,
-     "leadInSec": 2.95,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -1964,10 +1975,10 @@
        "from": 0
       }
      ],
-     "durationSec": 13,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 14,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
@@ -2056,25 +2067,25 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
+     "caption": "Let's do it again",
      "parentCue": "Fingers ready on the lit keys",
      "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
+     "voice": "Let's do it again.",
+     "voiceId": "5608b20dfb890c6e",
+     "voiceSec": 1.58
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 75,
-     "leadInSec": 2.95,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2130,115 +2141,51 @@
        "from": 3
       }
      ],
-     "durationSec": 20,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 90,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "Three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "See"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "how"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "they"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 3,
-       "s": "run"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Three blind mice",
-       "from": 0
-      },
-      {
-       "lyric": "See how they run",
-       "from": 3
-      }
-     ],
-     "durationSec": 13,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
+     "durationSec": 21,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "One, two, three mice!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "counting",
     "secondary": [
-     "form"
+     "fingers",
+     "pitch"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "One-to-one correspondence (word to note)",
+    "parentLine": "Three words, three notes, three fingers: one for each"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Hold up three fingers and fold one down for each note: three, blind, mice.",
+   "childAction": "Play E, D, C with fingers 3, 2, 1. Count the mice!",
+   "bridge": "Three mice tiptoe down three keys to the left, one key each.",
+   "celebrate": "Today you practiced: matching three words to three notes."
   },
   {
    "id": "three-blind-mice-c03",
    "index": 3,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Same steps, higher up",
+   "goal": "Learn 'see how they run' and hear it walk down like the mice line, but higher.",
    "type": "phrase",
-   "durationSec": 195,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 189,
+   "parentTip": "Play the mice line, then this line, and ask: 'Do they sound alike?'",
    "video": "three-blind-mice/three-blind-mice-c03.mp4",
    "thumb": "three-blind-mice/three-blind-mice-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Three Blind Mice",
-     "subcaption": "Class 3: Part 2",
+     "subcaption": "Class 3: Same steps, higher up",
      "durationSec": 7,
      "voice": "Hi there. Our song today is Three Blind Mice. Let's warm up our fingers.",
      "voiceId": "92ac5c1cf52030a3",
@@ -2246,19 +2193,53 @@
     },
     {
      "kind": "say",
-     "caption": "Today: See how they run",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6,
-     "voice": "Today we learn a new bit: See how they run.",
-     "voiceId": "0e4ccc2818482e01",
-     "voiceSec": 3.76
+     "caption": "The mice climb higher",
+     "parentCue": "ask your child if the lines sound alike",
+     "durationSec": 7,
+     "voice": "The mice climb higher. Grown-up, ask your child if the lines sound alike.",
+     "voiceId": "5185de22792f6ff7",
+     "voiceSec": 5.38
+    },
+    {
+     "kind": "your_turn",
+     "caption": "See how they run",
+     "parentCue": "Say five, four, four, three",
+     "bpm": 60,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 3
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 75,
-     "leadInSec": 3.3,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -2353,10 +2334,10 @@
        "from": 5
       }
      ],
-     "durationSec": 15,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 14,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -2478,7 +2459,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 75,
-     "leadInSec": 3.47,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "G4",
@@ -2515,17 +2496,17 @@
        "from": 0
       }
      ],
-     "durationSec": 10,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
+     "durationSec": 9,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 75,
-     "leadInSec": 3.98,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2564,17 +2545,17 @@
       }
      ],
      "durationSec": 14,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -2590,7 +2571,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 75,
-     "leadInSec": 3.47,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "G4",
@@ -2654,9 +2635,9 @@
       }
      ],
      "durationSec": 10,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -2736,9 +2717,9 @@
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -2754,7 +2735,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 75,
-     "leadInSec": 3.98,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2851,9 +2832,9 @@
       }
      ],
      "durationSec": 26,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
@@ -2865,132 +2846,184 @@
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 80,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "Three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "Three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Three blind mice",
-       "from": 0
-      },
-      {
-       "lyric": "Three blind mice",
-       "from": 3
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "caption": "Big breath in and out",
+     "parentCue": "Breathe slowly together",
+     "durationSec": 4,
+     "voice": "Big breath in, and out.",
+     "voiceId": "67a43f157c55d975",
+     "voiceSec": 2.01
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Same steps, well spotted!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "patterns",
     "secondary": [
-     "form"
+     "pitch",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Sequence (pattern shifted up)",
+    "parentLine": "A shape we know, moved higher up the keys"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Play the mice line, then this line, and ask: 'Do they sound alike?'",
+   "childAction": "Play G, F, F, E: walking down again, higher up.",
+   "bridge": "The mice climb up to a higher shelf and walk down the same way.",
+   "celebrate": "Today you practiced: spotting a pattern that moves higher."
   },
   {
    "id": "three-blind-mice-c04",
    "index": 4,
-   "title": "Part 3",
-   "goal": "Learn the next part, one finger per key",
+   "title": "You hold the mouse hole",
+   "goal": "The grown-up plays the high running part; the child plays the G that ends each run.",
    "type": "phrase",
-   "durationSec": 216,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 211,
+   "parentTip": "You play the high running part. Nod to your child for the G, G at each end.",
    "video": "three-blind-mice/three-blind-mice-c04.mp4",
    "thumb": "three-blind-mice/three-blind-mice-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Three Blind Mice",
-     "subcaption": "Class 4: Part 3",
+     "subcaption": "Class 4: You hold the mouse hole",
      "durationSec": 8,
      "voice": "Hello, piano friends. Today we play Three Blind Mice. Grown-up, sit beside the keys.",
      "voiceId": "4f02698599749cc3",
      "voiceSec": 6.51
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Today: Who cut off their tails",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: Who cut off their tails with a carving knife.",
-     "voiceId": "7d34441b02a2ace2",
-     "voiceSec": 5.01
+     "caption": "The mice run up high",
+     "parentCue": "you play the running part; nod for each G",
+     "durationSec": 8,
+     "voice": "The mice run up high. Grown-up, you play the running part; nod for each G.",
+     "voiceId": "40a6220fd87fdd5c",
+     "voiceSec": 6.19
+    },
+    {
+     "kind": "listen",
+     "caption": "Hear the mice scurry",
+     "parentCue": "Scurry your fingers on your child's arm",
+     "bpm": 72,
+     "leadInSec": 4.23,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Hear the mice scurry. Wiggle your fingers up your arm.",
+     "voiceId": "8fbca8f4bddc3a92",
+     "voiceSec": 3.83
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Into the hole: G, G",
+     "parentCue": "Nod just before the Gs",
+     "bpm": 60,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 75,
-     "leadInSec": 3.79,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -3129,10 +3162,10 @@
        "from": 10
       }
      ],
-     "durationSec": 15,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 14,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -3298,7 +3331,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 75,
-     "leadInSec": 3.3,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "G4",
@@ -3367,17 +3400,17 @@
        "from": 0
       }
      ],
-     "durationSec": 10,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 9,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 75,
-     "leadInSec": 3.98,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -3447,18 +3480,18 @@
        "from": 0
       }
      ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "durationSec": 18,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "praise",
      "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -3474,7 +3507,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 75,
-     "leadInSec": 3.3,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "G4",
@@ -3550,16 +3583,16 @@
       }
      ],
      "durationSec": 10,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 75,
-     "leadInSec": 3.98,
+     "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
       {
@@ -3635,34 +3668,113 @@
        "from": 0
       }
      ],
-     "durationSec": 20,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "durationSec": 19,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
      "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 75,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Who"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 5,
+       "s": "cut"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 5,
+       "s": "off"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 5,
+       "s": "their"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "tails"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "with"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "carv"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 2,
+       "s": "knife"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Who cut off their tails with a carving knife",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
+     "parentCue": "Slow is fine",
      "bpm": 75,
-     "leadInSec": 3.98,
+     "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
       {
@@ -3724,205 +3836,59 @@
        "d": 1,
        "f": 2,
        "s": "knife"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Did"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "you"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "ev"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "see"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "such"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "sight"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "your"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "life"
       }
      ],
      "lines": [
       {
        "lyric": "Who cut off their tails with a carving knife",
        "from": 0
-      },
-      {
-       "lyric": "Did you ever see such a sight in your life",
-       "from": 10
       }
      ],
-     "durationSec": 32,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "durationSec": 18,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "praise",
-     "caption": "Well done!",
+     "caption": "Safe in the hole!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 80,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "Three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "Three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Three blind mice",
-       "from": 0
-      },
-      {
-       "lyric": "Three blind mice",
-       "from": 3
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "together",
     "secondary": [
-     "form"
+     "listening",
+     "beat"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Interlocking parts (two roles)",
+    "parentLine": "Two different parts fit together into one song"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "You play the high running part. Nod to your child for the G, G at each end.",
+   "childAction": "Listen to the mice run, then play G, G with finger five.",
+   "bridge": "The mice scurry high on the right; G is the hole they dash into.",
+   "celebrate": "Today you practiced: playing your part while another plays theirs."
   },
   {
    "id": "three-blind-mice-c05",
    "index": 5,
-   "title": "Part 4",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Four, three, two, one",
+   "goal": "Learn the last line, four fingers walking down in order to home C.",
    "type": "phrase",
-   "durationSec": 206,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 195,
+   "parentTip": "Count down 'four, three, two, one' with your child, like a little rocket landing.",
    "video": "three-blind-mice/three-blind-mice-c05.mp4",
    "thumb": "three-blind-mice/three-blind-mice-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Three Blind Mice",
-     "subcaption": "Class 5: Part 4",
+     "subcaption": "Class 5: Four, three, two, one",
      "durationSec": 7,
      "voice": "Hello again. It's Three Blind Mice time. Grown-up, sit close to help.",
      "voiceId": "ced35f67711f9d94",
@@ -3930,19 +3896,53 @@
     },
     {
      "kind": "say",
-     "caption": "Today: As three blind mice",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6,
-     "voice": "Today we learn a new bit: As three blind mice.",
-     "voiceId": "13da48fa24e64ecc",
-     "voiceSec": 3.47
+     "caption": "Count down: four, three, two, one",
+     "parentCue": "count down aloud as they play",
+     "durationSec": 7,
+     "voice": "Count down: four, three, two, one. Grown-up, count down aloud as they play.",
+     "voiceId": "c20853897c79d42f",
+     "voiceSec": 5.53
+    },
+    {
+     "kind": "your_turn",
+     "caption": "As three blind mice",
+     "parentCue": "Say four, three, two, one",
+     "bpm": 60,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 75,
-     "leadInSec": 3.47,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "F4",
@@ -3975,10 +3975,10 @@
        "from": 0
       }
      ],
-     "durationSec": 11,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
+     "durationSec": 10,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -4038,7 +4038,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 75,
-     "leadInSec": 3.98,
+     "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
       {
@@ -4073,17 +4073,17 @@
       }
      ],
      "durationSec": 14,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "praise",
      "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -4099,7 +4099,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 75,
-     "leadInSec": 3.98,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -4133,10 +4133,10 @@
        "from": 0
       }
      ],
-     "durationSec": 14,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "durationSec": 13,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "together",
@@ -4185,9 +4185,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -4203,7 +4203,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 75,
-     "leadInSec": 3.98,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -4238,9 +4238,9 @@
       }
      ],
      "durationSec": 14,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
@@ -4350,9 +4350,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -4368,7 +4368,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 75,
-     "leadInSec": 3.98,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -4403,131 +4403,100 @@
       }
      ],
      "durationSec": 14,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "Four, three, two, one, home!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 75,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "As"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "As three blind mice",
-       "from": 0
-      }
-     ],
-     "durationSec": 14,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
+     "counting",
      "form"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Ordinal sequence (counting down)",
+    "parentLine": "Fingers in order, counting down: four, three, two, one"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Count down 'four, three, two, one' with your child, like a little rocket landing.",
+   "childAction": "Play F, E, D, C with fingers 4, 3, 2, 1.",
+   "bridge": "As three blind mice: four steps down, and the mice are home on C.",
+   "celebrate": "Today you practiced: moving fingers in order, counting down."
   },
   {
    "id": "three-blind-mice-c06",
    "index": 6,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "Same at both ends",
+   "goal": "Play the whole song slowly and hear that it ends the way it began.",
    "type": "put-together",
-   "durationSec": 196,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 231,
+   "parentTip": "At the very end, gasp and say: 'The mice are back!' Ask what came in between.",
    "video": "three-blind-mice/three-blind-mice-c06.mp4",
    "thumb": "three-blind-mice/three-blind-mice-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Three Blind Mice",
-     "subcaption": "Class 6: Put it together",
+     "subcaption": "Class 6: Same at both ends",
      "durationSec": 7,
      "voice": "Hi there. Our song today is Three Blind Mice. Let's warm up our fingers.",
      "voiceId": "92ac5c1cf52030a3",
      "voiceSec": 5.78
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
+     "caption": "Where do the mice end up?",
+     "parentCue": "ask your child at the very end",
      "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "voice": "Where do the mice end up. Grown-up, ask your child at the very end.",
+     "voiceId": "d2b4421a85a3ef23",
+     "voiceSec": 4.65
     },
     {
      "kind": "say",
      "caption": "Fingers on the lit keys",
-     "parentCue": "Check the thumb is on C",
+     "parentCue": "Check the thumb is on F",
      "showKeys": [
       {
-       "p": "C4",
+       "p": "F4",
        "f": 1
       },
       {
@@ -4535,7 +4504,7 @@
        "f": 2
       },
       {
-       "p": "E4",
+       "p": "A4",
        "f": 3
       },
       {
@@ -4553,11 +4522,54 @@
      "voiceSec": 2.14
     },
     {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 80,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
+    },
+    {
      "kind": "demo",
-     "caption": "Watch the whole song",
+     "caption": "Watch the first part",
      "parentCue": "Watch together",
      "bpm": 75,
-     "leadInSec": 2.51,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "E4",
@@ -4700,7 +4712,220 @@
        "d": 1,
        "f": 2,
        "s": "wife"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Three blind mice",
+       "from": 0
       },
+      {
+       "lyric": "Three blind mice",
+       "from": 3
+      },
+      {
+       "lyric": "See how they run",
+       "from": 6
+      },
+      {
+       "lyric": "See how they run",
+       "from": 10
+      },
+      {
+       "lyric": "They all ran after the farmer's wife",
+       "from": 15
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 75,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "Three"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "blind"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1,
+       "s": "mice"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "Three"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "blind"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1,
+       "s": "mice"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "See"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "how"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "they"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 3,
+       "s": "run"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "See"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "how"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "they"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "run"
+      },
+      {
+       "rest": true,
+       "d": 0.5
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "They"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "all"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 5,
+       "s": "ran"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "af"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ter"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "far"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "mer's"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 2,
+       "s": "wife"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Three blind mice",
+       "from": 0
+      },
+      {
+       "lyric": "Three blind mice",
+       "from": 3
+      },
+      {
+       "lyric": "See how they run",
+       "from": 6
+      },
+      {
+       "lyric": "See how they run",
+       "from": 10
+      },
+      {
+       "lyric": "They all ran after the farmer's wife",
+       "from": 15
+      }
+     ],
+     "durationSec": 48,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 75,
+     "leadInSec": 3.38,
+     "notes": [
       {
        "p": "G4",
        "d": 0.5,
@@ -4854,42 +5079,22 @@
      ],
      "lines": [
       {
-       "lyric": "Three blind mice",
+       "lyric": "Who cut off their tails with a carving knife",
        "from": 0
       },
       {
-       "lyric": "Three blind mice",
-       "from": 3
-      },
-      {
-       "lyric": "See how they run",
-       "from": 6
-      },
-      {
-       "lyric": "See how they run",
+       "lyric": "Did you ever see such a sight in your life",
        "from": 10
       },
       {
-       "lyric": "They all ran after the farmer's wife",
-       "from": 15
-      },
-      {
-       "lyric": "Who cut off their tails with a carving knife",
-       "from": 24
-      },
-      {
-       "lyric": "Did you ever see such a sight in your life",
-       "from": 34
-      },
-      {
        "lyric": "As three blind mice",
-       "from": 45
+       "from": 21
       }
      ],
-     "durationSec": 43,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 20,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -5232,392 +5437,45 @@
      "voiceSec": 2.58
     },
     {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Take a breath between lines",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 85,
-     "leadInSec": 3.0,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "Three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "Three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "See"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "how"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "they"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 3,
-       "s": "run"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "See"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "how"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "they"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "run"
-      },
-      {
-       "rest": true,
-       "d": 0.5
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "They"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "all"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "ran"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "af"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "far"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mer's"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "s": "wife"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Who"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "cut"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "off"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "their"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "tails"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "with"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "carv"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "s": "knife"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Did"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "you"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "ev"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "see"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "such"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "sight"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "your"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "life"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "As"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Three blind mice",
-       "from": 0
-      },
-      {
-       "lyric": "Three blind mice",
-       "from": 3
-      },
-      {
-       "lyric": "See how they run",
-       "from": 6
-      },
-      {
-       "lyric": "See how they run",
-       "from": 10
-      },
-      {
-       "lyric": "They all ran after the farmer's wife",
-       "from": 15
-      },
-      {
-       "lyric": "Who cut off their tails with a carving knife",
-       "from": 24
-      },
-      {
-       "lyric": "Did you ever see such a sight in your life",
-       "from": 34
-      },
-      {
-       "lyric": "As three blind mice",
-       "from": 45
-      }
-     ],
-     "durationSec": 39,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "The mice came home!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
+     "listening",
      "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Form: bookends (same start, end)",
+    "parentLine": "The song begins and ends with the same three notes"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "At the very end, gasp and say: 'The mice are back!' Ask what came in between.",
+   "childAction": "Play slowly; wave hello to the mice line at the end.",
+   "bridge": "Three mice walk out, run around, then walk home the same way.",
+   "celebrate": "Today you practiced: hearing a song end the way it started."
   },
   {
    "id": "three-blind-mice-c07",
    "index": 7,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Long, short-short",
+   "goal": "Practise 'see how they run' slowly, with its little skip on 'how they'.",
    "type": "review",
-   "durationSec": 233,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 214,
+   "parentTip": "Say 'see how they run' slowly, clapping once on each word, before your child plays.",
    "video": "three-blind-mice/three-blind-mice-c07.mp4",
    "thumb": "three-blind-mice/three-blind-mice-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Three Blind Mice",
-     "subcaption": "Class 7: Tricky spots",
+     "subcaption": "Class 7: Long, short-short",
      "durationSec": 7,
      "voice": "Welcome back. Time for Three Blind Mice. Sit up tall, feet still.",
      "voiceId": "ed37821052d9d80e",
@@ -5625,21 +5483,46 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
+     "caption": "Skip like a little mouse",
+     "parentCue": "clap the words slowly once together first",
      "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "voice": "Skip like a little mouse. Grown-up, clap the words slowly once together first.",
+     "voiceId": "ffa5c9e34c162f13",
+     "voiceSec": 5.77
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Slowly: see how they run",
+     "parentCue": "Say the words as they play",
+     "bpm": 52,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 3
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "demo",
@@ -5911,9 +5794,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -5929,7 +5812,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 80,
-     "leadInSec": 3.93,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -6005,18 +5888,18 @@
        "from": 0
       }
      ],
-     "durationSec": 19,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
+     "durationSec": 18,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -6032,7 +5915,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 90,
-     "leadInSec": 3.93,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -6109,17 +5992,17 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -6135,7 +6018,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 70,
-     "leadInSec": 3.93,
+     "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
       {
@@ -6211,18 +6094,18 @@
        "from": 0
       }
      ],
-     "durationSec": 21,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
+     "durationSec": 20,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -6321,146 +6204,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Well done!",
+     "caption": "What a mouse skip!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "Nearly full speed",
-     "parentCue": "Only speed up if it feels easy",
-     "durationSec": 6,
-     "voice": "Nearly full speed now.",
-     "voiceId": "9c534e859be017a5",
-     "voiceSec": 1.72
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Keep fingers close to the keys",
-     "bpm": 90,
-     "leadInSec": 3.93,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Did"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "you"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "ev"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "see"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "such"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "sight"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "in"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "your"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "life"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Did you ever see such a sight in your life",
-       "from": 0
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "counting",
     "secondary": [
-     "patterns"
+     "beat",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Ratio 2:1 (long-short lilt)",
+    "parentLine": "One note twice as long as the next, like a skip"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Say 'see how they run' slowly, clapping once on each word, before your child plays.",
+   "childAction": "Play G, F, F, E slowly, skipping like a mouse.",
+   "bridge": "How-they is a mouse skip: a longer step, then a tiny hop.",
+   "celebrate": "Today you practiced: long notes and short notes in a skip."
   },
   {
    "id": "three-blind-mice-c08",
    "index": 8,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
+   "title": "Tiptoe, even steps",
+   "goal": "Play the whole song slowly, with every big beat even, like tiptoeing mice.",
    "type": "phrase",
-   "durationSec": 208,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
+   "durationSec": 225,
+   "parentTip": "Tiptoe two fingers on your child's back on each big beat while they play.",
    "video": "three-blind-mice/three-blind-mice-c08.mp4",
    "thumb": "three-blind-mice/three-blind-mice-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Three Blind Mice",
-     "subcaption": "Class 8: Slow and steady",
+     "subcaption": "Class 8: Tiptoe, even steps",
      "durationSec": 8,
      "voice": "Hello, piano friends. Today we play Three Blind Mice. Grown-up, sit beside the keys.",
      "voiceId": "4f02698599749cc3",
@@ -6468,19 +6249,62 @@
     },
     {
      "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
-     "durationSec": 6,
-     "voice": "Slow and steady practice today.",
-     "voiceId": "aeb4883c0cf279a5",
-     "voiceSec": 2.42
+     "caption": "Tiptoe like mice",
+     "parentCue": "tiptoe your fingers on their back on each beat",
+     "durationSec": 7,
+     "voice": "Tiptoe like mice. Grown-up, tiptoe your fingers on their back on each beat.",
+     "voiceId": "070ab8659db27e85",
+     "voiceSec": 5.63
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap the tiptoe beat",
+     "parentCue": "Count softly as your child taps",
+     "bpm": 75,
+     "leadInSec": 4.47,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Tiny tiptoe taps. Tap any key with the beat.",
+     "voiceId": "e2df8ffd677040f5",
+     "voiceSec": 4.07
     },
     {
      "kind": "demo",
-     "caption": "Watch",
+     "caption": "Watch the first part",
      "parentCue": "Watch the finger numbers",
      "bpm": 70,
-     "leadInSec": 3.85,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "E4",
@@ -6623,7 +6447,220 @@
        "d": 1,
        "f": 2,
        "s": "wife"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Three blind mice",
+       "from": 0
       },
+      {
+       "lyric": "Three blind mice",
+       "from": 3
+      },
+      {
+       "lyric": "See how they run",
+       "from": 6
+      },
+      {
+       "lyric": "See how they run",
+       "from": 10
+      },
+      {
+       "lyric": "They all ran after the farmer's wife",
+       "from": 15
+      }
+     ],
+     "durationSec": 31,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 70,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "Three"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "blind"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1,
+       "s": "mice"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "Three"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "blind"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1,
+       "s": "mice"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "See"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "how"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "they"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 3,
+       "s": "run"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "See"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "how"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "they"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "run"
+      },
+      {
+       "rest": true,
+       "d": 0.5
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "They"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "all"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 5,
+       "s": "ran"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "af"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ter"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "far"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "mer's"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 2,
+       "s": "wife"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Three blind mice",
+       "from": 0
+      },
+      {
+       "lyric": "Three blind mice",
+       "from": 3
+      },
+      {
+       "lyric": "See how they run",
+       "from": 6
+      },
+      {
+       "lyric": "See how they run",
+       "from": 10
+      },
+      {
+       "lyric": "They all ran after the farmer's wife",
+       "from": 15
+      }
+     ],
+     "durationSec": 50,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 70,
+     "leadInSec": 2.8,
+     "notes": [
       {
        "p": "G4",
        "d": 0.5,
@@ -6777,42 +6814,22 @@
      ],
      "lines": [
       {
-       "lyric": "Three blind mice",
+       "lyric": "Who cut off their tails with a carving knife",
        "from": 0
       },
       {
-       "lyric": "Three blind mice",
-       "from": 3
-      },
-      {
-       "lyric": "See how they run",
-       "from": 6
-      },
-      {
-       "lyric": "See how they run",
+       "lyric": "Did you ever see such a sight in your life",
        "from": 10
       },
       {
-       "lyric": "They all ran after the farmer's wife",
-       "from": 15
-      },
-      {
-       "lyric": "Who cut off their tails with a carving knife",
-       "from": 24
-      },
-      {
-       "lyric": "Did you ever see such a sight in your life",
-       "from": 34
-      },
-      {
        "lyric": "As three blind mice",
-       "from": 45
+       "from": 21
       }
      ],
-     "durationSec": 47,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 21,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
@@ -7156,238 +7173,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "Such quiet, even steps!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 80,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "Three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "Three"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "blind"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "mice"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "See"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "how"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "they"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 3,
-       "s": "run"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "See"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "how"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "they"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "run"
-      },
-      {
-       "rest": true,
-       "d": 0.5
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "They"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "all"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "ran"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "af"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ter"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "far"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mer's"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "s": "wife"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Three blind mice",
-       "from": 0
-      },
-      {
-       "lyric": "Three blind mice",
-       "from": 3
-      },
-      {
-       "lyric": "See how they run",
-       "from": 6
-      },
-      {
-       "lyric": "See how they run",
-       "from": 10
-      },
-      {
-       "lyric": "They all ran after the farmer's wife",
-       "from": 15
-      }
-     ],
-     "durationSec": 44,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "beat",
     "secondary": [
-     "beat"
+     "fingers",
+     "expression"
     ]
    },
    "mathTarget": {
-    "concept": "Tempo control",
-    "parentLine": "Doing a task slowly and evenly"
+    "concept": "Isochrony (even big beats)",
+    "parentLine": "Every big beat the same length, never rushing"
    },
-   "parentPrompt": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "childAction": "Play the tune slowly, every note even.",
-   "bridge": "Slow fingers, like a cat walking on tiptoe.",
-   "celebrate": "Today you practiced careful fingers and keeping a steady beat."
+   "parentPrompt": "Tiptoe two fingers on your child's back on each big beat while they play.",
+   "childAction": "Play slowly, with even steps, like mice on tiptoe.",
+   "bridge": "Mice tiptoe evenly so nobody hears them: step, step, step.",
+   "celebrate": "Today you practiced: playing slowly with an even beat."
   },
   {
    "id": "three-blind-mice-c09",
    "index": 9,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Run with the music",
+   "goal": "Play the whole song along with the music and keep going to the end.",
    "type": "play-along",
-   "durationSec": 207,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 201,
+   "parentTip": "Sing beside your child and play the high running part; if they slip, keep going.",
    "video": "three-blind-mice/three-blind-mice-c09.mp4",
    "thumb": "three-blind-mice/three-blind-mice-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Three Blind Mice",
-     "subcaption": "Class 9: Play along",
+     "subcaption": "Class 9: Run with the music",
      "durationSec": 7,
      "voice": "Hi there. Our song today is Three Blind Mice. Let's warm up our fingers.",
      "voiceId": "92ac5c1cf52030a3",
@@ -7395,21 +7218,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
-     "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "caption": "Scamper with the music",
+     "parentCue": "sing beside your child and keep going",
+     "durationSec": 6,
+     "voice": "Scamper with the music. Grown-up, sing beside your child and keep going.",
+     "voiceId": "91794fc437660503",
+     "voiceSec": 4.4
     },
     {
      "kind": "together",
@@ -8103,7 +7917,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 100,
-     "leadInSec": 1.84,
+     "leadInSec": 3.0,
      "notes": [
       {
        "p": "E4",
@@ -8432,18 +8246,18 @@
        "from": 45
       }
      ],
-     "durationSec": 33,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
+     "durationSec": 34,
+     "voice": "Together time. Big smiles.",
+     "voiceId": "a441a4bce0e6e1e6",
+     "voiceSec": 2.6
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -8459,7 +8273,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 100,
-     "leadInSec": 1.84,
+     "leadInSec": 3.0,
      "notes": [
       {
        "p": "E4",
@@ -8788,18 +8602,18 @@
        "from": 45
       }
      ],
-     "durationSec": 33,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
+     "durationSec": 34,
+     "voice": "Together time. Big smiles.",
+     "voiceId": "a441a4bce0e6e1e6",
+     "voiceSec": 2.6
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -8872,43 +8686,43 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept up together!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Synchrony with a moving pulse",
+    "parentLine": "Keeping pace with the music, all the way to the end"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Sing beside your child and play the high running part; if they slip, keep going.",
+   "childAction": "Play along with the music; keep going after a slip.",
+   "bridge": "You and the music scamper together, nose to tail.",
+   "celebrate": "Today you practiced: keeping pace with the music to the end."
   },
   {
    "id": "three-blind-mice-c10",
    "index": 10,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Tiptoe and scurry show",
+   "goal": "Play the whole song for teddy: tiptoe softly, scurry fast, then tiptoe home.",
    "type": "concert",
-   "durationSec": 232,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 227,
+   "parentTip": "Sit teddy as the audience; play the scurry part with energy, then clap and bow.",
    "video": "three-blind-mice/three-blind-mice-c10.mp4",
    "thumb": "three-blind-mice/three-blind-mice-c10.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Three Blind Mice",
-     "subcaption": "Class 10: Concert time",
+     "subcaption": "Class 10: Tiptoe and scurry show",
      "durationSec": 8,
      "voice": "Hello, piano friends. Today we play Three Blind Mice. Grown-up, sit beside the keys.",
      "voiceId": "4f02698599749cc3",
@@ -8916,21 +8730,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
+     "caption": "A mouse show for teddy!",
+     "parentCue": "sit teddy in front as the audience",
      "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "voice": "A mouse show for teddy. Grown-up, sit teddy in front as the audience.",
+     "voiceId": "f1a9f067cff4e735",
+     "voiceSec": 4.72
     },
     {
      "kind": "together",
@@ -9631,9 +9436,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -9987,9 +9792,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -10343,9 +10148,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -10446,28 +10251,28 @@
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, little mice!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "expression",
     "secondary": [
      "together",
-     "expression"
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Contrast (calm and busy)",
+    "parentLine": "Playing some parts calm and some parts busy"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; play the scurry part with energy, then clap and bow.",
+   "childAction": "Play softly for teddy, then bow when the mice are home.",
+   "bridge": "Soft notes tiptoe; quick notes scurry; the last C is home.",
+   "celebrate": "Today you practiced: playing calm and busy parts of a song."
   }
  ]
 }

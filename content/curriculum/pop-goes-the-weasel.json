@@ -1,0 +1,206 @@
+{
+  "songId": "pop-goes-the-weasel",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices waiting for a surprise, finding C low and high, echoing short patterns and taking turns, using a bouncy old dance song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Wait for the pop!",
+      "goal": "Hear the whole song, crouch down low, and jump up on 'Pop!'.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Prediction (anticipating an event)", "parentLine": "Guessing what comes next, then waiting for it" },
+      "parentPrompt": "Crouch down together and wait; spring up with your arms high on 'Pop!'.",
+      "childAction": "Crouch and wait, then jump up when the song says Pop!",
+      "bridge": "The song winds up like a spring; Pop! is when it lets go.",
+      "intro": [ { "caption": "Something pops at the end!", "parentCue": "crouch down with your child and wait" } ],
+      "games": [],
+      "praise": "What a great pop!",
+      "celebrate": "Today you practiced: waiting for a surprise you can hear coming."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Round the mulberry bush",
+      "goal": "Tap the big bouncy beat on any key while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["together", "listening"] },
+      "mathTarget": { "concept": "Periodicity (compound pulse)", "parentLine": "A bouncy beat that comes back again and again" },
+      "parentPrompt": "Rest your hand over your child's hand and tap the big beats, then slowly let go.",
+      "childAction": "Tap any key on each big bouncy beat.",
+      "bridge": "All a-round the mul-ber-ry: the taps skip round the bush.",
+      "intro": [ { "caption": "Skip round the bush", "parentCue": "bounce your child gently on each big beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "All around, tap tap",
+          "parentCue": "Say 'round and round' as you tap",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1.5 }, { "p": "D4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "C4", "d": 1.5 }, { "p": "C4", "d": 1.5 }, { "p": "D4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "C4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "You bounced on the beat!",
+      "celebrate": "Today you practiced: tapping a steady bouncy beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "The weasel's hole, C",
+      "goal": "Find C, just left of the two black keys, and play it with one finger.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmarks", "parentLine": "Using the two black keys as a sign to find C" },
+      "parentPrompt": "Touch two black keys together, then slide your child's finger to the white key before them.",
+      "childAction": "Find two black keys, then press C like a button.",
+      "bridge": "Two black keys are the bush; C is the weasel's hole just left.",
+      "intro": [ { "caption": "C hides left of the black keys", "parentCue": "touch the two black keys, then slide left" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "C, C, C, in the hole",
+          "parentCue": "Count each C aloud",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "You found the weasel's C!",
+      "celebrate": "Today you practiced: finding C by the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "octave",
+      "title": "Low C, high C",
+      "goal": "Find C in two places: a low C and a high C with the same name.",
+      "skill": { "primary": "space", "secondary": ["pitch", "listening"] },
+      "mathTarget": { "concept": "Octave equivalence (spatial mapping)", "parentLine": "The same note lives in a low house and a high house" },
+      "parentPrompt": "Point to the low C, then the high C. Say 'monkey' low and 'weasel' high.",
+      "childAction": "Hop from the low C up to the high C and back.",
+      "bridge": "Every C sits left of two black keys; the weasel pops up to the high one.",
+      "intro": [ { "caption": "Two Cs, two holes", "parentCue": "point to the low C, then the high C" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Hop: low C, high C",
+          "parentCue": "Say 'pop!' on each high C",
+          "bpm": 56,
+          "notes": [ { "p": "C4", "d": 2, "f": 1 }, { "p": "C5", "d": 2, "f": 1 }, { "p": "C4", "d": 2, "f": 1 }, { "p": "C5", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "Pop! You found both Cs!",
+      "celebrate": "Today you practiced: finding the same note low and high."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Monkey see, monkey do",
+      "goal": "Listen to short patterns of two or three notes and copy them back.",
+      "skill": { "primary": "listening", "secondary": ["together", "patterns"] },
+      "mathTarget": { "concept": "Sequence recall (span 2-3)", "parentLine": "Hearing a tiny tune and keeping it in mind to copy" },
+      "parentPrompt": "Play or sing each pattern, pause, then nod to your child: 'Monkey, your turn.'",
+      "childAction": "Listen, then copy the notes like a cheeky monkey.",
+      "bridge": "The monkey copies the weasel: same keys, same order.",
+      "intro": [ { "caption": "Monkey see, monkey do!", "parentCue": "nod to your child for their turn" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Up we go: C, D, E",
+          "parentCue": "Say 'up, up, up' as they play",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 2, "f": 3 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Up and back: E, G, E",
+          "parentCue": "Sing 'mul-ber-ry' with the three notes",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "Great copying, monkey!",
+      "celebrate": "Today you practiced: hearing short patterns and copying them back."
+    },
+    {
+      "index": 6,
+      "spineType": "echo",
+      "title": "Two and two",
+      "goal": "Echo notes that come in pairs: two Cs, then two Ds.",
+      "skill": { "primary": "patterns", "secondary": ["counting", "listening"] },
+      "mathTarget": { "concept": "Doubling (pairs pattern AABB)", "parentLine": "Each note comes twice, like two shoes in a pair" },
+      "parentPrompt": "Hold up two fingers for each pair and say 'two Cs, two Ds'.",
+      "childAction": "Echo two Cs, then two Ds. Show two fingers each time.",
+      "bridge": "Every note brings a twin: C, C, then D, D, like footprints.",
+      "intro": [ { "caption": "Every note has a twin", "parentCue": "hold up two fingers for each pair" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Twins: C, C, D, D",
+          "parentCue": "Say 'two, two' with the pairs",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 } ]
+        }
+      ],
+      "praise": "Two and two, well done!",
+      "celebrate": "Today you practiced: noticing notes that come in pairs."
+    },
+    {
+      "index": 7,
+      "spineType": "special-note",
+      "title": "Wait for the weasel's C",
+      "goal": "Wait and play C at the right moments while the grown-up plays the rest.",
+      "skill": { "primary": "together", "secondary": ["listening"] },
+      "mathTarget": { "concept": "Turn-taking (alternation)", "parentLine": "I play my notes, you play yours: we take turns" },
+      "parentPrompt": "Play your notes, then look at your child and nod just before each C.",
+      "childAction": "Finger ready on C. Play it when it lights up.",
+      "bridge": "The grown-up chases round the bush; you pop out on C.",
+      "intro": [ { "caption": "You are the weasel's C", "parentCue": "nod just before each C comes" } ],
+      "games": [],
+      "praise": "Great waiting and playing!",
+      "celebrate": "Today you practiced: waiting for your turn and playing on time."
+    },
+    {
+      "index": 8,
+      "spineType": "special-note",
+      "title": "Weasel C, monkey D",
+      "goal": "Play two special notes, C and D, and tell them apart by ear and by place.",
+      "skill": { "primary": "listening", "secondary": ["space", "together"] },
+      "mathTarget": { "concept": "Classification into two sets", "parentLine": "Sorting notes into two groups: C notes and D notes" },
+      "parentPrompt": "Say 'C' or 'D' aloud before each one; cheer for every one your child catches.",
+      "childAction": "Play C or D when it lights. Two neighbours.",
+      "bridge": "C is left of the two black keys; D hides right between them.",
+      "intro": [ { "caption": "Two notes: C and D", "parentCue": "touch C, then D, and name each one" } ],
+      "games": [],
+      "praise": "You caught both notes!",
+      "celebrate": "Today you practiced: telling two notes apart by ear and place."
+    },
+    {
+      "index": 9,
+      "spineType": "together",
+      "title": "The monkey and the weasel",
+      "goal": "Play the whole song together, sharing one steady bouncy beat.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Entrainment (shared pulse)", "parentLine": "Two players keeping the same steady beat" },
+      "parentPrompt": "Keep the beat going even if a note is missed; smile and nod at each turn.",
+      "childAction": "Play your notes in time with your grown-up's beat.",
+      "bridge": "Monkey and weasel run round together, never too far apart.",
+      "intro": [ { "caption": "Round and round together", "parentCue": "sit close and keep the beat steady" } ],
+      "games": [],
+      "praise": "You played as a team!",
+      "celebrate": "Today you practiced: sharing one beat and taking turns."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "Pop for teddy!",
+      "goal": "Play the whole song for teddy and save the biggest surprise for the pop.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Form: build-up to a surprise", "parentLine": "The song repeats, builds up, then ends with a pop" },
+      "parentPrompt": "Sit teddy as the audience; play the high pop note, then cheer and bow.",
+      "childAction": "Play for teddy, shout Pop! at the end, then bow.",
+      "bridge": "Round, round, round the bush, then Pop! jumps up high to the right.",
+      "intro": [ { "caption": "A song for teddy!", "parentCue": "sit teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, what a pop!",
+      "celebrate": "Today you practiced: playing a whole song with a surprise ending."
+    }
+  ]
+}

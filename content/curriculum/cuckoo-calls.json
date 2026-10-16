@@ -1,0 +1,191 @@
+{
+  "songId": "cuckoo-calls",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices listening for a call, echoing short patterns, counting to three and taking turns, using a spring song about a cuckoo.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Who calls from the wood?",
+      "goal": "Hear the whole song and answer each time the cuckoo calls.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "beat"] },
+      "mathTarget": { "concept": "Pattern repetition (call returns)", "parentLine": "The cuckoo call comes back again and again" },
+      "parentPrompt": "Cup your hands by your mouth and sing 'cuck-oo', high then low, with the tune.",
+      "childAction": "Sway, and sing 'cuck-oo' whenever the cuckoo calls.",
+      "bridge": "Cuck is up on a high branch; oo hops down to a lower one.",
+      "intro": [ { "caption": "Listen! A bird in the woods", "parentCue": "cup your hands and sing cuck-oo together" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Cuckoo, cuckoo!",
+          "parentCue": "Sing cuck-oo along with the lights",
+          "bpm": 80,
+          "notes": [ { "p": "G4", "d": 2 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 2 }, { "p": "E4", "d": 1 } ]
+        }
+      ],
+      "praise": "You heard the cuckoo!",
+      "celebrate": "Today you practiced: listening for a call that comes back."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "One, two, three, sway",
+      "goal": "Tap a steady beat and feel how the song sways in groups of three.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Grouping in threes", "parentLine": "Beats come in little groups: one, two, three" },
+      "parentPrompt": "Count 'one, two, three' softly and sway a little bigger on every 'one'.",
+      "childAction": "Tap any key on each beat and count to three.",
+      "bridge": "The song is a swing: one is the big push, two and three float.",
+      "intro": [ { "caption": "One, two, three, sway!", "parentCue": "count aloud and sway big on one" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap and count to three",
+          "parentCue": "Count one, two, three with each group",
+          "bpm": 80,
+          "notes": [ { "p": "G4", "d": 2 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 2 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 3 } ]
+        }
+      ],
+      "praise": "You swung in threes!",
+      "celebrate": "Today you practiced: a steady beat in groups of three."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "Find the cuckoo's E",
+      "goal": "Find E, just right of the two black keys, and play it with one finger.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmarks", "parentLine": "Using the two black keys as a sign to find E" },
+      "parentPrompt": "Touch the two black keys together, then slide your child's finger to the white key after.",
+      "childAction": "Find two black keys, then press E like a button.",
+      "bridge": "Two black keys are the cuckoo's tree; E is the branch just after.",
+      "intro": [ { "caption": "E sits right after the black keys", "parentCue": "touch the two black keys, then slide right" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Oo, oo, oo on E",
+          "parentCue": "Sing 'oo' each time E sounds",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "You found the cuckoo's E!",
+      "celebrate": "Today you practiced: finding E by the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "echo",
+      "title": "Echo the cuckoo",
+      "goal": "Listen to a short call of two or three notes and copy it back.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Sequence recall (span 2-3)", "parentLine": "Hearing a tiny tune and keeping it in mind to copy" },
+      "parentPrompt": "Play or sing the call, then point to your child: 'Your turn, little cuckoo.'",
+      "childAction": "Listen to the call, then play it back the same way.",
+      "bridge": "One cuckoo calls from a tree; the other cuckoo answers the same.",
+      "intro": [ { "caption": "I call, you answer", "parentCue": "point to your child when it is their turn" } ],
+      "games": [
+        {
+          "kind": "demo",
+          "caption": "The cuckoo calls: G, E",
+          "parentCue": "Sing cuck-oo with the two notes",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 2, "f": 5 }, { "p": "E4", "d": 1, "f": 3 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Your turn: cuck-oo!",
+          "parentCue": "Wait for the light; any finger is fine",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 2, "f": 5 }, { "p": "E4", "d": 1, "f": 3 } ]
+        }
+      ],
+      "praise": "What a cuckoo echo!",
+      "celebrate": "Today you practiced: hearing short calls and copying them back."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Dancing up the stairs",
+      "goal": "Echo the dancing part and notice it climbs the same steps, one higher.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "pitch"] },
+      "mathTarget": { "concept": "Sequence (pattern shifted up)", "parentLine": "The same little tune, moved one step higher" },
+      "parentPrompt": "Walk two fingers up your child's arm, then do it again starting a bit higher.",
+      "childAction": "Echo three stairs, then the same three stairs one higher.",
+      "bridge": "Singing and springing: the same three stairs, starting one stair up.",
+      "intro": [ { "caption": "Same steps, one stair higher", "parentCue": "walk your fingers up your child's arm twice" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Let us be singing",
+          "parentCue": "Say 'up, up, up' as they play",
+          "bpm": 60,
+          "notes": [ { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 2, "f": 4 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Dancing and springing, higher!",
+          "parentCue": "Same steps, start one key to the right",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "You climbed the same stairs!",
+      "celebrate": "Today you practiced: spotting the same pattern, one step higher."
+    },
+    {
+      "index": 6,
+      "spineType": "special-note",
+      "title": "You sing the oo",
+      "goal": "Wait for the cuckoo call and play E on each 'oo' while the grown-up plays.",
+      "skill": { "primary": "together", "secondary": ["counting", "listening"] },
+      "mathTarget": { "concept": "Turn-taking (alternation)", "parentLine": "I play cuck, you play oo: we take turns" },
+      "parentPrompt": "Play 'cuck' on G, then nod to your child for 'oo'. Count the cuckoos together.",
+      "childAction": "Wait for cuck, then play E for oo. Count: one, two!",
+      "bridge": "Two birds, one call: the grown-up says cuck, you answer oo.",
+      "intro": [ { "caption": "I say cuck, you say oo", "parentCue": "nod each time it is your child's turn" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Two cuckoos: oo, oo!",
+          "parentCue": "Sing cuck before each light",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 2, "f": 3 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "You took turns so well!",
+      "celebrate": "Today you practiced: waiting, taking turns and counting to two."
+    },
+    {
+      "index": 7,
+      "spineType": "together",
+      "title": "Cuckoo duet",
+      "goal": "Play the whole song together, sharing one steady beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Entrainment (shared pulse)", "parentLine": "Two players keeping the same steady beat" },
+      "parentPrompt": "Keep playing even if a note is missed; smile and nod on each E.",
+      "childAction": "Play your E on each cuckoo, in time with your grown-up.",
+      "bridge": "Two birds on one branch, swaying to the same one, two, three.",
+      "intro": [ { "caption": "Two birds, one song", "parentCue": "sit close and keep the beat steady" } ],
+      "games": [],
+      "praise": "You played as a team!",
+      "celebrate": "Today you practiced: sharing one beat and taking turns."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Springtime concert",
+      "goal": "Play the whole song for teddy and hear the cuckoo part come back at the end.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Form: A-B-A (return)", "parentLine": "Cuckoo part, dancing part, then the cuckoo part again" },
+      "parentPrompt": "Sit teddy as the audience; cheer when the cuckoo part comes back, then bow.",
+      "childAction": "Play the song for teddy and wave when the cuckoo returns.",
+      "bridge": "The cuckoo calls, flies off to dance, then comes home: spring is here!",
+      "intro": [ { "caption": "Spring is here, teddy!", "parentCue": "sit teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, spring cuckoos!",
+      "celebrate": "Today you practiced: a song that goes away and comes back."
+    }
+  ]
+}

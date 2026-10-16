@@ -1,0 +1,192 @@
+{
+  "songId": "home-on-the-range",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices the keyboard from low G to high G, run-ning and long notes, A-B-A-B song form, a big leap, counting in threes and two-hand teamwork.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "From low G to high G",
+      "goal": "Find the low G and high G that frame the song, and learn the first half.",
+      "skill": { "primary": "space", "secondary": ["fingers", "pitch"] },
+      "mathTarget": { "concept": "Octave span (G to G)", "parentLine": "The whole song lives between two Gs, low and high" },
+      "parentPrompt": "Point to low G, then high G, eight white keys apart; the song lives in between.",
+      "childAction": "Find low G and high G. Then play the first line.",
+      "bridge": "Low G and high G are the two fences of the open range.",
+      "intro": [ { "caption": "Find the two fences: G and G", "parentCue": "point low G, then high G, together" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Low G, high G: same name",
+          "parentCue": "Point left, then right, with each sound",
+          "bpm": 72,
+          "notes": [ { "p": "G3", "d": 2 }, { "p": "G4", "d": 2 }, { "p": "G3", "d": 2 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found both fences!",
+      "celebrate": "Today you practiced: the song's space from low G to high G."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Run-ning up to the sky",
+      "goal": "Learn the second line: two quick notes run up to a long G.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Ratio 1:4 (quick and long)", "parentLine": "The long G lasts as long as four quick notes" },
+      "parentPrompt": "Say 'run-ning' on the quick notes, then 'sky' and hold it while counting 1, 2.",
+      "childAction": "Run-ning up E, F, then hold the big sky G.",
+      "bridge": "Quick notes are the deer running; the long G is the wide sky.",
+      "intro": [ { "caption": "Run-ning... up to the sky!", "parentCue": "say it slowly, then hold the long note" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Where the deer: run-ning, sky",
+          "parentCue": "Count 1, 2 on the long G",
+          "bpm": 72,
+          "notes": [ { "p": "E4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 2 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 1 } ]
+        }
+      ],
+      "praise": "What a big sky!",
+      "celebrate": "Today you practiced: quick notes and a long note."
+    },
+    {
+      "index": 3,
+      "spineType": "put-together",
+      "title": "Spot the twin lines",
+      "goal": "Play the whole song slowly and find which lines share the same music.",
+      "skill": { "primary": "form", "secondary": ["patterns", "listening"] },
+      "mathTarget": { "concept": "Song form (A, B, A, B')", "parentLine": "Two lines are twins; the other two are almost twins" },
+      "parentPrompt": "Say 'A' for the buffalo music and 'B' for the sky music as each line starts.",
+      "childAction": "Play slowly and say 'A!' or 'B!' as each line starts.",
+      "bridge": "The buffalo line comes twice with new words; the music is the same.",
+      "intro": [ { "caption": "Which lines are twins?", "parentCue": "say A or B as each line starts" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 77,
+          "notes": [ { "p": "G3", "d": 0.5 }, { "p": "G3", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 2 }, { "p": "C4", "d": 0.5 }, { "p": "B3", "d": 0.5 }, { "p": "A3", "d": 1 } ]
+        }
+      ],
+      "praise": "You found the twins!",
+      "celebrate": "Today you practiced: hearing which lines repeat, A and B."
+    },
+    {
+      "index": 4,
+      "spineType": "review",
+      "title": "The buffalo's big leap",
+      "goal": "Practise the big jump from A up to F slowly, then a little faster.",
+      "skill": { "primary": "space", "secondary": ["fingers", "counting"] },
+      "mathTarget": { "concept": "Interval distance (a big leap)", "parentLine": "Counting the keys between two notes tells how far to jump" },
+      "parentPrompt": "Count the white keys from A to F with your child: A, B, C, D, E, F.",
+      "childAction": "Count the keys from A to F, then jump the buffalo there.",
+      "bridge": "Most notes walk next door; this one leaps far to the right, like a buffalo.",
+      "intro": [ { "caption": "How far does the buffalo jump?", "parentCue": "count the white keys from A to F" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Buffalo roam: leap to F",
+          "parentCue": "Say 'jump!' just before the F",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 0.5 }, { "p": "B3", "d": 0.5 }, { "p": "A3", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "F4", "d": 3 } ]
+        }
+      ],
+      "praise": "What a leap!",
+      "celebrate": "Today you practiced: measuring and making a big leap."
+    },
+    {
+      "index": 5,
+      "spineType": "left-hand",
+      "title": "One-two-three, low on one",
+      "goal": "Play one low left-hand note at the start of each bar of three.",
+      "skill": { "primary": "counting", "secondary": ["beat", "space"] },
+      "mathTarget": { "concept": "Grouping in threes (waltz meter)", "parentLine": "This song counts in threes: One, two, three" },
+      "parentPrompt": "Play the tune and count 'one, two, three' out loud, loudest on one.",
+      "childAction": "Left hand plays one low note on every one. Then wait two.",
+      "bridge": "Low notes live on the left, like the ground under the buffalo's hooves.",
+      "intro": [ { "caption": "One, two, three, one, two, three", "parentCue": "sway together on one" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Find the low notes",
+          "parentCue": "Point to each low key first",
+          "bpm": 67,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "F3", "d": 2, "f": 2 }, { "p": "G3", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "Strong low notes on one!",
+      "celebrate": "Today you practiced: counting in threes, landing on one."
+    },
+    {
+      "index": 6,
+      "spineType": "hands-together",
+      "title": "Ground below, sky above",
+      "goal": "Play the tune with one low note per bar: one hand holds while the other moves.",
+      "skill": { "primary": "fingers", "secondary": ["patterns", "counting"] },
+      "mathTarget": { "concept": "Ratio 1:3 (two streams)", "parentLine": "One low note lasts while three beats pass above" },
+      "parentPrompt": "Rest a hand on your child's left shoulder and say 'ground' on each low note. Go slowly.",
+      "childAction": "Left hand holds the low ground; right hand plays the tune.",
+      "bridge": "Left hand is the ground, still and low; right hand is the sky moving.",
+      "intro": [ { "caption": "Two hands, two jobs", "parentCue": "both hands on the keys, very slowly" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 67,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "F3", "d": 2, "f": 2 }, { "p": "G3", "d": 2, "f": 1 }, { "p": "G3", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "Two hands, one song!",
+      "celebrate": "Today you practiced: two hands doing two different jobs."
+    },
+    {
+      "index": 7,
+      "spineType": "hands-together",
+      "title": "Strong, light, light",
+      "goal": "Play both hands a little faster, with a strong one and two light beats.",
+      "skill": { "primary": "expression", "secondary": ["beat", "fingers"] },
+      "mathTarget": { "concept": "Accent pattern (strong, weak, weak)", "parentLine": "One strong beat, then two light ones, again and again" },
+      "parentPrompt": "Sway beside your child: a big sway on one, small sways on two, three.",
+      "childAction": "Play a strong one and two light beats. Too fast? Slow down.",
+      "bridge": "One is a big buffalo step; two and three are light deer steps.",
+      "intro": [ { "caption": "Strong, light, light", "parentCue": "big sway on one, small on two, three" } ],
+      "games": [],
+      "praise": "Lovely strong and light!",
+      "celebrate": "Today you practiced: a strong beat and two light beats."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Ride the open range",
+      "goal": "Play the whole song along with the music at full speed and keep going.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Entrainment (matching a tempo)", "parentLine": "Fitting your playing to a speed you did not choose" },
+      "parentPrompt": "Sing the words beside your child; if notes are missed, keep going and smile.",
+      "childAction": "Play along with the music. Missed notes? Keep riding!",
+      "bridge": "Cowboys and settlers carried this song west across the wide open land.",
+      "intro": [ { "caption": "Ride along with the music", "parentCue": "sing the words softly beside your child" } ],
+      "games": [],
+      "praise": "You kept riding!",
+      "celebrate": "Today you practiced: keeping up with the music."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Home under big skies",
+      "goal": "Play the whole song for teddy and hear the open ending, then the home ending.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Open and closed endings", "parentLine": "Line two stops on D, open; the last lands home on C" },
+      "parentPrompt": "Sit teddy as the audience; hold the last C long, then bow together.",
+      "childAction": "Play to the end, land home on C, and take a bow.",
+      "bridge": "D is a cabin door left open; C closes it, home at last.",
+      "intro": [ { "caption": "A song for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, home at last!",
+      "celebrate": "Today you practiced: a whole song, an open and a home ending."
+    }
+  ]
+}

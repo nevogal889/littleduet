@@ -2,12 +2,12 @@
  "songId": "jack-be-nimble",
  "title": "Jack Be Nimble",
  "ageGroup": "2-3",
- "curriculum": "default",
- "songSummary": "Practices listening memory, loud, soft, fast, slow and steady beat, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices steady beat, high and low, loud and soft, quick and slow, and playing together, with a bouncy old jumping rhyme.",
  "skillMap": [
   {
-   "id": "listening",
-   "label": "Listening memory",
+   "id": "beat",
+   "label": "Steady beat",
    "value": 1.0,
    "classes": 2,
    "total": 8
@@ -20,10 +20,10 @@
    "total": 8
   },
   {
-   "id": "beat",
-   "label": "Steady beat",
-   "value": 0.5,
-   "classes": 1,
+   "id": "together",
+   "label": "Playing together",
+   "value": 1.0,
+   "classes": 2,
    "total": 8
   },
   {
@@ -34,15 +34,8 @@
    "total": 8
   },
   {
-   "id": "form",
-   "label": "Song shape",
-   "value": 0.5,
-   "classes": 1,
-   "total": 8
-  },
-  {
-   "id": "together",
-   "label": "Playing together",
+   "id": "listening",
+   "label": "Listening memory",
    "value": 0.5,
    "classes": 1,
    "total": 8
@@ -51,36 +44,77 @@
  "icon": "star",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2063,
+ "totalSec": 2064,
  "classes": [
   {
    "id": "jack-be-nimble-c01",
    "index": 1,
-   "title": "Listen and sway",
-   "goal": "Hear the whole song and move to the beat",
+   "title": "Bounce like Jack",
+   "goal": "Feel the steady beat of the rhyme with gentle knee bounces.",
    "type": "listen",
-   "durationSec": 269,
-   "parentTip": "Sit together at the piano. Sway side to side while the song plays.",
+   "durationSec": 273,
+   "parentTip": "Bounce your child gently on your knees on every beat; lift them up on 'jump'.",
    "video": "jack-be-nimble/jack-be-nimble-c01.mp4",
    "thumb": "jack-be-nimble/jack-be-nimble-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jack Be Nimble",
-     "subcaption": "Class 1: Listen and sway",
+     "subcaption": "Class 1: Bounce like Jack",
      "durationSec": 5,
      "voice": "Hello, music friends. Let's play Jack Be Nimble together.",
      "voiceId": "5888b1eb678dd8fb",
      "voiceSec": 4.0
     },
     {
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 92,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Bounce, bounce, like quick Jack",
+     "parentCue": "sit your child on your knees",
+     "durationSec": 7,
+     "voice": "Bounce, bounce, like quick Jack. Grown-up, sit your child on your knees.",
+     "voiceId": "53c76d43f3cb8719",
+     "voiceSec": 4.81
     },
     {
      "kind": "listen",
@@ -510,7 +544,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 92,
-     "leadInSec": 3.64,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -632,18 +666,18 @@
        "from": 7
       }
      ],
-     "durationSec": 17,
-     "voice": "Let's listen. Watch for the glowing keys.",
-     "voiceId": "b8bdf2a204161ef7",
-     "voiceSec": 3.24
+     "durationSec": 16,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -941,7 +975,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 92,
-     "leadInSec": 3.64,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -1063,18 +1097,18 @@
        "from": 7
       }
      ],
-     "durationSec": 17,
-     "voice": "Let's listen. Watch for the glowing keys.",
-     "voiceId": "b8bdf2a204161ef7",
-     "voiceSec": 3.24
+     "durationSec": 16,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -1372,7 +1406,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 92,
-     "leadInSec": 3.64,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -1494,18 +1528,18 @@
        "from": 7
       }
      ],
-     "durationSec": 17,
-     "voice": "Let's listen. Watch for the glowing keys.",
-     "voiceId": "b8bdf2a204161ef7",
-     "voiceSec": 3.24
+     "durationSec": 16,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -1649,17 +1683,8 @@
      "voiceSec": 1.53
     },
     {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 5,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You bounced together!",
      "durationSec": 5,
      "voice": "That was real music, together.",
      "voiceId": "3da26e0fa12ffe07",
@@ -1667,36 +1692,36 @@
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "beat",
     "secondary": [
-     "beat",
+     "listening",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Periodicity (steady pulse)",
+    "parentLine": "Feeling something that comes again and again, evenly spaced"
    },
-   "parentPrompt": "Sit together at the piano. Sway side to side while the song plays.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Bounce your child gently on your knees on every beat; lift them up on 'jump'.",
+   "childAction": "Bounce, clap and pat your knees with the song.",
+   "bridge": "Each beat is one little bounce, like Jack's feet on the ground.",
+   "celebrate": "Today you practiced: feeling the steady beat, together."
   },
   {
    "id": "jack-be-nimble-c02",
    "index": 2,
-   "title": "Find the beat",
-   "goal": "Tap a steady beat while the grown-up plays the tune",
+   "title": "Jack's jumping taps",
+   "goal": "Tap one steady tap for every beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 229,
-   "parentTip": "Any key is fine. Tap with your child's hand at first, then let go.",
+   "durationSec": 231,
+   "parentTip": "Rest your hand over your child's hand and tap together, then slowly let go.",
    "video": "jack-be-nimble/jack-be-nimble-c02.mp4",
    "thumb": "jack-be-nimble/jack-be-nimble-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jack Be Nimble",
-     "subcaption": "Class 2: Find the beat",
+     "subcaption": "Class 2: Jack's jumping taps",
      "durationSec": 8,
      "voice": "It's music time. Today we play Jack Be Nimble. Grown-up, sit side by side.",
      "voiceId": "f3b36151c7965947",
@@ -1704,21 +1729,60 @@
     },
     {
      "kind": "say",
-     "caption": "Tap any key on the beat",
-     "parentCue": "You play the tune, your child taps the beat",
-     "durationSec": 8,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
+     "caption": "One beat, one tap",
+     "parentCue": "tap your child's shoulder on each beat",
+     "durationSec": 6,
+     "voice": "One beat, one tap.",
+     "voiceId": "752b6d551f874431",
+     "voiceSec": 1.67
     },
     {
-     "kind": "say",
-     "caption": "Tap, tap, tap, like a heartbeat",
-     "parentCue": "Tap with your child first",
-     "durationSec": 7,
-     "voice": "Tap, tap, tap, like a heartbeat.",
-     "voiceId": "07ab7f7da2eb6f0e",
-     "voiceSec": 2.82
+     "kind": "beat",
+     "caption": "Jack, be quick: two taps",
+     "parentCue": "Say 'one, two' softly on 'Jack, be'",
+     "bpm": 76,
+     "leadInSec": 3.4,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Jack, be quick. Two quick taps with me.",
+     "voiceId": "a3fd60328306aa6b",
+     "voiceSec": 3.0
     },
     {
      "kind": "beat",
@@ -1997,9 +2061,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -2146,9 +2210,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -2295,9 +2359,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -2444,9 +2508,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -2462,7 +2526,7 @@
      "caption": "Tap with the big circle",
      "parentCue": "You play, your child taps",
      "bpm": 92,
-     "leadInSec": 3.63,
+     "leadInSec": 4.26,
      "notes": [
       {
        "p": "G4",
@@ -2585,17 +2649,17 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Tap with the big circle. Tap, tap, tap.",
-     "voiceId": "faf2ee285af584e0",
-     "voiceSec": 3.23
+     "voice": "Any key is fine. Tap when the circle grows.",
+     "voiceId": "015b37b18f728b6c",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -2611,7 +2675,156 @@
      "caption": "Tap, tap, tap",
      "parentCue": "You play, your child taps",
      "bpm": 92,
-     "leadInSec": 3.63,
+     "leadInSec": 2.22,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "quick",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "jump",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ver",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "can",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dle",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "stick",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      },
+      {
+       "lyric": "Jack be quick",
+       "from": 4
+      },
+      {
+       "lyric": "Jack jump over the candlestick",
+       "from": 7
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Tap the beat, like a heartbeat.",
+     "voiceId": "0cf68adb12e1c639",
+     "voiceSec": 1.82
+    },
+    {
+     "kind": "praise",
+     "caption": "Yes, that's it!",
+     "durationSec": 5,
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Keep the taps steady",
+     "durationSec": 5,
+     "voice": "One more time.",
+     "voiceId": "b4c800d6a3120ebd",
+     "voiceSec": 1.34
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap on every beat",
+     "parentCue": "You play, your child taps",
+     "bpm": 92,
+     "leadInSec": 4.26,
      "notes": [
       {
        "p": "G4",
@@ -2734,33 +2947,61 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Tap with the big circle. Tap, tap, tap.",
-     "voiceId": "faf2ee285af584e0",
-     "voiceSec": 3.23
+     "voice": "Any key is fine. Tap when the circle grows.",
+     "voiceId": "015b37b18f728b6c",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
-     "caption": "Yes, that's it!",
+     "caption": "You kept the beat!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    }
+   ],
+   "skill": {
+    "primary": "beat",
+    "secondary": [
+     "counting",
+     "together"
+    ]
+   },
+   "mathTarget": {
+    "concept": "One-to-one correspondence",
+    "parentLine": "One tap for each beat, no more, no less"
+   },
+   "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+   "childAction": "Tap any key once for each beat. Any key is right.",
+   "bridge": "Every beat is a little hop; one tap for each hop.",
+   "celebrate": "Today you practiced: one tap for each beat."
+  },
+  {
+   "id": "jack-be-nimble-c03",
+   "index": 3,
+   "title": "Bear low, bird high",
+   "goal": "Hear low and high sounds and tap the matching side of the piano.",
+   "type": "high-low",
+   "durationSec": 242,
+   "parentTip": "Crouch and growl for the bear; stretch up tall and flap for the bird.",
+   "video": "jack-be-nimble/jack-be-nimble-c03.mp4",
+   "thumb": "jack-be-nimble/jack-be-nimble-c03.jpg",
+   "segments": [
     {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 5,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
+     "kind": "title",
+     "caption": "Jack Be Nimble",
+     "subcaption": "Class 3: Bear low, bird high",
+     "durationSec": 7,
+     "voice": "Hi, everyone. Hands on your knees. Today we play Jack Be Nimble.",
+     "voiceId": "ca1c780b4fb9c3dc",
+     "voiceSec": 5.78
     },
     {
      "kind": "beat",
-     "caption": "Tap on every beat",
-     "parentCue": "You play, your child taps",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
      "bpm": 92,
-     "leadInSec": 2.45,
+     "leadInSec": 4.96,
      "notes": [
       {
        "p": "G4",
@@ -2789,165 +3030,74 @@
        "f": 3,
        "s": "ble",
        "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
+    },
+    {
+     "kind": "say",
+     "caption": "Bear lives low, bird lives high",
+     "parentCue": "point left for the bear, right for the bird",
+     "durationSec": 8,
+     "voice": "The bear lives low. The bird lives high.",
+     "voiceId": "5ad6a8135978dbd0",
+     "voiceSec": 3.42
+    },
+    {
+     "kind": "listen",
+     "caption": "Jack jumps, then lands low",
+     "parentCue": "Lift your arms up, then crouch down slowly",
+     "bpm": 66,
+     "leadInSec": 5.33,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 1,
-       "f": 5,
-       "s": "Jack",
        "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "quick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "jump",
        "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ver",
        "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
-       "f": 2,
-       "s": "the",
        "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
-       "f": 2,
-       "s": "can",
        "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
-       "f": 3,
-       "s": "dle",
        "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
-       "f": 1,
-       "s": "stick",
        "who": "parent"
       }
      ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      },
-      {
-       "lyric": "Jack be quick",
-       "from": 4
-      },
-      {
-       "lyric": "Jack jump over the candlestick",
-       "from": 7
-      }
-     ],
      "durationSec": 16,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    }
-   ],
-   "skill": {
-    "primary": "beat",
-    "secondary": [
-     "together"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Periodicity (steady pulse)",
-    "parentLine": "Feeling something that repeats at an even time"
-   },
-   "parentPrompt": "Any key is fine. Tap with your child's hand at first, then let go.",
-   "childAction": "Tap any key on every beat.",
-   "bridge": "The beat is a heartbeat: tap, tap, tap, never in a hurry.",
-   "celebrate": "Today you practiced keeping a steady beat and playing together."
-  },
-  {
-   "id": "jack-be-nimble-c03",
-   "index": 3,
-   "title": "Bear low, bird high",
-   "goal": "Hear the difference between low and high sounds",
-   "type": "high-low",
-   "durationSec": 243,
-   "parentTip": "Low keys are on the left, high keys on the right. Any key on the correct side counts.",
-   "video": "jack-be-nimble/jack-be-nimble-c03.mp4",
-   "thumb": "jack-be-nimble/jack-be-nimble-c03.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Jack Be Nimble",
-     "subcaption": "Class 3: Bear low, bird high",
-     "durationSec": 7,
-     "voice": "Hi, everyone. Hands on your knees. Today we play Jack Be Nimble.",
-     "voiceId": "ca1c780b4fb9c3dc",
-     "voiceSec": 5.78
-    },
-    {
-     "kind": "say",
-     "caption": "Low keys sound like a big bear",
-     "parentCue": "Show the low end of the piano",
-     "durationSec": 8,
-     "voice": "Low keys, on the left, sound like a big bear.",
-     "voiceId": "ded72c2c5908831d",
-     "voiceSec": 3.44
-    },
-    {
-     "kind": "say",
-     "caption": "High keys sound like a little bird",
-     "parentCue": "Show the high end of the piano",
-     "durationSec": 8,
-     "voice": "High keys, on the right, sound like a little bird.",
-     "voiceId": "89552428549ec22e",
-     "voiceSec": 3.29
+     "voice": "Jack jumps, then lands low. Jump up, then crouch down.",
+     "voiceId": "2523a32a447eee57",
+     "voiceSec": 4.93
     },
     {
      "kind": "high_low",
@@ -3226,9 +3376,9 @@
      "kind": "praise",
      "caption": "Great listening!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "high_low",
@@ -3322,110 +3472,13 @@
      "kind": "praise",
      "caption": "You know high and low!",
      "durationSec": 5,
-     "voice": "You know high and low now.",
-     "voiceId": "4389997f0bd28169",
-     "voiceSec": 1.88
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "high_low",
      "caption": "Here comes the bear",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 92,
-     "leadInSec": 4.3,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "ble",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Big bear steps. Tap low, on the left side.",
-     "voiceId": "610d2546ef1c0c22",
-     "voiceSec": 3.9
-    },
-    {
-     "kind": "high_low",
-     "caption": "Here comes the bird",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 92,
-     "leadInSec": 3.57,
-     "notes": [
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "ble",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Tweet, tweet. Tap high, on the right side.",
-     "voiceId": "f46cca9df0a3daaf",
-     "voiceSec": 3.17
-    },
-    {
-     "kind": "say",
-     "caption": "Is it the bear or the bird?",
-     "parentCue": "Let your child guess first",
-     "durationSec": 7,
-     "voice": "Is it the bear or the bird? Listen.",
-     "voiceId": "74985bd4e5d066df",
-     "voiceSec": 2.88
-    },
-    {
-     "kind": "high_low",
-     "caption": "The bear!",
      "parentCue": "Tap any low key",
      "target": "low",
      "bpm": 92,
@@ -3469,7 +3522,7 @@
     },
     {
      "kind": "high_low",
-     "caption": "The bird!",
+     "caption": "Here comes the bird",
      "parentCue": "Tap any high key",
      "target": "high",
      "bpm": 92,
@@ -3512,6 +3565,103 @@
      "voiceSec": 4.07
     },
     {
+     "kind": "say",
+     "caption": "Is it the bear or the bird?",
+     "parentCue": "Let your child guess first",
+     "durationSec": 7,
+     "voice": "Is it the bear or the bird? Listen.",
+     "voiceId": "74985bd4e5d066df",
+     "voiceSec": 2.88
+    },
+    {
+     "kind": "high_low",
+     "caption": "The bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 92,
+     "leadInSec": 4.3,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "ble",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Big bear steps. Tap low, on the left side.",
+     "voiceId": "610d2546ef1c0c22",
+     "voiceSec": 3.9
+    },
+    {
+     "kind": "high_low",
+     "caption": "The bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 92,
+     "leadInSec": 3.57,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "s": "ble",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Tweet, tweet. Tap high, on the right side.",
+     "voiceId": "f46cca9df0a3daaf",
+     "voiceSec": 3.17
+    },
+    {
      "kind": "praise",
      "caption": "Great listening!",
      "durationSec": 5,
@@ -3525,7 +3675,7 @@
      "parentCue": "Tap any low key",
      "target": "low",
      "bpm": 92,
-     "leadInSec": 3.64,
+     "leadInSec": 3.56,
      "notes": [
       {
        "p": "G3",
@@ -3559,9 +3709,9 @@
       }
      ],
      "durationSec": 8,
-     "voice": "The bear is here. Low keys, on the left.",
-     "voiceId": "8312dfedac9897c2",
-     "voiceSec": 3.24
+     "voice": "Low and deep, like a bear. Tap down low.",
+     "voiceId": "01122bae862343ea",
+     "voiceSec": 3.16
     },
     {
      "kind": "high_low",
@@ -3569,7 +3719,7 @@
      "parentCue": "Tap any high key",
      "target": "high",
      "bpm": 92,
-     "leadInSec": 3.41,
+     "leadInSec": 4.47,
      "notes": [
       {
        "p": "G5",
@@ -3602,215 +3752,22 @@
        "from": 0
       }
      ],
-     "durationSec": 8,
-     "voice": "The bird is here. High keys, on the right.",
-     "voiceId": "99715525943a1f67",
-     "voiceSec": 3.01
+     "durationSec": 9,
+     "voice": "Here comes the little bird. Tap a high key, up on the right.",
+     "voiceId": "fddf06316df8346e",
+     "voiceSec": 4.07
     },
     {
      "kind": "praise",
      "caption": "You know high and low!",
      "durationSec": 5,
-     "voice": "You know high and low now.",
-     "voiceId": "4389997f0bd28169",
-     "voiceSec": 1.88
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "high_low",
      "caption": "Here comes the bear",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 92,
-     "leadInSec": 4.3,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "ble",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Big bear steps. Tap low, on the left side.",
-     "voiceId": "610d2546ef1c0c22",
-     "voiceSec": 3.9
-    },
-    {
-     "kind": "high_low",
-     "caption": "Here comes the bird",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 92,
-     "leadInSec": 3.57,
-     "notes": [
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "ble",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Tweet, tweet. Tap high, on the right side.",
-     "voiceId": "f46cca9df0a3daaf",
-     "voiceSec": 3.17
-    },
-    {
-     "kind": "say",
-     "caption": "Is it the bear or the bird?",
-     "parentCue": "Let your child guess first",
-     "durationSec": 7,
-     "voice": "Is it the bear or the bird? Listen.",
-     "voiceId": "74985bd4e5d066df",
-     "voiceSec": 2.88
-    },
-    {
-     "kind": "high_low",
-     "caption": "The bear!",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 92,
-     "leadInSec": 3.56,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "ble",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Low and deep, like a bear. Tap down low.",
-     "voiceId": "01122bae862343ea",
-     "voiceSec": 3.16
-    },
-    {
-     "kind": "high_low",
-     "caption": "The bird!",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 92,
-     "leadInSec": 4.47,
-     "notes": [
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "ble",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Here comes the little bird. Tap a high key, up on the right.",
-     "voiceId": "fddf06316df8346e",
-     "voiceSec": 4.07
-    },
-    {
-     "kind": "praise",
-     "caption": "Great listening!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    },
-    {
-     "kind": "high_low",
-     "caption": "Big bear steps",
      "parentCue": "Tap any low key",
      "target": "low",
      "bpm": 92,
@@ -3854,11 +3811,11 @@
     },
     {
      "kind": "high_low",
-     "caption": "Little bird song",
+     "caption": "Here comes the bird",
      "parentCue": "Tap any high key",
      "target": "high",
      "bpm": 92,
-     "leadInSec": 3.41,
+     "leadInSec": 3.91,
      "notes": [
       {
        "p": "G5",
@@ -3891,50 +3848,148 @@
        "from": 0
       }
      ],
-     "durationSec": 8,
-     "voice": "The bird is here. High keys, on the right.",
-     "voiceId": "99715525943a1f67",
-     "voiceSec": 3.01
+     "durationSec": 9,
+     "voice": "Bird time. Tap the high keys, up on the right.",
+     "voiceId": "9386cba13e71d01f",
+     "voiceSec": 3.51
+    },
+    {
+     "kind": "say",
+     "caption": "Is it the bear or the bird?",
+     "parentCue": "Let your child guess first",
+     "durationSec": 7,
+     "voice": "Is it the bear or the bird? Listen.",
+     "voiceId": "74985bd4e5d066df",
+     "voiceSec": 2.88
+    },
+    {
+     "kind": "high_low",
+     "caption": "The bear!",
+     "parentCue": "Tap any low key",
+     "target": "low",
+     "bpm": 92,
+     "leadInSec": 4.22,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "ble",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen, a big bear. Tap down low.",
+     "voiceId": "12ea2dbc14ca23b5",
+     "voiceSec": 3.82
+    },
+    {
+     "kind": "high_low",
+     "caption": "The bird!",
+     "parentCue": "Tap any high key",
+     "target": "high",
+     "bpm": 92,
+     "leadInSec": 3.91,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "s": "ble",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Bird time. Tap the high keys, up on the right.",
+     "voiceId": "9386cba13e71d01f",
+     "voiceSec": 3.51
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great bear, great bird!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
     "primary": "pitch",
     "secondary": [
-     "space"
+     "space",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Spatial mapping of pitch",
+    "concept": "Spatial mapping (pitch to place)",
     "parentLine": "Low sounds live on the left, high sounds on the right"
    },
-   "parentPrompt": "Low keys are on the left, high keys on the right. Any key on the correct side counts.",
-   "childAction": "Tap low for the bear, high for the bird.",
-   "bridge": "Low notes are heavy bears on the left; high notes are little birds.",
-   "celebrate": "Today you practiced hearing high and low and finding the way on the keys."
+   "parentPrompt": "Crouch and growl for the bear; stretch up tall and flap for the bird.",
+   "childAction": "Bear sound: tap the left side. Bird sound: tap the right.",
+   "bridge": "Low notes are a heavy bear on the left; high notes are a tiny bird.",
+   "celebrate": "Today you practiced: hearing high and low sounds."
   },
   {
    "id": "jack-be-nimble-c04",
    "index": 4,
-   "title": "Loud and soft",
-   "goal": "Tap the beat loudly, then softly",
+   "title": "Big jump, tiny tiptoe",
+   "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
    "type": "loud-soft",
-   "durationSec": 251,
-   "parentTip": "Loud means strong, not banging. Whisper when it's time to play soft.",
+   "durationSec": 244,
+   "parentTip": "Make strong arms for loud taps; whisper and tiptoe your fingers for soft ones.",
    "video": "jack-be-nimble/jack-be-nimble-c04.mp4",
    "thumb": "jack-be-nimble/jack-be-nimble-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jack Be Nimble",
-     "subcaption": "Class 4: Loud and soft",
+     "subcaption": "Class 4: Big jump, tiny tiptoe",
      "durationSec": 7,
      "voice": "Hi, everyone. Hands on your knees. Today we play Jack Be Nimble.",
      "voiceId": "ca1c780b4fb9c3dc",
@@ -3942,21 +3997,12 @@
     },
     {
      "kind": "say",
-     "caption": "Let's play loud and soft",
-     "parentCue": "Show a big tap and a tiny tap",
+     "caption": "Big jumps, tiny tiptoes",
+     "parentCue": "loud means strong arms, not banging",
      "durationSec": 7,
-     "voice": "Let's play loud and soft.",
-     "voiceId": "38969fa644979c6c",
-     "voiceSec": 2.07
-    },
-    {
-     "kind": "say",
-     "caption": "Loud like a drum, soft like a whisper",
-     "parentCue": "Whisper the word soft",
-     "durationSec": 7,
-     "voice": "Loud like a drum. Soft like a whisper.",
-     "voiceId": "e6a88f8294c33b42",
-     "voiceSec": 3.13
+     "voice": "Big jumps, tiny tiptoes. Grown-up, loud means strong arms, not banging.",
+     "voiceId": "a859e1d34e0dae9d",
+     "voiceSec": 5.43
     },
     {
      "kind": "beat",
@@ -4446,9 +4492,9 @@
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -4737,692 +4783,693 @@
     {
      "kind": "praise",
      "caption": "Lovely and soft!",
-     "durationSec": 5,
-     "voice": "Lovely and soft.",
-     "voiceId": "2d2fef45b78f8335",
-     "voiceSec": 1.59
-    },
-    {
-     "kind": "beat",
-     "caption": "Loud!",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
-     "bpm": 92,
-     "leadInSec": 1.35,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ble",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      }
-     ],
-     "durationSec": 6,
-     "voice": "Loud.",
-     "voiceId": "bbed641d3c02b875",
-     "voiceSec": 0.95
-    },
-    {
-     "kind": "beat",
-     "caption": "Soft...",
-     "parentCue": "Tap gently, tiny fingers",
-     "dynamic": "soft",
-     "bpm": 92,
-     "leadInSec": 1.32,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ble",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      }
-     ],
-     "durationSec": 6,
-     "voice": "Soft.",
-     "voiceId": "bb7d020610b0ccb6",
-     "voiceSec": 0.92
-    },
-    {
-     "kind": "praise",
-     "caption": "Well done!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Now loud for the whole song",
-     "parentCue": "Play strong together",
-     "durationSec": 6,
-     "voice": "Now the whole song, nice and loud.",
-     "voiceId": "040a2fae33605048",
-     "voiceSec": 2.44
-    },
-    {
-     "kind": "beat",
-     "caption": "Big loud taps",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
-     "bpm": 92,
-     "leadInSec": 1.97,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ble",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "quick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "jump",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ver",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "can",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "dle",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "stick",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      },
-      {
-       "lyric": "Jack be quick",
-       "from": 4
-      },
-      {
-       "lyric": "Jack jump over the candlestick",
-       "from": 7
-      }
-     ],
-     "durationSec": 15,
-     "voice": "Big loud taps.",
-     "voiceId": "b4985f7cf9e4f6ee",
-     "voiceSec": 1.57
-    },
-    {
-     "kind": "say",
-     "caption": "Now soft and sleepy",
-     "parentCue": "Play quietly together",
-     "durationSec": 5,
-     "voice": "Now soft and sleepy, like a whisper.",
-     "voiceId": "a209bc8b2599c5d6",
-     "voiceSec": 3.3
-    },
-    {
-     "kind": "beat",
-     "caption": "Tiny soft taps",
-     "parentCue": "Tap gently, tiny fingers",
-     "dynamic": "soft",
-     "bpm": 92,
-     "leadInSec": 2.11,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ble",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "quick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "jump",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ver",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "can",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "dle",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "stick",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      },
-      {
-       "lyric": "Jack be quick",
-       "from": 4
-      },
-      {
-       "lyric": "Jack jump over the candlestick",
-       "from": 7
-      }
-     ],
-     "durationSec": 15,
-     "voice": "Tiny soft taps.",
-     "voiceId": "2926d15be302c5e2",
-     "voiceSec": 1.71
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely and soft!",
-     "durationSec": 5,
-     "voice": "Lovely and soft.",
-     "voiceId": "2d2fef45b78f8335",
-     "voiceSec": 1.59
-    },
-    {
-     "kind": "beat",
-     "caption": "Loud!",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
-     "bpm": 92,
-     "leadInSec": 1.35,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ble",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      }
-     ],
-     "durationSec": 6,
-     "voice": "Loud.",
-     "voiceId": "bbed641d3c02b875",
-     "voiceSec": 0.95
-    },
-    {
-     "kind": "beat",
-     "caption": "Soft...",
-     "parentCue": "Tap gently, tiny fingers",
-     "dynamic": "soft",
-     "bpm": 92,
-     "leadInSec": 1.32,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ble",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      }
-     ],
-     "durationSec": 6,
-     "voice": "Soft.",
-     "voiceId": "bb7d020610b0ccb6",
-     "voiceSec": 0.92
-    },
-    {
-     "kind": "praise",
-     "caption": "Well done!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Now loud for the whole song",
-     "parentCue": "Play strong together",
-     "durationSec": 6,
-     "voice": "Now the whole song, nice and loud.",
-     "voiceId": "040a2fae33605048",
-     "voiceSec": 2.44
-    },
-    {
-     "kind": "beat",
-     "caption": "Big loud taps",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
-     "bpm": 92,
-     "leadInSec": 1.97,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ble",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "quick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "jump",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ver",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "can",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "dle",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "stick",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      },
-      {
-       "lyric": "Jack be quick",
-       "from": 4
-      },
-      {
-       "lyric": "Jack jump over the candlestick",
-       "from": 7
-      }
-     ],
-     "durationSec": 15,
-     "voice": "Big loud taps.",
-     "voiceId": "b4985f7cf9e4f6ee",
-     "voiceSec": 1.57
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
      "voiceSec": 2.26
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 92,
+     "leadInSec": 1.35,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Loud.",
+     "voiceId": "bbed641d3c02b875",
+     "voiceSec": 0.95
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft...",
+     "parentCue": "Tap gently, tiny fingers",
+     "dynamic": "soft",
+     "bpm": 92,
+     "leadInSec": 1.32,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Soft.",
+     "voiceId": "bb7d020610b0ccb6",
+     "voiceSec": 0.92
+    },
+    {
+     "kind": "praise",
+     "caption": "Well done!",
+     "durationSec": 5,
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "Now loud for the whole song",
+     "parentCue": "Play strong together",
+     "durationSec": 6,
+     "voice": "Now the whole song, nice and loud.",
+     "voiceId": "040a2fae33605048",
+     "voiceSec": 2.44
+    },
+    {
+     "kind": "beat",
+     "caption": "Big loud taps",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 92,
+     "leadInSec": 1.97,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "quick",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "jump",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ver",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "can",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dle",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "stick",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      },
+      {
+       "lyric": "Jack be quick",
+       "from": 4
+      },
+      {
+       "lyric": "Jack jump over the candlestick",
+       "from": 7
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Big loud taps.",
+     "voiceId": "b4985f7cf9e4f6ee",
+     "voiceSec": 1.57
+    },
+    {
+     "kind": "say",
+     "caption": "Now soft and sleepy",
+     "parentCue": "Play quietly together",
+     "durationSec": 5,
+     "voice": "Now soft and sleepy, like a whisper.",
+     "voiceId": "a209bc8b2599c5d6",
+     "voiceSec": 3.3
+    },
+    {
+     "kind": "beat",
+     "caption": "Tiny soft taps",
+     "parentCue": "Tap gently, tiny fingers",
+     "dynamic": "soft",
+     "bpm": 92,
+     "leadInSec": 2.11,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "quick",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "jump",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ver",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "can",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dle",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "stick",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      },
+      {
+       "lyric": "Jack be quick",
+       "from": 4
+      },
+      {
+       "lyric": "Jack jump over the candlestick",
+       "from": 7
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Tiny soft taps.",
+     "voiceId": "2926d15be302c5e2",
+     "voiceSec": 1.71
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely and soft!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 92,
+     "leadInSec": 1.35,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Loud.",
+     "voiceId": "bbed641d3c02b875",
+     "voiceSec": 0.95
+    },
+    {
+     "kind": "beat",
+     "caption": "Soft...",
+     "parentCue": "Tap gently, tiny fingers",
+     "dynamic": "soft",
+     "bpm": 92,
+     "leadInSec": 1.32,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Soft.",
+     "voiceId": "bb7d020610b0ccb6",
+     "voiceSec": 0.92
+    },
+    {
+     "kind": "praise",
+     "caption": "Well done!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
+    },
+    {
+     "kind": "say",
+     "caption": "Now loud for the whole song",
+     "parentCue": "Play strong together",
+     "durationSec": 6,
+     "voice": "Now the whole song, nice and loud.",
+     "voiceId": "040a2fae33605048",
+     "voiceSec": 2.44
+    },
+    {
+     "kind": "beat",
+     "caption": "Big loud taps",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 92,
+     "leadInSec": 1.97,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "quick",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "jump",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ver",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "can",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dle",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "stick",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      },
+      {
+       "lyric": "Jack be quick",
+       "from": 4
+      },
+      {
+       "lyric": "Jack jump over the candlestick",
+       "from": 7
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Big loud taps.",
+     "voiceId": "b4985f7cf9e4f6ee",
+     "voiceSec": 1.57
+    },
+    {
+     "kind": "praise",
+     "caption": "You found loud and soft!",
+     "durationSec": 5,
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
     "primary": "expression",
     "secondary": [
+     "beat",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Magnitude contrast",
-    "parentLine": "Telling a big sound from a small one"
+    "concept": "Opposites (magnitude contrast)",
+    "parentLine": "Noticing big and small: the same tap, more or less"
    },
-   "parentPrompt": "Loud means strong, not banging. Whisper when it's time to play soft.",
-   "childAction": "Tap loud like a drum, soft like a whisper.",
-   "bridge": "Loud is a big drum; soft is a whisper on the keys.",
-   "celebrate": "Today you practiced loud and soft, fast and slow and playing together."
+   "parentPrompt": "Make strong arms for loud taps; whisper and tiptoe your fingers for soft ones.",
+   "childAction": "Loud: big jumping taps. Soft: tiny tiptoe taps.",
+   "bridge": "Loud taps are Jack's big jump; soft taps are Jack tiptoeing past.",
+   "celebrate": "Today you practiced: playing loud and soft."
   },
   {
    "id": "jack-be-nimble-c05",
    "index": 5,
-   "title": "Slow and fast",
-   "goal": "Follow the music when it goes slow and fast",
+   "title": "Quick Jack, sleepy Jack",
+   "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
    "type": "fast-slow",
-   "durationSec": 260,
-   "parentTip": "Let the tempo lead your child. Slow down if taps get wild, then try fast again.",
+   "durationSec": 267,
+   "parentTip": "Walk your fingers up your child's arm, slowly then quickly, matching the music.",
    "video": "jack-be-nimble/jack-be-nimble-c05.mp4",
    "thumb": "jack-be-nimble/jack-be-nimble-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jack Be Nimble",
-     "subcaption": "Class 5: Slow and fast",
+     "subcaption": "Class 5: Quick Jack, sleepy Jack",
      "durationSec": 8,
      "voice": "Hello, friends. Today we play Jack Be Nimble. Grown-up, sit close beside your little one.",
      "voiceId": "26741cbf5ea8b796",
@@ -5430,21 +5477,108 @@
     },
     {
      "kind": "say",
-     "caption": "Songs can go slow or fast",
-     "parentCue": "Move your arms slowly, then quickly",
-     "durationSec": 7,
-     "voice": "Songs can go slow, or fast.",
-     "voiceId": "aafd9004389208dd",
-     "voiceSec": 2.4
+     "caption": "Turtle slow, bunny quick",
+     "parentCue": "slow down if the taps get wild",
+     "durationSec": 6,
+     "voice": "Turtle slow, bunny quick. Grown-up, slow down if the taps get wild.",
+     "voiceId": "5ecf0608144c89af",
+     "voiceSec": 4.75
     },
     {
-     "kind": "say",
-     "caption": "Slow like a turtle, fast like a bunny",
-     "parentCue": "Walk your fingers slowly, then fast",
-     "durationSec": 8,
-     "voice": "Slow like a turtle. Fast like a bunny.",
-     "voiceId": "e4f86f78454f08b3",
-     "voiceSec": 3.02
+     "kind": "beat",
+     "caption": "Turtle time: slow Jack",
+     "parentCue": "Tap together, slow and heavy",
+     "bpm": 58,
+     "leadInSec": 4.75,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Turtle time. Slow, heavy taps, like a sleepy turtle.",
+     "voiceId": "b4af1f75a60b905c",
+     "voiceSec": 4.35
+    },
+    {
+     "kind": "beat",
+     "caption": "Bunny time: quick Jack!",
+     "parentCue": "Same tune, now quick and light",
+     "bpm": 108,
+     "leadInSec": 4.73,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Bunny time. Quick, light taps, like a hopping bunny.",
+     "voiceId": "72e4255c97005227",
+     "voiceSec": 4.33
     },
     {
      "kind": "beat",
@@ -5928,9 +6062,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -6218,9 +6352,9 @@
      "kind": "praise",
      "caption": "Speedy fingers!",
      "durationSec": 5,
-     "voice": "Quick little fingers.",
-     "voiceId": "07d002604f064b53",
-     "voiceSec": 1.45
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "beat",
@@ -6320,9 +6454,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -6610,9 +6744,9 @@
      "kind": "praise",
      "caption": "Speedy fingers!",
      "durationSec": 5,
-     "voice": "Quick little fingers.",
-     "voiceId": "07d002604f064b53",
-     "voiceSec": 1.45
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "beat",
@@ -6710,60 +6844,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "You followed the music!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 5,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
     "primary": "expression",
     "secondary": [
-     "beat"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Rate (fast versus slow)",
-    "parentLine": "Matching the speed of a pattern"
+    "concept": "Invariance under tempo change",
+    "parentLine": "Same tune, same shape, only the speed changes"
    },
-   "parentPrompt": "Let the tempo lead your child. Slow down if taps get wild, then try fast again.",
-   "childAction": "Tap fast like a rabbit, slow like a turtle.",
-   "bridge": "Fast taps are rabbit hops; slow taps are turtle steps.",
-   "celebrate": "Today you practiced loud and soft, fast and slow and keeping a steady beat."
+   "parentPrompt": "Walk your fingers up your child's arm, slowly then quickly, matching the music.",
+   "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+   "bridge": "Slow taps are turtle steps; quick taps are Jack running like a bunny.",
+   "celebrate": "Today you practiced: following slow and quick music."
   },
   {
    "id": "jack-be-nimble-c06",
    "index": 6,
-   "title": "Stop and go",
-   "goal": "Tap when the music plays and freeze when it stops",
+   "title": "Jack jumps, Jack freezes",
+   "goal": "Tap while the music plays and freeze when it stops.",
    "type": "stop-go",
-   "durationSec": 273,
-   "parentTip": "Make freezing silly and fun. Holding still is a big skill for little ones.",
+   "durationSec": 277,
+   "parentTip": "Freeze with a funny face when the music stops; cheer when it starts again.",
    "video": "jack-be-nimble/jack-be-nimble-c06.mp4",
    "thumb": "jack-be-nimble/jack-be-nimble-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jack Be Nimble",
-     "subcaption": "Class 6: Stop and go",
+     "subcaption": "Class 6: Jack jumps, Jack freezes",
      "durationSec": 7,
      "voice": "Hi, everyone. Hands on your knees. Today we play Jack Be Nimble.",
      "voiceId": "ca1c780b4fb9c3dc",
@@ -6771,21 +6889,12 @@
     },
     {
      "kind": "say",
-     "caption": "When the music stops, we freeze!",
-     "parentCue": "Freeze like a statue together",
+     "caption": "Go, Jack, go! Now freeze!",
+     "parentCue": "make your freeze silly, like a statue",
      "durationSec": 7,
-     "voice": "When the music stops, we freeze.",
-     "voiceId": "437bd8027fc8f488",
-     "voiceSec": 2.3
-    },
-    {
-     "kind": "say",
-     "caption": "Go means tap, stop means freeze",
-     "parentCue": "Practice one freeze now",
-     "durationSec": 7,
-     "voice": "Go means tap. Stop means freeze.",
-     "voiceId": "b3994b162070ad3a",
-     "voiceSec": 2.82
+     "voice": "Go, Jack, go! Now freeze. Grown-up, make your freeze silly, like a statue.",
+     "voiceId": "62af9d5acc15d4b2",
+     "voiceSec": 5.69
     },
     {
      "kind": "beat",
@@ -7282,9 +7391,9 @@
      "kind": "praise",
      "caption": "Great freezing!",
      "durationSec": 5,
-     "voice": "Great freezing. Still as statues.",
-     "voiceId": "79a8715bd81be4f4",
-     "voiceSec": 2.89
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "beat",
@@ -7479,9 +7588,9 @@
      "kind": "praise",
      "caption": "Great freezing!",
      "durationSec": 5,
-     "voice": "Great freezing. Still as statues.",
-     "voiceId": "79a8715bd81be4f4",
-     "voiceSec": 2.89
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "beat",
@@ -7676,9 +7785,9 @@
      "kind": "praise",
      "caption": "Great freezing!",
      "durationSec": 5,
-     "voice": "Great freezing. Still as statues.",
-     "voiceId": "79a8715bd81be4f4",
-     "voiceSec": 2.89
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "beat",
@@ -7873,9 +7982,9 @@
      "kind": "praise",
      "caption": "Great freezing!",
      "durationSec": 5,
-     "voice": "Great freezing. Still as statues.",
-     "voiceId": "79a8715bd81be4f4",
-     "voiceSec": 2.89
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "beat",
@@ -7962,8 +8071,64 @@
      "voiceSec": 2.6
     },
     {
+     "kind": "beat",
+     "caption": "Go! Tap the beat",
+     "parentCue": "Play this line",
+     "bpm": 92,
+     "leadInSec": 2.74,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Go. Tap the beat.",
+     "voiceId": "9a3d3dd642048105",
+     "voiceSec": 2.34
+    },
+    {
+     "kind": "say",
+     "caption": "Stop! Freeze!",
+     "parentCue": "Stop playing and freeze together",
+     "durationSec": 4,
+     "voice": "Stop. Freeze like a statue.",
+     "voiceId": "baf3cadfe3548ad6",
+     "voiceSec": 2.6
+    },
+    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great freezing, Jack!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
@@ -7973,55 +8138,88 @@
    "skill": {
     "primary": "listening",
     "secondary": [
-     "beat"
+     "beat",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Inhibitory control (start and stop)",
-    "parentLine": "Stopping and starting exactly with the sound"
+    "concept": "Cause and effect (sound, silence)",
+    "parentLine": "When the sound stops, the hands stop too"
    },
-   "parentPrompt": "Make freezing silly and fun. Holding still is a big skill for little ones.",
-   "childAction": "Play when the music goes, freeze when it stops.",
-   "bridge": "Music on, hands dance; music off, hands freeze like statues.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Freeze with a funny face when the music stops; cheer when it starts again.",
+   "childAction": "Tap while music plays. Freeze like a statue when it stops.",
+   "bridge": "Music on, Jack runs; music off, Jack stands still as a statue.",
+   "celebrate": "Today you practiced: listening for stop and go."
   },
   {
    "id": "jack-be-nimble-c07",
    "index": 7,
-   "title": "Play together",
-   "goal": "Play the song together, grown-up on the tune, child on the beat",
+   "title": "Jack and me duet",
+   "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
    "type": "together",
-   "durationSec": 265,
-   "parentTip": "Follow your child's lead. If they stop to listen, keep playing and smile.",
+   "durationSec": 250,
+   "parentTip": "Play the tune and watch your child; if they stop, keep playing and smile.",
    "video": "jack-be-nimble/jack-be-nimble-c07.mp4",
    "thumb": "jack-be-nimble/jack-be-nimble-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jack Be Nimble",
-     "subcaption": "Class 7: Play together",
+     "subcaption": "Class 7: Jack and me duet",
      "durationSec": 7,
      "voice": "Hi, everyone. Hands on your knees. Today we play Jack Be Nimble.",
      "voiceId": "ca1c780b4fb9c3dc",
      "voiceSec": 5.78
     },
     {
-     "kind": "say",
-     "caption": "Let's play together",
-     "parentCue": "You play the tune, your child taps along",
-     "durationSec": 6,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 92,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
-     "caption": "Sing, tap and smile",
-     "parentCue": "Sing the words while you play",
+     "caption": "I play, you tap",
+     "parentCue": "sit side by side at the piano",
      "durationSec": 6,
-     "voice": "Sing, tap, and smile.",
-     "voiceId": "10b3a90e8c14f1b5",
-     "voiceSec": 1.91
+     "voice": "I play the song. You tap along.",
+     "voiceId": "1cc501382f86fc32",
+     "voiceSec": 2.88
     },
     {
      "kind": "together",
@@ -8300,9 +8498,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -8318,7 +8516,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 92,
-     "leadInSec": 2.45,
+     "leadInSec": 3.63,
      "notes": [
       {
        "p": "G4",
@@ -8440,18 +8638,18 @@
        "from": 7
       }
      ],
-     "durationSec": 16,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
+     "durationSec": 17,
+     "voice": "Tap with the big circle. Tap, tap, tap.",
+     "voiceId": "faf2ee285af584e0",
+     "voiceSec": 3.23
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -8467,7 +8665,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 92,
-     "leadInSec": 2.45,
+     "leadInSec": 4.26,
      "notes": [
       {
        "p": "G4",
@@ -8589,18 +8787,18 @@
        "from": 7
       }
      ],
-     "durationSec": 16,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
+     "durationSec": 17,
+     "voice": "Any key is fine. Tap when the circle grows.",
+     "voiceId": "015b37b18f728b6c",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -8616,7 +8814,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 92,
-     "leadInSec": 2.45,
+     "leadInSec": 2.22,
      "notes": [
       {
        "p": "G4",
@@ -8738,25 +8936,25 @@
        "from": 7
       }
      ],
-     "durationSec": 16,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
+     "durationSec": 15,
+     "voice": "Tap the beat, like a heartbeat.",
+     "voiceId": "0cf68adb12e1c639",
+     "voiceSec": 1.82
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "together",
      "caption": "Play it together",
      "parentCue": "Your child taps along",
      "bpm": 92,
-     "leadInSec": 2.47,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "G4",
@@ -8878,10 +9076,10 @@
        "from": 7
       }
      ],
-     "durationSec": 16,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 15,
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "say",
@@ -8897,7 +9095,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 92,
-     "leadInSec": 2.45,
+     "leadInSec": 3.54,
      "notes": [
       {
        "p": "G4",
@@ -9019,18 +9217,18 @@
        "from": 7
       }
      ],
-     "durationSec": 16,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
+     "durationSec": 17,
+     "voice": "Grown-up plays the song. You tap the beat.",
+     "voiceId": "4517efb7c8c0ff3d",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -9177,9 +9375,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -9195,7 +9393,7 @@
      "caption": "Tap the beat with me",
      "parentCue": "Keep it steady",
      "bpm": 92,
-     "leadInSec": 2.45,
+     "leadInSec": 4.26,
      "notes": [
       {
        "p": "G4",
@@ -9317,190 +9515,51 @@
        "from": 7
       }
      ],
-     "durationSec": 16,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
+     "durationSec": 17,
+     "voice": "Any key is fine. Tap when the circle grows.",
+     "voiceId": "015b37b18f728b6c",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
+     "caption": "What a duet together!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    },
-    {
-     "kind": "together",
-     "caption": "Play it together",
-     "parentCue": "Your child taps along",
-     "bpm": 92,
-     "leadInSec": 2.47,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ble",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "quick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "jump",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ver",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "can",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "dle",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "stick",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      },
-      {
-       "lyric": "Jack be quick",
-       "from": 4
-      },
-      {
-       "lyric": "Jack jump over the candlestick",
-       "from": 7
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "beat"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping time with another person"
+    "concept": "Interlocking parts (two roles)",
+    "parentLine": "Two different jobs fit together to make one song"
    },
-   "parentPrompt": "Follow your child's lead. If they stop to listen, keep playing and smile.",
-   "childAction": "Play along with your grown-up.",
-   "bridge": "Two players, one song, like walking in step.",
-   "celebrate": "Today you practiced playing together and keeping a steady beat."
+   "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+   "childAction": "Tap the beat on any key while your grown-up plays the tune.",
+   "bridge": "The tune is Jack running; your beat is the ground under his feet.",
+   "celebrate": "Today you practiced: playing one song together, two jobs."
   },
   {
    "id": "jack-be-nimble-c08",
    "index": 8,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Concert for teddy",
+   "goal": "Play the whole rhyme from the first note to the last, then bow together.",
    "type": "concert",
-   "durationSec": 273,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 280,
+   "parentTip": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
    "video": "jack-be-nimble/jack-be-nimble-c08.mp4",
    "thumb": "jack-be-nimble/jack-be-nimble-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jack Be Nimble",
-     "subcaption": "Class 8: Concert time",
+     "subcaption": "Class 8: Concert for teddy",
      "durationSec": 8,
      "voice": "It's music time. Today we play Jack Be Nimble. Grown-up, sit side by side.",
      "voiceId": "f3b36151c7965947",
@@ -9508,21 +9567,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "A song for teddy!",
+     "parentCue": "put teddy in front as the audience",
+     "durationSec": 6,
+     "voice": "A song for teddy. Grown-up, put teddy in front as the audience.",
+     "voiceId": "fe0fcf2bdc47db5c",
+     "voiceSec": 4.44
     },
     {
      "kind": "beat",
@@ -9809,6 +9859,602 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
+    },
+    {
+     "kind": "say",
+     "caption": "Play it for a teddy bear",
+     "parentCue": "Sit a toy on the piano to listen",
+     "durationSec": 8,
+     "voice": "Let's play it for a teddy bear.",
+     "voiceId": "bb73054790cb3e97",
+     "voiceSec": 2.36
+    },
+    {
+     "kind": "beat",
+     "caption": "A song for teddy",
+     "parentCue": "You play the tune, your child taps the beat",
+     "bpm": 92,
+     "leadInSec": 2.17,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "quick",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "jump",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ver",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "can",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dle",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "stick",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      },
+      {
+       "lyric": "Jack be quick",
+       "from": 4
+      },
+      {
+       "lyric": "Jack jump over the candlestick",
+       "from": 7
+      }
+     ],
+     "durationSec": 15,
+     "voice": "This one is for teddy.",
+     "voiceId": "137fd3d6182c1ad5",
+     "voiceSec": 1.77
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "Play it for someone you love",
+     "parentCue": "Call a family member to listen",
+     "durationSec": 7,
+     "voice": "Let's play it for someone you love.",
+     "voiceId": "c5620ac87a810141",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "beat",
+     "caption": "A song for you",
+     "parentCue": "You play the tune, your child taps the beat",
+     "bpm": 92,
+     "leadInSec": 1.78,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "quick",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "jump",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ver",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "can",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dle",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "stick",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      },
+      {
+       "lyric": "Jack be quick",
+       "from": 4
+      },
+      {
+       "lyric": "Jack jump over the candlestick",
+       "from": 7
+      }
+     ],
+     "durationSec": 15,
+     "voice": "This one is for you.",
+     "voiceId": "30767942db0cc425",
+     "voiceSec": 1.38
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
+    },
+    {
+     "kind": "say",
+     "caption": "One more, big finish!",
+     "parentCue": "Cheer at the last note",
+     "durationSec": 6,
+     "voice": "One more time, with a big finish.",
+     "voiceId": "025b1b612715320d",
+     "voiceSec": 2.22
+    },
+    {
+     "kind": "beat",
+     "caption": "Big finish!",
+     "parentCue": "You play the tune, your child taps the beat",
+     "bpm": 92,
+     "leadInSec": 2.92,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "quick",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "jump",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ver",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "can",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dle",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "stick",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      },
+      {
+       "lyric": "Jack be quick",
+       "from": 4
+      },
+      {
+       "lyric": "Jack jump over the candlestick",
+       "from": 7
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Big finish. Here we go.",
+     "voiceId": "02dfcd8127676a18",
+     "voiceSec": 2.52
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
+    },
+    {
+     "kind": "say",
+     "caption": "Encore! Play it again",
+     "parentCue": "Clap, then play once more",
+     "durationSec": 6,
+     "voice": "Encore. Let's play it again.",
+     "voiceId": "c02b3b5c3f95778a",
+     "voiceSec": 2.5
+    },
+    {
+     "kind": "beat",
+     "caption": "Encore!",
+     "parentCue": "You play the tune, your child taps the beat",
+     "bpm": 92,
+     "leadInSec": 3.04,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "nim",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ble",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "be",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "quick",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "jump",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ver",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "can",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "dle",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "stick",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack be nimble",
+       "from": 0
+      },
+      {
+       "lyric": "Jack be quick",
+       "from": 4
+      },
+      {
+       "lyric": "Jack jump over the candlestick",
+       "from": 7
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Encore. Here we go.",
+     "voiceId": "c4c88c4ddd375061",
+     "voiceSec": 2.64
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5,
      "voice": "I love how you kept going.",
      "voiceId": "5edf54ba234e9d32",
      "voiceSec": 1.94
@@ -9958,9 +10604,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -10403,492 +11049,27 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "Bravo, you played together!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "Play it for a teddy bear",
-     "parentCue": "Sit a toy on the piano to listen",
-     "durationSec": 8,
-     "voice": "Let's play it for a teddy bear.",
-     "voiceId": "bb73054790cb3e97",
-     "voiceSec": 2.36
-    },
-    {
-     "kind": "beat",
-     "caption": "A song for teddy",
-     "parentCue": "You play the tune, your child taps the beat",
-     "bpm": 92,
-     "leadInSec": 2.17,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ble",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "quick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "jump",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ver",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "can",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "dle",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "stick",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      },
-      {
-       "lyric": "Jack be quick",
-       "from": 4
-      },
-      {
-       "lyric": "Jack jump over the candlestick",
-       "from": 7
-      }
-     ],
-     "durationSec": 15,
-     "voice": "This one is for teddy.",
-     "voiceId": "137fd3d6182c1ad5",
-     "voiceSec": 1.77
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Play it for someone you love",
-     "parentCue": "Call a family member to listen",
-     "durationSec": 7,
-     "voice": "Let's play it for someone you love.",
-     "voiceId": "c5620ac87a810141",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "beat",
-     "caption": "A song for you",
-     "parentCue": "You play the tune, your child taps the beat",
-     "bpm": 92,
-     "leadInSec": 1.78,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ble",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "quick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "jump",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ver",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "can",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "dle",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "stick",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      },
-      {
-       "lyric": "Jack be quick",
-       "from": 4
-      },
-      {
-       "lyric": "Jack jump over the candlestick",
-       "from": 7
-      }
-     ],
-     "durationSec": 15,
-     "voice": "This one is for you.",
-     "voiceId": "30767942db0cc425",
-     "voiceSec": 1.38
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "One more, big finish!",
-     "parentCue": "Cheer at the last note",
-     "durationSec": 6,
-     "voice": "One more time, with a big finish.",
-     "voiceId": "025b1b612715320d",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "beat",
-     "caption": "Big finish!",
-     "parentCue": "You play the tune, your child taps the beat",
-     "bpm": 92,
-     "leadInSec": 2.92,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "nim",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ble",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "be",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "quick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "jump",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ver",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "can",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "dle",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "stick",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack be nimble",
-       "from": 0
-      },
-      {
-       "lyric": "Jack be quick",
-       "from": 4
-      },
-      {
-       "lyric": "Jack jump over the candlestick",
-       "from": 7
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Big finish. Here we go.",
-     "voiceId": "02dfcd8127676a18",
-     "voiceSec": 2.52
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "Wiggle your fingers!",
-     "parentCue": "Shake out both hands together",
-     "durationSec": 9,
-     "voice": "Wiggle your fingers. Wiggle, wiggle.",
-     "voiceId": "640ef443bc914f6c",
-     "voiceSec": 2.99
-    },
-    {
-     "kind": "praise",
-     "caption": "You are a star pianist!",
-     "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "together",
     "secondary": [
-     "together",
-     "expression"
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Sequence: beginning, middle, end",
+    "parentLine": "A song starts, goes on, and ends; we finish together"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+   "childAction": "Tap the beat to the very end, then take a big bow.",
+   "bridge": "The song is one big jump: run up, leap over, land with a bow.",
+   "celebrate": "Today you practiced: playing a whole song, start to end."
   }
  ]
 }

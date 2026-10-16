@@ -2,41 +2,48 @@
  "songId": "a-tisket-a-tasket",
  "title": "A-Tisket, A-Tasket",
  "ageGroup": "3-4",
- "curriculum": "default",
- "songSummary": "Practices listening memory, keyboard map and steady beat, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices steady beat, finding G by the three black keys, echoing short calls, counting to three and taking turns, with a playground basket rhyme.",
  "skillMap": [
   {
    "id": "listening",
    "label": "Listening memory",
    "value": 1.0,
-   "classes": 4,
+   "classes": 3,
    "total": 10
   },
   {
    "id": "space",
    "label": "Keyboard map",
-   "value": 0.75,
-   "classes": 3,
+   "value": 0.67,
+   "classes": 2,
+   "total": 10
+  },
+  {
+   "id": "together",
+   "label": "Playing together",
+   "value": 0.67,
+   "classes": 2,
    "total": 10
   },
   {
    "id": "beat",
    "label": "Steady beat",
-   "value": 0.25,
+   "value": 0.33,
+   "classes": 1,
+   "total": 10
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 0.33,
    "classes": 1,
    "total": 10
   },
   {
    "id": "form",
    "label": "Song shape",
-   "value": 0.25,
-   "classes": 1,
-   "total": 10
-  },
-  {
-   "id": "together",
-   "label": "Playing together",
-   "value": 0.25,
+   "value": 0.33,
    "classes": 1,
    "total": 10
   }
@@ -44,36 +51,74 @@
  "icon": "flower",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2214,
+ "totalSec": 2228,
  "classes": [
   {
    "id": "a-tisket-a-tasket-c01",
    "index": 1,
-   "title": "Listen and sway",
-   "goal": "Hear the whole song and move to the beat",
+   "title": "Tisket, tasket, swing!",
+   "goal": "Hear the whole song and notice the little call that comes back.",
    "type": "listen",
-   "durationSec": 208,
-   "parentTip": "Sit together at the piano. Sway side to side while the song plays.",
+   "durationSec": 210,
+   "parentTip": "Swing your arms like carrying a basket; swing bigger each time 'tisket, tasket' returns.",
    "video": "a-tisket-a-tasket/a-tisket-a-tasket-c01.mp4",
    "thumb": "a-tisket-a-tasket/a-tisket-a-tasket-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "A-Tisket, A-Tasket",
-     "subcaption": "Class 1: Listen and sway",
+     "subcaption": "Class 1: Tisket, tasket, swing!",
      "durationSec": 9,
      "voice": "Hi, everyone. It's time for A-Tisket, A-Tasket. Grown-up, sit close by.",
      "voiceId": "d817e0890c5605c8",
      "voiceSec": 7.06
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm up on G",
+     "parentCue": "Help one finger find it",
+     "bpm": 80,
+     "leadInSec": 4.84,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Let's warm up on G. One finger, three gentle presses.",
+     "voiceId": "a8ee35e70b3c5dcf",
+     "voiceSec": 4.44
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Swing your arms like a basket",
+     "parentCue": "swing them together",
+     "durationSec": 6,
+     "voice": "Swing your arms like a basket. Grown-up, swing them together.",
+     "voiceId": "a2a767bb9b840e9b",
+     "voiceSec": 4.28
+    },
+    {
+     "kind": "say",
+     "caption": "Tisket, tasket: here it comes again!",
+     "parentCue": "Cup your ear and smile when it returns",
+     "durationSec": 8,
+     "voice": "Tisket, tasket: here it comes again. Grown-up, cup your ear and smile when it returns.",
+     "voiceId": "209479ef4abd0a43",
+     "voiceSec": 6.38
     },
     {
      "kind": "listen",
@@ -788,7 +833,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 100,
-     "leadInSec": 3.1,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -1005,18 +1050,18 @@
        "from": 21
       }
      ],
-     "durationSec": 15,
-     "voice": "Here comes the music. Listen.",
-     "voiceId": "851e2f513b5871ee",
-     "voiceSec": 2.7
+     "durationSec": 14,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -1504,7 +1549,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 100,
-     "leadInSec": 3.1,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -1721,18 +1766,18 @@
        "from": 21
       }
      ],
-     "durationSec": 15,
-     "voice": "Here comes the music. Listen.",
-     "voiceId": "851e2f513b5871ee",
-     "voiceSec": 2.7
+     "durationSec": 14,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -1972,280 +2017,53 @@
     },
     {
      "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 100,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "A",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tis",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tas",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "green",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "yel",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "low",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bas",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "wrote",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "let",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "love",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "way",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "dropped",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "it",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "A-tisket, a-tasket",
-       "from": 0
-      },
-      {
-       "lyric": "a green and yellow basket",
-       "from": 6
-      },
-      {
-       "lyric": "I wrote a letter to my love",
-       "from": 13
-      },
-      {
-       "lyric": "and on the way I dropped it",
-       "from": 21
-      }
-     ],
-     "durationSec": 15,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
-     "voiceSec": 2.66
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 5,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You heard it come back!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
     "primary": "listening",
     "secondary": [
-     "beat",
-     "together"
+     "patterns",
+     "beat"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Pattern repetition (A A)",
+    "parentLine": "The same little call, heard once and then again"
    },
-   "parentPrompt": "Sit together at the piano. Sway side to side while the song plays.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Swing your arms like carrying a basket; swing bigger each time 'tisket, tasket' returns.",
+   "childAction": "Swing your basket arms and say 'tisket, tasket' with the song.",
+   "bridge": "Tisket, tasket is the basket swinging: high, low, high, low.",
+   "celebrate": "Today you practiced: hearing a little call repeat."
   },
   {
    "id": "a-tisket-a-tasket-c02",
    "index": 2,
-   "title": "Find the beat",
-   "goal": "Tap a steady beat while the grown-up plays the tune",
+   "title": "Walking with the basket",
+   "goal": "Tap one steady tap on every beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 217,
-   "parentTip": "Any key is fine. Tap with your child's hand at first, then let go.",
+   "durationSec": 223,
+   "parentTip": "Pat your knees slowly together first, then move to the keys.",
    "video": "a-tisket-a-tasket/a-tisket-a-tasket-c02.mp4",
    "thumb": "a-tisket-a-tasket/a-tisket-a-tasket-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "A-Tisket, A-Tasket",
-     "subcaption": "Class 2: Find the beat",
+     "subcaption": "Class 2: Walking with the basket",
      "durationSec": 9,
      "voice": "Hello, friends. Today we play A-Tisket, A-Tasket. Grown-up, sit beside your little one.",
      "voiceId": "3156d9d0abca6657",
@@ -2253,21 +2071,90 @@
     },
     {
      "kind": "say",
-     "caption": "Tap any key on the beat",
-     "parentCue": "You play the tune, your child taps the beat",
-     "durationSec": 8,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
+     "caption": "Tap with the circle",
+     "parentCue": "Pat your knees together before the keys",
+     "durationSec": 6,
+     "voice": "Tap with the circle. Grown-up, pat your knees together before the keys.",
+     "voiceId": "198ef92f85d67ca5",
+     "voiceSec": 4.69
     },
     {
-     "kind": "say",
-     "caption": "Tap, tap, tap, like a heartbeat",
-     "parentCue": "Tap with your child first",
-     "durationSec": 7,
-     "voice": "Tap, tap, tap, like a heartbeat.",
-     "voiceId": "07ab7f7da2eb6f0e",
-     "voiceSec": 2.82
+     "kind": "beat",
+     "caption": "Steady basket steps",
+     "parentCue": "Tap with your child, one tap per beat",
+     "bpm": 76,
+     "leadInSec": 4.82,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Steady basket steps. Tap any key, one tap each beat.",
+     "voiceId": "21c8060411e87dad",
+     "voiceSec": 4.42
     },
     {
      "kind": "beat",
@@ -2736,9 +2623,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -2980,9 +2867,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -3224,9 +3111,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -3242,7 +3129,7 @@
      "caption": "Tap on every beat",
      "parentCue": "You play, your child taps",
      "bpm": 100,
-     "leadInSec": 3.54,
+     "leadInSec": 4.26,
      "notes": [
       {
        "p": "G4",
@@ -3459,18 +3346,18 @@
        "from": 21
       }
      ],
-     "durationSec": 15,
-     "voice": "Grown-up plays the song. You tap the beat.",
-     "voiceId": "4517efb7c8c0ff3d",
-     "voiceSec": 3.14
+     "durationSec": 16,
+     "voice": "Any key is fine. Tap when the circle grows.",
+     "voiceId": "015b37b18f728b6c",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -3486,494 +3373,6 @@
      "caption": "Tap with the big circle",
      "parentCue": "You play, your child taps",
      "bpm": 100,
-     "leadInSec": 2.22,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "A",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tis",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tas",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "green",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "yel",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "low",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bas",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "wrote",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "let",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "love",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "way",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "dropped",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "it",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "A-tisket, a-tasket",
-       "from": 0
-      },
-      {
-       "lyric": "a green and yellow basket",
-       "from": 6
-      },
-      {
-       "lyric": "I wrote a letter to my love",
-       "from": 13
-      },
-      {
-       "lyric": "and on the way I dropped it",
-       "from": 21
-      }
-     ],
-     "durationSec": 14,
-     "voice": "Tap the beat, like a heartbeat.",
-     "voiceId": "0cf68adb12e1c639",
-     "voiceSec": 1.82
-    },
-    {
-     "kind": "praise",
-     "caption": "Well done!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "Again, with a big smile",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 6,
-     "voice": "Again, with a big smile.",
-     "voiceId": "c87b837cebfc2d54",
-     "voiceSec": 2.14
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap, tap, tap",
-     "parentCue": "You play, your child taps",
-     "bpm": 100,
-     "leadInSec": 3.27,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "A",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tis",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tas",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "green",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "yel",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "low",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bas",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "wrote",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "let",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "love",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "way",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "dropped",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "it",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "A-tisket, a-tasket",
-       "from": 0
-      },
-      {
-       "lyric": "a green and yellow basket",
-       "from": 6
-      },
-      {
-       "lyric": "I wrote a letter to my love",
-       "from": 13
-      },
-      {
-       "lyric": "and on the way I dropped it",
-       "from": 21
-      }
-     ],
-     "durationSec": 15,
-     "voice": "Tap with the circle. Nice and steady.",
-     "voiceId": "d916f37a4d2a5a53",
-     "voiceSec": 2.87
-    },
-    {
-     "kind": "praise",
-     "caption": "Yes, that's it!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 5,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap on every beat",
-     "parentCue": "You play, your child taps",
-     "bpm": 100,
      "leadInSec": 3.54,
      "notes": [
       {
@@ -4198,47 +3597,574 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Well done!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "Again, with a big smile",
+     "parentCue": "Keep the taps steady",
+     "durationSec": 6,
+     "voice": "Again, with a big smile.",
+     "voiceId": "c87b837cebfc2d54",
+     "voiceSec": 2.14
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap, tap, tap",
+     "parentCue": "You play, your child taps",
+     "bpm": 100,
+     "leadInSec": 3.63,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "tis",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ket",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "tas",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ket",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "green",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "yel",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "low",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "bas",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "ket",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "wrote",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "let",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ter",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "love",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "way",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dropped",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "it",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A-tisket, a-tasket",
+       "from": 0
+      },
+      {
+       "lyric": "a green and yellow basket",
+       "from": 6
+      },
+      {
+       "lyric": "I wrote a letter to my love",
+       "from": 13
+      },
+      {
+       "lyric": "and on the way I dropped it",
+       "from": 21
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Tap with the big circle. Tap, tap, tap.",
+     "voiceId": "faf2ee285af584e0",
+     "voiceSec": 3.23
+    },
+    {
+     "kind": "praise",
+     "caption": "Yes, that's it!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Keep the taps steady",
+     "durationSec": 5,
+     "voice": "One more time.",
+     "voiceId": "b4c800d6a3120ebd",
+     "voiceSec": 1.34
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap on every beat",
+     "parentCue": "You play, your child taps",
+     "bpm": 100,
+     "leadInSec": 3.63,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "A",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "tis",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ket",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "tas",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ket",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "green",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "yel",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "low",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "bas",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1,
+       "s": "ket",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "wrote",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "let",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ter",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "love",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 4,
+       "s": "way",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dropped",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "it",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "A-tisket, a-tasket",
+       "from": 0
+      },
+      {
+       "lyric": "a green and yellow basket",
+       "from": 6
+      },
+      {
+       "lyric": "I wrote a letter to my love",
+       "from": 13
+      },
+      {
+       "lyric": "and on the way I dropped it",
+       "from": 21
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Tap with the big circle. Tap, tap, tap.",
+     "voiceId": "faf2ee285af584e0",
+     "voiceSec": 3.23
+    },
+    {
+     "kind": "praise",
+     "caption": "You kept the beat!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
     "primary": "beat",
     "secondary": [
-     "together"
+     "together",
+     "counting"
     ]
    },
    "mathTarget": {
-    "concept": "Periodicity (steady pulse)",
-    "parentLine": "Feeling something that repeats at an even time"
+    "concept": "One-to-one correspondence",
+    "parentLine": "One tap for each beat, no more, no less"
    },
-   "parentPrompt": "Any key is fine. Tap with your child's hand at first, then let go.",
-   "childAction": "Tap any key on every beat.",
-   "bridge": "The beat is a heartbeat: tap, tap, tap, never in a hurry.",
-   "celebrate": "Today you practiced keeping a steady beat and playing together."
+   "parentPrompt": "Pat your knees slowly together first, then move to the keys.",
+   "childAction": "Tap any key once for every step on the way.",
+   "bridge": "Each beat is one step down the path, basket in hand.",
+   "celebrate": "Today you practiced: one tap for each beat."
   },
   {
    "id": "a-tisket-a-tasket-c03",
    "index": 3,
-   "title": "Find the special note",
-   "goal": "Find and play the song's special note: G",
+   "title": "Find the basket note G",
+   "goal": "Find G on the piano by touch, inside the group of three black keys.",
    "type": "special-note",
-   "durationSec": 197,
-   "parentTip": "Help your child find G. Use one finger and press gently, like a button.",
+   "durationSec": 205,
+   "parentTip": "Touch the three black keys and say 'three!'; then find G after the first.",
    "video": "a-tisket-a-tasket/a-tisket-a-tasket-c03.mp4",
    "thumb": "a-tisket-a-tasket/a-tisket-a-tasket-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "A-Tisket, A-Tasket",
-     "subcaption": "Class 3: Find the special note",
+     "subcaption": "Class 3: Find the basket note G",
      "durationSec": 6,
      "voice": "Get ready for A-Tisket, A-Tasket. Sit up tall, like a tree.",
      "voiceId": "e8b3c99eebd1f0dc",
      "voiceSec": 4.6
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm up on G",
+     "parentCue": "Help one finger find it",
+     "bpm": 80,
+     "leadInSec": 4.84,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Let's warm up on G. One finger, three gentle presses.",
+     "voiceId": "a8ee35e70b3c5dcf",
+     "voiceSec": 4.44
+    },
+    {
+     "kind": "say",
+     "caption": "Where does G live?",
+     "parentCue": "Touch three black keys together and say three",
+     "durationSec": 7,
+     "voice": "Where does G live. Grown-up, touch three black keys together and say three.",
+     "voiceId": "d6326e95b75d6164",
+     "voiceSec": 5.7
     },
     {
      "kind": "say",
@@ -4256,13 +4182,33 @@
      "voiceSec": 2.82
     },
     {
-     "kind": "say",
-     "caption": "It comes back again and again",
-     "parentCue": "Count how often you hear it",
-     "durationSec": 7,
-     "voice": "It comes back again and again. Listen for it.",
-     "voiceId": "7ba5c7f096c3563c",
-     "voiceSec": 3.53
+     "kind": "your_turn",
+     "caption": "G, G, G: one, two, three",
+     "parentCue": "Count out loud with each press",
+     "bpm": 70,
+     "leadInSec": 3.9,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Your turn. Wait for the glow, then press.",
+     "voiceId": "e03bd593ae91d1cb",
+     "voiceSec": 3.5
     },
     {
      "kind": "demo",
@@ -4345,7 +4291,7 @@
      "caption": "Listen first",
      "parentCue": "Watch the key",
      "bpm": 80,
-     "leadInSec": 3.79,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "G4",
@@ -4358,17 +4304,17 @@
        "f": 3
       }
      ],
-     "durationSec": 9,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 7,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child press it",
      "bpm": 80,
-     "leadInSec": 2.84,
+     "leadInSec": 3.71,
      "gapBeats": 1,
      "notes": [
       {
@@ -4382,18 +4328,18 @@
        "f": 3
       }
      ],
-     "durationSec": 9,
-     "voice": "Your turn. I'll wait for you.",
-     "voiceId": "30da762511a45127",
-     "voiceSec": 2.44
+     "durationSec": 10,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -4409,7 +4355,7 @@
      "caption": "Listen first",
      "parentCue": "Watch the key",
      "bpm": 80,
-     "leadInSec": 3.79,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "G4",
@@ -4427,17 +4373,17 @@
        "f": 3
       }
      ],
-     "durationSec": 9,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 8,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child press it",
      "bpm": 80,
-     "leadInSec": 2.84,
+     "leadInSec": 3.71,
      "gapBeats": 1,
      "notes": [
       {
@@ -4456,18 +4402,18 @@
        "f": 3
       }
      ],
-     "durationSec": 10,
-     "voice": "Your turn. I'll wait for you.",
-     "voiceId": "30da762511a45127",
-     "voiceSec": 2.44
+     "durationSec": 11,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -4483,7 +4429,7 @@
      "caption": "Listen first",
      "parentCue": "Watch the key",
      "bpm": 80,
-     "leadInSec": 3.79,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "G4",
@@ -4496,17 +4442,17 @@
        "f": 3
       }
      ],
-     "durationSec": 9,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 7,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child press it",
      "bpm": 80,
-     "leadInSec": 2.84,
+     "leadInSec": 3.9,
      "gapBeats": 1,
      "notes": [
       {
@@ -4520,18 +4466,18 @@
        "f": 3
       }
      ],
-     "durationSec": 9,
-     "voice": "Your turn. I'll wait for you.",
-     "voiceId": "30da762511a45127",
-     "voiceSec": 2.44
+     "durationSec": 10,
+     "voice": "Your turn. Wait for the glow, then press.",
+     "voiceId": "e03bd593ae91d1cb",
+     "voiceSec": 3.5
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -4547,7 +4493,7 @@
      "caption": "Listen first",
      "parentCue": "Watch the key",
      "bpm": 80,
-     "leadInSec": 3.79,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "G4",
@@ -4565,17 +4511,17 @@
        "f": 3
       }
      ],
-     "durationSec": 9,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 8,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child press it",
      "bpm": 80,
-     "leadInSec": 2.84,
+     "leadInSec": 3.71,
      "gapBeats": 1,
      "notes": [
       {
@@ -4594,18 +4540,18 @@
        "f": 3
       }
      ],
-     "durationSec": 10,
-     "voice": "Your turn. I'll wait for you.",
-     "voiceId": "30da762511a45127",
-     "voiceSec": 2.44
+     "durationSec": 11,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -4621,7 +4567,7 @@
      "caption": "Listen first",
      "parentCue": "Watch the key",
      "bpm": 80,
-     "leadInSec": 3.79,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "G4",
@@ -4634,10 +4580,10 @@
        "f": 3
       }
      ],
-     "durationSec": 9,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 7,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
@@ -4665,64 +4611,86 @@
     },
     {
      "kind": "praise",
-     "caption": "Well done!",
+     "caption": "You found G!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Big breath in and out",
-     "parentCue": "Breathe slowly together",
-     "durationSec": 6,
-     "voice": "Big breath in, and out.",
-     "voiceId": "67a43f157c55d975",
-     "voiceSec": 2.01
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
     "primary": "space",
     "secondary": [
-     "listening"
+     "counting",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "One-to-one correspondence",
-    "parentLine": "Matching one sound to one key"
+    "concept": "Subitizing (three at a glance)",
+    "parentLine": "Seeing three black keys at once, without counting one by one"
    },
-   "parentPrompt": "Help your child find G. Use one finger and press gently, like a button.",
-   "childAction": "Find the special note and play it on cue.",
-   "bridge": "The special note is a doorbell: same key, same sound, every time.",
-   "celebrate": "Today you practiced finding the way on the keys and listening and remembering."
+   "parentPrompt": "Touch the three black keys and say 'three!'; then find G after the first.",
+   "childAction": "Find three black keys, then press G right after the first one.",
+   "bridge": "Three black keys are a basket handle; G hides just after the first one.",
+   "celebrate": "Today you practiced: finding G by the three black keys."
   },
   {
    "id": "a-tisket-a-tasket-c04",
    "index": 4,
-   "title": "G up high",
-   "goal": "Find the special note in a second place on the piano",
+   "title": "Big basket, little basket",
+   "goal": "Find G in a second place, higher up, and hop between the two.",
    "type": "octave",
-   "durationSec": 227,
-   "parentTip": "Notes repeat every eight white keys. Let your child hop between the two Gs.",
+   "durationSec": 225,
+   "parentTip": "Say G in a deep voice for the low one, a tiny voice for the high.",
    "video": "a-tisket-a-tasket/a-tisket-a-tasket-c04.mp4",
    "thumb": "a-tisket-a-tasket/a-tisket-a-tasket-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "A-Tisket, A-Tasket",
-     "subcaption": "Class 4: G up high",
+     "subcaption": "Class 4: Big basket, little basket",
      "durationSec": 8,
      "voice": "Hi there, music friends. Our song today is A-Tisket, A-Tasket.",
      "voiceId": "cf3d1661f43e8614",
      "voiceSec": 6.18
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm up on G",
+     "parentCue": "Help one finger find it",
+     "bpm": 80,
+     "leadInSec": 4.84,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Let's warm up on G. One finger, three gentle presses.",
+     "voiceId": "a8ee35e70b3c5dcf",
+     "voiceSec": 4.44
+    },
+    {
+     "kind": "say",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Use a deep voice, then a tiny voice",
+     "durationSec": 8,
+     "voice": "Listen. G here, and G up high.",
+     "voiceId": "621233844eab264d",
+     "voiceSec": 3.05
     },
     {
      "kind": "say",
@@ -4742,13 +4710,38 @@
      "voiceSec": 3.73
     },
     {
-     "kind": "say",
-     "caption": "Same name, same sound, higher",
-     "parentCue": "Play both and listen",
-     "durationSec": 6,
-     "voice": "Same name, same sound, just higher.",
-     "voiceId": "1afadc39275dad9e",
-     "voiceSec": 2.82
+     "kind": "high_low",
+     "caption": "Tiny basket, up high",
+     "parentCue": "Point right, to the high side, together",
+     "target": "high",
+     "bpm": 70,
+     "leadInSec": 4.25,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Tiny basket, up high. Tap a high key, on the right.",
+     "voiceId": "78768307b8112966",
+     "voiceSec": 3.85
     },
     {
      "kind": "demo",
@@ -4840,7 +4833,7 @@
      "caption": "Your turn!",
      "parentCue": "Move one finger between them",
      "bpm": 75,
-     "leadInSec": 3.9,
+     "leadInSec": 4.18,
      "gapBeats": 1,
      "notes": [
       {
@@ -4859,18 +4852,18 @@
        "f": 3
       }
      ],
-     "durationSec": 11,
-     "voice": "Your turn. Wait for the glow, then press.",
-     "voiceId": "e03bd593ae91d1cb",
-     "voiceSec": 3.5
+     "durationSec": 12,
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "demo",
@@ -4910,7 +4903,196 @@
      "caption": "Your turn!",
      "parentCue": "Move one finger between them",
      "bpm": 75,
-     "leadInSec": 3.9,
+     "leadInSec": 4.7,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Your turn. Press the glowing key with one finger.",
+     "voiceId": "47631c6d2adadecd",
+     "voiceSec": 4.3
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 75,
+     "leadInSec": 3.45,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen. G here, and G up high.",
+     "voiceId": "621233844eab264d",
+     "voiceSec": 3.05
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 75,
+     "leadInSec": 2.84,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Your turn. I'll wait for you.",
+     "voiceId": "30da762511a45127",
+     "voiceSec": 2.44
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 75,
+     "leadInSec": 3.45,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen. G here, and G up high.",
+     "voiceId": "621233844eab264d",
+     "voiceSec": 3.05
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 75,
+     "leadInSec": 4.18,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen: G and G up high",
+     "parentCue": "Watch both keys",
+     "bpm": 75,
+     "leadInSec": 3.45,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G5",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen. G here, and G up high.",
+     "voiceId": "621233844eab264d",
+     "voiceSec": 3.05
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Move one finger between them",
+     "bpm": 75,
+     "leadInSec": 4.18,
      "gapBeats": 1,
      "notes": [
       {
@@ -4935,9 +5117,9 @@
       }
      ],
      "durationSec": 13,
-     "voice": "Your turn. Wait for the glow, then press.",
-     "voiceId": "e03bd593ae91d1cb",
-     "voiceSec": 3.5
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
     },
     {
      "kind": "demo",
@@ -4972,7 +5154,7 @@
      "caption": "Your turn!",
      "parentCue": "Move one finger between them",
      "bpm": 75,
-     "leadInSec": 3.9,
+     "leadInSec": 3.71,
      "gapBeats": 1,
      "notes": [
       {
@@ -4992,9 +5174,9 @@
       }
      ],
      "durationSec": 11,
-     "voice": "Your turn. Wait for the glow, then press.",
-     "voiceId": "e03bd593ae91d1cb",
-     "voiceSec": 3.5
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "demo",
@@ -5029,7 +5211,7 @@
      "caption": "Your turn!",
      "parentCue": "Move one finger between them",
      "bpm": 75,
-     "leadInSec": 3.9,
+     "leadInSec": 3.82,
      "gapBeats": 1,
      "notes": [
       {
@@ -5049,281 +5231,17 @@
       }
      ],
      "durationSec": 11,
-     "voice": "Your turn. Wait for the glow, then press.",
-     "voiceId": "e03bd593ae91d1cb",
-     "voiceSec": 3.5
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "You found both Gs!",
      "durationSec": 5,
      "voice": "High five, grown-up. High five, little one.",
      "voiceId": "02217b24bc257a87",
      "voiceSec": 3.57
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen: G and G up high",
-     "parentCue": "Watch both keys",
-     "bpm": 75,
-     "leadInSec": 3.45,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "f": 3
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Listen. G here, and G up high.",
-     "voiceId": "621233844eab264d",
-     "voiceSec": 3.05
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Move one finger between them",
-     "bpm": 75,
-     "leadInSec": 3.9,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "f": 3
-      }
-     ],
-     "durationSec": 13,
-     "voice": "Your turn. Wait for the glow, then press.",
-     "voiceId": "e03bd593ae91d1cb",
-     "voiceSec": 3.5
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen: G and G up high",
-     "parentCue": "Watch both keys",
-     "bpm": 75,
-     "leadInSec": 3.45,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "f": 3
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Listen. G here, and G up high.",
-     "voiceId": "621233844eab264d",
-     "voiceSec": 3.05
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Move one finger between them",
-     "bpm": 75,
-     "leadInSec": 3.9,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "f": 3
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Your turn. Wait for the glow, then press.",
-     "voiceId": "e03bd593ae91d1cb",
-     "voiceSec": 3.5
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen: G and G up high",
-     "parentCue": "Watch both keys",
-     "bpm": 75,
-     "leadInSec": 3.45,
-     "notes": [
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 3
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Listen. G here, and G up high.",
-     "voiceId": "621233844eab264d",
-     "voiceSec": 3.05
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Move one finger between them",
-     "bpm": 75,
-     "leadInSec": 3.9,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 3
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Your turn. Wait for the glow, then press.",
-     "voiceId": "e03bd593ae91d1cb",
-     "voiceSec": 3.5
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen: G and G up high",
-     "parentCue": "Watch both keys",
-     "bpm": 75,
-     "leadInSec": 3.45,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "f": 3
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Listen. G here, and G up high.",
-     "voiceId": "621233844eab264d",
-     "voiceSec": 3.05
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Move one finger between them",
-     "bpm": 75,
-     "leadInSec": 3.9,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "f": 3
-      }
-     ],
-     "durationSec": 13,
-     "voice": "Your turn. Wait for the glow, then press.",
-     "voiceId": "e03bd593ae91d1cb",
-     "voiceSec": 3.5
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
     }
    ],
    "skill": {
@@ -5333,29 +5251,29 @@
     ]
    },
    "mathTarget": {
-    "concept": "Translation (same shape, new place)",
-    "parentLine": "Finding the same note higher or lower on the keyboard"
+    "concept": "Octave equivalence (spatial mapping)",
+    "parentLine": "The same note lives in a low home and a high home"
    },
-   "parentPrompt": "Notes repeat every eight white keys. Let your child hop between the two Gs.",
-   "childAction": "Play the same note in its high and low homes.",
-   "bridge": "Every note has a family: same name, a different house.",
-   "celebrate": "Today you practiced finding the way on the keys and hearing high and low."
+   "parentPrompt": "Say G in a deep voice for the low one, a tiny voice for the high.",
+   "childAction": "Hop between low G and high G: deep voice, then tiny voice.",
+   "bridge": "Low G is a big basket on the left; high G is a tiny one.",
+   "celebrate": "Today you practiced: one note in a low and a high home."
   },
   {
    "id": "a-tisket-a-tasket-c05",
    "index": 5,
-   "title": "Echo me",
-   "goal": "Copy short 2 and 3 note patterns from the song",
+   "title": "Tis-ket echo",
+   "goal": "Listen to a 2 or 3 note call from the song, then copy it back.",
    "type": "echo",
-   "durationSec": 218,
-   "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
+   "durationSec": 223,
+   "parentTip": "Sing 'tis-ket' high-low, then hold your hands in your lap while your child answers.",
    "video": "a-tisket-a-tasket/a-tisket-a-tasket-c05.mp4",
    "thumb": "a-tisket-a-tasket/a-tisket-a-tasket-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "A-Tisket, A-Tasket",
-     "subcaption": "Class 5: Echo me",
+     "subcaption": "Class 5: Tis-ket echo",
      "durationSec": 9,
      "voice": "Hi, everyone. It's time for A-Tisket, A-Tasket. Grown-up, sit close by.",
      "voiceId": "d817e0890c5605c8",
@@ -5363,28 +5281,72 @@
     },
     {
      "kind": "say",
-     "caption": "Echo me! I play, then you play",
-     "parentCue": "Listen first, then copy",
+     "caption": "Listen, then echo me",
+     "parentCue": "Sing tis-ket high and low together",
      "durationSec": 7,
-     "voice": "Echo me. I play, then you play.",
-     "voiceId": "b2c22595419bf84e",
-     "voiceSec": 2.79
+     "voice": "Listen, then echo me. Grown-up, sing tis-ket high and low together.",
+     "voiceId": "1d688c3e98f32265",
+     "voiceSec": 5.76
     },
     {
-     "kind": "say",
-     "caption": "Just like an echo in a cave",
-     "parentCue": "Say hello and echo it back",
-     "durationSec": 7,
-     "voice": "Just like an echo in a cave. Hello, hello.",
-     "voiceId": "9be674bc49434504",
-     "voiceSec": 3.47
+     "kind": "your_turn",
+     "caption": "Tis-ket: G, E",
+     "parentCue": "Lift your hand on G, drop it on E",
+     "bpm": 70,
+     "leadInSec": 3.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
+    },
+    {
+     "kind": "your_turn",
+     "caption": "A-tis-ket: G, G, E",
+     "parentCue": "Count the presses: one, two, three",
+     "bpm": 70,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "demo",
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 3.3,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "G4",
@@ -5405,10 +5367,10 @@
        "s": "ket"
       }
      ],
-     "durationSec": 8,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 6,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
@@ -5447,7 +5409,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 3.3,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "E4",
@@ -5462,10 +5424,10 @@
        "s": "a"
       }
      ],
-     "durationSec": 7,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 6,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -5497,16 +5459,16 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "demo",
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 3.3,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "G4",
@@ -5522,9 +5484,9 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -5557,7 +5519,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 3.3,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "G4",
@@ -5578,10 +5540,10 @@
        "s": "and"
       }
      ],
-     "durationSec": 8,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 7,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -5628,7 +5590,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 3.3,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "G4",
@@ -5649,10 +5611,10 @@
        "s": "ket"
       }
      ],
-     "durationSec": 8,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 7,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -5691,7 +5653,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 3.3,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "E4",
@@ -5706,10 +5668,10 @@
        "s": "a"
       }
      ],
-     "durationSec": 7,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 6,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
@@ -5741,16 +5703,16 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "demo",
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 3.3,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "G4",
@@ -5765,10 +5727,10 @@
        "s": "ket"
       }
      ],
-     "durationSec": 7,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 6,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
@@ -5801,7 +5763,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 3.3,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "G4",
@@ -5822,10 +5784,10 @@
        "s": "and"
       }
      ],
-     "durationSec": 8,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 6,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
@@ -5863,16 +5825,16 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "demo",
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 3.3,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "G4",
@@ -5893,10 +5855,10 @@
        "s": "ket"
       }
      ],
-     "durationSec": 8,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 7,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -5935,7 +5897,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 3.3,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "E4",
@@ -5951,9 +5913,9 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -5985,9 +5947,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -6000,43 +5962,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "What a great echo!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
     "primary": "listening",
     "secondary": [
-     "patterns"
+     "pitch",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Sequence memory",
-    "parentLine": "Holding a short tune in mind and repeating it"
+    "concept": "Sequence recall (span 2-3)",
+    "parentLine": "Holding two or three sounds in mind, then playing them back"
    },
-   "parentPrompt": "Watch first, then copy. If it's tricky, play just the first key together.",
-   "childAction": "Listen, then copy the little tune.",
-   "bridge": "Echo it back like a parrot copying a song.",
-   "celebrate": "Today you practiced listening and remembering and spotting patterns."
+   "parentPrompt": "Sing 'tis-ket' high-low, then hold your hands in your lap while your child answers.",
+   "childAction": "Listen to the call, then play it back the same.",
+   "bridge": "G is high, E is a little step lower: tis is up, ket is down.",
+   "celebrate": "Today you practiced: listening and copying short calls."
   },
   {
    "id": "a-tisket-a-tasket-c06",
    "index": 6,
-   "title": "Echo me again",
-   "goal": "Copy short 2 and 3 note patterns from the song",
+   "title": "A peeks up, comes back",
+   "goal": "Echo a short call that steps up to A and comes straight back.",
    "type": "echo",
-   "durationSec": 236,
-   "parentTip": "Watch first, then copy. If it's tricky, play just the first key together.",
+   "durationSec": 226,
+   "parentTip": "Pop your head up on A, back down on G, then play it together.",
    "video": "a-tisket-a-tasket/a-tisket-a-tasket-c06.mp4",
    "thumb": "a-tisket-a-tasket/a-tisket-a-tasket-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "A-Tisket, A-Tasket",
-     "subcaption": "Class 6: Echo me again",
+     "subcaption": "Class 6: A peeks up, comes back",
      "durationSec": 8,
      "voice": "Hi there, music friends. Our song today is A-Tisket, A-Tasket.",
      "voiceId": "cf3d1661f43e8614",
@@ -6044,28 +6007,48 @@
     },
     {
      "kind": "say",
-     "caption": "Echo me! I play, then you play",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Echo me. I play, then you play.",
-     "voiceId": "b2c22595419bf84e",
-     "voiceSec": 2.79
+     "caption": "Listen, then echo me",
+     "parentCue": "Pop your heads up together on A",
+     "durationSec": 6,
+     "voice": "Listen, then echo me. Grown-up, pop your heads up together on A.",
+     "voiceId": "94a14151806b58e2",
+     "voiceSec": 4.29
     },
     {
-     "kind": "say",
-     "caption": "Just like an echo in a cave",
-     "parentCue": "Say hello and echo it back",
-     "durationSec": 7,
-     "voice": "Just like an echo in a cave. Hello, hello.",
-     "voiceId": "9be674bc49434504",
-     "voiceSec": 3.47
+     "kind": "your_turn",
+     "caption": "Peek up: G, A, G",
+     "parentCue": "Point to each lit key, nice and slow",
+     "bpm": 70,
+     "leadInSec": 3.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
     },
     {
      "kind": "demo",
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "A4",
@@ -6086,10 +6069,10 @@
        "s": "bas"
       }
      ],
-     "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 8,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -6128,7 +6111,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "G4",
@@ -6144,9 +6127,9 @@
       }
      ],
      "durationSec": 6,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -6187,7 +6170,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "A4",
@@ -6202,10 +6185,10 @@
        "s": "yel"
       }
      ],
-     "durationSec": 6,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 7,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
@@ -6238,7 +6221,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "G4",
@@ -6260,9 +6243,9 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
@@ -6300,16 +6283,16 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "demo",
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "A4",
@@ -6331,9 +6314,9 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
@@ -6372,7 +6355,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "G4",
@@ -6394,9 +6377,9 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -6434,16 +6417,16 @@
      "kind": "praise",
      "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "demo",
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "A4",
@@ -6465,9 +6448,9 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -6506,7 +6489,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "G4",
@@ -6522,9 +6505,9 @@
       }
      ],
      "durationSec": 6,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
@@ -6556,16 +6539,16 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "demo",
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "A4",
@@ -6580,10 +6563,10 @@
        "s": "yel"
       }
      ],
-     "durationSec": 6,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 7,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -6616,7 +6599,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "G4",
@@ -6638,9 +6621,9 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
@@ -6687,7 +6670,7 @@
      "caption": "Listen",
      "parentCue": "Watch which keys light",
      "bpm": 80,
-     "leadInSec": 2.33,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "A4",
@@ -6708,10 +6691,10 @@
        "s": "to"
       }
      ],
-     "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 6,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
@@ -6738,69 +6721,6 @@
        "d": 1,
        "f": 3,
        "s": "to"
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Your turn. Echo me.",
-     "voiceId": "eaf39d9171866fee",
-     "voiceSec": 2.16
-    },
-    {
-     "kind": "demo",
-     "caption": "Listen",
-     "parentCue": "Watch which keys light",
-     "bpm": 80,
-     "leadInSec": 2.33,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "A"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tis"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "ket"
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Echo me",
-     "parentCue": "Help with the first key only",
-     "bpm": 80,
-     "leadInSec": 2.56,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "A"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tis"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "ket"
       }
      ],
      "durationSec": 9,
@@ -6810,43 +6730,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Up and back, well done!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "patterns",
     "secondary": [
-     "patterns"
+     "listening",
+     "pitch"
     ]
    },
    "mathTarget": {
-    "concept": "Sequence memory",
-    "parentLine": "Holding a short tune in mind and repeating it"
+    "concept": "Mirror symmetry (up and back)",
+    "parentLine": "One step up, then the same step back down"
    },
-   "parentPrompt": "Watch first, then copy. If it's tricky, play just the first key together.",
-   "childAction": "Listen, then copy the little tune.",
-   "bridge": "Echo it back like a parrot copying a song.",
-   "celebrate": "Today you practiced listening and remembering and spotting patterns."
+   "parentPrompt": "Pop your head up on A, back down on G, then play it together.",
+   "childAction": "Play G, peek up to A, come back to G.",
+   "bridge": "A is G's next-door neighbour on the right: one step out, one step home.",
+   "celebrate": "Today you practiced: a step up and the same step back."
   },
   {
    "id": "a-tisket-a-tasket-c07",
    "index": 7,
-   "title": "Special note in the song",
-   "goal": "Play the special note at the right moments in the song",
+   "title": "Wait for your G",
+   "goal": "Wait and play G at the right moments while the grown-up plays the rest.",
    "type": "special-note",
-   "durationSec": 233,
-   "parentTip": "You play the blue keys, your child plays the coral one. Waiting is part of the game.",
+   "durationSec": 240,
+   "parentTip": "Play the blue keys; nod to your child just before each coral G.",
    "video": "a-tisket-a-tasket/a-tisket-a-tasket-c07.mp4",
    "thumb": "a-tisket-a-tasket/a-tisket-a-tasket-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "A-Tisket, A-Tasket",
-     "subcaption": "Class 7: Special note in the song",
+     "subcaption": "Class 7: Wait for your G",
      "durationSec": 9,
      "voice": "Welcome back. Let's play A-Tisket, A-Tasket. Grown-up, sit right beside the keys.",
      "voiceId": "c7cacfbc4c8881f1",
@@ -6854,21 +6775,36 @@
     },
     {
      "kind": "say",
-     "caption": "Now the special note in the song",
-     "parentCue": "You play the other notes",
-     "durationSec": 7,
-     "voice": "Now we find the special note inside the song.",
-     "voiceId": "9f2d6a44f1a38be9",
-     "voiceSec": 3.29
+     "caption": "Listen for G",
+     "parentCue": "Hands in laps until the coral G lights",
+     "durationSec": 6,
+     "voice": "Listen for G. Point when it glows.",
+     "voiceId": "da3d873719766fcc",
+     "voiceSec": 3.34
     },
     {
-     "kind": "say",
-     "caption": "When G lights up, it's your turn",
-     "parentCue": "Your child plays only the coral key",
-     "durationSec": 8,
-     "voice": "When G lights up, it's your turn to press it.",
-     "voiceId": "aaac496000b751f4",
-     "voiceSec": 3.52
+     "kind": "your_turn",
+     "caption": "Two Gs: one, two",
+     "parentCue": "Hold up two fingers and count together",
+     "bpm": 72,
+     "leadInSec": 3.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
     },
     {
      "kind": "demo",
@@ -7634,9 +7570,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -7863,16 +7799,16 @@
      "kind": "praise",
      "caption": "Perfect timing!",
      "durationSec": 5,
-     "voice": "You waited for your note. Lovely.",
-     "voiceId": "d1ad3ad0dcb403ba",
-     "voiceSec": 2.5
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "together",
      "caption": "Play it together",
      "parentCue": "Keep going, even after a miss",
      "bpm": 100,
-     "leadInSec": 1.84,
+     "leadInSec": 4.12,
      "notes": [
       {
        "p": "G4",
@@ -8073,10 +8009,10 @@
        "from": 21
       }
      ],
-     "durationSec": 13,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
+     "durationSec": 16,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "your_turn",
@@ -8189,16 +8125,16 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "together",
      "caption": "Play it together",
      "parentCue": "Keep going, even after a miss",
      "bpm": 100,
-     "leadInSec": 1.84,
+     "leadInSec": 4.12,
      "notes": [
       {
        "p": "G4",
@@ -8399,54 +8335,93 @@
        "from": 21
       }
      ],
-     "durationSec": 13,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
+     "durationSec": 16,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Perfect waiting!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
-    "primary": "space",
+    "primary": "together",
     "secondary": [
-     "listening"
+     "listening",
+     "counting"
     ]
    },
    "mathTarget": {
-    "concept": "One-to-one correspondence",
-    "parentLine": "Matching one sound to one key"
+    "concept": "Turn-taking (ordinal timing)",
+    "parentLine": "Waiting for your turn, then playing exactly then"
    },
-   "parentPrompt": "You play the blue keys, your child plays the coral one. Waiting is part of the game.",
-   "childAction": "Find the special note and play it on cue.",
-   "bridge": "The special note is a doorbell: same key, same sound, every time.",
-   "celebrate": "Today you practiced finding the way on the keys and listening and remembering."
+   "parentPrompt": "Play the blue keys; nod to your child just before each coral G.",
+   "childAction": "Hands in your lap, then play G when it lights up.",
+   "bridge": "G is your basket: you pick it up only when the song calls you.",
+   "celebrate": "Today you practiced: waiting for your turn, then playing G."
   },
   {
    "id": "a-tisket-a-tasket-c08",
    "index": 8,
-   "title": "Add a second note",
-   "goal": "Play two special notes, G and A, in the song",
+   "title": "Green G, yellow A",
+   "goal": "Listen and play the right one of two notes, G or A, in the song.",
    "type": "special-note",
-   "durationSec": 240,
-   "parentTip": "Two notes means more waiting and watching. Celebrate each coral key your child catches.",
+   "durationSec": 232,
+   "parentTip": "Touch G and say 'green', touch A and say 'yellow', then play.",
    "video": "a-tisket-a-tasket/a-tisket-a-tasket-c08.mp4",
    "thumb": "a-tisket-a-tasket/a-tisket-a-tasket-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "A-Tisket, A-Tasket",
-     "subcaption": "Class 8: Add a second note",
+     "subcaption": "Class 8: Green G, yellow A",
      "durationSec": 8,
      "voice": "Hi there, music friends. Our song today is A-Tisket, A-Tasket.",
      "voiceId": "cf3d1661f43e8614",
      "voiceSec": 6.18
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm up on G",
+     "parentCue": "Help one finger find it",
+     "bpm": 80,
+     "leadInSec": 4.84,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Let's warm up on G. One finger, three gentle presses.",
+     "voiceId": "a8ee35e70b3c5dcf",
+     "voiceSec": 4.44
+    },
+    {
+     "kind": "say",
+     "caption": "Listen for G and A",
+     "parentCue": "Touch G, then A, saying their names",
+     "durationSec": 7,
+     "voice": "Listen for G and A. Point when they glow.",
+     "voiceId": "0cb2229179829a40",
+     "voiceSec": 3.29
     },
     {
      "kind": "say",
@@ -8466,13 +8441,43 @@
      "voiceSec": 3.36
     },
     {
-     "kind": "say",
-     "caption": "Two coral keys to watch",
-     "parentCue": "You play the blue keys",
-     "durationSec": 6,
-     "voice": "Now two special keys glow for you.",
-     "voiceId": "3b965ab458d3cec8",
-     "voiceSec": 2.65
+     "kind": "your_turn",
+     "caption": "Green and yellow: G, G, A, A",
+     "parentCue": "Say green on G, yellow on A",
+     "bpm": 66,
+     "leadInSec": 4.18,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
     },
     {
      "kind": "demo",
@@ -9124,7 +9129,7 @@
      "caption": "Your turn!",
      "parentCue": "First half again",
      "bpm": 75,
-     "leadInSec": 4.7,
+     "leadInSec": 4.18,
      "gapBeats": 1,
      "notes": [
       {
@@ -9220,9 +9225,9 @@
       }
      ],
      "durationSec": 21,
-     "voice": "Your turn. Press the glowing key with one finger.",
-     "voiceId": "47631c6d2adadecd",
-     "voiceSec": 4.3
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
     },
     {
      "kind": "say",
@@ -9238,7 +9243,7 @@
      "caption": "Your turn!",
      "parentCue": "Wait for the coral keys",
      "bpm": 75,
-     "leadInSec": 4.7,
+     "leadInSec": 3.9,
      "gapBeats": 1,
      "notes": [
       {
@@ -9434,376 +9439,68 @@
        "from": 21
       }
      ],
-     "durationSec": 37,
-     "voice": "Your turn. Press the glowing key with one finger.",
-     "voiceId": "47631c6d2adadecd",
-     "voiceSec": 4.3
+     "durationSec": 36,
+     "voice": "Your turn. Wait for the glow, then press.",
+     "voiceId": "e03bd593ae91d1cb",
+     "voiceSec": 3.5
     },
     {
      "kind": "praise",
      "caption": "Two notes, wow!",
      "durationSec": 5,
-     "voice": "Two special notes. Wow.",
-     "voiceId": "769651fea97c6f8a",
-     "voiceSec": 2.74
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
-     "kind": "together",
-     "caption": "Play it together",
-     "parentCue": "Keep going after a miss",
-     "bpm": 90,
-     "leadInSec": 4.12,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "A"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tis"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tas"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "green"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "yel"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "low"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "I"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "wrote"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "let"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ter"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "love",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "on"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "way"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "I"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "dropped",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "it",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "A-tisket, a-tasket",
-       "from": 0
-      },
-      {
-       "lyric": "a green and yellow basket",
-       "from": 6
-      },
-      {
-       "lyric": "I wrote a letter to my love",
-       "from": 13
-      },
-      {
-       "lyric": "and on the way I dropped it",
-       "from": 21
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Together now. Keep going, even after a slip.",
-     "voiceId": "6ef58099ced29d5c",
-     "voiceSec": 3.72
+     "kind": "say",
+     "caption": "Wiggle your fingers!",
+     "parentCue": "Shake out both hands together",
+     "durationSec": 8,
+     "voice": "Wiggle your fingers. Wiggle, wiggle.",
+     "voiceId": "640ef443bc914f6c",
+     "voiceSec": 2.99
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
+     "caption": "You picked the right key!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "First half again",
-     "bpm": 75,
-     "leadInSec": 4.7,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "A"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tis"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "tas"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "green"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 4,
-       "s": "yel"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "low"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 1,
-       "s": "ket",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "A-tisket, a-tasket",
-       "from": 0
-      },
-      {
-       "lyric": "a green and yellow basket",
-       "from": 6
-      }
-     ],
-     "durationSec": 21,
-     "voice": "Your turn. Press the glowing key with one finger.",
-     "voiceId": "47631c6d2adadecd",
-     "voiceSec": 4.3
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "listening",
     "secondary": [
-     "space"
+     "space",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Two-category sorting",
-    "parentLine": "Telling two sounds apart and matching each to its key"
+    "concept": "Classification into two sets",
+    "parentLine": "Hearing which of two sounds it is, then choosing its key"
    },
-   "parentPrompt": "Two notes means more waiting and watching. Celebrate each coral key your child catches.",
-   "childAction": "Play the two special notes when they come.",
-   "bridge": "Two doorbells: one for each friend at the door.",
-   "celebrate": "Today you practiced listening and remembering and finding the way on the keys."
+   "parentPrompt": "Touch G and say 'green', touch A and say 'yellow', then play.",
+   "childAction": "Play G or A, whichever key lights up.",
+   "bridge": "Like the green and yellow basket: G and A sit side by side.",
+   "celebrate": "Today you practiced: telling G and A apart."
   },
   {
    "id": "a-tisket-a-tasket-c09",
    "index": 9,
-   "title": "Play together",
-   "goal": "Play the whole song together at full speed",
+   "title": "Two friends, one basket",
+   "goal": "Play the whole song together, each with your own notes, on a shared beat.",
    "type": "together",
-   "durationSec": 216,
-   "parentTip": "Keep playing even if your child misses a note. The beat matters more than being perfect.",
+   "durationSec": 219,
+   "parentTip": "Nod the beat before you start; keep playing even if a note is missed.",
    "video": "a-tisket-a-tasket/a-tisket-a-tasket-c09.mp4",
    "thumb": "a-tisket-a-tasket/a-tisket-a-tasket-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "A-Tisket, A-Tasket",
-     "subcaption": "Class 9: Play together",
+     "subcaption": "Class 9: Two friends, one basket",
      "durationSec": 6,
      "voice": "Get ready for A-Tisket, A-Tasket. Sit up tall, like a tree.",
      "voiceId": "e8b3c99eebd1f0dc",
@@ -9811,21 +9508,12 @@
     },
     {
      "kind": "say",
-     "caption": "Let's play the song together",
-     "parentCue": "You on the tune, your child on G",
-     "durationSec": 7,
-     "voice": "Let's play the song together.",
-     "voiceId": "ea05d75afdb5318b",
-     "voiceSec": 2.13
-    },
-    {
-     "kind": "say",
-     "caption": "Ready, set, play!",
-     "parentCue": "Count four beats out loud",
+     "caption": "Play it together",
+     "parentCue": "Nod the beat together before you start",
      "durationSec": 6,
-     "voice": "Ready, set, play.",
-     "voiceId": "4678550cf62122a6",
-     "voiceSec": 1.6
+     "voice": "Play it together. Grown-up, nod the beat together before you start.",
+     "voiceId": "a97546419fec24b3",
+     "voiceSec": 4.38
     },
     {
      "kind": "together",
@@ -10280,7 +9968,7 @@
      "caption": "Together again",
      "parentCue": "Smile and keep going",
      "bpm": 100,
-     "leadInSec": 2.47,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "G4",
@@ -10482,9 +10170,9 @@
       }
      ],
      "durationSec": 14,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
@@ -10508,7 +10196,7 @@
      "caption": "Together again",
      "parentCue": "Smile and keep going",
      "bpm": 85,
-     "leadInSec": 2.47,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "G4",
@@ -10709,18 +10397,18 @@
        "from": 21
       }
      ],
-     "durationSec": 16,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 15,
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -10736,7 +10424,7 @@
      "caption": "Together again",
      "parentCue": "Smile and keep going",
      "bpm": 100,
-     "leadInSec": 2.47,
+     "leadInSec": 4.12,
      "notes": [
       {
        "p": "G4",
@@ -10937,18 +10625,18 @@
        "from": 21
       }
      ],
-     "durationSec": 14,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 16,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -10964,7 +10652,7 @@
      "caption": "Together again",
      "parentCue": "Smile and keep going",
      "bpm": 85,
-     "leadInSec": 2.47,
+     "leadInSec": 1.97,
      "notes": [
       {
        "p": "G4",
@@ -11165,18 +10853,18 @@
        "from": 21
       }
      ],
-     "durationSec": 16,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 15,
+     "voice": "Let's play together.",
+     "voiceId": "b9d074678a65d0e2",
+     "voiceSec": 1.57
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -11192,7 +10880,7 @@
      "caption": "Together again",
      "parentCue": "Smile and keep going",
      "bpm": 85,
-     "leadInSec": 2.47,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "G4",
@@ -11394,17 +11082,17 @@
       }
      ],
      "durationSec": 16,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -11420,7 +11108,7 @@
      "caption": "Together again",
      "parentCue": "Smile and keep going",
      "bpm": 100,
-     "leadInSec": 2.47,
+     "leadInSec": 1.97,
      "notes": [
       {
        "p": "G4",
@@ -11622,17 +11310,34 @@
       }
      ],
      "durationSec": 14,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "voice": "Let's play together.",
+     "voiceId": "b9d074678a65d0e2",
+     "voiceSec": 1.57
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You did it!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 5,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
+    },
+    {
+     "kind": "praise",
+     "caption": "You played as a team!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
@@ -11642,29 +11347,29 @@
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping time with another person"
+    "concept": "Entrainment (shared pulse)",
+    "parentLine": "Two players keeping the same steady beat"
    },
-   "parentPrompt": "Keep playing even if your child misses a note. The beat matters more than being perfect.",
-   "childAction": "Play along with your grown-up.",
-   "bridge": "Two players, one song, like walking in step.",
-   "celebrate": "Today you practiced playing together and keeping a steady beat."
+   "parentPrompt": "Nod the beat before you start; keep playing even if a note is missed.",
+   "childAction": "Play your notes and nod along with your grown-up.",
+   "bridge": "Two hands carry one basket: we walk the song in step.",
+   "celebrate": "Today you practiced: playing together on one shared beat."
   },
   {
    "id": "a-tisket-a-tasket-c10",
    "index": 10,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Oops, dropped it! Concert",
+   "goal": "Play the whole song for teddy and hear the last note drop down low.",
    "type": "concert",
-   "durationSec": 222,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 225,
+   "parentTip": "Sit teddy facing the piano; on the last low note, say 'oops!' and bow.",
    "video": "a-tisket-a-tasket/a-tisket-a-tasket-c10.mp4",
    "thumb": "a-tisket-a-tasket/a-tisket-a-tasket-c10.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "A-Tisket, A-Tasket",
-     "subcaption": "Class 10: Concert time",
+     "subcaption": "Class 10: Oops, dropped it! Concert",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today's song is A-Tisket, A-Tasket. Hands on your knees to start.",
      "voiceId": "ce7b6b05476bfe4f",
@@ -11672,21 +11377,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "A song for teddy",
+     "parentCue": "Sit teddy facing the piano to listen",
+     "durationSec": 6,
+     "voice": "This one is for teddy.",
+     "voiceId": "137fd3d6182c1ad5",
+     "voiceSec": 1.77
     },
     {
      "kind": "together",
@@ -12131,9 +11827,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -12359,9 +12055,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -12587,9 +12283,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -12815,9 +12511,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -13043,9 +12739,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -13271,9 +12967,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -13497,28 +13193,45 @@
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
+    },
+    {
+     "kind": "say",
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 4,
+     "voice": "Shake, shake, shake your hands.",
+     "voiceId": "69041444bf86c15c",
+     "voiceSec": 2.85
+    },
+    {
+     "kind": "praise",
+     "caption": "Bravo, what a concert!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
      "together",
-     "expression"
+     "pitch"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Form: beginning and ending",
+    "parentLine": "A song has a start, a middle and an end"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy facing the piano; on the last low note, say 'oops!' and bow.",
+   "childAction": "Play for teddy, say 'oops!' on the last note, then bow.",
+   "bridge": "On 'dropped it' the tune falls down to C, like the letter falling.",
+   "celebrate": "Today you practiced: playing a whole song, start to end."
   }
  ]
 }

@@ -1,0 +1,184 @@
+{
+  "songId": "oh-dear-what-can-the-matter-be",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices the five-finger home, a valley-shaped tune, the same pattern one step lower, long-short swing and song shape, playing together.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Swing into your hand home",
+      "goal": "Hear the swinging song and rest one finger on each of the five home keys.",
+      "skill": { "primary": "space", "secondary": ["listening", "fingers"] },
+      "mathTarget": { "concept": "Spatial mapping with a landmark", "parentLine": "Using the two black keys to find where the hand lives" },
+      "parentPrompt": "Point to the two black keys, then help your child rest the thumb on C.",
+      "childAction": "Find the two black keys, put your thumb on C.",
+      "bridge": "C is the front door, left of the two black keys; five fingers, five rooms.",
+      "intro": [ { "caption": "Swing your arms, long and short", "parentCue": "swing together while the song plays" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "One finger, one key",
+          "parentCue": "Say the finger numbers together, one to five",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 2, "f": 1 }, { "p": "D4", "d": 2, "f": 2 }, { "p": "E4", "d": 2, "f": 3 }, { "p": "F4", "d": 2, "f": 4 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Your hand found home!",
+      "celebrate": "Today you practiced: finding the five-finger home on the keys."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Down the valley, up again",
+      "goal": "Play the first line: from the top key down to C, then back up.",
+      "skill": { "primary": "pitch", "secondary": ["fingers", "patterns"] },
+      "mathTarget": { "concept": "Contour (valley shape)", "parentLine": "The tune goes down to the bottom, then climbs back up" },
+      "parentPrompt": "Draw a valley in the air with your child's hand: down, down, then up.",
+      "childAction": "Start on finger 5, walk down to the thumb, climb back up.",
+      "bridge": "The tune rolls down into a valley at C and climbs out the other side.",
+      "intro": [ { "caption": "Down the valley, up again", "parentCue": "Draw a valley in the air together" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Oh dear: down and up",
+          "parentCue": "Say 'down' then 'up' as the hand moves",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1.5, "f": 5 }, { "p": "E4", "d": 1.5, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 0.5, "f": 4 } ]
+        }
+      ],
+      "praise": "Down and up, lovely!",
+      "celebrate": "Today you practiced: following a tune down and back up."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Same shape, one step lower",
+      "goal": "Hear that the second line is the first line moved one key lower.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "space"] },
+      "mathTarget": { "concept": "Sequence (pattern shifted down)", "parentLine": "The same little tune, moved one key lower" },
+      "parentPrompt": "Play the line after your child's notes; you play the low B below C.",
+      "childAction": "Start on finger 4 this time and play the same shape.",
+      "bridge": "Same shape, one step to the left, like a shadow one stair lower.",
+      "intro": [ { "caption": "Same shape, one step lower", "parentCue": "You play the low B; your child plays the rest" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "First line, then one step lower",
+          "parentCue": "Ask: does it sound the same, but lower?",
+          "bpm": 66,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 2 }, { "rest": true, "d": 1 }, { "p": "F4", "d": 1.5 }, { "p": "D4", "d": 1.5 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "B3", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Dear, dear: F, D, D, C",
+          "parentCue": "Then you play the low B",
+          "bpm": 60,
+          "notes": [ { "p": "F4", "d": 1.5, "f": 4 }, { "p": "D4", "d": 1.5, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "C4", "d": 0.5, "f": 1 } ]
+        }
+      ],
+      "praise": "You heard the shape move!",
+      "celebrate": "Today you practiced: spotting the same pattern, one step lower."
+    },
+    {
+      "index": 4,
+      "spineType": "put-together",
+      "title": "Ask, ask, then answer",
+      "goal": "Play the whole song slowly and notice the last line lands home on C.",
+      "skill": { "primary": "form", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Call and response (question, answer)", "parentLine": "The song asks 'oh dear?' and the last line answers" },
+      "parentPrompt": "Shrug on each 'oh dear'; on the last line, smile and pat your lap on C.",
+      "childAction": "Play slowly; pat your lap when the song lands on C.",
+      "bridge": "Every 'oh dear' line asks a question; the Johnny line answers and comes home.",
+      "intro": [ { "caption": "Ask, ask, then answer", "parentCue": "Shrug on 'oh dear', smile on the ending" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 83,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 0.5 } ]
+        }
+      ],
+      "praise": "You found the answer!",
+      "celebrate": "Today you practiced: hearing questions and an answer in a song."
+    },
+    {
+      "index": 5,
+      "spineType": "review",
+      "title": "Long-short, long-short",
+      "goal": "Practise the swinging long-short notes slowly, then a little faster.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Ratio 2:1 (long and short)", "parentLine": "A long note twice as long as the short one" },
+      "parentPrompt": "Say 'loooong, short' with each pair while your child plays slowly.",
+      "childAction": "Play long, short, long, short, like a swing.",
+      "bridge": "Long notes swing out, short notes swing back: loooong, short.",
+      "intro": [ { "caption": "Watch slowly", "parentCue": "Say 'loooong, short' together with the notes" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Loooong, short, like a swing",
+          "parentCue": "Stretch 'loooong', clip 'short'",
+          "bpm": 56,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 0.5, "f": 4 } ]
+        }
+      ],
+      "praise": "What a great swing!",
+      "celebrate": "Today you practiced: long and short notes, two to one."
+    },
+    {
+      "index": 6,
+      "spineType": "phrase",
+      "title": "Two big swings a bar",
+      "goal": "Play the whole song slowly while counting two big swinging beats a bar.",
+      "skill": { "primary": "beat", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Grouping by two (compound meter)", "parentLine": "Each bar has two big swings: one, two" },
+      "parentPrompt": "Rock your child side to side, once on 'one' and once on 'two'.",
+      "childAction": "Play slowly and rock with two big swings each bar.",
+      "bridge": "Each bar is a swing going forward and back: one, two.",
+      "intro": [ { "caption": "Two big swings a bar", "parentCue": "Rock side to side together: one, two" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the big swings",
+          "parentCue": "Say 'one, two' on the big beats",
+          "bpm": 66,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 0.5 } ]
+        }
+      ],
+      "praise": "Steady swings!",
+      "celebrate": "Today you practiced: feeling two big beats in a bar."
+    },
+    {
+      "index": 7,
+      "spineType": "play-along",
+      "title": "Off to the fair",
+      "goal": "Play the whole song along with the music and keep going.",
+      "skill": { "primary": "together", "secondary": ["beat", "expression"] },
+      "mathTarget": { "concept": "Entrainment (matching a tempo)", "parentLine": "Keeping your playing in time with the music" },
+      "parentPrompt": "Sing the words along and nod on each beat; if a note slips, keep going.",
+      "childAction": "Play with the music and keep going to the end.",
+      "bridge": "The music is the busy fair; keep walking with it to the end.",
+      "intro": [ { "caption": "Play along", "parentCue": "Sing the words softly with your child" } ],
+      "games": [],
+      "praise": "You kept going together!",
+      "celebrate": "Today you practiced: keeping in time with the music."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Teddy comes home",
+      "goal": "Play the whole song while waiting for teddy, then welcome teddy home.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Ordinal sequence (start, middle, end)", "parentLine": "A song has a start, a middle and an end" },
+      "parentPrompt": "Hide teddy behind you; on the last note, bring teddy home and cheer.",
+      "childAction": "Play while you wait; on the last note, welcome teddy home!",
+      "bridge": "The song waits and wonders, then the last note brings everyone home.",
+      "intro": [ { "caption": "A song for teddy", "parentCue": "Hide teddy behind your back for now" } ],
+      "games": [],
+      "praise": "Bravo, teddy is home!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

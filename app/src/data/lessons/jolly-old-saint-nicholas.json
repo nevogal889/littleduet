@@ -2,34 +2,62 @@
  "songId": "jolly-old-saint-nicholas",
  "title": "Jolly Old Saint Nicholas",
  "ageGroup": "4-5",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and listening memory, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices counting repeated notes, steps and leaps, question-and-answer lines and soft playing, using a song about whispering a Christmas wish.",
  "skillMap": [
+  {
+   "id": "together",
+   "label": "Playing together",
+   "value": 1.0,
+   "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "pitch",
+   "label": "High and low",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
   {
    "id": "fingers",
    "label": "Finger control",
-   "value": 1.0,
-   "classes": 5,
+   "value": 0.5,
+   "classes": 1,
    "total": 9
   },
   {
    "id": "form",
    "label": "Song shape",
-   "value": 0.4,
-   "classes": 2,
-   "total": 9
-  },
-  {
-   "id": "listening",
-   "label": "Listening memory",
-   "value": 0.2,
+   "value": 0.5,
    "classes": 1,
    "total": 9
   },
   {
-   "id": "together",
-   "label": "Playing together",
-   "value": 0.2,
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -37,36 +65,65 @@
  "icon": "gift",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2028,
+ "totalSec": 2043,
  "classes": [
   {
    "id": "jolly-old-saint-nicholas-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "Santa's five-key chimney",
+   "goal": "Hear the song, find C by the two black keys and place five fingers.",
    "type": "listen",
-   "durationSec": 237,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 225,
+   "parentTip": "Point to two black keys, then help your child rest the thumb on C, fingers beside it.",
    "video": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c01.mp4",
    "thumb": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jolly Old Saint Nicholas",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: Santa's five-key chimney",
      "durationSec": 9,
      "voice": "Hi, everyone. Let's play Jolly Old Saint Nicholas. Curved fingers, like holding a little ball.",
      "voiceId": "9db1115b65baaddc",
      "voiceSec": 7.49
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Find the two black keys",
+     "parentCue": "point to them; C is just to the left",
+     "durationSec": 7,
+     "voice": "Find the two black keys, side by side.",
+     "voiceId": "342cccd6285d7d0f",
+     "voiceSec": 2.61
     },
     {
      "kind": "say",
@@ -86,7 +143,7 @@
        "f": 3
       },
       {
-       "p": "G4",
+       "p": "F4",
        "f": 4
       },
       {
@@ -98,6 +155,45 @@
      "voice": "Thumb on C. Curve your fingers, like holding a little ball.",
      "voiceId": "df5c6ecc923ce75c",
      "voiceSec": 3.73
+    },
+    {
+     "kind": "your_turn",
+     "caption": "One finger, one key",
+     "parentCue": "Say the finger number for each key",
+     "bpm": 60,
+     "leadInSec": 4.36,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Your turn. One finger on each key, one by one.",
+     "voiceId": "be3fc90a0fdacab7",
+     "voiceSec": 3.96
     },
     {
      "kind": "listen",
@@ -1142,19 +1238,20 @@
     },
     {
      "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
-     "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
-     "bpm": 96,
-     "leadInSec": 3.86,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 77,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "E4",
@@ -1197,356 +1294,59 @@
        "d": 2,
        "f": 2,
        "s": "las"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lean"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ear"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "this"
-      },
-      {
-       "p": "E4",
-       "d": 4,
-       "f": 3,
-       "s": "way"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Don't"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tell"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "sin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "gle"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "soul"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "what"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "I'm"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "ing"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 4,
-       "f": 1,
-       "s": "say"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Eve"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "is"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "com"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "ing"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "soon"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "now"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "you"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "dear"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "old"
-      },
-      {
-       "p": "E4",
-       "d": 4,
-       "f": 3,
-       "s": "man"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "whis"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "per"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you'll"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "bring"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "me"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tell"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "me"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "if"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "you"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "can"
       }
      ],
      "lines": [
       {
        "lyric": "Jolly old Saint Nicholas",
        "from": 0
-      },
-      {
-       "lyric": "lean your ear this way",
-       "from": 7
-      },
-      {
-       "lyric": "Don't you tell a single soul",
-       "from": 12
-      },
-      {
-       "lyric": "what I'm going to say",
-       "from": 19
-      },
-      {
-       "lyric": "Christmas Eve is coming soon",
-       "from": 25
-      },
-      {
-       "lyric": "now, you dear old man",
-       "from": 32
-      },
-      {
-       "lyric": "whisper what you'll bring to me",
-       "from": 37
-      },
-      {
-       "lyric": "tell me if you can",
-       "from": 44
       }
      ],
-     "durationSec": 46,
-     "voice": "Let's listen first. Watch the keys light up.",
-     "voiceId": "87c2bbd9d2891005",
-     "voiceSec": 3.46
+     "durationSec": 17,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "Your hand is ready!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 9,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "space",
     "secondary": [
-     "beat",
-     "together"
+     "fingers",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Spatial landmark (two black keys)",
+    "parentLine": "Using the two black keys as a sign to find C"
    },
-   "parentPrompt": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Point to two black keys, then help your child rest the thumb on C, fingers beside it.",
+   "childAction": "Thumb on C, then one finger on each key up to G.",
+   "bridge": "Two black keys are the chimney top; C is the door just left.",
+   "celebrate": "Today you practiced: finding C and placing five fingers."
   },
   {
    "id": "jolly-old-saint-nicholas-c02",
    "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Four, then three",
+   "goal": "Learn the first line and count the notes: four Es, then three Ds.",
    "type": "phrase",
-   "durationSec": 245,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 220,
+   "parentTip": "Hold up four fingers for the Es and three for the Ds, counting aloud.",
    "video": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c02.mp4",
    "thumb": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jolly Old Saint Nicholas",
-     "subcaption": "Class 2: Part 1",
+     "subcaption": "Class 2: Four, then three",
      "durationSec": 7,
      "voice": "Hello again. It's Jolly Old Saint Nicholas time. Grown-up, sit close to help.",
      "voiceId": "ecbbfeb568c6202f",
@@ -1554,28 +1354,107 @@
     },
     {
      "kind": "say",
-     "caption": "Today: Jolly old Saint Nicholas",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6,
-     "voice": "Today we learn a new bit: Jolly old Saint Nicholas.",
-     "voiceId": "b18bdd3c2fd3d718",
-     "voiceSec": 4.76
+     "caption": "Count the knocks on Santa's door",
+     "parentCue": "hold up fingers as you count together",
+     "durationSec": 7,
+     "voice": "Count the knocks on Santa's door. Grown-up, hold up fingers as you count together.",
+     "voiceId": "a7d54e1f8fc367c2",
+     "voiceSec": 5.03
     },
     {
-     "kind": "say",
-     "caption": "This part comes back 2 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7,
-     "voice": "This part comes back two times. Listen for it.",
-     "voiceId": "9581ea7be1c58405",
-     "voiceSec": 3.94
+     "kind": "your_turn",
+     "caption": "Jolly old Saint Nicholas",
+     "parentCue": "Count four, then three",
+     "bpm": 60,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      }
+     ],
+     "durationSec": 20,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Lean your ear this way",
+     "parentCue": "Count four Cs, then hold the E",
+     "bpm": 60,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 4,
+       "f": 3
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 72,
-     "leadInSec": 3.3,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "E4",
@@ -1660,10 +1539,10 @@
        "from": 7
       }
      ],
-     "durationSec": 19,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 18,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -1775,7 +1654,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 72,
-     "leadInSec": 3.26,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "E4",
@@ -1826,10 +1705,10 @@
        "from": 0
       }
      ],
-     "durationSec": 12,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "durationSec": 11,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -1897,9 +1776,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -1915,7 +1794,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 72,
-     "leadInSec": 3.26,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "C4",
@@ -1955,16 +1834,16 @@
       }
      ],
      "durationSec": 12,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 72,
-     "leadInSec": 3.98,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2005,17 +1884,17 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -2124,280 +2003,142 @@
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
+     "caption": "Four and three, well counted!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 72,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Jol"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ly"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "old"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Saint"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Nich"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "o"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "las"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lean"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ear"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "this"
-      },
-      {
-       "p": "E4",
-       "d": 4,
-       "f": 3,
-       "s": "way"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jolly old Saint Nicholas",
-       "from": 0
-      },
-      {
-       "lyric": "lean your ear this way",
-       "from": 7
-      }
-     ],
-     "durationSec": 29,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 86,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Jol"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ly"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "old"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Saint"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Nich"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "o"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "las"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lean"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ear"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "this"
-      },
-      {
-       "p": "E4",
-       "d": 4,
-       "f": 3,
-       "s": "way"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jolly old Saint Nicholas",
-       "from": 0
-      },
-      {
-       "lyric": "lean your ear this way",
-       "from": 7
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "counting",
     "secondary": [
-     "form"
+     "fingers",
+     "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Cardinality (how many in a group)",
+    "parentLine": "Counting a group of notes: four of these, three of those"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Hold up four fingers for the Es and three for the Ds, counting aloud.",
+   "childAction": "Play E four times, then D three times. Count as you go.",
+   "bridge": "Jol-ly old Saint: four knocks on E; Ni-cho-las: three on D.",
+   "celebrate": "Today you practiced: counting groups of four and three."
   },
   {
    "id": "jolly-old-saint-nicholas-c03",
    "index": 3,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "title": "A little step, a big jump",
+   "goal": "Learn the next line and feel the jump from D up to G.",
    "type": "phrase",
-   "durationSec": 233,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 217,
+   "parentTip": "Count the keys your child jumps over together. You play the high A part yourself.",
    "video": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c03.mp4",
    "thumb": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jolly Old Saint Nicholas",
-     "subcaption": "Class 3: Part 2",
+     "subcaption": "Class 3: A little step, a big jump",
      "durationSec": 9,
      "voice": "Hi, everyone. Let's play Jolly Old Saint Nicholas. Curved fingers, like holding a little ball.",
      "voiceId": "9db1115b65baaddc",
      "voiceSec": 7.49
     },
     {
-     "kind": "say",
-     "caption": "Today: Don't you tell a single",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: Don't you tell a single soul.",
-     "voiceId": "d3f37b65a5036cbc",
-     "voiceSec": 3.74
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
     },
     {
      "kind": "say",
-     "caption": "This part comes back 2 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7,
-     "voice": "This part comes back two times. Listen for it.",
-     "voiceId": "9581ea7be1c58405",
-     "voiceSec": 3.94
+     "caption": "Four Ds, then a big jump",
+     "parentCue": "you play the high A part that follows",
+     "durationSec": 8,
+     "voice": "Four Ds, then a big jump. Grown-up, you play the high A part that follows.",
+     "voiceId": "c29ca62f705e89a5",
+     "voiceSec": 5.19
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Don't you tell a single soul",
+     "parentCue": "Say 'jump!' as finger five lands on G",
+     "bpm": 60,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 21,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 72,
-     "leadInSec": 3.85,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "D4",
@@ -2488,10 +2229,10 @@
        "from": 7
       }
      ],
-     "durationSec": 19,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 18,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -2609,7 +2350,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 72,
-     "leadInSec": 3.85,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "D4",
@@ -2660,17 +2401,17 @@
        "from": 0
       }
      ],
-     "durationSec": 13,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 11,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 72,
-     "leadInSec": 2.95,
+     "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
       {
@@ -2722,10 +2463,10 @@
        "from": 0
       }
      ],
-     "durationSec": 17,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 18,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
@@ -2749,7 +2490,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 72,
-     "leadInSec": 3.85,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "A4",
@@ -2794,10 +2535,10 @@
        "from": 0
       }
      ],
-     "durationSec": 13,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 11,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -2877,7 +2618,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 72,
-     "leadInSec": 2.95,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2969,169 +2710,51 @@
        "from": 7
       }
      ],
-     "durationSec": 29,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 30,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "What a jump!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 72,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Don't"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tell"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "sin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "gle"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "soul"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "what"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "I'm"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "ing"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 4,
-       "f": 1,
-       "s": "say"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Don't you tell a single soul",
-       "from": 0
-      },
-      {
-       "lyric": "what I'm going to say",
-       "from": 7
-      }
-     ],
-     "durationSec": 29,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "pitch",
     "secondary": [
-     "form"
+     "space",
+     "counting"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Interval distance (step versus leap)",
+    "parentLine": "Some notes are neighbours; some jump over keys"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Count the keys your child jumps over together. You play the high A part yourself.",
+   "childAction": "Play four Ds, then jump finger five up to G.",
+   "bridge": "D to E is a tiny step; D to G is a leap over two keys.",
+   "celebrate": "Today you practiced: hearing small steps and big jumps."
   },
   {
    "id": "jolly-old-saint-nicholas-c04",
    "index": 4,
-   "title": "Part 3",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Same tune, new words",
+   "goal": "Learn the second half and find that its tune repeats the first half.",
    "type": "phrase",
-   "durationSec": 199,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 189,
+   "parentTip": "Sing the new words over the old tune. You play the high A at the end.",
    "video": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c04.mp4",
    "thumb": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jolly Old Saint Nicholas",
-     "subcaption": "Class 4: Part 3",
+     "subcaption": "Class 4: Same tune, new words",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today we play Jolly Old Saint Nicholas. Grown-up, sit beside the keys.",
      "voiceId": "b8c026b6142e07b4",
@@ -3139,19 +2762,53 @@
     },
     {
      "kind": "say",
-     "caption": "Today: tell me if you can",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: tell me if you can.",
-     "voiceId": "5a4f83040241c667",
-     "voiceSec": 4.0
+     "caption": "Does this tune sound familiar?",
+     "parentCue": "sing the new words and let your child guess",
+     "durationSec": 8,
+     "voice": "Does this tune sound familiar. Grown-up, sing the new words and let your child guess.",
+     "voiceId": "e523279a4decb65e",
+     "voiceSec": 6.08
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Tell me if you can",
+     "parentCue": "Play the A first, then your child answers",
+     "bpm": 60,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 72,
-     "leadInSec": 3.3,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "A4",
@@ -3190,10 +2847,10 @@
        "from": 0
       }
      ],
-     "durationSec": 12,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 11,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -3259,7 +2916,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 72,
-     "leadInSec": 2.95,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -3299,18 +2956,18 @@
        "from": 0
       }
      ],
-     "durationSec": 16,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 17,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -3326,7 +2983,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 72,
-     "leadInSec": 2.95,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -3366,10 +3023,10 @@
        "from": 0
       }
      ],
-     "durationSec": 16,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 17,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "together",
@@ -3424,9 +3081,9 @@
      "kind": "praise",
      "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -3442,7 +3099,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 72,
-     "leadInSec": 2.95,
+     "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
       {
@@ -3483,17 +3140,17 @@
       }
      ],
      "durationSec": 16,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -3605,123 +3262,86 @@
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "You heard it come back!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 72,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tell"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "me"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "if"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "you"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "can"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "tell me if you can",
-       "from": 0
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "patterns",
     "secondary": [
-     "form"
+     "listening",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Repetition with variation (A, A')",
+    "parentLine": "The same tune comes back with new words and a new ending"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Sing the new words over the old tune. You play the high A at the end.",
+   "childAction": "Play the tune again with new words, then walk home to C.",
+   "bridge": "Christmas Eve uses the same keys as Saint Nicholas; only the words change.",
+   "celebrate": "Today you practiced: noticing a tune that repeats with new words."
   },
   {
    "id": "jolly-old-saint-nicholas-c05",
    "index": 5,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "A question and an answer",
+   "goal": "Play the whole song slowly and hear the first half ask, the second half answer.",
    "type": "put-together",
-   "durationSec": 218,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 266,
+   "parentTip": "At the middle, shrug and ask 'Is it finished?' At the end, nod: 'Now it is!'",
    "video": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c05.mp4",
    "thumb": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jolly Old Saint Nicholas",
-     "subcaption": "Class 5: Put it together",
+     "subcaption": "Class 5: A question and an answer",
      "durationSec": 8,
      "voice": "Hello, friends. Today it's Jolly Old Saint Nicholas. Sit in the middle of the piano.",
      "voiceId": "d7f473792c118670",
      "voiceSec": 6.43
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
+     "caption": "Is the song finished yet?",
+     "parentCue": "ask at the middle and at the end",
      "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "voice": "Is the song finished yet. Grown-up, ask at the middle and at the end.",
+     "voiceId": "c4a470376192af60",
+     "voiceSec": 4.54
     },
     {
      "kind": "say",
@@ -3741,7 +3361,7 @@
        "f": 3
       },
       {
-       "p": "G4",
+       "p": "F4",
        "f": 4
       },
       {
@@ -3755,11 +3375,59 @@
      "voiceSec": 2.14
     },
     {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 77,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
+    },
+    {
      "kind": "demo",
-     "caption": "Watch the whole song",
+     "caption": "Watch the first part",
      "parentCue": "Watch together",
      "bpm": 72,
-     "leadInSec": 2.51,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "E4",
@@ -3910,7 +3578,220 @@
        "d": 4,
        "f": 1,
        "s": "say"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jolly old Saint Nicholas",
+       "from": 0
       },
+      {
+       "lyric": "lean your ear this way",
+       "from": 7
+      },
+      {
+       "lyric": "Don't you tell a single soul",
+       "from": 12
+      },
+      {
+       "lyric": "what I'm going to say",
+       "from": 19
+      }
+     ],
+     "durationSec": 32,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 72,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Jol"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "old"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Saint"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Nich"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "o"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "las"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "lean"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ear"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "this"
+      },
+      {
+       "p": "E4",
+       "d": 4,
+       "f": 3,
+       "s": "way"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Don't"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "you"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tell"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "sin"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "gle"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "soul"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "what"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "I'm"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "go"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "ing"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 4,
+       "f": 1,
+       "s": "say"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jolly old Saint Nicholas",
+       "from": 0
+      },
+      {
+       "lyric": "lean your ear this way",
+       "from": 7
+      },
+      {
+       "lyric": "Don't you tell a single soul",
+       "from": 12
+      },
+      {
+       "lyric": "what I'm going to say",
+       "from": 19
+      }
+     ],
+     "durationSec": 53,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 72,
+     "leadInSec": 2.21,
+     "notes": [
       {
        "p": "E4",
        "d": 1,
@@ -4058,42 +3939,26 @@
      ],
      "lines": [
       {
-       "lyric": "Jolly old Saint Nicholas",
+       "lyric": "Christmas Eve is coming soon",
        "from": 0
       },
       {
-       "lyric": "lean your ear this way",
+       "lyric": "now, you dear old man",
        "from": 7
       },
       {
-       "lyric": "Don't you tell a single soul",
+       "lyric": "whisper what you'll bring to me",
        "from": 12
       },
       {
-       "lyric": "what I'm going to say",
-       "from": 19
-      },
-      {
-       "lyric": "Christmas Eve is coming soon",
-       "from": 25
-      },
-      {
-       "lyric": "now, you dear old man",
-       "from": 32
-      },
-      {
-       "lyric": "whisper what you'll bring to me",
-       "from": 37
-      },
-      {
        "lyric": "tell me if you can",
-       "from": 44
+       "from": 19
       }
      ],
-     "durationSec": 58,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 31,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
@@ -4438,149 +4303,45 @@
      "voiceSec": 2.58
     },
     {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 77,
-     "leadInSec": 3.93,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Jol"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ly"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "old"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Saint"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Nich"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "o"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "las"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lean"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "your"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ear"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "this"
-      },
-      {
-       "p": "E4",
-       "d": 4,
-       "f": 3,
-       "s": "way"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jolly old Saint Nicholas",
-       "from": 0
-      },
-      {
-       "lyric": "lean your ear this way",
-       "from": 7
-      }
-     ],
-     "durationSec": 28,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You heard the answer!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
+     "listening",
      "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Question and answer phrases",
+    "parentLine": "The first half ends up in the air; the second lands home"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "At the middle, shrug and ask 'Is it finished?' At the end, nod: 'Now it is!'",
+   "childAction": "Play the song slowly; shrug at the middle, nod at the end.",
+   "bridge": "The first half stops on D, a question; the last note C is home.",
+   "celebrate": "Today you practiced: hearing a song ask and answer."
   },
   {
    "id": "jolly-old-saint-nicholas-c06",
    "index": 6,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Quiet hand, jumping finger",
+   "goal": "Practise the jump from D to G slowly, keeping the whole hand still.",
    "type": "review",
-   "durationSec": 241,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 238,
+   "parentTip": "Rest your hand lightly on the back of your child's hand so it stays still.",
    "video": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c06.mp4",
    "thumb": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jolly Old Saint Nicholas",
-     "subcaption": "Class 6: Tricky spots",
+     "subcaption": "Class 6: Quiet hand, jumping finger",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Jolly Old Saint Nicholas. Let's warm up our fingers.",
      "voiceId": "5783cd43e0fc5919",
@@ -4588,21 +4349,46 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
+     "caption": "A sleepy hand, busy fingers",
+     "parentCue": "rest your hand lightly on top of theirs",
      "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "voice": "A sleepy hand, busy fingers. Grown-up, rest your hand lightly on top of theirs.",
+     "voiceId": "a18ed3123b2f33a2",
+     "voiceSec": 5.38
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Slowly: D, D, G, G",
+     "parentCue": "Say two, two, five, five",
+     "bpm": 56,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "demo",
@@ -4886,9 +4672,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -4904,7 +4690,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 77,
-     "leadInSec": 2.95,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -4984,18 +4770,18 @@
        "from": 6
       }
      ],
-     "durationSec": 26,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 27,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -5011,7 +4797,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 86,
-     "leadInSec": 2.95,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -5091,10 +4877,10 @@
        "from": 6
       }
      ],
-     "durationSec": 24,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 25,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
@@ -5106,159 +4892,148 @@
     },
     {
      "kind": "say",
-     "caption": "A little faster now",
-     "parentCue": "Only speed up if it feels easy",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "A little faster now.",
-     "voiceId": "c045f3637dd94536",
-     "voiceSec": 1.7
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Keep fingers close to the keys",
-     "bpm": 67,
-     "leadInSec": 2.95,
+     "parentCue": "The first part again",
+     "bpm": 77,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "what"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "I'm"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      },
-      {
-       "p": "F4",
+       "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "ing"
+       "s": "Jol"
       },
       {
        "p": "E4",
        "d": 1,
-       "f": 2,
-       "s": "to"
+       "f": 3,
+       "s": "ly"
       },
       {
-       "p": "D4",
-       "d": 4,
-       "f": 1,
-       "s": "say"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tell"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "me"
-      },
-      {
-       "p": "F4",
+       "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "if"
+       "s": "old"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Saint"
       },
       {
        "p": "D4",
        "d": 1,
-       "f": 1,
-       "s": "you"
+       "f": 2,
+       "s": "Nich"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "o"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "las"
       },
       {
        "p": "C4",
-       "d": 4,
+       "d": 1,
        "f": 1,
-       "s": "can"
+       "s": "lean"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ear"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "this"
+      },
+      {
+       "p": "E4",
+       "d": 4,
+       "f": 3,
+       "s": "way"
       }
      ],
      "lines": [
       {
-       "lyric": "what I'm going to say",
+       "lyric": "Jolly old Saint Nicholas",
        "from": 0
       },
       {
-       "lyric": "tell me if you can",
-       "from": 6
+       "lyric": "lean your ear this way",
+       "from": 7
       }
      ],
-     "durationSec": 29,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 28,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "Such a calm hand!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
      "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 8,
-     "voice": "Shake, shake, shake your hands.",
-     "voiceId": "69041444bf86c15c",
-     "voiceSec": 2.85
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "patterns"
+     "space"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Hand frame (fixed position)",
+    "parentLine": "The hand stays still; only the fingers take turns"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Rest your hand lightly on the back of your child's hand so it stays still.",
+   "childAction": "Keep your hand still; finger two, then finger five.",
+   "bridge": "The hand is a sleeping cat; only its toes wake up to play.",
+   "celebrate": "Today you practiced: keeping the hand still while fingers move."
   },
   {
    "id": "jolly-old-saint-nicholas-c07",
    "index": 7,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
+   "title": "Whisper it to Santa",
+   "goal": "Play the whole song slowly, softly and evenly, like telling a secret.",
    "type": "phrase",
-   "durationSec": 202,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
+   "durationSec": 262,
+   "parentTip": "Whisper 'shh' before you start and pat a slow beat on your child's back.",
    "video": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c07.mp4",
    "thumb": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jolly Old Saint Nicholas",
-     "subcaption": "Class 7: Slow and steady",
+     "subcaption": "Class 7: Whisper it to Santa",
      "durationSec": 7,
      "voice": "Welcome back. Time for Jolly Old Saint Nicholas. Sit up tall, feet still.",
      "voiceId": "d47dc4e76d1b5123",
@@ -5266,19 +5041,67 @@
     },
     {
      "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
-     "durationSec": 6,
-     "voice": "Slow and steady practice today.",
-     "voiceId": "aeb4883c0cf279a5",
-     "voiceSec": 2.42
+     "caption": "Shh, it's a secret",
+     "parentCue": "whisper first, then pat a slow beat",
+     "durationSec": 7,
+     "voice": "Shh, it's a secret. Grown-up, whisper first, then pat a slow beat.",
+     "voiceId": "3e749a5d5b0db1ce",
+     "voiceSec": 5.53
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap and count to four",
+     "parentCue": "Count softly as your child taps",
+     "bpm": 72,
+     "leadInSec": 4.26,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Tap any key and count with me. One, two, three, four.",
+     "voiceId": "8c616960af03108e",
+     "voiceSec": 3.86
     },
     {
      "kind": "demo",
-     "caption": "Watch",
+     "caption": "Watch the first part",
      "parentCue": "Watch the finger numbers",
      "bpm": 67,
-     "leadInSec": 3.85,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "E4",
@@ -5429,7 +5252,220 @@
        "d": 4,
        "f": 1,
        "s": "say"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jolly old Saint Nicholas",
+       "from": 0
       },
+      {
+       "lyric": "lean your ear this way",
+       "from": 7
+      },
+      {
+       "lyric": "Don't you tell a single soul",
+       "from": 12
+      },
+      {
+       "lyric": "what I'm going to say",
+       "from": 19
+      }
+     ],
+     "durationSec": 33,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 67,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Jol"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "old"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Saint"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Nich"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "o"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "las"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "lean"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "your"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ear"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "this"
+      },
+      {
+       "p": "E4",
+       "d": 4,
+       "f": 3,
+       "s": "way"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Don't"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "you"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tell"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "sin"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "gle"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "soul"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "what"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "I'm"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "go"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "ing"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 4,
+       "f": 1,
+       "s": "say"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jolly old Saint Nicholas",
+       "from": 0
+      },
+      {
+       "lyric": "lean your ear this way",
+       "from": 7
+      },
+      {
+       "lyric": "Don't you tell a single soul",
+       "from": 12
+      },
+      {
+       "lyric": "what I'm going to say",
+       "from": 19
+      }
+     ],
+     "durationSec": 57,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 67,
+     "leadInSec": 2.8,
+     "notes": [
       {
        "p": "E4",
        "d": 1,
@@ -5577,42 +5613,26 @@
      ],
      "lines": [
       {
-       "lyric": "Jolly old Saint Nicholas",
+       "lyric": "Christmas Eve is coming soon",
        "from": 0
       },
       {
-       "lyric": "lean your ear this way",
+       "lyric": "now, you dear old man",
        "from": 7
       },
       {
-       "lyric": "Don't you tell a single soul",
+       "lyric": "whisper what you'll bring to me",
        "from": 12
       },
       {
-       "lyric": "what I'm going to say",
-       "from": 19
-      },
-      {
-       "lyric": "Christmas Eve is coming soon",
-       "from": 25
-      },
-      {
-       "lyric": "now, you dear old man",
-       "from": 32
-      },
-      {
-       "lyric": "whisper what you'll bring to me",
-       "from": 37
-      },
-      {
        "lyric": "tell me if you can",
-       "from": 44
+       "from": 19
       }
      ],
-     "durationSec": 63,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 33,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
@@ -5958,60 +5978,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "What a soft secret!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Big breath in and out",
-     "parentCue": "Breathe slowly together",
-     "durationSec": 9,
-     "voice": "Big breath in, and out.",
-     "voiceId": "67a43f157c55d975",
-     "voiceSec": 2.01
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "expression",
     "secondary": [
-     "beat"
+     "beat",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Tempo control",
-    "parentLine": "Doing a task slowly and evenly"
+    "concept": "Dynamics (soft, even touch)",
+    "parentLine": "Playing softly and evenly, like a quiet whisper"
    },
-   "parentPrompt": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "childAction": "Play the tune slowly, every note even.",
-   "bridge": "Slow fingers, like a cat walking on tiptoe.",
-   "celebrate": "Today you practiced careful fingers and keeping a steady beat."
+   "parentPrompt": "Whisper 'shh' before you start and pat a slow beat on your child's back.",
+   "childAction": "Play slowly and softly, like whispering a secret.",
+   "bridge": "Soft fingers are a whisper in Santa's ear; even notes keep the secret.",
+   "celebrate": "Today you practiced: playing slowly, softly and evenly."
   },
   {
    "id": "jolly-old-saint-nicholas-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Sleigh ride play-along",
+   "goal": "Play the whole song along with the music and keep going to the end.",
    "type": "play-along",
-   "durationSec": 222,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 212,
+   "parentTip": "Sing the words softly beside your child; if they miss a note, keep singing.",
    "video": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c08.mp4",
    "thumb": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jolly Old Saint Nicholas",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Sleigh ride play-along",
      "durationSec": 7,
      "voice": "Hello again. It's Jolly Old Saint Nicholas time. Grown-up, sit close to help.",
      "voiceId": "ecbbfeb568c6202f",
@@ -6019,21 +6023,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
+     "caption": "Hop on the sleigh!",
+     "parentCue": "sing softly beside your child and keep going",
      "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "voice": "Hop on the sleigh. Grown-up, sing softly beside your child and keep going.",
+     "voiceId": "1e854c1faa112298",
+     "voiceSec": 5.79
     },
     {
      "kind": "together",
@@ -6731,7 +6726,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 96,
-     "leadInSec": 1.84,
+     "leadInSec": 4.12,
      "notes": [
       {
        "p": "E4",
@@ -7062,34 +7057,35 @@
        "from": 44
       }
      ],
-     "durationSec": 44,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
+     "durationSec": 46,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Sing the words together",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Sing while you play",
-     "bpm": 96,
-     "leadInSec": 1.84,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 77,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "E4",
@@ -7204,186 +7200,6 @@
        "d": 2,
        "f": 5,
        "s": "soul"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "what"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "I'm"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "go"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "ing"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 4,
-       "f": 1,
-       "s": "say"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Christ"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "mas"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Eve"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "is"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "com"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "ing"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 1,
-       "s": "soon"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "now"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "you"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "dear"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "old"
-      },
-      {
-       "p": "E4",
-       "d": 4,
-       "f": 3,
-       "s": "man"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "whis"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "per"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you'll"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "bring"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "me"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tell"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "me"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "if"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "you"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "can"
       }
      ],
      "lines": [
@@ -7398,72 +7214,52 @@
       {
        "lyric": "Don't you tell a single soul",
        "from": 12
-      },
-      {
-       "lyric": "what I'm going to say",
-       "from": 19
-      },
-      {
-       "lyric": "Christmas Eve is coming soon",
-       "from": 25
-      },
-      {
-       "lyric": "now, you dear old man",
-       "from": 32
-      },
-      {
-       "lyric": "whisper what you'll bring to me",
-       "from": 37
-      },
-      {
-       "lyric": "tell me if you can",
-       "from": 44
       }
      ],
-     "durationSec": 44,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
+     "durationSec": 39,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You rode to the end!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Synchrony with a moving pulse",
+    "parentLine": "Keeping pace with the music, all the way to the end"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Sing the words softly beside your child; if they miss a note, keep singing.",
+   "childAction": "Play along with the music; keep going after a slip.",
+   "bridge": "The music is the sleigh; your fingers ride along, never jumping off.",
+   "celebrate": "Today you practiced: keeping pace with the music to the end."
   },
   {
    "id": "jolly-old-saint-nicholas-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "A Christmas wish concert",
+   "goal": "Play the whole song for teddy and whisper a wish at the very end.",
    "type": "concert",
-   "durationSec": 231,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 214,
+   "parentTip": "Sit teddy as the audience; play together, whisper a wish, then clap and bow.",
    "video": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c09.mp4",
    "thumb": "jolly-old-saint-nicholas/jolly-old-saint-nicholas-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jolly Old Saint Nicholas",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: A Christmas wish concert",
      "durationSec": 7,
      "voice": "Welcome back. Time for Jolly Old Saint Nicholas. Sit up tall, feet still.",
      "voiceId": "d47dc4e76d1b5123",
@@ -7471,21 +7267,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "A song for teddy!",
+     "parentCue": "sit teddy in front as the audience",
+     "durationSec": 6,
+     "voice": "A song for teddy. Grown-up, sit teddy in front as the audience.",
+     "voiceId": "2183f3b9f1fb7f2a",
+     "voiceSec": 4.58
     },
     {
      "kind": "together",
@@ -8190,9 +7977,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -8548,9 +8335,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -8640,48 +8427,6 @@
        "d": 4,
        "f": 3,
        "s": "way"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Don't"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tell"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "sin"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "gle"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "soul"
       }
      ],
      "lines": [
@@ -8692,41 +8437,37 @@
       {
        "lyric": "lean your ear this way",
        "from": 7
-      },
-      {
-       "lyric": "Don't you tell a single soul",
-       "from": 12
       }
      ],
-     "durationSec": 39,
+     "durationSec": 28,
      "voice": "Now you. Follow the glowing keys, one by one.",
      "voiceId": "caf3f4651442eb31",
      "voiceSec": 3.43
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, jolly players!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "together",
     "secondary": [
-     "together",
-     "expression"
+     "expression",
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Sequencing and closure",
+    "parentLine": "A song starts, goes on, and lands home at the end"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; play together, whisper a wish, then clap and bow.",
+   "childAction": "Play for teddy, whisper a wish, then take a bow.",
+   "bridge": "The last long C is the chimney: the wish goes home.",
+   "celebrate": "Today you practiced: playing a whole song together, start to end."
   }
  ]
 }

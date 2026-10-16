@@ -2,41 +2,55 @@
  "songId": "hot-cross-buns",
  "title": "Hot Cross Buns",
  "ageGroup": "4-5",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and listening memory, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices three-finger patterns, counting to four, walking and running notes, and the song's repeating shape, with an old London street cry.",
  "skillMap": [
-  {
-   "id": "fingers",
-   "label": "Finger control",
-   "value": 1.0,
-   "classes": 3,
-   "total": 9
-  },
-  {
-   "id": "form",
-   "label": "Song shape",
-   "value": 1.0,
-   "classes": 3,
-   "total": 9
-  },
-  {
-   "id": "listening",
-   "label": "Listening memory",
-   "value": 0.33,
-   "classes": 1,
-   "total": 9
-  },
   {
    "id": "space",
    "label": "Keyboard map",
-   "value": 0.33,
-   "classes": 1,
+   "value": 1.0,
+   "classes": 2,
    "total": 9
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.33,
+   "value": 1.0,
+   "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "fingers",
+   "label": "Finger control",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "form",
+   "label": "Song shape",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -44,36 +58,65 @@
  "icon": "cake",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 1981,
+ "totalSec": 1988,
  "classes": [
   {
    "id": "hot-cross-buns-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "Find your three-key house",
+   "goal": "Find C by its landmark and rest three fingers on C, D and E.",
    "type": "listen",
-   "durationSec": 225,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 212,
+   "parentTip": "Point to the two black keys, then help your child rest the thumb on C, just left.",
    "video": "hot-cross-buns/hot-cross-buns-c01.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Hot Cross Buns",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: Find your three-key house",
      "durationSec": 8,
      "voice": "Hi, everyone. Let's play Hot Cross Buns. Curved fingers, like holding a little ball.",
      "voiceId": "df8fae20a3c84ba1",
      "voiceSec": 6.76
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 68,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Find the two black keys",
+     "parentCue": "help the thumb land just left of them, on C",
+     "durationSec": 8,
+     "voice": "Find the two black keys, side by side.",
+     "voiceId": "342cccd6285d7d0f",
+     "voiceSec": 2.61
     },
     {
      "kind": "say",
@@ -91,12 +134,46 @@
       {
        "p": "E4",
        "f": 3
+      },
+      {
+       "p": "F4",
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "f": 5
       }
      ],
      "durationSec": 7,
      "voice": "Thumb on C. Curve your fingers, like holding a little ball.",
      "voiceId": "df5c6ecc923ce75c",
      "voiceSec": 3.73
+    },
+    {
+     "kind": "your_turn",
+     "caption": "One finger, one key",
+     "parentCue": "Say 'one, two, three' with each finger",
+     "bpm": 66,
+     "leadInSec": 4.36,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 1
+      },
+      {
+       "p": "E4",
+       "d": 2
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Your turn. One finger on each key, one by one.",
+     "voiceId": "be3fc90a0fdacab7",
+     "voiceSec": 3.96
     },
     {
      "kind": "listen",
@@ -529,7 +606,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 90,
-     "leadInSec": 3.86,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "E4",
@@ -652,18 +729,18 @@
        "from": 14
       }
      ],
-     "durationSec": 17,
-     "voice": "Let's listen first. Watch the keys light up.",
-     "voiceId": "87c2bbd9d2891005",
-     "voiceSec": 3.46
+     "durationSec": 15,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -963,157 +1040,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 90,
-     "leadInSec": 3.86,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "One"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "pen"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ny"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "two"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pen"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ny"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hot cross buns",
-       "from": 0
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 3
-      },
-      {
-       "lyric": "One a penny, two a penny",
-       "from": 6
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 14
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Let's listen first. Watch the keys light up.",
-     "voiceId": "87c2bbd9d2891005",
-     "voiceSec": 3.46
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 90,
-     "leadInSec": 1.93,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "E4",
@@ -1237,192 +1164,67 @@
       }
      ],
      "durationSec": 15,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 90,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "One"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "pen"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ny"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "two"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pen"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ny"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hot cross buns",
-       "from": 0
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 3
-      },
-      {
-       "lyric": "One a penny, two a penny",
-       "from": 6
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 14
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
-     "voiceSec": 2.66
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 6,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
+    },
+    {
+     "kind": "praise",
+     "caption": "You found your house!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "space",
     "secondary": [
-     "beat",
-     "together"
+     "fingers",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Spatial mapping with a landmark",
+    "parentLine": "Using the two black keys to find where the hand lives"
    },
-   "parentPrompt": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Point to the two black keys, then help your child rest the thumb on C, just left.",
+   "childAction": "Thumb on C, then fingers 2 and 3 on D and E.",
+   "bridge": "The two black keys are a roof; your three fingers live in the house below.",
+   "celebrate": "Today you practiced: finding the hand's place by a landmark."
   },
   {
    "id": "hot-cross-buns-c02",
    "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Three, two, one, home",
+   "goal": "Play 'hot cross buns' as fingers 3, 2, 1 walking down to C.",
    "type": "phrase",
-   "durationSec": 234,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 243,
+   "parentTip": "Say the finger numbers aloud, 'three, two, one', and tap each finger gently first.",
    "video": "hot-cross-buns/hot-cross-buns-c02.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Hot Cross Buns",
-     "subcaption": "Class 2: Part 1",
+     "subcaption": "Class 2: Three, two, one, home",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Hot Cross Buns. Let's warm up our fingers.",
      "voiceId": "89e1e081e581deca",
@@ -1430,28 +1232,45 @@
     },
     {
      "kind": "say",
-     "caption": "Today: Hot cross buns",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6,
-     "voice": "Today we learn a new bit: Hot cross buns.",
-     "voiceId": "996c726413878a79",
-     "voiceSec": 4.23
+     "caption": "Three, two, one, home",
+     "parentCue": "say the finger numbers aloud together",
+     "durationSec": 7,
+     "voice": "Three, two, one, home. Grown-up, say the finger numbers aloud together.",
+     "voiceId": "41beb5c45d007710",
+     "voiceSec": 5.18
     },
     {
-     "kind": "say",
-     "caption": "This part comes back 3 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7,
-     "voice": "This part comes back three times. Listen for it.",
-     "voiceId": "62e49033797bfc87",
-     "voiceSec": 3.7
+     "kind": "your_turn",
+     "caption": "Hot cross buns: 3, 2, 1",
+     "parentCue": "Tap fingers 3, 2, 1 on your child's hand first",
+     "bpm": 66,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 1
+      },
+      {
+       "p": "C4",
+       "d": 2
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 68,
-     "leadInSec": 3.85,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "E4",
@@ -1530,10 +1349,10 @@
        "from": 3
       }
      ],
-     "durationSec": 13,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 12,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -1639,7 +1458,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 68,
-     "leadInSec": 3.47,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "E4",
@@ -1667,16 +1486,16 @@
       }
      ],
      "durationSec": 9,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 68,
-     "leadInSec": 3.42,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -1705,17 +1524,17 @@
       }
      ],
      "durationSec": 12,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -1731,7 +1550,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 68,
-     "leadInSec": 3.47,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "C4",
@@ -1789,16 +1608,16 @@
       }
      ],
      "durationSec": 9,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 68,
-     "leadInSec": 3.42,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -1856,18 +1675,18 @@
        "from": 0
       }
      ],
-     "durationSec": 16,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 17,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -1883,7 +1702,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 68,
-     "leadInSec": 3.42,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -1963,18 +1782,18 @@
        "from": 3
       }
      ],
-     "durationSec": 22,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 23,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -1990,7 +1809,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 68,
-     "leadInSec": 3.42,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2070,10 +1889,10 @@
        "from": 3
       }
      ],
-     "durationSec": 22,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 23,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "together",
@@ -2168,9 +1987,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -2186,7 +2005,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 68,
-     "leadInSec": 3.42,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2266,63 +2085,93 @@
        "from": 3
       }
      ],
-     "durationSec": 22,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 23,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Steady fingers!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "form"
+     "patterns",
+     "counting"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Ordinal sequence (3, 2, 1)",
+    "parentLine": "Counting backward: three, two, one, home"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Say the finger numbers aloud, 'three, two, one', and tap each finger gently first.",
+   "childAction": "Play fingers 3, 2, 1: E, D, C, down the stairs.",
+   "bridge": "Three little stairs going down to the front door, C.",
+   "celebrate": "Today you practiced: playing three fingers in order."
   },
   {
    "id": "hot-cross-buns-c03",
    "index": 3,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "How many hot cross buns?",
+   "goal": "Play the whole song slowly and count how many times 'hot cross buns' comes.",
    "type": "put-together",
-   "durationSec": 231,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 221,
+   "parentTip": "Each time 'hot cross buns' comes, hold up one more finger: one, two, three.",
    "video": "hot-cross-buns/hot-cross-buns-c03.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Hot Cross Buns",
-     "subcaption": "Class 3: Put it together",
+     "subcaption": "Class 3: How many hot cross buns?",
      "durationSec": 8,
      "voice": "Hi, everyone. Let's play Hot Cross Buns. Curved fingers, like holding a little ball.",
      "voiceId": "df8fae20a3c84ba1",
      "voiceSec": 6.76
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 68,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
-     "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "caption": "How many times? Let's count",
+     "parentCue": "hold up one finger each time the line comes",
+     "durationSec": 8,
+     "voice": "How many times? Let's count. Grown-up, hold up one finger each time the line comes.",
+     "voiceId": "6f14818f54d33612",
+     "voiceSec": 6.52
     },
     {
      "kind": "say",
@@ -2340,12 +2189,63 @@
       {
        "p": "E4",
        "f": 3
+      },
+      {
+       "p": "F4",
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "f": 5
       }
      ],
      "durationSec": 7,
      "voice": "Put your fingers on the glowing keys.",
      "voiceId": "36a8a4c976b56a8f",
      "voiceSec": 2.14
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 72,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
     },
     {
      "kind": "demo",
@@ -2761,9 +2661,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -2929,7 +2829,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep going after a slip",
      "bpm": 68,
-     "leadInSec": 3.83,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -3054,180 +2954,13 @@
       }
      ],
      "durationSec": 35,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Take a breath between lines",
-     "durationSec": 5,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
-    },
-    {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 76,
-     "leadInSec": 1.97,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "One"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "pen"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ny"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "two"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pen"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ny"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hot cross buns",
-       "from": 0
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 3
-      },
-      {
-       "lyric": "One a penny, two a penny",
-       "from": 6
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 14
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "Big breath in and out",
-     "parentCue": "Breathe slowly together",
-     "durationSec": 4,
-     "voice": "Big breath in, and out.",
-     "voiceId": "67a43f157c55d975",
-     "voiceSec": 2.01
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great counting!",
      "durationSec": 5,
      "voice": "That was real music, together.",
      "voiceId": "3da26e0fa12ffe07",
@@ -3237,33 +2970,34 @@
    "skill": {
     "primary": "form",
     "secondary": [
+     "counting",
      "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Pattern repetition (A-A-B-A form)",
+    "parentLine": "The same line comes three times, with one new line"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Each time 'hot cross buns' comes, hold up one more finger: one, two, three.",
+   "childAction": "Play the song and count the 'hot cross buns' lines on your fingers.",
+   "bridge": "'Hot cross buns' is a friend who knocks three times; the pennies visit once.",
+   "celebrate": "Today you practiced: counting how often a line repeats."
   },
   {
    "id": "hot-cross-buns-c04",
    "index": 4,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Run-ning pennies",
+   "goal": "Play the quick 'one a penny' part slowly: four quick notes on C, four on D.",
    "type": "review",
-   "durationSec": 223,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 230,
+   "parentTip": "Say 'walk' for the slow notes and 'run-ning' for the quick ones while your child plays.",
    "video": "hot-cross-buns/hot-cross-buns-c04.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Hot Cross Buns",
-     "subcaption": "Class 4: Tricky spots",
+     "subcaption": "Class 4: Run-ning pennies",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Hot Cross Buns. Let's warm up our fingers.",
      "voiceId": "89e1e081e581deca",
@@ -3271,21 +3005,58 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
+     "caption": "Walk, walk, run-ning, run-ning",
+     "parentCue": "say the words slowly as your child plays",
      "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "voice": "Walk, walk, run-ning, run-ning. Clap it with me.",
+     "voiceId": "b510d639d9e9b5f2",
+     "voiceSec": 4.06
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Four on C, four on D",
+     "parentCue": "Count 'one, two, three, four' for each group",
+     "bpm": 60,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5
+      },
+      {
+       "p": "C4",
+       "d": 0.5
+      },
+      {
+       "p": "C4",
+       "d": 0.5
+      },
+      {
+       "p": "C4",
+       "d": 0.5
+      },
+      {
+       "p": "D4",
+       "d": 0.5
+      },
+      {
+       "p": "D4",
+       "d": 0.5
+      },
+      {
+       "p": "D4",
+       "d": 0.5
+      },
+      {
+       "p": "D4",
+       "d": 0.5
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "demo",
@@ -3587,7 +3358,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 72,
-     "leadInSec": 3.24,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -3667,18 +3438,18 @@
        "from": 8
       }
      ],
-     "durationSec": 21,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
+     "durationSec": 22,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -3694,7 +3465,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 81,
-     "leadInSec": 3.24,
+     "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
       {
@@ -3775,17 +3546,17 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -3801,7 +3572,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 63,
-     "leadInSec": 3.24,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -3882,82 +3653,52 @@
       }
      ],
      "durationSec": 23,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
-     "caption": "Again, a bit faster",
-     "parentCue": "Only speed up if it feels easy",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Again, a bit faster.",
-     "voiceId": "2ceeaf39a6d78f34",
-     "voiceSec": 1.91
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Keep fingers close to the keys",
+     "parentCue": "The first part again",
      "bpm": 72,
-     "leadInSec": 3.24,
+     "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
       {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "One"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "pen"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ny"
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Hot"
       },
       {
        "p": "D4",
-       "d": 0.5,
+       "d": 1,
        "f": 2,
-       "s": "two"
+       "s": "cross"
       },
       {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pen"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ny"
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "buns"
       },
       {
        "p": "E4",
@@ -3980,78 +3721,151 @@
      ],
      "lines": [
       {
-       "lyric": "One a penny, two a penny",
+       "lyric": "Hot cross buns",
        "from": 0
       },
       {
        "lyric": "Hot cross buns",
-       "from": 8
+       "from": 3
       }
      ],
-     "durationSec": 21,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
+     "durationSec": 17,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You counted the pennies!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "counting",
     "secondary": [
-     "patterns"
+     "fingers",
+     "beat"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Ratio 2:1 (half and double)",
+    "parentLine": "Quick notes come two for every one walking step"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Say 'walk' for the slow notes and 'run-ning' for the quick ones while your child plays.",
+   "childAction": "Play four quick C's, then four quick D's. Count to four.",
+   "bridge": "Walking notes are big steps; run-ning notes are two tiny mouse steps per beat.",
+   "celebrate": "Today you practiced: counting to four and playing quick notes."
   },
   {
    "id": "hot-cross-buns-c05",
    "index": 5,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
+   "title": "Four beats, slow and even",
+   "goal": "Play the whole song slowly while counting four beats in every bar.",
    "type": "phrase",
-   "durationSec": 229,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
+   "durationSec": 227,
+   "parentTip": "Tap your child's shoulder on each beat and count 1, 2, 3, 4 softly.",
    "video": "hot-cross-buns/hot-cross-buns-c05.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Hot Cross Buns",
-     "subcaption": "Class 5: Slow and steady",
+     "subcaption": "Class 5: Four beats, slow and even",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today we play Hot Cross Buns. Grown-up, sit beside the keys.",
      "voiceId": "c832825415918f70",
      "voiceSec": 7.77
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 68,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
-     "durationSec": 6,
-     "voice": "Slow and steady practice today.",
-     "voiceId": "aeb4883c0cf279a5",
-     "voiceSec": 2.42
+     "caption": "Slow and even wins",
+     "parentCue": "tap your child's shoulder and count to four",
+     "durationSec": 7,
+     "voice": "Slow and even wins. Grown-up, tap your child's shoulder and count to four.",
+     "voiceId": "1fd1e320635af2a8",
+     "voiceSec": 5.08
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap and count to four",
+     "parentCue": "Count '1, 2, 3, 4' softly as you tap",
+     "bpm": 66,
+     "leadInSec": 4.26,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Tap any key and count with me. One, two, three, four.",
+     "voiceId": "8c616960af03108e",
+     "voiceSec": 3.86
     },
     {
      "kind": "demo",
      "caption": "Watch",
      "parentCue": "Watch the finger numbers",
      "bpm": 63,
-     "leadInSec": 3.85,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "E4",
@@ -4174,10 +3988,10 @@
        "from": 14
       }
      ],
-     "durationSec": 21,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 20,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
@@ -4326,7 +4140,7 @@
      "caption": "Watch",
      "parentCue": "Watch the finger numbers",
      "bpm": 63,
-     "leadInSec": 3.85,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "E4",
@@ -4449,17 +4263,17 @@
        "from": 14
       }
      ],
-     "durationSec": 21,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 20,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Help only if stuck",
      "bpm": 63,
-     "leadInSec": 2.95,
+     "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
       {
@@ -4583,10 +4397,10 @@
        "from": 14
       }
      ],
-     "durationSec": 36,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 37,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "praise",
@@ -4601,7 +4415,7 @@
      "caption": "Watch",
      "parentCue": "Watch the finger numbers",
      "bpm": 63,
-     "leadInSec": 3.85,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "E4",
@@ -4724,17 +4538,17 @@
        "from": 14
       }
      ],
-     "durationSec": 21,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 20,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Help only if stuck",
      "bpm": 63,
-     "leadInSec": 2.95,
+     "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
       {
@@ -4858,91 +4672,14 @@
        "from": 14
       }
      ],
-     "durationSec": 36,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "durationSec": 37,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 72,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hot cross buns",
-       "from": 0
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 3
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Slow and steady!",
      "durationSec": 5,
      "voice": "You worked so hard on that.",
      "voiceId": "0886fb9aff1f3753",
@@ -4950,39 +4687,78 @@
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "beat",
     "secondary": [
-     "beat"
+     "counting",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Tempo control",
-    "parentLine": "Doing a task slowly and evenly"
+    "concept": "Grouping by four (meter)",
+    "parentLine": "Each bar holds four even beats"
    },
-   "parentPrompt": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "childAction": "Play the tune slowly, every note even.",
-   "bridge": "Slow fingers, like a cat walking on tiptoe.",
-   "celebrate": "Today you practiced careful fingers and keeping a steady beat."
+   "parentPrompt": "Tap your child's shoulder on each beat and count 1, 2, 3, 4 softly.",
+   "childAction": "Play slowly while your grown-up counts to four.",
+   "bridge": "Each bar is a tray holding four buns: one, two, three, four.",
+   "celebrate": "Today you practiced: playing slowly and evenly in fours."
   },
   {
    "id": "hot-cross-buns-c06",
    "index": 6,
-   "title": "Same song, up high",
-   "goal": "Play the song in a new place with the same fingers",
+   "title": "Same song, upstairs",
+   "goal": "Play the same song with the same fingers on a higher C.",
    "type": "octave",
-   "durationSec": 211,
-   "parentTip": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
+   "durationSec": 208,
+   "parentTip": "Show your child the next two black keys to the right; help the thumb find that C.",
    "video": "hot-cross-buns/hot-cross-buns-c06.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Hot Cross Buns",
-     "subcaption": "Class 6: Same song, up high",
+     "subcaption": "Class 6: Same song, upstairs",
      "durationSec": 7,
      "voice": "Hello, friends. Today it's Hot Cross Buns. Sit in the middle of the piano.",
      "voiceId": "354709f710c173a9",
      "voiceSec": 5.84
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 68,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Same song, new house",
+     "parentCue": "ask your child: which one sounds nicer?",
+     "durationSec": 8,
+     "voice": "Same song, new house. Grown-up, ask your child: which one sounds nicer.",
+     "voiceId": "665112909f8ee3b4",
+     "voiceSec": 6.63
     },
     {
      "kind": "say",
@@ -5000,6 +4776,14 @@
       {
        "p": "E5",
        "f": 3
+      },
+      {
+       "p": "F5",
+       "f": 4
+      },
+      {
+       "p": "G5",
+       "f": 5
       }
      ],
      "durationSec": 7,
@@ -5008,13 +4792,30 @@
      "voiceSec": 2.49
     },
     {
-     "kind": "say",
-     "caption": "Same fingers, new place",
-     "parentCue": "Fingers keep the same numbers",
-     "durationSec": 6,
-     "voice": "Same fingers, new place.",
-     "voiceId": "f1984f5f115ff332",
-     "voiceSec": 2.38
+     "kind": "your_turn",
+     "caption": "Upstairs: E, D, C",
+     "parentCue": "Help the thumb find the higher C",
+     "bpm": 66,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1
+      },
+      {
+       "p": "D5",
+       "d": 1
+      },
+      {
+       "p": "C5",
+       "d": 2
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "demo",
@@ -5295,7 +5096,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 72,
      "leadInSec": 2.25,
      "notes": [
@@ -5429,9 +5230,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -5445,7 +5246,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 81,
      "leadInSec": 2.25,
      "notes": [
@@ -5595,7 +5396,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 72,
      "leadInSec": 2.25,
      "notes": [
@@ -5745,7 +5546,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 81,
      "leadInSec": 2.25,
      "notes": [
@@ -5877,193 +5678,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "You moved upstairs!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Listen to how it sounds now",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "together",
-     "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
-     "bpm": 72,
-     "leadInSec": 2.25,
-     "notes": [
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 1,
-       "s": "One"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 1,
-       "s": "pen"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 1,
-       "s": "ny"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 2,
-       "s": "two"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 2,
-       "s": "pen"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 2,
-       "s": "ny"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hot cross buns",
-       "from": 0
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 3
-      },
-      {
-       "lyric": "One a penny, two a penny",
-       "from": 6
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 14
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Play along, up high.",
-     "voiceId": "6ee60273cf4e390f",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
     "primary": "space",
     "secondary": [
-     "pitch"
+     "pitch",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Translation (same shape, new place)",
-    "parentLine": "Finding the same note higher or lower on the keyboard"
+    "concept": "Octave equivalence (translation)",
+    "parentLine": "The same pattern moved to a new place sounds higher"
    },
-   "parentPrompt": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
-   "childAction": "Play the same note in its high and low homes.",
-   "bridge": "Every note has a family: same name, a different house.",
-   "celebrate": "Today you practiced finding the way on the keys and hearing high and low."
+   "parentPrompt": "Show your child the next two black keys to the right; help the thumb find that C.",
+   "childAction": "Move your hand up to the next C and play the song again.",
+   "bridge": "Higher C is the same house, upstairs: same fingers, brighter sound.",
+   "celebrate": "Today you practiced: playing the same song in a new place."
   },
   {
    "id": "hot-cross-buns-c07",
    "index": 7,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Keep up with the music",
+   "goal": "Play the whole song along with the music at full speed.",
    "type": "play-along",
-   "durationSec": 220,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 229,
+   "parentTip": "Nod on each beat and keep playing your part; if a note slips, keep going.",
    "video": "hot-cross-buns/hot-cross-buns-c07.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Hot Cross Buns",
-     "subcaption": "Class 7: Play along",
+     "subcaption": "Class 7: Keep up with the music",
      "durationSec": 7,
      "voice": "Hello again. It's Hot Cross Buns time. Grown-up, sit close to help.",
      "voiceId": "c28c5f65e9891202",
@@ -6071,21 +5723,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
+     "caption": "Hop on and keep going",
+     "parentCue": "nod the beat and smile at slips",
      "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "voice": "Hop on and keep going. Grown-up, nod the beat and smile at slips.",
+     "voiceId": "3609859043dfd3bf",
+     "voiceSec": 5.92
     },
     {
      "kind": "together",
@@ -6367,7 +6010,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 90,
-     "leadInSec": 1.97,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "E4",
@@ -6491,17 +6134,17 @@
       }
      ],
      "durationSec": 15,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -6517,7 +6160,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 90,
-     "leadInSec": 1.97,
+     "leadInSec": 4.12,
      "notes": [
       {
        "p": "E4",
@@ -6640,18 +6283,18 @@
        "from": 14
       }
      ],
-     "durationSec": 15,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "durationSec": 17,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -6667,7 +6310,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 90,
-     "leadInSec": 1.97,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "E4",
@@ -6791,17 +6434,17 @@
       }
      ],
      "durationSec": 15,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -6817,7 +6460,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 90,
-     "leadInSec": 1.97,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "E4",
@@ -6941,17 +6584,17 @@
       }
      ],
      "durationSec": 15,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -6967,7 +6610,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 90,
-     "leadInSec": 1.97,
+     "leadInSec": 3.0,
      "notes": [
       {
        "p": "E4",
@@ -7090,18 +6733,18 @@
        "from": 14
       }
      ],
-     "durationSec": 15,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "durationSec": 16,
+     "voice": "Together time. Big smiles.",
+     "voiceId": "a441a4bce0e6e1e6",
+     "voiceSec": 2.6
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -7249,80 +6892,234 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
-     "caption": "Big breath in and out",
-     "parentCue": "Breathe slowly together",
-     "durationSec": 9,
-     "voice": "Big breath in, and out.",
-     "voiceId": "67a43f157c55d975",
-     "voiceSec": 2.01
+     "caption": "And again!",
+     "parentCue": "Sing the words together",
+     "durationSec": 5,
+     "voice": "And again.",
+     "voiceId": "be3897a52d81cfa7",
+     "voiceSec": 1.2
+    },
+    {
+     "kind": "together",
+     "caption": "Play along",
+     "parentCue": "Sing while you play",
+     "bpm": 90,
+     "leadInSec": 4.12,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Hot"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "cross"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "buns"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Hot"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "cross"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "buns"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "One"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "pen"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ny"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "two"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "pen"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ny"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Hot"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "cross"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "buns"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hot cross buns",
+       "from": 0
+      },
+      {
+       "lyric": "Hot cross buns",
+       "from": 3
+      },
+      {
+       "lyric": "One a penny, two a penny",
+       "from": 6
+      },
+      {
+       "lyric": "Hot cross buns",
+       "from": 14
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept going together!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
+     "beat",
      "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Entrainment (matching a tempo)",
+    "parentLine": "Keeping up with a beat that does not wait"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Nod on each beat and keep playing your part; if a note slips, keep going.",
+   "childAction": "Play along with the music and keep going, even after a slip.",
+   "bridge": "The music is a moving cart; hop on and ride, even past bumps.",
+   "celebrate": "Today you practiced: keeping up with the music together."
   },
   {
    "id": "hot-cross-buns-c08",
    "index": 8,
-   "title": "Sing and play",
-   "goal": "Sing the words while playing the tune",
+   "title": "Call like a street seller",
+   "goal": "Sing the words while playing, like the sellers who called them in old London.",
    "type": "play-along",
-   "durationSec": 204,
-   "parentTip": "Singing and playing together is hard. It's fine if the singing comes and goes.",
+   "durationSec": 210,
+   "parentTip": "Sing first in a big, clear calling voice; then sing along while your child plays.",
    "video": "hot-cross-buns/hot-cross-buns-c08.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Hot Cross Buns",
-     "subcaption": "Class 8: Sing and play",
+     "subcaption": "Class 8: Call like a street seller",
      "durationSec": 7,
      "voice": "Hello, friends. Today it's Hot Cross Buns. Sit in the middle of the piano.",
      "voiceId": "354709f710c173a9",
      "voiceSec": 5.84
     },
     {
-     "kind": "say",
-     "caption": "Sing and play at the same time!",
-     "parentCue": "Sing the words with your child",
-     "durationSec": 7,
-     "voice": "Now sing and play at the same time.",
-     "voiceId": "4a55a89d332f6f50",
-     "voiceSec": 2.92
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 68,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
     },
     {
      "kind": "say",
-     "caption": "First we sing, then we play",
-     "parentCue": "Sing slowly first",
-     "durationSec": 6,
-     "voice": "First we sing. Then we play.",
-     "voiceId": "089f436864c9ccf9",
-     "voiceSec": 2.62
+     "caption": "Sing it like a call",
+     "parentCue": "sing out clearly first, then sing along",
+     "durationSec": 7,
+     "voice": "Sing it like a call. Grown-up, sing out clearly first, then sing along.",
+     "voiceId": "f2bf43d92635d141",
+     "voiceSec": 5.96
     },
     {
      "kind": "listen",
@@ -7886,9 +7683,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -8186,9 +7983,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -8336,9 +8133,9 @@
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -8484,43 +8281,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "What a clear call!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "expression",
     "secondary": [
-     "together"
+     "together",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Cross-modal matching",
-    "parentLine": "Matching words, voice and keys at the same time"
+    "concept": "One-to-one: one word, one key",
+    "parentLine": "Each sung word matches one key press"
    },
-   "parentPrompt": "Singing and playing together is hard. It's fine if the singing comes and goes.",
-   "childAction": "Sing the words while you play.",
-   "bridge": "Your voice and your fingers walk together.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sing first in a big, clear calling voice; then sing along while your child plays.",
+   "childAction": "Sing the words and play one key for each word.",
+   "bridge": "Long ago, sellers called this in the street: one word, one key.",
+   "celebrate": "Today you practiced: singing and playing at the same time."
   },
   {
    "id": "hot-cross-buns-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Bun concert for teddy",
+   "goal": "Play the whole song for teddy from start to end, then bow together.",
    "type": "concert",
-   "durationSec": 204,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 208,
+   "parentTip": "Sit teddy as the audience; announce the song, then clap and bow together at the end.",
    "video": "hot-cross-buns/hot-cross-buns-c09.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Hot Cross Buns",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: Bun concert for teddy",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today we play Hot Cross Buns. Grown-up, sit beside the keys.",
      "voiceId": "c832825415918f70",
@@ -8528,21 +8326,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "Concert time for teddy!",
+     "parentCue": "put teddy in front as the audience",
+     "durationSec": 6,
+     "voice": "Concert time. Teddy is listening.",
+     "voiceId": "5981e6766e72b3d1",
+     "voiceSec": 2.73
     },
     {
      "kind": "together",
@@ -8831,9 +8620,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -8981,9 +8770,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -9281,9 +9070,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -9431,9 +9220,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -9579,28 +9368,45 @@
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "You did it!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
+    },
+    {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 5,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
+    },
+    {
+     "kind": "praise",
+     "caption": "Bravo, you played together!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "together",
     "secondary": [
-     "together",
+     "form",
      "expression"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Sequence: beginning, middle, end",
+    "parentLine": "A song starts, goes on and ends; we finish together"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; announce the song, then clap and bow together at the end.",
+   "childAction": "Announce your song, play it for teddy, then take a bow.",
+   "bridge": "Start loud and proud, land softly home on C, then bow.",
+   "celebrate": "Today you practiced: playing a whole song, start to end."
   }
  ]
 }

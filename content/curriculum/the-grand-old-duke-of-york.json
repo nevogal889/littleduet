@@ -1,0 +1,215 @@
+{
+  "songId": "the-grand-old-duke-of-york",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices up and down, a marching beat, finding D, echoing short patterns, counting to three and taking turns, with an old marching action song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Up, down and halfway",
+      "goal": "Listen and move: stand tall for up, crouch for down, bend for halfway.",
+      "skill": { "primary": "pitch", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Contour (up, down, between)", "parentLine": "Up, down, and halfway in the middle, with the body" },
+      "parentPrompt": "Stand together; stretch tall on 'up', crouch on 'down', bend halfway on 'halfway'.",
+      "childAction": "Up: stand tall. Down: crouch low. Halfway: bend in the middle.",
+      "bridge": "The tune marches up the hill to the right, then back down to the left.",
+      "intro": [ { "caption": "Up the hill, down the hill", "parentCue": "stand up together and get ready to move" } ],
+      "games": [],
+      "praise": "Great marching, up and down!",
+      "celebrate": "Today you practiced: up, down and halfway with the music."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "March with the Duke",
+      "goal": "Tap one steady tap for every marching step while the grown-up plays.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Periodicity (marching pulse)", "parentLine": "Left, right, left, right: even steps that keep coming" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key on each step: left, right, left, right.",
+      "bridge": "Each beat is one marching boot: left, right, up the hill.",
+      "intro": [ { "caption": "Left, right, march!", "parentCue": "say left, right on each beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Oh, the grand old Duke",
+          "parentCue": "Say 'left, right' softly with each step",
+          "bpm": 80,
+          "notes": [ { "p": "G3", "d": 0.5 }, { "p": "G3", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "You marched on the beat!",
+      "celebrate": "Today you practiced: keeping a marching beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "Find D, the Duke's key",
+      "goal": "Find the special note D by using the two black keys as a landmark.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmarks", "parentLine": "Finding a place by what sits around it" },
+      "parentPrompt": "Guide your child's finger to the two black keys, then down into the gap between them.",
+      "childAction": "Find the two black keys and press D, right in between.",
+      "bridge": "D is the Duke between two black guards, one on each side.",
+      "intro": [ { "caption": "Where does D live?", "parentCue": "touch the two black keys together first" } ],
+      "games": [],
+      "praise": "You found the Duke!",
+      "celebrate": "Today you practiced: finding D between the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "octave",
+      "title": "D at the top of the hill",
+      "goal": "Find D low down and high up and hear that they match.",
+      "skill": { "primary": "space", "secondary": ["pitch"] },
+      "mathTarget": { "concept": "Octave equivalence (spatial mapping)", "parentLine": "One note lives in two places: low left, high right" },
+      "parentPrompt": "Crouch for the low D, stretch up tall for the high D, saying 'D' each time.",
+      "childAction": "Hop from low D to high D: bottom, then top of the hill.",
+      "bridge": "Low D is the bottom of the hill; high D waits at the top.",
+      "intro": [ { "caption": "D lives at the bottom and top", "parentCue": "point to both Ds, low then high" } ],
+      "games": [
+        {
+          "kind": "high_low",
+          "target": "high",
+          "caption": "Up at the top of the hill",
+          "parentCue": "Point right, to the high side, together",
+          "bpm": 80,
+          "notes": [ { "p": "D5", "d": 0.5 }, { "p": "D5", "d": 1 }, { "p": "D5", "d": 0.5 }, { "p": "F5", "d": 1 }, { "p": "E5", "d": 0.5 }, { "p": "D5", "d": 1.5 } ]
+        }
+      ],
+      "praise": "You found both Ds!",
+      "celebrate": "Today you practiced: the same note, low and high."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Echo the Duke",
+      "goal": "Hold two or three notes in mind, then copy them back on the keys.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Sequence recall (span 2-3)", "parentLine": "Keeping a short line of sounds in mind, in order" },
+      "parentPrompt": "Play the short call, then fold your hands and wait for your child's answer.",
+      "childAction": "Listen to the call, then play it back the same way.",
+      "bridge": "The Duke calls an order; the soldier calls it right back.",
+      "intro": [ { "caption": "I call, you answer", "parentCue": "sing 'Duke of York', let your child copy" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Duke of York: E, D, C",
+          "parentCue": "Point to each lit key, nice and slow",
+          "bpm": 72,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 2 } ]
+        }
+      ],
+      "praise": "Order received, soldier!",
+      "celebrate": "Today you practiced: listening and copying short patterns."
+    },
+    {
+      "index": 6,
+      "spineType": "echo",
+      "title": "Up, up; down, down",
+      "goal": "Echo a pattern that climbs up and one that goes down, like the soldiers.",
+      "skill": { "primary": "patterns", "secondary": ["pitch", "listening"] },
+      "mathTarget": { "concept": "Opposites in contour", "parentLine": "One pattern goes up, its partner goes down" },
+      "parentPrompt": "Stretch up tall for the up pattern; crouch down low for the down pattern.",
+      "childAction": "Play the up pattern, then the down pattern, and move with it.",
+      "bridge": "Going right is marching up the hill; going left is marching down.",
+      "intro": [ { "caption": "When they were up, up!", "parentCue": "stretch up tall, then crouch down together" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Up they go: C, E, G",
+          "parentCue": "Lift your hand as the notes go up",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Down they go: D, B, G",
+          "parentCue": "Lower your hand as the notes go down",
+          "bpm": 72,
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "B3", "d": 1 }, { "p": "G3", "d": 2 } ]
+        }
+      ],
+      "praise": "Up and down, soldier!",
+      "celebrate": "Today you practiced: patterns going up and going down."
+    },
+    {
+      "index": 7,
+      "spineType": "special-note",
+      "title": "Three Ds for the soldiers",
+      "goal": "Wait and listen, then play D at its moments, counting three Ds.",
+      "skill": { "primary": "together", "secondary": ["counting", "listening"] },
+      "mathTarget": { "concept": "Counting to three", "parentLine": "'He had ten thousand' starts with three Ds: one, two, three" },
+      "parentPrompt": "Play your notes; hold up one, two, three fingers as your child plays each D.",
+      "childAction": "Wait for your turn, then play D: one, two, three!",
+      "bridge": "Three Ds are three soldiers in a row: one, two, three.",
+      "intro": [ { "caption": "Wait, wait, now it's D!", "parentCue": "hands in lap until the D comes" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Three soldiers: D, D, D",
+          "parentCue": "Show one finger for each D",
+          "bpm": 72,
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "You waited for your turn!",
+      "celebrate": "Today you practiced: waiting your turn and counting three."
+    },
+    {
+      "index": 8,
+      "spineType": "special-note",
+      "title": "Two friends: D and C",
+      "goal": "Hear the difference between D and C and play each one when it comes.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Classification into two sets", "parentLine": "Sorting each sound: is it D or is it C?" },
+      "parentPrompt": "Point to D or C just before it comes, then let your child press it.",
+      "childAction": "Listen, choose D or C, and press the right one.",
+      "bridge": "D sits between the two black keys; C is next door, on the left.",
+      "intro": [ { "caption": "Two friends: D and C", "parentCue": "touch D, then C, saying their names" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Up nor down: D, then C",
+          "parentCue": "Say each name as your child presses",
+          "bpm": 72,
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "C4", "d": 2 } ]
+        }
+      ],
+      "praise": "You caught D and C!",
+      "celebrate": "Today you practiced: hearing D and C and taking turns."
+    },
+    {
+      "index": 9,
+      "spineType": "together",
+      "title": "March together",
+      "goal": "Play the whole song together at full speed, sharing one marching beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Entrainment (shared pulse)", "parentLine": "Two players marching to one beat together" },
+      "parentPrompt": "Play your blue keys and smile; if your child misses a note, keep marching on.",
+      "childAction": "Play your D and C notes while your grown-up plays the rest.",
+      "bridge": "We march side by side, the same boots on the same beat.",
+      "intro": [ { "caption": "Ready, soldiers? Let's march!", "parentCue": "sit side by side at the piano" } ],
+      "games": [],
+      "praise": "What a march together!",
+      "celebrate": "Today you practiced: playing one song together, one beat."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "Parade for teddy",
+      "goal": "Play the whole song for teddy and hear its two parts: the march, then up and down.",
+      "skill": { "primary": "form", "secondary": ["together", "pitch"] },
+      "mathTarget": { "concept": "Two-part form (A, B)", "parentLine": "First the march up the hill, then the up-and-down game" },
+      "parentPrompt": "Sit teddy as the audience; sit up tall on 'up' and hunch low on 'down' as you play.",
+      "childAction": "Play your notes to the end, then march a big bow.",
+      "bridge": "Part one climbs the hill; part two jumps up, down and halfway.",
+      "intro": [ { "caption": "A parade for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, grand soldiers!",
+      "celebrate": "Today you practiced: playing a whole song in two parts."
+    }
+  ]
+}

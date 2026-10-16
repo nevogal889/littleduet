@@ -1,0 +1,200 @@
+{
+  "songId": "turkey-in-the-straw",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices climbing patterns, a pattern moved lower, two-part song shape, walking and running notes, and two-hand teamwork, with an old barn-dance fiddle tune.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "Five fingers in the barn",
+      "goal": "Find the five-finger place on C and play one finger on each key up to G.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping with a landmark", "parentLine": "Using the two black keys to find where the hand lives" },
+      "parentPrompt": "Help the thumb find C, left of the two black keys; say the finger numbers aloud.",
+      "childAction": "Thumb on C, then one finger on each key up to G.",
+      "bridge": "Two black keys are the barn roof; C is the barn door just left of it.",
+      "intro": [ { "caption": "Find the barn door, C", "parentCue": "help the thumb land left of the two black keys" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "One finger, one key",
+          "parentCue": "Say the finger numbers, one to five",
+          "bpm": 63,
+          "notes": [ { "p": "D4", "d": 1, "f": 1 }, { "p": "E4", "d": 1, "f": 2 }, { "p": "F4", "d": 1, "f": 3 }, { "p": "G4", "d": 1, "f": 4 }, { "p": "A4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "You found your place!",
+      "celebrate": "Today you practiced: finding the hand's place by a landmark."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Climb up, stomp, stomp",
+      "goal": "Play the line that climbs E, F, G and then stomps on G.",
+      "skill": { "primary": "patterns", "secondary": ["fingers", "counting"] },
+      "mathTarget": { "concept": "Pattern repetition (climb, then stomp)", "parentLine": "A little climb, then the same note again and again" },
+      "parentPrompt": "Stomp one foot gently on each repeated G while your child plays.",
+      "childAction": "Climb E, F, G, then stomp G, G, and climb again.",
+      "bridge": "Three quick stairs up to the hayloft, then stomp, stomp on the top step.",
+      "intro": [ { "caption": "Climb up, then stomp", "parentCue": "stomp a foot gently on each repeated G" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Climb and stomp, slowly",
+          "parentCue": "Say 'climb, climb, climb, stomp, stomp'",
+          "bpm": 56,
+          "notes": [ { "p": "E4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 1 } ]
+        }
+      ],
+      "praise": "Great stomping!",
+      "celebrate": "Today you practiced: a climbing pattern that repeats."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Three Es, then three Ds",
+      "goal": "Play the line with three Es and then the same shape lower: three Ds.",
+      "skill": { "primary": "patterns", "secondary": ["fingers", "counting"] },
+      "mathTarget": { "concept": "Sequence (pattern moved lower)", "parentLine": "The same shape again, starting one key lower" },
+      "parentPrompt": "Count 'one, two, three' on the Es, then slide your child's hand one key left for the Ds.",
+      "childAction": "Play three Es, then the same shape one key lower: three Ds.",
+      "bridge": "The second group is the same little dance, one step down the barn stairs.",
+      "intro": [ { "caption": "Same dance, one step lower", "parentCue": "count three on the Es, then three on the Ds" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Three Es, three Ds, slowly",
+          "parentCue": "Count 'one, two, three' on each group",
+          "bpm": 56,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "C4", "d": 0.5 } ]
+        }
+      ],
+      "praise": "You moved the pattern!",
+      "celebrate": "Today you practiced: playing the same pattern one step lower."
+    },
+    {
+      "index": 4,
+      "spineType": "put-together",
+      "title": "Part A, Part B",
+      "goal": "Play the whole tune slowly and notice it has two parts: A, then B.",
+      "skill": { "primary": "form", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Form: two parts (A-B)", "parentLine": "A tune can be built from two different parts" },
+      "parentPrompt": "Stomp softly during Part A and clap during Part B; sing 'da da' if your child gets stuck.",
+      "childAction": "Play slowly and spot when Part B starts.",
+      "bridge": "Part A dances on the barn floor; Part B climbs up high to the hayloft.",
+      "intro": [ { "caption": "Stomp for A, clap for B", "parentCue": "stomp on Part A, clap when Part B starts" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 90,
+          "notes": [ { "p": "G3", "d": 0.5 }, { "p": "A3", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "D4", "d": 0.5 } ]
+        }
+      ],
+      "praise": "You found both parts!",
+      "celebrate": "Today you practiced: hearing the two parts of a tune."
+    },
+    {
+      "index": 5,
+      "spineType": "review",
+      "title": "Run-ning, walk, walk",
+      "goal": "Play the Part B start slowly: two quick notes, then two walking ones.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Ratio 2:1 (half and double)", "parentLine": "Quick notes come two for every one walking step" },
+      "parentPrompt": "Say 'run-ning' for quick pairs and 'walk' for slow notes while your child plays.",
+      "childAction": "Play the quick pairs as run-ning, the slow Gs as walk.",
+      "bridge": "A walking note is one big boot step; run-ning is two quick dancing feet.",
+      "intro": [ { "caption": "Run-ning, walk, walk", "parentCue": "say the words slowly as your child plays" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Part B start, slowly",
+          "parentCue": "Help the pinky stretch up to A",
+          "bpm": 56,
+          "notes": [ { "p": "E4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 0.5 } ]
+        }
+      ],
+      "praise": "Even and steady!",
+      "celebrate": "Today you practiced: fitting two quick notes into one beat."
+    },
+    {
+      "index": 6,
+      "spineType": "left-hand",
+      "title": "Stomp on one",
+      "goal": "Play one low left-hand note at the start of each bar, like a dancer's stomp.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Grouping by four (periodicity)", "parentLine": "Each bar has four beats; the low note lands on one" },
+      "parentPrompt": "Play the tune while your child plays the low notes. Count one-two-three-four, loud on one.",
+      "childAction": "Play one low note on every big one, then wait three beats.",
+      "bridge": "The low note is the dancer's big stomp on the barn floor, far to the left.",
+      "intro": [ { "caption": "Low note on one", "parentCue": "count to four, loud on one" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Same name, lower house",
+          "parentCue": "Point left on each low C",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C3", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "C3", "d": 1 } ]
+        }
+      ],
+      "praise": "Strong stomps!",
+      "celebrate": "Today you practiced: landing on the first beat of each bar."
+    },
+    {
+      "index": 7,
+      "spineType": "hands-together",
+      "title": "One stomp, eight quick",
+      "goal": "Play the quick tune with one low left-hand note per bar, very slowly.",
+      "skill": { "primary": "fingers", "secondary": ["counting", "patterns"] },
+      "mathTarget": { "concept": "Ratio 1:8 (two streams)", "parentLine": "One low note while the right hand plays eight quick ones" },
+      "parentPrompt": "Rest a hand on your child's left shoulder and say 'stomp' on each bar. Go very slowly.",
+      "childAction": "Left hand stomps one low note; right hand runs eight quick notes.",
+      "bridge": "The left hand is the big boot stomp; the right hand is the fiddle running.",
+      "intro": [ { "caption": "One stomp, eight quick", "parentCue": "say 'stomp' on each bar, very slowly" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 78,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "G3", "d": 2, "f": 1 }, { "p": "C3", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Both hands working!",
+      "celebrate": "Today you practiced: playing a slow part and a quick part together."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Dance with the fiddle",
+      "goal": "Play the whole tune along with the music at full speed.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Synchrony with a moving pulse", "parentLine": "Keeping up with a beat that does not wait" },
+      "parentPrompt": "Sit beside your child and tap your foot on every one; cheer for keeping going, not notes.",
+      "childAction": "Play along with the music and keep going, even after a slip.",
+      "bridge": "The fiddle keeps the barn dance going; dance along, even past a stumble.",
+      "intro": [ { "caption": "Hop on and keep dancing", "parentCue": "tap your foot on one and smile at slips" } ],
+      "games": [],
+      "praise": "You kept going together!",
+      "celebrate": "Today you practiced: keeping up with the music together."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Barn-dance concert for teddy",
+      "goal": "Play the whole tune for teddy with a lively, stomping sound, then bow.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Character (lively and stomping)", "parentLine": "Playing the same notes with a lively dancing feel" },
+      "parentPrompt": "Seat teddy as the audience; stomp and clap along while your child plays, then bow.",
+      "childAction": "Play lively for teddy, like a barn dance, then take a bow.",
+      "bridge": "Play like a barn full of dancers: bright, bouncy, then one big final stomp.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "seat teddy as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole tune with a lively feel."
+    }
+  ]
+}

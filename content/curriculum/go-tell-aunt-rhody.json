@@ -1,0 +1,200 @@
+{
+  "songId": "go-tell-aunt-rhody",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices the five-finger home, steps and skips, counting three and four, and how lines end, while you and your child play an old tune together.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Find your five-finger home",
+      "goal": "Hear the song and rest one finger on each of the five home keys.",
+      "skill": { "primary": "space", "secondary": ["listening", "fingers"] },
+      "mathTarget": { "concept": "Spatial mapping with a landmark", "parentLine": "Using the two black keys to find where the hand lives" },
+      "parentPrompt": "Point to the two black keys, then help your child rest the thumb on C.",
+      "childAction": "Find the two black keys, put your thumb on C.",
+      "bridge": "C is the front door, left of the two black keys; five fingers, five rooms.",
+      "intro": [ { "caption": "First we sway, then we find C", "parentCue": "sway together and hum the tune" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "One finger, one key",
+          "parentCue": "Say the finger numbers together, one to five",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 2, "f": 1 }, { "p": "D4", "d": 2, "f": 2 }, { "p": "E4", "d": 2, "f": 3 }, { "p": "F4", "d": 2, "f": 4 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Your hand found home!",
+      "celebrate": "Today you practiced: finding the five-finger home on the keys."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Down the stairs to C",
+      "goal": "Play the first line, walking down from finger 3 to the thumb.",
+      "skill": { "primary": "patterns", "secondary": ["fingers", "pitch"] },
+      "mathTarget": { "concept": "Ordinal sequence (3, 2, 1)", "parentLine": "Counting down in order, like stairs: three, two, one" },
+      "parentPrompt": "Say 'three, two, one' as your child plays; walk your fingers down their arm.",
+      "childAction": "Fingers three, two, one walk down the stairs to C.",
+      "bridge": "Each step left is one stair down; the thumb on C is the floor.",
+      "intro": [ { "caption": "Down the stairs we go", "parentCue": "Walk your fingers down your child's arm" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Three, two, one: down to C",
+          "parentCue": "Count down the finger numbers out loud",
+          "bpm": 66,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "Down the stairs, well done!",
+      "celebrate": "Today you practiced: walking down the keys in order."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Three Es in a row",
+      "goal": "Play the third line and spot the three Es in a row at the end.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "patterns"] },
+      "mathTarget": { "concept": "Subitizing and cardinality (three)", "parentLine": "Seeing and hearing 'three' at once, without counting one by one" },
+      "parentPrompt": "Hold up three fingers before the Es, and count them together as they come.",
+      "childAction": "Play G, G, F, then E, E, E: count three!",
+      "bridge": "The tune starts on the tallest key, steps down, then sits on E three times.",
+      "intro": [ { "caption": "Three Es in a row", "parentCue": "Hold up three fingers for the three Es" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "G, G, F, then three Es",
+          "parentCue": "Count one, two, three on the Es",
+          "bpm": 66,
+          "notes": [ { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 0.5, "f": 5 }, { "p": "F4", "d": 0.5, "f": 4 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "E4", "d": 0.5, "f": 3 } ]
+        }
+      ],
+      "praise": "One, two, three Es!",
+      "celebrate": "Today you practiced: seeing and counting three."
+    },
+    {
+      "index": 4,
+      "spineType": "put-together",
+      "title": "Which line goes home?",
+      "goal": "Play the whole song slowly and notice which lines land on C.",
+      "skill": { "primary": "form", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Same and different (phrase endings)", "parentLine": "Some lines end at home on C, one line does not" },
+      "parentPrompt": "After each line, ask: did it land home on C? Cheer when it does.",
+      "childAction": "Play each line; pat your lap when it lands on C.",
+      "bridge": "C is home; three lines come home, one line stops on E and waits.",
+      "intro": [ { "caption": "Listen for the line that goes home", "parentCue": "Ask 'home?' after each line ends" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Home or not home?",
+          "parentCue": "Ask 'home?' after each little tune",
+          "bpm": 72,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "C4", "d": 1 }, { "rest": true, "d": 2 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 } ]
+        }
+      ],
+      "praise": "You found the way home!",
+      "celebrate": "Today you practiced: hearing how each line ends."
+    },
+    {
+      "index": 5,
+      "spineType": "review",
+      "title": "Little step, little skip",
+      "goal": "Practise the second line slowly, where D skips over E to F.",
+      "skill": { "primary": "space", "secondary": ["fingers", "pitch"] },
+      "mathTarget": { "concept": "Interval distance: step versus skip", "parentLine": "Moving to the next key, or jumping over one key" },
+      "parentPrompt": "Point to E and say 'skip over it' as finger 2 hands off to finger 4.",
+      "childAction": "Play D, D, skip to F, then step down home.",
+      "bridge": "A step goes next door; a skip jumps over one key, like a puddle.",
+      "intro": [ { "caption": "Watch slowly", "parentCue": "Point to E: this is the key we skip" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "D, D, skip to F",
+          "parentCue": "Say 'skip!' on F, then 'step, step, step'",
+          "bpm": 60,
+          "notes": [ { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "F4", "d": 0.5, "f": 4 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "C4", "d": 1, "f": 1 } ]
+        }
+      ],
+      "praise": "Great skip, great steps!",
+      "celebrate": "Today you practiced: telling a step from a skip."
+    },
+    {
+      "index": 6,
+      "spineType": "phrase",
+      "title": "Four beats, slow and even",
+      "goal": "Play the whole song slowly, counting four beats in each bar.",
+      "skill": { "primary": "beat", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Grouping by four (meter)", "parentLine": "Beats come in groups of four: one, two, three, four" },
+      "parentPrompt": "Tap your child's shoulder on each beat and count 1, 2, 3, 4 softly.",
+      "childAction": "Play slowly and evenly while you count to four together.",
+      "bridge": "Each bar is a little train car with four seats, one beat per seat.",
+      "intro": [ { "caption": "Four beats, slow and even", "parentCue": "Count one to four softly on the beats" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap and count to four",
+          "parentCue": "Count 1, 2, 3, 4 with each tap",
+          "bpm": 66,
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 4 } ]
+        }
+      ],
+      "praise": "Slow and even, lovely!",
+      "celebrate": "Today you practiced: counting four beats in a bar."
+    },
+    {
+      "index": 7,
+      "spineType": "octave",
+      "title": "Goose low, goslings high",
+      "goal": "Move the hand to a higher C and play the song with the same fingers.",
+      "skill": { "primary": "space", "secondary": ["pitch", "fingers"] },
+      "mathTarget": { "concept": "Translation (same shape, new place)", "parentLine": "The same song and fingers, moved to a higher home" },
+      "parentPrompt": "Help your child find the next C to the right, then ask which sounds nicer.",
+      "childAction": "Move your hand up to high C and play the same notes.",
+      "bridge": "Same hand shape, a new house to the right: the goslings' high voices.",
+      "intro": [ { "caption": "Watch: same song, up high", "parentCue": "Find the next two black keys to the right" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Goslings sing up high",
+          "parentCue": "Use a tiny voice to sing along",
+          "bpm": 66,
+          "notes": [ { "p": "E5", "d": 1, "f": 3 }, { "p": "E5", "d": 0.5, "f": 3 }, { "p": "D5", "d": 0.5, "f": 2 }, { "p": "C5", "d": 1, "f": 1 }, { "p": "C5", "d": 1, "f": 1 } ]
+        }
+      ],
+      "praise": "Same song, new home!",
+      "celebrate": "Today you practiced: moving a song to a new place."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Hurry, go tell!",
+      "goal": "Play the whole song along with the music and keep going.",
+      "skill": { "primary": "together", "secondary": ["beat", "expression"] },
+      "mathTarget": { "concept": "Entrainment (matching a tempo)", "parentLine": "Keeping your playing in time with the music" },
+      "parentPrompt": "Sing the words along and nod on each beat; if a note slips, keep going.",
+      "childAction": "Play with the music and keep going to the end.",
+      "bridge": "Hurry down the road with the news: keep walking, never stop.",
+      "intro": [ { "caption": "Play along", "parentCue": "Sing the words softly with your child" } ],
+      "games": [],
+      "praise": "You kept going together!",
+      "celebrate": "Today you practiced: keeping in time with the music."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "A story song for teddy",
+      "goal": "Play the whole song for teddy, gently, from first note to last.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Ordinal sequence (start, middle, end)", "parentLine": "A song has a start, a middle and an end" },
+      "parentPrompt": "Sit teddy as the audience; announce the song, then clap and bow together.",
+      "childAction": "Bow, play gently for teddy, then bow again.",
+      "bridge": "Play it gently, like telling teddy a quiet story.",
+      "intro": [ { "caption": "A song for teddy", "parentCue": "Sit teddy in front and announce the song" } ],
+      "games": [],
+      "praise": "Bravo, lovely playing!",
+      "celebrate": "Today you practiced: playing a whole song gently, start to end."
+    }
+  ]
+}

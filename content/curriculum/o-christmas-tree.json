@@ -1,0 +1,192 @@
+{
+  "songId": "o-christmas-tree",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices beats in threes, counting groups of notes, spotting the line that returns, and playing strong and soft, with a German fir-tree song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Sway like a fir tree",
+      "goal": "Hear the song, sway to its beats in threes, then rest fingers on the lit keys.",
+      "skill": { "primary": "beat", "secondary": ["counting", "space"] },
+      "mathTarget": { "concept": "Periodicity (groups of three)", "parentLine": "Feeling beats that come in threes: One, two, three" },
+      "parentPrompt": "Sway with your child: a big lean on 'one', small on 'two, three'.",
+      "childAction": "Sway like a tree: big on one, small on two, three.",
+      "bridge": "The beat sways in threes, like a fir tree in the winter wind.",
+      "intro": [ { "caption": "Let's sway like a fir tree", "parentCue": "lean big on 'one', small on 'two, three'." } ],
+      "games": [],
+      "praise": "You swayed in threes!",
+      "celebrate": "Today you practiced: feeling beats that come in threes."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Climb the branches",
+      "goal": "Learn the first line: three C's, one D, three E's.",
+      "skill": { "primary": "counting", "secondary": ["patterns", "fingers"] },
+      "mathTarget": { "concept": "Grouping (threes)", "parentLine": "Three C's, one D, three E's: counting groups of the same" },
+      "parentPrompt": "Play the low G yourself; count the three C's and three E's aloud together.",
+      "childAction": "Play three C's, one D, then three E's up the branches.",
+      "bridge": "C, C, C is the low branch; E, E, E is the next branch up.",
+      "intro": [ { "caption": "Climb the tree, branch by branch", "parentCue": "you play the low G, then your child starts." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Three C's, a D, three E's",
+          "parentCue": "Count each group aloud: one, two, three",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 1.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 1 } ]
+        }
+      ],
+      "praise": "Great counting branches!",
+      "celebrate": "Today you practiced: counting groups of three same notes."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Bend and spring back",
+      "goal": "Learn the branches line: step down one key and right back up.",
+      "skill": { "primary": "fingers", "secondary": ["listening", "pitch"] },
+      "mathTarget": { "concept": "Neighbour tone (step away, back)", "parentLine": "The tune steps down one key and comes right back" },
+      "parentPrompt": "Play the low B yourself; your child plays E, D, E, F, then D, C.",
+      "childAction": "Play E, D, E, F, wait for the low note, then D, C.",
+      "bridge": "E, D, E is a branch bending in the wind and springing back.",
+      "intro": [ { "caption": "The branches bend in the wind", "parentCue": "you play the low B; your child plays the rest." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Bend and back: E, D, E, F",
+          "parentCue": "Point to each key before it lights",
+          "bpm": 66,
+          "notes": [ { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 2 } ]
+        }
+      ],
+      "praise": "Bendy branches, well done!",
+      "celebrate": "Today you practiced: stepping one key away and back."
+    },
+    {
+      "index": 4,
+      "spineType": "put-together",
+      "title": "The tree line comes back",
+      "goal": "Play the whole song slowly and clap each time the tree line returns.",
+      "skill": { "primary": "form", "secondary": ["patterns", "listening"] },
+      "mathTarget": { "concept": "Form (A A B A)", "parentLine": "The tree line comes three times; the summer line is new" },
+      "parentPrompt": "Clap when 'O Christmas tree' comes back; sing the words if your child stalls.",
+      "childAction": "Play the song slowly; clap when the tree line comes back.",
+      "bridge": "Tree, tree, a new summer-and-winter line, then the tree comes home.",
+      "intro": [ { "caption": "Listen for the tree line", "parentCue": "clap together each time it comes back." } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Summer line, winter line",
+          "parentCue": "Ask: is the winter line higher or lower?",
+          "bpm": 88,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "A4", "d": 1.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "F4", "d": 2 }, { "p": "F4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "G4", "d": 1.5 }, { "p": "F4", "d": 0.5 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found the pattern!",
+      "celebrate": "Today you practiced: hearing which line comes back."
+    },
+    {
+      "index": 5,
+      "spineType": "review",
+      "title": "Tall branch, tiny twig",
+      "goal": "Practise the long-short spot slowly, then a little faster.",
+      "skill": { "primary": "fingers", "secondary": ["beat", "patterns"] },
+      "mathTarget": { "concept": "Uneven rhythm (long, short)", "parentLine": "One long note, then one quick note, again and again" },
+      "parentPrompt": "Play it slowly, saying 'looong-short', then try it a little faster.",
+      "childAction": "Hold the first note long, then play a quick one.",
+      "bridge": "Long-short is a tall branch, then a tiny twig.",
+      "intro": [ { "caption": "Looong-short, looong-short", "parentCue": "say it aloud as your child plays." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Looong-short, up the tree",
+          "parentCue": "Say 'looong-short' as it plays",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 1.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "Steady branches, well done!",
+      "celebrate": "Today you practiced: a long note and a quick note."
+    },
+    {
+      "index": 6,
+      "spineType": "phrase",
+      "title": "Slow, even steps in three",
+      "goal": "Play the whole song slowly and evenly, counting three beats in each bar.",
+      "skill": { "primary": "beat", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Steady pulse (three per bar)", "parentLine": "Counting one, two, three keeps every note evenly spaced" },
+      "parentPrompt": "Count 'one, two, three' softly while your child plays slowly.",
+      "childAction": "Play slowly while you count to three with your grown-up.",
+      "bridge": "Each bar is three even steps around the tree.",
+      "intro": [ { "caption": "Slow and steady wins", "parentCue": "count one, two, three softly as you go." } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap and count to three",
+          "parentCue": "Count one, two, three out loud",
+          "bpm": 72,
+          "notes": [ { "p": "G3", "d": 1 }, { "p": "C4", "d": 1.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 1.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 1 } ]
+        }
+      ],
+      "praise": "Slow and steady, bravo!",
+      "celebrate": "Today you practiced: playing evenly, counting to three."
+    },
+    {
+      "index": 7,
+      "spineType": "octave",
+      "title": "The tree on the hilltop",
+      "goal": "Play the song in a higher place on the piano with the same fingers.",
+      "skill": { "primary": "space", "secondary": ["pitch", "fingers"] },
+      "mathTarget": { "concept": "Translation (same shape, higher)", "parentLine": "The same song, moved to a higher home, sounds brighter" },
+      "parentPrompt": "Slide your child's hand up to the higher keys: same fingers, same song.",
+      "childAction": "Move your hand up high and play the same song.",
+      "bridge": "The same tree on a hilltop to the right sounds bright as snow.",
+      "intro": [ { "caption": "Same song, up high", "parentCue": "slide your child's hand up to the right." } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Same tree, two places",
+          "parentCue": "Ask: which one sounds like snow?",
+          "bpm": 88,
+          "notes": [ { "p": "G3", "d": 1 }, { "p": "C4", "d": 1.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 1.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "C5", "d": 1.5 }, { "p": "C5", "d": 0.5 }, { "p": "C5", "d": 1.5 }, { "p": "D5", "d": 0.5 }, { "p": "E5", "d": 1.5 }, { "p": "E5", "d": 0.5 }, { "p": "E5", "d": 1 } ]
+        }
+      ],
+      "praise": "Hilltop music, bravo!",
+      "celebrate": "Today you practiced: playing the same song in a new place."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Play along with the tree",
+      "goal": "Play the whole song along with the music at full speed.",
+      "skill": { "primary": "together", "secondary": ["beat", "expression"] },
+      "mathTarget": { "concept": "Synchrony (keeping up)", "parentLine": "Keeping your part going while the music moves on" },
+      "parentPrompt": "Sit close and nod the beat; if a note is missed, keep going.",
+      "childAction": "Play along with the music. Missed notes are fine; keep going!",
+      "bridge": "The music is a sleigh ride; hold on and keep riding.",
+      "intro": [ { "caption": "Play along with the music", "parentCue": "nod the beat and keep going, whatever happens." } ],
+      "games": [],
+      "praise": "You kept up!",
+      "celebrate": "Today you practiced: keeping up with the music, together."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Tree concert for teddy",
+      "goal": "Play the whole song for teddy: summer strong, winter soft.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Contrast (summer strong, winter soft)", "parentLine": "Playing the summer line strong and the winter line soft" },
+      "parentPrompt": "Sit teddy as the audience; whisper 'soft' before the winter line, then bow together.",
+      "childAction": "Play summer strong, winter soft, then bow for teddy.",
+      "bridge": "Summer is bright and strong; winter is soft as falling snow.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "whisper 'soft' just before the winter line." } ],
+      "games": [],
+      "praise": "Bravo, strong and soft!",
+      "celebrate": "Today you practiced: playing strong and soft, start to end."
+    }
+  ]
+}

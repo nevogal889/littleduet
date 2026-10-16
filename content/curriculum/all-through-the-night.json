@@ -1,0 +1,214 @@
+{
+  "songId": "all-through-the-night",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices a new hand position, the rocking shape of a tune, A-A-B-A song shape and soft calm playing, using an old Welsh lullaby.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "A new bed for the hand",
+      "goal": "Hear the lullaby, then find G by the three black keys and place five fingers.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmark (three black keys)", "parentLine": "Using the three black keys as a sign to find G" },
+      "parentPrompt": "Find the three black keys left of middle C; help the thumb rest on G inside them.",
+      "childAction": "Thumb on G, then one finger on each key up to D.",
+      "bridge": "G tucks in after the first of three black keys, like a child in bed.",
+      "intro": [ { "caption": "Find the three black keys", "parentCue": "G sits between the first two" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "One finger, one key",
+          "parentCue": "Say the finger number for each key",
+          "bpm": 56,
+          "notes": [ { "p": "G3", "d": 1, "f": 1 }, { "p": "A3", "d": 1, "f": 2 }, { "p": "B3", "d": 1, "f": 3 }, { "p": "C4", "d": 1, "f": 4 }, { "p": "D4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Your hand is tucked in!",
+      "celebrate": "Today you practiced: finding G and placing five fingers."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Rock the cradle",
+      "goal": "Learn the first line and feel the tune rock down and up like a cradle.",
+      "skill": { "primary": "pitch", "secondary": ["fingers", "patterns"] },
+      "mathTarget": { "concept": "Contour (wave shape)", "parentLine": "The tune goes down, up, then down, like a gentle wave" },
+      "parentPrompt": "Rock your child gently left and right as the tune goes down and up.",
+      "childAction": "Play C, B, A, then back up to C: rock the cradle.",
+      "bridge": "Sleep, my child: the notes rock down to the left, then back up.",
+      "intro": [ { "caption": "Rock, rock, little cradle", "parentCue": "rock your child gently with the tune" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Sleep, my child",
+          "parentCue": "Say four, three, two, four",
+          "bpm": 56,
+          "notes": [ { "p": "C4", "d": 1.5, "f": 4 }, { "p": "B3", "d": 0.5, "f": 3 }, { "p": "A3", "d": 1, "f": 2 }, { "p": "C4", "d": 1, "f": 4 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "And peace attend thee",
+          "parentCue": "Say five, four, three, one",
+          "bpm": 56,
+          "notes": [ { "p": "D4", "d": 1.5, "f": 5 }, { "p": "C4", "d": 0.5, "f": 4 }, { "p": "B3", "d": 1, "f": 3 }, { "p": "G3", "d": 1, "f": 1 } ]
+        }
+      ],
+      "praise": "Such gentle rocking!",
+      "celebrate": "Today you practiced: following a tune that goes down and up."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Nearly asleep, then asleep",
+      "goal": "Learn the next lines and hear one end on B, still awake, and one end on C.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "form"] },
+      "mathTarget": { "concept": "Repetition with a changed ending", "parentLine": "The same line comes back, but the ending changes" },
+      "parentPrompt": "Open your eyes wide on the B ending; close them sleepily on the C ending.",
+      "childAction": "Eyes open on the B ending, eyes closed on C.",
+      "bridge": "B is a yawn, nearly asleep; C is home, fast asleep.",
+      "intro": [ { "caption": "Nearly asleep, or fast asleep?", "parentCue": "eyes wide for B, eyes closed for C" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Nearly asleep: ends on B",
+          "parentCue": "Keep your eyes open on the end",
+          "bpm": 60,
+          "notes": [ { "p": "A3", "d": 1 }, { "p": "B3", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "B3", "d": 4 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Fast asleep: ends on C",
+          "parentCue": "Say two, three, three, four",
+          "bpm": 56,
+          "notes": [ { "p": "A3", "d": 1, "f": 2 }, { "p": "B3", "d": 1, "f": 3 }, { "p": "B3", "d": 1, "f": 3 }, { "p": "C4", "d": 4, "f": 4 } ]
+        }
+      ],
+      "praise": "Fast asleep, well done!",
+      "celebrate": "Today you practiced: hearing a line that ends in a new way."
+    },
+    {
+      "index": 4,
+      "spineType": "phrase",
+      "title": "Up to the moon and back",
+      "goal": "Hear the middle part float higher, then play the sleepy line when it returns.",
+      "skill": { "primary": "space", "secondary": ["pitch", "together"] },
+      "mathTarget": { "concept": "Register shift (moving higher)", "parentLine": "The middle part moves to the right, where sounds are higher" },
+      "parentPrompt": "You play the high middle part; nod when the sleepy line comes back for your child.",
+      "childAction": "Point up for the high part, then play your sleepy line.",
+      "bridge": "The middle floats up to the moon on the right, then drifts back down.",
+      "intro": [ { "caption": "The song floats up high", "parentCue": "you play the high part; your child listens" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Soft the drowsy hours",
+          "parentCue": "Point up to the moon together",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "A4", "d": 1.5 }, { "p": "G4", "d": 0.5 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 1 } ]
+        }
+      ],
+      "praise": "To the moon and back!",
+      "celebrate": "Today you practiced: hearing a part that moves higher, then returns."
+    },
+    {
+      "index": 5,
+      "spineType": "put-together",
+      "title": "Same, same, new, same",
+      "goal": "Play the whole song slowly and find its shape: same, same, new, same.",
+      "skill": { "primary": "form", "secondary": ["patterns", "listening"] },
+      "mathTarget": { "concept": "Form: A A B A", "parentLine": "A line, the same line, a new part, then the line again" },
+      "parentPrompt": "Hold up one hand for each sleepy line and wave both hands for the new high part.",
+      "childAction": "Play slowly; say 'same' or 'new' after each part.",
+      "bridge": "Sleepy, sleepy, moon, sleepy: the song makes a shape you can say.",
+      "intro": [ { "caption": "Same, same, new, same", "parentCue": "say it together after each part" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 61,
+          "notes": [ { "p": "C4", "d": 1.5 }, { "p": "B3", "d": 0.5 }, { "p": "A3", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1.5 }, { "p": "C4", "d": 0.5 }, { "p": "B3", "d": 1 }, { "p": "G3", "d": 1 } ]
+        }
+      ],
+      "praise": "You found the shape!",
+      "celebrate": "Today you practiced: finding the same-same-new-same song shape."
+    },
+    {
+      "index": 6,
+      "spineType": "review",
+      "title": "Long yawn, short sigh",
+      "goal": "Practise 'Sleep, my' slowly: one long note, then one short note.",
+      "skill": { "primary": "beat", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Ratio 3:1 (long and short)", "parentLine": "One note lasts three times longer than the next" },
+      "parentPrompt": "Say 'yaaawn-sigh' with the notes; clap it once together before your child plays.",
+      "childAction": "Hold C long like a yawn, then a quick B like a sigh.",
+      "bridge": "Sleeeep-my: a long stretch on C, then a little hop down to B.",
+      "intro": [ { "caption": "A long yawn, a short sigh", "parentCue": "clap the rhythm once together first" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Yaaawn, sigh: C, B",
+          "parentCue": "Say yaaawn-sigh with the notes",
+          "bpm": 52,
+          "notes": [ { "p": "C4", "d": 1.5, "f": 4 }, { "p": "B3", "d": 0.5, "f": 3 }, { "p": "A3", "d": 2, "f": 2 }, { "p": "D4", "d": 1.5, "f": 5 }, { "p": "C4", "d": 0.5, "f": 4 }, { "p": "B3", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "What a long, sleepy yawn!",
+      "celebrate": "Today you practiced: long notes and short notes."
+    },
+    {
+      "index": 7,
+      "spineType": "phrase",
+      "title": "Soft as a blanket",
+      "goal": "Play the whole song slowly, softly and smoothly, like a quiet lullaby.",
+      "skill": { "primary": "expression", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Dynamics (soft, smooth touch)", "parentLine": "Playing softly and smoothly, one note melting into the next" },
+      "parentPrompt": "Whisper the words and breathe slowly together; pat a slow beat on your child's back.",
+      "childAction": "Play slowly and softly, like tucking in a blanket.",
+      "bridge": "Soft fingers are a warm blanket; each note melts into the next.",
+      "intro": [ { "caption": "Soft as a blanket", "parentCue": "whisper the words and breathe slowly together" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap and count to four",
+          "parentCue": "Count softly as your child taps",
+          "bpm": 57,
+          "notes": [ { "p": "C4", "d": 1.5 }, { "p": "B3", "d": 0.5 }, { "p": "A3", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1.5 }, { "p": "C4", "d": 0.5 }, { "p": "B3", "d": 1 }, { "p": "G3", "d": 1 } ]
+        }
+      ],
+      "praise": "So soft and smooth!",
+      "celebrate": "Today you practiced: playing slowly, softly and smoothly."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Lullaby play-along",
+      "goal": "Play the whole song along with the music and keep going to the end.",
+      "skill": { "primary": "together", "secondary": ["beat", "expression"] },
+      "mathTarget": { "concept": "Synchrony (shared slow pulse)", "parentLine": "Keeping the same calm, slow beat as the music" },
+      "parentPrompt": "Sing softly beside your child; you play the high middle part if needed.",
+      "childAction": "Play along with the music; keep going after a slip.",
+      "bridge": "You and the music breathe together: slow, slow, all through the night.",
+      "intro": [ { "caption": "Play with the music", "parentCue": "sing softly beside your child and keep going" } ],
+      "games": [],
+      "praise": "So calm together!",
+      "celebrate": "Today you practiced: keeping a calm beat with the music."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Lullaby for teddy",
+      "goal": "Play the whole lullaby for teddy, softer and softer, until teddy falls asleep.",
+      "skill": { "primary": "together", "secondary": ["expression", "form"] },
+      "mathTarget": { "concept": "Closure (ending softly at home)", "parentLine": "A song can end by getting quieter and resting at home" },
+      "parentPrompt": "Lay teddy down as the audience; play together, then whisper 'goodnight' and bow quietly.",
+      "childAction": "Play for teddy, softer at the end, then whisper goodnight.",
+      "bridge": "The last long C is the pillow: the song lies down to sleep.",
+      "intro": [ { "caption": "A lullaby for teddy", "parentCue": "lay teddy down in front as the audience" } ],
+      "games": [],
+      "praise": "Teddy is fast asleep!",
+      "celebrate": "Today you practiced: playing a whole song softly to the end."
+    }
+  ]
+}

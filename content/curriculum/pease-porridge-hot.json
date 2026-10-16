@@ -1,0 +1,168 @@
+{
+  "songId": "pease-porridge-hot",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices clapping patterns, steady beat, finding E, echoing three notes, hearing same and different, and taking turns, with an old clapping rhyme.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Pat, clap, porridge hot",
+      "goal": "Keep a pat-clap pattern going together while the rhyme plays.",
+      "skill": { "primary": "patterns", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Ostinato (repeating pattern)", "parentLine": "Two moves, pat then clap, again and again" },
+      "parentPrompt": "Sit facing your child: pat your knees, then clap hands, on each beat.",
+      "childAction": "Pat your knees, clap your hands. Pat, clap, all song long.",
+      "bridge": "Pat is the spoon in the pot; clap is the lid going on.",
+      "intro": [ { "caption": "Pat, clap, pat, clap", "parentCue": "sit facing your child and show it slowly" } ],
+      "games": [],
+      "praise": "Great pat-clap together!",
+      "celebrate": "Today you practiced: a pat-clap pattern, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Stir the porridge beat",
+      "goal": "Tap one steady tap for every beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key once for each beat. Hot lasts two taps!",
+      "bridge": "Each beat is one stir of the spoon: stir, stir, stir.",
+      "intro": [ { "caption": "One beat, one stir", "parentCue": "tap your child's shoulder on each beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Pease porridge hot, hot",
+          "parentCue": "Count 'one, two' on the long 'hot'",
+          "bpm": 80,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 2 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "Find E, the porridge key",
+      "goal": "Find the special note E by using the two black keys as a landmark.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmarks", "parentLine": "Finding a place by what sits next to it" },
+      "parentPrompt": "Guide your child's finger over two black keys, then slide right to E.",
+      "childAction": "Touch the two black keys, slide right, and press E gently.",
+      "bridge": "E is the pot, sitting just right of the two black keys.",
+      "intro": [ { "caption": "Where does E live?", "parentCue": "touch the two black keys together first" } ],
+      "games": [],
+      "praise": "You found E!",
+      "celebrate": "Today you practiced: finding E next to the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "echo",
+      "title": "Echo: E, E, D",
+      "goal": "Hold three notes in mind, then copy them back on the keys.",
+      "skill": { "primary": "listening", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Sequence recall (span 3)", "parentLine": "Keeping three sounds in mind, in order" },
+      "parentPrompt": "Play the short call, then fold your hands and wait for your child's answer.",
+      "childAction": "Listen to three notes, then play the same three back.",
+      "bridge": "Pease, por-ridge: two Es, then one step down to D.",
+      "intro": [ { "caption": "I call, you answer", "parentCue": "say 'pease porridge', let your child copy" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Pease por-ridge: E, E, D",
+          "parentCue": "Hold up fingers: one, two, three",
+          "bpm": 72,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 2, "f": 2 } ]
+        }
+      ],
+      "praise": "You answered the call!",
+      "celebrate": "Today you practiced: listening and copying three notes."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Hot ending, cold ending",
+      "goal": "Echo two lines that start the same and end differently: hot and cold.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "pitch"] },
+      "mathTarget": { "concept": "Same and different (endings)", "parentLine": "Same start, different last note: that is how we tell them apart" },
+      "parentPrompt": "Fan your face for 'hot', hug and shiver for 'cold'.",
+      "childAction": "Play hot: E, E, D, C. Play cold: E, E, D, D.",
+      "bridge": "Hot walks all the way down to C; cold stops on D.",
+      "intro": [ { "caption": "Hot or cold? Listen!", "parentCue": "fan your face for hot, shiver for cold" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Hot! E, E, D, C",
+          "parentCue": "Fan your face on the last note",
+          "bpm": 72,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "C4", "d": 2, "f": 1 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Cold! E, E, D, D",
+          "parentCue": "Shiver together on the last note",
+          "bpm": 72,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 2, "f": 2 } ]
+        }
+      ],
+      "praise": "You heard hot and cold!",
+      "celebrate": "Today you practiced: hearing same and different endings."
+    },
+    {
+      "index": 6,
+      "spineType": "special-note",
+      "title": "Two Es to start",
+      "goal": "Wait and listen, then play the two Es that start each line.",
+      "skill": { "primary": "together", "secondary": ["counting", "listening"] },
+      "mathTarget": { "concept": "Cardinality (two of a kind)", "parentLine": "Each line starts with two Es: one, two" },
+      "parentPrompt": "Play your notes; hold up two fingers and count 'one, two' as your child plays.",
+      "childAction": "Wait for your turn, then play E, E: one, two!",
+      "bridge": "Two Es are two spoons into the pot: one, two.",
+      "intro": [ { "caption": "Wait, wait, now it's E!", "parentCue": "hands in lap until the E comes" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Two Es: one, two",
+          "parentCue": "Hold up two fingers and count",
+          "bpm": 80,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "You waited for your turn!",
+      "celebrate": "Today you practiced: waiting your turn and counting two."
+    },
+    {
+      "index": 7,
+      "spineType": "together",
+      "title": "Clapping partners",
+      "goal": "Play the whole rhyme together, like two partners in a clapping game.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together to make one song" },
+      "parentPrompt": "Play your blue keys and smile; if your child misses an E, keep going.",
+      "childAction": "Play your E notes while your grown-up plays the rest.",
+      "bridge": "Like clapping partners: your hands and mine take turns to make one game.",
+      "intro": [ { "caption": "Partners, ready? Let's play!", "parentCue": "clap palms with your child once to start" } ],
+      "games": [],
+      "praise": "Great partners!",
+      "celebrate": "Today you practiced: playing one song together, taking turns."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Hot and cold concert",
+      "goal": "Play the whole rhyme for teddy, from the first line to the last.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on, and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play together, then clap palms and bow at the end.",
+      "childAction": "Play your notes to the end, then take a big bow.",
+      "bridge": "The rhyme is one pot of porridge: hot, then cold, then nine days old.",
+      "intro": [ { "caption": "A rhyme for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, partners!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

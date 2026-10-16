@@ -1,0 +1,199 @@
+{
+  "songId": "william-tell-overture",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finding C, a short-short-long gallop rhythm, finger order, counting to four and keeping up together, with Rossini's famous galloping music.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Saddle up on C",
+      "goal": "Find C by the two black keys and rest the right hand ready to ride.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmark (black-key groups)", "parentLine": "C always sits just left of the two black keys" },
+      "parentPrompt": "Point to two black keys; help your child put the thumb on C, just left of them.",
+      "childAction": "Thumb on C, fingers curved, ready to gallop.",
+      "bridge": "C is the saddle, just left of the two black keys; your hand sits on it.",
+      "intro": [ { "caption": "Find the saddle: C", "parentCue": "point to the two black keys first" } ],
+      "games": [],
+      "praise": "Saddled up and ready!",
+      "celebrate": "Today you practiced: finding C and placing the hand."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Ta-ta tah, gallop!",
+      "goal": "Play the gallop on G with finger 5: two quick taps, then one longer tap.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Ratio 2:1 (half and whole)", "parentLine": "Two quick taps fit in the time of one long tap" },
+      "parentPrompt": "Say 'gal-lop, horse' with the rhythm while your child taps G with finger 5.",
+      "childAction": "Finger 5 on G: quick, quick, long. Gal-lop, horse!",
+      "bridge": "Two quick taps are hooves landing fast; the long tap is the horse leaping.",
+      "intro": [ { "caption": "Gal-lop, horse! Gal-lop, horse!", "parentCue": "say it, then pat it on your knees" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Gal-lop, horse, gal-lop, horse",
+          "parentCue": "Say the words with each lit key",
+          "bpm": 80,
+          "notes": [ { "p": "G4", "d": 0.5, "f": 5 }, { "p": "G4", "d": 0.5, "f": 5 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 0.5, "f": 5 }, { "p": "G4", "d": 0.5, "f": 5 }, { "p": "G4", "d": 1, "f": 5 } ]
+        }
+      ],
+      "praise": "What a gallop!",
+      "celebrate": "Today you practiced: two quick taps and one long tap."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "1-2-3 or 3-1-2?",
+      "goal": "Hear that Part 1 ends with fingers 1-2-3 and Part 2 mixes them: 3-1-2.",
+      "skill": { "primary": "fingers", "secondary": ["patterns", "listening"] },
+      "mathTarget": { "concept": "Ordinal sequence (order of fingers)", "parentLine": "Same three fingers, in a different order" },
+      "parentPrompt": "Touch your child's fingers 1, 2, 3 in order, then 3, 1, 2, saying the numbers.",
+      "childAction": "Play C-D-E with 1-2-3, then E-C-D with 3-1-2.",
+      "bridge": "Fingers 1, 2, 3 are three horses; first they trot in line, then they swap.",
+      "intro": [ { "caption": "Three horses in a line", "parentCue": "touch fingers 1, 2, 3 and say the numbers" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "In a line: 1, 2, 3",
+          "parentCue": "Say the finger numbers out loud",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 2, "f": 3 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Swap places: 3, 1, 2",
+          "parentCue": "Say the new order slowly",
+          "bpm": 72,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 2, "f": 2 } ]
+        }
+      ],
+      "praise": "You found the new order!",
+      "celebrate": "Today you practiced: finger order, 1-2-3 and 3-1-2."
+    },
+    {
+      "index": 4,
+      "spineType": "put-together",
+      "title": "The start never changes",
+      "goal": "Play the whole gallop slowly and notice that each part starts the same way.",
+      "skill": { "primary": "form", "secondary": ["patterns", "listening"] },
+      "mathTarget": { "concept": "Invariance (same start, new ending)", "parentLine": "Every part starts with the gallop; only the last three notes change" },
+      "parentPrompt": "Clap the gallop with your child at each start; whisper 'what comes now?' before the ending.",
+      "childAction": "Gallop on G, then listen: up the stairs, swap, or down?",
+      "bridge": "Every part rides out of the same gate on G, then takes a different path.",
+      "intro": [ { "caption": "Same gallop, different endings", "parentCue": "clap the gallop together before you start" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 90,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 } ]
+        }
+      ],
+      "praise": "You followed the whole ride!",
+      "celebrate": "Today you practiced: hearing what stays the same and what changes."
+    },
+    {
+      "index": 5,
+      "spineType": "review",
+      "title": "Big jump: 5 to thumb",
+      "goal": "Practise the jump from G with finger 5 down to C with the thumb, slowly.",
+      "skill": { "primary": "fingers", "secondary": ["space"] },
+      "mathTarget": { "concept": "Interval distance (5 to 1)", "parentLine": "Finger 5 to thumb is the widest move in the hand" },
+      "parentPrompt": "Rest a hand lightly on your child's wrist so the hand stays still; only fingers move.",
+      "childAction": "Finger 5 on G, then thumb on C. Hand stays still.",
+      "bridge": "The hand is a little stable; G and C are the two ends of it.",
+      "intro": [ { "caption": "Jump from G to C", "parentCue": "go slowly; the hand stays in its place" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "G, G, then C",
+          "parentCue": "Say 'five, five, thumb' with each key",
+          "bpm": 66,
+          "notes": [ { "p": "G4", "d": 0.5, "f": 5 }, { "p": "G4", "d": 0.5, "f": 5 }, { "p": "C4", "d": 2, "f": 1 }, { "p": "G4", "d": 0.5, "f": 5 }, { "p": "G4", "d": 0.5, "f": 5 }, { "p": "C4", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "Steady hand, big jump!",
+      "celebrate": "Today you practiced: moving from finger 5 to the thumb."
+    },
+    {
+      "index": 6,
+      "spineType": "phrase",
+      "title": "Count four, slow horse",
+      "goal": "Play the whole gallop slowly while the grown-up counts 1-2-3-4 in each bar.",
+      "skill": { "primary": "beat", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Grouping by four (meter)", "parentLine": "Beats come in groups of four: one, two, three, four" },
+      "parentPrompt": "Count '1, 2, 3, 4' softly and evenly; tap your child's shoulder on 1.",
+      "childAction": "Play slowly and evenly while your grown-up counts to four.",
+      "bridge": "A slow horse takes four even steps, then starts again on one.",
+      "intro": [ { "caption": "Slow horse: one, two, three, four", "parentCue": "count slowly and evenly out loud" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the four-step beat",
+          "parentCue": "Count 1, 2, 3, 4 with the taps",
+          "bpm": 66,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 } ]
+        }
+      ],
+      "praise": "Slow and even, well done!",
+      "celebrate": "Today you practiced: counting four beats in a bar."
+    },
+    {
+      "index": 7,
+      "spineType": "octave",
+      "title": "Same gallop, new house",
+      "goal": "Play the gallop from a higher C with the same fingers and hear it match.",
+      "skill": { "primary": "space", "secondary": ["pitch", "fingers"] },
+      "mathTarget": { "concept": "Octave translation (same shape, higher)", "parentLine": "The same pattern still works when the hand moves up" },
+      "parentPrompt": "Help your child find the next C to the right, by its two black keys.",
+      "childAction": "Move your hand to the high C and gallop again.",
+      "bridge": "High C is the same house up the street: same door, same rooms.",
+      "intro": [ { "caption": "A new house up high", "parentCue": "find the next two black keys to the right" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Hear the high gallop",
+          "parentCue": "Ask: does it sound like a pony?",
+          "bpm": 80,
+          "notes": [ { "p": "G5", "d": 0.5 }, { "p": "G5", "d": 0.5 }, { "p": "G5", "d": 1 }, { "p": "G5", "d": 0.5 }, { "p": "G5", "d": 0.5 }, { "p": "G5", "d": 1 }, { "p": "G5", "d": 0.5 }, { "p": "G5", "d": 0.5 }, { "p": "C5", "d": 1 }, { "p": "D5", "d": 1 }, { "p": "E5", "d": 1 } ]
+        }
+      ],
+      "praise": "Same gallop, new house!",
+      "celebrate": "Today you practiced: the same song in a higher place."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Keep up with the horses",
+      "goal": "Play the gallop along with the music at full speed and keep going.",
+      "skill": { "primary": "together", "secondary": ["beat", "expression"] },
+      "mathTarget": { "concept": "Entrainment (matching a fast tempo)", "parentLine": "Fitting your playing to a speed you did not choose" },
+      "parentPrompt": "Pat the gallop on your knee beside your child; if they miss notes, keep riding.",
+      "childAction": "Gallop along with the music. Missed notes? Keep riding!",
+      "bridge": "This is the last, fastest part of Rossini's overture; ride with the band.",
+      "intro": [ { "caption": "The band is riding fast!", "parentCue": "pat the gallop on your knee to help" } ],
+      "games": [],
+      "praise": "You kept riding!",
+      "celebrate": "Today you practiced: keeping up with fast music."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Gallop home to C",
+      "goal": "Play the whole gallop for teddy and land the last notes home on C.",
+      "skill": { "primary": "form", "secondary": ["expression", "together"] },
+      "mathTarget": { "concept": "Closure (ending on home note)", "parentLine": "The ending walks E, D, C and lands home" },
+      "parentPrompt": "Sit teddy as the audience; cheer on the last C, then bow together.",
+      "childAction": "Gallop to the end, land on C, and take a bow.",
+      "bridge": "The last three notes, E, D, C, ride down the stairs and into the stable.",
+      "intro": [ { "caption": "Big finish for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, home on C!",
+      "celebrate": "Today you practiced: a whole song with a strong ending."
+    }
+  ]
+}

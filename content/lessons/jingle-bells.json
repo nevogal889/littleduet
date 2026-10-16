@@ -2,19 +2,19 @@
  "songId": "jingle-bells",
  "title": "Jingle Bells",
  "ageGroup": "2-3",
- "curriculum": "default",
- "songSummary": "Practices listening memory, patterns and loud, soft, fast, slow, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices steady beat, high and low, loud and soft, stop and go, word rhythm and playing together, on a snowy sleigh ride.",
  "skillMap": [
   {
-   "id": "listening",
-   "label": "Listening memory",
+   "id": "beat",
+   "label": "Steady beat",
    "value": 1.0,
    "classes": 2,
    "total": 10
   },
   {
-   "id": "patterns",
-   "label": "Patterns",
+   "id": "listening",
+   "label": "Listening memory",
    "value": 1.0,
    "classes": 2,
    "total": 10
@@ -27,10 +27,10 @@
    "total": 10
   },
   {
-   "id": "beat",
-   "label": "Steady beat",
-   "value": 0.5,
-   "classes": 1,
+   "id": "together",
+   "label": "Playing together",
+   "value": 1.0,
+   "classes": 2,
    "total": 10
   },
   {
@@ -41,15 +41,8 @@
    "total": 10
   },
   {
-   "id": "form",
-   "label": "Song shape",
-   "value": 0.5,
-   "classes": 1,
-   "total": 10
-  },
-  {
-   "id": "together",
-   "label": "Playing together",
+   "id": "counting",
+   "label": "Counting",
    "value": 0.5,
    "classes": 1,
    "total": 10
@@ -58,36 +51,77 @@
  "icon": "bell",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2206,
+ "totalSec": 2196,
  "classes": [
   {
    "id": "jingle-bells-c01",
    "index": 1,
-   "title": "Listen and sway",
-   "goal": "Hear the whole song and move to the beat",
+   "title": "Trot like the sleigh horse",
+   "goal": "Feel the steady beat of the sleigh ride with gentle knee trots.",
    "type": "listen",
-   "durationSec": 211,
-   "parentTip": "Sit together at the piano. Sway side to side while the song plays.",
+   "durationSec": 209,
+   "parentTip": "Sit your child on your knees and trot gently on every beat, like a horse.",
    "video": "jingle-bells/jingle-bells-c01.mp4",
    "thumb": "jingle-bells/jingle-bells-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jingle Bells",
-     "subcaption": "Class 1: Listen and sway",
+     "subcaption": "Class 1: Trot like the sleigh horse",
      "durationSec": 7,
      "voice": "Hello again. Wave your fingers hello. Today's song is Jingle Bells.",
      "voiceId": "a53610b2acd2dd26",
      "voiceSec": 5.4
     },
     {
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 116,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "Dash",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "through",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "the",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Let's ride the snowy sleigh",
+     "parentCue": "child on your knees, trot gently",
+     "durationSec": 7,
+     "voice": "Let's ride the snowy sleigh. Grown-up, child on your knees, trot gently.",
+     "voiceId": "8bda40c622b6cc7e",
+     "voiceSec": 5.6
     },
     {
      "kind": "listen",
@@ -1951,146 +1985,6 @@
        "f": 1,
        "s": "night",
        "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Jin",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "gle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "bells",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "jin",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "gle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "bells",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "jin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "gle",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 4,
-       "f": 3,
-       "s": "way",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Oh",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 4,
-       "s": "fun",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "it",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "is",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ride",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -2125,65 +2019,53 @@
       {
        "lyric": "sleighing song tonight",
        "from": 41
-      },
-      {
-       "lyric": "Jingle bells, jingle bells",
-       "from": 46
-      },
-      {
-       "lyric": "jingle all the way",
-       "from": 52
-      },
-      {
-       "lyric": "Oh what fun it is to ride in a",
-       "from": 57
       }
      ],
-     "durationSec": 48,
+     "durationSec": 35,
      "voice": "Tap with the big circle. Tap, tap, tap.",
      "voiceId": "faf2ee285af584e0",
      "voiceSec": 3.23
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You trotted together!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "beat",
     "secondary": [
-     "beat",
+     "listening",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Periodicity (steady pulse)",
+    "parentLine": "Feeling something that comes again and again, evenly spaced"
    },
-   "parentPrompt": "Sit together at the piano. Sway side to side while the song plays.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Sit your child on your knees and trot gently on every beat, like a horse.",
+   "childAction": "Ride, clap and shake your hands like bells.",
+   "bridge": "The beat is the horse's hooves: clip, clop, clip, clop through the snow.",
+   "celebrate": "Today you practiced: feeling the steady beat, together."
   },
   {
    "id": "jingle-bells-c02",
    "index": 2,
-   "title": "Find the beat",
-   "goal": "Tap a steady beat while the grown-up plays the tune",
+   "title": "Hooves on the keys",
+   "goal": "Tap one steady tap for every beat while the grown-up plays the tune.",
    "type": "beat",
    "durationSec": 240,
-   "parentTip": "Any key is fine. Tap with your child's hand at first, then let go.",
+   "parentTip": "Rest your hand over your child's hand and tap together, then slowly let go.",
    "video": "jingle-bells/jingle-bells-c02.mp4",
    "thumb": "jingle-bells/jingle-bells-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jingle Bells",
-     "subcaption": "Class 2: Find the beat",
+     "subcaption": "Class 2: Hooves on the keys",
      "durationSec": 6,
      "voice": "Hello, music friends. Let's play Jingle Bells together.",
      "voiceId": "bc2acf51326afdb0",
@@ -2191,21 +2073,55 @@
     },
     {
      "kind": "say",
-     "caption": "Tap any key on the beat",
-     "parentCue": "You play the tune, your child taps the beat",
-     "durationSec": 8,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
+     "caption": "One beat, one clop",
+     "parentCue": "tap your child's shoulder on each beat",
+     "durationSec": 7,
+     "voice": "One beat, one clop. Grown-up, tap your child's shoulder on each beat.",
+     "voiceId": "153aa2a7b8a2a12e",
+     "voiceSec": 5.4
     },
     {
-     "kind": "say",
-     "caption": "Tap, tap, tap, like a heartbeat",
-     "parentCue": "Tap with your child first",
-     "durationSec": 7,
-     "voice": "Tap, tap, tap, like a heartbeat.",
-     "voiceId": "07ab7f7da2eb6f0e",
-     "voiceSec": 2.82
+     "kind": "beat",
+     "caption": "Jingle bells, jingle bells",
+     "parentCue": "Say 'one, two' on each 'jingle bells'",
+     "bpm": 84,
+     "leadInSec": 4.41,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Jingle bells, jingle bells. Tap the beat with me.",
+     "voiceId": "b67ac0cb4580ff6b",
+     "voiceSec": 4.01
     },
     {
      "kind": "beat",
@@ -3736,9 +3652,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -4336,69 +4252,6 @@
        "f": 3,
        "s": "way",
        "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Oh",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 4,
-       "s": "fun",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "it",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "is",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ride",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -4457,49 +4310,46 @@
       {
        "lyric": "jingle all the way",
        "from": 78
-      },
-      {
-       "lyric": "Oh what fun it is to ride in a",
-       "from": 83
       }
      ],
-     "durationSec": 63,
+     "durationSec": 59,
      "voice": "Tap any key on the beat.",
      "voiceId": "4802ab3c0193975b",
      "voiceSec": 2.05
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept the beat!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
     "primary": "beat",
     "secondary": [
+     "counting",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Periodicity (steady pulse)",
-    "parentLine": "Feeling something that repeats at an even time"
+    "concept": "One-to-one correspondence",
+    "parentLine": "One tap for each beat, no more, no less"
    },
-   "parentPrompt": "Any key is fine. Tap with your child's hand at first, then let go.",
-   "childAction": "Tap any key on every beat.",
-   "bridge": "The beat is a heartbeat: tap, tap, tap, never in a hurry.",
-   "celebrate": "Today you practiced keeping a steady beat and playing together."
+   "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+   "childAction": "Tap any key once for each beat. Any key is right.",
+   "bridge": "Each beat is one hoof in the snow; one tap for each clop.",
+   "celebrate": "Today you practiced: one tap for each beat."
   },
   {
    "id": "jingle-bells-c03",
    "index": 3,
    "title": "Bear low, bird high",
-   "goal": "Hear the difference between low and high sounds",
+   "goal": "Hear low and high sounds and tap the matching side of the piano.",
    "type": "high-low",
-   "durationSec": 207,
-   "parentTip": "Low keys are on the left, high keys on the right. Any key on the correct side counts.",
+   "durationSec": 203,
+   "parentTip": "Crouch and growl for the bear; stretch up tall and chirp for the bird.",
    "video": "jingle-bells/jingle-bells-c03.mp4",
    "thumb": "jingle-bells/jingle-bells-c03.jpg",
    "segments": [
@@ -4514,21 +4364,90 @@
     },
     {
      "kind": "say",
-     "caption": "Low keys sound like a big bear",
-     "parentCue": "Show the low end of the piano",
+     "caption": "Bear lives low, bird lives high",
+     "parentCue": "point left for the bear, right for the bird",
      "durationSec": 8,
-     "voice": "Low keys, on the left, sound like a big bear.",
-     "voiceId": "ded72c2c5908831d",
-     "voiceSec": 3.44
+     "voice": "The bear lives low. The bird lives high.",
+     "voiceId": "5ad6a8135978dbd0",
+     "voiceSec": 3.42
     },
     {
-     "kind": "say",
-     "caption": "High keys sound like a little bird",
-     "parentCue": "Show the high end of the piano",
-     "durationSec": 8,
-     "voice": "High keys, on the right, sound like a little bird.",
-     "voiceId": "89552428549ec22e",
-     "voiceSec": 3.29
+     "kind": "high_low",
+     "caption": "Bear! Big snowy bear",
+     "parentCue": "Growl together, then tap the left side",
+     "target": "low",
+     "bpm": 72,
+     "leadInSec": 4.36,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Big snowy bear. Tap down low, on the left.",
+     "voiceId": "f78e6f5efc6b3146",
+     "voiceSec": 3.96
+    },
+    {
+     "kind": "high_low",
+     "caption": "Bird! Tiny winter bird",
+     "parentCue": "Chirp together, then tap the right side",
+     "target": "high",
+     "bpm": 80,
+     "leadInSec": 3.85,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Tiny winter bird. Tap up high, on the right.",
+     "voiceId": "c5da23bb414532ec",
+     "voiceSec": 3.45
     },
     {
      "kind": "high_low",
@@ -4539,37 +4458,32 @@
      "leadInSec": 5.51,
      "notes": [
       {
-       "p": "G3",
+       "p": "C3",
        "d": 1,
-       "f": 1,
        "s": "Dash",
        "who": "parent"
       },
       {
-       "p": "E4",
+       "p": "E3",
        "d": 1,
-       "f": 5,
        "s": "ing",
        "who": "parent"
       },
       {
-       "p": "D4",
+       "p": "D3",
        "d": 1,
-       "f": 4,
        "s": "through",
        "who": "parent"
       },
       {
-       "p": "C4",
+       "p": "C3",
        "d": 1,
-       "f": 3,
        "s": "the",
        "who": "parent"
       },
       {
-       "p": "G3",
+       "p": "C3",
        "d": 3,
-       "f": 1,
        "s": "snow",
        "who": "parent"
       }
@@ -4644,37 +4558,32 @@
      "leadInSec": 4.22,
      "notes": [
       {
-       "p": "G3",
+       "p": "C3",
        "d": 1,
-       "f": 1,
        "s": "Dash",
        "who": "parent"
       },
       {
-       "p": "E4",
+       "p": "E3",
        "d": 1,
-       "f": 5,
        "s": "ing",
        "who": "parent"
       },
       {
-       "p": "D4",
+       "p": "D3",
        "d": 1,
-       "f": 4,
        "s": "through",
        "who": "parent"
       },
       {
-       "p": "C4",
+       "p": "C3",
        "d": 1,
-       "f": 3,
        "s": "the",
        "who": "parent"
       },
       {
-       "p": "G3",
+       "p": "C3",
        "d": 3,
-       "f": 1,
        "s": "snow",
        "who": "parent"
       }
@@ -4758,37 +4667,32 @@
      "leadInSec": 5.51,
      "notes": [
       {
-       "p": "G3",
+       "p": "C3",
        "d": 1,
-       "f": 1,
        "s": "Dash",
        "who": "parent"
       },
       {
-       "p": "E4",
+       "p": "E3",
        "d": 1,
-       "f": 5,
        "s": "ing",
        "who": "parent"
       },
       {
-       "p": "D4",
+       "p": "D3",
        "d": 1,
-       "f": 4,
        "s": "through",
        "who": "parent"
       },
       {
-       "p": "C4",
+       "p": "C3",
        "d": 1,
-       "f": 3,
        "s": "the",
        "who": "parent"
       },
       {
-       "p": "G3",
+       "p": "C3",
        "d": 3,
-       "f": 1,
        "s": "snow",
        "who": "parent"
       }
@@ -4858,9 +4762,9 @@
      "kind": "praise",
      "caption": "Great listening!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "high_low",
@@ -4871,37 +4775,32 @@
      "leadInSec": 4.3,
      "notes": [
       {
-       "p": "G3",
+       "p": "C3",
        "d": 1,
-       "f": 1,
        "s": "Dash",
        "who": "parent"
       },
       {
-       "p": "E4",
+       "p": "E3",
        "d": 1,
-       "f": 5,
        "s": "ing",
        "who": "parent"
       },
       {
-       "p": "D4",
+       "p": "D3",
        "d": 1,
-       "f": 4,
        "s": "through",
        "who": "parent"
       },
       {
-       "p": "C4",
+       "p": "C3",
        "d": 1,
-       "f": 3,
        "s": "the",
        "who": "parent"
       },
       {
-       "p": "G3",
+       "p": "C3",
        "d": 3,
-       "f": 1,
        "s": "snow",
        "who": "parent"
       }
@@ -4971,9 +4870,9 @@
      "kind": "praise",
      "caption": "You know high and low!",
      "durationSec": 5,
-     "voice": "You know high and low now.",
-     "voiceId": "4389997f0bd28169",
-     "voiceSec": 1.88
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "high_low",
@@ -4984,37 +4883,32 @@
      "leadInSec": 4.22,
      "notes": [
       {
-       "p": "G3",
+       "p": "C3",
        "d": 1,
-       "f": 1,
        "s": "Dash",
        "who": "parent"
       },
       {
-       "p": "E4",
+       "p": "E3",
        "d": 1,
-       "f": 5,
        "s": "ing",
        "who": "parent"
       },
       {
-       "p": "D4",
+       "p": "D3",
        "d": 1,
-       "f": 4,
        "s": "through",
        "who": "parent"
       },
       {
-       "p": "C4",
+       "p": "C3",
        "d": 1,
-       "f": 3,
        "s": "the",
        "who": "parent"
       },
       {
-       "p": "G3",
+       "p": "C3",
        "d": 3,
-       "f": 1,
        "s": "snow",
        "who": "parent"
       }
@@ -5036,7 +4930,7 @@
      "parentCue": "Tap any high key",
      "target": "high",
      "bpm": 116,
-     "leadInSec": 4.47,
+     "leadInSec": 3.63,
      "notes": [
       {
        "p": "G4",
@@ -5075,10 +4969,10 @@
        "from": 0
       }
      ],
-     "durationSec": 10,
-     "voice": "Here comes the little bird. Tap a high key, up on the right.",
-     "voiceId": "fddf06316df8346e",
-     "voiceSec": 4.07
+     "durationSec": 9,
+     "voice": "Listen, a little bird. Tap up high.",
+     "voiceId": "0908c1595346fc80",
+     "voiceSec": 3.23
     },
     {
      "kind": "say",
@@ -5095,40 +4989,35 @@
      "parentCue": "Tap any low key",
      "target": "low",
      "bpm": 116,
-     "leadInSec": 5.51,
+     "leadInSec": 3.56,
      "notes": [
       {
-       "p": "G3",
+       "p": "C3",
        "d": 1,
-       "f": 1,
        "s": "Dash",
        "who": "parent"
       },
       {
-       "p": "E4",
+       "p": "E3",
        "d": 1,
-       "f": 5,
        "s": "ing",
        "who": "parent"
       },
       {
-       "p": "D4",
+       "p": "D3",
        "d": 1,
-       "f": 4,
        "s": "through",
        "who": "parent"
       },
       {
-       "p": "C4",
+       "p": "C3",
        "d": 1,
-       "f": 3,
        "s": "the",
        "who": "parent"
       },
       {
-       "p": "G3",
+       "p": "C3",
        "d": 3,
-       "f": 1,
        "s": "snow",
        "who": "parent"
       }
@@ -5139,10 +5028,10 @@
        "from": 0
       }
      ],
-     "durationSec": 11,
-     "voice": "Here comes the big bear. Tap a low key, down on the left.",
-     "voiceId": "12a8fe0014ff7cb2",
-     "voiceSec": 5.11
+     "durationSec": 9,
+     "voice": "Low and deep, like a bear. Tap down low.",
+     "voiceId": "01122bae862343ea",
+     "voiceSec": 3.16
     },
     {
      "kind": "high_low",
@@ -5198,9 +5087,9 @@
      "kind": "praise",
      "caption": "Great listening!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "high_low",
@@ -5208,40 +5097,35 @@
      "parentCue": "Tap any low key",
      "target": "low",
      "bpm": 116,
-     "leadInSec": 4.3,
+     "leadInSec": 4.22,
      "notes": [
       {
-       "p": "G3",
+       "p": "C3",
        "d": 1,
-       "f": 1,
        "s": "Dash",
        "who": "parent"
       },
       {
-       "p": "E4",
+       "p": "E3",
        "d": 1,
-       "f": 5,
        "s": "ing",
        "who": "parent"
       },
       {
-       "p": "D4",
+       "p": "D3",
        "d": 1,
-       "f": 4,
        "s": "through",
        "who": "parent"
       },
       {
-       "p": "C4",
+       "p": "C3",
        "d": 1,
-       "f": 3,
        "s": "the",
        "who": "parent"
       },
       {
-       "p": "G3",
+       "p": "C3",
        "d": 3,
-       "f": 1,
        "s": "snow",
        "who": "parent"
       }
@@ -5253,116 +5137,50 @@
       }
      ],
      "durationSec": 10,
-     "voice": "Big bear steps. Tap low, on the left side.",
-     "voiceId": "610d2546ef1c0c22",
-     "voiceSec": 3.9
-    },
-    {
-     "kind": "high_low",
-     "caption": "Little bird song",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 116,
-     "leadInSec": 3.41,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "s": "Dash",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "s": "through",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 3,
-       "s": "snow",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Dashing through the snow",
-       "from": 0
-      }
-     ],
-     "durationSec": 9,
-     "voice": "The bird is here. High keys, on the right.",
-     "voiceId": "99715525943a1f67",
-     "voiceSec": 3.01
+     "voice": "Listen, a big bear. Tap down low.",
+     "voiceId": "12ea2dbc14ca23b5",
+     "voiceSec": 3.82
     },
     {
      "kind": "praise",
-     "caption": "You know high and low!",
+     "caption": "Great bear, great bird!",
      "durationSec": 5,
-     "voice": "You know high and low now.",
-     "voiceId": "4389997f0bd28169",
-     "voiceSec": 1.88
-    },
-    {
-     "kind": "say",
-     "caption": "Big breath in and out",
-     "parentCue": "Breathe slowly together",
-     "durationSec": 4,
-     "voice": "Big breath in, and out.",
-     "voiceId": "67a43f157c55d975",
-     "voiceSec": 2.01
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
     "primary": "pitch",
     "secondary": [
-     "space"
+     "space",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Spatial mapping of pitch",
+    "concept": "Spatial mapping (pitch to place)",
     "parentLine": "Low sounds live on the left, high sounds on the right"
    },
-   "parentPrompt": "Low keys are on the left, high keys on the right. Any key on the correct side counts.",
-   "childAction": "Tap low for the bear, high for the bird.",
-   "bridge": "Low notes are heavy bears on the left; high notes are little birds.",
-   "celebrate": "Today you practiced hearing high and low and finding the way on the keys."
+   "parentPrompt": "Crouch and growl for the bear; stretch up tall and chirp for the bird.",
+   "childAction": "Bear sound: tap the left side. Bird sound: tap the right.",
+   "bridge": "Low notes are a heavy bear in the snow; high notes are a tiny bird.",
+   "celebrate": "Today you practiced: hearing high and low sounds."
   },
   {
    "id": "jingle-bells-c04",
    "index": 4,
-   "title": "Loud and soft",
-   "goal": "Tap the beat loudly, then softly",
+   "title": "Big bells, tiny bells",
+   "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
    "type": "loud-soft",
-   "durationSec": 232,
-   "parentTip": "Loud means strong, not banging. Whisper when it's time to play soft.",
+   "durationSec": 230,
+   "parentTip": "Make strong arms for loud taps; whisper and tiptoe your fingers for soft ones.",
    "video": "jingle-bells/jingle-bells-c04.mp4",
    "thumb": "jingle-bells/jingle-bells-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jingle Bells",
-     "subcaption": "Class 4: Loud and soft",
+     "subcaption": "Class 4: Big bells, tiny bells",
      "durationSec": 6,
      "voice": "Hello, music friends. Let's play Jingle Bells together.",
      "voiceId": "bc2acf51326afdb0",
@@ -5370,21 +5188,12 @@
     },
     {
      "kind": "say",
-     "caption": "Let's play loud and soft",
-     "parentCue": "Show a big tap and a tiny tap",
-     "durationSec": 7,
-     "voice": "Let's play loud and soft.",
-     "voiceId": "38969fa644979c6c",
-     "voiceSec": 2.07
-    },
-    {
-     "kind": "say",
-     "caption": "Loud like a drum, soft like a whisper",
-     "parentCue": "Whisper the word soft",
-     "durationSec": 7,
-     "voice": "Loud like a drum. Soft like a whisper.",
-     "voiceId": "e6a88f8294c33b42",
-     "voiceSec": 3.13
+     "caption": "Big bells, tiny snowflakes",
+     "parentCue": "loud means strong arms, not banging",
+     "durationSec": 8,
+     "voice": "Big bells, tiny snowflakes. Grown-up, loud means strong arms, not banging.",
+     "voiceId": "fc69948a7a158e1e",
+     "voiceSec": 6.49
     },
     {
      "kind": "beat",
@@ -7490,6 +7299,69 @@
        "f": 3,
        "s": "way",
        "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Oh",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "what",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 4,
+       "s": "fun",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "it",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "is",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ride",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -7548,52 +7420,57 @@
       {
        "lyric": "jingle all the way",
        "from": 78
+      },
+      {
+       "lyric": "Oh what fun it is to ride in a",
+       "from": 83
       }
      ],
-     "durationSec": 59,
+     "durationSec": 63,
      "voice": "Tap any key on the beat.",
      "voiceId": "4802ab3c0193975b",
      "voiceSec": 2.05
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found loud and soft!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "You found loud and soft.",
+     "voiceId": "1a0910d4c1938893",
+     "voiceSec": 2.03
     }
    ],
    "skill": {
     "primary": "expression",
     "secondary": [
+     "beat",
      "together"
     ]
    },
    "mathTarget": {
-    "concept": "Magnitude contrast",
-    "parentLine": "Telling a big sound from a small one"
+    "concept": "Opposites (magnitude contrast)",
+    "parentLine": "Noticing big and small: the same tap, more or less"
    },
-   "parentPrompt": "Loud means strong, not banging. Whisper when it's time to play soft.",
-   "childAction": "Tap loud like a drum, soft like a whisper.",
-   "bridge": "Loud is a big drum; soft is a whisper on the keys.",
-   "celebrate": "Today you practiced loud and soft, fast and slow and playing together."
+   "parentPrompt": "Make strong arms for loud taps; whisper and tiptoe your fingers for soft ones.",
+   "childAction": "Loud: big bell taps. Soft: tiny tinkly taps.",
+   "bridge": "Loud taps are a big bell ringing; soft taps are snowflakes landing.",
+   "celebrate": "Today you practiced: playing loud and soft."
   },
   {
    "id": "jingle-bells-c05",
    "index": 5,
-   "title": "Slow and fast",
-   "goal": "Follow the music when it goes slow and fast",
+   "title": "Slow horse, fast horse",
+   "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
    "type": "fast-slow",
-   "durationSec": 211,
-   "parentTip": "Let the tempo lead your child. Slow down if taps get wild, then try fast again.",
+   "durationSec": 210,
+   "parentTip": "Trot your child on your knees, slowly then quickly, matching the music.",
    "video": "jingle-bells/jingle-bells-c05.mp4",
    "thumb": "jingle-bells/jingle-bells-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jingle Bells",
-     "subcaption": "Class 5: Slow and fast",
+     "subcaption": "Class 5: Slow horse, fast horse",
      "durationSec": 8,
      "voice": "It's music time. Today we play Jingle Bells. Grown-up, sit side by side.",
      "voiceId": "485c88805fed6dd8",
@@ -7601,21 +7478,98 @@
     },
     {
      "kind": "say",
-     "caption": "Songs can go slow or fast",
-     "parentCue": "Move your arms slowly, then quickly",
-     "durationSec": 7,
-     "voice": "Songs can go slow, or fast.",
-     "voiceId": "aafd9004389208dd",
-     "voiceSec": 2.4
+     "caption": "Turtle slow, bunny fast",
+     "parentCue": "slow down if the taps get wild",
+     "durationSec": 6,
+     "voice": "Slow like a turtle, then fast like a bunny.",
+     "voiceId": "5adbb272412d293f",
+     "voiceSec": 2.9
     },
     {
-     "kind": "say",
-     "caption": "Slow like a turtle, fast like a bunny",
-     "parentCue": "Walk your fingers slowly, then fast",
-     "durationSec": 8,
-     "voice": "Slow like a turtle. Fast like a bunny.",
-     "voiceId": "e4f86f78454f08b3",
-     "voiceSec": 3.02
+     "kind": "beat",
+     "caption": "Turtle time: slow sleigh",
+     "parentCue": "Tap together, slow and heavy",
+     "bpm": 60,
+     "leadInSec": 5.98,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Turtle time, a slow sleigh. Slow, heavy taps, like a sleepy turtle.",
+     "voiceId": "823f890c0fbea98e",
+     "voiceSec": 5.58
+    },
+    {
+     "kind": "beat",
+     "caption": "Bunny time: fast sleigh!",
+     "parentCue": "Same tune, now quick and light",
+     "bpm": 112,
+     "leadInSec": 5.58,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Bunny time, a fast sleigh. Quick, light taps, like a hopping bunny.",
+     "voiceId": "140d060e79c33485",
+     "voiceSec": 5.18
     },
     {
      "kind": "beat",
@@ -8357,19 +8311,19 @@
     },
     {
      "kind": "say",
-     "caption": "Whole song, slow",
-     "parentCue": "Play the song slowly",
-     "durationSec": 5,
-     "voice": "Now the whole song, slow like a turtle.",
-     "voiceId": "57c3e243105435c5",
-     "voiceSec": 2.86
+     "caption": "Whole song, fast!",
+     "parentCue": "Play it a bit faster",
+     "durationSec": 6,
+     "voice": "Now the whole song, quick like a bunny.",
+     "voiceId": "0b07ab84bbeed5da",
+     "voiceSec": 2.25
     },
     {
      "kind": "beat",
-     "caption": "Slow, slow, slow",
-     "parentCue": "Slow, like a sleepy turtle",
-     "bpm": 75,
-     "leadInSec": 2.27,
+     "caption": "Fast, fast, fast!",
+     "parentCue": "Quick, like a running bunny",
+     "bpm": 150,
+     "leadInSec": 2.43,
      "notes": [
       {
        "p": "G3",
@@ -9117,50 +9071,214 @@
        "from": 92
       }
      ],
-     "durationSec": 101,
-     "voice": "Slow, slow, slow.",
-     "voiceId": "48d02636f969aeb1",
-     "voiceSec": 1.87
+     "durationSec": 53,
+     "voice": "Fast, fast, fast.",
+     "voiceId": "6ad0ee14bbd640bd",
+     "voiceSec": 2.03
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Speedy fingers!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Quick little fingers.",
+     "voiceId": "07d002604f064b53",
+     "voiceSec": 1.45
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap the beat",
+     "parentCue": "You play, your child taps",
+     "bpm": 116,
+     "leadInSec": 2.45,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "Dash",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "through",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 3,
+       "f": 1,
+       "s": "snow",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "In",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "one",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "horse",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "pen",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 3,
+       "f": 1,
+       "s": "sleigh",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 1,
+       "s": "O'er",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "fields",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 3,
+       "f": 1,
+       "s": "go",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Dashing through the snow",
+       "from": 0
+      },
+      {
+       "lyric": "In a one-horse open sleigh",
+       "from": 5
+      },
+      {
+       "lyric": "O'er the fields we go",
+       "from": 12
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Tap any key on the beat.",
+     "voiceId": "4802ab3c0193975b",
+     "voiceSec": 2.05
+    },
+    {
+     "kind": "praise",
+     "caption": "You followed the music!",
+     "durationSec": 5,
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
     "primary": "expression",
     "secondary": [
-     "beat"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Rate (fast versus slow)",
-    "parentLine": "Matching the speed of a pattern"
+    "concept": "Invariance under tempo change",
+    "parentLine": "Same tune, same shape, only the speed changes"
    },
-   "parentPrompt": "Let the tempo lead your child. Slow down if taps get wild, then try fast again.",
-   "childAction": "Tap fast like a rabbit, slow like a turtle.",
-   "bridge": "Fast taps are rabbit hops; slow taps are turtle steps.",
-   "celebrate": "Today you practiced loud and soft, fast and slow and keeping a steady beat."
+   "parentPrompt": "Trot your child on your knees, slowly then quickly, matching the music.",
+   "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+   "bridge": "Slow taps are a tired horse walking; fast taps are a horse galloping.",
+   "celebrate": "Today you practiced: following slow and fast music."
   },
   {
    "id": "jingle-bells-c06",
    "index": 6,
-   "title": "Stop and go",
-   "goal": "Tap when the music plays and freeze when it stops",
+   "title": "Whoa, horse! Freeze!",
+   "goal": "Tap while the music plays and freeze when it stops.",
    "type": "stop-go",
-   "durationSec": 215,
-   "parentTip": "Make freezing silly and fun. Holding still is a big skill for little ones.",
+   "durationSec": 208,
+   "parentTip": "Say 'whoa!' and freeze with a funny face when the music stops; cheer when it restarts.",
    "video": "jingle-bells/jingle-bells-c06.mp4",
    "thumb": "jingle-bells/jingle-bells-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jingle Bells",
-     "subcaption": "Class 6: Stop and go",
+     "subcaption": "Class 6: Whoa, horse! Freeze!",
      "durationSec": 8,
      "voice": "It's music time. Today we play Jingle Bells. Grown-up, sit side by side.",
      "voiceId": "485c88805fed6dd8",
@@ -9168,21 +9286,12 @@
     },
     {
      "kind": "say",
-     "caption": "When the music stops, we freeze!",
-     "parentCue": "Freeze like a statue together",
+     "caption": "Go, horse, go! Whoa, freeze!",
+     "parentCue": "make your freeze silly, like a statue",
      "durationSec": 7,
-     "voice": "When the music stops, we freeze.",
-     "voiceId": "437bd8027fc8f488",
-     "voiceSec": 2.3
-    },
-    {
-     "kind": "say",
-     "caption": "Go means tap, stop means freeze",
-     "parentCue": "Practice one freeze now",
-     "durationSec": 7,
-     "voice": "Go means tap. Stop means freeze.",
-     "voiceId": "b3994b162070ad3a",
-     "voiceSec": 2.82
+     "voice": "Go, horse, go! Whoa, freeze. Grown-up, make your freeze silly, like a statue.",
+     "voiceId": "db042ec7edaf665b",
+     "voiceSec": 5.86
     },
     {
      "kind": "beat",
@@ -10250,7 +10359,7 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great whoa and freeze!",
      "durationSec": 5,
      "voice": "Great job, you two.",
      "voiceId": "78285fece9f091ba",
@@ -10260,55 +10369,131 @@
    "skill": {
     "primary": "listening",
     "secondary": [
-     "beat"
+     "beat",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Inhibitory control (start and stop)",
-    "parentLine": "Stopping and starting exactly with the sound"
+    "concept": "Cause and effect (sound, silence)",
+    "parentLine": "When the sound stops, the hands stop too"
    },
-   "parentPrompt": "Make freezing silly and fun. Holding still is a big skill for little ones.",
-   "childAction": "Play when the music goes, freeze when it stops.",
-   "bridge": "Music on, hands dance; music off, hands freeze like statues.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Say 'whoa!' and freeze with a funny face when the music stops; cheer when it restarts.",
+   "childAction": "Tap while music plays. Freeze like a statue when it stops.",
+   "bridge": "Music on, the horse trots; music off, 'whoa', the sleigh stands still.",
+   "celebrate": "Today you practiced: listening for stop and go."
   },
   {
    "id": "jingle-bells-c07",
    "index": 7,
-   "title": "Tap the words",
-   "goal": "Tap the rhythm of the words, one tap per sung word",
+   "title": "Jin-gle: two taps",
+   "goal": "Tap once for each piece of a word, like jin-gle, two taps.",
    "type": "rhythm",
-   "durationSec": 214,
-   "parentTip": "Say the words together while tapping. Long words get one tap per piece.",
+   "durationSec": 220,
+   "parentTip": "Say the words slowly and tap your child's hand once for each word piece.",
    "video": "jingle-bells/jingle-bells-c07.mp4",
    "thumb": "jingle-bells/jingle-bells-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jingle Bells",
-     "subcaption": "Class 7: Tap the words",
+     "subcaption": "Class 7: Jin-gle: two taps",
      "durationSec": 7,
      "voice": "Hi there. It's music time. Today's song is Jingle Bells.",
      "voiceId": "a8111e6f54a8d6c5",
      "voiceSec": 5.13
     },
     {
-     "kind": "say",
-     "caption": "Tap with every word!",
-     "parentCue": "One tap for each sung word",
-     "durationSec": 6,
-     "voice": "Tap once for every word.",
-     "voiceId": "46e4df539376c9a8",
-     "voiceSec": 1.91
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 116,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "Dash",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "through",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "the",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
-     "caption": "The beat walks, the words dance",
-     "parentCue": "Clap the words of the first line",
-     "durationSec": 7,
-     "voice": "The beat walks. The words dance.",
-     "voiceId": "22be4397499eaae2",
-     "voiceSec": 2.93
+     "caption": "Jin-gle: one, two taps",
+     "parentCue": "say jin-gle slowly and tap twice",
+     "durationSec": 8,
+     "voice": "Jin-gle: one, two taps. Grown-up, say jin-gle slowly and tap twice.",
+     "voiceId": "88e526bbe098e1ef",
+     "voiceSec": 6.69
+    },
+    {
+     "kind": "listen",
+     "caption": "Jin-gle bells, jin-gle bells",
+     "parentCue": "Say each word piece with each light",
+     "bpm": 66,
+     "leadInSec": 5.37,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Jingle bells, jingle bells. Clap each little word piece.",
+     "voiceId": "05bedec47ec2cf3a",
+     "voiceSec": 4.97
     },
     {
      "kind": "together",
@@ -11061,9 +11246,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -11834,60 +12019,44 @@
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "Jin-gle, two taps!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
      "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "Big breath in and out",
-     "parentCue": "Breathe slowly together",
-     "durationSec": 8,
-     "voice": "Big breath in, and out.",
-     "voiceId": "67a43f157c55d975",
-     "voiceSec": 2.01
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
     }
    ],
    "skill": {
-    "primary": "patterns",
+    "primary": "counting",
     "secondary": [
+     "listening",
      "beat"
     ]
    },
    "mathTarget": {
-    "concept": "Rhythmic grouping",
-    "parentLine": "Hearing long and short sounds inside the words"
+    "concept": "One-to-one correspondence (syllable to tap)",
+    "parentLine": "One tap for each piece of a word you sing"
    },
-   "parentPrompt": "Say the words together while tapping. Long words get one tap per piece.",
-   "childAction": "Tap once for every part of a word.",
-   "bridge": "Every word part is one footstep on the keys.",
-   "celebrate": "Today you practiced spotting patterns and keeping a steady beat."
+   "parentPrompt": "Say the words slowly and tap your child's hand once for each word piece.",
+   "childAction": "Jin-gle: two taps. Bells: one big tap.",
+   "bridge": "Each word piece is one hoofprint in the snow: jin, gle, bells.",
+   "celebrate": "Today you practiced: one tap for each word piece."
   },
   {
    "id": "jingle-bells-c08",
    "index": 8,
-   "title": "Music games mix",
-   "goal": "Switch quickly between the games: high and low, loud and soft, fast and slow",
+   "title": "Guess the sleigh game",
+   "goal": "Listen and switch between games: high and low, loud and soft, fast and slow.",
    "type": "review",
-   "durationSec": 210,
-   "parentTip": "Let your child guess the game before the picture shows. Guessing is listening.",
+   "durationSec": 212,
+   "parentTip": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
    "video": "jingle-bells/jingle-bells-c08.mp4",
    "thumb": "jingle-bells/jingle-bells-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jingle Bells",
-     "subcaption": "Class 8: Music games mix",
+     "subcaption": "Class 8: Guess the sleigh game",
      "durationSec": 7,
      "voice": "Hi, everyone. Hands on your knees. Today we play Jingle Bells.",
      "voiceId": "dba6ed07239de039",
@@ -11895,21 +12064,12 @@
     },
     {
      "kind": "say",
-     "caption": "Game time: listen and choose!",
-     "parentCue": "Mix all the games you know",
+     "caption": "What game is it?",
+     "parentCue": "let your child guess first; any guess is fine",
      "durationSec": 7,
-     "voice": "Game time. Listen, then choose.",
-     "voiceId": "2ff81f35a4f07fd3",
-     "voiceSec": 3.0
-    },
-    {
-     "kind": "say",
-     "caption": "Listen first, then tap",
-     "parentCue": "Let your child guess the game",
-     "durationSec": 6,
-     "voice": "Listen first, then tap.",
-     "voiceId": "221cbf263012916e",
-     "voiceSec": 2.5
+     "voice": "What game is it? Listen and see.",
+     "voiceId": "12fd836345ab7a3f",
+     "voiceSec": 2.67
     },
     {
      "kind": "high_low",
@@ -11920,37 +12080,32 @@
      "leadInSec": 2.75,
      "notes": [
       {
-       "p": "G3",
+       "p": "C3",
        "d": 1,
-       "f": 1,
        "s": "Dash",
        "who": "parent"
       },
       {
-       "p": "E4",
+       "p": "E3",
        "d": 1,
-       "f": 5,
        "s": "ing",
        "who": "parent"
       },
       {
-       "p": "D4",
+       "p": "D3",
        "d": 1,
-       "f": 4,
        "s": "through",
        "who": "parent"
       },
       {
-       "p": "C4",
+       "p": "C3",
        "d": 1,
-       "f": 3,
        "s": "the",
        "who": "parent"
       },
       {
-       "p": "G3",
+       "p": "C3",
        "d": 3,
-       "f": 1,
        "s": "snow",
        "who": "parent"
       }
@@ -12260,37 +12415,32 @@
      "leadInSec": 2.75,
      "notes": [
       {
-       "p": "G3",
+       "p": "C3",
        "d": 1,
-       "f": 1,
        "s": "Dash",
        "who": "parent"
       },
       {
-       "p": "E4",
+       "p": "E3",
        "d": 1,
-       "f": 5,
        "s": "ing",
        "who": "parent"
       },
       {
-       "p": "D4",
+       "p": "D3",
        "d": 1,
-       "f": 4,
        "s": "through",
        "who": "parent"
       },
       {
-       "p": "C4",
+       "p": "C3",
        "d": 1,
-       "f": 3,
        "s": "the",
        "who": "parent"
       },
       {
-       "p": "G3",
+       "p": "C3",
        "d": 3,
-       "f": 1,
        "s": "snow",
        "who": "parent"
       }
@@ -12533,9 +12683,9 @@
      "kind": "praise",
      "caption": "You know all the games!",
      "durationSec": 5,
-     "voice": "You played every game.",
-     "voiceId": "d6aa38b98b122671",
-     "voiceSec": 1.8
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "beat",
@@ -12600,37 +12750,32 @@
      "leadInSec": 2.75,
      "notes": [
       {
-       "p": "G3",
+       "p": "C3",
        "d": 1,
-       "f": 1,
        "s": "Dash",
        "who": "parent"
       },
       {
-       "p": "E4",
+       "p": "E3",
        "d": 1,
-       "f": 5,
        "s": "ing",
        "who": "parent"
       },
       {
-       "p": "D4",
+       "p": "D3",
        "d": 1,
-       "f": 4,
        "s": "through",
        "who": "parent"
       },
       {
-       "p": "C4",
+       "p": "C3",
        "d": 1,
-       "f": 3,
        "s": "the",
        "who": "parent"
       },
       {
-       "p": "G3",
+       "p": "C3",
        "d": 3,
-       "f": 1,
        "s": "snow",
        "who": "parent"
       }
@@ -12873,9 +13018,9 @@
      "kind": "praise",
      "caption": "You know all the games!",
      "durationSec": 5,
-     "voice": "You played every game.",
-     "voiceId": "d6aa38b98b122671",
-     "voiceSec": 1.8
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "beat",
@@ -12940,6 +13085,56 @@
      "leadInSec": 2.75,
      "notes": [
       {
+       "p": "C3",
+       "d": 1,
+       "s": "Dash",
+       "who": "parent"
+      },
+      {
+       "p": "E3",
+       "d": 1,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D3",
+       "d": 1,
+       "s": "through",
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 1,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 3,
+       "s": "snow",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Dashing through the snow",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen. Bear or bird?",
+     "voiceId": "a19b0e215608835e",
+     "voiceSec": 2.35
+    },
+    {
+     "kind": "beat",
+     "caption": "Loud taps!",
+     "parentCue": "Tap strong, not hard",
+     "dynamic": "loud",
+     "bpm": 116,
+     "leadInSec": 2.51,
+     "notes": [
+      {
        "p": "G3",
        "d": 1,
        "f": 1,
@@ -12982,71 +13177,104 @@
       }
      ],
      "durationSec": 8,
-     "voice": "Listen. Bear or bird?",
-     "voiceId": "a19b0e215608835e",
-     "voiceSec": 2.35
+     "voice": "Loud taps, like a drum.",
+     "voiceId": "866bdfe59808cd7c",
+     "voiceSec": 2.11
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great listening ears!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
-    "primary": "patterns",
+    "primary": "listening",
     "secondary": [
-     "listening"
+     "pitch",
+     "expression"
     ]
    },
    "mathTarget": {
-    "concept": "Retrieval practice",
-    "parentLine": "Bringing back games from earlier classes"
+    "concept": "Classification (sorting by feature)",
+    "parentLine": "Sorting each sound: high or low, loud or soft?"
    },
-   "parentPrompt": "Let your child guess the game before the picture shows. Guessing is listening.",
-   "childAction": "Play the favourite games again.",
-   "bridge": "Each game is a door you already know how to open.",
-   "celebrate": "Today you practiced spotting patterns and listening and remembering."
+   "parentPrompt": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
+   "childAction": "Guess the game, then tap high, low, loud, soft, slow or fast.",
+   "bridge": "Every sound wears a costume: bear, bird, big bell, snowflake, turtle or bunny.",
+   "celebrate": "Today you practiced: telling sounds apart and switching games."
   },
   {
    "id": "jingle-bells-c09",
    "index": 9,
-   "title": "Play together",
-   "goal": "Play the song together, grown-up on the tune, child on the beat",
+   "title": "Sleigh ride duet",
+   "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
    "type": "together",
-   "durationSec": 231,
-   "parentTip": "Follow your child's lead. If they stop to listen, keep playing and smile.",
+   "durationSec": 230,
+   "parentTip": "Play the tune and watch your child; if they stop, keep playing and smile.",
    "video": "jingle-bells/jingle-bells-c09.mp4",
    "thumb": "jingle-bells/jingle-bells-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jingle Bells",
-     "subcaption": "Class 9: Play together",
+     "subcaption": "Class 9: Sleigh ride duet",
      "durationSec": 7,
      "voice": "Hello again. Wave your fingers hello. Today's song is Jingle Bells.",
      "voiceId": "a53610b2acd2dd26",
      "voiceSec": 5.4
     },
     {
-     "kind": "say",
-     "caption": "Let's play together",
-     "parentCue": "You play the tune, your child taps along",
-     "durationSec": 6,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "kind": "beat",
+     "caption": "Warm-up taps",
+     "parentCue": "Tap any key together",
+     "bpm": 116,
+     "leadInSec": 4.96,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "Dash",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "through",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "the",
+       "who": "parent"
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Warm-up time. Tap any key with me. Tap, tap, tap.",
+     "voiceId": "b7af9b6c01d96258",
+     "voiceSec": 4.56
     },
     {
      "kind": "say",
-     "caption": "Sing, tap and smile",
-     "parentCue": "Sing the words while you play",
+     "caption": "I play, you tap",
+     "parentCue": "sit side by side at the piano",
      "durationSec": 6,
-     "voice": "Sing, tap, and smile.",
-     "voiceId": "10b3a90e8c14f1b5",
-     "voiceSec": 1.91
+     "voice": "I play the song. You tap along.",
+     "voiceId": "1cc501382f86fc32",
+     "voiceSec": 2.88
     },
     {
      "kind": "together",
@@ -14577,9 +14805,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -15100,48 +15328,6 @@
        "f": 5,
        "s": "hey",
        "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Jin",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "gle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "bells",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "jin",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "gle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "bells",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -15192,56 +15378,53 @@
       {
        "lyric": "one-horse open sleigh, hey!",
        "from": 66
-      },
-      {
-       "lyric": "Jingle bells, jingle bells",
-       "from": 72
       }
      ],
-     "durationSec": 56,
+     "durationSec": 52,
      "voice": "Any key is fine. Tap when the circle grows.",
      "voiceId": "015b37b18f728b6c",
      "voiceSec": 3.86
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "What a duet together!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "beat"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping time with another person"
+    "concept": "Interlocking parts (two roles)",
+    "parentLine": "Two different jobs fit together to make one song"
    },
-   "parentPrompt": "Follow your child's lead. If they stop to listen, keep playing and smile.",
-   "childAction": "Play along with your grown-up.",
-   "bridge": "Two players, one song, like walking in step.",
-   "celebrate": "Today you practiced playing together and keeping a steady beat."
+   "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+   "childAction": "Tap the beat on any key while your grown-up plays the tune.",
+   "bridge": "The tune is the sleigh; your beat is the horse that pulls it.",
+   "celebrate": "Today you practiced: playing one song together, two jobs."
   },
   {
    "id": "jingle-bells-c10",
    "index": 10,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Sleigh concert for teddy",
+   "goal": "Play the whole song from start to end, then cheer and bow together.",
    "type": "concert",
-   "durationSec": 235,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 234,
+   "parentTip": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
    "video": "jingle-bells/jingle-bells-c10.mp4",
    "thumb": "jingle-bells/jingle-bells-c10.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Jingle Bells",
-     "subcaption": "Class 10: Concert time",
+     "subcaption": "Class 10: Sleigh concert for teddy",
      "durationSec": 7,
      "voice": "Hello again. Wave your fingers hello. Today's song is Jingle Bells.",
      "voiceId": "a53610b2acd2dd26",
@@ -15249,21 +15432,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "Concert time for teddy!",
+     "parentCue": "put teddy in front as the audience",
+     "durationSec": 6,
+     "voice": "Concert time. Teddy is listening.",
+     "voiceId": "5981e6766e72b3d1",
+     "voiceSec": 2.73
     },
     {
      "kind": "beat",
@@ -16802,9 +16976,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -17367,6 +17541,41 @@
        "f": 3,
        "s": "bells",
        "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "jin",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "gle",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "all",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 4,
+       "f": 3,
+       "s": "way",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -17421,37 +17630,40 @@
       {
        "lyric": "Jingle bells, jingle bells",
        "from": 72
+      },
+      {
+       "lyric": "jingle all the way",
+       "from": 78
       }
      ],
-     "durationSec": 54,
+     "durationSec": 59,
      "voice": "Tap the beat, like a heartbeat.",
      "voiceId": "0cf68adb12e1c639",
      "voiceSec": 1.82
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, you played together!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "together",
     "secondary": [
-     "together",
-     "expression"
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Sequence: beginning, middle, end",
+    "parentLine": "A song starts, goes on, and ends; we finish together"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+   "childAction": "Tap the beat to the very end, then take a big bow.",
+   "bridge": "The song is a sleigh ride: off we go, through the snow, and home.",
+   "celebrate": "Today you practiced: playing a whole song, start to end."
   }
  ]
 }

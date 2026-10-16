@@ -1,0 +1,200 @@
+{
+  "songId": "eine-kleine-nachtmusik",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices call and answer, counted silences, walk and run-ning notes, and low left-hand notes, with Mozart's bright serenade for strings.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "The rocket call",
+      "goal": "Find G, then learn the opening call that climbs by skips.",
+      "skill": { "primary": "space", "secondary": ["pitch", "fingers"] },
+      "mathTarget": { "concept": "Arpeggio (climbing by skips)", "parentLine": "The opening skips up the keys like a rocket" },
+      "parentPrompt": "Help your child find G first, then point to the D below it.",
+      "childAction": "Find G, then play the call: G, D, G, D.",
+      "bridge": "G sits between the first two of the three black keys; the call starts there.",
+      "intro": [ { "caption": "Let's find the rocket's launch pad", "parentCue": "help your child find G by the three black keys." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "The call: G, D, G, D",
+          "parentCue": "Say the fingers: four, one, four, one",
+          "bpm": 72,
+          "notes": [ { "p": "G4", "d": 1, "f": 4 }, { "rest": true, "d": 0.5 }, { "p": "D4", "d": 0.5, "f": 1 }, { "p": "G4", "d": 1, "f": 4 }, { "rest": true, "d": 0.5 }, { "p": "D4", "d": 0.5, "f": 1 } ]
+        }
+      ],
+      "praise": "Rocket ready, great start!",
+      "celebrate": "Today you practiced: finding G and playing the opening call."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Rocket up, parachute down",
+      "goal": "Learn the answer and hear it fall the way the call rose.",
+      "skill": { "primary": "patterns", "secondary": ["pitch", "listening"] },
+      "mathTarget": { "concept": "Mirror symmetry (up, then down)", "parentLine": "The call climbs up high; the answer climbs back down low" },
+      "parentPrompt": "Lift your arm on the call, lower it on the answer; let your child copy.",
+      "childAction": "Play the answer and hear it fall the way the call rose.",
+      "bridge": "The call is a rocket going up; the answer is a parachute floating down.",
+      "intro": [ { "caption": "Up goes the rocket", "parentCue": "lift your arm high, then float it down." } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "The call goes up, the answer comes down",
+          "parentCue": "Lift your arm, then float it down",
+          "bpm": 80,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "B4", "d": 0.5 }, { "p": "D5", "d": 2 }, { "p": "C5", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "F#4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "Up and down, well done!",
+      "celebrate": "Today you practiced: hearing a call and its mirror answer."
+    },
+    {
+      "index": 3,
+      "spineType": "put-together",
+      "title": "Call, answer, then the tune",
+      "goal": "Play the whole piece slowly, all parts in order.",
+      "skill": { "primary": "form", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Form (call, answer, melody)", "parentLine": "Two calls first, then a singing tune: three parts in order" },
+      "parentPrompt": "Name each part as it starts: call, answer, tune. Hum it if your child stalls.",
+      "childAction": "Play the parts in order: call, answer, then the tune.",
+      "bridge": "The piece calls twice, like knocking, then opens the door to a singing tune.",
+      "intro": [ { "caption": "Three parts, in order", "parentCue": "name each part as it starts." } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 90,
+          "notes": [ { "p": "G4", "d": 1 }, { "rest": true, "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "rest": true, "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "B4", "d": 0.5 } ]
+        }
+      ],
+      "praise": "All three parts, bravo!",
+      "celebrate": "Today you practiced: playing the parts of a piece in order."
+    },
+    {
+      "index": 4,
+      "spineType": "review",
+      "title": "G, shh, D",
+      "goal": "Practise the call with its tiny silences, slowly, then a little faster.",
+      "skill": { "primary": "beat", "secondary": ["listening", "fingers"] },
+      "mathTarget": { "concept": "Rests (counted silence)", "parentLine": "A silence is part of the music; we count it too" },
+      "parentPrompt": "Whisper 'shh' on each rest; your child lifts the finger, then plays D.",
+      "childAction": "Play G, lift your finger for the 'shh', then play D.",
+      "bridge": "A rest is a held breath: the hand floats up, then lands.",
+      "intro": [ { "caption": "Silence is music too", "parentCue": "whisper 'shh' on every rest." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "G, shh, D. G, shh, D.",
+          "parentCue": "Whisper 'shh' in each silence",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1 }, { "rest": true, "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "rest": true, "d": 0.5 }, { "p": "D4", "d": 0.5 } ]
+        }
+      ],
+      "praise": "Perfect silences!",
+      "celebrate": "Today you practiced: counting silences inside the music."
+    },
+    {
+      "index": 5,
+      "spineType": "left-hand",
+      "title": "The low cello note",
+      "goal": "Play one low left-hand note at the start of each bar.",
+      "skill": { "primary": "space", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Bilateral mapping (left is low)", "parentLine": "The left hand plays low notes, on the left side" },
+      "parentPrompt": "Play the tune; count bars aloud so your child plays one low note each.",
+      "childAction": "Play one low note with your left hand on each 'one'.",
+      "bridge": "The left hand is a big cello on the left: one deep note per bar.",
+      "intro": [ { "caption": "The low cello note", "parentCue": "count one at each new bar" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Same G, lower house",
+          "parentCue": "Ask: which G sounds like a cello?",
+          "bpm": 72,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G3", "d": 2 } ]
+        }
+      ],
+      "praise": "Great cello notes!",
+      "celebrate": "Today you practiced: low notes with the left hand."
+    },
+    {
+      "index": 6,
+      "spineType": "hands-together",
+      "title": "Two hands land on one",
+      "goal": "Play the tune with one low left-hand note on each bar, very slowly.",
+      "skill": { "primary": "fingers", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Coordination (two hands, two jobs)", "parentLine": "Each hand has its own job; they meet on the 'one'" },
+      "parentPrompt": "Go very slowly; say 'one' each time both hands play together.",
+      "childAction": "Left hand on 'one', right hand plays the tune, slowly.",
+      "bridge": "Both hands land together on 'one', like two feet jumping.",
+      "intro": [ { "caption": "Two hands, two jobs", "parentCue": "go very slowly and stop while it's fun." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 78,
+          "notes": [ { "p": "G3", "d": 2, "f": 2 }, { "p": "G3", "d": 2, "f": 2 }, { "p": "D3", "d": 2, "f": 5 }, { "p": "D3", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Two hands, well done!",
+      "celebrate": "Today you practiced: giving each hand its own job."
+    },
+    {
+      "index": 7,
+      "spineType": "hands-together",
+      "title": "Walk, walk, run-ning",
+      "goal": "Play both hands a bit faster, feeling walking notes and running notes.",
+      "skill": { "primary": "beat", "secondary": ["fingers", "patterns"] },
+      "mathTarget": { "concept": "Ratio 2:1 (walk, run-ning)", "parentLine": "Two running notes fit in the time of one walking note" },
+      "parentPrompt": "Say 'walk, walk, run-ning, run-ning' as your child plays a bit faster.",
+      "childAction": "Walk notes are long, run-ning notes are quick. A bit faster!",
+      "bridge": "Two running notes fit into one walking step.",
+      "intro": [ { "caption": "Walk, walk, run-ning, run-ning", "parentCue": "say it aloud as your child plays." } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Walk, walk, run-ning, run-ning",
+          "parentCue": "Clap the walks and run-nings together",
+          "bpm": 96,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "B4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 0.5 } ]
+        }
+      ],
+      "praise": "Great walking and running!",
+      "celebrate": "Today you practiced: walking notes and running notes, half and double."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Play with Mozart's strings",
+      "goal": "Play the whole piece along with the music at full speed.",
+      "skill": { "primary": "together", "secondary": ["beat", "expression"] },
+      "mathTarget": { "concept": "Synchrony (keeping up)", "parentLine": "Keeping your part going while the music moves on" },
+      "parentPrompt": "Sit close and nod the beat; if a note is missed, keep going.",
+      "childAction": "Play along with the music. Missed notes are fine; keep going!",
+      "bridge": "The music is a string orchestra; you are one more player in it.",
+      "intro": [ { "caption": "Join the string orchestra", "parentCue": "nod the beat and keep going, whatever happens." } ],
+      "games": [],
+      "praise": "You kept up!",
+      "celebrate": "Today you practiced: keeping up with the music, together."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Night music for teddy",
+      "goal": "Play the whole piece for teddy: bold calls, gentle tune.",
+      "skill": { "primary": "expression", "secondary": ["form", "together"] },
+      "mathTarget": { "concept": "Character (bold call, gentle tune)", "parentLine": "Playing the calls bold and bright, the tune gentle" },
+      "parentPrompt": "Sit teddy as the audience; play the calls bold, the tune gentle, then bow.",
+      "childAction": "Play the calls bold and the tune gentle for teddy.",
+      "bridge": "The calls are bold and bright; the tune sings softly, like the night.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience." } ],
+      "games": [],
+      "praise": "Bravo, little night music!",
+      "celebrate": "Today you practiced: bold and gentle playing, start to end."
+    }
+  ]
+}

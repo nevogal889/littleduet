@@ -1,0 +1,237 @@
+{
+  "songId": "lightly-row",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices five fingers on five keys, spotting patterns that shift and skip, counting in a bar and song shape, using a gentle rowing song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Five fingers in the boat",
+      "goal": "Hear the song, then find C and rest one finger on each of five keys.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "One-to-one correspondence (finger to key)", "parentLine": "Five fingers, five keys: one finger for each key" },
+      "parentPrompt": "Point to the two black keys; help your child rest the thumb on C, the rest beside it.",
+      "childAction": "Thumb on C, then one finger on each key: one to five.",
+      "bridge": "Five keys are five seats in the boat; each finger sits in one seat.",
+      "intro": [ { "caption": "Find the two black keys", "parentCue": "C is the white key just left" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "One finger, one key",
+          "parentCue": "Say the finger number for each key",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Everyone is in the boat!",
+      "celebrate": "Today you practiced: five fingers on five keys, one each."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Row, then row one lower",
+      "goal": "Learn the first line and hear its second half copy the first, one step lower.",
+      "skill": { "primary": "patterns", "secondary": ["fingers", "pitch"] },
+      "mathTarget": { "concept": "Sequence (pattern shifted down)", "parentLine": "The same little shape, moved one key lower" },
+      "parentPrompt": "Say 'five, three, three' then 'four, two, two' as your child plays.",
+      "childAction": "Play 5-3-3, then the same shape lower: 4-2-2.",
+      "bridge": "Lightly row: one oar stroke, then the same stroke one key to the left.",
+      "intro": [ { "caption": "Same stroke, one key lower", "parentCue": "point to G, then to F, to start each part" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Lightly row: G, E, E",
+          "parentCue": "Say five, three, three",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1, "f": 5 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 2, "f": 3 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Lightly row: F, D, D",
+          "parentCue": "Say four, two, two",
+          "bpm": 60,
+          "notes": [ { "p": "F4", "d": 1, "f": 4 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 2, "f": 2 } ]
+        }
+      ],
+      "praise": "Same shape, well spotted!",
+      "celebrate": "Today you practiced: spotting a pattern that moves one key lower."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Skipping stones",
+      "goal": "Learn the 'silent tide' line, which skips over every other key.",
+      "skill": { "primary": "patterns", "secondary": ["fingers", "space"] },
+      "mathTarget": { "concept": "Skip pattern (every other key)", "parentLine": "Jumping over one key each time: one, three, five" },
+      "parentPrompt": "Tap your child's fingers one, three and five, and wiggle the skipped fingers two and four.",
+      "childAction": "Play fingers 1, 3, 5, 5, then home to 1.",
+      "bridge": "Like a stone skipping on water: hop over a key, hop over again.",
+      "intro": [ { "caption": "Hop over a key", "parentCue": "tap fingers one, three and five on their hand" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Silent tide: C, E, G",
+          "parentCue": "Say one, three, five, five, one",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "C4", "d": 4, "f": 1 } ]
+        }
+      ],
+      "praise": "Great skipping fingers!",
+      "celebrate": "Today you practiced: a pattern that skips every other key."
+    },
+    {
+      "index": 4,
+      "spineType": "phrase",
+      "title": "Four Ds in a bar",
+      "goal": "Learn the 'winds and waters' lines and count the repeated notes, one to four.",
+      "skill": { "primary": "counting", "secondary": ["beat", "patterns"] },
+      "mathTarget": { "concept": "Counting beats in a bar", "parentLine": "Counting one, two, three, four on the same key" },
+      "parentPrompt": "Count 'one, two, three, four' out loud with each D, then cheer on the step up.",
+      "childAction": "Play D four times while counting, then keep going up.",
+      "bridge": "Four even oar strokes on the same key, then the boat moves on.",
+      "intro": [ { "caption": "Count the oar strokes", "parentCue": "count one to four aloud with your child" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "One, two, three, four on D",
+          "parentCue": "Count aloud, nice and even",
+          "bpm": 60,
+          "notes": [ { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Now four on E",
+          "parentCue": "Same counting, one key higher",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 } ]
+        }
+      ],
+      "praise": "One, two, three, four!",
+      "celebrate": "Today you practiced: counting four even beats in a bar."
+    },
+    {
+      "index": 5,
+      "spineType": "put-together",
+      "title": "The rowing line comes back",
+      "goal": "Play the whole song slowly and notice the rowing line returns three times.",
+      "skill": { "primary": "form", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Form: returning refrain", "parentLine": "One line keeps coming back between the new parts" },
+      "parentPrompt": "Each time 'lightly row' comes back, make a rowing motion together and smile.",
+      "childAction": "Play the song slowly; row your arms when the rowing line returns.",
+      "bridge": "The rowing line is the boat; the other lines are new places it visits.",
+      "intro": [ { "caption": "Listen for the rowing line", "parentCue": "row your arms each time it comes back" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 80,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 }, { "p": "F4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found the rowing line!",
+      "celebrate": "Today you practiced: hearing which line of a song comes back."
+    },
+    {
+      "index": 6,
+      "spineType": "review",
+      "title": "Climb the five stairs",
+      "goal": "Practise the climb from C to G slowly, so finger four gets a turn too.",
+      "skill": { "primary": "fingers", "secondary": ["counting"] },
+      "mathTarget": { "concept": "Ordinal sequence (first to fifth)", "parentLine": "Fingers in order: first, second, third, fourth, fifth" },
+      "parentPrompt": "Rest a hand lightly on your child's wrist and say each finger number as they climb.",
+      "childAction": "Climb C to G slowly, one finger after another.",
+      "bridge": "O'er the glassy waves: five stairs up, one finger on each stair.",
+      "intro": [ { "caption": "Five stairs, slowly up", "parentCue": "say each finger number as they climb" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "O'er the glassy waves",
+          "parentCue": "Say one, two, three, four, five",
+          "bpm": 56,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Every finger had a turn!",
+      "celebrate": "Today you practiced: moving fingers one after another, in order."
+    },
+    {
+      "index": 7,
+      "spineType": "phrase",
+      "title": "Glide smooth and even",
+      "goal": "Play the whole song slowly, keeping every note the same even length.",
+      "skill": { "primary": "beat", "secondary": ["fingers", "expression"] },
+      "mathTarget": { "concept": "Isochrony (even spacing)", "parentLine": "Every beat the same length, like even oar strokes" },
+      "parentPrompt": "Pat a slow, steady beat on your child's back while they play.",
+      "childAction": "Play slowly and evenly, like a boat gliding on calm water.",
+      "bridge": "Smoothly glide: each note is one even stroke, never a splash.",
+      "intro": [ { "caption": "Glide like a calm boat", "parentCue": "pat a slow beat on your child's back" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap and count to four",
+          "parentCue": "Count softly as your child taps",
+          "bpm": 75,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 }, { "p": "F4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "So smooth and steady!",
+      "celebrate": "Today you practiced: playing slowly with an even beat."
+    },
+    {
+      "index": 8,
+      "spineType": "octave",
+      "title": "Row to a higher lake",
+      "goal": "Move the hand to a higher C and play the same song with the same fingers.",
+      "skill": { "primary": "space", "secondary": ["patterns", "listening"] },
+      "mathTarget": { "concept": "Translation (same shape, new place)", "parentLine": "The same tune and fingers, moved to a new spot" },
+      "parentPrompt": "Help your child find the next C to the right, then ask: which lake sounds nicer?",
+      "childAction": "Find the higher C, then play the same song up there.",
+      "bridge": "The same boat on a higher lake: same fingers, brighter sound.",
+      "intro": [ { "caption": "Same song, higher lake", "parentCue": "find the next C to the right together" } ],
+      "games": [
+        {
+          "kind": "demo",
+          "caption": "Silent tide, up high",
+          "parentCue": "Say one, three, five, five, one",
+          "bpm": 60,
+          "notes": [ { "p": "C5", "d": 1, "f": 1 }, { "p": "E5", "d": 1, "f": 3 }, { "p": "G5", "d": 1, "f": 5 }, { "p": "G5", "d": 1, "f": 5 }, { "p": "C5", "d": 4, "f": 1 } ]
+        }
+      ],
+      "praise": "You rowed up high!",
+      "celebrate": "Today you practiced: playing the same tune in a new place."
+    },
+    {
+      "index": 9,
+      "spineType": "play-along",
+      "title": "Row with the music",
+      "goal": "Play the whole song along with the music and keep going to the end.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Synchrony with a moving pulse", "parentLine": "Keeping pace with the music, like rowing with a friend" },
+      "parentPrompt": "Sing the words softly beside your child; if they miss a note, keep singing.",
+      "childAction": "Play along with the music; keep rowing even after a slip.",
+      "bridge": "Two rowers in one boat pull at the same time.",
+      "intro": [ { "caption": "Row with the music", "parentCue": "sing softly beside your child and keep going" } ],
+      "games": [],
+      "praise": "You kept rowing together!",
+      "celebrate": "Today you practiced: keeping pace with the music to the end."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "A light little boat",
+      "goal": "Play the whole song for teddy, with light gentle fingers like calm water.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Dynamics as character", "parentLine": "Playing lightly so the music sounds like calm water" },
+      "parentPrompt": "Sit teddy as the audience; whisper 'lightly' before you start, then clap and bow.",
+      "childAction": "Play lightly for teddy, then take a big bow.",
+      "bridge": "Light fingers make light ripples; the boat glides home to C.",
+      "intro": [ { "caption": "A song for teddy!", "parentCue": "sit teddy in front and whisper lightly" } ],
+      "games": [],
+      "praise": "Bravo, so lightly played!",
+      "celebrate": "Today you practiced: playing a whole song with light fingers."
+    }
+  ]
+}

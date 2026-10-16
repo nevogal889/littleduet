@@ -1,0 +1,164 @@
+{
+  "songId": "doctor-foster",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finding E by the two black keys, echoing short tunes, waiting for a turn and playing together, with a rainy-day rhyme.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Walk with Doctor Foster",
+      "goal": "Hear the whole song and walk your hands to its steady beat.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (walking pulse)", "parentLine": "Feeling footsteps that come evenly, one after another" },
+      "parentPrompt": "Sit side by side and walk your fingers on your child's knee to the beat.",
+      "childAction": "Walk your hands on your knees, like the doctor going to town.",
+      "bridge": "Every beat is one of Doctor Foster's footsteps on the road.",
+      "intro": [ { "caption": "Doctor Foster goes for a walk", "parentCue": "walk your fingers on your knees to the beat." } ],
+      "games": [],
+      "praise": "You walked together!",
+      "celebrate": "Today you practiced: feeling a steady walking beat."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Tap the doctor's steps",
+      "goal": "Tap one steady tap on each beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand on your child's hand; tap together, then slowly let go.",
+      "childAction": "Tap any key once for each of the doctor's steps.",
+      "bridge": "Each beat is one footstep; one tap lands on each step.",
+      "intro": [ { "caption": "One step, one tap", "parentCue": "tap your child's shoulder on each beat." } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Step, step, all the way",
+          "parentCue": "Tap together, slow and even",
+          "bpm": 88,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "Find E, the puddle key",
+      "goal": "Find E by touching the two black keys, then sliding right.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Landmark navigation (black-key pair)", "parentLine": "Two black keys help us find the same key every time" },
+      "parentPrompt": "Guide your child's finger to touch two black keys, then slide right to E.",
+      "childAction": "Find the two black keys, slide right, and splash on E!",
+      "bridge": "E sits just right of the two black keys, like a puddle by two stones.",
+      "intro": [ { "caption": "Let's find the puddle key", "parentCue": "touch the two black keys together first." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Splash, splash, splash on E",
+          "parentCue": "Count the splashes together: one, two, three",
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found the puddle!",
+      "celebrate": "Today you practiced: finding E by the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "echo",
+      "title": "Echo the doctor",
+      "goal": "Copy short patterns of two or three notes, right after the grown-up.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Auditory sequence memory", "parentLine": "Holding a short tune in mind, then playing it back" },
+      "parentPrompt": "Play a short pattern, then point to your child: your turn. Cheer every try.",
+      "childAction": "Listen to two or three notes, then play them back.",
+      "bridge": "An echo is a friend in a tunnel: you call, it calls back.",
+      "intro": [ { "caption": "I call, you call back", "parentCue": "play first, then point to your child." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Walk to town: C, D, E",
+          "parentCue": "Play it first, then point: your turn",
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great echo!",
+      "celebrate": "Today you practiced: listening and playing short tunes back."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Up the hill, down the hill",
+      "goal": "Echo three notes that climb up, then three notes that walk back down.",
+      "skill": { "primary": "patterns", "secondary": ["pitch", "listening"] },
+      "mathTarget": { "concept": "Mirror symmetry (up, then down)", "parentLine": "The tune climbs up, then walks back down the same way" },
+      "parentPrompt": "Walk your fingers up your child's arm, then down, as the notes go.",
+      "childAction": "Echo three notes up the hill, then three notes down.",
+      "bridge": "E, F, G climbs the steps to town; G, F, E walks back home.",
+      "intro": [ { "caption": "Up the hill and down again", "parentCue": "walk your fingers up and down the keys." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Up the steps: E, F, G",
+          "parentCue": "Point to each key as it lights",
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Down the steps: G, F, E",
+          "parentCue": "Same keys, now walking back",
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "Up and down, well done!",
+      "celebrate": "Today you practiced: hearing a tune go up, then down."
+    },
+    {
+      "index": 6,
+      "spineType": "special-note",
+      "title": "Wait for the puddle!",
+      "goal": "Listen to the song and play E at the right moments.",
+      "skill": { "primary": "together", "secondary": ["listening", "counting"] },
+      "mathTarget": { "concept": "Turn-taking (wait, then play)", "parentLine": "Waiting for your part is part of the music" },
+      "parentPrompt": "Play the blue keys; nod to your child just before each E.",
+      "childAction": "Wait and listen, then splash on E when it's your turn.",
+      "bridge": "The tune walks along the road; E is the puddle you jump in.",
+      "intro": [ { "caption": "Wait for the puddle", "parentCue": "nod to your child just before each E." } ],
+      "games": [],
+      "praise": "Great waiting, great splashing!",
+      "celebrate": "Today you practiced: waiting for your turn, then playing."
+    },
+    {
+      "index": 7,
+      "spineType": "together",
+      "title": "Walk to town together",
+      "goal": "Play the whole song together, the grown-up on the tune, the child on E.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Synchrony (shared pulse)", "parentLine": "Two players keep the same beat, so the song stays together" },
+      "parentPrompt": "Keep playing even if a note is missed; nod the beat with your head.",
+      "childAction": "Play your E's while your grown-up plays the rest.",
+      "bridge": "You and your grown-up walk side by side, step for step.",
+      "intro": [ { "caption": "Let's play it together", "parentCue": "keep going, even if a note is missed." } ],
+      "games": [],
+      "praise": "You stayed together!",
+      "celebrate": "Today you practiced: keeping one beat with two players."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Rainy concert for teddy",
+      "goal": "Play the whole song for teddy, from the first step to the last, then bow.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Form (four-line story)", "parentLine": "The song tells a little story: walk, rain, splash, home" },
+      "parentPrompt": "Sit teddy as the audience; make the puddle line splashy, then bow together.",
+      "childAction": "Play your E's to the very end, then take a big bow.",
+      "bridge": "Walk, rain, splash in the puddle, and never go there again!",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience." } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song story, start to end."
+    }
+  ]
+}

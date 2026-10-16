@@ -2,34 +2,62 @@
  "songId": "surprise-symphony",
  "title": "Surprise! (Haydn)",
  "ageGroup": "4-5",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and listening memory, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices skipping keys with fingers 1-3-5, notes in pairs, patterns going up and down, predicting a surprise and soft-versus-loud playing, with Haydn's tiptoe tune.",
  "skillMap": [
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 1.0,
+   "classes": 1,
+   "total": 8
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 1.0,
+   "classes": 1,
+   "total": 8
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 1.0,
+   "classes": 1,
+   "total": 8
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 1.0,
+   "classes": 1,
+   "total": 8
+  },
   {
    "id": "fingers",
    "label": "Finger control",
    "value": 1.0,
-   "classes": 4,
+   "classes": 1,
    "total": 8
   },
   {
    "id": "form",
    "label": "Song shape",
-   "value": 0.5,
-   "classes": 2,
+   "value": 1.0,
+   "classes": 1,
    "total": 8
   },
   {
-   "id": "listening",
-   "label": "Listening memory",
-   "value": 0.25,
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 1.0,
    "classes": 1,
    "total": 8
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.25,
+   "value": 1.0,
    "classes": 1,
    "total": 8
   }
@@ -37,36 +65,65 @@
  "icon": "drum",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2030,
+ "totalSec": 2032,
  "classes": [
   {
    "id": "surprise-symphony-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "Tiptoe fingers 1, 3, 5",
+   "goal": "Place the hand on C and find the skip-a-key notes C, E and G.",
    "type": "listen",
-   "durationSec": 241,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 254,
+   "parentTip": "Help your child rest the thumb on C, then touch C, E, G, skipping a key each time.",
    "video": "surprise-symphony/surprise-symphony-c01.mp4",
    "thumb": "surprise-symphony/surprise-symphony-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Surprise! (Haydn)",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: Tiptoe fingers 1, 3, 5",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today we play Surprise! (Haydn). Grown-up, sit beside the keys.",
      "voiceId": "1f868fb938678343",
      "voiceSec": 7.51
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Shh... tiptoe fingers, ready",
+     "parentCue": "whisper, and curve your child's fingers gently",
+     "durationSec": 8,
+     "voice": "Shh... tiptoe fingers, ready. Grown-up, whisper, and curve your child's fingers gently.",
+     "voiceId": "f54dd61ea850d08d",
+     "voiceSec": 6.17
     },
     {
      "kind": "say",
@@ -728,7 +785,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 96,
-     "leadInSec": 3.64,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -917,18 +974,18 @@
        "from": 21
       }
      ],
-     "durationSec": 26,
-     "voice": "Let's listen. Watch for the glowing keys.",
-     "voiceId": "b8bdf2a204161ef7",
-     "voiceSec": 3.24
+     "durationSec": 25,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -1360,7 +1417,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 96,
-     "leadInSec": 3.64,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -1549,51 +1606,51 @@
        "from": 21
       }
      ],
-     "durationSec": 26,
-     "voice": "Let's listen. Watch for the glowing keys.",
-     "voiceId": "b8bdf2a204161ef7",
-     "voiceSec": 3.24
+     "durationSec": 25,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Lovely tiptoe fingers!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "space",
     "secondary": [
-     "beat",
-     "together"
+     "fingers",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Skip pattern (every other key)",
+    "parentLine": "Play one key, skip one, play the next"
    },
-   "parentPrompt": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Help your child rest the thumb on C, then touch C, E, G, skipping a key each time.",
+   "childAction": "Thumb on C. Tiptoe C, E, G: skip a key each time.",
+   "bridge": "The tune tiptoes over every other key, like stepping on stones across a stream.",
+   "celebrate": "Today you practiced: finding C, E and G by skipping keys."
   },
   {
    "id": "surprise-symphony-c02",
    "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Tiptoe in pairs",
+   "goal": "Play the first line and notice every note comes twice, in pairs.",
    "type": "phrase",
-   "durationSec": 277,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 270,
+   "parentTip": "Whisper 'one, two' for each pair as your child plays it.",
    "video": "surprise-symphony/surprise-symphony-c02.mp4",
    "thumb": "surprise-symphony/surprise-symphony-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Surprise! (Haydn)",
-     "subcaption": "Class 2: Part 1",
+     "subcaption": "Class 2: Tiptoe in pairs",
      "durationSec": 8,
      "voice": "Welcome back. Time for Surprise! (Haydn). Sit up tall, feet still.",
      "voiceId": "b00bd11dde0aa5ad",
@@ -1601,19 +1658,68 @@
     },
     {
      "kind": "say",
-     "caption": "Today: Tiptoe, tiptoe, quiet now",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6,
-     "voice": "Today we learn a new bit: Tiptoe, tiptoe, quiet now.",
-     "voiceId": "68d30af11f7763cd",
-     "voiceSec": 4.16
+     "caption": "Two tiptoes on every stone",
+     "parentCue": "whisper 'one, two' for each pair",
+     "durationSec": 7,
+     "voice": "Two tiptoes on every stone. Grown-up, whisper 'one, two' for each pair.",
+     "voiceId": "6cb615f935367861",
+     "voiceSec": 5.51
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Tiptoe, tiptoe, quiet now",
+     "parentCue": "Whisper the finger numbers: 1, 1, 3, 3",
+     "bpm": 72,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 72,
-     "leadInSec": 3.3,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -1710,10 +1816,10 @@
        "from": 7
       }
      ],
-     "durationSec": 19,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 18,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -1837,7 +1943,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 72,
-     "leadInSec": 3.85,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "C4",
@@ -1888,17 +1994,17 @@
        "from": 0
       }
      ],
-     "durationSec": 13,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 11,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 72,
-     "leadInSec": 3.83,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -1951,17 +2057,17 @@
       }
      ],
      "durationSec": 18,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -1977,7 +2083,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 72,
-     "leadInSec": 3.85,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "F4",
@@ -2028,17 +2134,17 @@
        "from": 0
       }
      ],
-     "durationSec": 13,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 11,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 72,
-     "leadInSec": 3.83,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -2091,17 +2197,17 @@
       }
      ],
      "durationSec": 18,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -2224,9 +2330,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -2242,7 +2348,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 72,
-     "leadInSec": 3.83,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -2340,10 +2446,10 @@
        "from": 7
       }
      ],
-     "durationSec": 31,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "durationSec": 30,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "together",
@@ -2456,9 +2562,803 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 5,
+     "voice": "Shake, shake, shake your hands.",
+     "voiceId": "69041444bf86c15c",
+     "voiceSec": 2.85
+    },
+    {
+     "kind": "praise",
+     "caption": "Perfect pairs of tiptoes!",
+     "durationSec": 5,
      "voice": "Great job, you two.",
      "voiceId": "78285fece9f091ba",
      "voiceSec": 1.93
+    }
+   ],
+   "skill": {
+    "primary": "counting",
+    "secondary": [
+     "fingers",
+     "patterns"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Grouping in twos (pairs)",
+    "parentLine": "Each note comes twice: two Cs, two Es, two Gs"
+   },
+   "parentPrompt": "Whisper 'one, two' for each pair as your child plays it.",
+   "childAction": "Play each note twice: C, C, E, E, G, G, then E.",
+   "bridge": "Every note brings a twin: two tiptoes on each stepping stone.",
+   "celebrate": "Today you practiced: noticing notes that come in pairs."
+  },
+  {
+   "id": "surprise-symphony-c03",
+   "index": 3,
+   "title": "Tiptoe back down",
+   "goal": "Play the second line, which skips down; the grown-up plays the low notes.",
+   "type": "phrase",
+   "durationSec": 250,
+   "parentTip": "Grown-up, you play the low B and G; your child plays F, F, D, D.",
+   "video": "surprise-symphony/surprise-symphony-c03.mp4",
+   "thumb": "surprise-symphony/surprise-symphony-c03.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Surprise! (Haydn)",
+     "subcaption": "Class 3: Tiptoe back down",
+     "durationSec": 8,
+     "voice": "Welcome back. Time for Surprise! (Haydn). Sit up tall, feet still.",
+     "voiceId": "b00bd11dde0aa5ad",
+     "voiceSec": 6.01
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Now we tiptoe down",
+     "parentCue": "you play the low B and G",
+     "durationSec": 6,
+     "voice": "Now we tiptoe down. Grown-up, you play the low B and G.",
+     "voiceId": "fe878b7bc0199a7d",
+     "voiceSec": 4.4
+    },
+    {
+     "kind": "listen",
+     "caption": "Everybody, shh, shh, shh",
+     "parentCue": "Lower your hand as the lights go down",
+     "bpm": 72,
+     "leadInSec": 4.32,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Everybody, shh, shh, shh. Move your hand down softly.",
+     "voiceId": "d9538b3f4d94dd8c",
+     "voiceSec": 3.92
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your part: F, F, D, D",
+     "parentCue": "Whisper 'shh' as your child plays",
+     "bpm": 72,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the lights",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 72,
+     "leadInSec": 2.78,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Tip"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "toe"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tip"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "toe"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "qui"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "et"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 5,
+       "s": "BOO"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "that"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "was"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "sur"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "prise"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "for"
+      },
+      {
+       "p": "B3",
+       "d": 2,
+       "f": 1,
+       "s": "you"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
+       "from": 0
+      },
+      {
+       "lyric": "that was a surprise for you",
+       "from": 7
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Point to each key if needed",
+     "bpm": 72,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Tip"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "toe"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tip"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "toe"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "qui"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "et"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 5,
+       "s": "BOO"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "that"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "was"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "sur"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "prise"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "for"
+      },
+      {
+       "p": "B3",
+       "d": 2,
+       "f": 1,
+       "s": "you"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
+       "from": 0
+      },
+      {
+       "lyric": "that was a surprise for you",
+       "from": 7
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 72,
+     "leadInSec": 2.42,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Tip"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "toe"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tip"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "toe"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "qui"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "et"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 5,
+       "s": "BOO"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
+       "from": 0
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 72,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Tip"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "toe"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tip"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "toe"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "qui"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "et"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 5,
+       "s": "BOO"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5,
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 72,
+     "leadInSec": 2.32,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "that"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "was"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "sur"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "prise"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "for"
+      },
+      {
+       "p": "B3",
+       "d": 2,
+       "f": 1,
+       "s": "you"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "that was a surprise for you",
+       "from": 0
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 72,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "that"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "was"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "sur"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "prise"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "for"
+      },
+      {
+       "p": "B3",
+       "d": 2,
+       "f": 1,
+       "s": "you"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "that was a surprise for you",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5,
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "One more time.",
+     "voiceId": "b4c800d6a3120ebd",
+     "voiceSec": 1.34
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 72,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Tip"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "toe"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tip"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "toe"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "qui"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "et"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 5,
+       "s": "BOO"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "that"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "was"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "sur"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "prise"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "for"
+      },
+      {
+       "p": "B3",
+       "d": 2,
+       "f": 1,
+       "s": "you"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
+       "from": 0
+      },
+      {
+       "lyric": "that was a surprise for you",
+       "from": 7
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -2474,7 +3374,7 @@
      "caption": "Your turn!",
      "parentCue": "The first part again",
      "bpm": 77,
-     "leadInSec": 3.83,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2527,959 +3427,92 @@
       }
      ],
      "durationSec": 18,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Down we tiptoed!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "patterns",
     "secondary": [
-     "form"
+     "pitch",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Mirror (skipping up, skipping down)",
+    "parentLine": "Line one skips up; line two skips back down"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
-  },
-  {
-   "id": "surprise-symphony-c03",
-   "index": 3,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
-   "type": "phrase",
-   "durationSec": 244,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "video": "surprise-symphony/surprise-symphony-c03.mp4",
-   "thumb": "surprise-symphony/surprise-symphony-c03.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Surprise! (Haydn)",
-     "subcaption": "Class 3: Part 2",
-     "durationSec": 8,
-     "voice": "Welcome back. Time for Surprise! (Haydn). Sit up tall, feet still.",
-     "voiceId": "b00bd11dde0aa5ad",
-     "voiceSec": 6.01
-    },
-    {
-     "kind": "say",
-     "caption": "Today: Tiptoe, tiptoe, quiet, BOO!",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: Tiptoe, tiptoe, quiet, boo!",
-     "voiceId": "2157eaa41c315d2f",
-     "voiceSec": 5.04
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch the lights",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 72,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "BOO"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "that"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "was"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "sur"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "prise"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "B3",
-       "d": 2,
-       "f": 1,
-       "s": "you"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 0
-      },
-      {
-       "lyric": "that was a surprise for you",
-       "from": 7
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Point to each key if needed",
-     "bpm": 72,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "BOO"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "that"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "was"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "sur"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "prise"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "B3",
-       "d": 2,
-       "f": 1,
-       "s": "you"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 0
-      },
-      {
-       "lyric": "that was a surprise for you",
-       "from": 7
-      }
-     ],
-     "durationSec": 30,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 72,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "BOO"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 72,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "BOO"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 72,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "that"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "was"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "sur"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "prise"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "B3",
-       "d": 2,
-       "f": 1,
-       "s": "you"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "that was a surprise for you",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 72,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "that"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "was"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "sur"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "prise"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "B3",
-       "d": 2,
-       "f": 1,
-       "s": "you"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "that was a surprise for you",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 72,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "BOO"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "that"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "was"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "sur"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "prise"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "B3",
-       "d": 2,
-       "f": 1,
-       "s": "you"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 0
-      },
-      {
-       "lyric": "that was a surprise for you",
-       "from": 7
-      }
-     ],
-     "durationSec": 30,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 72,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "BOO"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "that"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "was"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "sur"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "prise"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "B3",
-       "d": 2,
-       "f": 1,
-       "s": "you"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 0
-      },
-      {
-       "lyric": "that was a surprise for you",
-       "from": 7
-      }
-     ],
-     "durationSec": 30,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 86,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "BOO"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "that"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "was"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "sur"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "prise"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "B3",
-       "d": 2,
-       "f": 1,
-       "s": "you"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 0
-      },
-      {
-       "lyric": "that was a surprise for you",
-       "from": 7
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    }
-   ],
-   "skill": {
-    "primary": "fingers",
-    "secondary": [
-     "form"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
-   },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Grown-up, you play the low B and G; your child plays F, F, D, D.",
+   "childAction": "Play F, F, D, D; then your grown-up tiptoes lower.",
+   "bridge": "Line one tiptoes up the stones to the right; line two tiptoes back left.",
+   "celebrate": "Today you practiced: a pattern going up, then down."
   },
   {
    "id": "surprise-symphony-c04",
    "index": 4,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "Where is the surprise?",
+   "goal": "Play the whole song slowly and guess where the pattern changes into a surprise.",
    "type": "put-together",
-   "durationSec": 242,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 235,
+   "parentTip": "Grown-up, you play the high boo note; ask 'when is it coming?' before line three.",
    "video": "surprise-symphony/surprise-symphony-c04.mp4",
    "thumb": "surprise-symphony/surprise-symphony-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Surprise! (Haydn)",
-     "subcaption": "Class 4: Put it together",
+     "subcaption": "Class 4: Where is the surprise?",
      "durationSec": 8,
      "voice": "Hello again. It's Surprise! (Haydn) time. Grown-up, sit close to help.",
      "voiceId": "f08139feb85e3eea",
      "voiceSec": 6.49
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
-     "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "caption": "Somewhere hides a boo!",
+     "parentCue": "you play the high C, the boo",
+     "durationSec": 6,
+     "voice": "Somewhere hides a boo. Grown-up, you play the high C, the boo.",
+     "voiceId": "0e0e9568656482c7",
+     "voiceSec": 4.79
     },
     {
      "kind": "say",
@@ -3513,11 +3546,59 @@
      "voiceSec": 2.14
     },
     {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 77,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
+    },
+    {
      "kind": "demo",
-     "caption": "Watch the whole song",
+     "caption": "Watch the first part",
      "parentCue": "Watch together",
      "bpm": 72,
-     "leadInSec": 2.51,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "C4",
@@ -3602,7 +3683,138 @@
        "d": 2,
        "f": 1,
        "s": "shh"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Tiptoe, tiptoe, quiet now",
+       "from": 0
       },
+      {
+       "lyric": "everybody, shh, shh, shh",
+       "from": 7
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 72,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Tip"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "toe"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tip"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "toe"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "qui"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "et"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "now"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ev"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ery"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "bo"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "dy"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "shh"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "shh"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "shh"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Tiptoe, tiptoe, quiet now",
+       "from": 0
+      },
+      {
+       "lyric": "everybody, shh, shh, shh",
+       "from": 7
+      }
+     ],
+     "durationSec": 31,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 72,
+     "leadInSec": 2.21,
+     "notes": [
       {
        "p": "C4",
        "d": 1,
@@ -3690,26 +3902,18 @@
      ],
      "lines": [
       {
-       "lyric": "Tiptoe, tiptoe, quiet now",
+       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
        "from": 0
       },
       {
-       "lyric": "everybody, shh, shh, shh",
-       "from": 7
-      },
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 14
-      },
-      {
        "lyric": "that was a surprise for you",
-       "from": 21
+       "from": 7
       }
      ],
-     "durationSec": 31,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 18,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
@@ -4122,338 +4326,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "You found the surprise!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
      "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Take a breath between lines",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 82,
-     "leadInSec": 1.97,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "now"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ev"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ery"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "bo"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dy"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "shh"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "shh"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "f": 1,
-       "s": "shh"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "BOO"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "that"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "was"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "sur"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "prise"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "B3",
-       "d": 2,
-       "f": 1,
-       "s": "you"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Tiptoe, tiptoe, quiet now",
-       "from": 0
-      },
-      {
-       "lyric": "everybody, shh, shh, shh",
-       "from": 7
-      },
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 14
-      },
-      {
-       "lyric": "that was a surprise for you",
-       "from": 21
-      }
-     ],
-     "durationSec": 27,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 77,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "now"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Tiptoe, tiptoe, quiet now",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
+     "listening",
      "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Prediction (pattern break)",
+    "parentLine": "Line three starts like line one, then breaks the pattern"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Grown-up, you play the high boo note; ask 'when is it coming?' before line three.",
+   "childAction": "Play slowly and guess: when will the boo come?",
+   "bridge": "Line three walks the same stones, then jumps to a high stone: Boo!",
+   "celebrate": "Today you practiced: guessing where a pattern changes."
   },
   {
    "id": "surprise-symphony-c05",
    "index": 5,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Skip, don't step",
+   "goal": "Practise skipping keys slowly with fingers 1, 3 and 5.",
    "type": "review",
-   "durationSec": 279,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 277,
+   "parentTip": "Rest a hand lightly on your child's wrist so the hand stays still; only fingers move.",
    "video": "surprise-symphony/surprise-symphony-c05.mp4",
    "thumb": "surprise-symphony/surprise-symphony-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Surprise! (Haydn)",
-     "subcaption": "Class 5: Tricky spots",
+     "subcaption": "Class 5: Skip, don't step",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Surprise! (Haydn). Let's warm up our fingers.",
      "voiceId": "b8843e67e3275504",
@@ -4461,21 +4371,46 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
+     "caption": "Hop over one key",
+     "parentCue": "go slowly; the hand stays in its place",
      "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "voice": "Hop over one key. Grown-up, go slowly; the hand stays in its place.",
+     "voiceId": "ee6ac182148cefe2",
+     "voiceSec": 5.2
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Hop: 1, 3, 5, 3",
+     "parentCue": "Say the finger numbers with each key",
+     "bpm": 66,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "demo",
@@ -4813,9 +4748,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -4831,7 +4766,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 77,
-     "leadInSec": 3.24,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -4930,17 +4865,17 @@
       }
      ],
      "durationSec": 29,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -5063,9 +4998,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -5081,7 +5016,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 67,
-     "leadInSec": 3.24,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -5180,45 +5115,45 @@
       }
      ],
      "durationSec": 32,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
-     "caption": "Nearly full speed",
-     "parentCue": "Only speed up if it feels easy",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Nearly full speed now.",
-     "voiceId": "9c534e859be017a5",
-     "voiceSec": 1.72
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Keep fingers close to the keys",
-     "bpm": 86,
-     "leadInSec": 3.24,
+     "parentCue": "The first part again",
+     "bpm": 77,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
        "p": "C4",
        "d": 1,
-       "f": 4,
+       "f": 1,
        "s": "Tip"
       },
       {
        "p": "C4",
        "d": 1,
-       "f": 4,
+       "f": 1,
        "s": "toe"
       },
       {
@@ -5246,72 +5181,26 @@
        "s": "et"
       },
       {
-       "p": "C5",
+       "p": "E4",
        "d": 2,
-       "f": 5,
-       "s": "BOO"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ev"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ery"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "bo"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dy"
-      },
-      {
-       "p": "B3",
-       "d": 1,
        "f": 3,
-       "s": "shh"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "shh"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "f": 1,
-       "s": "shh"
+       "s": "now"
       }
      ],
      "lines": [
       {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
+       "lyric": "Tiptoe, tiptoe, quiet now",
        "from": 0
-      },
-      {
-       "lyric": "everybody, shh, shh, shh",
-       "from": 7
       }
      ],
-     "durationSec": 26,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
+     "durationSec": 18,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great hopping fingers!",
      "durationSec": 5,
      "voice": "Great job, you two.",
      "voiceId": "78285fece9f091ba",
@@ -5321,53 +5210,130 @@
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "patterns"
+     "space"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Interval distance (skip versus step)",
+    "parentLine": "A skip jumps over one key; a step goes next door"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Rest a hand lightly on your child's wrist so the hand stays still; only fingers move.",
+   "childAction": "Play C, E, G, E with fingers 1, 3, 5, 3.",
+   "bridge": "Fingers 2 and 4 rest their feet; fingers 1, 3, 5 hop the stones.",
+   "celebrate": "Today you practiced: skipping keys with fingers 1, 3 and 5."
   },
   {
    "id": "surprise-symphony-c06",
    "index": 6,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
+   "title": "Count four tiptoes",
+   "goal": "Play the whole song slowly and evenly while counting four beats in each bar.",
    "type": "phrase",
-   "durationSec": 242,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
+   "durationSec": 244,
+   "parentTip": "Whisper '1, 2, 3, 4' slowly and evenly; tap your child's shoulder on 1.",
    "video": "surprise-symphony/surprise-symphony-c06.mp4",
    "thumb": "surprise-symphony/surprise-symphony-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Surprise! (Haydn)",
-     "subcaption": "Class 6: Slow and steady",
+     "subcaption": "Class 6: Count four tiptoes",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today we play Surprise! (Haydn). Grown-up, sit beside the keys.",
      "voiceId": "1f868fb938678343",
      "voiceSec": 7.51
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
-     "durationSec": 6,
-     "voice": "Slow and steady practice today.",
-     "voiceId": "aeb4883c0cf279a5",
-     "voiceSec": 2.42
+     "caption": "Tiptoe, tiptoe: 1, 2, 3, 4",
+     "parentCue": "whisper the count slowly and evenly",
+     "durationSec": 9,
+     "voice": "Tiptoe, tiptoe: 1, 2, 3, 4. Grown-up, whisper the count slowly and evenly.",
+     "voiceId": "83a845abb5055713",
+     "voiceSec": 7.12
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap four tiptoe beats",
+     "parentCue": "Whisper 1, 2, 3, 4 with the taps",
+     "bpm": 66,
+     "leadInSec": 4.46,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Four tiptoe beats. Tiny taps, one, two, three, four.",
+     "voiceId": "1a0ab853c9b31c25",
+     "voiceSec": 4.06
     },
     {
      "kind": "demo",
-     "caption": "Watch",
+     "caption": "Watch the first part",
      "parentCue": "Watch the finger numbers",
      "bpm": 67,
-     "leadInSec": 3.26,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "C4",
@@ -5452,7 +5418,138 @@
        "d": 2,
        "f": 1,
        "s": "shh"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Tiptoe, tiptoe, quiet now",
+       "from": 0
       },
+      {
+       "lyric": "everybody, shh, shh, shh",
+       "from": 7
+      }
+     ],
+     "durationSec": 20,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 67,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Tip"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "toe"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tip"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "toe"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "qui"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "et"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "now"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ev"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ery"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "bo"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "dy"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "shh"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "shh"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "shh"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Tiptoe, tiptoe, quiet now",
+       "from": 0
+      },
+      {
+       "lyric": "everybody, shh, shh, shh",
+       "from": 7
+      }
+     ],
+     "durationSec": 33,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 67,
+     "leadInSec": 2.21,
+     "notes": [
       {
        "p": "C4",
        "d": 1,
@@ -5540,26 +5637,18 @@
      ],
      "lines": [
       {
-       "lyric": "Tiptoe, tiptoe, quiet now",
+       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
        "from": 0
       },
       {
-       "lyric": "everybody, shh, shh, shh",
-       "from": 7
-      },
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 14
-      },
-      {
        "lyric": "that was a surprise for you",
-       "from": 21
+       "from": 7
       }
      ],
-     "durationSec": 34,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
+     "durationSec": 19,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
@@ -5765,416 +5854,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 67,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "now"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ev"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ery"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "bo"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dy"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "shh"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "shh"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "f": 1,
-       "s": "shh"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "BOO"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "that"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "was"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "sur"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "prise"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "B3",
-       "d": 2,
-       "f": 1,
-       "s": "you"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Tiptoe, tiptoe, quiet now",
-       "from": 0
-      },
-      {
-       "lyric": "everybody, shh, shh, shh",
-       "from": 7
-      },
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 14
-      },
-      {
-       "lyric": "that was a surprise for you",
-       "from": 21
-      }
-     ],
-     "durationSec": 34,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Help only if stuck",
-     "bpm": 67,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "now"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ev"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "ery"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "bo"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dy"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "shh"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "shh"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "f": 1,
-       "s": "shh"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Tip"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "toe"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "tip"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "toe"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "BOO"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "that"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "was"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "sur"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "prise"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 3,
-       "s": "for"
-      },
-      {
-       "p": "B3",
-       "d": 2,
-       "f": 1,
-       "s": "you"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Tiptoe, tiptoe, quiet now",
-       "from": 0
-      },
-      {
-       "lyric": "everybody, shh, shh, shh",
-       "from": 7
-      },
-      {
-       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
-       "from": 14
-      },
-      {
-       "lyric": "that was a surprise for you",
-       "from": 21
-      }
-     ],
-     "durationSec": 60,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -6190,7 +5872,7 @@
      "caption": "Your turn!",
      "parentCue": "The first part again",
      "bpm": 77,
-     "leadInSec": 3.83,
+     "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
       {
@@ -6234,58 +5916,197 @@
        "d": 2,
        "f": 3,
        "s": "now"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ev"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ery"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "bo"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "dy"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "shh"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "shh"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "shh"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Tip"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "toe"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tip"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "toe"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "qui"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "et"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 5,
+       "s": "BOO"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "that"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "was"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "sur"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "prise"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "for"
+      },
+      {
+       "p": "B3",
+       "d": 2,
+       "f": 1,
+       "s": "you"
       }
      ],
      "lines": [
       {
        "lyric": "Tiptoe, tiptoe, quiet now",
        "from": 0
+      },
+      {
+       "lyric": "everybody, shh, shh, shh",
+       "from": 7
+      },
+      {
+       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
+       "from": 14
+      },
+      {
+       "lyric": "that was a surprise for you",
+       "from": 21
       }
      ],
-     "durationSec": 18,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "durationSec": 52,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Slow and even, well done!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "beat",
     "secondary": [
-     "beat"
+     "counting",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Tempo control",
-    "parentLine": "Doing a task slowly and evenly"
+    "concept": "Grouping by four (meter)",
+    "parentLine": "Beats come in groups of four: one, two, three, four"
    },
-   "parentPrompt": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "childAction": "Play the tune slowly, every note even.",
-   "bridge": "Slow fingers, like a cat walking on tiptoe.",
-   "celebrate": "Today you practiced careful fingers and keeping a steady beat."
+   "parentPrompt": "Whisper '1, 2, 3, 4' slowly and evenly; tap your child's shoulder on 1.",
+   "childAction": "Play slowly and evenly while your grown-up counts to four.",
+   "bridge": "Four tiptoes, then start again: one, two, three, four.",
+   "celebrate": "Today you practiced: counting four beats in a bar."
   },
   {
    "id": "surprise-symphony-c07",
    "index": 7,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Tiptoe with the orchestra",
+   "goal": "Play the song along with the music at full speed and keep going.",
    "type": "play-along",
-   "durationSec": 247,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 241,
+   "parentTip": "Tiptoe your fingers on your knee beside your child; if notes are missed, keep going.",
    "video": "surprise-symphony/surprise-symphony-c07.mp4",
    "thumb": "surprise-symphony/surprise-symphony-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Surprise! (Haydn)",
-     "subcaption": "Class 7: Play along",
+     "subcaption": "Class 7: Tiptoe with the orchestra",
      "durationSec": 8,
      "voice": "Hi, everyone. Let's play Surprise! (Haydn). Curved fingers, like holding a little ball.",
      "voiceId": "c7d9d93275623c93",
@@ -6293,21 +6114,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
+     "caption": "The orchestra is tiptoeing too",
+     "parentCue": "tiptoe your fingers on your knee to help",
      "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "voice": "The orchestra is tiptoeing too. Grown-up, tiptoe your fingers on your knee to help.",
+     "voiceId": "c594f439b4869b24",
+     "voiceSec": 5.54
     },
     {
      "kind": "together",
@@ -6721,7 +6533,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 96,
-     "leadInSec": 2.47,
+     "leadInSec": 3.0,
      "notes": [
       {
        "p": "C4",
@@ -6910,18 +6722,18 @@
        "from": 21
       }
      ],
-     "durationSec": 24,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 25,
+     "voice": "Together time. Big smiles.",
+     "voiceId": "a441a4bce0e6e1e6",
+     "voiceSec": 2.6
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -6937,7 +6749,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 96,
-     "leadInSec": 2.47,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "C4",
@@ -7127,17 +6939,17 @@
       }
      ],
      "durationSec": 24,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -7153,7 +6965,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 96,
-     "leadInSec": 2.47,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "C4",
@@ -7343,17 +7155,17 @@
       }
      ],
      "durationSec": 24,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -7369,7 +7181,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 96,
-     "leadInSec": 2.47,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "C4",
@@ -7559,17 +7371,17 @@
       }
      ],
      "durationSec": 24,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -7781,43 +7593,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept going!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Entrainment (matching a tempo)",
+    "parentLine": "Fitting your playing to a speed you did not choose"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Tiptoe your fingers on your knee beside your child; if notes are missed, keep going.",
+   "childAction": "Play along with the music. Missed notes? Keep tiptoeing!",
+   "bridge": "Haydn wrote this tune for a whole orchestra; your fingers tiptoe with them.",
+   "celebrate": "Today you practiced: keeping up with the music."
   },
   {
    "id": "surprise-symphony-c08",
    "index": 8,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "A surprise for teddy",
+   "goal": "Play softly for teddy, then the grown-up plays the big boo.",
    "type": "concert",
-   "durationSec": 258,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 261,
+   "parentTip": "Sit teddy as the audience; play the boo loud, then laugh and bow together.",
    "video": "surprise-symphony/surprise-symphony-c08.mp4",
    "thumb": "surprise-symphony/surprise-symphony-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Surprise! (Haydn)",
-     "subcaption": "Class 8: Concert time",
+     "subcaption": "Class 8: A surprise for teddy",
      "durationSec": 8,
      "voice": "Hello, friends. Today it's Surprise! (Haydn). Sit in the middle of the piano.",
      "voiceId": "ba799514d39238f1",
@@ -7825,21 +7638,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "Shh... teddy doesn't know!",
+     "parentCue": "put teddy in front as the audience",
+     "durationSec": 6,
+     "voice": "Shh... teddy doesn't know. Grown-up, put teddy in front as the audience.",
+     "voiceId": "6339da8b1380cc6c",
+     "voiceSec": 4.46
     },
     {
      "kind": "together",
@@ -8260,9 +8064,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -8476,9 +8280,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -8692,9 +8496,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -8908,9 +8712,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -9124,26 +8928,25 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
+     "caption": "Play it for a teddy bear",
+     "parentCue": "Sit a toy on the piano to listen",
+     "durationSec": 8,
+     "voice": "Let's play it for a teddy bear.",
+     "voiceId": "bb73054790cb3e97",
+     "voiceSec": 2.36
     },
     {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 77,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
+     "kind": "together",
+     "caption": "A song for teddy",
+     "parentCue": "Sit tall and play along",
+     "bpm": 96,
+     "leadInSec": 2.17,
      "notes": [
       {
        "p": "C4",
@@ -9186,43 +8989,181 @@
        "d": 2,
        "f": 3,
        "s": "now"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ev"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "ery"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "bo"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "dy"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "shh"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "shh"
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1,
+       "s": "shh"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Tip"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "toe"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "tip"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "toe"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "qui"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "et"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 5,
+       "s": "BOO"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "that"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "was"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "sur"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "prise"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 3,
+       "s": "for"
+      },
+      {
+       "p": "B3",
+       "d": 2,
+       "f": 1,
+       "s": "you"
       }
      ],
      "lines": [
       {
        "lyric": "Tiptoe, tiptoe, quiet now",
        "from": 0
+      },
+      {
+       "lyric": "everybody, shh, shh, shh",
+       "from": 7
+      },
+      {
+       "lyric": "Tiptoe, tiptoe, quiet, BOO!",
+       "from": 14
+      },
+      {
+       "lyric": "that was a surprise for you",
+       "from": 21
       }
      ],
-     "durationSec": 17,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 24,
+     "voice": "This one is for teddy.",
+     "voiceId": "137fd3d6182c1ad5",
+     "voiceSec": 1.77
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, what a surprise!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "expression",
     "secondary": [
      "together",
-     "expression"
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Contrast (soft, then sudden loud)",
+    "parentLine": "Very quiet, then one big sound: the contrast is the fun"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; play the boo loud, then laugh and bow together.",
+   "childAction": "Play soft tiptoe notes, then jump with teddy at the boo.",
+   "bridge": "Haydn hid one big loud chord in a quiet tune; that is the surprise.",
+   "celebrate": "Today you practiced: playing very softly, then a surprise."
   }
  ]
 }

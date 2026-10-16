@@ -1,0 +1,207 @@
+{
+  "songId": "jingle-bells",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices steady beat, high and low, loud and soft, stop and go, word rhythm and playing together, on a snowy sleigh ride.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Trot like the sleigh horse",
+      "goal": "Feel the steady beat of the sleigh ride with gentle knee trots.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (steady pulse)", "parentLine": "Feeling something that comes again and again, evenly spaced" },
+      "parentPrompt": "Sit your child on your knees and trot gently on every beat, like a horse.",
+      "childAction": "Ride, clap and shake your hands like bells.",
+      "bridge": "The beat is the horse's hooves: clip, clop, clip, clop through the snow.",
+      "intro": [ { "caption": "Let's ride the snowy sleigh", "parentCue": "child on your knees, trot gently" } ],
+      "games": [],
+      "praise": "You trotted together!",
+      "celebrate": "Today you practiced: feeling the steady beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Hooves on the keys",
+      "goal": "Tap one steady tap for every beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key once for each beat. Any key is right.",
+      "bridge": "Each beat is one hoof in the snow; one tap for each clop.",
+      "intro": [ { "caption": "One beat, one clop", "parentCue": "tap your child's shoulder on each beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Jingle bells, jingle bells",
+          "parentCue": "Say 'one, two' on each 'jingle bells'",
+          "bpm": 84,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping (pitch to place)", "parentLine": "Low sounds live on the left, high sounds on the right" },
+      "parentPrompt": "Crouch and growl for the bear; stretch up tall and chirp for the bird.",
+      "childAction": "Bear sound: tap the left side. Bird sound: tap the right.",
+      "bridge": "Low notes are a heavy bear in the snow; high notes are a tiny bird.",
+      "intro": [ { "caption": "Bear lives low, bird lives high", "parentCue": "point left for the bear, right for the bird" } ],
+      "games": [
+        {
+          "kind": "high_low",
+          "target": "low",
+          "caption": "Bear! Big snowy bear",
+          "parentCue": "Growl together, then tap the left side",
+          "bpm": 72,
+          "notes": [ { "p": "C3", "d": 2 }, { "p": "G3", "d": 2 }, { "p": "C3", "d": 2 }, { "p": "G3", "d": 2 } ]
+        },
+        {
+          "kind": "high_low",
+          "target": "high",
+          "caption": "Bird! Tiny winter bird",
+          "parentCue": "Chirp together, then tap the right side",
+          "bpm": 80,
+          "notes": [ { "p": "E5", "d": 1 }, { "p": "E5", "d": 1 }, { "p": "E5", "d": 2 }, { "p": "G5", "d": 1 }, { "p": "C5", "d": 1 }, { "p": "E5", "d": 2 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Big bells, tiny bells",
+      "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "Noticing big and small: the same tap, more or less" },
+      "parentPrompt": "Make strong arms for loud taps; whisper and tiptoe your fingers for soft ones.",
+      "childAction": "Loud: big bell taps. Soft: tiny tinkly taps.",
+      "bridge": "Loud taps are a big bell ringing; soft taps are snowflakes landing.",
+      "intro": [ { "caption": "Big bells, tiny snowflakes", "parentCue": "loud means strong arms, not banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Slow horse, fast horse",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "Same tune, same shape, only the speed changes" },
+      "parentPrompt": "Trot your child on your knees, slowly then quickly, matching the music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "Slow taps are a tired horse walking; fast taps are a horse galloping.",
+      "intro": [ { "caption": "Turtle slow, bunny fast", "parentCue": "slow down if the taps get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle time: slow sleigh",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny time: fast sleigh!",
+          "parentCue": "Same tune, now quick and light",
+          "bpm": 112,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Whoa, horse! Freeze!",
+      "goal": "Tap while the music plays and freeze when it stops.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "Say 'whoa!' and freeze with a funny face when the music stops; cheer when it restarts.",
+      "childAction": "Tap while music plays. Freeze like a statue when it stops.",
+      "bridge": "Music on, the horse trots; music off, 'whoa', the sleigh stands still.",
+      "intro": [ { "caption": "Go, horse, go! Whoa, freeze!", "parentCue": "make your freeze silly, like a statue" } ],
+      "games": [],
+      "praise": "Great whoa and freeze!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "rhythm",
+      "title": "Jin-gle: two taps",
+      "goal": "Tap once for each piece of a word, like jin-gle, two taps.",
+      "skill": { "primary": "counting", "secondary": ["listening", "beat"] },
+      "mathTarget": { "concept": "One-to-one correspondence (syllable to tap)", "parentLine": "One tap for each piece of a word you sing" },
+      "parentPrompt": "Say the words slowly and tap your child's hand once for each word piece.",
+      "childAction": "Jin-gle: two taps. Bells: one big tap.",
+      "bridge": "Each word piece is one hoofprint in the snow: jin, gle, bells.",
+      "intro": [ { "caption": "Jin-gle: one, two taps", "parentCue": "say jin-gle slowly and tap twice" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Jin-gle bells, jin-gle bells",
+          "parentCue": "Say each word piece with each light",
+          "bpm": 66,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "Jin-gle, two taps!",
+      "celebrate": "Today you practiced: one tap for each word piece."
+    },
+    {
+      "index": 8,
+      "spineType": "review",
+      "title": "Guess the sleigh game",
+      "goal": "Listen and switch between games: high and low, loud and soft, fast and slow.",
+      "skill": { "primary": "listening", "secondary": ["pitch", "expression"] },
+      "mathTarget": { "concept": "Classification (sorting by feature)", "parentLine": "Sorting each sound: high or low, loud or soft?" },
+      "parentPrompt": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
+      "childAction": "Guess the game, then tap high, low, loud, soft, slow or fast.",
+      "bridge": "Every sound wears a costume: bear, bird, big bell, snowflake, turtle or bunny.",
+      "intro": [ { "caption": "What game is it?", "parentCue": "let your child guess first; any guess is fine" } ],
+      "games": [],
+      "praise": "Great listening ears!",
+      "celebrate": "Today you practiced: telling sounds apart and switching games."
+    },
+    {
+      "index": 9,
+      "spineType": "together",
+      "title": "Sleigh ride duet",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together to make one song" },
+      "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Tap the beat on any key while your grown-up plays the tune.",
+      "bridge": "The tune is the sleigh; your beat is the horse that pulls it.",
+      "intro": [ { "caption": "I play, you tap", "parentCue": "sit side by side at the piano" } ],
+      "games": [],
+      "praise": "What a duet together!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "Sleigh concert for teddy",
+      "goal": "Play the whole song from start to end, then cheer and bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on, and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+      "childAction": "Tap the beat to the very end, then take a big bow.",
+      "bridge": "The song is a sleigh ride: off we go, through the snow, and home.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "songId": "clementine",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices walking and running rhythms, skips and steps, a verse and chorus that share one tune, and left-hand low notes, using a campfire song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "Three in a row, then hop",
+      "goal": "Find the hand position on C and learn the first half, where notes come in threes.",
+      "skill": { "primary": "patterns", "secondary": ["space", "fingers"] },
+      "mathTarget": { "concept": "Sequence (pattern shifted up)", "parentLine": "Three Cs, then the same idea on three Es" },
+      "parentPrompt": "Thumb on C. You play the low G below the thumb; your child plays the rest.",
+      "childAction": "Play C, C, C, then E, E, E, C. Grown-up plays low G.",
+      "bridge": "In a cav-ern: three on C; in a can-yon: three on E, higher.",
+      "intro": [ { "caption": "Thumb on C, hand on five keys", "parentCue": "you play the low G below the thumb" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "In a cavern: C, C, C",
+          "parentCue": "You play the low G right after",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 0.5, "f": 1 }, { "p": "C4", "d": 0.5, "f": 1 }, { "p": "C4", "d": 1, "f": 1 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "In a canyon: E, E, E, C",
+          "parentCue": "Say three, three, three, one",
+          "bpm": 66,
+          "notes": [ { "p": "E4", "d": 0.5, "f": 3 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "C4", "d": 1, "f": 1 } ]
+        }
+      ],
+      "praise": "Three and three, well done!",
+      "celebrate": "Today you practiced: a pattern that repeats one step higher."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Skip up, walk down",
+      "goal": "Learn the next lines: skip up C, E, G, then walk down step by step.",
+      "skill": { "primary": "pitch", "secondary": ["fingers", "patterns"] },
+      "mathTarget": { "concept": "Contour (skip up, step down)", "parentLine": "Jumping up over keys, then walking down one key at a time" },
+      "parentPrompt": "Hop your fingers up your child's arm for the skips, then walk them down.",
+      "childAction": "Skip up with 1, 3, 5, then walk down 4, 3, 2.",
+      "bridge": "Excavating: skip up the canyon wall, then climb down step by step.",
+      "intro": [ { "caption": "Skip up, walk down", "parentCue": "hop up their arm, then walk down" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Excavating for a mine",
+          "parentCue": "Say one, three, five, five, four, three, two",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 0.5, "f": 1 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "G4", "d": 1.5, "f": 5 }, { "p": "G4", "d": 0.5, "f": 5 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 3, "f": 2 } ]
+        }
+      ],
+      "praise": "Up the wall and down!",
+      "celebrate": "Today you practiced: hearing skips going up and steps going down."
+    },
+    {
+      "index": 3,
+      "spineType": "put-together",
+      "title": "Same tune, new words",
+      "goal": "Play the whole song slowly and discover the verse and chorus share one tune.",
+      "skill": { "primary": "form", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Verse and chorus, one tune", "parentLine": "The story part and the chorus use the same notes" },
+      "parentPrompt": "Sing the verse, then the chorus, and ask: 'Did the notes change, or only the words?'",
+      "childAction": "Play the tune twice: once for the verse, once for 'Oh my darling'.",
+      "bridge": "One tune wears two coats: story words, then 'Oh my darling' words.",
+      "intro": [ { "caption": "Did the notes change?", "parentCue": "ask after the chorus; let your child decide" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 80,
+          "notes": [ { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 } ]
+        }
+      ],
+      "praise": "You cracked the secret!",
+      "celebrate": "Today you practiced: noticing a verse and chorus with one tune."
+    },
+    {
+      "index": 4,
+      "spineType": "review",
+      "title": "Run-ning, run-ning, walk",
+      "goal": "Practise the start slowly: two running notes fit in the time of one walking note.",
+      "skill": { "primary": "counting", "secondary": ["beat", "fingers"] },
+      "mathTarget": { "concept": "Ratio 2:1 (eighth and quarter)", "parentLine": "Two quick running notes take as long as one walking note" },
+      "parentPrompt": "Clap two quick claps for 'run-ning' and one slow clap for 'walk' before your child plays.",
+      "childAction": "Clap, then play: run-ning walk, on C then on E.",
+      "bridge": "In a: two quick running steps; cav-ern: walking steps on the canyon path.",
+      "intro": [ { "caption": "Run-ning, run-ning, walk", "parentCue": "clap it once together, slowly" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Run-ning walk, slowly",
+          "parentCue": "Say run-ning, walk with the notes",
+          "bpm": 56,
+          "notes": [ { "p": "C4", "d": 0.5, "f": 1 }, { "p": "C4", "d": 0.5, "f": 1 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "E4", "d": 1, "f": 3 } ]
+        }
+      ],
+      "praise": "Great running and walking!",
+      "celebrate": "Today you practiced: two short notes in the time of one long."
+    },
+    {
+      "index": 5,
+      "spineType": "left-hand",
+      "title": "The left hand lives low",
+      "goal": "Play one low left-hand note at the start of each bar while the grown-up plays.",
+      "skill": { "primary": "space", "secondary": ["beat", "counting"] },
+      "mathTarget": { "concept": "Spatial mapping (left hand, low)", "parentLine": "The left side of the piano holds the low notes" },
+      "parentPrompt": "Help your child find low C on the left; count 'one, two, three' and nod on 'one'.",
+      "childAction": "Left hand plays low C on each 'one', then waits.",
+      "bridge": "The left hand is the miner deep in the cavern: low and steady.",
+      "intro": [ { "caption": "Down into the cavern", "parentCue": "help find low C, far left" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Low C, low G, low C",
+          "parentCue": "Count one, two, three for each note",
+          "bpm": 66,
+          "notes": [ { "p": "C3", "d": 3 }, { "p": "C3", "d": 3 }, { "p": "G3", "d": 3 }, { "p": "C3", "d": 3 } ]
+        }
+      ],
+      "praise": "Deep, steady notes!",
+      "celebrate": "Today you practiced: finding low notes with the left hand."
+    },
+    {
+      "index": 6,
+      "spineType": "left-hand",
+      "title": "Keep the lantern swinging",
+      "goal": "Keep the left-hand low notes going at full speed while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["together", "counting"] },
+      "mathTarget": { "concept": "Periodicity (one per bar)", "parentLine": "A low note that comes back once every bar" },
+      "parentPrompt": "Play the tune; sway together on each 'one' so your child feels where the low note goes.",
+      "childAction": "Keep your low notes going, even if one goes missing.",
+      "bridge": "The low note swings like a miner's lantern: once each bar, steady.",
+      "intro": [ { "caption": "Swing the lantern", "parentCue": "sway together on every one" } ],
+      "games": [],
+      "praise": "You kept it swinging!",
+      "celebrate": "Today you practiced: keeping a steady low note at full speed."
+    },
+    {
+      "index": 7,
+      "spineType": "hands-together",
+      "title": "Two hands, one campfire",
+      "goal": "Play the tune with a low left-hand note on each bar, very slowly.",
+      "skill": { "primary": "fingers", "secondary": ["beat", "counting"] },
+      "mathTarget": { "concept": "Ratio 1:3 (two hands)", "parentLine": "The left hand plays once while the right hand counts three" },
+      "parentPrompt": "Count 'one, two, three' very slowly and tap your child's left hand on 'one'.",
+      "childAction": "Left hand on 'one', right hand plays the tune.",
+      "bridge": "Left hand is the log, right hand is the flame: both make the fire.",
+      "intro": [ { "caption": "Two hands, one campfire", "parentCue": "tap their left hand on every one" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 70,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "G3", "d": 2, "f": 1 }, { "p": "G3", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "Both hands worked together!",
+      "celebrate": "Today you practiced: two hands with different jobs, slowly."
+    },
+    {
+      "index": 8,
+      "spineType": "hands-together",
+      "title": "A bit faster now",
+      "goal": "Play both hands together closer to full speed, keeping the same pattern.",
+      "skill": { "primary": "expression", "secondary": ["fingers", "beat"] },
+      "mathTarget": { "concept": "Tempo scaling (same pattern, faster)", "parentLine": "The same notes and order, only the speed changes" },
+      "parentPrompt": "If notes fall apart, smile and say 'slow again'; speed comes last.",
+      "childAction": "Play both hands a little faster; slow down if it tangles.",
+      "bridge": "The same campfire song, now walking a little quicker.",
+      "intro": [ { "caption": "Same song, a bit quicker", "parentCue": "go back to slow if it tangles" } ],
+      "games": [],
+      "praise": "Quicker and still together!",
+      "celebrate": "Today you practiced: the same pattern at a faster speed."
+    },
+    {
+      "index": 9,
+      "spineType": "play-along",
+      "title": "Campfire play-along",
+      "goal": "Play the whole song along with the music and keep going to the end.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Synchrony with a moving pulse", "parentLine": "Keeping pace with the music, all the way to the end" },
+      "parentPrompt": "Sing the chorus beside your child and sway on each 'one'; if they slip, keep going.",
+      "childAction": "Play along with the music; keep going after a slip.",
+      "bridge": "Everyone round the campfire sings at the same pace.",
+      "intro": [ { "caption": "Sing round the campfire", "parentCue": "sing beside your child and keep going" } ],
+      "games": [],
+      "praise": "You kept going together!",
+      "celebrate": "Today you practiced: keeping pace with the music to the end."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "Campfire concert for teddy",
+      "goal": "Play the whole song for teddy: the grown-up sings the verse, everyone joins the chorus.",
+      "skill": { "primary": "together", "secondary": ["form", "expression"] },
+      "mathTarget": { "concept": "Shared performance (solo, then all)", "parentLine": "One voice tells the story, then everyone joins in" },
+      "parentPrompt": "Sit teddy as the audience; sing the verse alone, then sing the chorus together and bow.",
+      "childAction": "Play for teddy and sing loudly on 'Oh my darling'.",
+      "bridge": "The verse is one storyteller; the chorus is the whole campfire singing.",
+      "intro": [ { "caption": "A campfire song for teddy", "parentCue": "sit teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, campfire singers!",
+      "celebrate": "Today you practiced: playing a whole song together, verse and chorus."
+    }
+  ]
+}

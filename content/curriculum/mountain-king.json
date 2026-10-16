@@ -1,0 +1,208 @@
+{
+  "songId": "mountain-king",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finding A by the three black keys, shifted patterns, a repeating theme, octaves, steady speeding up and quiet-to-loud playing, with Grieg's troll music.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "Creep up: 1, 2, 3, 4, 5",
+      "goal": "Find A by the three black keys and creep up fingers 1 to 5.",
+      "skill": { "primary": "space", "secondary": ["fingers", "counting"] },
+      "mathTarget": { "concept": "Spatial landmark (three black keys)", "parentLine": "A hides inside the group of three black keys" },
+      "parentPrompt": "Find three black keys with your child; the thumb goes on the white key A among them.",
+      "childAction": "Thumb on A, then creep up: 1, 2, 3, 4, 5.",
+      "bridge": "A is the troll hall's door, tucked inside the three black keys.",
+      "intro": [ { "caption": "Shh... find the troll door", "parentCue": "point to a group of three black keys" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Creeping in the mountain hall",
+          "parentCue": "Whisper the fingers: 1, 2, 3, 4, 5",
+          "bpm": 72,
+          "notes": [ { "p": "A3", "d": 0.5, "f": 1 }, { "p": "B3", "d": 0.5, "f": 2 }, { "p": "C4", "d": 0.5, "f": 3 }, { "p": "D4", "d": 0.5, "f": 4 }, { "p": "E4", "d": 0.5, "f": 5 }, { "p": "C4", "d": 0.5, "f": 3 }, { "p": "E4", "d": 1, "f": 5 } ]
+        }
+      ],
+      "praise": "Sneaky creeping fingers!",
+      "celebrate": "Today you practiced: finding A and creeping fingers 1 to 5."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Sneaky black keys",
+      "goal": "Learn the black-key part: the same little shape, then one tiny step lower.",
+      "skill": { "primary": "patterns", "secondary": ["space", "fingers"] },
+      "mathTarget": { "concept": "Sequence (same shape, shifted)", "parentLine": "The same little pattern, moved one key lower" },
+      "parentPrompt": "Point to the black key first, then let your child play the shape.",
+      "childAction": "Play the black-key shape, then the same shape a tiny step lower.",
+      "bridge": "Black keys are the troll's shadows; the shadow steps one key to the left.",
+      "intro": [ { "caption": "The troll's black-key shadows", "parentCue": "point to D sharp, the black key" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Quiet now: shadow shape",
+          "parentCue": "Whisper 'quiet now' as your child plays",
+          "bpm": 66,
+          "blackKeys": true,
+          "notes": [ { "p": "D#4", "d": 0.5 }, { "p": "B3", "d": 0.5 }, { "p": "D#4", "d": 1 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Tiptoe slow: one step lower",
+          "parentCue": "Same shape, one key to the left",
+          "bpm": 66,
+          "blackKeys": true,
+          "notes": [ { "p": "D4", "d": 0.5 }, { "p": "A#3", "d": 0.5 }, { "p": "D4", "d": 1 } ]
+        }
+      ],
+      "praise": "Shadows in the right place!",
+      "celebrate": "Today you practiced: the same shape, shifted one key lower."
+    },
+    {
+      "index": 3,
+      "spineType": "put-together",
+      "title": "Again and again",
+      "goal": "Play the whole tune slowly and hear how the creeping line keeps coming back.",
+      "skill": { "primary": "form", "secondary": ["patterns", "listening"] },
+      "mathTarget": { "concept": "Pattern repetition (returning theme)", "parentLine": "One short tune comes back again and again" },
+      "parentPrompt": "Tiptoe two fingers on your child's arm each time the creeping line starts again.",
+      "childAction": "Play slowly. Each time the creeping line returns, whisper 'again!'",
+      "bridge": "Grieg's short theme repeats again and again, like trolls creeping round the hall.",
+      "intro": [ { "caption": "Here it comes again!", "parentCue": "tiptoe your fingers each time it returns" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 80,
+          "notes": [ { "p": "A3", "d": 0.5 }, { "p": "B3", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "E4", "d": 1 } ]
+        }
+      ],
+      "praise": "You caught it every time!",
+      "celebrate": "Today you practiced: hearing a theme that repeats."
+    },
+    {
+      "index": 4,
+      "spineType": "review",
+      "title": "Jump to high A",
+      "goal": "Practise the jump from E up to high A, the same note as your thumb's A.",
+      "skill": { "primary": "space", "secondary": ["pitch", "fingers"] },
+      "mathTarget": { "concept": "Octave equivalence (low A, high A)", "parentLine": "Same note name, one house higher on the right" },
+      "parentPrompt": "Play low A, then high A; ask your child 'same name?' before they jump.",
+      "childAction": "Creep up to E, then jump the hand to high A.",
+      "bridge": "Low A is the troll hall; high A is the same hall, up the mountain.",
+      "intro": [ { "caption": "Low A, high A: same name!", "parentCue": "play both As for your child first" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Two As, two houses",
+          "parentCue": "Point low, then high, with each sound",
+          "bpm": 66,
+          "notes": [ { "p": "A3", "d": 2 }, { "p": "A4", "d": 2 }, { "p": "A3", "d": 2 }, { "p": "A4", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Through the darkness: jump!",
+          "parentCue": "Say 'jump!' just before high A",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 0.5, "f": 3 }, { "p": "E4", "d": 0.5, "f": 5 }, { "p": "A4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Up the mountain!",
+      "celebrate": "Today you practiced: jumping to the same note, higher."
+    },
+    {
+      "index": 5,
+      "spineType": "left-hand",
+      "title": "Troll boots on one",
+      "goal": "Play one low left-hand note on the first beat of each bar of four.",
+      "skill": { "primary": "counting", "secondary": ["beat", "space"] },
+      "mathTarget": { "concept": "Grouping by four (bars)", "parentLine": "Count four beats; the low note always lands on one" },
+      "parentPrompt": "Play the tune and count 'one, two, three, four' out loud, stomping softly on one.",
+      "childAction": "Left hand plays one low troll boot on every one.",
+      "bridge": "Low notes live on the left: big heavy troll boots, one per bar.",
+      "intro": [ { "caption": "One, two, three, four, stomp!", "parentCue": "stomp softly on one" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Find the low notes",
+          "parentCue": "Point to each low key first",
+          "bpm": 70,
+          "notes": [ { "p": "A3", "d": 2, "f": 2 }, { "p": "E3", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Heavy troll boots!",
+      "celebrate": "Today you practiced: counting bars of four, landing on one."
+    },
+    {
+      "index": 6,
+      "spineType": "hands-together",
+      "title": "Boots below, tiptoes above",
+      "goal": "Play the tune with one low note per bar: one hand holds, the other creeps.",
+      "skill": { "primary": "fingers", "secondary": ["patterns", "counting"] },
+      "mathTarget": { "concept": "Ratio 1:8 (still and busy)", "parentLine": "One low note holds while eight quick notes creep above" },
+      "parentPrompt": "Rest a hand on your child's left shoulder and say 'boot' on each low note. Go slowly.",
+      "childAction": "Left hand holds the boot while the right hand tiptoes.",
+      "bridge": "Left hand is the sleeping troll; right hand tiptoes past without waking him.",
+      "intro": [ { "caption": "Two hands, two jobs", "parentCue": "both hands on the keys, very slowly" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 70,
+          "notes": [ { "p": "A3", "d": 2, "f": 2 }, { "p": "E3", "d": 2, "f": 5 }, { "p": "A3", "d": 2, "f": 2 }, { "p": "A3", "d": 2, "f": 2 } ]
+        }
+      ],
+      "praise": "Two hands, one troll tune!",
+      "celebrate": "Today you practiced: two hands doing two different jobs."
+    },
+    {
+      "index": 7,
+      "spineType": "hands-together",
+      "title": "Faster and faster",
+      "goal": "Play both hands again and again, a little faster each time, like Grieg's music.",
+      "skill": { "primary": "beat", "secondary": ["fingers", "expression"] },
+      "mathTarget": { "concept": "Accelerando (steady speed-up)", "parentLine": "Each time a little faster, step by step, not all at once" },
+      "parentPrompt": "Tap the beat on your knee a little quicker each round; go back to slow if messy.",
+      "childAction": "Play it slow, then quicker, then quicker. Too fast? Slow down.",
+      "bridge": "The trolls wake up and chase: each time round, a little faster.",
+      "intro": [ { "caption": "The trolls are waking up!", "parentCue": "speed up a tiny bit each round" } ],
+      "games": [],
+      "praise": "Faster, and still steady!",
+      "celebrate": "Today you practiced: speeding up step by step."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Race through the hall",
+      "goal": "Play the whole tune along with the music at full speed and keep going.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Entrainment (matching a tempo)", "parentLine": "Fitting your playing to a speed you did not choose" },
+      "parentPrompt": "Tiptoe your fingers on your knee beside your child; if notes are missed, keep going.",
+      "childAction": "Play along with the music. Missed notes? Keep racing!",
+      "bridge": "Grieg wrote this for a play, when Peer finds himself in the troll king's hall.",
+      "intro": [ { "caption": "Race through the troll hall!", "parentCue": "tiptoe your fingers on your knee to help" } ],
+      "games": [],
+      "praise": "You kept going!",
+      "celebrate": "Today you practiced: keeping up with the music."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Quiet start, big finish",
+      "goal": "Play for teddy: start very quiet, grow louder each time, and finish big.",
+      "skill": { "primary": "expression", "secondary": ["form", "together"] },
+      "mathTarget": { "concept": "Crescendo (quiet to loud)", "parentLine": "Getting a little louder each time, step by step" },
+      "parentPrompt": "Sit teddy as the audience; crouch low at the start, rise a little each round.",
+      "childAction": "Start with whisper fingers, then grow louder each time round.",
+      "bridge": "Quiet notes are trolls tiptoeing; loud notes are the whole hall waking up.",
+      "intro": [ { "caption": "Shh... teddy, the trolls are coming", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, what a big finish!",
+      "celebrate": "Today you practiced: growing from quiet to loud, a whole song."
+    }
+  ]
+}

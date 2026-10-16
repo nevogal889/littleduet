@@ -1,0 +1,160 @@
+{
+  "songId": "hey-diddle-diddle",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices a rocking steady beat, high and low, stop and go, and playing together, using a giggly nonsense rhyme about a jumping cow.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Rock with the cat",
+      "goal": "Hear the whole silly song and rock to its swingy beat together.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (compound pulse)", "parentLine": "A rocking beat that comes back again and again" },
+      "parentPrompt": "Hold your child on your lap and rock forward and back on each big beat.",
+      "childAction": "Rock and pat your knees with the swingy song.",
+      "bridge": "The beat rocks like a rocking chair: forward, back, forward, back.",
+      "intro": [ { "caption": "A silly song is coming!", "parentCue": "child on your lap, rock forward and back" } ],
+      "games": [],
+      "praise": "You rocked together!",
+      "celebrate": "Today you practiced: feeling the rocking beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Fiddle taps",
+      "goal": "Tap one steady tap on each big beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each big beat, no more and no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key on every big rocking beat.",
+      "bridge": "Hey did-dle, did-dle: the taps land on 'hey' and on 'did'.",
+      "intro": [ { "caption": "Tap where the song rocks", "parentCue": "tap your child's shoulder on each big beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Hey diddle diddle, tap tap",
+          "parentCue": "Say 'one, two' as you tap",
+          "bpm": 72,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "F4", "d": 1.5 }, { "p": "D4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "G4", "d": 1.5 }, { "p": "E4", "d": 3 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each big beat."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Contour (rising line)", "parentLine": "Sounds can climb up, like the cow jumping over the moon" },
+      "parentPrompt": "Growl and crouch for the bear; flap your arms and reach up for the bird.",
+      "childAction": "Bear sound: tap the left side. Bird sound: tap the right.",
+      "bridge": "Low sounds stay on the ground with the bear; high sounds reach the moon.",
+      "intro": [ { "caption": "The bear lives low, the bird flies high", "parentCue": "point left for the bear, right for the bird" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "The cow jumps up high!",
+          "parentCue": "Lift your child's arms up as it climbs",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "C5", "d": 2 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Loud cow, quiet cat",
+      "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "The same tap can be big or small" },
+      "parentPrompt": "Use strong arms for loud taps; whisper and tiptoe your fingers for soft.",
+      "childAction": "Loud: big cow stomps. Soft: tiny cat paws.",
+      "bridge": "Loud taps are a cow stomping; soft taps are a cat tiptoeing.",
+      "intro": [ { "caption": "Big cow, little cat", "parentCue": "loud means strong arms, never banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Turtle and bunny rock",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "The same tune, only the speed changes" },
+      "parentPrompt": "Rock your child slowly, then quickly, matching the music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "Slow taps are turtle steps; quick taps are the dish running away.",
+      "intro": [ { "caption": "Turtle time, then bunny time", "parentCue": "slow down if the taps get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle rocks slowly",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 56,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "F4", "d": 1.5 }, { "p": "D4", "d": 1.5 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny rocks fast!",
+          "parentCue": "Same tune, now quick and light",
+          "bpm": 100,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "F4", "d": 1.5 }, { "p": "D4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Run, dish! Stop, spoon!",
+      "goal": "Tap while the music plays and hold still when it stops.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "Freeze with a funny face when the music stops; giggle when it starts again.",
+      "childAction": "Tap while the music plays. Freeze when it stops.",
+      "bridge": "Music on, the dish runs; music off, the dish and spoon hide still.",
+      "intro": [ { "caption": "Tap, tap... freeze!", "parentCue": "make freezing silly, like a statue" } ],
+      "games": [],
+      "praise": "Great freezing!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "together",
+      "title": "Cat and fiddle duet",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together into one song" },
+      "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Tap the big beat on any key while your grown-up plays.",
+      "bridge": "The grown-up is the fiddle; you are the cat tapping along.",
+      "intro": [ { "caption": "I play, you tap", "parentCue": "sit side by side at the piano" } ],
+      "games": [],
+      "praise": "What a duet together!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Concert for teddy",
+      "goal": "Play the whole song from the first note to the last, then bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on, and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then laugh, cheer and bow together.",
+      "childAction": "Tap the beat to the very end, then take a big bow.",
+      "bridge": "When the dish runs away with the spoon, the song is done: bow!",
+      "intro": [ { "caption": "A song for teddy!", "parentCue": "sit teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

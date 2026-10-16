@@ -1,0 +1,207 @@
+{
+  "songId": "daisy-bell",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices the keyboard map, notes lasting one, two and three beats, song shape and a left-hand waltz, using a bicycle song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "Downhill on the bicycle",
+      "goal": "Find the hand position and hear the first line ride downhill from high C to low C.",
+      "skill": { "primary": "space", "secondary": ["pitch", "fingers"] },
+      "mathTarget": { "concept": "Spatial mapping (high to low)", "parentLine": "High notes on the right, low notes on the left" },
+      "parentPrompt": "Draw a hill in the air with your child's finger, from high right to low left.",
+      "childAction": "Point to each Daisy note as it rides down the keys.",
+      "bridge": "Dai-sy, Dai-sy: four big wheels rolling downhill from right to left.",
+      "intro": [ { "caption": "Ride downhill with Daisy", "parentCue": "draw a hill in the air together" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Daisy, Daisy, downhill",
+          "parentCue": "Point to each key as it lights",
+          "bpm": 80,
+          "notes": [ { "p": "C5", "d": 3 }, { "p": "A4", "d": 3 }, { "p": "F4", "d": 3 }, { "p": "C4", "d": 3 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Give me your answer, do",
+          "parentCue": "Say two, three, four, two, four, one",
+          "bpm": 66,
+          "notes": [ { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "D4", "d": 2, "f": 2 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "C4", "d": 3, "f": 1 } ]
+        }
+      ],
+      "praise": "What a downhill ride!",
+      "celebrate": "Today you practiced: mapping high and low notes onto the keys."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Same start, new road",
+      "goal": "Learn the second line and compare its ending with the first line's ending.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "form"] },
+      "mathTarget": { "concept": "Parallel phrases (same start)", "parentLine": "Two lines start the same way, then take different roads" },
+      "parentPrompt": "Play both endings and ask: 'Which one went home, which one climbed up?'",
+      "childAction": "Play D, E, F, then climb on: G, A, G.",
+      "bridge": "Both roads start D, E, F; one turns home, one rides up the hill.",
+      "intro": [ { "caption": "Same start, which road?", "parentCue": "ask which ending goes home" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "All for the love of you",
+          "parentCue": "Say one, two, three, four, five, four",
+          "bpm": 66,
+          "notes": [ { "p": "D4", "d": 1, "f": 1 }, { "p": "E4", "d": 1, "f": 2 }, { "p": "F4", "d": 1, "f": 3 }, { "p": "G4", "d": 2, "f": 4 }, { "p": "A4", "d": 1, "f": 5 }, { "p": "G4", "d": 3, "f": 4 } ]
+        }
+      ],
+      "praise": "You found both roads!",
+      "celebrate": "Today you practiced: comparing two lines that start the same."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "A little wobble on black",
+      "goal": "Learn the middle lines, with a tiny step up onto a black key and back.",
+      "skill": { "primary": "fingers", "secondary": ["space", "patterns"] },
+      "mathTarget": { "concept": "Neighbour pattern (up and back)", "parentLine": "Stepping to the next key and straight back again" },
+      "parentPrompt": "Show the black key just right of A; say 'wob-ble' as your child steps on and off.",
+      "childAction": "Play A, the black key, then A again: a little wobble.",
+      "bridge": "The bicycle wobbles: step onto the black key, then straight back to A.",
+      "intro": [ { "caption": "The bicycle wobbles", "parentCue": "show the black key just right of A" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "It won't be a stylish",
+          "parentCue": "Say three, four, three, two",
+          "bpm": 63,
+          "notes": [ { "p": "A4", "d": 1, "f": 3 }, { "p": "A#4", "d": 1, "f": 4 }, { "p": "A4", "d": 1, "f": 3 }, { "p": "G4", "d": 2, "f": 2 } ]
+        }
+      ],
+      "praise": "A wobble, then steady!",
+      "celebrate": "Today you practiced: stepping onto a black key and back."
+    },
+    {
+      "index": 4,
+      "spineType": "put-together",
+      "title": "Two halves of the ride",
+      "goal": "Play the whole song slowly and hear its two halves: long calls, then quick chatter.",
+      "skill": { "primary": "form", "secondary": ["listening", "counting"] },
+      "mathTarget": { "concept": "Song architecture (two halves)", "parentLine": "The first half sings long notes; the second half chatters" },
+      "parentPrompt": "Stretch your arms wide for the long first half; wiggle your fingers for the chattery second.",
+      "childAction": "Play slowly; tell your grown-up when the chatter half begins.",
+      "bridge": "First the bicycle glides with long notes, then the wheels go clickety-click.",
+      "intro": [ { "caption": "Long notes, then chatter", "parentCue": "ask your child when the halves change" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 86,
+          "notes": [ { "p": "C5", "d": 3 }, { "p": "A4", "d": 3 }, { "p": "F4", "d": 3 }, { "p": "C4", "d": 3 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found both halves!",
+      "celebrate": "Today you practiced: hearing the two halves of a song."
+    },
+    {
+      "index": 5,
+      "spineType": "review",
+      "title": "One, two, three beats long",
+      "goal": "Practise 'give me your answer, do' slowly: notes that last one, two and three beats.",
+      "skill": { "primary": "counting", "secondary": ["beat", "fingers"] },
+      "mathTarget": { "concept": "Ratio 1:2:3 (note lengths)", "parentLine": "Some notes last one beat, some two, some three" },
+      "parentPrompt": "Count 'one, two, three' aloud and hold up fingers for how long each note lasts.",
+      "childAction": "Play slowly, holding each note for its number of beats.",
+      "bridge": "A one-beat note is a pedal push; a three-beat note is a long glide.",
+      "intro": [ { "caption": "How long does it last?", "parentCue": "hold up fingers for each note's beats" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Slowly: give me your answer",
+          "parentCue": "Count each long note aloud",
+          "bpm": 56,
+          "notes": [ { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "D4", "d": 2, "f": 2 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "C4", "d": 3, "f": 1 } ]
+        }
+      ],
+      "praise": "Every note held right!",
+      "celebrate": "Today you practiced: notes that last one, two and three beats."
+    },
+    {
+      "index": 6,
+      "spineType": "left-hand",
+      "title": "Oom-pah-pah, low note first",
+      "goal": "Play one low left-hand note at the start of each bar of three.",
+      "skill": { "primary": "beat", "secondary": ["counting", "space"] },
+      "mathTarget": { "concept": "Grouping (one per bar of three)", "parentLine": "One low note, then two waits: oom, pah, pah" },
+      "parentPrompt": "Say 'oom, pah, pah' aloud; your child plays the low note on every 'oom'.",
+      "childAction": "Left hand plays low F on 'oom', then waits two beats.",
+      "bridge": "Low notes live far left, like the big back wheel: oom, pah, pah.",
+      "intro": [ { "caption": "Oom, pah, pah!", "parentCue": "say it aloud while you play the tune" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Low F, low C, oom",
+          "parentCue": "Say oom-pah-pah for each note",
+          "bpm": 66,
+          "notes": [ { "p": "F3", "d": 3 }, { "p": "F3", "d": 3 }, { "p": "C3", "d": 3 }, { "p": "F3", "d": 3 } ]
+        }
+      ],
+      "praise": "Great oom-pah-pah!",
+      "celebrate": "Today you practiced: one low note at the start of each bar."
+    },
+    {
+      "index": 7,
+      "spineType": "hands-together",
+      "title": "Two riders, one bicycle",
+      "goal": "Play the tune with a low left-hand note at the start of each bar, very slowly.",
+      "skill": { "primary": "fingers", "secondary": ["beat", "counting"] },
+      "mathTarget": { "concept": "Ratio 1:3 (two hands)", "parentLine": "The left hand plays once while the right hand plays three" },
+      "parentPrompt": "Count 'one, two, three' slowly; tap your child's left hand on every 'one'.",
+      "childAction": "Left hand on 'one', right hand keeps the tune going.",
+      "bridge": "A bicycle built for two: one rider pedals low, one steers high.",
+      "intro": [ { "caption": "Two hands, one bicycle", "parentCue": "tap their left hand on every one" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 76,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "F3", "d": 2, "f": 2 }, { "p": "G3", "d": 2, "f": 1 }, { "p": "C3", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Both riders pedalled!",
+      "celebrate": "Today you practiced: using two hands with different jobs."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Built for two",
+      "goal": "Play the whole song along with the music and keep going to the end.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Synchrony with a moving pulse", "parentLine": "Keeping pace with the music, all the way to the end" },
+      "parentPrompt": "Sing along beside your child and sway on each 'one'; if they slip, keep going.",
+      "childAction": "Play along with the music; keep pedalling after a slip.",
+      "bridge": "Two riders pedal at the same speed, or the bicycle wobbles.",
+      "intro": [ { "caption": "Hop on, it's built for two", "parentCue": "sing beside your child and keep going" } ],
+      "games": [],
+      "praise": "You rode together!",
+      "celebrate": "Today you practiced: keeping pace with the music to the end."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "A waltz for teddy",
+      "goal": "Play the whole song for teddy with a gentle swaying waltz feel.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Character (lilting waltz)", "parentLine": "Choosing a swaying, gentle way to play" },
+      "parentPrompt": "Sit teddy as the audience; sway together on each 'one', then clap and bow.",
+      "childAction": "Play a swaying waltz for teddy, then bow.",
+      "bridge": "Lean into each 'one' like a bicycle leaning round a gentle bend.",
+      "intro": [ { "caption": "A waltz for teddy!", "parentCue": "sit teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, sweet waltz!",
+      "celebrate": "Today you practiced: playing a whole song with a waltz feel."
+    }
+  ]
+}

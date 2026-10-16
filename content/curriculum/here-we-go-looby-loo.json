@@ -1,0 +1,183 @@
+{
+  "songId": "here-we-go-looby-loo",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices a swinging beat, finding a special note, echoing skipping patterns and taking turns, with an old circle-and-shake game.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Shake when it comes back",
+      "goal": "Listen for the first line each time it returns, and shake your hands when it does.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "together"] },
+      "mathTarget": { "concept": "Pattern recognition (repeat)", "parentLine": "Noticing when the same line comes back" },
+      "parentPrompt": "Sway with your child; each time 'here we go looby loo' returns, shake your hands together.",
+      "childAction": "Sway with the song. Shake your hands when the line comes back.",
+      "bridge": "The first line is a friend who keeps coming back round the circle.",
+      "intro": [ { "caption": "Shake when you hear it again", "parentCue": "sway together, then shake hands on the repeat" } ],
+      "games": [],
+      "praise": "You heard it come back!",
+      "celebrate": "Today you practiced: noticing a line that repeats."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Swing in the circle",
+      "goal": "Tap one steady tap on each big swinging beat while the grown-up plays.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Grouping in two (compound pulse)", "parentLine": "This song swings in twos: one, two, one, two" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key on each big swing. Any key is right.",
+      "bridge": "Each tap is one skip around the circle: skip, skip, skip.",
+      "intro": [ { "caption": "One skip, one tap", "parentCue": "say 'one, two' softly with the swings" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Here we go looby loo",
+          "parentCue": "Tap two big taps with this line",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 1.5 }, { "p": "C4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "You kept the swing!",
+      "celebrate": "Today you practiced: tapping a swinging beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "Find home note C",
+      "goal": "Find C by touch: it sits just left of the two black keys.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmarks (black-key groups)", "parentLine": "Using the two black keys to find one white key" },
+      "parentPrompt": "Guide your child's finger to the two black keys, then slide left onto C.",
+      "childAction": "Touch the two black keys, slide left, and press C gently.",
+      "bridge": "The two black keys are a little hut; C waits just outside on the left.",
+      "intro": [ { "caption": "Find the two black keys", "parentCue": "let your child touch them first, then find C" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "C, C, C: one, two, three",
+          "parentCue": "Count softly with each press",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "C4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found the C!",
+      "celebrate": "Today you practiced: finding one key by its landmark."
+    },
+    {
+      "index": 4,
+      "spineType": "echo",
+      "title": "Skip, skip, skip",
+      "goal": "Copy a pattern that skips over a key each time: C, E, G.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "space"] },
+      "mathTarget": { "concept": "Skip pattern (every other key)", "parentLine": "Jumping over one key each time, like hopscotch" },
+      "parentPrompt": "Play C-E-G slowly, touching the skipped keys with a finger, then let your child copy.",
+      "childAction": "Listen, then play C, E, G, hopping over a key each time.",
+      "bridge": "C, E, G is hopscotch on the keys: hop over one, land, hop again.",
+      "intro": [ { "caption": "Hop over one key", "parentCue": "touch the skipped key so your child sees it" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Hop, hop: C, E, G",
+          "parentCue": "Point to each landing key first",
+          "bpm": 69,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great hopping!",
+      "celebrate": "Today you practiced: copying a pattern that skips keys."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Same jump, one step up",
+      "goal": "Hear the first line move one step higher, then copy both.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "pitch"] },
+      "mathTarget": { "concept": "Sequence (pattern moved one step)", "parentLine": "The same shape, starting one key higher" },
+      "parentPrompt": "Play the first jump, then the same jump one key to the right; let your child copy each.",
+      "childAction": "Copy the jump, then copy it again one key higher.",
+      "bridge": "The second line is the same game, played one step up the stairs.",
+      "intro": [ { "caption": "Same jump, one step up", "parentCue": "show each jump once, then let your child copy" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Jump from C: C, E, C",
+          "parentCue": "Point to C, then E",
+          "bpm": 69,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "One step up: D, F, D",
+          "parentCue": "Slide your child's hand one key right",
+          "bpm": 69,
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "You moved the pattern!",
+      "celebrate": "Today you practiced: noticing the same pattern, one step higher."
+    },
+    {
+      "index": 6,
+      "spineType": "special-note",
+      "title": "Wait for home C",
+      "goal": "Wait while the grown-up plays, then play C when it is your turn.",
+      "skill": { "primary": "together", "secondary": ["listening", "beat"] },
+      "mathTarget": { "concept": "Turn-taking (call and response)", "parentLine": "Waiting for your part, then joining in" },
+      "parentPrompt": "Play your part, then nod to your child just before each C; smile while they wait.",
+      "childAction": "Wait for the nod, then press C.",
+      "bridge": "Like the circle game, everyone waits, then puts their hand in on C.",
+      "intro": [ { "caption": "Wait, wait... hand in on C!", "parentCue": "nod to your child when it is their turn" } ],
+      "games": [],
+      "praise": "Great waiting!",
+      "celebrate": "Today you practiced: waiting for a turn, then joining in."
+    },
+    {
+      "index": 7,
+      "spineType": "special-note",
+      "title": "C or E? Pick one",
+      "goal": "Play two special notes, C and E, choosing the right one by listening.",
+      "skill": { "primary": "listening", "secondary": ["space", "together"] },
+      "mathTarget": { "concept": "Classification into two sets", "parentLine": "Sorting each sound into one of two boxes" },
+      "parentPrompt": "Point to C or E before each turn at first, then let your child choose.",
+      "childAction": "Listen, choose C or E, and press the right one.",
+      "bridge": "C is home, left of the black keys; E is one hop over, on the right.",
+      "intro": [ { "caption": "Home C, or hop to E?", "parentCue": "point first, then let your child choose alone" } ],
+      "games": [],
+      "praise": "Great choosing!",
+      "celebrate": "Today you practiced: telling two sounds apart and choosing one."
+    },
+    {
+      "index": 8,
+      "spineType": "together",
+      "title": "Round the circle together",
+      "goal": "Play the whole song together, sharing one swinging beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Entrainment (shared pulse)", "parentLine": "Two players keep one beat together" },
+      "parentPrompt": "Play the tune and nod the swing with your head; keep going if your child misses.",
+      "childAction": "Play your notes and nod along with your grown-up.",
+      "bridge": "Holding hands in the circle, we all skip at the same speed.",
+      "intro": [ { "caption": "Two players, one swing", "parentCue": "nod the beat so your child can see it" } ],
+      "games": [],
+      "praise": "You played together!",
+      "celebrate": "Today you practiced: playing one song together, one beat."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Looby concert for teddy",
+      "goal": "Play the whole song for teddy, end on the home note and bow.",
+      "skill": { "primary": "form", "secondary": ["together", "expression"] },
+      "mathTarget": { "concept": "Form: repeat and return", "parentLine": "The first line comes back, then the song ends home" },
+      "parentPrompt": "Sit teddy as the audience; hold the last note together, then shake hands and bow.",
+      "childAction": "Play for teddy, hold the last note, then take a bow.",
+      "bridge": "The circle goes round and round, then everyone stops at home on C.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

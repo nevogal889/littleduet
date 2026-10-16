@@ -1,0 +1,229 @@
+{
+  "songId": "shell-be-coming-round-the-mountain",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices counting same notes, hearing the tune climb and come home, playing even quick notes, and playing together, with an American folk song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Who's coming round?",
+      "goal": "Hear the whole song, pat its beat, and wave hello on 'when she comes'.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (steady pulse)", "parentLine": "Feeling a beat that comes again and again, evenly spaced" },
+      "parentPrompt": "Pat your knees to the beat together, and wave hello on 'when she comes'.",
+      "childAction": "Pat the beat, then wave hello on 'when she comes'.",
+      "bridge": "The beat is the trotting ride round the mountain: clip, clop, clip, clop.",
+      "intro": [ { "caption": "Someone is coming to visit!", "parentCue": "pat your knees together to the beat." } ],
+      "games": [],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: feeling the steady beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Four C's on the road",
+      "goal": "Learn the first line: the grown-up plays the low notes, the child plays the C's.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "together"] },
+      "mathTarget": { "concept": "Cardinality (four same notes)", "parentLine": "Counting four same notes in a row: one, two, three, four" },
+      "parentPrompt": "Play the low notes yourself; your child plays the C's. Count them aloud.",
+      "childAction": "Play C, C, C, C on 'coming round the', then wait.",
+      "bridge": "Low notes on the left are the foot of the mountain; C is the road.",
+      "intro": [ { "caption": "Count the C's on the road", "parentCue": "you play the low notes; your child plays the C's." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Coming round the: C, C, C, C",
+          "parentCue": "Count the four C's on your fingers",
+          "bpm": 70,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great counting!",
+      "celebrate": "Today you practiced: counting four same notes in a row."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "Halfway up the path",
+      "goal": "Learn the second line and hear it stop before home, on D.",
+      "skill": { "primary": "listening", "secondary": ["form", "pitch"] },
+      "mathTarget": { "concept": "Open ending (not home yet)", "parentLine": "The second line stops on D, like 'not quite there yet'" },
+      "parentPrompt": "Play line one, then line two; ask your child which line stopped before home.",
+      "childAction": "Play E, G, F, E, D and hear it stop before home.",
+      "bridge": "Line two climbs the mountain path and stops halfway, on D.",
+      "intro": [ { "caption": "Does this line get home?", "parentCue": "after line two, ask: are we home yet?" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Home, then not yet home",
+          "parentCue": "Ask: which one stopped before home?",
+          "bpm": 80,
+          "notes": [ { "p": "G3", "d": 1 }, { "p": "E3", "d": 0.5 }, { "p": "G3", "d": 0.5 }, { "p": "C4", "d": 3 }, { "p": "G4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 3 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Up the path: E, G, F, E, D",
+          "parentCue": "Point to each key before it lights",
+          "bpm": 66,
+          "notes": [ { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 3 } ]
+        }
+      ],
+      "praise": "You heard 'not yet'!",
+      "celebrate": "Today you practiced: hearing an ending that is not home yet."
+    },
+    {
+      "index": 4,
+      "spineType": "phrase",
+      "title": "Mountain top, then down",
+      "goal": "Learn the top of the song: the grown-up plays the high A's, the child answers below.",
+      "skill": { "primary": "pitch", "secondary": ["space", "patterns"] },
+      "mathTarget": { "concept": "Contour (peak, then down)", "parentLine": "The tune climbs to the mountain top, then comes down" },
+      "parentPrompt": "Play the high A's yourself; your child answers with the E's below.",
+      "childAction": "Listen to the mountain top, then play the E's down to C.",
+      "bridge": "High A's on the right are the mountain top; E's are halfway down.",
+      "intro": [ { "caption": "Up to the mountain top", "parentCue": "you play the high A's; your child plays the E's." } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Mountain top, then halfway down",
+          "parentCue": "Lift your hand high, then bring it down",
+          "bpm": 80,
+          "notes": [ { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "A4", "d": 1 }, { "p": "A4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "A4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "A4", "d": 2 }, { "p": "G4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Halfway down, then home to C",
+          "parentCue": "Point to each key before it lights",
+          "bpm": 66,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 2 } ]
+        }
+      ],
+      "praise": "Down the mountain, well done!",
+      "celebrate": "Today you practiced: hearing a tune climb high and come down."
+    },
+    {
+      "index": 5,
+      "spineType": "put-together",
+      "title": "Round the whole mountain",
+      "goal": "Play the whole song slowly, all five lines in order.",
+      "skill": { "primary": "form", "secondary": ["patterns", "listening"] },
+      "mathTarget": { "concept": "Ordinal sequence (five lines)", "parentLine": "Five lines in order: foot, path, top, down, home" },
+      "parentPrompt": "Sing the next word if your child gets stuck; don't fix every note.",
+      "childAction": "Play all five lines in order, slowly, all the way home.",
+      "bridge": "Foot of the mountain, up the path, the top, back down, and home.",
+      "intro": [ { "caption": "All the way round the mountain", "parentCue": "sing the next word if your child gets stuck." } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 90,
+          "notes": [ { "p": "G3", "d": 0.5 }, { "p": "A3", "d": 0.5 }, { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "A3", "d": 0.5 }, { "p": "G3", "d": 1 } ]
+        }
+      ],
+      "praise": "All the way round, bravo!",
+      "celebrate": "Today you practiced: playing five lines in order."
+    },
+    {
+      "index": 6,
+      "spineType": "review",
+      "title": "Even taps on the road",
+      "goal": "Practise the quick same-note spot slowly, then a little faster.",
+      "skill": { "primary": "fingers", "secondary": ["beat", "counting"] },
+      "mathTarget": { "concept": "Repeated notes (even quick taps)", "parentLine": "Playing the same key quickly and evenly, like a ticking clock" },
+      "parentPrompt": "Play it slowly; say 'run-ning, walk' as your child taps the D's.",
+      "childAction": "Tap D quickly and evenly with one finger, like rain.",
+      "bridge": "Same-key notes are hooves on the road: even, even, even.",
+      "intro": [ { "caption": "Quick, even taps", "parentCue": "say 'run-ning, walk' as your child plays." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Even taps: D, D, D, D, D",
+          "parentCue": "Say 'run-ning, walk' as it plays",
+          "bpm": 60,
+          "notes": [ { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "Even taps, well done!",
+      "celebrate": "Today you practiced: quick, even taps on one key."
+    },
+    {
+      "index": 7,
+      "spineType": "phrase",
+      "title": "Steady ride, slow and even",
+      "goal": "Play the whole song slowly and evenly, counting four beats in each bar.",
+      "skill": { "primary": "beat", "secondary": ["counting", "fingers"] },
+      "mathTarget": { "concept": "Steady pulse (four per bar)", "parentLine": "Counting one to four keeps every note evenly spaced" },
+      "parentPrompt": "Count 'one, two, three, four' softly while your child plays slowly.",
+      "childAction": "Play slowly while you count to four with your grown-up.",
+      "bridge": "Each bar is four even steps round the mountain.",
+      "intro": [ { "caption": "Slow and steady ride", "parentCue": "count one to four softly as you go." } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap and count to four",
+          "parentCue": "Count one to four out loud",
+          "bpm": 72,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 2 } ]
+        }
+      ],
+      "praise": "Slow and steady, bravo!",
+      "celebrate": "Today you practiced: playing evenly, counting to four."
+    },
+    {
+      "index": 8,
+      "spineType": "octave",
+      "title": "A higher mountain",
+      "goal": "Play the song in a higher place on the piano with the same fingers.",
+      "skill": { "primary": "space", "secondary": ["pitch", "fingers"] },
+      "mathTarget": { "concept": "Translation (same shape, higher)", "parentLine": "The same song, moved to a higher home, sounds lighter" },
+      "parentPrompt": "Slide your child's hand up to the higher keys: same fingers, same song.",
+      "childAction": "Move your hand up high and play the same song.",
+      "bridge": "The same ride on a higher mountain, to the right: light and bright.",
+      "intro": [ { "caption": "Same song, up high", "parentCue": "slide your child's hand up to the right." } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Same tune, two mountains",
+          "parentCue": "Ask: which one sounds lighter?",
+          "bpm": 88,
+          "notes": [ { "p": "G4", "d": 0.5 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 2 }, { "p": "G5", "d": 0.5 }, { "p": "F5", "d": 0.5 }, { "p": "E5", "d": 1 }, { "p": "E5", "d": 0.5 }, { "p": "E5", "d": 0.5 }, { "p": "E5", "d": 0.5 }, { "p": "D5", "d": 0.5 }, { "p": "C5", "d": 2 } ]
+        }
+      ],
+      "praise": "High mountain music, bravo!",
+      "celebrate": "Today you practiced: playing the same song in a new place."
+    },
+    {
+      "index": 9,
+      "spineType": "play-along",
+      "title": "Ride along with the music",
+      "goal": "Play the whole song along with the music at full speed.",
+      "skill": { "primary": "together", "secondary": ["beat", "expression"] },
+      "mathTarget": { "concept": "Synchrony (keeping up)", "parentLine": "Keeping your part going while the music moves on" },
+      "parentPrompt": "Sit close and nod the beat; if a note is missed, keep going.",
+      "childAction": "Play along with the music. Missed notes are fine; keep riding!",
+      "bridge": "The music rides round the mountain; hop on and keep riding.",
+      "intro": [ { "caption": "Ride along with the music", "parentCue": "nod the beat and keep going, whatever happens." } ],
+      "games": [],
+      "praise": "You kept riding!",
+      "celebrate": "Today you practiced: keeping up with the music, together."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "Here comes teddy!",
+      "goal": "Play the whole song as teddy comes closer, a little louder as teddy nears.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Crescendo (closer means louder)", "parentLine": "Playing a little louder as the visitor comes closer" },
+      "parentPrompt": "Walk teddy slowly toward the piano as your child plays; cheer when teddy arrives.",
+      "childAction": "Play softly first, a bit louder as teddy comes near.",
+      "bridge": "Far away is soft; close by is loud. Hello, teddy!",
+      "intro": [ { "caption": "Teddy is coming to visit!", "parentCue": "walk teddy slowly toward the piano." } ],
+      "games": [],
+      "praise": "Bravo, teddy is here!",
+      "celebrate": "Today you practiced: playing softly, then louder, start to end."
+    }
+  ]
+}

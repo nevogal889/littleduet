@@ -2,41 +2,55 @@
  "songId": "over-the-river-and-through-the-wood",
  "title": "Over the River and Through the Wood",
  "ageGroup": "4-5",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and listening memory, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices one finger per key, a long-short trotting rhythm, counting down 5 to 1 and matching phrase starts, on a snowy sleigh trip.",
  "skillMap": [
   {
-   "id": "fingers",
-   "label": "Finger control",
+   "id": "space",
+   "label": "Keyboard map",
    "value": 1.0,
-   "classes": 4,
+   "classes": 2,
    "total": 9
   },
   {
    "id": "form",
    "label": "Song shape",
-   "value": 0.5,
+   "value": 1.0,
    "classes": 2,
    "total": 9
   },
   {
-   "id": "listening",
-   "label": "Listening memory",
-   "value": 0.25,
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.5,
    "classes": 1,
    "total": 9
   },
   {
-   "id": "space",
-   "label": "Keyboard map",
-   "value": 0.25,
+   "id": "pitch",
+   "label": "High and low",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "fingers",
+   "label": "Finger control",
+   "value": 0.5,
    "classes": 1,
    "total": 9
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.25,
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -44,44 +58,73 @@
  "icon": "horse",
  "key": "C",
  "timeSignature": "6/8",
- "totalSec": 2262,
+ "totalSec": 2258,
  "classes": [
   {
    "id": "over-the-river-and-through-the-wood-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "Five fingers in the sleigh",
+   "goal": "Place the right hand with one finger on each key, thumb on C.",
    "type": "listen",
-   "durationSec": 241,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 250,
+   "parentTip": "Help your child put the thumb on C, then touch each finger to its key, 1 to 5.",
    "video": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c01.mp4",
    "thumb": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Over the River and Through the Wood",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: Five fingers in the sleigh",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Over the River and Through the Wood. Let's warm up our fingers.",
      "voiceId": "b4f6b303d83ccbab",
      "voiceSec": 6.91
     },
     {
-     "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
     },
     {
      "kind": "say",
-     "caption": "Thumb on D, fingers curved",
+     "caption": "Everyone into the sleigh!",
+     "parentCue": "thumb on C, just left of the two black keys",
+     "durationSec": 8,
+     "voice": "Everyone into the sleigh. Grown-up, thumb on C, just left of the two black keys.",
+     "voiceId": "f3420ff88ab31e90",
+     "voiceSec": 6.15
+    },
+    {
+     "kind": "say",
+     "caption": "Thumb on C, fingers curved",
      "parentCue": "Help place one finger on each lit key",
      "showKeys": [
       {
-       "p": "D4",
+       "p": "C4",
        "f": 1
       },
       {
@@ -102,9 +145,9 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Thumb on D. Curve your fingers, like holding a little ball.",
-     "voiceId": "5b496bfeef100fb1",
-     "voiceSec": 4.07
+     "voice": "Thumb on C. Curve your fingers, like holding a little ball.",
+     "voiceId": "df5c6ecc923ce75c",
+     "voiceSec": 3.73
     },
     {
      "kind": "listen",
@@ -825,7 +868,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 104,
-     "leadInSec": 3.1,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "E4",
@@ -1044,18 +1087,18 @@
        "from": 26
       }
      ],
-     "durationSec": 21,
-     "voice": "Here comes the music. Listen.",
-     "voiceId": "851e2f513b5871ee",
-     "voiceSec": 2.7
+     "durationSec": 20,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -1547,253 +1590,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 104,
-     "leadInSec": 3.1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "horse"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "knows"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "car"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ry"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sleigh"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "white"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drift"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ed"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "snow"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      },
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      },
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 16
-      },
-      {
-       "lyric": "through the white and drifted snow",
-       "from": 26
-      }
-     ],
-     "durationSec": 21,
-     "voice": "Here comes the music. Listen.",
-     "voiceId": "851e2f513b5871ee",
-     "voiceSec": 2.7
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 104,
-     "leadInSec": 1.93,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "E4",
@@ -2013,2155 +1810,13 @@
       }
      ],
      "durationSec": 20,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    }
-   ],
-   "skill": {
-    "primary": "listening",
-    "secondary": [
-     "beat",
-     "together"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
-   },
-   "parentPrompt": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
-  },
-  {
-   "id": "over-the-river-and-through-the-wood-c02",
-   "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
-   "type": "phrase",
-   "durationSec": 263,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "video": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c02.mp4",
-   "thumb": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c02.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Over the River and Through the Wood",
-     "subcaption": "Class 2: Part 1",
-     "durationSec": 8,
-     "voice": "Hello, friends. Today it's Over the River and Through the Wood. Sit in the middle of the piano.",
-     "voiceId": "ba60b0907764794e",
-     "voiceSec": 6.75
-    },
-    {
-     "kind": "say",
-     "caption": "Today: Over the river and through",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: Over the river and through the wood.",
-     "voiceId": "a9746731aab21e83",
-     "voiceSec": 4.9
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch the lights",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 78,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      },
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Point to each key if needed",
-     "bpm": 78,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      },
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      }
-     ],
-     "durationSec": 28,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 78,
-     "leadInSec": 3.3,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 78,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 78,
-     "leadInSec": 3.3,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 78,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 0
-      }
-     ],
-     "durationSec": 15,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 78,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      },
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      }
-     ],
-     "durationSec": 28,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 78,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      },
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      }
-     ],
-     "durationSec": 28,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 94,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      },
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      }
-     ],
-     "durationSec": 13,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 83,
-     "leadInSec": 2.95,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      },
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      }
-     ],
-     "durationSec": 26,
-     "voice": "Your turn. Slow and steady.",
-     "voiceId": "3445286047dfdab5",
-     "voiceSec": 2.55
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    }
-   ],
-   "skill": {
-    "primary": "fingers",
-    "secondary": [
-     "form"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
-   },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
-  },
-  {
-   "id": "over-the-river-and-through-the-wood-c03",
-   "index": 3,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
-   "type": "phrase",
-   "durationSec": 260,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "video": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c03.mp4",
-   "thumb": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c03.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Over the River and Through the Wood",
-     "subcaption": "Class 3: Part 2",
-     "durationSec": 9,
-     "voice": "Hello, piano friends. Today we play Over the River and Through the Wood. Grown-up, sit beside the keys.",
-     "voiceId": "0d835e1eba42620b",
-     "voiceSec": 7.09
-    },
-    {
-     "kind": "say",
-     "caption": "Today: the horse knows the way",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: the horse knows the way to carry the sleigh.",
-     "voiceId": "71728e2675100195",
-     "voiceSec": 4.95
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch the lights",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 78,
-     "leadInSec": 3.26,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "horse"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "knows"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "car"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ry"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sleigh"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "white"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drift"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ed"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "snow"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 0
-      },
-      {
-       "lyric": "through the white and drifted snow",
-       "from": 10
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Eyes on the keys. Watch me play.",
-     "voiceId": "36c640081dde60cc",
-     "voiceSec": 2.86
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Point to each key if needed",
-     "bpm": 78,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "horse"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "knows"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "car"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ry"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sleigh"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "white"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drift"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ed"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "snow"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 0
-      },
-      {
-       "lyric": "through the white and drifted snow",
-       "from": 10
-      }
-     ],
-     "durationSec": 29,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 78,
-     "leadInSec": 3.79,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "horse"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "knows"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "car"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ry"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sleigh"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 78,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "horse"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "knows"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "car"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ry"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sleigh"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 78,
-     "leadInSec": 3.79,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "white"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drift"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ed"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "snow"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "through the white and drifted snow",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 78,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "white"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drift"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ed"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "snow"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "through the white and drifted snow",
-       "from": 0
-      }
-     ],
-     "durationSec": 15,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 78,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "horse"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "knows"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "car"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ry"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sleigh"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "white"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drift"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ed"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "snow"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 0
-      },
-      {
-       "lyric": "through the white and drifted snow",
-       "from": 10
-      }
-     ],
-     "durationSec": 29,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 78,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "horse"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "knows"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "car"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ry"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sleigh"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "white"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drift"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ed"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "snow"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 0
-      },
-      {
-       "lyric": "through the white and drifted snow",
-       "from": 10
-      }
-     ],
-     "durationSec": 29,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 94,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "horse"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "knows"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "car"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ry"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sleigh"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "white"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drift"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ed"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "snow"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 0
-      },
-      {
-       "lyric": "through the white and drifted snow",
-       "from": 10
-      }
-     ],
-     "durationSec": 13,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "Well done!",
      "durationSec": 5,
      "voice": "You worked so hard on that.",
      "voiceId": "0886fb9aff1f3753",
@@ -4252,7 +1907,7 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Everyone has a seat!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
@@ -4260,56 +1915,2314 @@
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "space",
     "secondary": [
-     "form"
+     "fingers",
+     "counting"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "One-to-one correspondence (finger to key)",
+    "parentLine": "Five fingers, five keys: one finger for each"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Help your child put the thumb on C, then touch each finger to its key, 1 to 5.",
+   "childAction": "Thumb on C, then one finger on each key up to G.",
+   "bridge": "Five keys are five seats in the sleigh; each finger gets its own seat.",
+   "celebrate": "Today you practiced: one finger on each key, 1 to 5."
+  },
+  {
+   "id": "over-the-river-and-through-the-wood-c02",
+   "index": 2,
+   "title": "Long-short, like a trot",
+   "goal": "Play the first line and feel its long-short, long-short trotting rhythm.",
+   "type": "phrase",
+   "durationSec": 267,
+   "parentTip": "Say 'trot-ting, trot-ting', long then short, while your child plays.",
+   "video": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c02.mp4",
+   "thumb": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c02.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Over the River and Through the Wood",
+     "subcaption": "Class 2: Long-short, like a trot",
+     "durationSec": 8,
+     "voice": "Hello, friends. Today it's Over the River and Through the Wood. Sit in the middle of the piano.",
+     "voiceId": "ba60b0907764794e",
+     "voiceSec": 6.75
+    },
+    {
+     "kind": "say",
+     "caption": "Trot-ting, trot-ting, off we go",
+     "parentCue": "say it slowly, long then short",
+     "durationSec": 8,
+     "voice": "Trot-ting, trot-ting, off we go. Grown-up, say it slowly, long then short.",
+     "voiceId": "b75d691fa09902f1",
+     "voiceSec": 6.88
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Over the river: long, short",
+     "parentCue": "Say 'trot-ting' with each long-short pair",
+     "bpm": 66,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the lights",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 78,
+     "leadInSec": 2.78,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ver"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "riv"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "er"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "through"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "wood"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Grand"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fa"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ther's"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "house"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "we"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "go"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
+      },
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 9
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Point to each key if needed",
+     "bpm": 78,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ver"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "riv"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "er"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "through"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "wood"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Grand"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fa"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ther's"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "house"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "we"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "go"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
+      },
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 9
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 78,
+     "leadInSec": 2.21,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ver"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "riv"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "er"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "through"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "wood"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 78,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ver"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "riv"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "er"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "through"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "wood"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5,
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 78,
+     "leadInSec": 2.8,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Grand"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fa"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ther's"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "house"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "we"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "go"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 78,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Grand"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fa"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ther's"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "house"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "we"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "go"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 0
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "One more time.",
+     "voiceId": "b4c800d6a3120ebd",
+     "voiceSec": 1.34
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 78,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ver"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "riv"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "er"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "through"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "wood"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Grand"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fa"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ther's"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "house"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "we"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "go"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
+      },
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 9
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5,
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "Again, nice and easy",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "Again, nice and easy.",
+     "voiceId": "6f32e8daa73a3ba6",
+     "voiceSec": 2.2
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 78,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ver"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "riv"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "er"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "through"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "wood"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Grand"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fa"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ther's"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "house"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "we"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "go"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
+      },
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 9
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "together",
+     "caption": "Now together, a bit faster",
+     "parentCue": "Play the same keys an octave up",
+     "bpm": 94,
+     "leadInSec": 2.67,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ver"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "riv"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "er"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "through"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "wood"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Grand"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fa"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ther's"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "house"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "we"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "go"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
+      },
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 9
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Now together, a little faster.",
+     "voiceId": "5e2a76445306320d",
+     "voiceSec": 2.27
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 83,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ver"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "riv"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "er"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "through"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "wood"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
+    },
+    {
+     "kind": "praise",
+     "caption": "What a trot!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
+    }
+   ],
+   "skill": {
+    "primary": "counting",
+    "secondary": [
+     "fingers",
+     "beat"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Ratio 2:1 (long and short)",
+    "parentLine": "The long note lasts twice as long as the short one"
+   },
+   "parentPrompt": "Say 'trot-ting, trot-ting', long then short, while your child plays.",
+   "childAction": "Play the first line: long, short, long, short, like a horse trotting.",
+   "bridge": "Long-short is the horse's trot: a big step, a little step, over the river.",
+   "celebrate": "Today you practiced: a long-short rhythm, like a trot."
+  },
+  {
+   "id": "over-the-river-and-through-the-wood-c03",
+   "index": 3,
+   "title": "The horse knows the way",
+   "goal": "Play the second part together; the grown-up plays the high A at the top.",
+   "type": "phrase",
+   "durationSec": 255,
+   "parentTip": "Grown-up, you play the high A; your child plays the notes around it.",
+   "video": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c03.mp4",
+   "thumb": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c03.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Over the River and Through the Wood",
+     "subcaption": "Class 3: The horse knows the way",
+     "durationSec": 9,
+     "voice": "Hello, piano friends. Today we play Over the River and Through the Wood. Grown-up, sit beside the keys.",
+     "voiceId": "0d835e1eba42620b",
+     "voiceSec": 7.09
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Up the snowy hill we go",
+     "parentCue": "you play the high A at the top",
+     "durationSec": 8,
+     "voice": "Up the snowy hill we go. Grown-up, you play the high A at the top.",
+     "voiceId": "a03e66ff8ac85054",
+     "voiceSec": 4.19
+    },
+    {
+     "kind": "listen",
+     "caption": "The horse knows the way",
+     "parentCue": "Lift your hand as the lights climb",
+     "bpm": 66,
+     "leadInSec": 3.78,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "The horse knows the way. Point up as the lights climb.",
+     "voiceId": "4670521d76c4bfdc",
+     "voiceSec": 3.38
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the lights",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 78,
+     "leadInSec": 2.78,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "horse"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "knows"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "way"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "car"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ry"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sleigh"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "through"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "white"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "drift"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ed"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "snow"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "the horse knows the way to carry the sleigh",
+       "from": 0
+      },
+      {
+       "lyric": "through the white and drifted snow",
+       "from": 10
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Point to each key if needed",
+     "bpm": 78,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "horse"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "knows"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "way"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "car"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ry"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sleigh"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "through"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "white"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "drift"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ed"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "snow"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "the horse knows the way to carry the sleigh",
+       "from": 0
+      },
+      {
+       "lyric": "through the white and drifted snow",
+       "from": 10
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 78,
+     "leadInSec": 2.32,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "horse"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "knows"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "way"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "car"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ry"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sleigh"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "the horse knows the way to carry the sleigh",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 78,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "horse"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "knows"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "way"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "car"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ry"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sleigh"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "the horse knows the way to carry the sleigh",
+       "from": 0
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5,
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 78,
+     "leadInSec": 3.38,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "through"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "white"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "drift"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ed"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "snow"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "through the white and drifted snow",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 78,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "through"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "white"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "drift"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ed"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "snow"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "through the white and drifted snow",
+       "from": 0
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5,
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "One more time.",
+     "voiceId": "b4c800d6a3120ebd",
+     "voiceSec": 1.34
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 78,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "horse"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "knows"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "way"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "car"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ry"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sleigh"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "through"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "white"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "drift"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ed"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "snow"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "the horse knows the way to carry the sleigh",
+       "from": 0
+      },
+      {
+       "lyric": "through the white and drifted snow",
+       "from": 10
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
+    },
+    {
+     "kind": "say",
+     "caption": "Again, nice and easy",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "Again, nice and easy.",
+     "voiceId": "6f32e8daa73a3ba6",
+     "voiceSec": 2.2
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 78,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "horse"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "knows"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "way"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "car"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ry"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sleigh"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "through"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "white"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "drift"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ed"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "snow"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "the horse knows the way to carry the sleigh",
+       "from": 0
+      },
+      {
+       "lyric": "through the white and drifted snow",
+       "from": 10
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "together",
+     "caption": "Now together, a bit faster",
+     "parentCue": "Play the same keys an octave up",
+     "bpm": 94,
+     "leadInSec": 2.67,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "horse"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "knows"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "way"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "car"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ry"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sleigh"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "through"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "white"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "drift"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ed"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "snow"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "the horse knows the way to carry the sleigh",
+       "from": 0
+      },
+      {
+       "lyric": "through the white and drifted snow",
+       "from": 10
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Now together, a little faster.",
+     "voiceId": "5e2a76445306320d",
+     "voiceSec": 2.27
+    },
+    {
+     "kind": "praise",
+     "caption": "Up the hill together!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
+    }
+   ],
+   "skill": {
+    "primary": "pitch",
+    "secondary": [
+     "together",
+     "listening"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Contour (climb to a peak)",
+    "parentLine": "The line climbs to its highest note, then comes back down"
+   },
+   "parentPrompt": "Grown-up, you play the high A; your child plays the notes around it.",
+   "childAction": "Climb up with your fingers; your grown-up plays the top note.",
+   "bridge": "The tune climbs a snowy hill to the right; the top is the grown-up's.",
+   "celebrate": "Today you practiced: hearing a line climb to its top."
   },
   {
    "id": "over-the-river-and-through-the-wood-c04",
    "index": 4,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "Same start, new road",
+   "goal": "Play the whole song slowly and hear which lines start the same way.",
    "type": "put-together",
-   "durationSec": 227,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 231,
+   "parentTip": "Tap your nose when a line starts with E, E, E; tap your knee for D, D.",
    "video": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c04.mp4",
    "thumb": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Over the River and Through the Wood",
-     "subcaption": "Class 4: Put it together",
+     "subcaption": "Class 4: Same start, new road",
      "durationSec": 7,
      "voice": "Hello again. It's Over the River and Through the Wood time. Grown-up, sit close to help.",
      "voiceId": "29f0c2c85066f26e",
      "voiceSec": 5.84
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
-     "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "caption": "Which lines start the same?",
+     "parentCue": "tap your nose for each E, E, E start",
+     "durationSec": 8,
+     "voice": "Which lines start the same. Grown-up, tap your nose for each E, E, E start.",
+     "voiceId": "c07f9f9a362fa8ae",
+     "voiceSec": 6.52
     },
     {
      "kind": "say",
      "caption": "Fingers on the lit keys",
-     "parentCue": "Check the thumb is on D",
+     "parentCue": "Check the thumb is on C",
      "showKeys": [
       {
-       "p": "D4",
+       "p": "C4",
        "f": 1
       },
       {
@@ -4333,6 +4246,59 @@
      "voice": "Put your fingers on the glowing keys.",
      "voiceId": "36a8a4c976b56a8f",
      "voiceSec": 2.14
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 83,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
     },
     {
      "kind": "demo",
@@ -5036,9 +5002,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -5282,287 +5248,59 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Take a breath between lines",
-     "durationSec": 5,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
-    },
-    {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 88,
-     "leadInSec": 2.26,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "horse"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "knows"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "car"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ry"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sleigh"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "white"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drift"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ed"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "snow"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      },
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      },
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 16
-      },
-      {
-       "lyric": "through the white and drifted snow",
-       "from": 26
-      }
-     ],
-     "durationSec": 23,
-     "voice": "Here we go, all together.",
-     "voiceId": "860c30d743a9b5a8",
-     "voiceSec": 1.86
+     "caption": "Wiggle your fingers!",
+     "parentCue": "Shake out both hands together",
+     "durationSec": 9,
+     "voice": "Wiggle your fingers. Wiggle, wiggle.",
+     "voiceId": "640ef443bc914f6c",
+     "voiceSec": 2.99
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You spotted the matching starts!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
-     "patterns"
+     "patterns",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Same beginning, different continuation",
+    "parentLine": "Two lines start alike, then go different ways"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Tap your nose when a line starts with E, E, E; tap your knee for D, D.",
+   "childAction": "Play slowly and spot the lines that start E, E, E.",
+   "bridge": "Two roads leave from the same gate on E: one goes home, one climbs.",
+   "celebrate": "Today you practiced: hearing lines that start the same."
   },
   {
    "id": "over-the-river-and-through-the-wood-c05",
    "index": 5,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Count down to C: 5 to 1",
+   "goal": "Practise the last line slowly: from G down to C, fingers 5, 4, 3, 2, 1.",
    "type": "review",
-   "durationSec": 255,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 249,
+   "parentTip": "Count '5, 4, 3, 2, 1' softly as each finger plays, like a sleigh slowing down.",
    "video": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c05.mp4",
    "thumb": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Over the River and Through the Wood",
-     "subcaption": "Class 5: Tricky spots",
+     "subcaption": "Class 5: Count down to C: 5 to 1",
      "durationSec": 7,
      "voice": "Hello again. It's Over the River and Through the Wood time. Grown-up, sit close to help.",
      "voiceId": "29f0c2c85066f26e",
@@ -5570,21 +5308,51 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
-     "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "caption": "Count down: 5, 4, 3, 2, 1",
+     "parentCue": "count down slowly with your child",
+     "durationSec": 8,
+     "voice": "Count down: 5, 4, 3, 2, 1. Grown-up, count down slowly with your child.",
+     "voiceId": "07bb4517bc85c6f6",
+     "voiceSec": 6.57
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Slide down: 5, 4, 3, 2, 1",
+     "parentCue": "Count each finger as it plays",
+     "bpm": 66,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "demo",
@@ -5958,9 +5726,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -5976,7 +5744,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 83,
-     "leadInSec": 3.98,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -6087,17 +5855,17 @@
       }
      ],
      "durationSec": 27,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -6113,7 +5881,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 94,
-     "leadInSec": 3.98,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -6224,17 +5992,17 @@
       }
      ],
      "durationSec": 24,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -6250,7 +6018,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 73,
-     "leadInSec": 3.98,
+     "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
       {
@@ -6360,161 +6128,165 @@
        "from": 7
       }
      ],
-     "durationSec": 30,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "durationSec": 29,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 83,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 10,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "All the way down!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "patterns"
+     "counting",
+     "pitch"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Ordinal sequence (counting down)",
+    "parentLine": "Fingers 5, 4, 3, 2, 1, in order, all the way down"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Count '5, 4, 3, 2, 1' softly as each finger plays, like a sleigh slowing down.",
+   "childAction": "Play G down to C, counting fingers 5, 4, 3, 2, 1.",
+   "bridge": "The sleigh slides down the last hill to the left and stops at C.",
+   "celebrate": "Today you practiced: counting fingers down from 5 to 1."
   },
   {
    "id": "over-the-river-and-through-the-wood-c06",
    "index": 6,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
+   "title": "Snowy road, slow and even",
+   "goal": "Play the whole song slowly and evenly, like a careful horse on snow.",
    "type": "phrase",
-   "durationSec": 278,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
+   "durationSec": 281,
+   "parentTip": "Pat a slow, even beat on your knee beside your child as they play.",
    "video": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c06.mp4",
    "thumb": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Over the River and Through the Wood",
-     "subcaption": "Class 6: Slow and steady",
+     "subcaption": "Class 6: Snowy road, slow and even",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Over the River and Through the Wood. Let's warm up our fingers.",
      "voiceId": "b4f6b303d83ccbab",
      "voiceSec": 6.91
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
-     "durationSec": 6,
-     "voice": "Slow and steady practice today.",
-     "voiceId": "aeb4883c0cf279a5",
-     "voiceSec": 2.42
+     "caption": "Careful on the snowy road",
+     "parentCue": "pat a slow beat on your knee",
+     "durationSec": 7,
+     "voice": "Careful on the snowy road. Grown-up, pat a slow beat on your knee.",
+     "voiceId": "c6d46185ef0be682",
+     "voiceSec": 4.72
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap the careful hoofbeats",
+     "parentCue": "Pat slowly with your child",
+     "bpm": 60,
+     "leadInSec": 5.07,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Careful hoofbeats on the snowy road. Slow, steady taps.",
+     "voiceId": "e7448916da8165e1",
+     "voiceSec": 4.67
     },
     {
      "kind": "demo",
-     "caption": "Watch",
+     "caption": "Watch the first part",
      "parentCue": "Watch the finger numbers",
      "bpm": 73,
-     "leadInSec": 3.79,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "E4",
@@ -6611,7 +6383,150 @@
        "d": 1.5,
        "f": 2,
        "s": "go"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
       },
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 9
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 73,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ver"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "riv"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "er"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "through"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "wood"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Grand"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fa"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ther's"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "house"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "we"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "go"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
+      },
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 9
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 73,
+     "leadInSec": 3.05,
+     "notes": [
       {
        "p": "E4",
        "d": 0.5,
@@ -6717,26 +6632,18 @@
      ],
      "lines": [
       {
-       "lyric": "Over the river and through the wood",
+       "lyric": "the horse knows the way to carry the sleigh",
        "from": 0
       },
       {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      },
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 16
-      },
-      {
        "lyric": "through the white and drifted snow",
-       "from": 26
+       "from": 10
       }
      ],
-     "durationSec": 28,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 16,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
@@ -6972,16 +6879,16 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "demo",
-     "caption": "Watch",
+     "caption": "Watch the first part",
      "parentCue": "Watch the finger numbers",
      "bpm": 73,
-     "leadInSec": 3.79,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "E4",
@@ -7078,7 +6985,150 @@
        "d": 1.5,
        "f": 2,
        "s": "go"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
       },
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 9
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 73,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "O"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ver"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "riv"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "er"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "through"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "wood"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Grand"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fa"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ther's"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "house"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "we"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "go"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Over the river and through the wood",
+       "from": 0
+      },
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 9
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 73,
+     "leadInSec": 3.05,
+     "notes": [
       {
        "p": "E4",
        "d": 0.5,
@@ -7184,33 +7234,25 @@
      ],
      "lines": [
       {
-       "lyric": "Over the river and through the wood",
+       "lyric": "the horse knows the way to carry the sleigh",
        "from": 0
       },
       {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      },
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 16
-      },
-      {
        "lyric": "through the white and drifted snow",
-       "from": 26
+       "from": 10
       }
      ],
-     "durationSec": 28,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 16,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Help only if stuck",
      "bpm": 73,
-     "leadInSec": 3.98,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -7431,480 +7473,13 @@
       }
      ],
      "durationSec": 55,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 73,
-     "leadInSec": 3.79,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "horse"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "knows"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "car"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ry"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sleigh"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "white"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drift"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ed"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "snow"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      },
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      },
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 16
-      },
-      {
-       "lyric": "through the white and drifted snow",
-       "from": 26
-      }
-     ],
-     "durationSec": 28,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Help only if stuck",
-     "bpm": 73,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Grand"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fa"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ther's"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "house"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "we"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "go"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "horse"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "knows"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "way"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "car"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "ry"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "sleigh"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "through"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "white"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "drift"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ed"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "snow"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      },
-      {
-       "lyric": "to Grandfather's house we go",
-       "from": 9
-      },
-      {
-       "lyric": "the horse knows the way to carry the sleigh",
-       "from": 16
-      },
-      {
-       "lyric": "through the white and drifted snow",
-       "from": 26
-      }
-     ],
-     "durationSec": 55,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Slow and even, well done!",
      "durationSec": 5,
      "voice": "You worked so hard on that.",
      "voiceId": "0886fb9aff1f3753",
@@ -7912,39 +7487,78 @@
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "beat",
     "secondary": [
-     "beat"
+     "fingers",
+     "expression"
     ]
    },
    "mathTarget": {
-    "concept": "Tempo control",
-    "parentLine": "Doing a task slowly and evenly"
+    "concept": "Periodicity (even hoofbeats)",
+    "parentLine": "Every hoofbeat the same distance apart, slow and even"
    },
-   "parentPrompt": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "childAction": "Play the tune slowly, every note even.",
-   "bridge": "Slow fingers, like a cat walking on tiptoe.",
-   "celebrate": "Today you practiced careful fingers and keeping a steady beat."
+   "parentPrompt": "Pat a slow, even beat on your knee beside your child as they play.",
+   "childAction": "Play slowly and evenly, step by careful step.",
+   "bridge": "On snow, the horse walks carefully: even steps, never rushing.",
+   "celebrate": "Today you practiced: playing slowly and evenly."
   },
   {
    "id": "over-the-river-and-through-the-wood-c07",
    "index": 7,
-   "title": "Same song, up high",
-   "goal": "Play the song in a new place with the same fingers",
+   "title": "Same trip, up high",
+   "goal": "Play the song from a higher C with the same fingers and hear it match.",
    "type": "octave",
-   "durationSec": 257,
-   "parentTip": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
+   "durationSec": 254,
+   "parentTip": "Help your child find the next C to the right, by its two black keys.",
    "video": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c07.mp4",
    "thumb": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Over the River and Through the Wood",
-     "subcaption": "Class 7: Same song, up high",
+     "subcaption": "Class 7: Same trip, up high",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today we play Over the River and Through the Wood. Grown-up, sit beside the keys.",
      "voiceId": "0d835e1eba42620b",
      "voiceSec": 7.09
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Cross the river to high C",
+     "parentCue": "find the next two black keys to the right",
+     "durationSec": 8,
+     "voice": "Cross the river to high C. Grown-up, find the next two black keys to the right.",
+     "voiceId": "06cca6105437c0b8",
+     "voiceSec": 5.02
     },
     {
      "kind": "say",
@@ -7952,7 +7566,7 @@
      "parentCue": "Move the whole hand to the next C",
      "showKeys": [
       {
-       "p": "D5",
+       "p": "C5",
        "f": 1
       },
       {
@@ -7978,13 +7592,62 @@
      "voiceSec": 2.49
     },
     {
-     "kind": "say",
-     "caption": "Same fingers, new place",
-     "parentCue": "Fingers keep the same numbers",
-     "durationSec": 6,
-     "voice": "Same fingers, new place.",
-     "voiceId": "f1984f5f115ff332",
-     "voiceSec": 2.38
+     "kind": "listen",
+     "caption": "Hear the trip up high",
+     "parentCue": "Ask: does it sound like sleigh bells?",
+     "bpm": 72,
+     "leadInSec": 4.36,
+     "notes": [
+      {
+       "p": "E5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "The trip, up high. Shake your hands like sleigh bells.",
+     "voiceId": "9fcf40dac11d5def",
+     "voiceSec": 3.96
     },
     {
      "kind": "demo",
@@ -8457,7 +8120,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 83,
      "leadInSec": 2.25,
      "notes": [
@@ -8687,9 +8350,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -8703,7 +8366,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 94,
      "leadInSec": 2.25,
      "notes": [
@@ -8949,7 +8612,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 83,
      "leadInSec": 2.25,
      "notes": [
@@ -9179,9 +8842,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -9195,7 +8858,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 94,
      "leadInSec": 2.25,
      "notes": [
@@ -9423,134 +9086,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "Same trip, new place!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 83,
-     "leadInSec": 3.93,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "O"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ver"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "riv"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "er"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "through"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "wood"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Over the river and through the wood",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
     "primary": "space",
     "secondary": [
-     "pitch"
+     "pitch",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Translation (same shape, new place)",
-    "parentLine": "Finding the same note higher or lower on the keyboard"
+    "concept": "Octave translation (same shape, higher)",
+    "parentLine": "The same song still works when the hand moves up"
    },
-   "parentPrompt": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
-   "childAction": "Play the same note in its high and low homes.",
-   "bridge": "Every note has a family: same name, a different house.",
-   "celebrate": "Today you practiced finding the way on the keys and hearing high and low."
+   "parentPrompt": "Help your child find the next C to the right, by its two black keys.",
+   "childAction": "Move your hand to the high C and ride again.",
+   "bridge": "High C is the same road on the other side of the river.",
+   "celebrate": "Today you practiced: the same song in a higher place."
   },
   {
    "id": "over-the-river-and-through-the-wood-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Ride along together",
+   "goal": "Play the whole song along with the music at full speed and keep going.",
    "type": "play-along",
-   "durationSec": 244,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 239,
+   "parentTip": "Pat the trot on your knee beside your child; if notes are missed, keep riding.",
    "video": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c08.mp4",
    "thumb": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Over the River and Through the Wood",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Ride along together",
      "durationSec": 7,
      "voice": "Hello again. It's Over the River and Through the Wood time. Grown-up, sit close to help.",
      "voiceId": "29f0c2c85066f26e",
@@ -9558,21 +9131,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
-     "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "caption": "Hold on, the sleigh is fast!",
+     "parentCue": "pat the trot on your knee to help",
+     "durationSec": 8,
+     "voice": "Hold on, the sleigh is fast. Grown-up, pat the trot on your knee to help.",
+     "voiceId": "29e0a55cb6a72d89",
+     "voiceSec": 5.18
     },
     {
      "kind": "together",
@@ -10046,7 +9610,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 104,
-     "leadInSec": 1.97,
+     "leadInSec": 2.47,
      "notes": [
       {
        "p": "E4",
@@ -10266,17 +9830,17 @@
       }
      ],
      "durationSec": 20,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "voice": "Let's make music together.",
+     "voiceId": "ce491b22b46d8348",
+     "voiceSec": 2.07
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -10520,9 +10084,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -10538,7 +10102,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 104,
-     "leadInSec": 1.97,
+     "leadInSec": 2.47,
      "notes": [
       {
        "p": "E4",
@@ -10758,17 +10322,17 @@
       }
      ],
      "durationSec": 20,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "voice": "Let's make music together.",
+     "voiceId": "ce491b22b46d8348",
+     "voiceSec": 2.07
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -10784,7 +10348,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 104,
-     "leadInSec": 1.97,
+     "leadInSec": 3.0,
      "notes": [
       {
        "p": "E4",
@@ -11003,10 +10567,10 @@
        "from": 26
       }
      ],
-     "durationSec": 20,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "durationSec": 21,
+     "voice": "Together time. Big smiles.",
+     "voiceId": "a441a4bce0e6e1e6",
+     "voiceSec": 2.6
     },
     {
      "kind": "praise",
@@ -11264,20 +10828,19 @@
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
+     "caption": "One more time",
+     "parentCue": "Sing the words together",
+     "durationSec": 5,
+     "voice": "One more time.",
+     "voiceId": "b4c800d6a3120ebd",
+     "voiceSec": 1.34
     },
     {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 83,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
+     "kind": "together",
+     "caption": "Play along",
+     "parentCue": "Sing while you play",
+     "bpm": 104,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "E4",
@@ -11332,58 +10895,215 @@
        "d": 1.5,
        "f": 1,
        "s": "wood"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Grand"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fa"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ther's"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "house"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "we"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "go"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "horse"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "knows"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "way"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "car"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "ry"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2,
+       "s": "sleigh"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "through"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "white"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "drift"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ed"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "snow"
       }
      ],
      "lines": [
       {
        "lyric": "Over the river and through the wood",
        "from": 0
+      },
+      {
+       "lyric": "to Grandfather's house we go",
+       "from": 9
+      },
+      {
+       "lyric": "the horse knows the way to carry the sleigh",
+       "from": 16
+      },
+      {
+       "lyric": "through the white and drifted snow",
+       "from": 26
       }
      ],
-     "durationSec": 18,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "durationSec": 19,
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept riding!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Entrainment (matching a tempo)",
+    "parentLine": "Fitting your playing to a speed you did not choose"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Pat the trot on your knee beside your child; if notes are missed, keep riding.",
+   "childAction": "Play along with the music. Missed notes? Keep riding!",
+   "bridge": "The music is the horse; your fingers ride along in the sleigh.",
+   "celebrate": "Today you practiced: keeping up with the music."
   },
   {
    "id": "over-the-river-and-through-the-wood-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "We made it to Grandfather's!",
+   "goal": "Play the whole song for teddy and hear the last line arrive home on C.",
    "type": "concert",
-   "durationSec": 237,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 232,
+   "parentTip": "Sit teddy as the audience; at the last C, say 'we're here!' and bow together.",
    "video": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c09.mp4",
    "thumb": "over-the-river-and-through-the-wood/over-the-river-and-through-the-wood-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Over the River and Through the Wood",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: We made it to Grandfather's!",
      "durationSec": 8,
      "voice": "Hi there. Our song today is Over the River and Through the Wood. Let's warm up our fingers.",
      "voiceId": "b4f6b303d83ccbab",
@@ -11391,21 +11111,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
+     "caption": "A trip to play for teddy!",
+     "parentCue": "put teddy in front as the audience",
      "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "voice": "A trip to play for teddy. Grown-up, put teddy in front as the audience.",
+     "voiceId": "c4fb58f1dac38b58",
+     "voiceSec": 4.75
     },
     {
      "kind": "together",
@@ -11886,9 +11597,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -12132,9 +11843,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -12378,9 +12089,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -12624,9 +12335,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -12870,9 +12581,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -13114,11 +12825,11 @@
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, we arrived!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
@@ -13129,13 +12840,13 @@
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Question and answer phrases",
+    "parentLine": "One line stops on D, still travelling; the last lands on C"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; at the last C, say 'we're here!' and bow together.",
+   "childAction": "Play to the end, land on C, and shout 'We're here!'",
+   "bridge": "D is still on the road; C is the front door of Grandfather's house.",
+   "celebrate": "Today you practiced: a whole song that travels and arrives."
   }
  ]
 }

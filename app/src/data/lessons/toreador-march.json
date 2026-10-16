@@ -2,27 +2,62 @@
  "songId": "toreador-march",
  "title": "Toreador March",
  "ageGroup": "5-6",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and playing together, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices a hand home on D, proud long-short march steps, a mirror pattern, song shape, a low left hand beat and two-hand teamwork.",
  "skillMap": [
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 1.0,
+   "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
   {
    "id": "fingers",
    "label": "Finger control",
-   "value": 1.0,
-   "classes": 6,
+   "value": 0.5,
+   "classes": 1,
    "total": 9
   },
   {
    "id": "form",
    "label": "Song shape",
-   "value": 0.33,
-   "classes": 2,
+   "value": 0.5,
+   "classes": 1,
    "total": 9
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.17,
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -30,27 +65,65 @@
  "icon": "drum",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2004,
+ "totalSec": 2003,
  "classes": [
   {
    "id": "toreador-march-c01",
    "index": 1,
-   "title": "Hands ready, first half",
+   "title": "Thumb on D, ready to march",
    "goal": "Find the hand position and learn the first half",
    "type": "hand-position",
-   "durationSec": 204,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 212,
+   "parentTip": "Point to the two black keys; help your child rest the thumb on D, between them.",
    "video": "toreador-march/toreador-march-c01.mp4",
    "thumb": "toreador-march/toreador-march-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Toreador March",
-     "subcaption": "Class 1: Hands ready, first half",
+     "subcaption": "Class 1: Thumb on D, ready to march",
      "durationSec": 8,
      "voice": "Hello, pianists. Today we play Toreador March. Grown-up, sit beside the keys.",
      "voiceId": "43e0e9ae13d2e074",
      "voiceSec": 6.05
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Ready to march",
+     "parentCue": "Thumb on D, between the two black keys",
+     "durationSec": 7,
+     "voice": "Ready to march. Grown-up, thumb on D, between the two black keys.",
+     "voiceId": "7af185c2ea6ce195",
+     "voiceSec": 5.11
     },
     {
      "kind": "say",
@@ -84,29 +157,1491 @@
      "voiceSec": 4.07
     },
     {
-     "kind": "say",
-     "caption": "Today: Toreador theme part 1",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6,
-     "voice": "Today we learn a new part of the tune.",
-     "voiceId": "2d47668a7b3346b3",
-     "voiceSec": 2.61
-    },
-    {
-     "kind": "say",
-     "caption": "This part comes back 2 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7,
-     "voice": "This part comes back two times. Listen for it.",
-     "voiceId": "9581ea7be1c58405",
-     "voiceSec": 3.94
+     "kind": "your_turn",
+     "caption": "One finger, one key",
+     "parentCue": "Say the finger numbers together, one to five",
+     "bpm": 66,
+     "leadInSec": 4.36,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "A4",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Your turn. One finger on each key, one by one.",
+     "voiceId": "be3fc90a0fdacab7",
+     "voiceSec": 3.96
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 75,
-     "leadInSec": 2.33,
+     "leadInSec": 2.78,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "A3",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme part 1",
+       "from": 0
+      },
+      {
+       "lyric": "Toreador theme part 2",
+       "from": 9
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Point to each key if needed",
+     "bpm": 75,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "A3",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme part 1",
+       "from": 0
+      },
+      {
+       "lyric": "Toreador theme part 2",
+       "from": 9
+      }
+     ],
+     "durationSec": 32,
+     "voice": "Now you play. Look ahead to the next key.",
+     "voiceId": "3d6af857ff139541",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 75,
+     "leadInSec": 2.32,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme part 1",
+       "from": 0
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 75,
+     "leadInSec": 4.41,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme part 1",
+       "from": 0
+      }
+     ],
+     "durationSec": 20,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
+    },
+    {
+     "kind": "praise",
+     "caption": "Great job!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
+    },
+    {
+     "kind": "say",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
+     "durationSec": 6,
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 75,
+     "leadInSec": 2.32,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "A3",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme part 2",
+       "from": 0
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Slow is fine",
+     "bpm": 75,
+     "leadInSec": 3.33,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "A3",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme part 2",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Slow and steady wins.",
+     "voiceId": "1641c55b696104d1",
+     "voiceSec": 2.93
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
+    },
+    {
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 4.41,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme part 1",
+       "from": 0
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
+    },
+    {
+     "kind": "praise",
+     "caption": "Hand home found!",
+     "durationSec": 5,
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
+    }
+   ],
+   "skill": {
+    "primary": "space",
+    "secondary": [
+     "fingers"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Spatial anchoring with a landmark",
+    "parentLine": "Using the two black keys to place the whole hand"
+   },
+   "parentPrompt": "Point to the two black keys; help your child rest the thumb on D, between them.",
+   "childAction": "Thumb on D, then one finger on each key up to A.",
+   "bridge": "D stands between the two black keys, like a hero between two guards.",
+   "celebrate": "Today you practiced: placing the whole hand with a landmark."
+  },
+  {
+   "id": "toreador-march-c02",
+   "index": 2,
+   "title": "Proud step, quick step",
+   "goal": "Play the march's long-short steps: a proud long note, then a quick one.",
+   "type": "phrase",
+   "durationSec": 217,
+   "parentTip": "March in your seat with your child: a long proud step, then a quick little step.",
+   "video": "toreador-march/toreador-march-c02.mp4",
+   "thumb": "toreador-march/toreador-march-c02.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Toreador March",
+     "subcaption": "Class 2: Proud step, quick step",
+     "durationSec": 7,
+     "voice": "Hello, friends. Today it's Toreador March. Both hands on your knees to start.",
+     "voiceId": "d8bd88a3a19761ea",
+     "voiceSec": 5.95
+    },
+    {
+     "kind": "say",
+     "caption": "Proud step, quick step",
+     "parentCue": "Say 'prooooud, quick' together with the notes",
+     "durationSec": 7,
+     "voice": "Proud step, quick step. Grown-up, say 'prooooud, quick' together with the notes.",
+     "voiceId": "31ec5ed3b657df9c",
+     "voiceSec": 5.16
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Prooooud step, quick step",
+     "parentCue": "Stretch the long note, clip the short one",
+     "bpm": 60,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 4
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the lights",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 80,
+     "leadInSec": 2.78,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme ending",
+       "from": 0
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Point to each key if needed",
+     "bpm": 80,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme ending",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Now you play. Look ahead to the next key.",
+     "voiceId": "3d6af857ff139541",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "say",
+     "caption": "One more time",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "One more time.",
+     "voiceId": "b4c800d6a3120ebd",
+     "voiceSec": 1.34
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 80,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme ending",
+       "from": 0
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely!",
+     "durationSec": 5,
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
+    },
+    {
+     "kind": "say",
+     "caption": "Again, nice and easy",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "Again, nice and easy.",
+     "voiceId": "6f32e8daa73a3ba6",
+     "voiceSec": 2.2
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 80,
+     "leadInSec": 3.38,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme ending",
+       "from": 0
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Your turn. I'll wait for each note.",
+     "voiceId": "ef1c63536da8b5d7",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "together",
+     "caption": "Now together, a bit faster",
+     "parentCue": "Play the same keys an octave up",
+     "bpm": 90,
+     "leadInSec": 2.67,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme ending",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Now together, a little faster.",
+     "voiceId": "5e2a76445306320d",
+     "voiceSec": 2.27
+    },
+    {
+     "kind": "praise",
+     "caption": "Super listening!",
+     "durationSec": 5,
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "Let's do it again",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 6,
+     "voice": "Let's do it again.",
+     "voiceId": "5608b20dfb890c6e",
+     "voiceSec": 1.58
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 80,
+     "leadInSec": 3.33,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme ending",
+       "from": 0
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Your turn. Slow and steady wins.",
+     "voiceId": "1641c55b696104d1",
+     "voiceSec": 2.93
+    },
+    {
+     "kind": "praise",
+     "caption": "Well done!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
+    },
+    {
+     "kind": "say",
+     "caption": "And again!",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 5,
+     "voice": "And again.",
+     "voiceId": "be3897a52d81cfa7",
+     "voiceSec": 1.2
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 80,
+     "leadInSec": 3.38,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme ending",
+       "from": 0
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Your turn. I'll wait for each note.",
+     "voiceId": "ef1c63536da8b5d7",
+     "voiceSec": 2.98
+    },
+    {
+     "kind": "together",
+     "caption": "Now together, a bit faster",
+     "parentCue": "Play the same keys an octave up",
+     "bpm": 90,
+     "leadInSec": 2.67,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme ending",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Now together, a little faster.",
+     "voiceId": "5e2a76445306320d",
+     "voiceSec": 2.27
+    },
+    {
+     "kind": "praise",
+     "caption": "Yes, that's it!",
+     "durationSec": 5,
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
+    },
+    {
+     "kind": "say",
+     "caption": "Can you do it once more?",
+     "parentCue": "Fingers ready on the lit keys",
+     "durationSec": 7,
+     "voice": "Let's try it once more.",
+     "voiceId": "d11a6527d0be0436",
+     "voiceSec": 1.85
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Let your child try alone",
+     "bpm": 80,
+     "leadInSec": 4.41,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme ending",
+       "from": 0
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
+    },
+    {
+     "kind": "praise",
+     "caption": "What proud marching!",
+     "durationSec": 5,
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
+    }
+   ],
+   "skill": {
+    "primary": "counting",
+    "secondary": [
+     "fingers",
+     "beat"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Ratio 3:1 (dotted rhythm)",
+    "parentLine": "A long proud note lasts three times the quick one"
+   },
+   "parentPrompt": "March in your seat with your child: a long proud step, then a quick little step.",
+   "childAction": "Play G long and proud, A quick, then G, E.",
+   "bridge": "The long note is a big proud stride; the short one is a quick hop.",
+   "celebrate": "Today you practiced: long and short notes, three to one."
+  },
+  {
+   "id": "toreador-march-c03",
+   "index": 3,
+   "title": "Twice, then an answer",
+   "goal": "Play the whole song slowly and find the march tune that comes twice each time.",
+   "type": "put-together",
+   "durationSec": 241,
+   "parentTip": "Hold up one finger, then two, for the march tune; wave your hand for each answer.",
+   "video": "toreador-march/toreador-march-c03.mp4",
+   "thumb": "toreador-march/toreador-march-c03.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Toreador March",
+     "subcaption": "Class 3: Twice, then an answer",
+     "durationSec": 9,
+     "voice": "Hello again. Toreador March is waiting for us. Shoulders soft, fingers ready.",
+     "voiceId": "2e35c296d49cb51b",
+     "voiceSec": 7.12
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Twice, then an answer",
+     "parentCue": "Count the march tune: one, two, then wave",
+     "durationSec": 7,
+     "voice": "Twice, then an answer. Grown-up, count the march tune: one, two, then wave.",
+     "voiceId": "cb833c484bc393c1",
+     "voiceSec": 5.99
+    },
+    {
+     "kind": "say",
+     "caption": "Fingers on the lit keys",
+     "parentCue": "Check the thumb is on D",
+     "showKeys": [
+      {
+       "p": "D4",
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "f": 3
+      },
+      {
+       "p": "G4",
+       "f": 4
+      },
+      {
+       "p": "A4",
+       "f": 5
+      }
+     ],
+     "durationSec": 7,
+     "voice": "Put your fingers on the glowing keys.",
+     "voiceId": "36a8a4c976b56a8f",
+     "voiceSec": 2.14
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 80,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the first part",
+     "parentCue": "Watch together",
+     "bpm": 75,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "G4",
@@ -205,1353 +1740,17 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Point to each key if needed",
-     "bpm": 75,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A3",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme part 1",
-       "from": 0
-      },
-      {
-       "lyric": "Toreador theme part 2",
-       "from": 9
-      }
-     ],
-     "durationSec": 32,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 75,
-     "leadInSec": 3.79,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme part 1",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 75,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme part 1",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 75,
-     "leadInSec": 3.79,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A3",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme part 2",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 75,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A3",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme part 2",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 75,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A3",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme part 1",
-       "from": 0
-      },
-      {
-       "lyric": "Toreador theme part 2",
-       "from": 9
-      }
-     ],
-     "durationSec": 32,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    }
-   ],
-   "skill": {
-    "primary": "fingers",
-    "secondary": [
-     "space"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Spatial anchoring",
-    "parentLine": "Finding a home spot for the hand"
-   },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Put one finger on each lit key.",
-   "bridge": "Fingers curved, like holding a little ball.",
-   "celebrate": "Today you practiced careful fingers and finding the way on the keys."
-  },
-  {
-   "id": "toreador-march-c02",
-   "index": 2,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
-   "type": "phrase",
-   "durationSec": 237,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "video": "toreador-march/toreador-march-c02.mp4",
-   "thumb": "toreador-march/toreador-march-c02.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Toreador March",
-     "subcaption": "Class 2: Part 2",
-     "durationSec": 7,
-     "voice": "Hello, friends. Today it's Toreador March. Both hands on your knees to start.",
-     "voiceId": "d8bd88a3a19761ea",
-     "voiceSec": 5.95
-    },
-    {
-     "kind": "say",
-     "caption": "Today: Toreador theme ending",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 6,
-     "voice": "Today we learn a new part of the tune.",
-     "voiceId": "2d47668a7b3346b3",
-     "voiceSec": 2.61
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch the lights",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 80,
-     "leadInSec": 3.79,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme ending",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Point to each key if needed",
-     "bpm": 80,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme ending",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 80,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme ending",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 80,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme ending",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 90,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme ending",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 80,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme ending",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Well done!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 5,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 80,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme ending",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 90,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme ending",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "Yes, that's it!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
      "voiceSec": 1.92
     },
     {
-     "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
      "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 80,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme ending",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 80,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme ending",
-       "from": 0
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    }
-   ],
-   "skill": {
-    "primary": "fingers",
-    "secondary": [
-     "form"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
-   },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
-  },
-  {
-   "id": "toreador-march-c03",
-   "index": 3,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
-   "type": "put-together",
-   "durationSec": 248,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "video": "toreador-march/toreador-march-c03.mp4",
-   "thumb": "toreador-march/toreador-march-c03.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Toreador March",
-     "subcaption": "Class 3: Put it together",
-     "durationSec": 9,
-     "voice": "Hello again. Toreador March is waiting for us. Shoulders soft, fingers ready.",
-     "voiceId": "2e35c296d49cb51b",
-     "voiceSec": 7.12
-    },
-    {
-     "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
-     "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "Fingers on the lit keys",
-     "parentCue": "Check the thumb is on D",
-     "showKeys": [
-      {
-       "p": "D4",
-       "f": 1
-      },
-      {
-       "p": "E4",
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "f": 3
-      },
-      {
-       "p": "G4",
-       "f": 4
-      },
-      {
-       "p": "A4",
-       "f": 5
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Put your fingers on the glowing keys.",
-     "voiceId": "36a8a4c976b56a8f",
-     "voiceSec": 2.14
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch the whole song",
-     "parentCue": "Watch together",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
      "bpm": 75,
-     "leadInSec": 2.51,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "G4",
@@ -1637,7 +1836,30 @@
        "p": "G3",
        "d": 1,
        "f": 1
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Toreador theme part 1",
+       "from": 0
       },
+      {
+       "lyric": "Toreador theme part 2",
+       "from": 9
+      }
+     ],
+     "durationSec": 32,
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 75,
+     "leadInSec": 3.38,
+     "notes": [
       {
        "p": "G4",
        "d": 1.5,
@@ -1726,26 +1948,18 @@
      ],
      "lines": [
       {
-       "lyric": "Toreador theme part 1",
+       "lyric": "Toreador theme part 3",
        "from": 0
       },
       {
-       "lyric": "Toreador theme part 2",
-       "from": 9
-      },
-      {
-       "lyric": "Toreador theme part 3",
-       "from": 17
-      },
-      {
        "lyric": "Toreador theme ending",
-       "from": 26
+       "from": 9
       }
      ],
-     "durationSec": 30,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 18,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -2162,343 +2376,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "You found the song's shape!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Take a breath between lines",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 85,
-     "leadInSec": 1.84,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A3",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme part 1",
-       "from": 0
-      },
-      {
-       "lyric": "Toreador theme part 2",
-       "from": 9
-      },
-      {
-       "lyric": "Toreador theme part 3",
-       "from": 17
-      },
-      {
-       "lyric": "Toreador theme ending",
-       "from": 26
-      }
-     ],
-     "durationSec": 26,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 80,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme part 1",
-       "from": 0
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
-     "patterns"
+     "counting",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Form: A A B, then again",
+    "parentLine": "One tune twice, a different answer, then all of it again"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Hold up one finger, then two, for the march tune; wave your hand for each answer.",
+   "childAction": "Play slowly; count the march tune twice, then wave for the answer.",
+   "bridge": "March, march, then an answer; march, march, then the ending marches home to C.",
+   "celebrate": "Today you practiced: finding the parts of a song."
   },
   {
    "id": "toreador-march-c04",
    "index": 4,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Mirror around E",
+   "goal": "Practise the E pattern slowly: one step down, back, one step up, back.",
    "type": "review",
-   "durationSec": 205,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 211,
+   "parentTip": "Point to E as the middle; say 'down, home, up, home' as your child plays.",
    "video": "toreador-march/toreador-march-c04.mp4",
    "thumb": "toreador-march/toreador-march-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Toreador March",
-     "subcaption": "Class 4: Tricky spots",
+     "subcaption": "Class 4: Mirror around E",
      "durationSec": 9,
      "voice": "Hello again. Toreador March is waiting for us. Shoulders soft, fingers ready.",
      "voiceId": "2e35c296d49cb51b",
@@ -2506,21 +2421,51 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
-     "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "caption": "Watch slowly",
+     "parentCue": "Point to E: the middle of the mirror",
+     "durationSec": 6,
+     "voice": "Watch me, nice and slow.",
+     "voiceId": "54fd49a18bfae05f",
+     "voiceSec": 1.85
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Down, home, up, home",
+     "parentCue": "Say the words slowly with each note",
+     "bpm": 56,
+     "leadInSec": 4.41,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
     },
     {
      "kind": "demo",
@@ -2846,9 +2791,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -2864,7 +2809,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 80,
-     "leadInSec": 4.26,
+     "leadInSec": 3.2,
      "gapBeats": 1,
      "notes": [
       {
@@ -2958,18 +2903,18 @@
        "from": 8
       }
      ],
-     "durationSec": 30,
-     "voice": "Your turn. Keep your fingers close to the keys.",
-     "voiceId": "d35facfe41c89462",
-     "voiceSec": 3.86
+     "durationSec": 29,
+     "voice": "Your turn. Play it just like I did.",
+     "voiceId": "3b3a3b61b1b8e36e",
+     "voiceSec": 2.8
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -2985,7 +2930,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 90,
-     "leadInSec": 4.26,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -3079,59 +3024,98 @@
        "from": 8
       }
      ],
-     "durationSec": 28,
-     "voice": "Your turn. Keep your fingers close to the keys.",
-     "voiceId": "d35facfe41c89462",
-     "voiceSec": 3.86
+     "durationSec": 27,
+     "voice": "Now you play. Look ahead to the next key.",
+     "voiceId": "3d6af857ff139541",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "A perfect mirror!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "patterns",
     "secondary": [
-     "patterns"
+     "fingers",
+     "space"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Mirror symmetry around E",
+    "parentLine": "One step down and one step up, with E in the middle"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Point to E as the middle; say 'down, home, up, home' as your child plays.",
+   "childAction": "Play E, D, E, F, E: down, home, up, home.",
+   "bridge": "E is the mirror: D on its left and F on its right, one step each.",
+   "celebrate": "Today you practiced: a pattern that mirrors around one note."
   },
   {
    "id": "toreador-march-c05",
    "index": 5,
-   "title": "Left hand helper",
-   "goal": "Play one low left hand note at the start of each bar",
+   "title": "The big march drum",
+   "goal": "Play one low left hand note, C or G, at the start of each bar.",
    "type": "left-hand",
-   "durationSec": 211,
-   "parentTip": "You play the tune, your child plays the low notes. Count bars out loud to help.",
+   "durationSec": 216,
+   "parentTip": "Play the tune; count one-two-three-four, loud on one, for your child's low note.",
    "video": "toreador-march/toreador-march-c05.mp4",
    "thumb": "toreador-march/toreador-march-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Toreador March",
-     "subcaption": "Class 5: Left hand helper",
+     "subcaption": "Class 5: The big march drum",
      "durationSec": 9,
      "voice": "Hello again. Toreador March is waiting for us. Shoulders soft, fingers ready.",
      "voiceId": "2e35c296d49cb51b",
      "voiceSec": 7.12
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "The big march drum",
+     "parentCue": "count to four, loud on one",
+     "durationSec": 6,
+     "voice": "The big march drum. Grown-up, count to four, loud on one.",
+     "voiceId": "0cbe9852fe241139",
+     "voiceSec": 4.1
+    },
+    {
      "kind": "say",
      "caption": "Meet your left hand!",
-     "parentCue": "Left hand sits low on the left side",
+     "parentCue": "Low on the left: C and G, one per bar",
      "showKeys": [
       {
        "p": "C3",
@@ -3148,30 +3132,44 @@
      "voiceSec": 3.05
     },
     {
-     "kind": "say",
-     "caption": "One low note at the start of each bar",
-     "parentCue": "The low notes are C and G",
-     "showKeys": [
+     "kind": "listen",
+     "caption": "Boom on one",
+     "parentCue": "Say one loud with each low note",
+     "bpm": 72,
+     "leadInSec": 3.77,
+     "notes": [
       {
        "p": "C3",
-       "f": 5
+       "d": 4,
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 4,
+       "who": "parent"
       },
       {
        "p": "G3",
-       "f": 1
+       "d": 4,
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 4,
+       "who": "parent"
       }
      ],
-     "durationSec": 9,
-     "voice": "Left hand plays one low note at the start of each bar.",
-     "voiceId": "316eb49e5ef32058",
-     "voiceSec": 3.68
+     "durationSec": 19,
+     "voice": "Boom on one. Nod your head on each low note.",
+     "voiceId": "8e7a1773de857303",
+     "voiceSec": 3.37
     },
     {
      "kind": "demo",
-     "caption": "Watch the low notes",
+     "caption": "Watch the first part",
      "parentCue": "Count one, two, three, four",
      "bpm": 75,
-     "leadInSec": 2.05,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "C3",
@@ -3196,7 +3194,21 @@
        "d": 4.0,
        "f": 5,
        "h": "L"
-      },
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 75,
+     "leadInSec": 3.33,
+     "gapBeats": 1,
+     "notes": [
       {
        "p": "C3",
        "d": 4.0,
@@ -3222,10 +3234,47 @@
        "h": "L"
       }
      ],
-     "durationSec": 30,
-     "voice": "Watch the low notes.",
-     "voiceId": "f59982b35009de01",
-     "voiceSec": 1.65
+     "durationSec": 21,
+     "voice": "Your turn. Slow and steady wins.",
+     "voiceId": "1641c55b696104d1",
+     "voiceSec": 2.93
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Count one, two, three, four",
+     "bpm": 75,
+     "leadInSec": 2.32,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 4.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 4.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 4.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 4.0,
+       "f": 5,
+       "h": "L"
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
@@ -3585,645 +3634,166 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "You play the tune, child plays low notes",
-     "durationSec": 7,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
-     "kind": "together",
-     "caption": "Low notes with the tune",
-     "parentCue": "You play the blue keys",
-     "bpm": 100,
-     "leadInSec": 2.78,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 80,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "G4",
        "d": 1.5,
-       "f": 4,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
+       "f": 4
       },
       {
        "p": "A4",
        "d": 0.5,
-       "f": 5,
-       "who": "parent"
+       "f": 5
       },
       {
        "p": "G4",
        "d": 1,
-       "f": 4,
-       "who": "parent"
+       "f": 4
       },
       {
        "p": "E4",
        "d": 1,
-       "f": 2,
-       "who": "parent"
+       "f": 2
       },
       {
        "p": "E4",
        "d": 1.5,
-       "f": 2,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
+       "f": 2
       },
       {
        "p": "D4",
        "d": 0.5,
-       "f": 1,
-       "who": "parent"
+       "f": 1
       },
       {
        "p": "E4",
        "d": 0.5,
-       "f": 2,
-       "who": "parent"
+       "f": 2
       },
       {
        "p": "F4",
        "d": 0.5,
-       "f": 3,
-       "who": "parent"
+       "f": 3
       },
       {
        "p": "E4",
        "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "A3",
-       "d": 0.5,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
+       "f": 2
       }
      ],
      "lines": [
       {
        "lyric": "Toreador theme part 1",
        "from": 0
-      },
-      {
-       "lyric": "Toreador theme part 2",
-       "from": 9
-      },
-      {
-       "lyric": "Toreador theme part 3",
-       "from": 17
-      },
-      {
-       "lyric": "Toreador theme ending",
-       "from": 26
       }
      ],
-     "durationSec": 24,
-     "voice": "Left hand low notes, with the tune.",
-     "voiceId": "189d258c6ca31d51",
-     "voiceSec": 2.38
+     "durationSec": 19,
+     "voice": "Now you play. Look ahead to the next key.",
+     "voiceId": "3d6af857ff139541",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "Every one, right on time!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "You play the tune, child plays low notes",
-     "durationSec": 7,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
-    },
-    {
-     "kind": "together",
-     "caption": "Low notes with the tune",
-     "parentCue": "You play the blue keys",
-     "bpm": 75,
-     "leadInSec": 2.78,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "A3",
-       "d": 0.5,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme part 1",
-       "from": 0
-      },
-      {
-       "lyric": "Toreador theme part 2",
-       "from": 9
-      },
-      {
-       "lyric": "Toreador theme part 3",
-       "from": 17
-      },
-      {
-       "lyric": "Toreador theme ending",
-       "from": 26
-      }
-     ],
-     "durationSec": 30,
-     "voice": "Left hand low notes, with the tune.",
-     "voiceId": "189d258c6ca31d51",
-     "voiceSec": 2.38
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "beat",
     "secondary": [
+     "counting",
      "space"
     ]
    },
    "mathTarget": {
-    "concept": "Bilateral mapping",
-    "parentLine": "Giving the other hand its own job"
+    "concept": "Grouping by four (meter)",
+    "parentLine": "Four beats in each bar; the left hand plays on one"
    },
-   "parentPrompt": "You play the tune, your child plays the low notes. Count bars out loud to help.",
-   "childAction": "Play the low notes with the left hand.",
-   "bridge": "The left hand plays the deep low notes, like a big drum.",
-   "celebrate": "Today you practiced careful fingers and finding the way on the keys."
+   "parentPrompt": "Play the tune; count one-two-three-four, loud on one, for your child's low note.",
+   "childAction": "Left hand beats the drum on every one: low C or low G.",
+   "bridge": "Low C is C in a lower house; it booms like a big march drum.",
+   "celebrate": "Today you practiced: counting four beats and playing on one."
   },
   {
    "id": "toreador-march-c06",
    "index": 6,
-   "title": "Hands together, slowly",
-   "goal": "Play the tune with a low left hand note on each bar",
+   "title": "Drum and trumpet",
+   "goal": "Play the tune with a low left hand note on each bar, very slowly.",
    "type": "hands-together",
-   "durationSec": 219,
-   "parentTip": "Two hands is hard work. Go very slowly and stop while it's still fun.",
+   "durationSec": 216,
+   "parentTip": "Rest a hand on your child's left shoulder and say 'boom' on each low note.",
    "video": "toreador-march/toreador-march-c06.mp4",
    "thumb": "toreador-march/toreador-march-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Toreador March",
-     "subcaption": "Class 6: Hands together, slowly",
+     "subcaption": "Class 6: Drum and trumpet",
      "durationSec": 9,
      "voice": "Hi, everyone. Let's make music with Toreador March. Grown-up, sit close to cheer.",
      "voiceId": "11a855b93e89181c",
      "voiceSec": 7.01
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Drum and trumpet",
+     "parentCue": "Say 'boom' softly on each low note",
+     "durationSec": 7,
+     "voice": "Drum and trumpet. Grown-up, say 'boom' softly on each low note.",
+     "voiceId": "39e80d7ffbbf1dc4",
+     "voiceSec": 5.05
     },
     {
      "kind": "say",
@@ -4252,9 +3822,43 @@
       }
      ],
      "durationSec": 7,
-     "voice": "Now both hands together, very slowly.",
-     "voiceId": "067f3e698afdefd5",
-     "voiceSec": 2.68
+     "voice": "Today both hands play together, very slowly.",
+     "voiceId": "480919ea0ce23ca6",
+     "voiceSec": 3.01
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Left hand first",
+     "parentCue": "Point to each low key",
+     "bpm": 70,
+     "leadInSec": 4.44,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C3",
+       "d": 2,
+       "f": 5
+      },
+      {
+       "p": "C3",
+       "d": 2,
+       "f": 5
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1
+      },
+      {
+       "p": "C3",
+       "d": 2,
+       "f": 5
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Left hand first. Play each low key when it glows.",
+     "voiceId": "999b53a367c0de16",
+     "voiceSec": 4.04
     },
     {
      "kind": "demo",
@@ -4393,7 +3997,7 @@
      "caption": "Your turn! Both hands",
      "parentCue": "Slow is perfect",
      "bpm": 65,
-     "leadInSec": 3.9,
+     "leadInSec": 3.81,
      "gapBeats": 1,
      "notes": [
       {
@@ -4517,9 +4121,9 @@
       }
      ],
      "durationSec": 36,
-     "voice": "Your turn. Both hands, nice and slow.",
-     "voiceId": "7c39a0349582d84b",
-     "voiceSec": 3.5
+     "voice": "Your turn. Both hands, nice and steady.",
+     "voiceId": "cd70d130fe2096c9",
+     "voiceSec": 3.41
     },
     {
      "kind": "say",
@@ -4535,7 +4139,7 @@
      "caption": "Your turn! Both hands",
      "parentCue": "Keep it slow",
      "bpm": 65,
-     "leadInSec": 3.9,
+     "leadInSec": 3.81,
      "gapBeats": 1,
      "notes": [
       {
@@ -4776,9 +4380,9 @@
       }
      ],
      "durationSec": 67,
-     "voice": "Your turn. Both hands, nice and slow.",
-     "voiceId": "7c39a0349582d84b",
-     "voiceSec": 3.5
+     "voice": "Your turn. Both hands, nice and steady.",
+     "voiceId": "cd70d130fe2096c9",
+     "voiceSec": 3.41
     },
     {
      "kind": "praise",
@@ -4787,263 +4391,6 @@
      "voice": "Two hands at once. Wow.",
      "voiceId": "634ff696e35387b7",
      "voiceSec": 2.72
-    },
-    {
-     "kind": "together",
-     "caption": "Together, slowly",
-     "parentCue": "Play along slowly",
-     "bpm": 65,
-     "leadInSec": 2.25,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "A3",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Toreador theme part 1",
-       "from": 0
-      },
-      {
-       "lyric": "Toreador theme part 2",
-       "from": 9
-      },
-      {
-       "lyric": "Toreador theme part 3",
-       "from": 17
-      },
-      {
-       "lyric": "Toreador theme ending",
-       "from": 26
-      }
-     ],
-     "durationSec": 34,
-     "voice": "Together, nice and slow.",
-     "voiceId": "e56c837ee278d694",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
     },
     {
      "kind": "say",
@@ -5121,47 +4468,86 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Two hands, wow!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "patterns"
+     "counting",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Coordinating two streams",
-    "parentLine": "Two hands doing different jobs at once"
+    "concept": "Ratio 1:4 (two streams)",
+    "parentLine": "One low note lasts while four beats go by above"
    },
-   "parentPrompt": "Two hands is hard work. Go very slowly and stop while it's still fun.",
-   "childAction": "Play both hands together, slowly.",
-   "bridge": "Left hand is the drum; right hand sings the song.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Rest a hand on your child's left shoulder and say 'boom' on each low note.",
+   "childAction": "Left hand booms and holds; right hand plays the march tune.",
+   "bridge": "Left hand is the big drum, low and steady; right hand is the trumpet.",
+   "celebrate": "Today you practiced: two hands doing two jobs at once."
   },
   {
    "id": "toreador-march-c07",
    "index": 7,
-   "title": "Hands together, a bit faster",
-   "goal": "Play both hands together closer to full speed",
+   "title": "Slow parade, fast parade",
+   "goal": "Play both hands together a little faster, then slow again if needed.",
    "type": "hands-together",
-   "durationSec": 215,
-   "parentTip": "Speed comes last. If notes fall apart, go back to the slower tempo.",
+   "durationSec": 227,
+   "parentTip": "March your feet slowly, then faster, with your child; go back to slow if notes fall apart.",
    "video": "toreador-march/toreador-march-c07.mp4",
    "thumb": "toreador-march/toreador-march-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Toreador March",
-     "subcaption": "Class 7: Hands together, a bit faster",
+     "subcaption": "Class 7: Slow parade, fast parade",
      "durationSec": 9,
      "voice": "Hello again. Toreador March is waiting for us. Shoulders soft, fingers ready.",
      "voiceId": "2e35c296d49cb51b",
      "voiceSec": 7.12
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 75,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Slow parade, fast parade",
+     "parentCue": "Go back to slow if notes fall apart",
+     "durationSec": 8,
+     "voice": "Slow parade, fast parade. Grown-up, go back to slow if notes fall apart.",
+     "voiceId": "511b79449767ddd4",
+     "voiceSec": 6.64
     },
     {
      "kind": "say",
@@ -5199,7 +4585,7 @@
      "caption": "Your turn! Both hands",
      "parentCue": "Warm up slowly",
      "bpm": 75,
-     "leadInSec": 3.9,
+     "leadInSec": 3.81,
      "gapBeats": 1,
      "notes": [
       {
@@ -5440,9 +4826,9 @@
       }
      ],
      "durationSec": 59,
-     "voice": "Your turn. Both hands, nice and slow.",
-     "voiceId": "7c39a0349582d84b",
-     "voiceSec": 3.5
+     "voice": "Your turn. Both hands, nice and steady.",
+     "voiceId": "cd70d130fe2096c9",
+     "voiceSec": 3.41
     },
     {
      "kind": "together",
@@ -5955,9 +5341,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -6221,36 +5607,31 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "Relax your shoulders",
-     "durationSec": 5,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
-     "kind": "together",
-     "caption": "Both hands together",
-     "parentCue": "Help with the left hand if needed",
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
      "bpm": 80,
-     "leadInSec": 2.02,
+     "leadInSec": 4.26,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "G4",
        "d": 1.5,
-       "f": 4,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
+       "f": 4
       },
       {
        "p": "A4",
@@ -6270,13 +5651,7 @@
       {
        "p": "E4",
        "d": 1.5,
-       "f": 2,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
+       "f": 2
       },
       {
        "p": "D4",
@@ -6295,167 +5670,6 @@
       },
       {
        "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 4,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "A3",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 4,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1
-      },
-      {
-       "p": "C4",
        "d": 1,
        "f": 2
       }
@@ -6464,64 +5678,52 @@
       {
        "lyric": "Toreador theme part 1",
        "from": 0
-      },
-      {
-       "lyric": "Toreador theme part 2",
-       "from": 9
-      },
-      {
-       "lyric": "Toreador theme part 3",
-       "from": 17
-      },
-      {
-       "lyric": "Toreador theme ending",
-       "from": 26
       }
      ],
-     "durationSec": 28,
-     "voice": "Both hands together.",
-     "voiceId": "616b6beec5a0bdd4",
-     "voiceSec": 1.62
+     "durationSec": 19,
+     "voice": "Your turn. Keep your fingers close to the keys.",
+     "voiceId": "d35facfe41c89462",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Steady at both speeds!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "expression",
     "secondary": [
-     "patterns"
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Coordinating two streams",
-    "parentLine": "Two hands doing different jobs at once"
+    "concept": "Tempo scaling (same pattern, faster)",
+    "parentLine": "The pattern stays the same when the speed changes"
    },
-   "parentPrompt": "Speed comes last. If notes fall apart, go back to the slower tempo.",
-   "childAction": "Play both hands together, slowly.",
-   "bridge": "Left hand is the drum; right hand sings the song.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "March your feet slowly, then faster, with your child; go back to slow if notes fall apart.",
+   "childAction": "Play both hands slowly, then a little quicker.",
+   "bridge": "A slow parade and a quick parade: the same march, a new speed.",
+   "celebrate": "Today you practiced: the same song at two speeds."
   },
   {
    "id": "toreador-march-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "March with the band",
+   "goal": "Play the whole song along with the music and keep going.",
    "type": "play-along",
-   "durationSec": 240,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 244,
+   "parentTip": "Sit beside your child and nod on every one; cheer for keeping going, not for notes.",
    "video": "toreador-march/toreador-march-c08.mp4",
    "thumb": "toreador-march/toreador-march-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Toreador March",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: March with the band",
      "durationSec": 8,
      "voice": "Hello, pianists. Today we play Toreador March. Grown-up, sit beside the keys.",
      "voiceId": "43e0e9ae13d2e074",
@@ -6529,21 +5731,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
-     "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "caption": "Play along",
+     "parentCue": "Nod on every one together",
+     "durationSec": 5,
+     "voice": "Play along. Grown-up, nod on every one together.",
+     "voiceId": "a0f144f38ab101b2",
+     "voiceSec": 3.9
     },
     {
      "kind": "together",
@@ -7161,9 +6354,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -7179,7 +6372,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 100,
-     "leadInSec": 2.26,
+     "leadInSec": 1.97,
      "notes": [
       {
        "p": "G4",
@@ -7371,17 +6564,17 @@
       }
      ],
      "durationSec": 23,
-     "voice": "Here we go, all together.",
-     "voiceId": "860c30d743a9b5a8",
-     "voiceSec": 1.86
+     "voice": "Let's play together.",
+     "voiceId": "b9d074678a65d0e2",
+     "voiceSec": 1.57
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -7397,7 +6590,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 100,
-     "leadInSec": 2.26,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "G4",
@@ -7589,17 +6782,17 @@
       }
      ],
      "durationSec": 23,
-     "voice": "Here we go, all together.",
-     "voiceId": "860c30d743a9b5a8",
-     "voiceSec": 1.86
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -7615,7 +6808,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 100,
-     "leadInSec": 2.26,
+     "leadInSec": 4.12,
      "notes": [
       {
        "p": "G4",
@@ -7806,18 +6999,18 @@
        "from": 26
       }
      ],
-     "durationSec": 23,
-     "voice": "Here we go, all together.",
-     "voiceId": "860c30d743a9b5a8",
-     "voiceSec": 1.86
+     "durationSec": 25,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -7833,7 +7026,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 100,
-     "leadInSec": 2.26,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "G4",
@@ -8025,13 +7218,30 @@
       }
      ],
      "durationSec": 23,
-     "voice": "Here we go, all together.",
-     "voiceId": "860c30d743a9b5a8",
-     "voiceSec": 1.86
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Well done!",
+     "durationSec": 5,
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "say",
+     "caption": "Wiggle your fingers!",
+     "parentCue": "Shake out both hands together",
+     "durationSec": 6,
+     "voice": "Wiggle your fingers. Wiggle, wiggle.",
+     "voiceId": "640ef443bc914f6c",
+     "voiceSec": 2.99
+    },
+    {
+     "kind": "praise",
+     "caption": "You kept marching together!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
@@ -8041,33 +7251,33 @@
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Synchrony with a moving pulse",
+    "parentLine": "Keeping your part in step while the music moves on"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Sit beside your child and nod on every one; cheer for keeping going, not for notes.",
+   "childAction": "March along with the music. If a note slips, keep marching!",
+   "bridge": "The band marches on; stay in step and keep going to the end.",
+   "celebrate": "Today you practiced: keeping your part in step with the music."
   },
   {
    "id": "toreador-march-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "The crowd cheers!",
+   "goal": "Play the whole march boldly for teddy, then let the crowd cheer.",
    "type": "concert",
-   "durationSec": 225,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 219,
+   "parentTip": "Seat teddy as the crowd; after the last C, cheer, clap and wave together.",
    "video": "toreador-march/toreador-march-c09.mp4",
    "thumb": "toreador-march/toreador-march-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Toreador March",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: The crowd cheers!",
      "durationSec": 8,
      "voice": "Hello, pianists. Today we play Toreador March. Grown-up, sit beside the keys.",
      "voiceId": "43e0e9ae13d2e074",
@@ -8075,21 +7285,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "A song for teddy",
+     "parentCue": "Seat teddy as the cheering crowd",
+     "durationSec": 6,
+     "voice": "This one is for teddy.",
+     "voiceId": "137fd3d6182c1ad5",
+     "voiceSec": 1.77
     },
     {
      "kind": "together",
@@ -8610,9 +7811,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -8876,9 +8077,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -9142,9 +8343,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -9408,9 +8609,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -9672,28 +8873,28 @@
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, what a march!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "expression",
     "secondary": [
      "together",
-     "expression"
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Character (bold and proud)",
+    "parentLine": "Choosing a strong, proud sound to match a march"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Seat teddy as the crowd; after the last C, cheer, clap and wave together.",
+   "childAction": "Play proudly for teddy, land home on C, then bow.",
+   "bridge": "Strong, proud fingers, like a hero striding in while the crowd waves.",
+   "celebrate": "Today you practiced: playing a whole song with a proud sound."
   }
  ]
 }

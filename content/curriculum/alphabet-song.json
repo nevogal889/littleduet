@@ -1,0 +1,175 @@
+{
+  "songId": "alphabet-song",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices steady beat, high and low, loud and soft, slow and speedy, and playing together, while singing the ABCs.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Sway and sing the ABCs",
+      "goal": "Feel the steady beat of the ABC song with the whole body.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (steady pulse)", "parentLine": "Feeling something that comes again and again, evenly spaced" },
+      "parentPrompt": "Hold your child on your lap, sway on every beat and sing the letters softly.",
+      "childAction": "Sway, clap and pat your knees while we sing.",
+      "bridge": "This is the Twinkle tune; the letters ride on it like a boat.",
+      "intro": [ { "caption": "Let's sway and sing A B C", "parentCue": "child on your lap, sway side to side" } ],
+      "games": [],
+      "praise": "You swayed together!",
+      "celebrate": "Today you practiced: feeling the steady beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Tap the ABC beat",
+      "goal": "Tap one steady tap for every beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key once for each beat. Any key is right.",
+      "bridge": "Each beat is a stepping stone; one tap lands on each stone.",
+      "intro": [ { "caption": "One beat, one tap", "parentCue": "tap your child's shoulder on each beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "A B, C D: two and two",
+          "parentCue": "Say 'one, two' softly on each letter pair",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "A4", "d": 1 }, { "p": "A4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping (pitch to place)", "parentLine": "Low sounds live on the left, high sounds on the right" },
+      "parentPrompt": "Crouch and growl for the bear; stretch up tall and chirp for the bird.",
+      "childAction": "Bear sound: tap the left side. Bird sound: tap the right.",
+      "bridge": "Low notes are a heavy bear on the left; high notes are a tiny bird.",
+      "intro": [ { "caption": "Bear lives low, bird lives high", "parentCue": "point left for the bear, right for the bird" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "The letters walk down",
+          "parentCue": "Walk your fingers down your child's arm",
+          "bpm": 66,
+          "notes": [ { "p": "F4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Big ABC, tiny ABC",
+      "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "Noticing big and small: the same tap, more or less" },
+      "parentPrompt": "Sing the letters big with strong arms; then whisper them and tiptoe your fingers.",
+      "childAction": "Loud: big strong taps. Soft: tiny whisper taps.",
+      "bridge": "Loud taps are a giant singing ABC; soft taps are a mouse whispering it.",
+      "intro": [ { "caption": "Giant letters, mouse letters", "parentCue": "loud means strong arms, not banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Turtle ABC, bunny ABC",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "Same tune, same letters, only the speed changes" },
+      "parentPrompt": "Walk your fingers up your child's arm, slowly then quickly, matching the music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "Slow taps are turtle steps; L-M-N-O-P is a quick bunny hop.",
+      "intro": [ { "caption": "Turtle slow, bunny fast", "parentCue": "slow down if the taps get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle sings A B C",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 56,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "A4", "d": 1 }, { "p": "A4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny sings A B C",
+          "parentCue": "Same song, now quick and light",
+          "bpm": 104,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "A4", "d": 1 }, { "p": "A4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "A B C... freeze!",
+      "goal": "Tap while the music plays and freeze when it stops.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "Freeze with a funny face when the music stops; cheer when it starts again.",
+      "childAction": "Tap while music plays. Freeze like a statue when it stops.",
+      "bridge": "Music on, the letters march; music off, every letter holds still.",
+      "intro": [ { "caption": "Tap, tap... freeze!", "parentCue": "make your freeze silly, like a statue" } ],
+      "games": [],
+      "praise": "Great freezing!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "review",
+      "title": "Guess the ABC game",
+      "goal": "Listen and switch between games: high and low, loud and soft, fast and slow.",
+      "skill": { "primary": "listening", "secondary": ["pitch", "expression"] },
+      "mathTarget": { "concept": "Classification (sorting by feature)", "parentLine": "Sorting each sound: high or low, loud or soft?" },
+      "parentPrompt": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
+      "childAction": "Guess the game, then tap high, low, loud, soft, slow or fast.",
+      "bridge": "Every sound wears a costume: bear, bird, giant, mouse, turtle or bunny.",
+      "intro": [ { "caption": "What game is it?", "parentCue": "let your child guess first; any guess is fine" } ],
+      "games": [],
+      "praise": "Great listening ears!",
+      "celebrate": "Today you practiced: telling sounds apart and switching games."
+    },
+    {
+      "index": 8,
+      "spineType": "together",
+      "title": "ABC duet",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together to make one song" },
+      "parentPrompt": "Play the tune and sing the letters; if your child stops, keep playing and smile.",
+      "childAction": "Tap the beat on any key while your grown-up plays the tune.",
+      "bridge": "The tune carries the letters; your beat is the road they walk on.",
+      "intro": [ { "caption": "I play, you tap", "parentCue": "sit side by side at the piano" } ],
+      "games": [],
+      "praise": "What a duet together!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "ABC concert for teddy",
+      "goal": "Play the whole song from A all the way to Z, then bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on, and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+      "childAction": "Tap the beat to the very end, then take a big bow.",
+      "bridge": "The song is a long walk: start at A, end at Z with a bow.",
+      "intro": [ { "caption": "A song for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, A to Z!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

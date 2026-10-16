@@ -1,0 +1,160 @@
+{
+  "songId": "london-bridge",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices steady beat, high and low, loud and soft, stop and go, and playing together, with an old bridge game for two.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Sway under the bridge",
+      "goal": "Feel the steady beat of the song with the whole body.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (steady pulse)", "parentLine": "Feeling something that comes again and again, evenly spaced" },
+      "parentPrompt": "Hold your child's hands and sway side to side together on every beat.",
+      "childAction": "Sway, clap and pat your knees with the song.",
+      "bridge": "The beat is slow footsteps walking over the bridge: step, step, step.",
+      "intro": [ { "caption": "Let's sway together", "parentCue": "hold hands and sway side to side" } ],
+      "games": [],
+      "praise": "You swayed together!",
+      "celebrate": "Today you practiced: feeling the steady beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Walk across the bridge",
+      "goal": "Tap one steady tap for every beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key once for each beat. Any key is right.",
+      "bridge": "Each beat is one footstep on the bridge; one tap for every step.",
+      "intro": [ { "caption": "One step, one tap", "parentCue": "tap your child's shoulder on each beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Falling down, falling down",
+          "parentCue": "Say 'one, two' on the two 'falling downs'",
+          "bpm": 80,
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 2 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping (pitch to place)", "parentLine": "Low sounds live on the left, high sounds on the right" },
+      "parentPrompt": "Crouch and growl for the bear; stretch up tall and flap for the bird.",
+      "childAction": "Bear sound: tap the left side. Bird sound: tap the right.",
+      "bridge": "Low notes are a heavy bear under the bridge; high notes are a bird above.",
+      "intro": [ { "caption": "Bear lives low, bird lives high", "parentCue": "point left for bear, right for bird" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "The bridge comes gently down",
+          "parentCue": "Lower your arms slowly with the lights",
+          "bpm": 63,
+          "notes": [ { "p": "A4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 3 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Big feet, tiny feet",
+      "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "Noticing big and small: the same tap, more or less" },
+      "parentPrompt": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
+      "childAction": "Loud: big stomping taps. Soft: tiny tiptoe taps.",
+      "bridge": "Loud taps are big boots on the bridge; soft taps are tiptoes.",
+      "intro": [ { "caption": "Big boots, tiny tiptoes", "parentCue": "loud means strong arms, not banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Turtle and bunny cross",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "Same tune, same shape, only the speed changes" },
+      "parentPrompt": "Walk your fingers along your child's arm, slowly then quickly, matching the music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "Slow taps are a turtle crossing the bridge; fast taps are a bunny hopping.",
+      "intro": [ { "caption": "Turtle slow, bunny fast", "parentCue": "slow down if the taps get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle crosses the bridge",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 58,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny crosses the bridge",
+          "parentCue": "Same song, now quick and light",
+          "bpm": 108,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Catch me, bridge!",
+      "goal": "Tap while the music plays and freeze when it stops, like the bridge game.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "When the music stops, wrap your arms around your child like a gentle bridge.",
+      "childAction": "Tap while music plays. Freeze when it stops and get caught.",
+      "bridge": "Music on, we walk under the bridge; music off, the bridge catches you.",
+      "intro": [ { "caption": "Tap, tap... freeze!", "parentCue": "when it stops, give a soft bridge hug" } ],
+      "games": [],
+      "praise": "The bridge caught you!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "together",
+      "title": "You and me, bridge duet",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together to make one song" },
+      "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Tap the beat on any key while your grown-up plays the tune.",
+      "bridge": "A bridge needs two friends holding hands: one plays the tune, one taps the beat.",
+      "intro": [ { "caption": "I play, you tap", "parentCue": "sit side by side at the piano" } ],
+      "games": [],
+      "praise": "What a duet together!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Bridge concert for teddy",
+      "goal": "Play the whole song from the first note to the last, then bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+      "childAction": "Tap the beat to the very end, then take a big bow.",
+      "bridge": "The song walks across the bridge: start on one side, bow on the other.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

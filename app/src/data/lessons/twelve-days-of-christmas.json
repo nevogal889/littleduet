@@ -2,41 +2,55 @@
  "songId": "twelve-days-of-christmas",
  "title": "The Twelve Days of Christmas (First Day)",
  "ageGroup": "4-5",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and listening memory, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices counting in threes, finger order, steps and skips, and remembering words in order, with the first day of an old memory song.",
  "skillMap": [
-  {
-   "id": "fingers",
-   "label": "Finger control",
-   "value": 1.0,
-   "classes": 4,
-   "total": 10
-  },
-  {
-   "id": "form",
-   "label": "Song shape",
-   "value": 0.75,
-   "classes": 3,
-   "total": 10
-  },
-  {
-   "id": "listening",
-   "label": "Listening memory",
-   "value": 0.25,
-   "classes": 1,
-   "total": 10
-  },
   {
    "id": "space",
    "label": "Keyboard map",
-   "value": 0.25,
-   "classes": 1,
+   "value": 1.0,
+   "classes": 3,
    "total": 10
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.25,
+   "value": 0.67,
+   "classes": 2,
+   "total": 10
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.33,
+   "classes": 1,
+   "total": 10
+  },
+  {
+   "id": "listening",
+   "label": "Listening memory",
+   "value": 0.33,
+   "classes": 1,
+   "total": 10
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.33,
+   "classes": 1,
+   "total": 10
+  },
+  {
+   "id": "fingers",
+   "label": "Finger control",
+   "value": 0.33,
+   "classes": 1,
+   "total": 10
+  },
+  {
+   "id": "form",
+   "label": "Song shape",
+   "value": 0.33,
    "classes": 1,
    "total": 10
   }
@@ -44,36 +58,65 @@
  "icon": "bird",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2230,
+ "totalSec": 2223,
  "classes": [
   {
    "id": "twelve-days-of-christmas-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "Find your five-finger house",
+   "goal": "Find C by its landmark and rest one finger on each key from C to G.",
    "type": "listen",
-   "durationSec": 242,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 241,
+   "parentTip": "Point to the two black keys, then help your child rest the thumb on C, just left.",
    "video": "twelve-days-of-christmas/twelve-days-of-christmas-c01.mp4",
    "thumb": "twelve-days-of-christmas/twelve-days-of-christmas-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Twelve Days of Christmas (First Day)",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: Find your five-finger house",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today we play The Twelve Days of Christmas (First Day). Grown-up, sit beside the keys.",
      "voiceId": "d3b64c9642a798e9",
      "voiceSec": 7.56
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Find the two black keys",
+     "parentCue": "help the thumb land just left of them, on C",
+     "durationSec": 8,
+     "voice": "Find the two black keys, side by side.",
+     "voiceId": "342cccd6285d7d0f",
+     "voiceSec": 2.61
     },
     {
      "kind": "say",
@@ -85,11 +128,11 @@
        "f": 1
       },
       {
-       "p": "E4",
+       "p": "A3",
        "f": 2
       },
       {
-       "p": "F4",
+       "p": "B3",
        "f": 3
       },
       {
@@ -104,6 +147,40 @@
      "durationSec": 7,
      "voice": "Thumb on G. Curve your fingers, like holding a little ball.",
      "voiceId": "1fde154d663011a3",
+     "voiceSec": 3.96
+    },
+    {
+     "kind": "your_turn",
+     "caption": "One finger, one key",
+     "parentCue": "Say the finger numbers, one to five",
+     "bpm": 63,
+     "leadInSec": 4.36,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 1
+      },
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "F4",
+       "d": 1
+      },
+      {
+       "p": "G4",
+       "d": 2
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Your turn. One finger on each key, one by one.",
+     "voiceId": "be3fc90a0fdacab7",
      "voiceSec": 3.96
     },
     {
@@ -579,7 +656,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 104,
-     "leadInSec": 3.15,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G3",
@@ -717,17 +794,17 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Hands on your knees. Just listen.",
-     "voiceId": "6ffe923cd9113f9b",
-     "voiceSec": 2.75
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -1055,7 +1132,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 104,
-     "leadInSec": 3.15,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G3",
@@ -1193,17 +1270,17 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Hands on your knees. Just listen.",
-     "voiceId": "6ffe923cd9113f9b",
-     "voiceSec": 2.75
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -1362,210 +1439,45 @@
      "voiceSec": 1.53
     },
     {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 104,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "On"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "first"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "day"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "of"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "my"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "true"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "love"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "gave"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "to"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 2,
-       "s": "me"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "A"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "par"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tridge"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "in"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "pear"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "tree"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "On the first day of Christmas",
-       "from": 0
-      },
-      {
-       "lyric": "my true love gave to me",
-       "from": 7
-      },
-      {
-       "lyric": "A partridge in a pear tree",
-       "from": 13
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
-     "voiceSec": 2.66
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 9,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found your house!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "space",
     "secondary": [
-     "beat",
-     "together"
+     "fingers",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "Spatial mapping with a landmark",
+    "parentLine": "Using the two black keys to find where the hand lives"
    },
-   "parentPrompt": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Point to the two black keys, then help your child rest the thumb on C, just left.",
+   "childAction": "Thumb on C, then one finger on each key up to G.",
+   "bridge": "Two black keys are a roof; C is the door just left of it.",
+   "celebrate": "Today you practiced: finding the hand's place by a landmark."
   },
   {
    "id": "twelve-days-of-christmas-c02",
    "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Three, then three more",
+   "goal": "Play 'On the first day': the grown-up plays three low Gs, the child answers with three Cs.",
    "type": "phrase",
-   "durationSec": 227,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 220,
+   "parentTip": "You play the three low Gs; hold up three fingers, then let your child play three Cs.",
    "video": "twelve-days-of-christmas/twelve-days-of-christmas-c02.mp4",
    "thumb": "twelve-days-of-christmas/twelve-days-of-christmas-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Twelve Days of Christmas (First Day)",
-     "subcaption": "Class 2: Part 1",
+     "subcaption": "Class 2: Three, then three more",
      "durationSec": 9,
      "voice": "Hi there. Our song today is The Twelve Days of Christmas (First Day). Let's warm up our fingers.",
      "voiceId": "7b4cf5f4bc601663",
@@ -1573,19 +1485,45 @@
     },
     {
      "kind": "say",
-     "caption": "Today: On the first day of",
-     "parentCue": "Listen first, then copy",
+     "caption": "Three for me, three for you",
+     "parentCue": "you play the three low Gs first",
      "durationSec": 7,
-     "voice": "Today we learn a new bit: On the first day of Christmas.",
-     "voiceId": "e1ca03e0074b38bb",
-     "voiceSec": 3.88
+     "voice": "Three for me, three for you. Grown-up, you play the three low Gs first.",
+     "voiceId": "99848d8b1485c8ca",
+     "voiceSec": 5.34
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your three: C, C, C",
+     "parentCue": "Hold up three fingers and count together",
+     "bpm": 63,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "C4",
+       "d": 2
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 78,
-     "leadInSec": 3.85,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G3",
@@ -1676,10 +1614,10 @@
        "from": 7
       }
      ],
-     "durationSec": 17,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 16,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -1797,7 +1735,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 78,
-     "leadInSec": 3.79,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "G3",
@@ -1848,17 +1786,17 @@
        "from": 0
       }
      ],
-     "durationSec": 11,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 10,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 78,
-     "leadInSec": 3.83,
+     "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
       {
@@ -1910,18 +1848,18 @@
        "from": 0
       }
      ],
-     "durationSec": 17,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "durationSec": 16,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -1937,7 +1875,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 78,
-     "leadInSec": 3.79,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "C4",
@@ -1982,17 +1920,17 @@
        "from": 0
       }
      ],
-     "durationSec": 11,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 10,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 78,
-     "leadInSec": 3.83,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -2039,17 +1977,17 @@
       }
      ],
      "durationSec": 16,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -2065,7 +2003,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 78,
-     "leadInSec": 3.83,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -2158,33 +2096,33 @@
       }
      ],
      "durationSec": 27,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
+     "caption": "Let's do it again",
      "parentCue": "Fingers ready on the lit keys",
      "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
+     "voice": "Let's do it again.",
+     "voiceId": "5608b20dfb890c6e",
+     "voiceSec": 1.58
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 78,
-     "leadInSec": 3.83,
+     "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
       {
@@ -2276,151 +2214,51 @@
        "from": 7
       }
      ],
-     "durationSec": 27,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 94,
-     "leadInSec": 2.67,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "On"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "first"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "day"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "of"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "my"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "true"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "love"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "gave"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "to"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 2,
-       "s": "me"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "On the first day of Christmas",
-       "from": 0
-      },
-      {
-       "lyric": "my true love gave to me",
-       "from": 7
-      }
-     ],
-     "durationSec": 14,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
+     "durationSec": 26,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Three, three, perfect!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "counting",
     "secondary": [
-     "form"
+     "together",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Grouping and subitizing (threes)",
+    "parentLine": "Seeing and hearing three at a glance"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "You play the three low Gs; hold up three fingers, then let your child play three Cs.",
+   "childAction": "Count to three as you play C, C, C after your grown-up.",
+   "bridge": "Three low Gs knock on the left; three Cs answer from the house.",
+   "celebrate": "Today you practiced: counting and playing groups of three."
   },
   {
    "id": "twelve-days-of-christmas-c03",
    "index": 3,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Up the stairs: 1, 2, 3, 4",
+   "goal": "Play 'my true love gave to me': fingers climb 1, 2, 3, 4, then step back.",
    "type": "phrase",
-   "durationSec": 207,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 215,
+   "parentTip": "Say the finger numbers out loud and touch each finger gently before it plays.",
    "video": "twelve-days-of-christmas/twelve-days-of-christmas-c03.mp4",
    "thumb": "twelve-days-of-christmas/twelve-days-of-christmas-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Twelve Days of Christmas (First Day)",
-     "subcaption": "Class 3: Part 2",
+     "subcaption": "Class 3: Up the stairs: 1, 2, 3, 4",
      "durationSec": 8,
      "voice": "Welcome back. Time for The Twelve Days of Christmas (First Day). Sit up tall, feet still.",
      "voiceId": "b52a47bee1ef9a4e",
@@ -2428,19 +2266,57 @@
     },
     {
      "kind": "say",
-     "caption": "Today: A partridge in a pear",
-     "parentCue": "Listen first, then copy",
+     "caption": "First, second, third, fourth",
+     "parentCue": "touch each finger before it plays",
      "durationSec": 7,
-     "voice": "Today we learn a new bit: A partridge in a pear tree.",
-     "voiceId": "6fbd9d27e574123e",
-     "voiceSec": 4.01
+     "voice": "First, second, third, fourth. Grown-up, touch each finger before it plays.",
+     "voiceId": "3cef7097c3fa853a",
+     "voiceSec": 5.66
+    },
+    {
+     "kind": "your_turn",
+     "caption": "My true love gave to me",
+     "parentCue": "Say '1, 2, 3, 4, 2, 3' together",
+     "bpm": 60,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 1
+      },
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "F4",
+       "d": 0.5
+      },
+      {
+       "p": "D4",
+       "d": 0.5
+      },
+      {
+       "p": "E4",
+       "d": 3
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 78,
-     "leadInSec": 2.33,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "G4",
@@ -2492,9 +2368,9 @@
       }
      ],
      "durationSec": 10,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -2572,7 +2448,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 78,
-     "leadInSec": 3.42,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2624,18 +2500,18 @@
        "from": 0
       }
      ],
-     "durationSec": 16,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 17,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -2651,7 +2527,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 78,
-     "leadInSec": 3.42,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -2704,9 +2580,9 @@
       }
      ],
      "durationSec": 16,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "together",
@@ -2773,9 +2649,9 @@
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -2791,7 +2667,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 78,
-     "leadInSec": 3.42,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -2843,18 +2719,18 @@
        "from": 0
       }
      ],
-     "durationSec": 16,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 17,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
      "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -2870,7 +2746,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 78,
-     "leadInSec": 3.42,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -2922,10 +2798,10 @@
        "from": 0
       }
      ],
-     "durationSec": 16,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 17,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "together",
@@ -3010,7 +2886,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 78,
-     "leadInSec": 3.42,
+     "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
       {
@@ -3063,79 +2939,92 @@
       }
      ],
      "durationSec": 16,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "Steady fingers!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "Big breath in and out",
-     "parentCue": "Breathe slowly together",
-     "durationSec": 8,
-     "voice": "Big breath in, and out.",
-     "voiceId": "67a43f157c55d975",
-     "voiceSec": 2.01
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "form"
+     "counting",
+     "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Ordinal sequence (1, 2, 3, 4)",
+    "parentLine": "Fingers in order: first, second, third, fourth"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Say the finger numbers out loud and touch each finger gently before it plays.",
+   "childAction": "Play fingers 1, 2, 3, 4 up the stairs, then step back.",
+   "bridge": "Each finger is a stair: first, second, third, fourth, then a little step back.",
+   "celebrate": "Today you practiced: playing fingers in order, one to four."
   },
   {
    "id": "twelve-days-of-christmas-c04",
    "index": 4,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "Your notes, my notes",
+   "goal": "Play the whole song slowly; the grown-up plays the notes outside the child's hand.",
    "type": "put-together",
-   "durationSec": 206,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "durationSec": 210,
+   "parentTip": "Play the low Gs, the B and the high A; sing the next word if needed.",
    "video": "twelve-days-of-christmas/twelve-days-of-christmas-c04.mp4",
    "thumb": "twelve-days-of-christmas/twelve-days-of-christmas-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Twelve Days of Christmas (First Day)",
-     "subcaption": "Class 4: Put it together",
+     "subcaption": "Class 4: Your notes, my notes",
      "durationSec": 8,
      "voice": "Welcome back. Time for The Twelve Days of Christmas (First Day). Sit up tall, feet still.",
      "voiceId": "b52a47bee1ef9a4e",
      "voiceSec": 6.02
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
-     "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "caption": "Your notes, my notes",
+     "parentCue": "you play every note outside your child's hand",
+     "durationSec": 8,
+     "voice": "Your notes, my notes. Grown-up, you play every note outside your child's hand.",
+     "voiceId": "cddb0f4cb95a44c0",
+     "voiceSec": 6.17
     },
     {
      "kind": "say",
@@ -3147,11 +3036,11 @@
        "f": 1
       },
       {
-       "p": "E4",
+       "p": "A3",
        "f": 2
       },
       {
-       "p": "F4",
+       "p": "B3",
        "f": 3
       },
       {
@@ -3167,6 +3056,54 @@
      "voice": "Put your fingers on the glowing keys.",
      "voiceId": "36a8a4c976b56a8f",
      "voiceSec": 2.14
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 83,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
     },
     {
      "kind": "demo",
@@ -3624,9 +3561,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -3788,26 +3725,25 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
-     "caption": "Let's do it again",
+     "caption": "And again!",
      "parentCue": "Take a breath between lines",
-     "durationSec": 6,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
+     "durationSec": 5,
+     "voice": "And again.",
+     "voiceId": "be3897a52d81cfa7",
+     "voiceSec": 1.2
     },
     {
-     "kind": "your_turn",
-     "caption": "Your turn!",
+     "kind": "together",
+     "caption": "Play along",
      "parentCue": "Keep going after a slip",
-     "bpm": 78,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
+     "bpm": 88,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "G3",
@@ -3944,50 +3880,51 @@
        "from": 13
       }
      ],
-     "durationSec": 37,
-     "voice": "Now you. Follow the glowing keys, one by one.",
-     "voiceId": "caf3f4651442eb31",
-     "voiceSec": 3.43
+     "durationSec": 19,
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "What a team!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "together",
     "secondary": [
-     "patterns"
+     "form",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Interlocking parts (two roles)",
+    "parentLine": "Two jobs fit together to make one tune"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Play the low Gs, the B and the high A; sing the next word if needed.",
+   "childAction": "Play the notes in your house; let your grown-up play the rest.",
+   "bridge": "Your hand stays home; the grown-up visits the keys outside the house.",
+   "celebrate": "Today you practiced: fitting two parts together in one song."
   },
   {
    "id": "twelve-days-of-christmas-c05",
    "index": 5,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Steps and skips",
+   "goal": "Play 'in a pear tree' slowly and feel next-door steps and little skips.",
    "type": "review",
-   "durationSec": 243,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 229,
+   "parentTip": "Touch the skipped key with your finger so your child sees the little jump.",
    "video": "twelve-days-of-christmas/twelve-days-of-christmas-c05.mp4",
    "thumb": "twelve-days-of-christmas/twelve-days-of-christmas-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Twelve Days of Christmas (First Day)",
-     "subcaption": "Class 5: Tricky spots",
+     "subcaption": "Class 5: Steps and skips",
      "durationSec": 9,
      "voice": "Hi, everyone. Let's play The Twelve Days of Christmas (First Day). Curved fingers, like holding a little ball.",
      "voiceId": "16e7385c6d6176a6",
@@ -3995,21 +3932,46 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
+     "caption": "Step next door, or skip one?",
+     "parentCue": "touch the key that gets skipped",
      "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "voice": "Step next door, or skip one. Grown-up, touch the key that gets skipped.",
+     "voiceId": "102be6387aa8ed22",
+     "voiceSec": 5.26
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "In a pear tree, slowly",
+     "parentCue": "Point to the skipped D before the skip",
+     "bpm": 56,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 1
+      },
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 1
+      },
+      {
+       "p": "C4",
+       "d": 2
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "demo",
@@ -4347,7 +4309,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 83,
-     "leadInSec": 3.24,
+     "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
       {
@@ -4440,17 +4402,17 @@
       }
      ],
      "durationSec": 25,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -4466,7 +4428,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 94,
-     "leadInSec": 3.24,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -4559,17 +4521,17 @@
       }
      ],
      "durationSec": 22,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -4585,7 +4547,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 73,
-     "leadInSec": 3.24,
+     "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
       {
@@ -4677,129 +4639,51 @@
        "from": 7
       }
      ],
-     "durationSec": 27,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
+     "durationSec": 28,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "Great stepping and skipping!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 83,
-     "leadInSec": 3.24,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "On"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "first"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "day"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "of"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "mas"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "On the first day of Christmas",
-       "from": 0
-      }
-     ],
-     "durationSec": 15,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
      "voiceSec": 2.84
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "space",
     "secondary": [
-     "patterns"
+     "fingers",
+     "pitch"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Interval distance: step versus skip",
+    "parentLine": "Next-door keys, or jumping over one"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Touch the skipped key with your finger so your child sees the little jump.",
+   "childAction": "Play F, E, skip down to C, then D, C.",
+   "bridge": "A step is next door; a skip hops over one key, like a partridge hop.",
+   "celebrate": "Today you practiced: telling steps and skips apart."
   },
   {
    "id": "twelve-days-of-christmas-c06",
    "index": 6,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
+   "title": "Four beats, slow and even",
+   "goal": "Play the whole song slowly while counting four beats in every bar.",
    "type": "phrase",
-   "durationSec": 215,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
+   "durationSec": 217,
+   "parentTip": "Tap your child's shoulder on each beat, count 1, 2, 3, 4. You play the outside notes.",
    "video": "twelve-days-of-christmas/twelve-days-of-christmas-c06.mp4",
    "thumb": "twelve-days-of-christmas/twelve-days-of-christmas-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Twelve Days of Christmas (First Day)",
-     "subcaption": "Class 6: Slow and steady",
+     "subcaption": "Class 6: Four beats, slow and even",
      "durationSec": 8,
      "voice": "Welcome back. Time for The Twelve Days of Christmas (First Day). Sit up tall, feet still.",
      "voiceId": "b52a47bee1ef9a4e",
@@ -4807,19 +4691,67 @@
     },
     {
      "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
-     "durationSec": 6,
-     "voice": "Slow and steady practice today.",
-     "voiceId": "aeb4883c0cf279a5",
-     "voiceSec": 2.42
+     "caption": "Slow and even is best",
+     "parentCue": "tap your child's shoulder and count to four",
+     "durationSec": 7,
+     "voice": "Slow and even is best. Grown-up, tap your child's shoulder and count to four.",
+     "voiceId": "4dca22c169de5cc3",
+     "voiceSec": 5.56
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap and count to four",
+     "parentCue": "Count softly as your child taps",
+     "bpm": 78,
+     "leadInSec": 4.26,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Tap any key and count with me. One, two, three, four.",
+     "voiceId": "8c616960af03108e",
+     "voiceSec": 3.86
     },
     {
      "kind": "demo",
      "caption": "Watch",
      "parentCue": "Watch the finger numbers",
      "bpm": 73,
-     "leadInSec": 2.33,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "G3",
@@ -4956,10 +4888,10 @@
        "from": 13
       }
      ],
-     "durationSec": 22,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 23,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -5113,16 +5045,16 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "demo",
      "caption": "Watch",
      "parentCue": "Watch the finger numbers",
      "bpm": 73,
-     "leadInSec": 2.33,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "G3",
@@ -5259,17 +5191,17 @@
        "from": 13
       }
      ],
-     "durationSec": 22,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 21,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Help only if stuck",
      "bpm": 73,
-     "leadInSec": 3.93,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -5408,171 +5340,33 @@
       }
      ],
      "durationSec": 40,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 73,
-     "leadInSec": 2.33,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "On"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "first"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "day"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "of"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "mas"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "my"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "true"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "love"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "gave"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "to"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 2,
-       "s": "me"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "A"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "par"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tridge"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "in"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "pear"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "tree"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "On the first day of Christmas",
-       "from": 0
-      },
-      {
-       "lyric": "my true love gave to me",
-       "from": 7
-      },
-      {
-       "lyric": "A partridge in a pear tree",
-       "from": 13
-      }
-     ],
-     "durationSec": 22,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Help only if stuck",
-     "bpm": 73,
-     "leadInSec": 3.93,
+     "parentCue": "The first part again",
+     "bpm": 83,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -5710,14 +5504,23 @@
        "from": 13
       }
      ],
-     "durationSec": 40,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
+     "durationSec": 36,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "say",
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 9,
+     "voice": "Shake, shake, shake your hands.",
+     "voiceId": "69041444bf86c15c",
+     "voiceSec": 2.85
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Slow and steady!",
      "durationSec": 5,
      "voice": "I love how you kept going.",
      "voiceId": "5edf54ba234e9d32",
@@ -5725,39 +5528,78 @@
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "beat",
     "secondary": [
-     "beat"
+     "counting",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Tempo control",
-    "parentLine": "Doing a task slowly and evenly"
+    "concept": "Grouping by four (meter)",
+    "parentLine": "Each bar holds four even beats"
    },
-   "parentPrompt": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "childAction": "Play the tune slowly, every note even.",
-   "bridge": "Slow fingers, like a cat walking on tiptoe.",
-   "celebrate": "Today you practiced careful fingers and keeping a steady beat."
+   "parentPrompt": "Tap your child's shoulder on each beat, count 1, 2, 3, 4. You play the outside notes.",
+   "childAction": "Play slowly while your grown-up counts to four.",
+   "bridge": "Each bar is a little gift box with four beats inside.",
+   "celebrate": "Today you practiced: playing slowly and evenly in fours."
   },
   {
    "id": "twelve-days-of-christmas-c07",
    "index": 7,
-   "title": "Same song, up high",
-   "goal": "Play the song in a new place with the same fingers",
+   "title": "Same song, up the tree",
+   "goal": "Play the same song with the same fingers on a higher C.",
    "type": "octave",
-   "durationSec": 223,
-   "parentTip": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
+   "durationSec": 224,
+   "parentTip": "Show your child the next two black keys to the right; help the thumb find that C.",
    "video": "twelve-days-of-christmas/twelve-days-of-christmas-c07.mp4",
    "thumb": "twelve-days-of-christmas/twelve-days-of-christmas-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Twelve Days of Christmas (First Day)",
-     "subcaption": "Class 7: Same song, up high",
+     "subcaption": "Class 7: Same song, up the tree",
      "durationSec": 9,
      "voice": "Hi there. Our song today is The Twelve Days of Christmas (First Day). Let's warm up our fingers.",
      "voiceId": "7b4cf5f4bc601663",
      "voiceSec": 7.54
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Same song, higher up",
+     "parentCue": "ask your child: which one sounds nicer?",
+     "durationSec": 7,
+     "voice": "Same song, higher up. Grown-up, ask your child: which one sounds nicer.",
+     "voiceId": "337355923ef9b5a6",
+     "voiceSec": 5.79
     },
     {
      "kind": "say",
@@ -5769,11 +5611,11 @@
        "f": 1
       },
       {
-       "p": "E5",
+       "p": "A4",
        "f": 2
       },
       {
-       "p": "F5",
+       "p": "B4",
        "f": 3
       },
       {
@@ -5791,13 +5633,42 @@
      "voiceSec": 2.49
     },
     {
-     "kind": "say",
-     "caption": "Same fingers, new place",
-     "parentCue": "Fingers keep the same numbers",
-     "durationSec": 6,
-     "voice": "Same fingers, new place.",
-     "voiceId": "f1984f5f115ff332",
-     "voiceSec": 2.38
+     "kind": "your_turn",
+     "caption": "Up high: my true love",
+     "parentCue": "Help the thumb find the higher C",
+     "bpm": 60,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1
+      },
+      {
+       "p": "D5",
+       "d": 1
+      },
+      {
+       "p": "E5",
+       "d": 1
+      },
+      {
+       "p": "F5",
+       "d": 0.5
+      },
+      {
+       "p": "D5",
+       "d": 0.5
+      },
+      {
+       "p": "E5",
+       "d": 3
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "demo",
@@ -6106,7 +5977,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 83,
      "leadInSec": 2.25,
      "notes": [
@@ -6254,9 +6125,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -6270,7 +6141,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 94,
      "leadInSec": 2.25,
      "notes": [
@@ -6418,9 +6289,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -6434,7 +6305,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 83,
      "leadInSec": 2.25,
      "notes": [
@@ -6582,9 +6453,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -6598,7 +6469,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 94,
      "leadInSec": 2.25,
      "notes": [
@@ -6744,207 +6615,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "You climbed the tree!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Listen to how it sounds now",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "together",
-     "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
-     "bpm": 83,
-     "leadInSec": 2.25,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "On"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "first"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "day"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "of"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "B4",
-       "d": 1,
-       "f": 3,
-       "s": "mas"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "my"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 5,
-       "s": "true"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 2,
-       "s": "love"
-      },
-      {
-       "p": "F5",
-       "d": 0.5,
-       "f": 3,
-       "s": "gave"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 1,
-       "s": "to"
-      },
-      {
-       "p": "E5",
-       "d": 3,
-       "f": 2,
-       "s": "me"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "f": 4,
-       "s": "A"
-      },
-      {
-       "p": "A5",
-       "d": 1,
-       "f": 5,
-       "s": "par"
-      },
-      {
-       "p": "F5",
-       "d": 0.5,
-       "f": 3,
-       "s": "tridge"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "f": 2,
-       "s": "in"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 2,
-       "s": "pear"
-      },
-      {
-       "p": "C5",
-       "d": 3,
-       "f": 1,
-       "s": "tree"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "On the first day of Christmas",
-       "from": 0
-      },
-      {
-       "lyric": "my true love gave to me",
-       "from": 7
-      },
-      {
-       "lyric": "A partridge in a pear tree",
-       "from": 13
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Play along, up high.",
-     "voiceId": "6ee60273cf4e390f",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
     "primary": "space",
     "secondary": [
-     "pitch"
+     "pitch",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Translation (same shape, new place)",
-    "parentLine": "Finding the same note higher or lower on the keyboard"
+    "concept": "Octave equivalence (translation)",
+    "parentLine": "The same pattern moved to a new place sounds higher"
    },
-   "parentPrompt": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
-   "childAction": "Play the same note in its high and low homes.",
-   "bridge": "Every note has a family: same name, a different house.",
-   "celebrate": "Today you practiced finding the way on the keys and hearing high and low."
+   "parentPrompt": "Show your child the next two black keys to the right; help the thumb find that C.",
+   "childAction": "Move your hand up to the next C and play again.",
+   "bridge": "Higher C is the same house, high up in the pear tree.",
+   "celebrate": "Today you practiced: playing the same song in a new place."
   },
   {
    "id": "twelve-days-of-christmas-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Keep up with the music",
+   "goal": "Play the whole song along with the music at full speed.",
    "type": "play-along",
-   "durationSec": 207,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 211,
+   "parentTip": "Nod on each beat and play the outside notes; if a note slips, keep going.",
    "video": "twelve-days-of-christmas/twelve-days-of-christmas-c08.mp4",
    "thumb": "twelve-days-of-christmas/twelve-days-of-christmas-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Twelve Days of Christmas (First Day)",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Keep up with the music",
      "durationSec": 9,
      "voice": "Hello, piano friends. Today we play The Twelve Days of Christmas (First Day). Grown-up, sit beside the keys.",
      "voiceId": "d3b64c9642a798e9",
@@ -6952,21 +6660,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
+     "caption": "Hop on and keep going",
+     "parentCue": "nod the beat and smile at slips",
      "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "voice": "Hop on and keep going. Grown-up, nod the beat and smile at slips.",
+     "voiceId": "3609859043dfd3bf",
+     "voiceSec": 5.92
     },
     {
      "kind": "together",
@@ -7422,9 +7121,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -7440,7 +7139,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 104,
-     "leadInSec": 2.47,
+     "leadInSec": 1.97,
      "notes": [
       {
        "p": "G3",
@@ -7577,18 +7276,18 @@
        "from": 13
       }
      ],
-     "durationSec": 17,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 16,
+     "voice": "Let's play together.",
+     "voiceId": "b9d074678a65d0e2",
+     "voiceSec": 1.57
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -7604,7 +7303,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 104,
-     "leadInSec": 2.47,
+     "leadInSec": 1.97,
      "notes": [
       {
        "p": "G3",
@@ -7741,18 +7440,18 @@
        "from": 13
       }
      ],
-     "durationSec": 17,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 16,
+     "voice": "Let's play together.",
+     "voiceId": "b9d074678a65d0e2",
+     "voiceSec": 1.57
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -7768,7 +7467,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 104,
-     "leadInSec": 2.47,
+     "leadInSec": 1.97,
      "notes": [
       {
        "p": "G3",
@@ -7905,18 +7604,18 @@
        "from": 13
       }
      ],
-     "durationSec": 17,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 16,
+     "voice": "Let's play together.",
+     "voiceId": "b9d074678a65d0e2",
+     "voiceSec": 1.57
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -7932,7 +7631,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 104,
-     "leadInSec": 2.47,
+     "leadInSec": 1.97,
      "notes": [
       {
        "p": "G3",
@@ -8069,89 +7768,172 @@
        "from": 13
       }
      ],
-     "durationSec": 17,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 16,
+     "voice": "Let's play together.",
+     "voiceId": "b9d074678a65d0e2",
+     "voiceSec": 1.57
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
-     "caption": "Wiggle your fingers!",
-     "parentCue": "Shake out both hands together",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Wiggle your fingers. Wiggle, wiggle.",
-     "voiceId": "640ef443bc914f6c",
-     "voiceSec": 2.99
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 83,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "On"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "first"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "day"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "of"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "Christ"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "mas"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "On the first day of Christmas",
+       "from": 0
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept going together!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
+     "beat",
      "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Entrainment (matching a tempo)",
+    "parentLine": "Keeping up with a beat that does not wait"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Nod on each beat and play the outside notes; if a note slips, keep going.",
+   "childAction": "Play along with the music and keep going, even after a slip.",
+   "bridge": "The music is a moving sleigh; hop on and ride, even past bumps.",
+   "celebrate": "Today you practiced: keeping up with the music together."
   },
   {
    "id": "twelve-days-of-christmas-c09",
    "index": 9,
-   "title": "Sing and play",
-   "goal": "Sing the words while playing the tune",
+   "title": "Sing it, remember it",
+   "goal": "Sing the words while playing, then remember what the first gift was.",
    "type": "play-along",
-   "durationSec": 247,
-   "parentTip": "Singing and playing together is hard. It's fine if the singing comes and goes.",
+   "durationSec": 236,
+   "parentTip": "Sing along while your child plays; afterwards ask: what was the gift on day one?",
    "video": "twelve-days-of-christmas/twelve-days-of-christmas-c09.mp4",
    "thumb": "twelve-days-of-christmas/twelve-days-of-christmas-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Twelve Days of Christmas (First Day)",
-     "subcaption": "Class 9: Sing and play",
+     "subcaption": "Class 9: Sing it, remember it",
      "durationSec": 9,
      "voice": "Hi, everyone. Let's play The Twelve Days of Christmas (First Day). Curved fingers, like holding a little ball.",
      "voiceId": "16e7385c6d6176a6",
      "voiceSec": 7.63
     },
     {
-     "kind": "say",
-     "caption": "Sing and play at the same time!",
-     "parentCue": "Sing the words with your child",
-     "durationSec": 7,
-     "voice": "Now sing and play at the same time.",
-     "voiceId": "4a55a89d332f6f50",
-     "voiceSec": 2.92
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
     },
     {
      "kind": "say",
-     "caption": "First we sing, then we play",
-     "parentCue": "Sing slowly first",
-     "durationSec": 6,
-     "voice": "First we sing. Then we play.",
-     "voiceId": "089f436864c9ccf9",
-     "voiceSec": 2.62
+     "caption": "Sing it, then remember it",
+     "parentCue": "sing first; it is fine if singing comes and goes",
+     "durationSec": 8,
+     "voice": "Sing it, then remember it. Grown-up, sing first; it is fine if singing comes and goes.",
+     "voiceId": "8073100a09af2323",
+     "voiceSec": 6.34
     },
     {
      "kind": "listen",
@@ -8607,9 +8389,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -8771,9 +8553,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -9099,9 +8881,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -9263,9 +9045,9 @@
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -9427,120 +9209,59 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 83,
-     "leadInSec": 3.98,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "On"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "first"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "day"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "of"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "Christ"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "mas"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "On the first day of Christmas",
-       "from": 0
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 5,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great remembering!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "listening",
     "secondary": [
-     "together"
+     "together",
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Cross-modal matching",
-    "parentLine": "Matching words, voice and keys at the same time"
+    "concept": "Serial recall (memory game)",
+    "parentLine": "Remembering words in order, like the old game"
    },
-   "parentPrompt": "Singing and playing together is hard. It's fine if the singing comes and goes.",
-   "childAction": "Sing the words while you play.",
-   "bridge": "Your voice and your fingers walk together.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sing along while your child plays; afterwards ask: what was the gift on day one?",
+   "childAction": "Sing and play, then tell your grown-up the first gift.",
+   "bridge": "Long ago this was a memory game: each player remembered the gifts in order.",
+   "celebrate": "Today you practiced: singing, playing and remembering words in order."
   },
   {
    "id": "twelve-days-of-christmas-c10",
    "index": 10,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Partridge concert for teddy",
+   "goal": "Play the whole song for teddy, hold the long last C, then bow.",
    "type": "concert",
-   "durationSec": 213,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 220,
+   "parentTip": "Sit teddy as the audience; announce the song, hold the last note together, then bow.",
    "video": "twelve-days-of-christmas/twelve-days-of-christmas-c10.mp4",
    "thumb": "twelve-days-of-christmas/twelve-days-of-christmas-c10.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "The Twelve Days of Christmas (First Day)",
-     "subcaption": "Class 10: Concert time",
+     "subcaption": "Class 10: Partridge concert for teddy",
      "durationSec": 9,
      "voice": "Hi there. Our song today is The Twelve Days of Christmas (First Day). Let's warm up our fingers.",
      "voiceId": "7b4cf5f4bc601663",
@@ -9548,21 +9269,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "Concert time for teddy!",
+     "parentCue": "put teddy in front as the audience",
+     "durationSec": 6,
+     "voice": "Concert time. Teddy is listening.",
+     "voiceId": "5981e6766e72b3d1",
+     "voiceSec": 2.73
     },
     {
      "kind": "together",
@@ -9879,9 +9591,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -10043,9 +9755,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -10207,9 +9919,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -10371,9 +10083,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -10535,9 +10247,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -10697,11 +10409,28 @@
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "You did it!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "say",
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 8,
+     "voice": "Shake, shake, shake your hands.",
+     "voiceId": "69041444bf86c15c",
+     "voiceSec": 2.85
+    },
+    {
+     "kind": "praise",
+     "caption": "Bravo, you played together!",
+     "durationSec": 5,
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
@@ -10712,13 +10441,13 @@
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Form: ending on home",
+    "parentLine": "The tune ends by landing on its home note"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; announce the song, hold the last note together, then bow.",
+   "childAction": "Play for teddy, hold the last C long, then take a bow.",
+   "bridge": "The partridge flies, then settles home on C for a long, long rest.",
+   "celebrate": "Today you practiced: playing a whole song, start to end."
   }
  ]
 }

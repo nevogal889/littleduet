@@ -2,41 +2,55 @@
  "songId": "sur-le-pont-davignon",
  "title": "On the Bridge of Avignon",
  "ageGroup": "4-5",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and listening memory, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices counting same notes, quick and slow notes, hearing endings that sound finished, and keeping up together, with a French dancing song.",
  "skillMap": [
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 1.0,
+   "classes": 2,
+   "total": 9
+  },
   {
    "id": "fingers",
    "label": "Finger control",
    "value": 1.0,
-   "classes": 4,
+   "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.5,
+   "classes": 1,
    "total": 9
   },
   {
    "id": "form",
    "label": "Song shape",
    "value": 0.5,
-   "classes": 2,
-   "total": 9
-  },
-  {
-   "id": "listening",
-   "label": "Listening memory",
-   "value": 0.25,
    "classes": 1,
    "total": 9
   },
   {
-   "id": "space",
-   "label": "Keyboard map",
-   "value": 0.25,
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 0.5,
    "classes": 1,
    "total": 9
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.25,
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -44,36 +58,65 @@
  "icon": "music",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 1877,
+ "totalSec": 1857,
  "classes": [
   {
    "id": "sur-le-pont-davignon-c01",
    "index": 1,
-   "title": "Listen and find your hand",
-   "goal": "Hear the song and place the right hand",
+   "title": "Step onto the bridge",
+   "goal": "Hear the song, then rest one finger on each of five keys, thumb on C.",
    "type": "listen",
-   "durationSec": 199,
-   "parentTip": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
+   "durationSec": 196,
+   "parentTip": "Help your child rest one curved finger on each lit key, thumb on C.",
    "video": "sur-le-pont-davignon/sur-le-pont-davignon-c01.mp4",
    "thumb": "sur-le-pont-davignon/sur-le-pont-davignon-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "On the Bridge of Avignon",
-     "subcaption": "Class 1: Listen and find your hand",
+     "subcaption": "Class 1: Step onto the bridge",
      "durationSec": 8,
      "voice": "Hello, piano friends. Today we play On the Bridge of Avignon. Grown-up, sit beside the keys.",
      "voiceId": "9edecb737e80424a",
      "voiceSec": 6.76
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's listen together",
-     "parentCue": "Sit side by side",
-     "durationSec": 5,
-     "voice": "Let's listen together.",
-     "voiceId": "f9e613a1a6868bad",
-     "voiceSec": 1.67
+     "caption": "Let's dance on the bridge",
+     "parentCue": "sway together, then put your child's thumb on C.",
+     "durationSec": 7,
+     "voice": "Let's dance on the bridge. Grown-up, sway together, then put your child's thumb on C.",
+     "voiceId": "057afa0fcaffba21",
+     "voiceSec": 5.75
     },
     {
      "kind": "say",
@@ -93,11 +136,11 @@
        "f": 3
       },
       {
-       "p": "C4",
+       "p": "F4",
        "f": 4
       },
       {
-       "p": "D4",
+       "p": "G4",
        "f": 5
       }
      ],
@@ -105,6 +148,40 @@
      "voice": "Thumb on C. Curve your fingers, like holding a little ball.",
      "voiceId": "df5c6ecc923ce75c",
      "voiceSec": 3.73
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Thumb on C, then step up",
+     "parentCue": "Point to each finger as it plays",
+     "bpm": 70,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 1
+      },
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "F4",
+       "d": 1
+      },
+      {
+       "p": "G4",
+       "d": 2
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "listen",
@@ -753,7 +830,7 @@
      "caption": "Watch the lights",
      "parentCue": "Point to the lit key",
      "bpm": 104,
-     "leadInSec": 3.1,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -948,18 +1025,18 @@
        "from": 22
       }
      ],
-     "durationSec": 24,
-     "voice": "Here comes the music. Listen.",
-     "voiceId": "851e2f513b5871ee",
-     "voiceSec": 2.7
+     "durationSec": 23,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -1176,259 +1253,45 @@
      "voiceSec": 1.53
     },
     {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 104,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "On"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "bridge"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "A"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "vi"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "gnon"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "On"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "bridge"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "of"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "A"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "vi"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 5,
-       "s": "gnon"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "round"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "and"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "round"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 0
-      },
-      {
-       "lyric": "they are dancing, they are dancing",
-       "from": 7
-      },
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 15
-      },
-      {
-       "lyric": "they are dancing round and round",
-       "from": 22
-      }
-     ],
-     "durationSec": 24,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
-     "voiceSec": 2.66
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great hand home!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
-    "primary": "listening",
+    "primary": "space",
     "secondary": [
-     "beat",
-     "together"
+     "fingers",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Auditory pattern recognition",
-    "parentLine": "Hearing the whole tune before playing it"
+    "concept": "One-to-one correspondence (finger to key)",
+    "parentLine": "One finger for each key: five fingers, five keys"
    },
-   "parentPrompt": "Help your child put one finger on each lit key. Curved fingers, like holding a ball.",
-   "childAction": "Sway and listen to the whole song.",
-   "bridge": "The keys light up where each sound lives.",
-   "celebrate": "Today you practiced listening and remembering and keeping a steady beat."
+   "parentPrompt": "Help your child rest one curved finger on each lit key, thumb on C.",
+   "childAction": "Rest one finger on each key, thumb on C.",
+   "bridge": "Your thumb stands on C, at the start of the bridge.",
+   "celebrate": "Today you practiced: one finger on each key, thumb on C."
   },
   {
    "id": "sur-le-pont-davignon-c02",
    "index": 2,
-   "title": "Part 1",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Three C's, four D's",
+   "goal": "Learn the first line and count how many times each key plays.",
    "type": "phrase",
-   "durationSec": 190,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 202,
+   "parentTip": "Count aloud with your child: C, C, C is three; D, D, D, D is four.",
    "video": "sur-le-pont-davignon/sur-le-pont-davignon-c02.mp4",
    "thumb": "sur-le-pont-davignon/sur-le-pont-davignon-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "On the Bridge of Avignon",
-     "subcaption": "Class 2: Part 1",
+     "subcaption": "Class 2: Three C's, four D's",
      "durationSec": 8,
      "voice": "Hello, piano friends. Today we play On the Bridge of Avignon. Grown-up, sit beside the keys.",
      "voiceId": "9edecb737e80424a",
@@ -1436,28 +1299,75 @@
     },
     {
      "kind": "say",
-     "caption": "Today: On the bridge of Avignon",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: On the bridge of Avignon.",
-     "voiceId": "2ba0ae783ffba499",
-     "voiceSec": 4.2
+     "caption": "How many C's? How many D's?",
+     "parentCue": "count each key aloud as it plays.",
+     "durationSec": 8,
+     "voice": "How many C's? How many D's. Grown-up, count each key aloud as it plays.",
+     "voiceId": "6f903bf9e2bf12ba",
+     "voiceSec": 6.01
     },
     {
-     "kind": "say",
-     "caption": "This part comes back 2 times!",
-     "parentCue": "Point it out when you hear it",
-     "durationSec": 7,
-     "voice": "This part comes back two times. Listen for it.",
-     "voiceId": "9581ea7be1c58405",
-     "voiceSec": 3.94
+     "kind": "your_turn",
+     "caption": "On the bridge: C, C, C",
+     "parentCue": "Hold up three fingers as it plays",
+     "bpm": 80,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "C4",
+       "d": 1
+      },
+      {
+       "p": "C4",
+       "d": 2
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Now dance: D, D, D, D",
+     "parentCue": "Count the four D's on your fingers",
+     "bpm": 70,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 0.5
+      },
+      {
+       "p": "D4",
+       "d": 0.5
+      },
+      {
+       "p": "D4",
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 2
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 78,
-     "leadInSec": 3.47,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "C4",
@@ -1560,10 +1470,10 @@
        "from": 7
       }
      ],
-     "durationSec": 18,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
+     "durationSec": 17,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -1693,7 +1603,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 78,
-     "leadInSec": 3.79,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "C4",
@@ -1744,17 +1654,17 @@
        "from": 0
       }
      ],
-     "durationSec": 12,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 10,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 78,
-     "leadInSec": 3.42,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -1807,17 +1717,17 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -1833,7 +1743,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 78,
-     "leadInSec": 3.79,
+     "leadInSec": 3.05,
      "notes": [
       {
        "p": "E4",
@@ -1890,17 +1800,17 @@
        "from": 0
       }
      ],
-     "durationSec": 12,
-     "voice": "My turn first. Watch the glowing keys.",
-     "voiceId": "5a2fbcd65a7a0c9e",
-     "voiceSec": 3.39
+     "durationSec": 11,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 78,
-     "leadInSec": 3.42,
+     "leadInSec": 3.93,
      "gapBeats": 1,
      "notes": [
       {
@@ -1959,9 +1869,9 @@
       }
      ],
      "durationSec": 18,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
     },
     {
      "kind": "praise",
@@ -1973,19 +1883,80 @@
     },
     {
      "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Fingers ready on the lit keys",
+     "caption": "Just this line",
+     "parentCue": "Practice one line at a time",
      "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
+     "voice": "Just this little bit now.",
+     "voiceId": "7bf558f9d35b052d",
+     "voiceSec": 1.69
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch",
+     "parentCue": "Watch the fingers",
+     "bpm": 78,
+     "leadInSec": 2.32,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "On"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "bridge"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "A"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "vi"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "gnon"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "On the bridge of Avignon",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
+     "parentCue": "Slow is fine",
      "bpm": 78,
-     "leadInSec": 3.42,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -2029,130 +2000,134 @@
        "d": 2,
        "f": 2,
        "s": "gnon"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
       }
      ],
      "lines": [
       {
        "lyric": "On the bridge of Avignon",
        "from": 0
-      },
-      {
-       "lyric": "they are dancing, they are dancing",
-       "from": 7
       }
      ],
-     "durationSec": 29,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 18,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Great counting!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "counting",
     "secondary": [
-     "form"
+     "fingers",
+     "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Cardinality (three, then four)",
+    "parentLine": "Counting how many times the same key plays"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Count aloud with your child: C, C, C is three; D, D, D, D is four.",
+   "childAction": "Play C three times with your thumb, then D four times.",
+   "bridge": "C, C, C are three big steps onto the bridge; the D's dance four.",
+   "celebrate": "Today you practiced: counting three and four same notes."
   },
   {
    "id": "sur-le-pont-davignon-c03",
    "index": 3,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Climb the bridge: E, F, G",
+   "goal": "Learn the dancing line: the child climbs E, F, G; the grown-up plays the low notes.",
    "type": "phrase",
-   "durationSec": 217,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 210,
+   "parentTip": "Play the low B and G yourself; your child plays E, F, G and C.",
    "video": "sur-le-pont-davignon/sur-le-pont-davignon-c03.mp4",
    "thumb": "sur-le-pont-davignon/sur-le-pont-davignon-c03.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "On the Bridge of Avignon",
-     "subcaption": "Class 3: Part 2",
+     "subcaption": "Class 3: Climb the bridge: E, F, G",
      "durationSec": 9,
      "voice": "Hi, everyone. Let's play On the Bridge of Avignon. Curved fingers, like holding a little ball.",
      "voiceId": "0f703c8811a2122e",
      "voiceSec": 7.32
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Today: they are dancing round and",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: they are dancing round and round.",
-     "voiceId": "652548905b6e51c4",
-     "voiceSec": 4.24
+     "caption": "Climb up the bridge",
+     "parentCue": "you play the low notes, your child plays from C.",
+     "durationSec": 8,
+     "voice": "Climb up the bridge. Grown-up, you play the low notes, your child plays from C.",
+     "voiceId": "1bbbecce26eb3dea",
+     "voiceSec": 6.28
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Climb the bridge: E, F, G",
+     "parentCue": "Point to each finger before it plays",
+     "bpm": 76,
+     "leadInSec": 3.24,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1
+      },
+      {
+       "p": "F4",
+       "d": 1
+      },
+      {
+       "p": "G4",
+       "d": 2
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Your turn. Take your time, I'll wait.",
+     "voiceId": "c4dd3de11b056931",
+     "voiceSec": 2.84
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 78,
-     "leadInSec": 3.3,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "E4",
@@ -2204,9 +2179,9 @@
       }
      ],
      "durationSec": 11,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -2284,7 +2259,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 78,
-     "leadInSec": 3.93,
+     "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
       {
@@ -2336,18 +2311,18 @@
        "from": 0
       }
      ],
-     "durationSec": 17,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
+     "durationSec": 16,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -2363,7 +2338,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 78,
-     "leadInSec": 3.93,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -2416,9 +2391,9 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "together",
@@ -2485,9 +2460,9 @@
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     },
     {
      "kind": "say",
@@ -2564,9 +2539,9 @@
      "kind": "praise",
      "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -2704,88 +2679,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Fingers ready on the lit keys",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Let your child try alone",
-     "bpm": 78,
-     "leadInSec": 3.93,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "round"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "and"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "round"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "they are dancing round and round",
-       "from": 0
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -2798,56 +2694,86 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Up the bridge, well done!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "form"
+     "pitch",
+     "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
+    "concept": "Contour (climb, then drop)",
+    "parentLine": "The tune climbs up three keys, then drops down low"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
+   "parentPrompt": "Play the low B and G yourself; your child plays E, F, G and C.",
+   "childAction": "Climb E, F, G with fingers three, four, five.",
+   "bridge": "E, F, G climb up the bridge; the low notes on the left are the river.",
+   "celebrate": "Today you practiced: climbing three keys with three fingers."
   },
   {
    "id": "sur-le-pont-davignon-c04",
    "index": 4,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
+   "title": "Two dances, one home",
+   "goal": "Play the whole song slowly and hear which dance lands home on C.",
    "type": "put-together",
    "durationSec": 206,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
+   "parentTip": "Sing the next word if your child gets stuck; cheer when the song lands on C.",
    "video": "sur-le-pont-davignon/sur-le-pont-davignon-c04.mp4",
    "thumb": "sur-le-pont-davignon/sur-le-pont-davignon-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "On the Bridge of Avignon",
-     "subcaption": "Class 4: Put it together",
+     "subcaption": "Class 4: Two dances, one home",
      "durationSec": 9,
      "voice": "Hi, everyone. Let's play On the Bridge of Avignon. Curved fingers, like holding a little ball.",
      "voiceId": "0f703c8811a2122e",
      "voiceSec": 7.32
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
+     "caption": "Which dance lands home?",
+     "parentCue": "sing the next word if your child gets stuck.",
      "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "voice": "Two dances. Nod your head on the one that lands home.",
+     "voiceId": "120b550888e537cd",
+     "voiceSec": 3.7
     },
     {
      "kind": "say",
@@ -2867,11 +2793,11 @@
        "f": 3
       },
       {
-       "p": "C4",
+       "p": "F4",
        "f": 4
       },
       {
-       "p": "D4",
+       "p": "G4",
        "f": 5
       }
      ],
@@ -2881,11 +2807,99 @@
      "voiceSec": 2.14
     },
     {
+     "kind": "listen",
+     "caption": "Which dance lands home?",
+     "parentCue": "Ask: which one sounds finished?",
+     "bpm": 88,
+     "leadInSec": 4.1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Two dances. Nod your head on the one that lands home.",
+     "voiceId": "120b550888e537cd",
+     "voiceSec": 3.7
+    },
+    {
      "kind": "demo",
-     "caption": "Watch the whole song",
+     "caption": "Watch the first part",
      "parentCue": "Watch together",
      "bpm": 78,
-     "leadInSec": 2.51,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "C4",
@@ -2976,7 +2990,144 @@
        "d": 1,
        "f": 1,
        "s": "cing"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "On the bridge of Avignon",
+       "from": 0
       },
+      {
+       "lyric": "they are dancing, they are dancing",
+       "from": 7
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 78,
+     "leadInSec": 3.42,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "On"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "bridge"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "A"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "vi"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "gnon"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "they"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "dan"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "cing"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "they"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "are"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "dan"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "cing"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "On the bridge of Avignon",
+       "from": 0
+      },
+      {
+       "lyric": "they are dancing, they are dancing",
+       "from": 7
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Play each glowing key.",
+     "voiceId": "21e079a5c0ab490e",
+     "voiceSec": 3.02
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 78,
+     "leadInSec": 3.38,
+     "notes": [
       {
        "p": "C4",
        "d": 1,
@@ -3068,22 +3219,14 @@
        "from": 0
       },
       {
-       "lyric": "they are dancing, they are dancing",
-       "from": 7
-      },
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 15
-      },
-      {
        "lyric": "they are dancing round and round",
-       "from": 22
+       "from": 7
       }
      ],
-     "durationSec": 29,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 18,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -3290,229 +3433,6 @@
      "voice": "Your turn. The whole song.",
      "voiceId": "b4c9d0a5e6f783d4",
      "voiceSec": 2.58
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Take a breath between lines",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Keep going after a slip",
-     "bpm": 78,
-     "leadInSec": 3.24,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "On"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "bridge"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "A"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "vi"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "gnon"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "On"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "bridge"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "of"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "A"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "vi"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 5,
-       "s": "gnon"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "round"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "and"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "round"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 0
-      },
-      {
-       "lyric": "they are dancing, they are dancing",
-       "from": 7
-      },
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 15
-      },
-      {
-       "lyric": "they are dancing round and round",
-       "from": 22
-      }
-     ],
-     "durationSec": 52,
-     "voice": "Your turn. Take your time, I'll wait.",
-     "voiceId": "c4dd3de11b056931",
-     "voiceSec": 2.84
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -3730,43 +3650,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found home!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
+     "listening",
      "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Open and closed endings",
+    "parentLine": "The first dance stops low; the second one lands home on C"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Sing the next word if your child gets stuck; cheer when the song lands on C.",
+   "childAction": "Play the whole song slowly and listen for the home ending.",
+   "bridge": "Bridge, dance, bridge, dance, and the last dance lands home on C.",
+   "celebrate": "Today you practiced: playing in order and hearing a finished ending."
   },
   {
    "id": "sur-le-pont-davignon-c05",
    "index": 5,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Quick-quick dancing feet",
+   "goal": "Practise the quick D's slowly, then a little faster.",
    "type": "review",
-   "durationSec": 206,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 200,
+   "parentTip": "Say 'quick-quick, walk' as your child plays the D's slowly.",
    "video": "sur-le-pont-davignon/sur-le-pont-davignon-c05.mp4",
    "thumb": "sur-le-pont-davignon/sur-le-pont-davignon-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "On the Bridge of Avignon",
-     "subcaption": "Class 5: Tricky spots",
+     "subcaption": "Class 5: Quick-quick dancing feet",
      "durationSec": 8,
      "voice": "Welcome back. Time for On the Bridge of Avignon. Sit up tall, feet still.",
      "voiceId": "e6c87dc8d0fec55f",
@@ -3774,21 +3695,42 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
-     "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "caption": "Quick-quick, walk, and hold",
+     "parentCue": "say the words as your child plays.",
+     "durationSec": 6,
+     "voice": "Quick-quick, walk, and hold. Grown-up, say the words as your child plays.",
+     "voiceId": "ea837ba81fa719e9",
+     "voiceSec": 4.72
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Quick-quick, walk, hold",
+     "parentCue": "Say 'quick-quick, walk' as it plays",
+     "bpm": 60,
+     "leadInSec": 2.95,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 0.5
+      },
+      {
+       "p": "D4",
+       "d": 0.5
+      },
+      {
+       "p": "D4",
+       "d": 1
+      },
+      {
+       "p": "D4",
+       "d": 2
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Your turn. Slow and steady.",
+     "voiceId": "3445286047dfdab5",
+     "voiceSec": 2.55
     },
     {
      "kind": "demo",
@@ -4162,7 +4104,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 83,
-     "leadInSec": 3.98,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -4267,9 +4209,9 @@
       }
      ],
      "durationSec": 28,
-     "voice": "Your turn. Curved fingers, gentle presses.",
-     "voiceId": "95c876246889a23a",
-     "voiceSec": 3.58
+     "voice": "Now you. Follow the glowing keys, one by one.",
+     "voiceId": "caf3f4651442eb31",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
@@ -4404,60 +4346,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
+     "caption": "Nimble dancing fingers!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 6,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "patterns"
+     "beat",
+     "counting"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Rhythm (quick-quick, walk)",
+    "parentLine": "Two quick notes fit in the time of one walking note"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Say 'quick-quick, walk' as your child plays the D's slowly.",
+   "childAction": "Play D quick-quick, walk, hold, with finger two.",
+   "bridge": "Quick-quick D's are dancing feet; the long D is a bow.",
+   "celebrate": "Today you practiced: quick notes and walking notes."
   },
   {
    "id": "sur-le-pont-davignon-c06",
    "index": 6,
-   "title": "Slow and steady",
-   "goal": "Play the whole song slowly and evenly",
+   "title": "Steady steps, slow dance",
+   "goal": "Play the whole song slowly and evenly, counting four beats in each bar.",
    "type": "phrase",
-   "durationSec": 199,
-   "parentTip": "Slow playing builds sure fingers. Praise the effort, not the speed.",
+   "durationSec": 204,
+   "parentTip": "Count 'one, two, three, four' softly while your child plays slowly.",
    "video": "sur-le-pont-davignon/sur-le-pont-davignon-c06.mp4",
    "thumb": "sur-le-pont-davignon/sur-le-pont-davignon-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "On the Bridge of Avignon",
-     "subcaption": "Class 6: Slow and steady",
+     "subcaption": "Class 6: Steady steps, slow dance",
      "durationSec": 7,
      "voice": "Hello again. It's On the Bridge of Avignon time. Grown-up, sit close to help.",
      "voiceId": "e70c2e65d0968164",
@@ -4465,19 +4391,67 @@
     },
     {
      "kind": "say",
-     "caption": "Slow and steady practice",
-     "parentCue": "Go slowly, no rush",
-     "durationSec": 6,
-     "voice": "Slow and steady practice today.",
-     "voiceId": "aeb4883c0cf279a5",
-     "voiceSec": 2.42
+     "caption": "Slow and steady dancing",
+     "parentCue": "count one to four softly as you go.",
+     "durationSec": 7,
+     "voice": "Slow and steady dancing. Grown-up, count one to four softly as you go.",
+     "voiceId": "f477fb599304e957",
+     "voiceSec": 5.99
+    },
+    {
+     "kind": "beat",
+     "caption": "Tap and count to four",
+     "parentCue": "Count one to four out loud",
+     "bpm": 72,
+     "leadInSec": 4.26,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 13,
+     "voice": "Tap any key and count with me. One, two, three, four.",
+     "voiceId": "8c616960af03108e",
+     "voiceSec": 3.86
     },
     {
      "kind": "demo",
-     "caption": "Watch",
+     "caption": "Watch the first part",
      "parentCue": "Watch the finger numbers",
      "bpm": 73,
-     "leadInSec": 3.3,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "C4",
@@ -4568,7 +4542,144 @@
        "d": 1,
        "f": 1,
        "s": "cing"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "On the bridge of Avignon",
+       "from": 0
       },
+      {
+       "lyric": "they are dancing, they are dancing",
+       "from": 7
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 73,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "On"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "bridge"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "A"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "vi"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "gnon"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "they"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "dan"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "cing"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 3,
+       "s": "they"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "are"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "dan"
+      },
+      {
+       "p": "G3",
+       "d": 1,
+       "f": 1,
+       "s": "cing"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "On the bridge of Avignon",
+       "from": 0
+      },
+      {
+       "lyric": "they are dancing, they are dancing",
+       "from": 7
+      }
+     ],
+     "durationSec": 31,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 73,
+     "leadInSec": 2.42,
+     "notes": [
       {
        "p": "C4",
        "d": 1,
@@ -4660,22 +4771,14 @@
        "from": 0
       },
       {
-       "lyric": "they are dancing, they are dancing",
-       "from": 7
-      },
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 15
-      },
-      {
        "lyric": "they are dancing round and round",
-       "from": 22
+       "from": 7
       }
      ],
-     "durationSec": 32,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 18,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
     },
     {
      "kind": "your_turn",
@@ -4887,221 +4990,25 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 73,
-     "leadInSec": 3.3,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "On"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "bridge"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "A"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "vi"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "gnon"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "On"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "bridge"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "of"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "A"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "vi"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 5,
-       "s": "gnon"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "round"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "and"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "round"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 0
-      },
-      {
-       "lyric": "they are dancing, they are dancing",
-       "from": 7
-      },
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 15
-      },
-      {
-       "lyric": "they are dancing round and round",
-       "from": 22
-      }
-     ],
-     "durationSec": 32,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Help only if stuck",
-     "bpm": 73,
-     "leadInSec": 3.42,
+     "parentCue": "The first part again",
+     "bpm": 83,
+     "leadInSec": 3.98,
      "gapBeats": 1,
      "notes": [
       {
@@ -5235,48 +5142,6 @@
        "d": 2,
        "f": 5,
        "s": "gnon"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "round"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "f": 1,
-       "s": "and"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 4,
-       "s": "round"
       }
      ],
      "lines": [
@@ -5291,60 +5156,95 @@
       {
        "lyric": "On the bridge of Avignon",
        "from": 15
-      },
-      {
-       "lyric": "they are dancing round and round",
-       "from": 22
       }
      ],
-     "durationSec": 56,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "durationSec": 39,
+     "voice": "Your turn. Curved fingers, gentle presses.",
+     "voiceId": "95c876246889a23a",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Slow and steady, bravo!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "beat",
     "secondary": [
-     "beat"
+     "counting",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Tempo control",
-    "parentLine": "Doing a task slowly and evenly"
+    "concept": "Steady pulse (four per bar)",
+    "parentLine": "Counting one to four keeps every note evenly spaced"
    },
-   "parentPrompt": "Slow playing builds sure fingers. Praise the effort, not the speed.",
-   "childAction": "Play the tune slowly, every note even.",
-   "bridge": "Slow fingers, like a cat walking on tiptoe.",
-   "celebrate": "Today you practiced careful fingers and keeping a steady beat."
+   "parentPrompt": "Count 'one, two, three, four' softly while your child plays slowly.",
+   "childAction": "Play slowly while you count to four with your grown-up.",
+   "bridge": "Each bar is four even dance steps across the bridge.",
+   "celebrate": "Today you practiced: playing evenly, counting to four."
   },
   {
    "id": "sur-le-pont-davignon-c07",
    "index": 7,
-   "title": "Same song, up high",
-   "goal": "Play the song in a new place with the same fingers",
+   "title": "Dance on the high bridge",
+   "goal": "Play the song in a higher place on the piano with the same fingers.",
    "type": "octave",
-   "durationSec": 235,
-   "parentTip": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
+   "durationSec": 224,
+   "parentTip": "Slide your child's hand to the next C up: same fingers, same song.",
    "video": "sur-le-pont-davignon/sur-le-pont-davignon-c07.mp4",
    "thumb": "sur-le-pont-davignon/sur-le-pont-davignon-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "On the Bridge of Avignon",
-     "subcaption": "Class 7: Same song, up high",
+     "subcaption": "Class 7: Dance on the high bridge",
      "durationSec": 7,
      "voice": "Hello again. It's On the Bridge of Avignon time. Grown-up, sit close to help.",
      "voiceId": "e70c2e65d0968164",
      "voiceSec": 5.64
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 78,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Same song, up high",
+     "parentCue": "slide your child's hand to the next C up.",
+     "durationSec": 7,
+     "voice": "Same song, up high. Grown-up, slide your child's hand to the next C up.",
+     "voiceId": "efd1b6bd4d403127",
+     "voiceSec": 5.25
     },
     {
      "kind": "say",
@@ -5364,11 +5264,11 @@
        "f": 3
       },
       {
-       "p": "C5",
+       "p": "F5",
        "f": 4
       },
       {
-       "p": "D5",
+       "p": "G5",
        "f": 5
       }
      ],
@@ -5378,20 +5278,94 @@
      "voiceSec": 2.49
     },
     {
-     "kind": "say",
-     "caption": "Same fingers, new place",
-     "parentCue": "Fingers keep the same numbers",
-     "durationSec": 6,
-     "voice": "Same fingers, new place.",
-     "voiceId": "f1984f5f115ff332",
-     "voiceSec": 2.38
+     "kind": "listen",
+     "caption": "Same dance, two bridges",
+     "parentCue": "Ask: which one sounds lighter?",
+     "bpm": 88,
+     "leadInSec": 5.21,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D5",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Same dance, two bridges. Point to the one that sounds lighter.",
+     "voiceId": "c5b52e7b2016f798",
+     "voiceSec": 4.81
     },
     {
      "kind": "demo",
-     "caption": "Watch: same song, up high",
+     "caption": "Watch the first part",
      "parentCue": "Watch the hand move",
      "bpm": 83,
-     "leadInSec": 3.2,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "C5",
@@ -5482,7 +5456,144 @@
        "d": 1,
        "f": 1,
        "s": "cing"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "On the bridge of Avignon",
+       "from": 0
       },
+      {
+       "lyric": "they are dancing, they are dancing",
+       "from": 7
+      }
+     ],
+     "durationSec": 16,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 83,
+     "leadInSec": 3.93,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 1,
+       "s": "On"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 1,
+       "s": "bridge"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 2,
+       "s": "of"
+      },
+      {
+       "p": "D5",
+       "d": 0.5,
+       "f": 2,
+       "s": "A"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "f": 2,
+       "s": "vi"
+      },
+      {
+       "p": "D5",
+       "d": 2,
+       "f": 2,
+       "s": "gnon"
+      },
+      {
+       "p": "E5",
+       "d": 1,
+       "f": 3,
+       "s": "they"
+      },
+      {
+       "p": "F5",
+       "d": 1,
+       "f": 4,
+       "s": "are"
+      },
+      {
+       "p": "G5",
+       "d": 1,
+       "f": 5,
+       "s": "dan"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 1,
+       "s": "cing"
+      },
+      {
+       "p": "B4",
+       "d": 1,
+       "f": 3,
+       "s": "they"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 4,
+       "s": "are"
+      },
+      {
+       "p": "D5",
+       "d": 1,
+       "f": 5,
+       "s": "dan"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 1,
+       "s": "cing"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "On the bridge of Avignon",
+       "from": 0
+      },
+      {
+       "lyric": "they are dancing, they are dancing",
+       "from": 7
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Now you play it. Watch the finger numbers.",
+     "voiceId": "88a098b901d3c483",
+     "voiceSec": 3.53
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the hand move",
+     "bpm": 83,
+     "leadInSec": 3.38,
+     "notes": [
       {
        "p": "C5",
        "d": 1,
@@ -5574,22 +5685,14 @@
        "from": 0
       },
       {
-       "lyric": "they are dancing, they are dancing",
-       "from": 7
-      },
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 15
-      },
-      {
        "lyric": "they are dancing round and round",
-       "from": 22
+       "from": 7
       }
      ],
-     "durationSec": 28,
-     "voice": "Watch. Same song, up high.",
-     "voiceId": "8a53251b1d6c839e",
-     "voiceSec": 2.8
+     "durationSec": 17,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -5809,7 +5912,7 @@
     {
      "kind": "together",
      "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
+     "parentCue": "Is it high or low?",
      "bpm": 83,
      "leadInSec": 2.25,
      "notes": [
@@ -6015,453 +6118,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Listen to how it sounds now",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
-     "bpm": 94,
-     "leadInSec": 2.25,
-     "notes": [
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 1,
-       "s": "On"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 1,
-       "s": "bridge"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 2,
-       "s": "of"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 2,
-       "s": "A"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 2,
-       "s": "vi"
-      },
-      {
-       "p": "D5",
-       "d": 2,
-       "f": 2,
-       "s": "gnon"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "B4",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "On"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 4,
-       "s": "bridge"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 5,
-       "s": "of"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 5,
-       "s": "A"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 5,
-       "s": "vi"
-      },
-      {
-       "p": "D5",
-       "d": 2,
-       "f": 5,
-       "s": "gnon"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 2,
-       "s": "round"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "and"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 4,
-       "s": "round"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 0
-      },
-      {
-       "lyric": "they are dancing, they are dancing",
-       "from": 7
-      },
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 15
-      },
-      {
-       "lyric": "they are dancing round and round",
-       "from": 22
-      }
-     ],
-     "durationSec": 25,
-     "voice": "Play along, up high.",
-     "voiceId": "6ee60273cf4e390f",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
      "voice": "High five, grown-up. High five, little one.",
      "voiceId": "02217b24bc257a87",
      "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "Listen to how it sounds now",
-     "durationSec": 6,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
-    },
-    {
-     "kind": "together",
-     "caption": "Play along up high",
-     "parentCue": "Is it like a bird or a bear?",
-     "bpm": 83,
-     "leadInSec": 2.25,
-     "notes": [
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 1,
-       "s": "On"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 1,
-       "s": "bridge"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 2,
-       "s": "of"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 2,
-       "s": "A"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 2,
-       "s": "vi"
-      },
-      {
-       "p": "D5",
-       "d": 2,
-       "f": 2,
-       "s": "gnon"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "B4",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "On"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 4,
-       "s": "the"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 4,
-       "s": "bridge"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 5,
-       "s": "of"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "f": 5,
-       "s": "A"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 5,
-       "s": "vi"
-      },
-      {
-       "p": "D5",
-       "d": 2,
-       "f": 5,
-       "s": "gnon"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "f": 3,
-       "s": "they"
-      },
-      {
-       "p": "F5",
-       "d": 1,
-       "f": 4,
-       "s": "are"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "f": 5,
-       "s": "dan"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 1,
-       "s": "cing"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "f": 2,
-       "s": "round"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 1,
-       "s": "and"
-      },
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 4,
-       "s": "round"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 0
-      },
-      {
-       "lyric": "they are dancing, they are dancing",
-       "from": 7
-      },
-      {
-       "lyric": "On the bridge of Avignon",
-       "from": 15
-      },
-      {
-       "lyric": "they are dancing round and round",
-       "from": 22
-      }
-     ],
-     "durationSec": 27,
-     "voice": "Play along, up high.",
-     "voiceId": "6ee60273cf4e390f",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -6536,43 +6195,44 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "High bridge dancing, bravo!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
     "primary": "space",
     "secondary": [
-     "pitch"
+     "pitch",
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Translation (same shape, new place)",
-    "parentLine": "Finding the same note higher or lower on the keyboard"
+    "concept": "Translation (same shape, higher)",
+    "parentLine": "The same song, moved to a higher home, sounds lighter"
    },
-   "parentPrompt": "Moving the hand to a new C shows the song still works. Ask which one sounds nicer.",
-   "childAction": "Play the same note in its high and low homes.",
-   "bridge": "Every note has a family: same name, a different house.",
-   "celebrate": "Today you practiced finding the way on the keys and hearing high and low."
+   "parentPrompt": "Slide your child's hand to the next C up: same fingers, same song.",
+   "childAction": "Move your hand to the high C and play the same song.",
+   "bridge": "The same dance on a higher bridge, to the right: lighter, tinier feet.",
+   "celebrate": "Today you practiced: playing the same song in a new place."
   },
   {
    "id": "sur-le-pont-davignon-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Dance with the music",
+   "goal": "Play the whole song along with the music at full speed.",
    "type": "play-along",
-   "durationSec": 212,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "durationSec": 208,
+   "parentTip": "Sit close and nod the beat; if a note is missed, keep going.",
    "video": "sur-le-pont-davignon/sur-le-pont-davignon-c08.mp4",
    "thumb": "sur-le-pont-davignon/sur-le-pont-davignon-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "On the Bridge of Avignon",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Dance with the music",
      "durationSec": 7,
      "voice": "Hello, friends. Today it's On the Bridge of Avignon. Sit in the middle of the piano.",
      "voiceId": "27e03d21eb4f81c3",
@@ -6580,21 +6240,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
-     "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "caption": "Dance along with the music",
+     "parentCue": "nod the beat and keep going, whatever happens.",
+     "durationSec": 8,
+     "voice": "Dance along with the music. Grown-up, nod the beat and keep going, whatever happens.",
+     "voiceId": "1e46096b681430f1",
+     "voiceSec": 6.99
     },
     {
      "kind": "together",
@@ -7020,7 +6671,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 104,
-     "leadInSec": 3.0,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "C4",
@@ -7216,17 +6867,17 @@
       }
      ],
      "durationSec": 23,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -7242,7 +6893,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 104,
-     "leadInSec": 3.0,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "C4",
@@ -7438,9 +7089,9 @@
       }
      ],
      "durationSec": 23,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
@@ -7464,7 +7115,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 104,
-     "leadInSec": 3.0,
+     "leadInSec": 4.12,
      "notes": [
       {
        "p": "C4",
@@ -7659,18 +7310,18 @@
        "from": 22
       }
      ],
-     "durationSec": 23,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
+     "durationSec": 25,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -7686,7 +7337,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 104,
-     "leadInSec": 3.0,
+     "leadInSec": 1.97,
      "notes": [
       {
        "p": "C4",
@@ -7881,67 +7532,68 @@
        "from": 22
       }
      ],
-     "durationSec": 23,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
+     "durationSec": 22,
+     "voice": "Let's play together.",
+     "voiceId": "b9d074678a65d0e2",
+     "voiceSec": 1.57
     },
     {
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
      "caption": "Wiggle your fingers!",
      "parentCue": "Shake out both hands together",
-     "durationSec": 5,
+     "durationSec": 6,
      "voice": "Wiggle your fingers. Wiggle, wiggle.",
      "voiceId": "640ef443bc914f6c",
      "voiceSec": 2.99
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You kept dancing!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat",
+     "expression"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
+    "concept": "Synchrony (keeping up)",
     "parentLine": "Keeping your part going while the music moves on"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Sit close and nod the beat; if a note is missed, keep going.",
+   "childAction": "Play along with the music. Missed notes are fine; keep dancing!",
+   "bridge": "The music dances round and round; join the circle and keep turning.",
+   "celebrate": "Today you practiced: keeping up with the music, together."
   },
   {
    "id": "sur-le-pont-davignon-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "Bridge dance for teddy",
+   "goal": "Play the whole song for teddy, light and bouncy like a dance.",
    "type": "concert",
-   "durationSec": 213,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 207,
+   "parentTip": "Sit teddy as the audience; dance teddy round and round while your child plays.",
    "video": "sur-le-pont-davignon/sur-le-pont-davignon-c09.mp4",
    "thumb": "sur-le-pont-davignon/sur-le-pont-davignon-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "On the Bridge of Avignon",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: Bridge dance for teddy",
      "durationSec": 7,
      "voice": "Hello, friends. Today it's On the Bridge of Avignon. Sit in the middle of the piano.",
      "voiceId": "27e03d21eb4f81c3",
@@ -7949,21 +7601,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "Concert time for teddy!",
+     "parentCue": "dance teddy round while your child plays.",
+     "durationSec": 6,
+     "voice": "Concert time. Teddy is listening.",
+     "voiceId": "5981e6766e72b3d1",
+     "voiceSec": 2.73
     },
     {
      "kind": "together",
@@ -8396,9 +8039,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -8618,9 +8261,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
@@ -8840,9 +8483,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -9062,9 +8705,9 @@
      "kind": "praise",
      "caption": "Super listening!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -9139,28 +8782,28 @@
     },
     {
      "kind": "praise",
-     "caption": "You are a star pianist!",
+     "caption": "Bravo, lovely dancing!",
      "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "expression",
     "secondary": [
      "together",
-     "expression"
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Character (dance-like playing)",
+    "parentLine": "Playing light and bouncy, like dancers on a bridge"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Sit teddy as the audience; dance teddy round and round while your child plays.",
+   "childAction": "Play light and bouncy for teddy, then take a bow.",
+   "bridge": "Light fingers are dancing feet on the old stone bridge.",
+   "celebrate": "Today you practiced: playing light and bouncy, start to end."
   }
  ]
 }

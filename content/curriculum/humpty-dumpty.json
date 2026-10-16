@@ -1,0 +1,182 @@
+{
+  "songId": "humpty-dumpty",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices steady beat, high and low, loud and soft, stop and go, and playing together, with wobbly Humpty on his wall.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Wobble like Humpty",
+      "goal": "Hear the whole song and wobble to its swinging beat.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (swinging pulse)", "parentLine": "Feeling a swing that comes again and again, evenly spaced" },
+      "parentPrompt": "Hold your child on your lap and wobble side to side on each big beat.",
+      "childAction": "Wobble with the song, then lean back on 'great fall'.",
+      "bridge": "The beat is Humpty wobbling on the wall: wib-ble, wob-ble, nice and even.",
+      "intro": [ { "caption": "Let's wobble like Humpty", "parentCue": "hold your child on your lap and wobble gently." } ],
+      "games": [],
+      "praise": "You wobbled together!",
+      "celebrate": "Today you practiced: feeling the swinging beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Humpty's steady wobble",
+      "goal": "Tap one steady tap on each big swing while the grown-up plays.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each big swing, no more, no less" },
+      "parentPrompt": "Rest your hand on your child's hand; tap together, then slowly let go.",
+      "childAction": "Tap any key on each big swing: Hump-ty, Dump-ty, two taps!",
+      "bridge": "Each big swing is one wobble; one tap for every wobble.",
+      "intro": [ { "caption": "One wobble, one tap", "parentCue": "tap your child's knee on each big swing." } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Two big swings: one, two",
+          "parentCue": "Say 'one, two' softly as you tap",
+          "bpm": 88,
+          "notes": [ { "p": "C4", "d": 1.5 }, { "p": "D4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "G4", "d": 1.5 }, { "p": "D4", "d": 1.5 }, { "p": "E4", "d": 1.5 }, { "p": "F4", "d": 1.5 }, { "p": "A4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each big swing."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds, and hear the tune climb up and come down.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Contour (up, then down)", "parentLine": "Hearing the tune climb up the wall, then come back down" },
+      "parentPrompt": "Growl and crouch for the bear; flap your arms and stretch up for the bird.",
+      "childAction": "Bear: tap the left side. Bird: tap the right side.",
+      "bridge": "Low notes are a heavy bear on the left; high notes are a bird.",
+      "intro": [ { "caption": "The bear lives down low", "parentCue": "point left for the bear, then right for the bird." } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Humpty climbs up the wall",
+          "parentCue": "Walk your fingers up your child's arm",
+          "bpm": 80,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 1.5 } ]
+        },
+        {
+          "kind": "listen",
+          "caption": "Now the tune comes down",
+          "parentCue": "Walk your fingers back down the arm",
+          "bpm": 80,
+          "notes": [ { "p": "F4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "C4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low, up and down."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Loud horses, soft tiptoes",
+      "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "Noticing big and small: the same tap, more or less" },
+      "parentPrompt": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
+      "childAction": "Loud: big horse taps. Soft: tiny tiptoe taps.",
+      "bridge": "Loud taps are the king's horses; soft taps are tiptoes past Humpty.",
+      "intro": [ { "caption": "Big loud taps, tiny soft taps", "parentCue": "loud means strong arms, never banging." } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Turtle Humpty, bunny Humpty",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "Same tune, same shape, only the speed changes" },
+      "parentPrompt": "Walk your fingers up your child's back, slowly then quickly, with the music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "Slow taps are turtle steps; fast taps are bunny hops along the wall.",
+      "intro": [ { "caption": "Turtle slow, bunny fast", "parentCue": "slow down if the taps get wild." } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "The turtle climbs the wall",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 1.5 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "The bunny climbs the wall",
+          "parentCue": "Same tune, now quick and light",
+          "bpm": 112,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 0.5 }, { "p": "G4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Freeze on the wall!",
+      "goal": "Tap while the music plays and freeze when it stops.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "Freeze with a funny face when the music stops; cheer when it starts again.",
+      "childAction": "Tap while the music plays. Sit still like Humpty when it stops.",
+      "bridge": "Music on, Humpty wobbles; music off, Humpty sits very, very still.",
+      "intro": [ { "caption": "Tap, tap... and freeze!", "parentCue": "make freezing silly, like a statue." } ],
+      "games": [],
+      "praise": "Great freezing, Humpty!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "review",
+      "title": "Guess the Humpty game",
+      "goal": "Listen and switch games: bear or bird, loud or soft, slow or fast.",
+      "skill": { "primary": "listening", "secondary": ["pitch", "expression"] },
+      "mathTarget": { "concept": "Classification (sorting by feature)", "parentLine": "Sorting each sound: high or low, loud or soft?" },
+      "parentPrompt": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
+      "childAction": "Guess the game, then tap high, low, loud, soft, slow or fast.",
+      "bridge": "Every sound wears a costume: bear or bird, loud or soft, turtle or bunny.",
+      "intro": [ { "caption": "What game is it?", "parentCue": "let your child guess first. Any guess is fine." } ],
+      "games": [],
+      "praise": "Great listening ears!",
+      "celebrate": "Today you practiced: telling sounds apart and switching games."
+    },
+    {
+      "index": 8,
+      "spineType": "together",
+      "title": "Humpty's helpers duet",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together to make one song" },
+      "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Tap the beat on any key while your grown-up plays the tune.",
+      "bridge": "The tune is Humpty; your beat is the wall that holds him steady.",
+      "intro": [ { "caption": "I play, you tap", "parentCue": "sit side by side at the piano." } ],
+      "games": [],
+      "praise": "What a duet together!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Humpty's concert for teddy",
+      "goal": "Play the whole song from start to end, then bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on, and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+      "childAction": "Tap the beat to the very end, then take a big bow.",
+      "bridge": "Humpty climbs up, wobbles, tumbles, and the song lands home down low.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience." } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song together, start to end."
+    }
+  ]
+}

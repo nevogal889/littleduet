@@ -2,27 +2,62 @@
  "songId": "joy-to-the-world",
  "title": "Joy to the World",
  "ageGroup": "5-6",
- "curriculum": "default",
- "songSummary": "Practices finger control, song shape and playing together, with a tune you can share.",
+ "curriculum": "agent",
+ "songSummary": "Practices the eight-step ladder from C to C, climbing back up, walk and run-ning notes, song sections and two-hand teamwork, with a bright Christmas song.",
  "skillMap": [
+  {
+   "id": "expression",
+   "label": "Loud, soft, fast, slow",
+   "value": 1.0,
+   "classes": 2,
+   "total": 9
+  },
+  {
+   "id": "beat",
+   "label": "Steady beat",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "counting",
+   "label": "Counting",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "patterns",
+   "label": "Patterns",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
+  {
+   "id": "space",
+   "label": "Keyboard map",
+   "value": 0.5,
+   "classes": 1,
+   "total": 9
+  },
   {
    "id": "fingers",
    "label": "Finger control",
-   "value": 1.0,
-   "classes": 6,
+   "value": 0.5,
+   "classes": 1,
    "total": 9
   },
   {
    "id": "form",
    "label": "Song shape",
-   "value": 0.33,
-   "classes": 2,
+   "value": 0.5,
+   "classes": 1,
    "total": 9
   },
   {
    "id": "together",
    "label": "Playing together",
-   "value": 0.17,
+   "value": 0.5,
    "classes": 1,
    "total": 9
   }
@@ -30,35 +65,73 @@
  "icon": "star",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2311,
+ "totalSec": 2315,
  "classes": [
   {
    "id": "joy-to-the-world-c01",
    "index": 1,
-   "title": "Hands ready, first half",
+   "title": "Down the eight-step ladder",
    "goal": "Find the hand position and learn the first half",
    "type": "hand-position",
-   "durationSec": 255,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 237,
+   "parentTip": "Count the steps aloud with your child as the lights walk down: one to eight.",
    "video": "joy-to-the-world/joy-to-the-world-c01.mp4",
    "thumb": "joy-to-the-world/joy-to-the-world-c01.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Joy to the World",
-     "subcaption": "Class 1: Hands ready, first half",
+     "subcaption": "Class 1: Down the eight-step ladder",
      "durationSec": 7,
      "voice": "Hi there. Our song today is Joy to the World. Slow and steady wins.",
      "voiceId": "649b80bb8108ce13",
      "voiceSec": 5.47
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
      "kind": "say",
-     "caption": "Thumb on F, fingers curved",
+     "caption": "Down the eight-step ladder",
+     "parentCue": "Count each step down out loud, one to eight",
+     "durationSec": 7,
+     "voice": "Down the eight-step ladder. Grown-up, count each step down out loud, one to eight.",
+     "voiceId": "c773f2904de96ecb",
+     "voiceSec": 5.8
+    },
+    {
+     "kind": "say",
+     "caption": "Thumb on C, fingers curved",
      "parentCue": "Help place one finger on each lit key",
      "showKeys": [
       {
-       "p": "F4",
+       "p": "C4",
        "f": 1
       },
       {
@@ -70,34 +143,78 @@
        "f": 3
       },
       {
-       "p": "B4",
+       "p": "F4",
        "f": 4
       },
       {
-       "p": "C5",
+       "p": "G4",
        "f": 5
       }
      ],
      "durationSec": 7,
-     "voice": "Thumb on F. Curve your fingers, like holding a little ball.",
-     "voiceId": "c4aada0538da9543",
-     "voiceSec": 4.25
+     "voice": "Thumb on C. Curve your fingers, like holding a little ball.",
+     "voiceId": "df5c6ecc923ce75c",
+     "voiceSec": 3.73
     },
     {
-     "kind": "say",
-     "caption": "Today: Joy to the world, the",
-     "parentCue": "Listen first, then copy",
-     "durationSec": 7,
-     "voice": "Today we learn a new bit: Joy to the world, the Lord is come.",
-     "voiceId": "637d0cab0151c78b",
-     "voiceSec": 4.36
+     "kind": "listen",
+     "caption": "Eight steps, C to C",
+     "parentCue": "Count one to eight with the lights",
+     "bpm": 66,
+     "leadInSec": 4.12,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 14,
+     "voice": "Eight steps, C to C. Count them with me.",
+     "voiceId": "cba373612a487613",
+     "voiceSec": 3.72
     },
     {
      "kind": "demo",
-     "caption": "Watch the lights",
+     "caption": "Watch the first part",
      "parentCue": "Watch the finger numbers",
      "bpm": 72,
-     "leadInSec": 3.85,
+     "leadInSec": 2.8,
      "notes": [
       {
        "p": "C5",
@@ -182,7 +299,138 @@
        "d": 3,
        "f": 5,
        "s": "King"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Joy to the world, the Lord is come",
+       "from": 0
       },
+      {
+       "lyric": "Let earth receive her King",
+       "from": 8
+      }
+     ],
+     "durationSec": 24,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 72,
+     "leadInSec": 4.26,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 5,
+       "s": "Joy"
+      },
+      {
+       "p": "B4",
+       "d": 1.5,
+       "f": 4,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 3,
+       "f": 2,
+       "s": "world"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "Lord"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "is"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1,
+       "s": "come"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Let"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 3,
+       "s": "earth"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "re"
+      },
+      {
+       "p": "B4",
+       "d": 1.5,
+       "f": 4,
+       "s": "ceive"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "her"
+      },
+      {
+       "p": "C5",
+       "d": 3,
+       "f": 5,
+       "s": "King"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Joy to the world, the Lord is come",
+       "from": 0
+      },
+      {
+       "lyric": "Let earth receive her King",
+       "from": 8
+      }
+     ],
+     "durationSec": 37,
+     "voice": "Your turn. Keep your fingers close to the keys.",
+     "voiceId": "d35facfe41c89462",
+     "voiceSec": 3.86
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch the finger numbers",
+     "bpm": 72,
+     "leadInSec": 2.8,
+     "notes": [
       {
        "p": "C5",
        "d": 0.5,
@@ -285,26 +533,18 @@
      ],
      "lines": [
       {
-       "lyric": "Joy to the world, the Lord is come",
+       "lyric": "Let every heart prepare Him room",
        "from": 0
       },
       {
-       "lyric": "Let earth receive her King",
-       "from": 8
-      },
-      {
-       "lyric": "Let every heart prepare Him room",
-       "from": 14
-      },
-      {
        "lyric": "And heaven and nature sing",
-       "from": 22
+       "from": 8
       }
      ],
-     "durationSec": 35,
-     "voice": "Watch the finger numbers. Here I go.",
-     "voiceId": "ddb420c5648efe99",
-     "voiceSec": 3.45
+     "durationSec": 15,
+     "voice": "Watch me. Point with me.",
+     "voiceId": "81e5e8d7b54ecac1",
+     "voiceSec": 2.4
     },
     {
      "kind": "your_turn",
@@ -535,7 +775,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 72,
-     "leadInSec": 2.33,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "C5",
@@ -592,17 +832,17 @@
        "from": 0
       }
      ],
-     "durationSec": 17,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
+     "durationSec": 18,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 72,
-     "leadInSec": 3.2,
+     "leadInSec": 4.26,
      "gapBeats": 1,
      "notes": [
       {
@@ -660,311 +900,14 @@
        "from": 0
       }
      ],
-     "durationSec": 24,
-     "voice": "Your turn. Play it just like I did.",
-     "voiceId": "3b3a3b61b1b8e36e",
-     "voiceSec": 2.8
+     "durationSec": 25,
+     "voice": "Your turn. Keep your fingers close to the keys.",
+     "voiceId": "d35facfe41c89462",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 72,
-     "leadInSec": 2.33,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Let"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 3,
-       "s": "earth"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "re"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 4,
-       "s": "ceive"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "her"
-      },
-      {
-       "p": "C5",
-       "d": 3,
-       "f": 5,
-       "s": "King"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Let earth receive her King",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 72,
-     "leadInSec": 3.2,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Let"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 3,
-       "s": "earth"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "re"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 4,
-       "s": "ceive"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "her"
-      },
-      {
-       "p": "C5",
-       "d": 3,
-       "f": 5,
-       "s": "King"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Let earth receive her King",
-       "from": 0
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Your turn. Play it just like I did.",
-     "voiceId": "3b3a3b61b1b8e36e",
-     "voiceSec": 2.8
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "Just this line",
-     "parentCue": "Practice one line at a time",
-     "durationSec": 6,
-     "voice": "Just this little bit now.",
-     "voiceId": "7bf558f9d35b052d",
-     "voiceSec": 1.69
-    },
-    {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the fingers",
-     "bpm": 72,
-     "leadInSec": 2.33,
-     "notes": [
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "Let"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "ev"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ery"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "heart"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pre"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "s": "pare"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Him"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "room"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Let every heart prepare Him room",
-       "from": 0
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Watch my fingers first.",
-     "voiceId": "e478557436a6be21",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Slow is fine",
-     "bpm": 72,
-     "leadInSec": 3.2,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "Let"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "ev"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ery"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "heart"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pre"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "s": "pare"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Him"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "room"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Let every heart prepare Him room",
-       "from": 0
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Your turn. Play it just like I did.",
-     "voiceId": "3b3a3b61b1b8e36e",
-     "voiceSec": 2.8
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 6,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Eight steps, C to C!",
      "durationSec": 5,
      "voice": "Great job, you two.",
      "voiceId": "78285fece9f091ba",
@@ -972,35 +915,36 @@
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "space",
     "secondary": [
-     "space"
+     "counting",
+     "pitch"
     ]
    },
    "mathTarget": {
-    "concept": "Spatial anchoring",
-    "parentLine": "Finding a home spot for the hand"
+    "concept": "Octave (eight steps, same name)",
+    "parentLine": "Eight white keys down, and you land on C again"
    },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Put one finger on each lit key.",
-   "bridge": "Fingers curved, like holding a little ball.",
-   "celebrate": "Today you practiced careful fingers and finding the way on the keys."
+   "parentPrompt": "Count the steps aloud with your child as the lights walk down: one to eight.",
+   "childAction": "Count eight steps down from high C to middle C.",
+   "bridge": "High C is the top of a ladder; middle C is the floor, same name.",
+   "celebrate": "Today you practiced: eight steps from one C to the next."
   },
   {
    "id": "joy-to-the-world-c02",
    "index": 2,
-   "title": "Part 2",
-   "goal": "Learn the next part, one finger per key",
+   "title": "Climb back up to C",
+   "goal": "Play the second line, climbing from G back up to high C.",
    "type": "phrase",
-   "durationSec": 273,
-   "parentTip": "Say the finger numbers out loud together. Slow and even is better than fast.",
+   "durationSec": 275,
+   "parentTip": "Walk your fingers down your child's arm for line one, then up for line two.",
    "video": "joy-to-the-world/joy-to-the-world-c02.mp4",
    "thumb": "joy-to-the-world/joy-to-the-world-c02.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Joy to the World",
-     "subcaption": "Class 2: Part 2",
+     "subcaption": "Class 2: Climb back up to C",
      "durationSec": 7,
      "voice": "Hi there. Our song today is Joy to the World. Slow and steady wins.",
      "voiceId": "649b80bb8108ce13",
@@ -1008,19 +952,63 @@
     },
     {
      "kind": "say",
-     "caption": "Today: And heaven and nature sing",
-     "parentCue": "Listen first, then copy",
+     "caption": "Climb back up to C",
+     "parentCue": "Walk your fingers up your child's arm",
      "durationSec": 7,
-     "voice": "Today we learn a new bit: And heaven and nature sing.",
-     "voiceId": "6172991b709c0aa7",
-     "voiceSec": 4.77
+     "voice": "Climb back up to C. Grown-up, walk your fingers up your child's arm.",
+     "voiceId": "bcc2424007b8f610",
+     "voiceSec": 5.26
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Climb up: G, A, B, C",
+     "parentCue": "Say 'up, up, up, top!' with each key",
+     "bpm": 60,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 2
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "B4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 3
+      },
+      {
+       "p": "C5",
+       "d": 3,
+       "f": 4
+      }
+     ],
+     "durationSec": 20,
+     "voice": "Now you play. Look ahead to the next key.",
+     "voiceId": "3d6af857ff139541",
+     "voiceSec": 3.43
     },
     {
      "kind": "demo",
      "caption": "Watch the lights",
      "parentCue": "Watch the finger numbers",
      "bpm": 77,
-     "leadInSec": 3.47,
+     "leadInSec": 2.78,
      "notes": [
       {
        "p": "D4",
@@ -1144,10 +1132,10 @@
        "from": 9
       }
      ],
-     "durationSec": 21,
-     "voice": "Watch me first. Hands on your knees.",
-     "voiceId": "6429d8f4f39a0368",
-     "voiceSec": 3.07
+     "durationSec": 20,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
     },
     {
      "kind": "your_turn",
@@ -1298,7 +1286,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 77,
-     "leadInSec": 3.3,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "D4",
@@ -1358,17 +1346,17 @@
        "from": 0
       }
      ],
-     "durationSec": 10,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "durationSec": 9,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 77,
-     "leadInSec": 3.2,
+     "leadInSec": 3.83,
      "gapBeats": 1,
      "notes": [
       {
@@ -1429,18 +1417,18 @@
        "from": 0
       }
      ],
-     "durationSec": 17,
-     "voice": "Your turn. Play it just like I did.",
-     "voiceId": "3b3a3b61b1b8e36e",
-     "voiceSec": 2.8
+     "durationSec": 18,
+     "voice": "Now you play. Look ahead to the next key.",
+     "voiceId": "3d6af857ff139541",
+     "voiceSec": 3.43
     },
     {
      "kind": "praise",
      "caption": "Well done!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
@@ -1456,7 +1444,7 @@
      "caption": "Watch",
      "parentCue": "Watch the fingers",
      "bpm": 77,
-     "leadInSec": 3.3,
+     "leadInSec": 3.38,
      "notes": [
       {
        "p": "C4",
@@ -1526,16 +1514,16 @@
       }
      ],
      "durationSec": 16,
-     "voice": "Watch first, then it's your turn.",
-     "voiceId": "c090ce0766b9fce1",
-     "voiceSec": 2.9
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Slow is fine",
      "bpm": 77,
-     "leadInSec": 3.2,
+     "leadInSec": 4.41,
      "gapBeats": 1,
      "notes": [
       {
@@ -1605,18 +1593,18 @@
        "from": 0
       }
      ],
-     "durationSec": 24,
-     "voice": "Your turn. Play it just like I did.",
-     "voiceId": "3b3a3b61b1b8e36e",
-     "voiceSec": 2.8
+     "durationSec": 25,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
     },
     {
      "kind": "praise",
      "caption": "Yes, that's it!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     },
     {
      "kind": "say",
@@ -1632,7 +1620,7 @@
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 77,
-     "leadInSec": 3.2,
+     "leadInSec": 4.26,
      "gapBeats": 1,
      "notes": [
       {
@@ -1757,34 +1745,34 @@
        "from": 9
       }
      ],
-     "durationSec": 36,
-     "voice": "Your turn. Play it just like I did.",
-     "voiceId": "3b3a3b61b1b8e36e",
-     "voiceSec": 2.8
+     "durationSec": 37,
+     "voice": "Your turn. Keep your fingers close to the keys.",
+     "voiceId": "d35facfe41c89462",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
+     "caption": "Let's do it again",
      "parentCue": "Fingers ready on the lit keys",
      "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
+     "voice": "Let's do it again.",
+     "voiceId": "5608b20dfb890c6e",
+     "voiceSec": 1.58
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Let your child try alone",
      "bpm": 77,
-     "leadInSec": 3.2,
+     "leadInSec": 3.38,
      "gapBeats": 1,
      "notes": [
       {
@@ -1910,62 +1898,67 @@
       }
      ],
      "durationSec": 36,
-     "voice": "Your turn. Play it just like I did.",
-     "voiceId": "3b3a3b61b1b8e36e",
-     "voiceSec": 2.8
+     "voice": "Your turn. I'll wait for each note.",
+     "voiceId": "ef1c63536da8b5d7",
+     "voiceSec": 2.98
     },
     {
-     "kind": "together",
-     "caption": "Now together, a bit faster",
-     "parentCue": "Play the same keys an octave up",
-     "bpm": 86,
-     "leadInSec": 2.67,
+     "kind": "praise",
+     "caption": "Back to the top!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
+    }
+   ],
+   "skill": {
+    "primary": "patterns",
+    "secondary": [
+     "fingers",
+     "pitch"
+    ]
+   },
+   "mathTarget": {
+    "concept": "Inversion (down, then up)",
+    "parentLine": "The first line walks down; this line climbs back up"
+   },
+   "parentPrompt": "Walk your fingers down your child's arm for line one, then up for line two.",
+   "childAction": "Thumb on G, then climb: G, A, B, up to C.",
+   "bridge": "Down the ladder, then halfway back up: G, A, B, C to the top.",
+   "celebrate": "Today you practiced: a line that climbs back up."
+  },
+  {
+   "id": "joy-to-the-world-c03",
+   "index": 3,
+   "title": "Ladder part, singing part",
+   "goal": "Play the whole song slowly and notice its two parts.",
+   "type": "put-together",
+   "durationSec": 253,
+   "parentTip": "Hold up one finger for the ladder part, two for 'and heaven and nature sing'.",
+   "video": "joy-to-the-world/joy-to-the-world-c03.mp4",
+   "thumb": "joy-to-the-world/joy-to-the-world-c03.jpg",
+   "segments": [
+    {
+     "kind": "title",
+     "caption": "Joy to the World",
+     "subcaption": "Class 3: Ladder part, singing part",
+     "durationSec": 7,
+     "voice": "Welcome back. Time for Joy to the World. Sit tall, in the middle of the piano.",
+     "voiceId": "d96b6dad6694b43f",
+     "voiceSec": 5.86
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
      "notes": [
       {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "And"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "heav'n"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ture"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 4,
-       "s": "sing"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3
+       "p": "C4",
+       "d": 1,
+       "f": 1
       },
       {
        "p": "D4",
@@ -1973,141 +1966,32 @@
        "f": 2
       },
       {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "And"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "heav"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "heav"
-      },
-      {
        "p": "E4",
        "d": 1,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "na"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "ture"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "sing"
+       "f": 3
       }
      ],
-     "lines": [
-      {
-       "lyric": "And heaven and nature sing",
-       "from": 0
-      },
-      {
-       "lyric": "And heaven, and heaven, and nature sing",
-       "from": 9
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Now together, a little faster.",
-     "voiceId": "5e2a76445306320d",
-     "voiceSec": 2.27
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    }
-   ],
-   "skill": {
-    "primary": "fingers",
-    "secondary": [
-     "form"
-    ]
-   },
-   "mathTarget": {
-    "concept": "Decomposition",
-    "parentLine": "Learning a big thing in small parts"
-   },
-   "parentPrompt": "Say the finger numbers out loud together. Slow and even is better than fast.",
-   "childAction": "Play this part of the tune, note by note.",
-   "bridge": "Each part is one stair; we climb one stair at a time.",
-   "celebrate": "Today you practiced careful fingers and the shape of a song."
-  },
-  {
-   "id": "joy-to-the-world-c03",
-   "index": 3,
-   "title": "Put it together",
-   "goal": "Play the whole song slowly, all parts in order",
-   "type": "put-together",
-   "durationSec": 219,
-   "parentTip": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "video": "joy-to-the-world/joy-to-the-world-c03.mp4",
-   "thumb": "joy-to-the-world/joy-to-the-world-c03.jpg",
-   "segments": [
-    {
-     "kind": "title",
-     "caption": "Joy to the World",
-     "subcaption": "Class 3: Put it together",
-     "durationSec": 7,
-     "voice": "Welcome back. Time for Joy to the World. Sit tall, in the middle of the piano.",
-     "voiceId": "d96b6dad6694b43f",
-     "voiceSec": 5.86
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
     },
     {
      "kind": "say",
-     "caption": "Let's put all the parts together",
-     "parentCue": "Remind your child of each part",
-     "durationSec": 7,
-     "voice": "Let's put all the parts together.",
-     "voiceId": "d5781f7192107808",
-     "voiceSec": 2.22
+     "caption": "Ladder part, singing part",
+     "parentCue": "Show one finger, then two, for the parts",
+     "durationSec": 8,
+     "voice": "Ladder part, singing part. Grown-up, show one finger, then two, for the parts.",
+     "voiceId": "bddc57a2b7582198",
+     "voiceSec": 6.38
     },
     {
      "kind": "say",
      "caption": "Fingers on the lit keys",
-     "parentCue": "Check the thumb is on F",
+     "parentCue": "Check the thumb is on C",
      "showKeys": [
       {
-       "p": "F4",
+       "p": "C4",
        "f": 1
       },
       {
@@ -2119,11 +2003,11 @@
        "f": 3
       },
       {
-       "p": "B4",
+       "p": "F4",
        "f": 4
       },
       {
-       "p": "C5",
+       "p": "G4",
        "f": 5
       }
      ],
@@ -2133,11 +2017,64 @@
      "voiceSec": 2.14
     },
     {
+     "kind": "beat",
+     "caption": "Tap the beat: the first line",
+     "parentCue": "Play the blue keys; your child taps the beat",
+     "bpm": 77,
+     "leadInSec": 4.19,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "B4",
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 3,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "who": "parent"
+      }
+     ],
+     "durationSec": 18,
+     "voice": "Tap any key with the beat. Here comes the first line.",
+     "voiceId": "fb6939c8842ad348",
+     "voiceSec": 3.79
+    },
+    {
      "kind": "demo",
-     "caption": "Watch the whole song",
+     "caption": "Watch the first part",
      "parentCue": "Watch together",
      "bpm": 72,
-     "leadInSec": 2.51,
+     "leadInSec": 2.42,
      "notes": [
       {
        "p": "C5",
@@ -2270,7 +2207,194 @@
        "d": 2,
        "f": 3,
        "s": "room"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Joy to the world, the Lord is come",
+       "from": 0
       },
+      {
+       "lyric": "Let earth receive her King",
+       "from": 8
+      },
+      {
+       "lyric": "Let every heart prepare Him room",
+       "from": 14
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Watch first, then your turn.",
+     "voiceId": "d2c60e2eed091532",
+     "voiceSec": 2.02
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 72,
+     "leadInSec": 3.33,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 5,
+       "s": "Joy"
+      },
+      {
+       "p": "B4",
+       "d": 1.5,
+       "f": 4,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 3,
+       "f": 2,
+       "s": "world"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "Lord"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "is"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1,
+       "s": "come"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Let"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 3,
+       "s": "earth"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "re"
+      },
+      {
+       "p": "B4",
+       "d": 1.5,
+       "f": 4,
+       "s": "ceive"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "her"
+      },
+      {
+       "p": "C5",
+       "d": 3,
+       "f": 5,
+       "s": "King"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 5,
+       "s": "Let"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 5,
+       "s": "ev"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ery"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "heart"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "pre"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 2,
+       "s": "pare"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Him"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "room"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Joy to the world, the Lord is come",
+       "from": 0
+      },
+      {
+       "lyric": "Let earth receive her King",
+       "from": 8
+      },
+      {
+       "lyric": "Let every heart prepare Him room",
+       "from": 14
+      }
+     ],
+     "durationSec": 48,
+     "voice": "Your turn. Slow and steady wins.",
+     "voiceId": "1641c55b696104d1",
+     "voiceSec": 2.93
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Watch together",
+     "bpm": 72,
+     "leadInSec": 3.38,
+     "notes": [
       {
        "p": "E4",
        "d": 0.5,
@@ -2436,34 +2560,22 @@
      ],
      "lines": [
       {
-       "lyric": "Joy to the world, the Lord is come",
+       "lyric": "And heaven and nature sing",
        "from": 0
       },
       {
-       "lyric": "Let earth receive her King",
-       "from": 8
-      },
-      {
-       "lyric": "Let every heart prepare Him room",
-       "from": 14
-      },
-      {
        "lyric": "And heaven and nature sing",
-       "from": 22
-      },
-      {
-       "lyric": "And heaven and nature sing",
-       "from": 31
+       "from": 9
       },
       {
        "lyric": "And heaven, and heaven, and nature sing",
-       "from": 40
+       "from": 18
       }
      ],
-     "durationSec": 50,
-     "voice": "Watch the whole song first.",
-     "voiceId": "92cae05653cb0214",
-     "voiceSec": 2.11
+     "durationSec": 27,
+     "voice": "Watch my fingers. Point along.",
+     "voiceId": "71f62f94e5bda190",
+     "voiceSec": 2.98
     },
     {
      "kind": "your_turn",
@@ -2800,386 +2912,45 @@
      "voiceSec": 2.58
     },
     {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Take a breath between lines",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Play along",
-     "parentCue": "Keep going after a slip",
-     "bpm": 82,
-     "leadInSec": 2.26,
-     "notes": [
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "Joy"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 4,
-       "s": "to"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 3,
-       "f": 2,
-       "s": "world"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "Lord"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "is"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "come"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Let"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 3,
-       "s": "earth"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "re"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 4,
-       "s": "ceive"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "her"
-      },
-      {
-       "p": "C5",
-       "d": 3,
-       "f": 5,
-       "s": "King"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "Let"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "ev"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ery"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "heart"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pre"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "s": "pare"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Him"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "room"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "And"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "heav'n"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "na"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ture"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "And"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "heav'n"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ture"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 4,
-       "s": "sing"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "And"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "heav"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "heav"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "na"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "ture"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "sing"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Joy to the world, the Lord is come",
-       "from": 0
-      },
-      {
-       "lyric": "Let earth receive her King",
-       "from": 8
-      },
-      {
-       "lyric": "Let every heart prepare Him room",
-       "from": 14
-      },
-      {
-       "lyric": "And heaven and nature sing",
-       "from": 22
-      },
-      {
-       "lyric": "And heaven and nature sing",
-       "from": 31
-      },
-      {
-       "lyric": "And heaven, and heaven, and nature sing",
-       "from": 40
-      }
-     ],
-     "durationSec": 45,
-     "voice": "Here we go, all together.",
-     "voiceId": "860c30d743a9b5a8",
-     "voiceSec": 1.86
-    },
-    {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "You found both parts!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
     "primary": "form",
     "secondary": [
-     "patterns"
+     "patterns",
+     "listening"
     ]
    },
    "mathTarget": {
-    "concept": "Composition of parts",
-    "parentLine": "Joining small parts into a whole"
+    "concept": "Song architecture (two sections)",
+    "parentLine": "A ladder part first, then a repeating singing part"
    },
-   "parentPrompt": "If your child gets stuck, sing the next word. Do not fix every note.",
-   "childAction": "Join the parts into the whole song.",
-   "bridge": "The parts click together like train cars.",
-   "celebrate": "Today you practiced the shape of a song and spotting patterns."
+   "parentPrompt": "Hold up one finger for the ladder part, two for 'and heaven and nature sing'.",
+   "childAction": "Play slowly and show one or two fingers for each part.",
+   "bridge": "Part one goes down and up the ladder; part two sings the same line twice.",
+   "celebrate": "Today you practiced: hearing the two parts of a song."
   },
   {
    "id": "joy-to-the-world-c04",
    "index": 4,
-   "title": "Tricky spots",
-   "goal": "Practise the hardest part slowly, then a little faster",
+   "title": "Walk, walk, run-ning",
+   "goal": "Practise the quick repeated notes slowly, then the same shape one key lower.",
    "type": "review",
-   "durationSec": 273,
-   "parentTip": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
+   "durationSec": 267,
+   "parentTip": "Say 'run-ning, run-ning' on the quick Es; then the same on D, one key lower.",
    "video": "joy-to-the-world/joy-to-the-world-c04.mp4",
    "thumb": "joy-to-the-world/joy-to-the-world-c04.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Joy to the World",
-     "subcaption": "Class 4: Tricky spots",
+     "subcaption": "Class 4: Walk, walk, run-ning",
      "durationSec": 7,
      "voice": "Hello, friends. Today it's Joy to the World. Both hands on your knees to start.",
      "voiceId": "5d5f1d41eb27369f",
@@ -3187,21 +2958,130 @@
     },
     {
      "kind": "say",
-     "caption": "Tricky spots, nice and slow",
-     "parentCue": "This is the hardest part of the song",
-     "durationSec": 7,
-     "voice": "Now a tricky bit. We go nice and slow.",
-     "voiceId": "5313a6a31bdd9d8b",
-     "voiceSec": 3.09
+     "caption": "Watch slowly",
+     "parentCue": "Say 'run-ning' on each pair of quick notes",
+     "durationSec": 6,
+     "voice": "Watch me, nice and slow.",
+     "voiceId": "54fd49a18bfae05f",
+     "voiceSec": 1.85
     },
     {
-     "kind": "say",
-     "caption": "Slow, then a bit faster",
-     "parentCue": "Say the finger numbers out loud",
-     "durationSec": 7,
-     "voice": "First slow, then a little faster.",
-     "voiceId": "71b8297d9c78c7a1",
-     "voiceSec": 2.83
+     "kind": "your_turn",
+     "caption": "Five quick Es, then up",
+     "parentCue": "Count the five quick Es out loud",
+     "bpm": 56,
+     "leadInSec": 4.41,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 1
+      }
+     ],
+     "durationSec": 22,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Same again, one key lower",
+     "parentCue": "Help the thumb move down to D",
+     "bpm": 56,
+     "leadInSec": 4.41,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1
+      }
+     ],
+     "durationSec": 22,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
     },
     {
      "kind": "demo",
@@ -3611,9 +3491,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -3629,7 +3509,7 @@
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
      "bpm": 77,
-     "leadInSec": 3.83,
+     "leadInSec": 3.33,
      "gapBeats": 1,
      "notes": [
       {
@@ -3752,356 +3632,246 @@
       }
      ],
      "durationSec": 35,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
+     "voice": "Your turn. Slow and steady wins.",
+     "voiceId": "1641c55b696104d1",
+     "voiceSec": 2.93
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
-     "caption": "Nearly full speed",
-     "parentCue": "Only speed up if it feels easy",
-     "durationSec": 6,
-     "voice": "Nearly full speed now.",
-     "voiceId": "9c534e859be017a5",
-     "voiceSec": 1.72
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Keep fingers close to the keys",
-     "bpm": 86,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "And"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "heav"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "heav"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "na"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "ture"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "sing"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "Let"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "ev"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ery"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "heart"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pre"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "s": "pare"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Him"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "room"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "And heaven, and heaven, and nature sing",
-       "from": 0
-      },
-      {
-       "lyric": "Let every heart prepare Him room",
-       "from": 10
-      }
-     ],
-     "durationSec": 32,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "Nearly full speed",
-     "parentCue": "Only speed up if it feels easy",
-     "durationSec": 6,
-     "voice": "Nearly full speed now.",
-     "voiceId": "9c534e859be017a5",
-     "voiceSec": 1.72
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "Keep fingers close to the keys",
-     "bpm": 86,
-     "leadInSec": 3.83,
-     "gapBeats": 1,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "And"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "heav"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "heav"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "na"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "ture"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "sing"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "Let"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "ev"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ery"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "heart"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pre"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "s": "pare"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Him"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "room"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "And heaven, and heaven, and nature sing",
-       "from": 0
-      },
-      {
-       "lyric": "Let every heart prepare Him room",
-       "from": 10
-      }
-     ],
-     "durationSec": 32,
-     "voice": "Now you play. Look ahead to the next key.",
-     "voiceId": "3d6af857ff139541",
-     "voiceSec": 3.43
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
      "voice": "Beautiful, gentle fingers.",
      "voiceId": "16fffae286737b05",
      "voiceSec": 2.22
+    },
+    {
+     "kind": "say",
+     "caption": "Nearly full speed",
+     "parentCue": "Only speed up if it feels easy",
+     "durationSec": 6,
+     "voice": "Nearly full speed now.",
+     "voiceId": "9c534e859be017a5",
+     "voiceSec": 1.72
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "Keep fingers close to the keys",
+     "bpm": 86,
+     "leadInSec": 4.41,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "And"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "heav"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "en"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 2,
+       "s": "and"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 1,
+       "s": "heav"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "en"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "and"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "na"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "ture"
+      },
+      {
+       "p": "C4",
+       "d": 4,
+       "f": 1,
+       "s": "sing"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 5,
+       "s": "Let"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 5,
+       "s": "ev"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ery"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "heart"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "pre"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 2,
+       "s": "pare"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Him"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "room"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "And heaven, and heaven, and nature sing",
+       "from": 0
+      },
+      {
+       "lyric": "Let every heart prepare Him room",
+       "from": 10
+      }
+     ],
+     "durationSec": 33,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
+    },
+    {
+     "kind": "praise",
+     "caption": "Great run-ning feet!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "counting",
     "secondary": [
+     "fingers",
      "patterns"
     ]
    },
    "mathTarget": {
-    "concept": "Error localisation",
-    "parentLine": "Finding the hard bit and practising just that"
+    "concept": "Ratio 2:1 (walk and run-ning)",
+    "parentLine": "Two quick run-ning notes fit in the time of one walk"
    },
-   "parentPrompt": "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-   "childAction": "Play the tricky part slowly, then faster.",
-   "bridge": "Tricky spots are puddles: step slowly, then hop over.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Say 'run-ning, run-ning' on the quick Es; then the same on D, one key lower.",
+   "childAction": "Thumb runs on E five times, then up and back.",
+   "bridge": "Run-ning notes are quick feet; the second time, the runner starts one key lower.",
+   "celebrate": "Today you practiced: walk and run-ning notes, two to one."
   },
   {
    "id": "joy-to-the-world-c05",
    "index": 5,
-   "title": "Left hand helper",
-   "goal": "Play one low left hand note at the start of each bar",
+   "title": "Low C, the big bell",
+   "goal": "Play one low left hand note on the first beat of each bar.",
    "type": "left-hand",
-   "durationSec": 248,
-   "parentTip": "You play the tune, your child plays the low notes. Count bars out loud to help.",
+   "durationSec": 255,
+   "parentTip": "Play the tune; count one-two-three-four, loud on one, for your child's low note.",
    "video": "joy-to-the-world/joy-to-the-world-c05.mp4",
    "thumb": "joy-to-the-world/joy-to-the-world-c05.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Joy to the World",
-     "subcaption": "Class 5: Left hand helper",
+     "subcaption": "Class 5: Low C, the big bell",
      "durationSec": 7,
      "voice": "Hello, friends. Today it's Joy to the World. Both hands on your knees to start.",
      "voiceId": "5d5f1d41eb27369f",
      "voiceSec": 5.46
     },
     {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "The big low bell",
+     "parentCue": "count to four, loud on one",
+     "durationSec": 6,
+     "voice": "The big low bell. Grown-up, count to four, loud on one.",
+     "voiceId": "07b845cf27378e51",
+     "voiceSec": 4.09
+    },
+    {
      "kind": "say",
      "caption": "Meet your left hand!",
-     "parentCue": "Left hand sits low on the left side",
+     "parentCue": "Low on the left: C and F and G, one per bar",
      "showKeys": [
       {
        "p": "C3",
@@ -4116,40 +3886,50 @@
        "f": 1
       }
      ],
-     "durationSec": 7,
+     "durationSec": 8,
      "voice": "Meet your left hand. It plays the low notes.",
      "voiceId": "9431a702419226a1",
      "voiceSec": 3.05
     },
     {
-     "kind": "say",
-     "caption": "One low note at the start of each bar",
-     "parentCue": "The low notes are C and F and G",
-     "showKeys": [
+     "kind": "listen",
+     "caption": "Big bells on one",
+     "parentCue": "Say one loud with each low bell",
+     "bpm": 72,
+     "leadInSec": 4.22,
+     "notes": [
       {
-       "p": "C3",
-       "f": 5
+       "p": "G3",
+       "d": 4,
+       "who": "parent"
       },
       {
-       "p": "F3",
-       "f": 2
+       "p": "C3",
+       "d": 4,
+       "who": "parent"
       },
       {
        "p": "G3",
-       "f": 1
+       "d": 4,
+       "who": "parent"
+      },
+      {
+       "p": "C3",
+       "d": 4,
+       "who": "parent"
       }
      ],
-     "durationSec": 9,
-     "voice": "Left hand plays one low note at the start of each bar.",
-     "voiceId": "316eb49e5ef32058",
-     "voiceSec": 3.68
+     "durationSec": 20,
+     "voice": "Big bells on one. Nod your head with each low bell.",
+     "voiceId": "193e22609f4d1d18",
+     "voiceSec": 3.82
     },
     {
      "kind": "demo",
-     "caption": "Watch the low notes",
+     "caption": "Watch the first part",
      "parentCue": "Count one, two, three, four",
      "bpm": 72,
-     "leadInSec": 2.05,
+     "leadInSec": 3.05,
      "notes": [
       {
        "rest": true,
@@ -4190,7 +3970,74 @@
        "d": 4.0,
        "f": 5,
        "h": "L"
+      }
+     ],
+     "durationSec": 28,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 72,
+     "leadInSec": 3.83,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "rest": true,
+       "d": 3.0
       },
+      {
+       "p": "G3",
+       "d": 4.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 4.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 4.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "G3",
+       "d": 4.0,
+       "f": 1,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 4.0,
+       "f": 5,
+       "h": "L"
+      },
+      {
+       "p": "C3",
+       "d": 4.0,
+       "f": 5,
+       "h": "L"
+      }
+     ],
+     "durationSec": 33,
+     "voice": "Now you play. Look ahead to the next key.",
+     "voiceId": "3d6af857ff139541",
+     "voiceSec": 3.43
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Count one, two, three, four",
+     "bpm": 72,
+     "leadInSec": 3.05,
+     "notes": [
       {
        "p": "C3",
        "d": 4.0,
@@ -4234,10 +4081,10 @@
        "h": "L"
       }
      ],
-     "durationSec": 50,
-     "voice": "Watch the low notes.",
-     "voiceId": "f59982b35009de01",
-     "voiceSec": 1.65
+     "durationSec": 28,
+     "voice": "My turn. Eyes on the keys.",
+     "voiceId": "b7ee7adf63beb745",
+     "voiceSec": 2.65
     },
     {
      "kind": "your_turn",
@@ -4334,460 +4181,6 @@
      "voice": "Your turn. Left hand only.",
      "voiceId": "2507a3f0663e9951",
      "voiceSec": 2.59
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "You play the tune, child plays low notes",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "together",
-     "caption": "Low notes with the tune",
-     "parentCue": "You play the blue keys",
-     "bpm": 72,
-     "leadInSec": 2.78,
-     "notes": [
-      {
-       "p": "C5",
-       "d": 2,
-       "f": 5,
-       "s": "Joy",
-       "who": "parent"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 4,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 3,
-       "f": 2,
-       "s": "world",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 1,
-       "s": "the",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "Lord",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "is",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "come",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Let",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 3,
-       "s": "earth",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "re",
-       "who": "parent"
-      },
-      {
-       "p": "B4",
-       "d": 1.5,
-       "f": 4,
-       "s": "ceive",
-       "who": "parent"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "her",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 3,
-       "f": 5,
-       "s": "King",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "Let",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "ev",
-       "who": "parent"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ery",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "heart",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pre",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 2,
-       "s": "pare",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Him",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "room",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "And",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "heav'n",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ture",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "And",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "heav'n",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ture",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 4,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "And",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "heav",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "en",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 2,
-       "s": "and",
-       "who": "parent",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "heav",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "en",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "na",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "ture",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "sing",
-       "who": "parent",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Joy to the world, the Lord is come",
-       "from": 0
-      },
-      {
-       "lyric": "Let earth receive her King",
-       "from": 8
-      },
-      {
-       "lyric": "Let every heart prepare Him room",
-       "from": 14
-      },
-      {
-       "lyric": "And heaven and nature sing",
-       "from": 22
-      },
-      {
-       "lyric": "And heaven and nature sing",
-       "from": 31
-      },
-      {
-       "lyric": "And heaven, and heaven, and nature sing",
-       "from": 40
-      }
-     ],
-     "durationSec": 51,
-     "voice": "Left hand low notes, with the tune.",
-     "voiceId": "189d258c6ca31d51",
-     "voiceSec": 2.38
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
     },
     {
      "kind": "say",
@@ -5237,47 +4630,86 @@
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Every one, right on time!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "beat",
     "secondary": [
+     "counting",
      "space"
     ]
    },
    "mathTarget": {
-    "concept": "Bilateral mapping",
-    "parentLine": "Giving the other hand its own job"
+    "concept": "Grouping by four (meter)",
+    "parentLine": "Four beats in each bar; the left hand plays on one"
    },
-   "parentPrompt": "You play the tune, your child plays the low notes. Count bars out loud to help.",
-   "childAction": "Play the low notes with the left hand.",
-   "bridge": "The left hand plays the deep low notes, like a big drum.",
-   "celebrate": "Today you practiced careful fingers and finding the way on the keys."
+   "parentPrompt": "Play the tune; count one-two-three-four, loud on one, for your child's low note.",
+   "childAction": "Left hand rings low C or low G on every one.",
+   "bridge": "Low C is a big church bell, C in a much lower house.",
+   "celebrate": "Today you practiced: counting four beats and playing on one."
   },
   {
    "id": "joy-to-the-world-c06",
    "index": 6,
-   "title": "Hands together, slowly",
-   "goal": "Play the tune with a low left hand note on each bar",
+   "title": "Bell and singers together",
+   "goal": "Play the tune with a low left hand note on each bar, very slowly.",
    "type": "hands-together",
-   "durationSec": 237,
-   "parentTip": "Two hands is hard work. Go very slowly and stop while it's still fun.",
+   "durationSec": 233,
+   "parentTip": "Rest a hand on your child's left shoulder and say 'bell' on each low note.",
    "video": "joy-to-the-world/joy-to-the-world-c06.mp4",
    "thumb": "joy-to-the-world/joy-to-the-world-c06.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Joy to the World",
-     "subcaption": "Class 6: Hands together, slowly",
+     "subcaption": "Class 6: Bell and singers together",
      "durationSec": 8,
      "voice": "Hello again. Joy to the World is waiting for us. Shoulders soft, fingers ready.",
      "voiceId": "639964805a70f7e9",
      "voiceSec": 6.44
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Bell and singers together",
+     "parentCue": "Say 'bell' softly on each low note",
+     "durationSec": 6,
+     "voice": "Bell and singers together. Grown-up, say 'bell' softly on each low note.",
+     "voiceId": "058d93f910d805be",
+     "voiceSec": 4.9
     },
     {
      "kind": "say",
@@ -5285,7 +4717,7 @@
      "parentCue": "Left hand low, right hand ready",
      "showKeys": [
       {
-       "p": "F4",
+       "p": "C4",
        "f": 1
       },
       {
@@ -5297,25 +4729,59 @@
        "f": 3
       },
       {
-       "p": "B4",
+       "p": "F4",
        "f": 4
       },
       {
-       "p": "C5",
+       "p": "G4",
        "f": 5
       }
      ],
      "durationSec": 7,
-     "voice": "Now both hands together, very slowly.",
-     "voiceId": "067f3e698afdefd5",
-     "voiceSec": 2.68
+     "voice": "Today both hands play together, very slowly.",
+     "voiceId": "480919ea0ce23ca6",
+     "voiceSec": 3.01
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Left hand first",
+     "parentCue": "Point to each low key",
+     "bpm": 67,
+     "leadInSec": 4.44,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1
+      },
+      {
+       "p": "C3",
+       "d": 2,
+       "f": 5
+      },
+      {
+       "p": "G3",
+       "d": 2,
+       "f": 1
+      }
+     ],
+     "durationSec": 17,
+     "voice": "Left hand first. Play each low key when it glows.",
+     "voiceId": "999b53a367c0de16",
+     "voiceSec": 4.04
     },
     {
      "kind": "demo",
-     "caption": "Watch both hands",
+     "caption": "Watch the first part",
      "parentCue": "Low note and tune start together",
      "bpm": 62,
-     "leadInSec": 1.99,
+     "leadInSec": 2.21,
      "notes": [
       {
        "p": "C5",
@@ -5370,7 +4836,100 @@
        "d": 3,
        "f": 1,
        "s": "come"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Joy to the world, the Lord is come",
+       "from": 0
+      }
+     ],
+     "durationSec": 19,
+     "voice": "Watch the finger numbers.",
+     "voiceId": "1b41b3f777e6f6a3",
+     "voiceSec": 1.81
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the first part",
+     "parentCue": "Slow and gentle",
+     "bpm": 62,
+     "leadInSec": 4.41,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C5",
+       "d": 2,
+       "f": 5,
+       "s": "Joy"
       },
+      {
+       "p": "B4",
+       "d": 1.5,
+       "f": 4,
+       "s": "to"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 3,
+       "f": 2,
+       "s": "world"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 1,
+       "s": "the",
+       "lh": {
+        "p": "G3",
+        "d": 4.0,
+        "f": 1,
+        "h": "L"
+       }
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "Lord"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "is"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1,
+       "s": "come"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Joy to the world, the Lord is come",
+       "from": 0
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Now you. Follow the lights, nice and even.",
+     "voiceId": "9d70144f071be819",
+     "voiceSec": 4.01
+    },
+    {
+     "kind": "demo",
+     "caption": "Watch the next part",
+     "parentCue": "Low note and tune start together",
+     "bpm": 62,
+     "leadInSec": 2.32,
+     "notes": [
       {
        "p": "G4",
        "d": 1,
@@ -5476,29 +5035,25 @@
      ],
      "lines": [
       {
-       "lyric": "Joy to the world, the Lord is come",
+       "lyric": "Let earth receive her King",
        "from": 0
       },
       {
-       "lyric": "Let earth receive her King",
-       "from": 8
-      },
-      {
        "lyric": "Let every heart prepare Him room",
-       "from": 14
+       "from": 6
       }
      ],
-     "durationSec": 32,
-     "voice": "Watch both hands.",
-     "voiceId": "b9e8c430fcb997a7",
-     "voiceSec": 1.59
+     "durationSec": 18,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
     },
     {
      "kind": "your_turn",
      "caption": "Your turn! Both hands",
      "parentCue": "Slow is perfect",
      "bpm": 62,
-     "leadInSec": 3.9,
+     "leadInSec": 3.81,
      "gapBeats": 1,
      "notes": [
       {
@@ -5673,26 +5228,16 @@
       }
      ],
      "durationSec": 55,
-     "voice": "Your turn. Both hands, nice and slow.",
-     "voiceId": "7c39a0349582d84b",
-     "voiceSec": 3.5
+     "voice": "Your turn. Both hands, nice and steady.",
+     "voiceId": "cd70d130fe2096c9",
+     "voiceSec": 3.41
     },
     {
-     "kind": "say",
-     "caption": "The whole song, both hands",
-     "parentCue": "Help with the left hand if needed",
-     "durationSec": 7,
-     "voice": "Now the whole song, with both hands.",
-     "voiceId": "5b813089059c8307",
-     "voiceSec": 2.61
-    },
-    {
-     "kind": "your_turn",
-     "caption": "Your turn! Both hands",
-     "parentCue": "Keep it slow",
+     "kind": "together",
+     "caption": "Together, slowly",
+     "parentCue": "Play along slowly",
      "bpm": 62,
-     "leadInSec": 3.9,
-     "gapBeats": 1,
+     "leadInSec": 2.25,
      "notes": [
       {
        "p": "C5",
@@ -6069,10 +5614,10 @@
        "from": 40
       }
      ],
-     "durationSec": 108,
-     "voice": "Your turn. Both hands, nice and slow.",
-     "voiceId": "7c39a0349582d84b",
-     "voiceSec": 3.5
+     "durationSec": 57,
+     "voice": "Together, nice and slow.",
+     "voiceId": "e56c837ee278d694",
+     "voiceSec": 1.85
     },
     {
      "kind": "praise",
@@ -6081,59 +5626,81 @@
      "voice": "Two hands at once. Wow.",
      "voiceId": "634ff696e35387b7",
      "voiceSec": 2.72
-    },
-    {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 10,
-     "voice": "Shake, shake, shake your hands.",
-     "voiceId": "69041444bf86c15c",
-     "voiceSec": 2.85
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
     }
    ],
    "skill": {
     "primary": "fingers",
     "secondary": [
-     "patterns"
+     "counting",
+     "together"
     ]
    },
    "mathTarget": {
-    "concept": "Coordinating two streams",
-    "parentLine": "Two hands doing different jobs at once"
+    "concept": "Ratio 1:4 (two streams)",
+    "parentLine": "One low note lasts while four beats go by above"
    },
-   "parentPrompt": "Two hands is hard work. Go very slowly and stop while it's still fun.",
-   "childAction": "Play both hands together, slowly.",
-   "bridge": "Left hand is the drum; right hand sings the song.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Rest a hand on your child's left shoulder and say 'bell' on each low note.",
+   "childAction": "Left hand rings and holds; right hand sings the tune.",
+   "bridge": "Left hand is the big bell ringing once; right hand is the choir singing on.",
+   "celebrate": "Today you practiced: two hands doing two jobs at once."
   },
   {
    "id": "joy-to-the-world-c07",
    "index": 7,
-   "title": "Hands together, a bit faster",
-   "goal": "Play both hands together closer to full speed",
+   "title": "Bouncy and bright",
+   "goal": "Play both hands together a little faster, then slow again if needed.",
    "type": "hands-together",
-   "durationSec": 272,
-   "parentTip": "Speed comes last. If notes fall apart, go back to the slower tempo.",
+   "durationSec": 283,
+   "parentTip": "Bounce gently in your seat as the speed goes up; go back to slow if notes fall apart.",
    "video": "joy-to-the-world/joy-to-the-world-c07.mp4",
    "thumb": "joy-to-the-world/joy-to-the-world-c07.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Joy to the World",
-     "subcaption": "Class 7: Hands together, a bit faster",
+     "subcaption": "Class 7: Bouncy and bright",
      "durationSec": 7,
      "voice": "Hello, friends. Today it's Joy to the World. Both hands on your knees to start.",
      "voiceId": "5d5f1d41eb27369f",
      "voiceSec": 5.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Warm-up fingers",
+     "parentCue": "Curved fingers, gentle presses",
+     "bpm": 72,
+     "leadInSec": 4.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Warm-up time. Curved fingers, press each glowing key.",
+     "voiceId": "df9a357b9ab85e3d",
+     "voiceSec": 4.42
+    },
+    {
+     "kind": "say",
+     "caption": "Bouncy and bright",
+     "parentCue": "Go back to slow if notes fall apart",
+     "durationSec": 7,
+     "voice": "Bouncy and bright. Grown-up, go back to slow if notes fall apart.",
+     "voiceId": "e8935cb07c0bb6e3",
+     "voiceSec": 5.08
     },
     {
      "kind": "say",
@@ -6141,7 +5708,7 @@
      "parentCue": "Only if the slow class felt good",
      "showKeys": [
       {
-       "p": "F4",
+       "p": "C4",
        "f": 1
       },
       {
@@ -6153,11 +5720,11 @@
        "f": 3
       },
       {
-       "p": "B4",
+       "p": "F4",
        "f": 4
       },
       {
-       "p": "C5",
+       "p": "G4",
        "f": 5
       }
      ],
@@ -6171,7 +5738,7 @@
      "caption": "Your turn! Both hands",
      "parentCue": "Warm up slowly",
      "bpm": 72,
-     "leadInSec": 3.9,
+     "leadInSec": 3.81,
      "gapBeats": 1,
      "notes": [
       {
@@ -6550,9 +6117,9 @@
       }
      ],
      "durationSec": 93,
-     "voice": "Your turn. Both hands, nice and slow.",
-     "voiceId": "7c39a0349582d84b",
-     "voiceSec": 3.5
+     "voice": "Your turn. Both hands, nice and steady.",
+     "voiceId": "cd70d130fe2096c9",
+     "voiceSec": 3.41
     },
     {
      "kind": "together",
@@ -7341,25 +6908,26 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Relax your shoulders",
-     "durationSec": 5,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
-     "kind": "together",
-     "caption": "Both hands together",
-     "parentCue": "Help with the left hand if needed",
-     "bpm": 82,
-     "leadInSec": 2.02,
+     "kind": "your_turn",
+     "caption": "Your turn!",
+     "parentCue": "The first part again",
+     "bpm": 77,
+     "leadInSec": 3.38,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "C5",
@@ -7389,13 +6957,7 @@
        "p": "F4",
        "d": 1,
        "f": 1,
-       "s": "the",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
+       "s": "the"
       },
       {
        "p": "E4",
@@ -7419,13 +6981,7 @@
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "Let",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
+       "s": "Let"
       },
       {
        "p": "A4",
@@ -7461,13 +7017,7 @@
        "p": "C5",
        "d": 0.5,
        "f": 5,
-       "s": "Let",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
+       "s": "Let"
       },
       {
        "p": "C5",
@@ -7509,205 +7059,7 @@
        "p": "E4",
        "d": 2,
        "f": 3,
-       "s": "room",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "And"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "heav'n"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "na"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ture",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "And",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "heav'n"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "and"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ture"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 4,
-       "s": "sing"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "And"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "heav"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 2,
-       "s": "and",
-       "lh": {
-        "p": "G3",
-        "d": 4.0,
-        "f": 1,
-        "h": "L"
-       }
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 1,
-       "s": "heav"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "en"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "and"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "na",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "ture"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "sing",
-       "lh": {
-        "p": "C3",
-        "d": 4.0,
-        "f": 5,
-        "h": "L"
-       }
+       "s": "room"
       }
      ],
      "lines": [
@@ -7722,81 +7074,52 @@
       {
        "lyric": "Let every heart prepare Him room",
        "from": 14
-      },
-      {
-       "lyric": "And heaven and nature sing",
-       "from": 22
-      },
-      {
-       "lyric": "And heaven and nature sing",
-       "from": 31
-      },
-      {
-       "lyric": "And heaven, and heaven, and nature sing",
-       "from": 40
       }
      ],
-     "durationSec": 44,
-     "voice": "Both hands together.",
-     "voiceId": "616b6beec5a0bdd4",
-     "voiceSec": 1.62
+     "durationSec": 45,
+     "voice": "Your turn. I'll wait for each note.",
+     "voiceId": "ef1c63536da8b5d7",
+     "voiceSec": 2.98
     },
     {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "Steady at both speeds!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Big breath in and out",
-     "parentCue": "Breathe slowly together",
-     "durationSec": 5,
-     "voice": "Big breath in, and out.",
-     "voiceId": "67a43f157c55d975",
-     "voiceSec": 2.01
-    },
-    {
-     "kind": "praise",
-     "caption": "Wonderful playing!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
-    "primary": "fingers",
+    "primary": "expression",
     "secondary": [
-     "patterns"
+     "fingers"
     ]
    },
    "mathTarget": {
-    "concept": "Coordinating two streams",
-    "parentLine": "Two hands doing different jobs at once"
+    "concept": "Tempo scaling (same pattern, faster)",
+    "parentLine": "The pattern stays the same when the speed changes"
    },
-   "parentPrompt": "Speed comes last. If notes fall apart, go back to the slower tempo.",
-   "childAction": "Play both hands together, slowly.",
-   "bridge": "Left hand is the drum; right hand sings the song.",
-   "celebrate": "Today you practiced careful fingers and spotting patterns."
+   "parentPrompt": "Bounce gently in your seat as the speed goes up; go back to slow if notes fall apart.",
+   "childAction": "Play both hands slowly, then a little quicker.",
+   "bridge": "A slow walk and a happy bounce: the same song, a different speed.",
+   "celebrate": "Today you practiced: the same song at two speeds."
   },
   {
    "id": "joy-to-the-world-c08",
    "index": 8,
-   "title": "Play along",
-   "goal": "Play the whole song along with the music at full speed",
+   "title": "Sing with the whole world",
+   "goal": "Play the whole song along with the music and keep going.",
    "type": "play-along",
    "durationSec": 252,
-   "parentTip": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
+   "parentTip": "Sit beside your child and nod on every one; cheer for keeping going, not for notes.",
    "video": "joy-to-the-world/joy-to-the-world-c08.mp4",
    "thumb": "joy-to-the-world/joy-to-the-world-c08.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Joy to the World",
-     "subcaption": "Class 8: Play along",
+     "subcaption": "Class 8: Sing with the whole world",
      "durationSec": 8,
      "voice": "Hi, everyone. Let's make music with Joy to the World. Grown-up, sit close to cheer.",
      "voiceId": "5d09c3ad003db134",
@@ -7804,21 +7127,12 @@
     },
     {
      "kind": "say",
-     "caption": "Play along at full speed!",
-     "parentCue": "Count in: one, two, ready, go",
-     "durationSec": 7,
-     "voice": "Now we play along at full speed.",
-     "voiceId": "a7ce901090c5f6c4",
-     "voiceSec": 2.73
-    },
-    {
-     "kind": "say",
-     "caption": "Keep going, even after a slip",
-     "parentCue": "Cheer for keeping the beat",
-     "durationSec": 7,
-     "voice": "Keep going, even after a slip.",
-     "voiceId": "b74440b7a90a10db",
-     "voiceSec": 2.2
+     "caption": "Play along",
+     "parentCue": "Nod on every one together",
+     "durationSec": 5,
+     "voice": "Play along. Grown-up, nod on every one together.",
+     "voiceId": "a0f144f38ab101b2",
+     "voiceSec": 3.9
     },
     {
      "kind": "together",
@@ -8500,7 +7814,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 96,
-     "leadInSec": 2.47,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "C5",
@@ -8823,18 +8137,18 @@
        "from": 40
       }
      ],
-     "durationSec": 39,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 38,
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
     },
     {
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     },
     {
      "kind": "say",
@@ -8850,7 +8164,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 96,
-     "leadInSec": 2.47,
+     "leadInSec": 4.12,
      "notes": [
       {
        "p": "C5",
@@ -9173,18 +8487,18 @@
        "from": 40
       }
      ],
-     "durationSec": 39,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 40,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -9200,7 +8514,7 @@
      "caption": "Play along",
      "parentCue": "Sing while you play",
      "bpm": 96,
-     "leadInSec": 2.47,
+     "leadInSec": 2.26,
      "notes": [
       {
        "p": "C5",
@@ -9524,49 +8838,66 @@
       }
      ],
      "durationSec": 39,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "voice": "Here we go, all together.",
+     "voiceId": "860c30d743a9b5a8",
+     "voiceSec": 1.86
     },
     {
      "kind": "praise",
-     "caption": "Wonderful playing!",
+     "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
+    },
+    {
+     "kind": "say",
+     "caption": "Wiggle your fingers!",
+     "parentCue": "Shake out both hands together",
+     "durationSec": 4,
+     "voice": "Wiggle your fingers. Wiggle, wiggle.",
+     "voiceId": "640ef443bc914f6c",
+     "voiceSec": 2.99
+    },
+    {
+     "kind": "praise",
+     "caption": "You kept going together!",
+     "durationSec": 5,
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
     "primary": "together",
     "secondary": [
-     "fingers"
+     "beat"
     ]
    },
    "mathTarget": {
-    "concept": "Synchrony",
-    "parentLine": "Keeping your part going while the music moves on"
+    "concept": "Synchrony with a moving pulse",
+    "parentLine": "Keeping your part in step while the music moves on"
    },
-   "parentPrompt": "Keeping up with the music is the goal. Missed notes are fine, just keep going.",
-   "childAction": "Play the song along with the music.",
-   "bridge": "The music is a train; hop on and ride along.",
-   "celebrate": "Today you practiced playing together and careful fingers."
+   "parentPrompt": "Sit beside your child and nod on every one; cheer for keeping going, not for notes.",
+   "childAction": "Play along with the music. If a note slips, keep going!",
+   "bridge": "The song invites everyone to sing along; we join in and keep going.",
+   "celebrate": "Today you practiced: keeping your part in step with the music."
   },
   {
    "id": "joy-to-the-world-c09",
    "index": 9,
-   "title": "Concert time",
-   "goal": "Play the whole song from start to end and celebrate",
+   "title": "A bright concert",
+   "goal": "Play the whole song for teddy with a bright, strong sound, then bow.",
    "type": "concert",
-   "durationSec": 282,
-   "parentTip": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
+   "durationSec": 260,
+   "parentTip": "Seat teddy as the audience; announce the song, then clap and bow together.",
    "video": "joy-to-the-world/joy-to-the-world-c09.mp4",
    "thumb": "joy-to-the-world/joy-to-the-world-c09.jpg",
    "segments": [
     {
      "kind": "title",
      "caption": "Joy to the World",
-     "subcaption": "Class 9: Concert time",
+     "subcaption": "Class 9: A bright concert",
      "durationSec": 8,
      "voice": "Hi, everyone. Let's make music with Joy to the World. Grown-up, sit close to cheer.",
      "voiceId": "5d09c3ad003db134",
@@ -9574,21 +8905,12 @@
     },
     {
      "kind": "say",
-     "caption": "Concert time!",
-     "parentCue": "Clap for your little pianist",
-     "durationSec": 5,
-     "voice": "It's concert time.",
-     "voiceId": "87c99954fc5f2f93",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "say",
-     "caption": "Take a bow, then hands ready",
-     "parentCue": "Bow together, then sit at the piano",
-     "durationSec": 7,
-     "voice": "Take a bow, then hands ready.",
-     "voiceId": "734e8a7ee71965d7",
-     "voiceSec": 1.99
+     "caption": "Play the whole song!",
+     "parentCue": "Seat teddy and announce the song together",
+     "durationSec": 6,
+     "voice": "Now the whole song.",
+     "voiceId": "6464c9862221b967",
+     "voiceSec": 2.02
     },
     {
      "kind": "together",
@@ -10385,9 +9707,9 @@
      "kind": "praise",
      "caption": "Great job!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     },
     {
      "kind": "say",
@@ -10789,9 +10111,9 @@
      "kind": "praise",
      "caption": "You did it!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
@@ -11193,9 +10515,9 @@
      "kind": "praise",
      "caption": "Lovely!",
      "durationSec": 5,
-     "voice": "Lovely listening. You kept trying.",
-     "voiceId": "ee7eef9771050b6f",
-     "voiceSec": 3.41
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     },
     {
      "kind": "say",
@@ -11595,45 +10917,28 @@
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "Bravo, bright and strong!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 11,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "You are a star pianist!",
-     "durationSec": 5,
-     "voice": "What a concert. You played the whole song together.",
-     "voiceId": "dbc686d827ddbcde",
-     "voiceSec": 3.73
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
-    "primary": "form",
+    "primary": "expression",
     "secondary": [
      "together",
-     "expression"
+     "form"
     ]
    },
    "mathTarget": {
-    "concept": "Sequencing start to end",
-    "parentLine": "Holding the whole song in order, first note to last"
+    "concept": "Dynamics (bright and strong)",
+    "parentLine": "Choosing a big, happy sound without banging"
    },
-   "parentPrompt": "Clap, cheer and bow together. Mistakes are fine. The fun is playing to someone.",
-   "childAction": "Play the whole song, then take a bow.",
-   "bridge": "From the first note to the last: one big journey.",
-   "celebrate": "Today you practiced the shape of a song and playing together."
+   "parentPrompt": "Seat teddy as the audience; announce the song, then clap and bow together.",
+   "childAction": "Play brightly for teddy, land home on C, then bow.",
+   "bridge": "Strong, happy fingers, like bells ringing for a celebration.",
+   "celebrate": "Today you practiced: playing a whole song with a bright sound."
   }
  ]
 }

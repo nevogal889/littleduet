@@ -1,0 +1,160 @@
+{
+  "songId": "jack-be-nimble",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices steady beat, high and low, loud and soft, quick and slow, and playing together, with a bouncy old jumping rhyme.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Bounce like Jack",
+      "goal": "Feel the steady beat of the rhyme with gentle knee bounces.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (steady pulse)", "parentLine": "Feeling something that comes again and again, evenly spaced" },
+      "parentPrompt": "Bounce your child gently on your knees on every beat; lift them up on 'jump'.",
+      "childAction": "Bounce, clap and pat your knees with the song.",
+      "bridge": "Each beat is one little bounce, like Jack's feet on the ground.",
+      "intro": [ { "caption": "Bounce, bounce, like quick Jack", "parentCue": "sit your child on your knees" } ],
+      "games": [],
+      "praise": "You bounced together!",
+      "celebrate": "Today you practiced: feeling the steady beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Jack's jumping taps",
+      "goal": "Tap one steady tap for every beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key once for each beat. Any key is right.",
+      "bridge": "Every beat is a little hop; one tap for each hop.",
+      "intro": [ { "caption": "One beat, one tap", "parentCue": "tap your child's shoulder on each beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Jack, be quick: two taps",
+          "parentCue": "Say 'one, two' softly on 'Jack, be'",
+          "bpm": 76,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping (pitch to place)", "parentLine": "Low sounds live on the left, high sounds on the right" },
+      "parentPrompt": "Crouch and growl for the bear; stretch up tall and flap for the bird.",
+      "childAction": "Bear sound: tap the left side. Bird sound: tap the right.",
+      "bridge": "Low notes are a heavy bear on the left; high notes are a tiny bird.",
+      "intro": [ { "caption": "Bear lives low, bird lives high", "parentCue": "point left for the bear, right for the bird" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Jack jumps, then lands low",
+          "parentCue": "Lift your arms up, then crouch down slowly",
+          "bpm": 66,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Big jump, tiny tiptoe",
+      "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "Noticing big and small: the same tap, more or less" },
+      "parentPrompt": "Make strong arms for loud taps; whisper and tiptoe your fingers for soft ones.",
+      "childAction": "Loud: big jumping taps. Soft: tiny tiptoe taps.",
+      "bridge": "Loud taps are Jack's big jump; soft taps are Jack tiptoeing past.",
+      "intro": [ { "caption": "Big jumps, tiny tiptoes", "parentCue": "loud means strong arms, not banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Quick Jack, sleepy Jack",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "Same tune, same shape, only the speed changes" },
+      "parentPrompt": "Walk your fingers up your child's arm, slowly then quickly, matching the music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "Slow taps are turtle steps; quick taps are Jack running like a bunny.",
+      "intro": [ { "caption": "Turtle slow, bunny quick", "parentCue": "slow down if the taps get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle time: slow Jack",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 58,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny time: quick Jack!",
+          "parentCue": "Same tune, now quick and light",
+          "bpm": 108,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and quick music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Jack jumps, Jack freezes",
+      "goal": "Tap while the music plays and freeze when it stops.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "Freeze with a funny face when the music stops; cheer when it starts again.",
+      "childAction": "Tap while music plays. Freeze like a statue when it stops.",
+      "bridge": "Music on, Jack runs; music off, Jack stands still as a statue.",
+      "intro": [ { "caption": "Go, Jack, go! Now freeze!", "parentCue": "make your freeze silly, like a statue" } ],
+      "games": [],
+      "praise": "Great freezing, Jack!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "together",
+      "title": "Jack and me duet",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together to make one song" },
+      "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Tap the beat on any key while your grown-up plays the tune.",
+      "bridge": "The tune is Jack running; your beat is the ground under his feet.",
+      "intro": [ { "caption": "I play, you tap", "parentCue": "sit side by side at the piano" } ],
+      "games": [],
+      "praise": "What a duet together!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Concert for teddy",
+      "goal": "Play the whole rhyme from the first note to the last, then bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on, and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+      "childAction": "Tap the beat to the very end, then take a big bow.",
+      "bridge": "The song is one big jump: run up, leap over, land with a bow.",
+      "intro": [ { "caption": "A song for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

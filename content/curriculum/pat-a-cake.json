@@ -1,0 +1,176 @@
+{
+  "songId": "pat-a-cake",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices steady beat, high and low, loud and soft, and taking turns, using the old clapping game grown-ups and children share.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Sway with the baker",
+      "goal": "Hear the whole clapping song and sway and clap to its beat together.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (steady pulse)", "parentLine": "Feeling a beat that comes again and again, evenly" },
+      "parentPrompt": "Sit face to face, sway together, and clap your hands on each beat.",
+      "childAction": "Sway, then clap your hands with the song.",
+      "bridge": "The beat is the baker patting dough: pat, pat, pat, always even.",
+      "intro": [ { "caption": "Let's be bakers!", "parentCue": "sit face to face and sway together" } ],
+      "games": [],
+      "praise": "You swayed together!",
+      "celebrate": "Today you practiced: feeling the steady beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Pat the dough",
+      "goal": "Pat one steady tap on each beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One pat for each beat, no more and no less" },
+      "parentPrompt": "Rest your hand over your child's hand and pat together, then slowly let go.",
+      "childAction": "Pat any key with a flat hand on every beat.",
+      "bridge": "The keys are soft dough: a flat hand pats it on every beat.",
+      "intro": [ { "caption": "Flat hands, pat the dough", "parentCue": "pat your lap first, then the keys" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Pat, pat, baker's man",
+          "parentCue": "Say 'one, two' as you pat",
+          "bpm": 72,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one pat for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping (pitch to place)", "parentLine": "Low sounds live on the left, high sounds on the right" },
+      "parentPrompt": "Growl and crouch for the bear; flap your arms and reach up for the bird.",
+      "childAction": "Bear sound: tap the left side. Bird sound: tap the right.",
+      "bridge": "The bear's big paws pat low on the left; the bird pecks high.",
+      "intro": [ { "caption": "The bear lives low, the bird flies high", "parentCue": "point left for the bear, right for the bird" } ],
+      "games": [
+        {
+          "kind": "high_low",
+          "caption": "Here comes the bear",
+          "parentCue": "Growl softly, then pat low together",
+          "target": "low",
+          "bpm": 66,
+          "notes": [ { "p": "G3", "d": 1 }, { "p": "E3", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "E3", "d": 1 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Big pats, tiny pats",
+      "goal": "Pat the beat with big loud pats, then with tiny soft pats.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "The same pat can be big or small" },
+      "parentPrompt": "Use strong arms for loud pats; whisper and use fingertips for soft.",
+      "childAction": "Loud: big baker pats. Soft: tiny fingertip pats.",
+      "bridge": "Loud pats flatten the dough; soft pats are a feather on the cake.",
+      "intro": [ { "caption": "Big pats, tiny pats", "parentCue": "loud means strong arms, never banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Bake it fast, bake it slow",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "The same tune, only the speed changes" },
+      "parentPrompt": "Pat your child's knees slowly, then quickly, matching the music.",
+      "childAction": "Turtle music: slow pats. Bunny music: quick pats.",
+      "bridge": "As fast as you can: bunny pats are quick, turtle pats are slow.",
+      "intro": [ { "caption": "Bake it as fast as you can", "parentCue": "slow down if the pats get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle bakes slowly",
+          "parentCue": "Pat together, slow and heavy",
+          "bpm": 56,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny bakes fast!",
+          "parentCue": "Same tune, now quick and light",
+          "bpm": 108,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Into the oven, freeze!",
+      "goal": "Pat while the music plays and hold still when it stops.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "When the music stops, freeze with hands up like a cake waiting to bake.",
+      "childAction": "Pat while the music plays. Freeze when it stops.",
+      "bridge": "Music on, we pat the dough; music off, the cake sits still.",
+      "intro": [ { "caption": "Pat, pat... freeze!", "parentCue": "make freezing silly, like a statue" } ],
+      "games": [],
+      "praise": "Great freezing, baker!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "review",
+      "title": "Guess the music game",
+      "goal": "Listen and switch between games: high and low, loud and soft, slow and fast.",
+      "skill": { "primary": "listening", "secondary": ["pitch", "expression"] },
+      "mathTarget": { "concept": "Classification (sorting by feature)", "parentLine": "Sorting each sound: high or low, loud or soft?" },
+      "parentPrompt": "Before each picture, ask: bear or bird? Loud or soft? Cheer every guess.",
+      "childAction": "Guess the game, then pat high, low, loud, soft, slow or fast.",
+      "bridge": "Every sound dresses up: bear, bird, big pat, tiny pat, turtle or bunny.",
+      "intro": [ { "caption": "Which game is it?", "parentCue": "let your child guess first; every guess counts" } ],
+      "games": [],
+      "praise": "Great listening ears!",
+      "celebrate": "Today you practiced: telling sounds apart and switching games."
+    },
+    {
+      "index": 8,
+      "spineType": "together",
+      "title": "Baby and me",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together into one song" },
+      "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Pat the beat on any key while your grown-up plays.",
+      "bridge": "Two bakers, one cake: you pat the beat, I play the tune.",
+      "intro": [ { "caption": "I play, you pat", "parentCue": "sit side by side at the piano" } ],
+      "games": [],
+      "praise": "What a team of bakers!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "A cake for teddy",
+      "goal": "Play the whole song from the first note to the last, then bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on, and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+      "childAction": "Pat the beat to the very end, then take a big bow.",
+      "bridge": "The song bakes the cake; the last note pops it in the oven.",
+      "intro": [ { "caption": "A song for teddy!", "parentCue": "sit teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

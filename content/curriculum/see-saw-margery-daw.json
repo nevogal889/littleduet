@@ -1,0 +1,190 @@
+{
+  "songId": "see-saw-margery-daw",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices steady beat, high and low, loud and soft, stop and go, and playing together, with an old up-and-down seesaw rhyme.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Rock like a seesaw",
+      "goal": "Feel the steady beat of the song by rocking back and forth together.",
+      "skill": { "primary": "beat", "secondary": ["together", "listening"] },
+      "mathTarget": { "concept": "Periodicity (back-and-forth pulse)", "parentLine": "A movement that comes back again and again, evenly" },
+      "parentPrompt": "Sit facing your child, hold hands and rock forward and back on every beat.",
+      "childAction": "Rock back and forth with your grown-up, like a seesaw.",
+      "bridge": "The song rocks like a seesaw: up, down, up, down, never in a hurry.",
+      "intro": [ { "caption": "Let's rock like a seesaw", "parentCue": "hold hands and rock forward and back" } ],
+      "games": [],
+      "praise": "You rocked together!",
+      "celebrate": "Today you practiced: feeling the steady beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Tap the seesaw beat",
+      "goal": "Tap one steady tap on each beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key once on each beat. Any key is right.",
+      "bridge": "Each beat is one bump of the seesaw; one tap for every bump.",
+      "intro": [ { "caption": "One bump, one tap", "parentCue": "tap your child's knee on each beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "See, saw: two taps",
+          "parentCue": "Say 'one, two' softly on 'see, saw'",
+          "bpm": 76,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping (pitch to place)", "parentLine": "Low sounds live on the left, high sounds on the right" },
+      "parentPrompt": "Crouch and growl for the bear; stretch up and flap for the bird.",
+      "childAction": "Bear sound: tap the left side. Bird sound: tap the right side.",
+      "bridge": "The seesaw dips low for the bear on the left, lifts high for the bird.",
+      "intro": [ { "caption": "Bear lives low, bird lives high", "parentCue": "point left for bear, right for bird" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Up and down, see and saw",
+          "parentCue": "Lift your child's arms up, then down",
+          "bpm": 66,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Big seesaw, little seesaw",
+      "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "The same tap, made bigger or smaller" },
+      "parentPrompt": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
+      "childAction": "Loud: big strong taps. Soft: tiny whisper taps.",
+      "bridge": "Loud taps are a big seesaw bump; soft taps are a feather landing.",
+      "intro": [ { "caption": "Big taps, tiny taps", "parentCue": "loud means strong arms, not banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Turtle and bunny ride",
+      "goal": "Follow the music as it goes slow like a turtle and fast like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "Same tune, same shape, only the speed changes" },
+      "parentPrompt": "Rock slowly with your child for turtle music, then quickly for bunny music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "Slow taps are turtle steps; fast taps are bunny hops across the keys.",
+      "intro": [ { "caption": "Turtle slow, bunny fast", "parentCue": "slow down if the taps get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle rides the seesaw",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 56,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny rides the seesaw",
+          "parentCue": "Same song, now quick and light",
+          "bpm": 104,
+          "notes": [ { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Seesaw, freeze!",
+      "goal": "Tap while the music plays and freeze when it stops.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "Freeze with a funny face when the music stops; cheer when it starts again.",
+      "childAction": "Tap while the music plays. Freeze like a statue when it stops.",
+      "bridge": "Music on, the seesaw rocks; music off, the seesaw holds still.",
+      "intro": [ { "caption": "Tap, tap... freeze!", "parentCue": "make freezing silly, like a statue" } ],
+      "games": [],
+      "praise": "Great freezing!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "rhythm",
+      "title": "Tap the seesaw words",
+      "goal": "Tap one tap for each sung word, saying the words together.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Sound-to-tap matching (word rhythm)", "parentLine": "Each word we sing gets one tap" },
+      "parentPrompt": "Say the words slowly with your child and tap their hand on every word.",
+      "childAction": "Say the words and tap one tap for each one.",
+      "bridge": "Every word is a little hop on the seesaw: See. Saw. Mar-ger-y Daw.",
+      "intro": [ { "caption": "Tap with the words", "parentCue": "say the words slowly, tap each one" } ],
+      "games": [],
+      "praise": "You tapped the words!",
+      "celebrate": "Today you practiced: one tap for each word."
+    },
+    {
+      "index": 8,
+      "spineType": "review",
+      "title": "Guess the music game",
+      "goal": "Listen and switch between games: high and low, loud and soft, fast and slow.",
+      "skill": { "primary": "listening", "secondary": ["pitch", "expression"] },
+      "mathTarget": { "concept": "Classification (sorting by feature)", "parentLine": "Sorting each sound: high or low, loud or soft?" },
+      "parentPrompt": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
+      "childAction": "Guess the game, then tap high, low, loud, soft, slow or fast.",
+      "bridge": "Every sound wears a costume: bear, bird, loud, soft, turtle or bunny.",
+      "intro": [ { "caption": "What game is it?", "parentCue": "let your child guess first; any guess is fine" } ],
+      "games": [],
+      "praise": "Great listening ears!",
+      "celebrate": "Today you practiced: telling sounds apart and switching games."
+    },
+    {
+      "index": 9,
+      "spineType": "together",
+      "title": "You and me, seesaw duet",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together to make one song" },
+      "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Tap the beat on any key while your grown-up plays the tune.",
+      "bridge": "A seesaw needs two friends: one plays the tune, one keeps the beat.",
+      "intro": [ { "caption": "I play, you tap", "parentCue": "sit side by side at the piano" } ],
+      "games": [],
+      "praise": "What a duet together!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "Seesaw concert for teddy",
+      "goal": "Play the whole song from the first note to the last, then bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+      "childAction": "Tap the beat to the very end, then take a big bow.",
+      "bridge": "The song is one seesaw ride: climb on, rock, rock, then hop off.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

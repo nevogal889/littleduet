@@ -1,0 +1,213 @@
+{
+  "songId": "greensleeves",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finding A by the black keys, a long-short lilt, how lines repeat and end, and left-hand low notes, using a dreamy old English tune.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "A is the home key",
+      "goal": "Find A by the three black keys, set the hand, and learn the opening climb.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmark (three black keys)", "parentLine": "Using the three black keys as a sign to find A" },
+      "parentPrompt": "Touch three black keys together; A is the white key between the second and third.",
+      "childAction": "Thumb on A, then play A, C, D, E with 1, 3, 4, 5.",
+      "bridge": "A sits between the last two of three black keys, like a door in a hedge.",
+      "intro": [ { "caption": "Find three black keys", "parentCue": "A hides between the second and third" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "The opening climb",
+          "parentCue": "Say one, three, four, five",
+          "bpm": 60,
+          "notes": [ { "p": "A4", "d": 1, "f": 1 }, { "p": "C5", "d": 2, "f": 3 }, { "p": "D5", "d": 1, "f": 4 }, { "p": "E5", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "You found home A!",
+      "celebrate": "Today you practiced: finding A by the three black keys."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Lean on the black key",
+      "goal": "Learn the next part, where A leans down to a black key and comes back.",
+      "skill": { "primary": "fingers", "secondary": ["space", "patterns"] },
+      "mathTarget": { "concept": "Neighbour pattern (down and back)", "parentLine": "Stepping to the next key down and straight back" },
+      "parentPrompt": "Show the black key just left of A; say 'lean and back' as your child plays.",
+      "childAction": "Play A, lean down to the black key, then back to A.",
+      "bridge": "A leans on its black-key neighbour, like resting on a garden gate.",
+      "intro": [ { "caption": "A leans on a black key", "parentCue": "show the black key just left of A" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Lean and back: A, black, A",
+          "parentCue": "Say two, one, two",
+          "bpm": 60,
+          "notes": [ { "p": "A4", "d": 1.5, "f": 2 }, { "p": "G#4", "d": 0.5, "f": 1 }, { "p": "A4", "d": 1, "f": 2 }, { "p": "B4", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "A lovely lean!",
+      "celebrate": "Today you practiced: stepping to a black key and back."
+    },
+    {
+      "index": 3,
+      "spineType": "put-together",
+      "title": "Twin lines, two endings",
+      "goal": "Play the whole tune slowly and hear twin lines that end in two different places.",
+      "skill": { "primary": "form", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Form: A B A B' refrain", "parentLine": "A line comes twice; the ending changes, then a new high part" },
+      "parentPrompt": "Shrug at the first ending; make a roof with your hands at the second.",
+      "childAction": "Play slowly; say 'not home' or 'home' at each ending.",
+      "bridge": "The first ending stops on E, still walking; the second rests on A.",
+      "intro": [ { "caption": "Twin lines, two endings", "parentCue": "ask your child: home, or not home yet?" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Not home yet: ends on E",
+          "parentCue": "Shrug together on the last note",
+          "bpm": 66,
+          "notes": [ { "p": "A4", "d": 1.5 }, { "p": "G#4", "d": 0.5 }, { "p": "A4", "d": 1 }, { "p": "B4", "d": 2 }, { "p": "G#4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        },
+        {
+          "kind": "listen",
+          "caption": "Home: ends on A",
+          "parentCue": "Make a roof with your hands",
+          "bpm": 66,
+          "notes": [ { "p": "G#4", "d": 1.5 }, { "p": "F#4", "d": 0.5 }, { "p": "G#4", "d": 1 }, { "p": "A4", "d": 3 } ]
+        }
+      ],
+      "praise": "You heard the way home!",
+      "celebrate": "Today you practiced: hearing twin lines with different endings."
+    },
+    {
+      "index": 4,
+      "spineType": "review",
+      "title": "Long step, little step",
+      "goal": "Practise the lilting rhythm slowly: one long note, then one very short note.",
+      "skill": { "primary": "counting", "secondary": ["beat", "fingers"] },
+      "mathTarget": { "concept": "Ratio 3:1 (long-short lilt)", "parentLine": "One note lasts three times as long as the next" },
+      "parentPrompt": "Say 'loooong-short' with the notes and sway on the long one before your child plays.",
+      "childAction": "Play E long, F short, then E, D: loooong-short.",
+      "bridge": "A long dancing step, then a tiny tiptoe, like a slow court dance.",
+      "intro": [ { "caption": "Loooong-short, loooong-short", "parentCue": "sway on the long note together" } ],
+      "games": [
+        {
+          "kind": "demo",
+          "caption": "Watch: loooong-short",
+          "parentCue": "Say loooong-short with the lights",
+          "bpm": 52,
+          "notes": [ { "p": "E5", "d": 1.5, "f": 4 }, { "p": "F5", "d": 0.5, "f": 5 }, { "p": "E5", "d": 1, "f": 4 }, { "p": "D5", "d": 2, "f": 3 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Your turn: loooong-short",
+          "parentCue": "Sway on the long note",
+          "bpm": 52,
+          "notes": [ { "p": "E5", "d": 1.5, "f": 4 }, { "p": "F5", "d": 0.5, "f": 5 }, { "p": "E5", "d": 1, "f": 4 }, { "p": "D5", "d": 2, "f": 3 } ]
+        }
+      ],
+      "praise": "What a graceful lilt!",
+      "celebrate": "Today you practiced: a long note and a short note together."
+    },
+    {
+      "index": 5,
+      "spineType": "left-hand",
+      "title": "Low A, high A",
+      "goal": "Play one low left-hand note at the start of each bar, starting on low A.",
+      "skill": { "primary": "space", "secondary": ["pitch", "beat"] },
+      "mathTarget": { "concept": "Octave equivalence (same name, lower)", "parentLine": "The same note A lives high and low" },
+      "parentPrompt": "Play high A, then help your child find low A on the left: 'Same name, lower house.'",
+      "childAction": "Left hand plays low A, G, F, E: walking down the stairs.",
+      "bridge": "Low A is the same A, living downstairs on the left side.",
+      "intro": [ { "caption": "Same A, lower house", "parentCue": "play high A, then low A" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "High A, low A",
+          "parentCue": "Point right, then left",
+          "bpm": 60,
+          "notes": [ { "p": "A4", "d": 2 }, { "p": "A3", "d": 2 }, { "p": "A4", "d": 2 }, { "p": "A3", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Left hand walks down",
+          "parentCue": "Count one, two, three for each note",
+          "bpm": 60,
+          "notes": [ { "p": "A3", "d": 3 }, { "p": "G3", "d": 3 }, { "p": "F3", "d": 3 }, { "p": "E3", "d": 3 } ]
+        }
+      ],
+      "praise": "Low notes, well found!",
+      "celebrate": "Today you practiced: finding the same note in a lower place."
+    },
+    {
+      "index": 6,
+      "spineType": "hands-together",
+      "title": "Left on one, right sings",
+      "goal": "Play the tune with a low left-hand note on each 'one', very slowly.",
+      "skill": { "primary": "fingers", "secondary": ["beat", "counting"] },
+      "mathTarget": { "concept": "Coordination (left hand on one)", "parentLine": "Left hand plays on 'one'; right hand keeps the tune going" },
+      "parentPrompt": "Count 'one, two, three' very slowly and tap your child's left hand on each 'one'.",
+      "childAction": "Left hand on 'one', right hand sings the tune.",
+      "bridge": "The left hand is the lute player's thumb; the right hand sings the song.",
+      "intro": [ { "caption": "Left on one, right sings", "parentCue": "tap their left hand on every one" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 59,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "G3", "d": 2, "f": 1 }, { "p": "G3", "d": 2, "f": 1 } ]
+        }
+      ],
+      "praise": "Both hands together!",
+      "celebrate": "Today you practiced: two hands with different jobs, slowly."
+    },
+    {
+      "index": 7,
+      "spineType": "hands-together",
+      "title": "A bit faster, still smooth",
+      "goal": "Play both hands together closer to full speed, keeping the beat steady.",
+      "skill": { "primary": "beat", "secondary": ["fingers"] },
+      "mathTarget": { "concept": "Tempo scaling (same pattern, faster)", "parentLine": "The same notes and order, only a little quicker" },
+      "parentPrompt": "If the hands tangle, smile and say 'slow again'; speed comes last.",
+      "childAction": "Play both hands a little faster; slow down if it tangles.",
+      "bridge": "The same slow dance, now stepping a little more briskly.",
+      "intro": [ { "caption": "Same dance, a bit quicker", "parentCue": "go back to slow if it tangles" } ],
+      "games": [],
+      "praise": "Steady and together!",
+      "celebrate": "Today you practiced: keeping the beat steady at a faster speed."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Play with the old tune",
+      "goal": "Play the whole tune along with the music and keep going to the end.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Synchrony with a moving pulse", "parentLine": "Keeping pace with the music, all the way to the end" },
+      "parentPrompt": "Hum the tune beside your child and sway on each 'one'; if they slip, keep going.",
+      "childAction": "Play along with the music; keep going after a slip.",
+      "bridge": "You and the music dance the same slow steps, side by side.",
+      "intro": [ { "caption": "Dance with the music", "parentCue": "hum beside your child and keep going" } ],
+      "games": [],
+      "praise": "You kept going together!",
+      "celebrate": "Today you practiced: keeping pace with the music to the end."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "A dreamy song for teddy",
+      "goal": "Play the whole tune for teddy, slowly and gently, so it sounds dreamy.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Character (slow, dreamy touch)", "parentLine": "Choosing a slow, gentle way to play" },
+      "parentPrompt": "Sit teddy as the audience; take a slow breath together before you start, then bow.",
+      "childAction": "Play gently and slowly for teddy, then take a bow.",
+      "bridge": "Soft, slow fingers paint the green sleeves floating in the breeze.",
+      "intro": [ { "caption": "A dreamy song for teddy", "parentCue": "sit teddy in front and breathe slowly together" } ],
+      "games": [],
+      "praise": "Bravo, so gentle!",
+      "celebrate": "Today you practiced: playing a whole tune slowly and gently."
+    }
+  ]
+}

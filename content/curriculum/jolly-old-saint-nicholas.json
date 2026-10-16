@@ -1,0 +1,207 @@
+{
+  "songId": "jolly-old-saint-nicholas",
+  "ageGroup": "4-5",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices counting repeated notes, steps and leaps, question-and-answer lines and soft playing, using a song about whispering a Christmas wish.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Santa's five-key chimney",
+      "goal": "Hear the song, find C by the two black keys and place five fingers.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Spatial landmark (two black keys)", "parentLine": "Using the two black keys as a sign to find C" },
+      "parentPrompt": "Point to two black keys, then help your child rest the thumb on C, fingers beside it.",
+      "childAction": "Thumb on C, then one finger on each key up to G.",
+      "bridge": "Two black keys are the chimney top; C is the door just left.",
+      "intro": [ { "caption": "Find the two black keys", "parentCue": "point to them; C is just to the left" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "One finger, one key",
+          "parentCue": "Say the finger number for each key",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Your hand is ready!",
+      "celebrate": "Today you practiced: finding C and placing five fingers."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Four, then three",
+      "goal": "Learn the first line and count the notes: four Es, then three Ds.",
+      "skill": { "primary": "counting", "secondary": ["fingers", "patterns"] },
+      "mathTarget": { "concept": "Cardinality (how many in a group)", "parentLine": "Counting a group of notes: four of these, three of those" },
+      "parentPrompt": "Hold up four fingers for the Es and three for the Ds, counting aloud.",
+      "childAction": "Play E four times, then D three times. Count as you go.",
+      "bridge": "Jol-ly old Saint: four knocks on E; Ni-cho-las: three on D.",
+      "intro": [ { "caption": "Count the knocks on Santa's door", "parentCue": "hold up fingers as you count together" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Jolly old Saint Nicholas",
+          "parentCue": "Count four, then three",
+          "bpm": 60,
+          "notes": [ { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "E4", "d": 1, "f": 3 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 2, "f": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Lean your ear this way",
+          "parentCue": "Count four Cs, then hold the E",
+          "bpm": 60,
+          "notes": [ { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "C4", "d": 1, "f": 1 }, { "p": "E4", "d": 4, "f": 3 } ]
+        }
+      ],
+      "praise": "Four and three, well counted!",
+      "celebrate": "Today you practiced: counting groups of four and three."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "A little step, a big jump",
+      "goal": "Learn the next line and feel the jump from D up to G.",
+      "skill": { "primary": "pitch", "secondary": ["space", "counting"] },
+      "mathTarget": { "concept": "Interval distance (step versus leap)", "parentLine": "Some notes are neighbours; some jump over keys" },
+      "parentPrompt": "Count the keys your child jumps over together. You play the high A part yourself.",
+      "childAction": "Play four Ds, then jump finger five up to G.",
+      "bridge": "D to E is a tiny step; D to G is a leap over two keys.",
+      "intro": [ { "caption": "Four Ds, then a big jump", "parentCue": "you play the high A part that follows" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Don't you tell a single soul",
+          "parentCue": "Say 'jump!' as finger five lands on G",
+          "bpm": 60,
+          "notes": [ { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "What a jump!",
+      "celebrate": "Today you practiced: hearing small steps and big jumps."
+    },
+    {
+      "index": 4,
+      "spineType": "phrase",
+      "title": "Same tune, new words",
+      "goal": "Learn the second half and find that its tune repeats the first half.",
+      "skill": { "primary": "patterns", "secondary": ["listening", "fingers"] },
+      "mathTarget": { "concept": "Repetition with variation (A, A')", "parentLine": "The same tune comes back with new words and a new ending" },
+      "parentPrompt": "Sing the new words over the old tune. You play the high A at the end.",
+      "childAction": "Play the tune again with new words, then walk home to C.",
+      "bridge": "Christmas Eve uses the same keys as Saint Nicholas; only the words change.",
+      "intro": [ { "caption": "Does this tune sound familiar?", "parentCue": "sing the new words and let your child guess" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Tell me if you can",
+          "parentCue": "Play the A first, then your child answers",
+          "bpm": 60,
+          "notes": [ { "p": "G4", "d": 1, "f": 5 }, { "p": "F4", "d": 1, "f": 4 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "C4", "d": 4, "f": 1 } ]
+        }
+      ],
+      "praise": "You heard it come back!",
+      "celebrate": "Today you practiced: noticing a tune that repeats with new words."
+    },
+    {
+      "index": 5,
+      "spineType": "put-together",
+      "title": "A question and an answer",
+      "goal": "Play the whole song slowly and hear the first half ask, the second half answer.",
+      "skill": { "primary": "form", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Question and answer phrases", "parentLine": "The first half ends up in the air; the second lands home" },
+      "parentPrompt": "At the middle, shrug and ask 'Is it finished?' At the end, nod: 'Now it is!'",
+      "childAction": "Play the song slowly; shrug at the middle, nod at the end.",
+      "bridge": "The first half stops on D, a question; the last note C is home.",
+      "intro": [ { "caption": "Is the song finished yet?", "parentCue": "ask at the middle and at the end" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 77,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "You heard the answer!",
+      "celebrate": "Today you practiced: hearing a song ask and answer."
+    },
+    {
+      "index": 6,
+      "spineType": "review",
+      "title": "Quiet hand, jumping finger",
+      "goal": "Practise the jump from D to G slowly, keeping the whole hand still.",
+      "skill": { "primary": "fingers", "secondary": ["space"] },
+      "mathTarget": { "concept": "Hand frame (fixed position)", "parentLine": "The hand stays still; only the fingers take turns" },
+      "parentPrompt": "Rest your hand lightly on the back of your child's hand so it stays still.",
+      "childAction": "Keep your hand still; finger two, then finger five.",
+      "bridge": "The hand is a sleeping cat; only its toes wake up to play.",
+      "intro": [ { "caption": "A sleepy hand, busy fingers", "parentCue": "rest your hand lightly on top of theirs" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Slowly: D, D, G, G",
+          "parentCue": "Say two, two, five, five",
+          "bpm": 56,
+          "notes": [ { "p": "D4", "d": 1, "f": 2 }, { "p": "D4", "d": 1, "f": 2 }, { "p": "G4", "d": 1, "f": 5 }, { "p": "G4", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Such a calm hand!",
+      "celebrate": "Today you practiced: keeping the hand still while fingers move."
+    },
+    {
+      "index": 7,
+      "spineType": "phrase",
+      "title": "Whisper it to Santa",
+      "goal": "Play the whole song slowly, softly and evenly, like telling a secret.",
+      "skill": { "primary": "expression", "secondary": ["beat", "fingers"] },
+      "mathTarget": { "concept": "Dynamics (soft, even touch)", "parentLine": "Playing softly and evenly, like a quiet whisper" },
+      "parentPrompt": "Whisper 'shh' before you start and pat a slow beat on your child's back.",
+      "childAction": "Play slowly and softly, like whispering a secret.",
+      "bridge": "Soft fingers are a whisper in Santa's ear; even notes keep the secret.",
+      "intro": [ { "caption": "Shh, it's a secret", "parentCue": "whisper first, then pat a slow beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap and count to four",
+          "parentCue": "Count softly as your child taps",
+          "bpm": 72,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "What a soft secret!",
+      "celebrate": "Today you practiced: playing slowly, softly and evenly."
+    },
+    {
+      "index": 8,
+      "spineType": "play-along",
+      "title": "Sleigh ride play-along",
+      "goal": "Play the whole song along with the music and keep going to the end.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Synchrony with a moving pulse", "parentLine": "Keeping pace with the music, all the way to the end" },
+      "parentPrompt": "Sing the words softly beside your child; if they miss a note, keep singing.",
+      "childAction": "Play along with the music; keep going after a slip.",
+      "bridge": "The music is the sleigh; your fingers ride along, never jumping off.",
+      "intro": [ { "caption": "Hop on the sleigh!", "parentCue": "sing softly beside your child and keep going" } ],
+      "games": [],
+      "praise": "You rode to the end!",
+      "celebrate": "Today you practiced: keeping pace with the music to the end."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "A Christmas wish concert",
+      "goal": "Play the whole song for teddy and whisper a wish at the very end.",
+      "skill": { "primary": "together", "secondary": ["expression", "form"] },
+      "mathTarget": { "concept": "Sequencing and closure", "parentLine": "A song starts, goes on, and lands home at the end" },
+      "parentPrompt": "Sit teddy as the audience; play together, whisper a wish, then clap and bow.",
+      "childAction": "Play for teddy, whisper a wish, then take a bow.",
+      "bridge": "The last long C is the chimney: the wish goes home.",
+      "intro": [ { "caption": "A song for teddy!", "parentCue": "sit teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, jolly players!",
+      "celebrate": "Today you practiced: playing a whole song together, start to end."
+    }
+  ]
+}

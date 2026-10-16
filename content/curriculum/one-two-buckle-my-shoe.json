@@ -1,0 +1,186 @@
+{
+  "songId": "one-two-buckle-my-shoe",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices counting to three, finding E and D, echoing short tunes and playing together, with a classic counting rhyme.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Sway and knock-knock",
+      "goal": "Hear the whole rhyme, sway to the beat and knock at 'door'.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (steady pulse)", "parentLine": "Feeling a beat that comes again and again, evenly spaced" },
+      "parentPrompt": "Sway side by side; knock gently on your knees at 'knock at the door'.",
+      "childAction": "Sway with the song and knock on your knees at 'door'.",
+      "bridge": "Every beat is a footstep, walking from one all the way to ten.",
+      "intro": [ { "caption": "Let's sway and count along", "parentCue": "knock gently on your knees at 'door'." } ],
+      "games": [],
+      "praise": "You swayed together!",
+      "celebrate": "Today you practiced: feeling the steady beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "One, two, tap, tap",
+      "goal": "Tap one steady tap on each beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand on your child's hand; tap together, then slowly let go.",
+      "childAction": "Tap any key once for every beat you hear.",
+      "bridge": "Each beat is one stepping stone; one tap lands on each stone.",
+      "intro": [ { "caption": "One beat, one tap", "parentCue": "tap your child's shoulder on each beat." } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "One, two, buckle my shoe",
+          "parentCue": "Tap together, slow and even",
+          "bpm": 88,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "C4", "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "E, the buckle key",
+      "goal": "Find E by touching the two black keys, then sliding right.",
+      "skill": { "primary": "space", "secondary": ["fingers", "counting"] },
+      "mathTarget": { "concept": "Landmark navigation (black-key pair)", "parentLine": "Two black keys help us find the same key every time" },
+      "parentPrompt": "Guide your child's finger to touch two black keys, then slide right to E.",
+      "childAction": "Find the two black keys, slide right, and buckle on E!",
+      "bridge": "E sits just right of the two black keys, like a shoe by the door.",
+      "intro": [ { "caption": "Let's find the buckle key", "parentCue": "touch the two black keys together first." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Buckle my shoe: E, E, E",
+          "parentCue": "Count the three E's together",
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found E!",
+      "celebrate": "Today you practiced: finding E by the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "echo",
+      "title": "Three knocks at the door",
+      "goal": "Echo short patterns and hear how many same notes there are.",
+      "skill": { "primary": "counting", "secondary": ["listening", "patterns"] },
+      "mathTarget": { "concept": "Subitizing (three at a glance)", "parentLine": "Knowing two or three right away, without counting one by one" },
+      "parentPrompt": "Knock three times on your child's knee, then point: your turn to knock.",
+      "childAction": "Listen to the knocks, then play the same number back.",
+      "bridge": "Three same notes are three knocks on one door: knock, knock, knock.",
+      "intro": [ { "caption": "Knock, knock, who's there?", "parentCue": "knock three times on your child's knee." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Knock at the door: F, F, F",
+          "parentCue": "Hold up three fingers as it plays",
+          "notes": [ { "p": "F4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "F4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great knocking, great counting!",
+      "celebrate": "Today you practiced: hearing and playing two or three."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Up the stairs, one more step",
+      "goal": "Echo a little tune, then the same tune starting one step higher.",
+      "skill": { "primary": "patterns", "secondary": ["pitch", "listening"] },
+      "mathTarget": { "concept": "Sequence (pattern moved up)", "parentLine": "The same little tune starts one step higher each time" },
+      "parentPrompt": "Walk your fingers up one stair on your child's arm for each new line.",
+      "childAction": "Echo the little tune, then echo it one key higher.",
+      "bridge": "Each line climbs one stair: C, D, E, then D, E, F.",
+      "intro": [ { "caption": "The tune climbs the stairs", "parentCue": "walk your fingers up your child's arm." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "First stair: C, D, E",
+          "parentCue": "Point to each key as it lights",
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "One step up: D, E, F",
+          "parentCue": "Same tune, one key higher",
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 2 } ]
+        }
+      ],
+      "praise": "Up the stairs, well done!",
+      "celebrate": "Today you practiced: hearing a tune repeat one step higher."
+    },
+    {
+      "index": 6,
+      "spineType": "special-note",
+      "title": "Wait for the buckle",
+      "goal": "Listen to the song and play E at the right moments.",
+      "skill": { "primary": "together", "secondary": ["listening", "counting"] },
+      "mathTarget": { "concept": "Turn-taking (wait, then play)", "parentLine": "Waiting for your part is part of the music" },
+      "parentPrompt": "Play the blue keys; nod to your child just before each E.",
+      "childAction": "Wait and listen, then play E when it's your turn.",
+      "bridge": "The tune walks along; E is the buckle you click shut.",
+      "intro": [ { "caption": "Listen for the buckle key", "parentCue": "nod to your child just before each E." } ],
+      "games": [],
+      "praise": "Great waiting, great playing!",
+      "celebrate": "Today you practiced: waiting for your turn, then playing."
+    },
+    {
+      "index": 7,
+      "spineType": "special-note",
+      "title": "E and D, next-door keys",
+      "goal": "Play two special notes, E and D, when they light up in the song.",
+      "skill": { "primary": "listening", "secondary": ["space", "together"] },
+      "mathTarget": { "concept": "Discrimination (two choices)", "parentLine": "Hearing and seeing which of two notes comes next" },
+      "parentPrompt": "Point to E or D just before it lights, then let your child play it.",
+      "childAction": "Play E or D when its key lights up in the song.",
+      "bridge": "E and D are neighbours: D sits right between the two black keys.",
+      "intro": [ { "caption": "Now we have two keys", "parentCue": "point to E, then D, before the song starts." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Next-door keys: E, then D",
+          "parentCue": "Point to the key before it lights",
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "D4", "d": 2 }, { "p": "E4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "Two keys, great listening!",
+      "celebrate": "Today you practiced: telling E and D apart in a song."
+    },
+    {
+      "index": 8,
+      "spineType": "together",
+      "title": "Buckle up, play together",
+      "goal": "Play the whole song together, the grown-up on the tune, the child on E and D.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Synchrony (shared pulse)", "parentLine": "Two players keep the same beat, so the song stays together" },
+      "parentPrompt": "Keep playing even if a note is missed; nod the beat with your head.",
+      "childAction": "Play your E and D while your grown-up plays the rest.",
+      "bridge": "You and your grown-up walk side by side, step for step.",
+      "intro": [ { "caption": "Let's play it together", "parentCue": "keep going, even if a note is missed." } ],
+      "games": [],
+      "praise": "You stayed together!",
+      "celebrate": "Today you practiced: keeping one beat with two players."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Shoe concert for teddy",
+      "goal": "Play the whole song for teddy, from 'one, two' to 'big fat hen', then bow.",
+      "skill": { "primary": "form", "secondary": ["together", "patterns"] },
+      "mathTarget": { "concept": "Form (climb up, come home)", "parentLine": "The tune climbs up for three lines, then walks back home" },
+      "parentPrompt": "Sit teddy as the audience; play the whole rhyme, then clap and bow together.",
+      "childAction": "Play your keys to the very end, then take a big bow.",
+      "bridge": "Up the stairs from one to six, then back down home to ten.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience." } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

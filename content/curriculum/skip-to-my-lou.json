@@ -1,0 +1,178 @@
+{
+  "songId": "skip-to-my-lou",
+  "ageGroup": "3-4",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finding D between the two black keys, echoing skips and steps, hearing repeats, and taking turns, with an old American circle game.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Skip to my Lou",
+      "goal": "Hear the whole song, sway, and clap each time 'Lou, lou' comes back.",
+      "skill": { "primary": "listening", "secondary": ["patterns", "beat"] },
+      "mathTarget": { "concept": "Repetition (a line returns)", "parentLine": "Noticing the same line coming back again and again" },
+      "parentPrompt": "Sway together and clap twice with your child on every 'Lou, lou'.",
+      "childAction": "Sway, and clap twice for every 'Lou, lou'.",
+      "bridge": "The song is a skipping circle: round it goes and back again.",
+      "intro": [ { "caption": "Let's sway to Skip to My Lou", "parentCue": "clap twice with your child on 'Lou, lou'." } ],
+      "games": [],
+      "praise": "You heard it come back!",
+      "celebrate": "Today you practiced: hearing a line come back again."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Skipping feet, steady beat",
+      "goal": "Tap one steady tap on each beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more, no less" },
+      "parentPrompt": "Rest your hand on your child's hand; tap together, then slowly let go.",
+      "childAction": "Tap any key once for every beat you hear.",
+      "bridge": "Each beat is one step around the circle; one tap for each.",
+      "intro": [ { "caption": "One beat, one tap", "parentCue": "tap your child's shoulder on each beat." } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Lou, lou, skip to my Lou",
+          "parentCue": "Tap together, slow and even",
+          "bpm": 88,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "special-note",
+      "title": "D, in the middle",
+      "goal": "Find D, the white key between the two black keys.",
+      "skill": { "primary": "space", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Landmark navigation (black-key pair)", "parentLine": "Two black keys help us find the same key every time" },
+      "parentPrompt": "Guide your child's finger to touch the two black keys, then the key between.",
+      "childAction": "Find the two black keys and play D right between them.",
+      "bridge": "D sits between the two black keys, like the player in the middle of the circle.",
+      "intro": [ { "caption": "Let's find the middle key", "parentCue": "touch the two black keys together first." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "D, D, D in the middle",
+          "parentCue": "Count the three D's together",
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "You found D!",
+      "celebrate": "Today you practiced: finding D between the two black keys."
+    },
+    {
+      "index": 4,
+      "spineType": "echo",
+      "title": "Walk, walk, skip a key",
+      "goal": "Copy short patterns: two walking notes, and three notes that skip over keys.",
+      "skill": { "primary": "listening", "secondary": ["space", "patterns"] },
+      "mathTarget": { "concept": "Interval pattern (skip a key)", "parentLine": "Some notes step to the next key, some hop over one" },
+      "parentPrompt": "Play the pattern, then point: your turn. Say 'skip' as you hop a key.",
+      "childAction": "Listen, then play it back: walk, walk, or skip, skip!",
+      "bridge": "Skip-to-my hops over keys: C, skip a key, E, skip a key, G.",
+      "intro": [ { "caption": "I play, then you echo", "parentCue": "say 'skip' each time a key is jumped over." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Lou, lou: E, then C",
+          "parentCue": "Play it first, then point: your turn",
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "C4", "d": 2 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Skip up: C, E, G",
+          "parentCue": "Say 'skip, skip' as it plays",
+          "notes": [ { "p": "C4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great echo, great skips!",
+      "celebrate": "Today you practiced: hearing steps and skips, then echoing."
+    },
+    {
+      "index": 5,
+      "spineType": "echo",
+      "title": "Same tune, one step down",
+      "goal": "Hear the 'Lou, lou' tune move one step lower, then echo it.",
+      "skill": { "primary": "patterns", "secondary": ["pitch", "listening"] },
+      "mathTarget": { "concept": "Sequence (same shape, lower)", "parentLine": "The same little tune comes back one step lower" },
+      "parentPrompt": "Lower your hand a little when the tune steps down; let your child copy.",
+      "childAction": "Listen for the lower tune, then echo D, F, F.",
+      "bridge": "The second line is the first line taking one step down the stairs.",
+      "intro": [ { "caption": "The tune takes a step down", "parentCue": "lower your hand when the tune goes down." } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Same tune, one step down",
+          "parentCue": "Lower your hand a little for the second",
+          "bpm": 88,
+          "notes": [ { "p": "E4", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "G4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "B3", "d": 1 }, { "p": "B3", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "F4", "d": 1 }, { "p": "F4", "d": 1 } ]
+        },
+        {
+          "kind": "your_turn",
+          "caption": "Skip up again: D, F, F",
+          "parentCue": "Point to D first, then F",
+          "notes": [ { "p": "D4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "F4", "d": 2 } ]
+        }
+      ],
+      "praise": "You heard it step down!",
+      "celebrate": "Today you practiced: hearing the same tune a step lower."
+    },
+    {
+      "index": 6,
+      "spineType": "special-note",
+      "title": "Your turn in the middle",
+      "goal": "Listen to the song and play D at the right moments.",
+      "skill": { "primary": "together", "secondary": ["listening", "counting"] },
+      "mathTarget": { "concept": "Turn-taking (wait, then play)", "parentLine": "Waiting for your part is part of the music" },
+      "parentPrompt": "Play the blue keys; nod to your child just before each D.",
+      "childAction": "Wait and listen, then play D when it's your turn.",
+      "bridge": "The circle skips along; D is your turn to step into the middle.",
+      "intro": [ { "caption": "Listen for your middle key", "parentCue": "nod to your child just before each D." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "My darling: D, D, D",
+          "parentCue": "Hold up three fingers as it plays",
+          "notes": [ { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "D4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great waiting, great playing!",
+      "celebrate": "Today you practiced: waiting for your turn, then playing."
+    },
+    {
+      "index": 7,
+      "spineType": "together",
+      "title": "Partners at the piano",
+      "goal": "Play the whole song together, the grown-up on the tune, the child on D.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Synchrony (shared pulse)", "parentLine": "Two players keep the same beat, so the song stays together" },
+      "parentPrompt": "Keep playing even if a note is missed; nod the beat with your head.",
+      "childAction": "Play your D's while your grown-up plays the rest.",
+      "bridge": "Like partners in the circle, you and your grown-up skip side by side.",
+      "intro": [ { "caption": "Let's play it together", "parentCue": "keep going, even if a note is missed." } ],
+      "games": [],
+      "praise": "You stayed together!",
+      "celebrate": "Today you practiced: keeping one beat with two players."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "Skip concert for teddy",
+      "goal": "Play the whole song for teddy from start to end, then swap seats and bow.",
+      "skill": { "primary": "form", "secondary": ["together", "patterns"] },
+      "mathTarget": { "concept": "Form (repeat, change, return)", "parentLine": "The first line comes back again and again; one line changes" },
+      "parentPrompt": "Sit teddy as the audience; play the whole song, then swap seats and bow.",
+      "childAction": "Play your D's to the very end, then take a big bow.",
+      "bridge": "Same line, same line, one step down, same line, then home to C.",
+      "intro": [ { "caption": "Concert time for teddy!", "parentCue": "put teddy in front as the audience." } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

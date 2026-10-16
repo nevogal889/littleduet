@@ -1,0 +1,175 @@
+{
+  "songId": "happy-birthday",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices a swaying steady beat, high and low, loud and soft, and playing together, using the song everyone sings to make someone feel special.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Sway the birthday song",
+      "goal": "Hear the whole birthday song and sway to its gentle beat together.",
+      "skill": { "primary": "beat", "secondary": ["listening", "together"] },
+      "mathTarget": { "concept": "Periodicity (triple pulse)", "parentLine": "A swaying beat that comes back again and again" },
+      "parentPrompt": "Hold hands and sway side to side, a big step on each first beat.",
+      "childAction": "Sway and clap with the birthday song.",
+      "bridge": "The beat sways like a balloon on a string: swing, and swing.",
+      "intro": [ { "caption": "Let's sway like balloons", "parentCue": "hold hands and sway side to side" } ],
+      "games": [],
+      "praise": "You swayed together!",
+      "celebrate": "Today you practiced: feeling the steady beat, together."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Birthday taps",
+      "goal": "Tap one steady tap on each beat while the grown-up plays the tune.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each beat, no more and no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key once for every beat. Any key is right.",
+      "bridge": "Each beat is a candle on the cake; one tap lights each one.",
+      "intro": [ { "caption": "One beat, one tap", "parentCue": "tap your child's shoulder on each beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap for teddy's birthday",
+          "parentCue": "Sing the words softly while you tap",
+          "bpm": 76,
+          "notes": [ { "p": "G3", "d": 1 }, { "p": "A3", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "B3", "d": 2 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each beat."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Spatial mapping (pitch to place)", "parentLine": "Low sounds live on the left, high sounds on the right" },
+      "parentPrompt": "Growl and crouch for the bear; flap your arms and reach up for the bird.",
+      "childAction": "Bear sound: tap the left side. Bird sound: tap the right.",
+      "bridge": "Happy birthday, dear friend: the tune jumps up high like a bird.",
+      "intro": [ { "caption": "The bear lives low, the bird flies high", "parentCue": "point left for the bear, right for the bird" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Hear the big jump up",
+          "parentCue": "Lift your child's arms on the high note",
+          "bpm": 66,
+          "notes": [ { "p": "G3", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "G4", "d": 2 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Party loud, secret soft",
+      "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "The same tap can be big or small" },
+      "parentPrompt": "Use strong arms for loud taps; whisper and tiptoe your fingers for soft.",
+      "childAction": "Loud: big party taps. Soft: tiny secret taps.",
+      "bridge": "Loud taps are a party cheer; soft taps keep a birthday surprise.",
+      "intro": [ { "caption": "A party cheer, a secret surprise", "parentCue": "loud means strong arms, never banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Turtle and bunny party",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "The same tune, only the speed changes" },
+      "parentPrompt": "Walk your fingers up your child's back, slowly then quickly, with the music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "Slow taps are turtle steps; quick taps are bunny hops to the party.",
+      "intro": [ { "caption": "Turtle time, then bunny time", "parentCue": "slow down if the taps get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle sings happy birthday",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 56,
+          "notes": [ { "p": "G3", "d": 1 }, { "p": "A3", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "B3", "d": 2 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny sings happy birthday",
+          "parentCue": "Same tune, now quick and light",
+          "bpm": 104,
+          "notes": [ { "p": "G3", "d": 1 }, { "p": "A3", "d": 1 }, { "p": "G3", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "B3", "d": 2 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Musical statues party",
+      "goal": "Tap while the music plays and hold still when it stops.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "Freeze like a party statue when the music stops; cheer when it starts again.",
+      "childAction": "Tap while the music plays. Freeze when it stops.",
+      "bridge": "Music on, the party dances; music off, everyone is a statue.",
+      "intro": [ { "caption": "Tap, tap... freeze!", "parentCue": "make freezing silly, like a statue" } ],
+      "games": [],
+      "praise": "Great freezing!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "review",
+      "title": "Guess the music game",
+      "goal": "Listen and switch between games: high and low, loud and soft, slow and fast.",
+      "skill": { "primary": "listening", "secondary": ["pitch", "expression"] },
+      "mathTarget": { "concept": "Classification (sorting by feature)", "parentLine": "Sorting each sound: high or low, loud or soft?" },
+      "parentPrompt": "Before each picture, ask: bear or bird? Loud or soft? Cheer every guess.",
+      "childAction": "Guess the game, then tap high, low, loud, soft, slow or fast.",
+      "bridge": "Every sound dresses up for the party: bear, bird, turtle or bunny.",
+      "intro": [ { "caption": "Which game is it?", "parentCue": "let your child guess first; every guess counts" } ],
+      "games": [],
+      "praise": "Great listening ears!",
+      "celebrate": "Today you practiced: telling sounds apart and switching games."
+    },
+    {
+      "index": 8,
+      "spineType": "together",
+      "title": "Sing it for each other",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together into one song" },
+      "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Tap the beat on any key while your grown-up plays.",
+      "bridge": "The tune is the cake; your beat is the candles on top.",
+      "intro": [ { "caption": "I play, you tap", "parentCue": "sit side by side at the piano" } ],
+      "games": [],
+      "praise": "What a duet together!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Happy birthday, teddy!",
+      "goal": "Play the whole song from the first note to the last, then bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on, and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the birthday guest; play the tune, then cheer and bow together.",
+      "childAction": "Tap the beat to the very end, then take a big bow.",
+      "bridge": "The last 'to you' is the end: pretend to blow the candles.",
+      "intro": [ { "caption": "A song for teddy!", "parentCue": "sit teddy in front as the birthday guest" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

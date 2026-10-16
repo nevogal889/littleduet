@@ -1,0 +1,215 @@
+{
+  "songId": "yankee-doodle",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices spotting repeats and mirror shapes, running and walking rhythms, verse and chorus on the keyboard map, and left-hand notes, using a silly marching song.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "Same start, four times",
+      "goal": "Set the hand on C and learn the first half, where every line starts the same.",
+      "skill": { "primary": "patterns", "secondary": ["fingers", "listening"] },
+      "mathTarget": { "concept": "Pattern repetition (same start)", "parentLine": "Every line of the verse begins with the same four notes" },
+      "parentPrompt": "Clap each time a line starts with 'C, C, D, E'. You play the low G.",
+      "childAction": "Play C, C, D, E at the start of every line.",
+      "bridge": "C, C, D, E is the pony's trot: every line sets off the same way.",
+      "intro": [ { "caption": "Every line starts the same", "parentCue": "clap each time C, C, D, E comes" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Yankee Doodle went to town",
+          "parentCue": "You play the low G right after",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 0.5, "f": 1 }, { "p": "C4", "d": 0.5, "f": 1 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "C4", "d": 0.5, "f": 1 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "D4", "d": 1, "f": 2 } ]
+        }
+      ],
+      "praise": "Same start, well spotted!",
+      "celebrate": "Today you practiced: spotting lines that start the same."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Up to the feather and back",
+      "goal": "Learn the 'feather in his cap' line, which climbs up and comes straight back down.",
+      "skill": { "primary": "pitch", "secondary": ["patterns", "fingers"] },
+      "mathTarget": { "concept": "Mirror symmetry (up and back)", "parentLine": "The notes climb up, then walk back down the same way" },
+      "parentPrompt": "Walk your fingers up your child's arm to the shoulder, then back down to the hand.",
+      "childAction": "Play C, D, E, F up, then F, E, D, C back.",
+      "bridge": "Climb up to the feather on F, then step back down the same stairs.",
+      "intro": [ { "caption": "Up to the feather, back down", "parentCue": "walk your fingers up and down their arm" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Stuck a feather in his cap",
+          "parentCue": "Say one, one, two, three, four, three, two, one",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 0.5, "f": 1 }, { "p": "C4", "d": 0.5, "f": 1 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "F4", "d": 0.5, "f": 4 }, { "p": "E4", "d": 0.5, "f": 3 }, { "p": "D4", "d": 0.5, "f": 2 }, { "p": "C4", "d": 1, "f": 1 } ]
+        }
+      ],
+      "praise": "Up and back, perfect mirror!",
+      "celebrate": "Today you practiced: a tune that goes up and mirrors back down."
+    },
+    {
+      "index": 3,
+      "spineType": "phrase",
+      "title": "The chorus lives higher",
+      "goal": "Move the hand up to G and learn the chorus, which lives higher on the keys.",
+      "skill": { "primary": "space", "secondary": ["fingers", "pitch"] },
+      "mathTarget": { "concept": "Register shift (verse low, chorus high)", "parentLine": "The chorus moves to the right, where the notes are higher" },
+      "parentPrompt": "Help your child slide the thumb from C up to G, five keys to the right.",
+      "childAction": "Thumb on G, then play the chorus up high.",
+      "bridge": "The verse trots on the low road; the chorus rides up the hill.",
+      "intro": [ { "caption": "Slide up to G", "parentCue": "help the thumb move five keys right" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Yankee Doodle, keep it up",
+          "parentCue": "Say two, three, two, one, two, three, four",
+          "bpm": 66,
+          "notes": [ { "p": "A4", "d": 0.5, "f": 2 }, { "p": "B4", "d": 0.5, "f": 3 }, { "p": "A4", "d": 0.5, "f": 2 }, { "p": "G4", "d": 0.5, "f": 1 }, { "p": "A4", "d": 0.5, "f": 2 }, { "p": "B4", "d": 0.5, "f": 3 }, { "p": "C5", "d": 1, "f": 4 } ]
+        }
+      ],
+      "praise": "Up the hill you rode!",
+      "celebrate": "Today you practiced: moving the hand higher for the chorus."
+    },
+    {
+      "index": 4,
+      "spineType": "put-together",
+      "title": "Low verse, high chorus",
+      "goal": "Play the whole song slowly and hear the low verse, then the high chorus.",
+      "skill": { "primary": "form", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Form: verse and chorus", "parentLine": "A story part down low, then a chorus part up high" },
+      "parentPrompt": "Crouch a little for the verse and sit up tall for the chorus.",
+      "childAction": "Play slowly; sit up tall when the chorus starts.",
+      "bridge": "Verse on the left, chorus on the right: the song has two neighbourhoods.",
+      "intro": [ { "caption": "Low verse, high chorus", "parentCue": "sit up tall together for the chorus" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 90,
+          "notes": [ { "p": "C4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "C4", "d": 0.5 }, { "p": "E4", "d": 0.5 }, { "p": "D4", "d": 0.5 }, { "p": "G3", "d": 0.5 } ]
+        }
+      ],
+      "praise": "You found both parts!",
+      "celebrate": "Today you practiced: hearing a verse and a chorus in order."
+    },
+    {
+      "index": 5,
+      "spineType": "review",
+      "title": "Run-ning, run-ning, walk",
+      "goal": "Practise 'Yankee Doodle dandy' slowly: four running notes, then two walking notes.",
+      "skill": { "primary": "counting", "secondary": ["beat", "fingers"] },
+      "mathTarget": { "concept": "Ratio 2:1 (run-ning and walk)", "parentLine": "Two running notes take the time of one walking note" },
+      "parentPrompt": "Say 'run-ning, run-ning, walk, walk' and clap it once before your child plays.",
+      "childAction": "Play the run-ning notes quick, the walk notes slower.",
+      "bridge": "Yan-kee Doo-dle runs like a pony; dan-dy walks, proud and slow.",
+      "intro": [ { "caption": "Run-ning, run-ning, walk, walk", "parentCue": "clap it once together, slowly" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Yankee Doodle dandy, slowly",
+          "parentCue": "Say run-ning, run-ning, walk, walk",
+          "bpm": 56,
+          "notes": [ { "p": "G4", "d": 0.5, "f": 3 }, { "p": "A4", "d": 0.5, "f": 4 }, { "p": "G4", "d": 0.5, "f": 3 }, { "p": "F4", "d": 0.5, "f": 2 }, { "p": "E4", "d": 1, "f": 1 }, { "p": "G4", "d": 1, "f": 3 } ]
+        }
+      ],
+      "praise": "Great running and walking!",
+      "celebrate": "Today you practiced: quick notes and walking notes, two to one."
+    },
+    {
+      "index": 6,
+      "spineType": "left-hand",
+      "title": "Pony hooves, low and steady",
+      "goal": "Play one low left-hand note at the start of each bar while the grown-up plays.",
+      "skill": { "primary": "beat", "secondary": ["space", "counting"] },
+      "mathTarget": { "concept": "Grouping (one low note per four)", "parentLine": "One low note, then three waits: clop, two, three, four" },
+      "parentPrompt": "Say 'clop, two, three, four' aloud; your child plays the low note on every 'clop'.",
+      "childAction": "Left hand plays low C or low G on every 'clop'.",
+      "bridge": "Low notes on the left are the pony's hooves: clop, two, three, four.",
+      "intro": [ { "caption": "Clop, two, three, four", "parentCue": "say it aloud as you play" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Hooves: low C, low G",
+          "parentCue": "Say clop, two, three, four",
+          "bpm": 72,
+          "notes": [ { "p": "C3", "d": 4 }, { "p": "G3", "d": 4 }, { "p": "C3", "d": 4 }, { "p": "C3", "d": 4 } ]
+        }
+      ],
+      "praise": "Steady pony hooves!",
+      "celebrate": "Today you practiced: one low note at the start of each bar."
+    },
+    {
+      "index": 7,
+      "spineType": "hands-together",
+      "title": "Rider and pony, slowly",
+      "goal": "Play the tune with a low left-hand note on each bar, very slowly.",
+      "skill": { "primary": "fingers", "secondary": ["beat", "counting"] },
+      "mathTarget": { "concept": "Coordination (two hands, one beat)", "parentLine": "Both hands share one beat, each with its own job" },
+      "parentPrompt": "Count very slowly and tap your child's left hand at the start of each bar.",
+      "childAction": "Left hand clops once, right hand plays the tune.",
+      "bridge": "The left hand is the pony; the right hand is the rider singing.",
+      "intro": [ { "caption": "Rider and pony, slowly", "parentCue": "tap their left hand at each bar's start" } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 78,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Rider and pony together!",
+      "celebrate": "Today you practiced: two hands with different jobs, slowly."
+    },
+    {
+      "index": 8,
+      "spineType": "hands-together",
+      "title": "From trot to canter",
+      "goal": "Play both hands together closer to full speed, keeping the beat even.",
+      "skill": { "primary": "beat", "secondary": ["fingers", "expression"] },
+      "mathTarget": { "concept": "Tempo scaling (trot to canter)", "parentLine": "The same notes and order, only a little quicker" },
+      "parentPrompt": "If the hands tangle, smile and say 'back to a trot'; speed comes last.",
+      "childAction": "Play both hands a bit faster; slow to a trot if it tangles.",
+      "bridge": "The pony speeds up from a trot to a canter, hooves still even.",
+      "intro": [ { "caption": "Trot, then canter", "parentCue": "go back to slow if it tangles" } ],
+      "games": [],
+      "praise": "Even hooves, faster pony!",
+      "celebrate": "Today you practiced: keeping the beat even at a faster speed."
+    },
+    {
+      "index": 9,
+      "spineType": "play-along",
+      "title": "Ride into town",
+      "goal": "Play the whole song along with the music and keep going to the end.",
+      "skill": { "primary": "together", "secondary": ["beat"] },
+      "mathTarget": { "concept": "Synchrony with a moving pulse", "parentLine": "Keeping pace with the music, all the way to the end" },
+      "parentPrompt": "March your feet beside your child and sing; if they slip, keep going.",
+      "childAction": "Play along with the music; keep riding after a slip.",
+      "bridge": "The music is the road into town; you ride along without stopping.",
+      "intro": [ { "caption": "Ride into town!", "parentCue": "march your feet beside your child" } ],
+      "games": [],
+      "praise": "You rode all the way!",
+      "celebrate": "Today you practiced: keeping pace with the music to the end."
+    },
+    {
+      "index": 10,
+      "spineType": "concert",
+      "title": "A feather for teddy",
+      "goal": "Play the whole song for teddy: a gentle verse, then a big proud chorus.",
+      "skill": { "primary": "expression", "secondary": ["together", "form"] },
+      "mathTarget": { "concept": "Dynamics (verse softer, chorus louder)", "parentLine": "Playing one part softer and the next part louder" },
+      "parentPrompt": "Sit teddy as the audience; play the chorus big and proud, then cheer and bow.",
+      "childAction": "Play softly for the verse, proudly for the chorus, then bow.",
+      "bridge": "The verse trots quietly into town; the chorus waves a proud feather.",
+      "intro": [ { "caption": "A silly march for teddy!", "parentCue": "sit teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, proud marchers!",
+      "celebrate": "Today you practiced: playing one part softer, one part louder."
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "songId": "jack-and-jill",
+  "ageGroup": "2-3",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices a swinging steady beat, going up and tumbling down, loud and soft, stop and go, and playing together.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "listen",
+      "title": "Swing up the hill",
+      "goal": "Hear the whole song and rock to its swinging beat together.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Periodicity (swinging pulse)", "parentLine": "Feeling a long-short swing that comes back again and again" },
+      "parentPrompt": "Hold your child on your lap and rock forward and back, like a swing.",
+      "childAction": "Rock, clap and pat your knees with the song.",
+      "bridge": "The beat swings like a bucket: up and back, up and back.",
+      "intro": [ { "caption": "Listen and sway", "parentCue": "Rock forward and back, like a swing" } ],
+      "games": [],
+      "praise": "You swung together!",
+      "celebrate": "Today you practiced: listening and rocking to the beat."
+    },
+    {
+      "index": 2,
+      "spineType": "beat",
+      "title": "Jack and Jill walk up",
+      "goal": "Tap one steady tap on every big beat while the grown-up plays.",
+      "skill": { "primary": "beat", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "One-to-one correspondence", "parentLine": "One tap for each big beat, no more, no less" },
+      "parentPrompt": "Rest your hand over your child's hand and tap together, then slowly let go.",
+      "childAction": "Tap any key once on each big beat.",
+      "bridge": "Two walkers, two steps: Jack steps, Jill steps, all the way up.",
+      "intro": [ { "caption": "Tap, tap, up the hill", "parentCue": "Tap your child's knee on each big beat" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Jack, Jill: one, two",
+          "parentCue": "Say 'Jack' and 'Jill' on the two big beats",
+          "bpm": 72,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "You kept the beat!",
+      "celebrate": "Today you practiced: one tap for each big beat."
+    },
+    {
+      "index": 3,
+      "spineType": "high-low",
+      "title": "Bear low, bird high",
+      "goal": "Hear low and high sounds and tap the matching side of the piano.",
+      "skill": { "primary": "pitch", "secondary": ["space", "listening"] },
+      "mathTarget": { "concept": "Contour (up and down)", "parentLine": "Sounds can climb up like a hill and tumble down" },
+      "parentPrompt": "Growl and crouch for the bear; flap your arms and stretch up for the bird.",
+      "childAction": "Bear: tap the left side. Bird: tap the right side.",
+      "bridge": "The bear lives at the bottom of the hill; the bird lives at the top.",
+      "intro": [ { "caption": "Here comes the bear, here comes the bird", "parentCue": "Point left for bear, right for bird" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Up the hill we go",
+          "parentCue": "Walk your fingers up your child's arm",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "D4", "d": 1 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 1 }, { "p": "G4", "d": 2 } ]
+        },
+        {
+          "kind": "high_low",
+          "target": "low",
+          "caption": "Tumble down to the bear",
+          "parentCue": "Tumble your hands down, then tap the left side",
+          "bpm": 66,
+          "notes": [ { "p": "G3", "d": 1 }, { "p": "E3", "d": 1 }, { "p": "D3", "d": 1 }, { "p": "C3", "d": 2 } ]
+        }
+      ],
+      "praise": "Great bear, great bird!",
+      "celebrate": "Today you practiced: hearing high and low sounds."
+    },
+    {
+      "index": 4,
+      "spineType": "loud-soft",
+      "title": "Big splash, tiny drip",
+      "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
+      "skill": { "primary": "expression", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Opposites (magnitude contrast)", "parentLine": "Noticing big and small: the same tap, more or less" },
+      "parentPrompt": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
+      "childAction": "Loud: big splash taps. Soft: tiny drip taps.",
+      "bridge": "Loud is the pail of water going splash; soft is one tiny drip.",
+      "intro": [ { "caption": "Big splash, tiny drip", "parentCue": "Loud means strong arms, not banging" } ],
+      "games": [],
+      "praise": "You found loud and soft!",
+      "celebrate": "Today you practiced: playing loud and soft."
+    },
+    {
+      "index": 5,
+      "spineType": "fast-slow",
+      "title": "Turtle hill, bunny hill",
+      "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
+      "skill": { "primary": "expression", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Invariance under tempo change", "parentLine": "Same tune, same shape, only the speed changes" },
+      "parentPrompt": "Walk your fingers up your child's back, slowly then quickly, matching the music.",
+      "childAction": "Turtle music: slow taps. Bunny music: quick taps.",
+      "bridge": "A turtle climbs the hill slowly; a bunny hops up fast.",
+      "intro": [ { "caption": "Turtle slow, bunny fast", "parentCue": "Slow down if the taps get wild" } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Turtle climbs the hill",
+          "parentCue": "Tap together, slow and heavy",
+          "bpm": 56,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 1.5 } ]
+        },
+        {
+          "kind": "beat",
+          "caption": "Bunny hops up the hill",
+          "parentCue": "Same tune, now quick and light",
+          "bpm": 104,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C4", "d": 0.5 }, { "p": "D4", "d": 1 }, { "p": "D4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "F4", "d": 0.5 }, { "p": "G4", "d": 1.5 } ]
+        }
+      ],
+      "praise": "You followed the music!",
+      "celebrate": "Today you practiced: following slow and fast music."
+    },
+    {
+      "index": 6,
+      "spineType": "stop-go",
+      "title": "Climb, climb, freeze!",
+      "goal": "Tap while the music plays and freeze when it stops.",
+      "skill": { "primary": "listening", "secondary": ["beat", "together"] },
+      "mathTarget": { "concept": "Cause and effect (sound, silence)", "parentLine": "When the sound stops, the hands stop too" },
+      "parentPrompt": "Freeze with a funny face when the music stops; cheer when it starts again.",
+      "childAction": "Tap while music plays. Freeze like a statue when it stops.",
+      "bridge": "Music on, Jack and Jill climb; music off, they hold very still.",
+      "intro": [ { "caption": "Go! Tap the beat", "parentCue": "When the music stops, freeze with a silly face" } ],
+      "games": [],
+      "praise": "Great freezing!",
+      "celebrate": "Today you practiced: listening for stop and go."
+    },
+    {
+      "index": 7,
+      "spineType": "review",
+      "title": "Hilltop game mix",
+      "goal": "Listen and switch between games: high and low, loud and soft, fast and slow.",
+      "skill": { "primary": "listening", "secondary": ["pitch", "expression"] },
+      "mathTarget": { "concept": "Classification (sorting by feature)", "parentLine": "Sorting each sound: high or low, loud or soft?" },
+      "parentPrompt": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
+      "childAction": "Guess the game, then tap high, low, loud, soft, slow or fast.",
+      "bridge": "Every sound wears a costume: bear, bird, splash, drip, turtle or bunny.",
+      "intro": [ { "caption": "Bear or bird? Loud or soft?", "parentCue": "Let your child guess first; any guess is fine" } ],
+      "games": [],
+      "praise": "Great listening ears!",
+      "celebrate": "Today you practiced: telling sounds apart and switching games."
+    },
+    {
+      "index": 8,
+      "spineType": "together",
+      "title": "Jack and Jill duet",
+      "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
+      "skill": { "primary": "together", "secondary": ["beat", "listening"] },
+      "mathTarget": { "concept": "Interlocking parts (two roles)", "parentLine": "Two different jobs fit together to make one song" },
+      "parentPrompt": "Play the tune and watch your child; if they stop, keep playing and smile.",
+      "childAction": "Tap the beat on any key while your grown-up plays.",
+      "bridge": "Like Jack and Jill: two climbers, one hill, going up together.",
+      "intro": [ { "caption": "Play it together", "parentCue": "Sit side by side, you on the tune" } ],
+      "games": [],
+      "praise": "What a duet together!",
+      "celebrate": "Today you practiced: playing one song together, two jobs."
+    },
+    {
+      "index": 9,
+      "spineType": "concert",
+      "title": "Hill concert for teddy",
+      "goal": "Play the whole song from the first note to the last, then bow together.",
+      "skill": { "primary": "together", "secondary": ["form"] },
+      "mathTarget": { "concept": "Sequence: beginning, middle, end", "parentLine": "A song starts, goes on, and ends; we finish together" },
+      "parentPrompt": "Sit teddy as the audience; play the tune, then clap, cheer and bow together.",
+      "childAction": "Tap the beat to the very end, then take a big bow.",
+      "bridge": "Up the hill, tumble down, and land with a big bow.",
+      "intro": [ { "caption": "A song for teddy", "parentCue": "Put teddy in front as the audience" } ],
+      "games": [],
+      "praise": "Bravo, you played together!",
+      "celebrate": "Today you practiced: playing a whole song, start to end."
+    }
+  ]
+}

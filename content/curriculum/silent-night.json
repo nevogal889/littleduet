@@ -1,0 +1,177 @@
+{
+  "songId": "silent-night",
+  "ageGroup": "5-6",
+  "author": "curriculum-architect",
+  "version": 1,
+  "songSummary": "Practices finding G, hearing a pattern repeat lower, the song's high and low points, and soft two-hand playing, with a calm Christmas carol.",
+  "classes": [
+    {
+      "index": 1,
+      "spineType": "hand-position",
+      "title": "Rock the cradle: G, A, G",
+      "goal": "Find G by the three black keys and learn the first half.",
+      "skill": { "primary": "space", "secondary": ["fingers", "patterns"] },
+      "mathTarget": { "concept": "Spatial mapping (G landmark)", "parentLine": "Using the three black keys to find where the tune starts" },
+      "parentPrompt": "Help your child find G by the three black keys, then rock to A and back.",
+      "childAction": "Find G, then rock G, A, G, and settle on E.",
+      "bridge": "G, A, G is a cradle rocking; E is the baby settling down.",
+      "intro": [ { "caption": "Let's find the cradle note", "parentCue": "help your child find G by the three black keys." } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Silent night: G, A, G, E",
+          "parentCue": "Rock side to side with the tune",
+          "bpm": 66,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 3 } ]
+        }
+      ],
+      "praise": "Gentle rocking, great start!",
+      "celebrate": "Today you practiced: finding G and the rocking first line."
+    },
+    {
+      "index": 2,
+      "spineType": "phrase",
+      "title": "Calm, then bright, step down",
+      "goal": "Learn the next part: the same little shape, played one step lower.",
+      "skill": { "primary": "patterns", "secondary": ["pitch", "space"] },
+      "mathTarget": { "concept": "Sequence (one step lower)", "parentLine": "The second half copies the first, one step lower" },
+      "parentPrompt": "Play 'all is calm', then 'all is bright'; ask your child what changed.",
+      "childAction": "Play D, D, B, then the same shape lower: C, C, G.",
+      "bridge": "'All is bright' is 'all is calm' taking one step down to the left.",
+      "intro": [ { "caption": "Same shape, one step down", "parentCue": "ask your child what changed the second time." } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Calm, then bright, a step lower",
+          "parentCue": "Ask: same shape, higher or lower?",
+          "bpm": 72,
+          "notes": [ { "p": "D5", "d": 2 }, { "p": "D5", "d": 1 }, { "p": "B4", "d": 3 }, { "p": "C5", "d": 2 }, { "p": "C5", "d": 1 }, { "p": "G4", "d": 3 } ]
+        }
+      ],
+      "praise": "You heard the step down!",
+      "celebrate": "Today you practiced: hearing a shape repeat one step lower."
+    },
+    {
+      "index": 3,
+      "spineType": "put-together",
+      "title": "Up to the star, home to bed",
+      "goal": "Play the whole song slowly and find its highest and lowest notes.",
+      "skill": { "primary": "form", "secondary": ["pitch", "listening"] },
+      "mathTarget": { "concept": "Form (repeat, rise, settle)", "parentLine": "Lines repeat, rise to the highest note, then settle home low" },
+      "parentPrompt": "Point up when the song reaches its highest note; point down at the very end.",
+      "childAction": "Play the whole song slowly; find the highest note.",
+      "bridge": "The song rocks, climbs to a star at the top, then settles home.",
+      "intro": [ { "caption": "Find the star at the top", "parentCue": "point up at the highest note." } ],
+      "games": [
+        {
+          "kind": "beat",
+          "caption": "Tap the beat: the first line",
+          "parentCue": "Play the blue keys; your child taps the beat",
+          "bpm": 67,
+          "notes": [ { "p": "G4", "d": 1.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 3 }, { "p": "G4", "d": 1.5 }, { "p": "A4", "d": 0.5 }, { "p": "G4", "d": 1 }, { "p": "E4", "d": 3 } ]
+        }
+      ],
+      "praise": "The whole carol, bravo!",
+      "celebrate": "Today you practiced: the shape of a whole song, high and low."
+    },
+    {
+      "index": 4,
+      "spineType": "review",
+      "title": "From high C to low C",
+      "goal": "Practise the last line slowly, from high C all the way home to low C.",
+      "skill": { "primary": "fingers", "secondary": ["space", "pitch"] },
+      "mathTarget": { "concept": "Octave descent (C to C)", "parentLine": "The last line starts on high C and ends on low C" },
+      "parentPrompt": "Play it slowly first; name both C's, the high house and the low house.",
+      "childAction": "Walk down slowly from high C all the way home to C.",
+      "bridge": "'Sleep in heavenly peace' walks down the stairs from high C to low C.",
+      "intro": [ { "caption": "Walk down the stairs to bed", "parentCue": "name the high C, then the low C." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "From high C down home",
+          "parentCue": "Play slowly; land softly on low C",
+          "bpm": 56,
+          "notes": [ { "p": "C5", "d": 1.5 }, { "p": "G4", "d": 0.5 }, { "p": "E4", "d": 1 }, { "p": "G4", "d": 1.5 }, { "p": "F4", "d": 0.5 }, { "p": "D4", "d": 1 }, { "p": "C4", "d": 3 } ]
+        }
+      ],
+      "praise": "Soft landing, well done!",
+      "celebrate": "Today you practiced: walking down from one C to the next."
+    },
+    {
+      "index": 5,
+      "spineType": "left-hand",
+      "title": "The low guitar note",
+      "goal": "Play one low left-hand note at the start of each bar.",
+      "skill": { "primary": "space", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Bilateral mapping (left is low)", "parentLine": "The left hand plays low notes, on the left side" },
+      "parentPrompt": "Play the tune; count bars aloud so your child plays one low note each.",
+      "childAction": "Play one low note with your left hand on each 'one'.",
+      "bridge": "The left hand plays low, like the guitar on the very first night.",
+      "intro": [ { "caption": "The low guitar note", "parentCue": "count one at each new bar" } ],
+      "games": [
+        {
+          "kind": "listen",
+          "caption": "Same C, two houses",
+          "parentCue": "Ask: which C sounds like a guitar?",
+          "bpm": 66,
+          "notes": [ { "p": "C4", "d": 1 }, { "p": "C3", "d": 1 }, { "p": "C4", "d": 1 }, { "p": "C3", "d": 2 } ]
+        }
+      ],
+      "praise": "Great low notes!",
+      "celebrate": "Today you practiced: low notes with the left hand."
+    },
+    {
+      "index": 6,
+      "spineType": "hands-together",
+      "title": "Two hands, soft as snow",
+      "goal": "Play the tune with one low left-hand note on each bar, very slowly.",
+      "skill": { "primary": "fingers", "secondary": ["counting", "together"] },
+      "mathTarget": { "concept": "Coordination (two hands, two jobs)", "parentLine": "Each hand has its own job; they meet on the 'one'" },
+      "parentPrompt": "Go very slowly; say 'one' each time both hands play together.",
+      "childAction": "Left hand on 'one', right hand plays the tune, slowly.",
+      "bridge": "Both hands land together on 'one', soft as snowflakes.",
+      "intro": [ { "caption": "Two hands, two jobs", "parentCue": "go very slowly and stop while it's fun." } ],
+      "games": [
+        {
+          "kind": "your_turn",
+          "caption": "Left hand first",
+          "parentCue": "Point to each low key",
+          "bpm": 59,
+          "notes": [ { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 }, { "p": "C3", "d": 2, "f": 5 } ]
+        }
+      ],
+      "praise": "Two hands, well done!",
+      "celebrate": "Today you practiced: giving each hand its own job."
+    },
+    {
+      "index": 7,
+      "spineType": "play-along",
+      "title": "Float along with the music",
+      "goal": "Play the whole carol along with the music at full speed.",
+      "skill": { "primary": "together", "secondary": ["beat", "expression"] },
+      "mathTarget": { "concept": "Synchrony (keeping up)", "parentLine": "Keeping your part going while the music moves on" },
+      "parentPrompt": "Sit close and sway the beat; if a note is missed, keep going.",
+      "childAction": "Play along with the music. Missed notes are fine; keep going!",
+      "bridge": "The music is a quiet night; float along and keep going.",
+      "intro": [ { "caption": "Float along with the music", "parentCue": "sway the beat and keep going, whatever happens." } ],
+      "games": [],
+      "praise": "You kept up!",
+      "celebrate": "Today you practiced: keeping up with the music, together."
+    },
+    {
+      "index": 8,
+      "spineType": "concert",
+      "title": "A quiet night for teddy",
+      "goal": "Play the whole carol softly for teddy, holding the long notes, then bow.",
+      "skill": { "primary": "expression", "secondary": ["form", "together"] },
+      "mathTarget": { "concept": "Dynamics (soft and calm)", "parentLine": "Playing softly and slowly, with long, held notes" },
+      "parentPrompt": "Sit teddy close and play softly together, then take a quiet bow.",
+      "childAction": "Play softly for teddy, hold the long notes, then bow.",
+      "bridge": "Soft fingers, long notes: a quiet, starry night for teddy.",
+      "intro": [ { "caption": "A quiet concert for teddy", "parentCue": "sit teddy close, ready to listen." } ],
+      "games": [],
+      "praise": "Bravo, so gentle!",
+      "celebrate": "Today you practiced: soft, calm playing, start to end."
+    }
+  ]
+}

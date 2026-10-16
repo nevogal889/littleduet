@@ -103,6 +103,7 @@ def _fill(t, **kw):
         out = out.replace("{%s}" % k, v or "")
     out = re.sub(r"\s+", " ", out).strip()
     out = re.sub(r"\s+([.,!?])", r"\1", out)
+    out = re.sub(r"([?!])\.", r"\1", out)          # "Lassie?." -> "Lassie?"
     return out
 
 
@@ -127,9 +128,20 @@ def line_for(seg, ctx):
     if kind == "title":
         t = _pick(_by_age(b.get("classIntro"), ctx["age"]), ctx["key"])
         return _fill(t, **fills) if t else None
+    if kind == "praise" and ctx.get("rot"):
+        # Rotate through the praise list in order, so two praise lines in a class never repeat back to back.
+        opts = [o for o in (_by_age((b.get("kind") or {}).get("praise"), ctx["age"]) or []) if o]
+        over = (b.get("captions") or {}).get(cap)
+        if ctx["rot"] == 1 and over:
+            return _fill(over, **fills)
+        if opts:
+            base = int(hashlib.sha1(ctx["key"].split("|p")[0].encode()).hexdigest()[:8], 16)
+            return _fill(opts[(base + ctx["rot"]) % len(opts)], **fills)
     use_kind = cap in set(b.get("useKindBank") or []) and kind != "say"
     over = None if use_kind else ((b.get("captions") or {}).get(cap) or _pattern(cap))
     if over:
+        # Override lines are complete as written; the grown-up's cue stays on screen (GROWN-UP band),
+        # which keeps talk stretches short (spec 8).
         return _fill(over, **fills)
     if kind == "say":
         s = b.get("say") or {}
