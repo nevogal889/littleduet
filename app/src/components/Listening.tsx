@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { t } from '../i18n';
-import { detectPitch, midiOfPitch, NoteMatcher } from '../lib/pitch';
+import { midiOfPitch, NoteMatcher } from '../lib/pitch';
 import { createMic } from '../services/listen/mic';
 import type { MicStart } from '../services/listen/types';
 import { colors, fonts, radius, space } from '../theme';
@@ -28,7 +28,8 @@ export function useNoteListener(enabled: boolean, anyOctave: boolean) {
       .start((frame, sr) => {
         const m = matcher.current;
         if (!m) return;
-        if (m.feed(detectPitch(frame, sr))) {
+        // Single clean note first; a cluster of keys (toddler hands) falls back to the overtone check.
+        if (m.feedFrame(frame, sr)) {
           matcher.current = null;
           const cb = onHeard.current;
           onHeard.current = null;
