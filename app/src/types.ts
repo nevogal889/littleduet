@@ -163,6 +163,12 @@ export interface ChildProfile {
   birthday?: string;
   /** Real piano: listen to the piano through the microphone (default on). */
   listen?: boolean;
+  /** Adaptive teacher: adjust hints and speed from how recent classes went (default on). */
+  adaptive?: boolean;
+  /** Real-piano mode on a toy piano or xylophone (any octave, higher range, its own tuning). */
+  instrument?: 'piano' | 'toy';
+  /** Measured tuning of the toy instrument in cents (set by its first C, or by "Tune our toy"). */
+  tuneCents?: number;
   /** The age last shown to the family; when childAge() passes it, Home shows the age-up card. */
   ageSeen?: number;
 }
@@ -183,4 +189,6 @@ export interface ChildData {
   chests?: { id: string; songId: string }[];
   /** Years the birthday badge was earned (a class finished on the birthday), e.g. ['2026']. */
   birthdays?: string[];
+  /** Device-only class logs for the adaptive teacher (how each asked-for note went). Never synced. */
+  logs?: import('./lib/coach').ClassLog[];
 }

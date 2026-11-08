@@ -313,23 +313,46 @@ function clearOvertones(s: Spec, mag: Float64Array, m: number, cents: number, pa
  *   (a piano holds its pitch; a voice wobbles).
  * `anyOctave` (ages 2-4) accepts the right note name in any octave.
  */
+export interface MatcherOptions {
+  /** ages 2-4 and toy instruments: the right note name in any octave counts */
+  anyOctave?: boolean;
+  needFrames?: number;
+  /** semitones either side (default 0.6) */
+  tolerance?: number;
+  minClarity?: number;
+  /** cluster fallback for real pianos (default on) */
+  clusters?: boolean;
+  /** the instrument's tuning: how far its notes sit from concert pitch, in cents */
+  offsetCents?: number;
+  /** highest pitch to listen for; toy xylophones reach about 2,100 Hz */
+  maxHz?: number;
+}
+
 export class NoteMatcher {
   private hits = 0;
   private clusterOffsets: number[] = [];
+  private cents: number[] = [];
   private done = false;
   constructor(
     private target: number,
-    private opts: { anyOctave?: boolean; needFrames?: number; tolerance?: number; minClarity?: number; clusters?: boolean } = {},
+    private opts: MatcherOptions = {},
   ) {}
 
+  /** Distance from the target in semitones (octave-folded when anyOctave), after the tuning offset. */
+  private diff(midi: number): number {
+    const d = midi - (this.opts.offsetCents ?? 0) / 100 - this.target;
+    if (!this.opts.anyOctave) return d;
+    const pc = ((d % 12) + 12) % 12;
+    return pc > 6 ? pc - 12 : pc;
+  }
+
   matches(midi: number): boolean {
-    const tol = this.opts.tolerance ?? 0.6;
-    const diff = midi - this.target;
-    if (this.opts.anyOctave) {
-      const pc = ((diff % 12) + 12) % 12;
-      return Math.min(pc, 12 - pc) <= tol;
-    }
-    return Math.abs(diff) <= tol;
+    return Math.abs(this.diff(midi)) <= (this.opts.tolerance ?? 0.6);
+  }
+
+  /** Average distance in cents of the frames that confirmed the note (for tuning a toy instrument). */
+  get heardCents(): number {
+    return this.cents.length ? Math.round(this.cents.reduce((a, b) => a + b, 0) / this.cents.length) : 0;
   }
 
   private confirm(): boolean {
@@ -340,18 +363,25 @@ export class NoteMatcher {
   /** Returns true exactly once, on the frame the note is confirmed (single-note path only). */
   feed(r: PitchResult | null): boolean {
     if (this.done) return false;
-    if (r && r.clarity >= (this.opts.minClarity ?? 0.8) && this.matches(freqToMidi(r.freq))) this.hits++;
-    else this.hits = 0;
+    if (r && r.clarity >= (this.opts.minClarity ?? 0.8) && this.matches(freqToMidi(r.freq))) {
+      this.hits++;
+      this.cents.push(this.diff(freqToMidi(r.freq)) * 100);
+      if (this.cents.length > (this.opts.needFrames ?? 2)) this.cents.shift();
+    } else {
+      this.hits = 0;
+      this.cents = [];
+    }
     return this.hits >= (this.opts.needFrames ?? 2) ? this.confirm() : false;
   }
 
   /** Full check on a raw frame: the single-note path first, the cluster path when that hears nothing usable. */
   feedFrame(frame: Float32Array, sampleRate: number): boolean {
     if (this.done) return false;
-    const r = detectPitch(frame, sampleRate);
+    const r = detectPitch(frame, sampleRate, this.opts.maxHz ? { maxHz: this.opts.maxHz } : {});
     const clean = !!r && r.clarity >= (this.opts.minClarity ?? 0.8) && this.matches(freqToMidi(r.freq));
     if (this.feed(r)) return true;
-    if (clean || this.opts.clusters === false) {
+    // The cluster check assumes a piano in concert pitch: not for toy instruments.
+    if (clean || this.opts.clusters === false || this.opts.offsetCents || this.opts.maxHz) {
       this.clusterOffsets = [];
       return false;
     }
@@ -370,3 +400,6 @@ export class NoteMatcher {
     return this.done;
   }
 }
+
+/** Toy instruments: listen up to the top of a kids' xylophone, any octave. */
+export const TOY_LISTEN = { anyOctave: true, maxHz: 2200 } as const;

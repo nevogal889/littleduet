@@ -5,9 +5,11 @@ import { DifficultyDots, SongCover } from '../../src/components/bits';
 import { ClassRow, songMeta } from '../../src/components/cards';
 import { LessonPath, type PathItem } from '../../src/components/LessonPath';
 import { ClassBriefSheet, SkillMapCard } from '../../src/components/skills';
+import { TeacherPlan } from '../../src/components/Coach';
+import { planFor } from '../../src/lib/coach';
 import { SongStoryCard } from '../../src/components/SongStory';
 import { BackButton, Button, Card, PercentBar, Screen, SectionTitle, Segmented, T } from '../../src/components/ui';
-import { LESSONS, songById } from '../../src/data/catalog';
+import { childPitches, fullClass, LESSONS, songById } from '../../src/data/catalog';
 import { useOpenClass } from '../../src/hooks';
 import { t } from '../../src/i18n';
 import { canPlayClass } from '../../src/lib/entitlement';
@@ -161,6 +163,15 @@ export default function SongPage() {
         </>
       )}
       <ClassBriefSheet
+        extra={
+          briefCls && song ? (
+            <TeacherPlan
+              plan={planFor(childData.logs, song.id, childPitches(song, fullClass(briefCls.id) ?? briefCls), child?.adaptive !== false)}
+              name={child?.name?.trim() || t('common.nameFallback')}
+              songTitle={song.title}
+            />
+          ) : null
+        }
         cls={briefCls}
         visible={!!briefCls}
         percent={briefCls ? classPercent(briefCls, progress[briefCls.id]) : 0}

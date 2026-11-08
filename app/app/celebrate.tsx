@@ -5,6 +5,8 @@ import { SongCover } from '../src/components/bits';
 import { Confetti } from '../src/components/Confetti';
 import { Icon } from '../src/components/Icon';
 import { PracticedToday } from '../src/components/skills';
+import { HomeIdeaCard, homeIdea, NoticedCard } from '../src/components/Coach';
+import { noticed } from '../src/lib/coach';
 import { Button, ProgressBar, Screen, T } from '../src/components/ui';
 import { classById, songById } from '../src/data/catalog';
 import { useChildName } from '../src/hooks';
@@ -45,6 +47,11 @@ export default function Celebrate() {
       timers.forEach(clearTimeout);
     };
   }, []);
+  // The adaptive teacher's notes on the class that just ended (its log is the latest one).
+  const logs = childData.logs ?? [];
+  const last = logs.length && logs[logs.length - 1].classId === classId ? logs[logs.length - 1] : null;
+  const seen = last ? noticed(last, logs.slice(0, -1)) : null;
+  const idea = hit ? homeIdea(hit.cls, name, hit.song.title) : null;
   const shownStars = Math.min(stars, step);
   const counter = step >= stars ? stars : shownStars;
   const streakNow = step >= stars + 1 ? st.days : fromStreak;
@@ -92,6 +99,8 @@ export default function Celebrate() {
           </T>
 
           <PracticedToday cls={hit?.cls} />
+          <NoticedCard n={seen} name={name} />
+          <HomeIdeaCard text={idea} />
 
           <View style={styles.row}>
             <View style={[styles.pill, { backgroundColor: colors.streakSoft }]} testID="celebrate-streak">

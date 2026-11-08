@@ -4,6 +4,8 @@ import { useRouter } from 'expo-router';
 import { SongCover } from '../../src/components/bits';
 import { Icon } from '../../src/components/Icon';
 import { SKILL_COLORS, skillLabel } from '../../src/components/skills';
+import { WeekCard } from '../../src/components/Coach';
+import { weekReport } from '../../src/lib/coach';
 import { Button, Card, PercentBar, Screen, SectionTitle, T } from '../../src/components/ui';
 import { LESSONS, SONGS } from '../../src/data/catalog';
 import { useChildName } from '../../src/hooks';
@@ -69,6 +71,10 @@ export default function GrownUps() {
           </View>
         </View>
       </Card>
+
+      <View style={{ marginTop: space.lg }}>
+        <WeekCard w={weekReport(childData.logs, now)} name={name} />
+      </View>
 
       <SectionTitle>{t('progressPage.learning')}</SectionTitle>
       {learning.length ? (

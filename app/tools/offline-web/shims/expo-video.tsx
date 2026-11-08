@@ -6,6 +6,8 @@ export class VideoPlayer {
   el: HTMLVideoElement | null = null;
   loop = false;
   timeUpdateEventInterval = 1;
+  private rate = 1;
+  preservesPitch = true;
   private l = new Map<string, Set<Fn>>();
   private lastTU = 0;
   private ready = false;
@@ -18,6 +20,13 @@ export class VideoPlayer {
   }
   set currentTime(v: number) {
     if (this.el) this.el.currentTime = v;
+  }
+  get playbackRate() {
+    return this.rate;
+  }
+  set playbackRate(v: number) {
+    this.rate = v;
+    if (this.el) this.el.playbackRate = v;
   }
   get duration() {
     const d = this.el?.duration ?? 0;
@@ -45,6 +54,8 @@ export class VideoPlayer {
     this.el = el;
     (window as any).__video = el;
     el.loop = this.loop;
+    el.playbackRate = this.rate;
+    (el as any).preservesPitch = this.preservesPitch;
     el.addEventListener('canplay', () => {
       if (!this.ready) {
         this.ready = true;

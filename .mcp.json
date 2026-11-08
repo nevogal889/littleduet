@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "firecrawl": {
+      "type": "http",
+      "url": "https://mcp.firecrawl.dev/v2/mcp-search",
+      "headers": { "X-Firecrawl-Origin": "firecrawl-claude-plugin" }
+    },
+    "perplexity-docs": {
+      "type": "http",
+      "url": "https://docs.perplexity.ai/mcp"
+    },
+    "perplexity": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@perplexity-ai/mcp-server"],
+      "env": { "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}" }
+    }
+  }
+}

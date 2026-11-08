@@ -22,7 +22,7 @@ const TOTAL = 4;
 export default function Onboarding() {
   const router = useRouter();
   const params = useLocalSearchParams<{ start?: string; returning?: string }>();
-  const { addChild, finishOnboarding, data, user } = useApp();
+  const { addChild, updateChild, finishOnboarding, data, user } = useApp();
   const { gutter, isTablet } = useLayout();
   const [step, setStep] = useState(params.start === '2' ? 2 : 1);
   const [name, setName] = useState('');
@@ -30,13 +30,15 @@ export default function Onboarding() {
   const [birthday, setBirthday] = useState<string | undefined>(undefined);
   const [ageOnly, setAgeOnly] = useState(false);
   const [mode, setMode] = useState<PlayMode>('real');
+  const [toy, setToy] = useState(false);
   const [gatePassed, setGatePassed] = useState(false);
 
   /** A trial that just started is the moment to save progress: offer the account then (always skippable). */
   const finish = (trialStarted = false) => {
     if (!data.children.length) {
       const bd = ageOnly ? undefined : birthday;
-      addChild(name.trim(), bd ? childAge({ age: 3, birthday: bd }, Date.now()) : age ?? 3, mode, bd);
+      const id = addChild(name.trim(), bd ? childAge({ age: 3, birthday: bd }, Date.now()) : age ?? 3, mode, bd);
+      if (toy) updateChild(id, { instrument: 'toy' });
     }
     finishOnboarding();
     router.replace('/');
@@ -173,6 +175,7 @@ export default function Onboarding() {
               {(
                 [
                   { m: 'real' as PlayMode, title: t('onboarding.mode.yes'), detail: t('onboarding.mode.yesDetail'), icon: 'piano' as const, mode: t('common.modes.real.name') },
+                  { m: 'toy' as const, title: t('tune.onbTitle'), detail: t('tune.onbDetail'), icon: 'songs' as const, mode: t('common.modes.real.name') },
                   { m: 'screen' as PlayMode, title: t('onboarding.mode.no'), detail: t('onboarding.mode.noDetail'), icon: 'screen' as const, mode: t('common.modes.screen.name') },
                 ]
               ).map((o) => (
@@ -182,7 +185,8 @@ export default function Onboarding() {
                   accessibilityRole="button"
                   accessibilityLabel={`${o.title}. ${o.mode}. ${o.detail}`}
                   onPress={() => {
-                    setMode(o.m);
+                    setToy(o.m === 'toy');
+                    setMode(o.m === 'toy' ? 'real' : o.m);
                     setStep(4);
                   }}
                   style={({ pressed }) => [styles.option, pressed && { backgroundColor: colors.brandSoft }]}

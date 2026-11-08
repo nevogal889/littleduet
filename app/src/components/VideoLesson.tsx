@@ -10,9 +10,10 @@ import { colors, fonts, radius, space } from '../theme';
 import type { LessonClass, Song } from '../types';
 import { Icon } from './Icon';
 import { LessonStage, type StageResult } from './LessonStage';
-import { ListenBanner, useNoteListener } from './Listening';
+import { ListenBanner, useNoteListener, type Instrument } from './Listening';
 import { childCues } from '../lib/timeline';
 import { moment } from '../lib/moments';
+import { NUDGE_TIMES, outcomeFor, type CoachPlan, type CueLog } from '../lib/coach';
 import { voice } from '../services/audio/voice';
 import { Scene } from './Scene';
 import { Button } from './ui';
@@ -26,6 +27,12 @@ interface Props {
   onExit: (r: StageResult) => void;
   /** Real piano: listen through the microphone and wait for the child's notes. */
   listen?: boolean;
+  /** Adaptive teacher's plan for this class: hint level and speed. */
+  plan?: CoachPlan;
+  /** A toy piano or xylophone, and its tuning. */
+  instrument?: Instrument;
+  /** First C on a toy that has no tuning yet: how far it sits from concert pitch. */
+  onTuned?: (cents: number) => void;
 }
 
 /** Real-piano mode: the lesson video. Falls back to the on-screen lesson when no video plays. */
@@ -47,6 +54,7 @@ export function VideoLesson(props: Props) {
         onProgress={(time) => props.onProgress(time)}
         onFinish={props.onFinish}
         onExit={props.onExit}
+        plan={props.plan}
       />
     );
   }
@@ -55,23 +63,32 @@ export function VideoLesson(props: Props) {
 
 const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
 
-function RealVideo({ song, cls, resumeSec, onProgress, onFinish, onExit, url, onFail, listen = true }: Props & { url: string; onFail: () => void }) {
+function RealVideo({ song, cls, resumeSec, onProgress, onFinish, onExit, url, onFail, listen = true, plan, instrument, onTuned }: Props & { url: string; onFail: () => void }) {
   const insets = useSafeAreaInsets();
+  const level = plan?.hintLevel ?? 'normal';
+  const nudge = NUDGE_TIMES[level];
   const player = useVideoPlayer(url, (p) => {
     p.loop = false;
     p.timeUpdateEventInterval = 0.1;
+    // Adaptive teacher: a little slower when the child needs it (the teacher's voice keeps its pitch).
+    p.preservesPitch = true;
+    p.playbackRate = plan?.tempo ?? 1;
   });
+  const cueLogs = useRef<CueLog[]>([]);
+  const startedAt = useRef<number | null>(null);
+  const spent = () => (startedAt.current ? Math.round((Date.now() - startedAt.current) / 1000) : 0);
   // Listening: pause on each of the child's notes until the microphone hears it (or the grown-up taps
   // "We played it"). Without the microphone, pause once at the end of each "your turn" part instead.
   const cues = useMemo(() => childCues(cls, song.bpm), [cls, song.bpm]);
   const anyOctave = song.ageGroup === '2-3' || song.ageGroup === '3-4';
-  const L = useNoteListener(listen && cues.length > 0, anyOctave);
+  const L = useNoteListener(listen && cues.length > 0, anyOctave, instrument);
   const [wait, setWait] = useState<{ i: number; heard: boolean; since: number } | null>(null);
   const [ready, setReady] = useState(false);
   const readyRef = useRef(false);
   const begin = () => {
     if (readyRef.current) return;
     readyRef.current = true;
+    startedAt.current = Date.now();
     setReady(true);
     voice.stop();
     L.cancel();
@@ -100,20 +117,37 @@ function RealVideo({ song, cls, resumeSec, onProgress, onFinish, onExit, url, on
     const m = moment('micCheck', cls.index);
     const id = setTimeout(() => {
       if (m) voice.say(m.voiceId);
-      L.listenFor('C4', () => {
-        const ok = moment('micReady', cls.index);
-        if (ok) voice.say(ok.voiceId);
-        setTimeout(begin, 1200);
-      });
+      // A toy that hasn't been tuned yet: accept a C up to 1.5 semitones off and remember how far off it is.
+      const untunedToy = !!instrument?.toy && instrument.tuneCents === undefined;
+      L.listenFor(
+        'C4',
+        (cents) => {
+          if (untunedToy) onTuned?.(cents);
+          const ok = moment('micReady', cls.index);
+          if (ok) voice.say(ok.voiceId);
+          setTimeout(begin, 1200);
+        },
+        untunedToy ? { tolerance: 1.5 } : {},
+      );
     }, 4500);
     return () => clearTimeout(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ready, L.on]);
   useEffect(() => () => voice.stop(), []);
+  // Nudge ladder while the video waits for the child's note (sooner when the teacher plans extra help).
   useEffect(() => {
     if (!wait || wait.heard) return;
-    const id = setTimeout(() => setWaitedLong(true), 7000);
-    return () => clearTimeout(id);
+    const ids = [setTimeout(() => setWaitedLong(true), nudge.override * 1000)];
+    if (L.on) {
+      const say = (key: 'waitNudge' | 'waitNudgeGrownUp') => {
+        const m = moment(key, wait.i);
+        if (m) voice.say(m.voiceId);
+      };
+      ids.push(setTimeout(() => say('waitNudge'), nudge.child * 1000));
+      ids.push(setTimeout(() => say('waitNudgeGrownUp'), nudge.grownUp * 1000));
+    }
+    return () => ids.forEach(clearTimeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wait]);
   const checkCue = (time: number) => {
     if (wait || !cues.length) return;
@@ -124,9 +158,12 @@ function RealVideo({ song, cls, resumeSec, onProgress, onFinish, onExit, url, on
       const at = micOn ? c.t - 0.12 : c.last ? c.tEnd + 0.3 : Infinity;
       if (time >= at && time < at + 1.5) {
         player.pause();
-        setWait({ i, heard: false, since: Date.now() });
+        const since = Date.now();
+        setWait({ i, heard: false, since });
         if (micOn) {
           L.listenFor(c.p, () => {
+            const w = (Date.now() - since) / 1000;
+            cueLogs.current.push({ p: c.p, o: outcomeFor(w, { level }), w: Math.round(w * 10) / 10 });
             heardCount.current += 1;
             const m = moment('heard', heardCount.current, c.p);
             if (m) voice.say(m.voiceId);
@@ -179,7 +216,7 @@ function RealVideo({ song, cls, resumeSec, onProgress, onFinish, onExit, url, on
     onProgress(cls.durationSec);
     const listened = L.on ? cues.length : 0;
     const ratio = listened ? heardCount.current / listened : 1;
-    onFinish({ completed: true, stars: listened ? (ratio >= 0.8 ? 3 : ratio >= 0.5 ? 2 : 1) : starsForVideo(1) });
+    onFinish({ completed: true, stars: listened ? (ratio >= 0.8 ? 3 : ratio >= 0.5 ? 2 : 1) : starsForVideo(1), cues: cueLogs.current, sec: spent() });
   });
   // If the source never becomes ready (offline, unsupported), use the on-screen lesson.
   useEffect(() => {
@@ -194,7 +231,7 @@ function RealVideo({ song, cls, resumeSec, onProgress, onFinish, onExit, url, on
     onProgress(p);
     player.pause();
     const fraction = p / duration;
-    onExit({ completed: fraction >= COMPLETE_FRACTION, stars: starsForVideo(fraction) });
+    onExit({ completed: fraction >= COMPLETE_FRACTION, stars: starsForVideo(fraction), cues: cueLogs.current, sec: spent() });
   };
 
   return (
@@ -220,7 +257,10 @@ function RealVideo({ song, cls, resumeSec, onProgress, onFinish, onExit, url, on
             heard={wait.heard}
             waitedLong={waitedLong}
             micOn={L.on}
-            onPlayed={() => resume(wait.i, L.on ? cues[wait.i].tEnd : undefined)}
+            onPlayed={() => {
+              if (L.on) cueLogs.current.push({ p: cues[wait.i].p, o: 'grownUp', w: Math.round(((Date.now() - wait.since) / 1000) * 10) / 10 });
+              resume(wait.i, L.on ? cues[wait.i].tEnd : undefined);
+            }}
           />
         ) : null}
       </View>

@@ -230,7 +230,9 @@
     "publicDomain": "All songs in Little Duet are in the public domain. Our lesson arrangements, videos and recordings are made by Little Duet.",
     "on": "On",
     "off": "Off",
-    "voiceCredit": "Teacher voice made with Piper text-to-speech (MIT), voice model trained on the LibriTTS corpus by Zen et al. (CC BY 4.0)."
+    "voiceCredit": "Teacher voice made with Piper text-to-speech (MIT), voice model trained on the LibriTTS corpus by Zen et al. (CC BY 4.0).",
+    "adaptiveTitle": "Adaptive teacher",
+    "adaptiveBody": "The teacher gives hints sooner or later, and plays a song a little slower when it was tricky, based on recent classes. It's automatic: it decides only from which notes the phone heard, never from your child's voice or face, and everything stays on this phone."
   },
   "progressPage": {
     "subtitle": "How {name} is doing this week.",
@@ -313,5 +315,98 @@
     "privacy": "Privacy Policy",
     "demoNote": "Preview only: no real account is created. Any 6-digit code works.",
     "noSavedProgress": "You're logged in. We didn't find saved progress on this account yet, so let's set up your child."
+  },
+  "coach": {
+    "and": "and",
+    "plan": {
+      "title": "The teacher's plan",
+      "extra": "Last time {name} needed a few hints, so today the teacher will help a little sooner.",
+      "slower": "{song} was tricky last time, so today it will play a little slower, and hints will come sooner.",
+      "fade": "{name} has been playing without help, so in the last turn the key won't light up straight away.",
+      "focus": "Extra time on {notes} today.",
+      "strong": "{name} already finds {notes} without help."
+    },
+    "noticed": {
+      "title": "What the teacher noticed",
+      "allSolo": "{name} played every note without help!",
+      "solo": "{name} played {solo} of {total} notes without help.",
+      "firstSolo": "First time finding {notes} without help!",
+      "workingOn_one": "{notes} still needs a hint. The teacher will help with it next time.",
+      "workingOn_other": "{notes} still need a hint. The teacher will help with them next time.",
+      "grownUp": "You tapped “We played it” today. That's fine: use it whenever the phone misses a note."
+    },
+    "home": {
+      "title": "Try it later today, no screen needed",
+      "beat": [
+        "Pat the beat on your knees while you sing {song} at bath time.",
+        "March around the room to {song}, stomping on every beat."
+      ],
+      "pitch": [
+        "Sing {song} with {name}: stretch up tall on the high notes and crouch down on the low ones.",
+        "Make a high “tweet” and a low “grr” and ask {name} which one you made."
+      ],
+      "listening": [
+        "Hum the start of {song} and see if {name} can guess it.",
+        "Close your eyes together and name three sounds you can hear."
+      ],
+      "counting": [
+        "Clap the first line of {song} and count the claps together.",
+        "Count the stairs to a steady beat: one, two, one, two."
+      ],
+      "patterns": [
+        "Clap a short pattern (clap, clap, pat) and let {name} copy it. Then swap.",
+        "Make a sound pattern with two spoons: tap, tap, rest. Can {name} keep it going?"
+      ],
+      "space": [
+        "Draw a small piano on paper and “play” {song} on the table.",
+        "Point to things high up and low down while you sing {song}."
+      ],
+      "fingers": [
+        "Finger game: touch your thumb to each finger in turn while you count to five.",
+        "Wiggle one finger at a time, like five little worms waking up."
+      ],
+      "form": [
+        "Sing {song} and freeze like statues at the end of each line.",
+        "Sing {song} together, then sing it again in a whisper."
+      ],
+      "expression": [
+        "Sing {song} like a tiny mouse, then like a big bear.",
+        "Sing {song} slowly like a sleepy snail, then quickly like a bunny."
+      ],
+      "together": [
+        "Take turns: you sing one line of {song}, {name} sings the next.",
+        "Sing {song} while you tidy up together."
+      ]
+    },
+    "week": {
+      "title": "This week with {name}",
+      "solo": "{pct}% of notes played without help",
+      "up": "Up from {prev}% the week before.",
+      "down": "Down from {prev}% the week before. Playing a song again often helps.",
+      "strong": "Finds without help: {notes}",
+      "workingOn": "Working on: {notes}",
+      "empty": "Play a class with listening on and the teacher's notes will show up here."
+    }
+  },
+  "tune": {
+    "instrumentTitle": "What does your child play on?",
+    "piano": "Piano or keyboard",
+    "toy": "Toy piano or xylophone",
+    "notYet": "Little Duet tunes itself to your toy at the start of the first class, when your child plays C.",
+    "tuned": "Tuned to your toy. Tune again if you switch toys.",
+    "title": "Tune to our toy",
+    "body": "Toy pianos and xylophones are often a little out of tune. Play the C once, and Little Duet will listen for your toy's own notes.",
+    "playC": "Play C on your toy",
+    "starting": "Starting the microphone…",
+    "heard": "Got it!",
+    "inTune": "Your toy is in tune.",
+    "flat": "Your toy's C is a little low. Little Duet will listen for your toy's own notes.",
+    "sharp": "Your toy's C is a little high. Little Duet will listen for your toy's own notes.",
+    "save": "Save",
+    "again": "Try again",
+    "noMic": "Little Duet can't use the microphone. Allow it in your phone's settings, then try again.",
+    "privacy": "The sound is checked on this phone only. It is never recorded or sent.",
+    "onbTitle": "Yes, a toy piano or xylophone",
+    "onbDetail": "Little Duet listens to your toy and tunes itself to it. No real piano needed."
   }
 }

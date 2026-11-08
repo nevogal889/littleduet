@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { t } from '../i18n';
-import { midiOfPitch, NoteMatcher } from '../lib/pitch';
+import { midiOfPitch, NoteMatcher, TOY_LISTEN, type MatcherOptions } from '../lib/pitch';
 import { createMic } from '../services/listen/mic';
 import type { MicStart } from '../services/listen/types';
 import { colors, fonts, radius, space } from '../theme';
@@ -10,15 +10,22 @@ import { Button } from './ui';
 
 export type MicState = 'off' | 'starting' | MicStart;
 
+export interface Instrument {
+  /** a toy piano or xylophone (any octave, higher range, its own tuning) */
+  toy?: boolean;
+  /** measured tuning of the instrument, in cents */
+  tuneCents?: number;
+}
+
 /**
  * On-device listening for one expected note at a time. Nothing is recorded: frames are analysed in
  * memory and dropped. `listenFor` replaces any previous target.
  */
-export function useNoteListener(enabled: boolean, anyOctave: boolean) {
+export function useNoteListener(enabled: boolean, anyOctave: boolean, instrument: Instrument = {}) {
   const [state, setState] = useState<MicState>('off');
   const mic = useRef(createMic());
   const matcher = useRef<NoteMatcher | null>(null);
-  const onHeard = useRef<(() => void) | null>(null);
+  const onHeard = useRef<((cents: number) => void) | null>(null);
 
   useEffect(() => {
     if (!enabled) return;
@@ -33,7 +40,7 @@ export function useNoteListener(enabled: boolean, anyOctave: boolean) {
           matcher.current = null;
           const cb = onHeard.current;
           onHeard.current = null;
-          cb?.();
+          cb?.(m.heardCents);
         }
       })
       .then((s) => alive && setState(s));
@@ -46,11 +53,13 @@ export function useNoteListener(enabled: boolean, anyOctave: boolean) {
   }, [enabled]);
 
   const listenFor = useCallback(
-    (p: string, cb: () => void) => {
-      matcher.current = new NoteMatcher(midiOfPitch(p), { anyOctave });
+    /** `extra` widens the check (the first C on an untuned toy); the callback gets the cents heard. */
+    (p: string, cb: (cents: number) => void, extra: MatcherOptions = {}) => {
+      const base: MatcherOptions = instrument.toy ? { ...TOY_LISTEN, offsetCents: instrument.tuneCents ?? 0 } : { anyOctave };
+      matcher.current = new NoteMatcher(midiOfPitch(p), { ...base, ...extra });
       onHeard.current = cb;
     },
-    [anyOctave],
+    [anyOctave, instrument.toy, instrument.tuneCents],
   );
   const cancel = useCallback(() => {
     matcher.current = null;

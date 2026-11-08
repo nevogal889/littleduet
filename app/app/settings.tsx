@@ -233,6 +233,28 @@ export default function Settings() {
           ]}
         />
         <T v="small">{t(`common.modes.${child?.playMode ?? 'real'}.description`)}</T>
+        {child?.playMode !== 'screen' ? (
+          <>
+            <T v="bodyStrong" style={{ marginTop: space.sm }}>
+              {t('tune.instrumentTitle')}
+            </T>
+            <Segmented
+              testID="instrument-toggle"
+              value={child?.instrument === 'toy' ? 'toy' : 'piano'}
+              onChange={(v) => child && app.updateChild(child.id, { instrument: v as 'piano' | 'toy' })}
+              options={[
+                { value: 'piano', label: t('tune.piano') },
+                { value: 'toy', label: t('tune.toy') },
+              ]}
+            />
+            {child?.instrument === 'toy' ? (
+              <>
+                <T v="small">{child.tuneCents === undefined ? t('tune.notYet') : t('tune.tuned')}</T>
+                <Button testID="tune-open" size="md" full={false} variant="secondary" label={t('tune.title')} onPress={() => router.push('/tune' as never)} />
+              </>
+            ) : null}
+          </>
+        ) : null}
         <T v="small">{t('grownups.playing.volumeHint')}</T>
         <T v="bodyStrong" style={{ marginTop: space.sm }}>
           {t('listen.settingTitle')}
@@ -247,6 +269,19 @@ export default function Settings() {
           ]}
         />
         <T v="small">{t('listen.settingBody')}</T>
+        <T v="bodyStrong" style={{ marginTop: space.sm }}>
+          {t('settings.adaptiveTitle')}
+        </T>
+        <Segmented
+          testID="adaptive-toggle"
+          value={child?.adaptive === false ? 'off' : 'on'}
+          onChange={(v) => child && app.updateChild(child.id, { adaptive: v === 'on' })}
+          options={[
+            { value: 'on', label: t('settings.on') },
+            { value: 'off', label: t('settings.off') },
+          ]}
+        />
+        <T v="small">{t('settings.adaptiveBody')}</T>
         <T v="bodyStrong" style={{ marginTop: space.sm }}>
           {t('tutorial.settingTitle')}
         </T>

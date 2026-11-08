@@ -46,7 +46,7 @@ export default function Tutorial() {
   const playing = !!step && step.kind !== 'say';
   const needsChild = !!step && (step.kind === 'your_turn' || step.kind === 'beat' || step.kind === 'high_low');
   const listenOn = mode === 'real' && child?.listen !== false && step?.kind === 'your_turn';
-  const L = useNoteListener(mode === 'real' && child?.listen !== false, true);
+  const L = useNoteListener(mode === 'real' && child?.listen !== false, true, child?.instrument === 'toy' ? { toy: true, tuneCents: child.tuneCents } : {});
 
   const clear = () => {
     timers.current.forEach(clearTimeout);

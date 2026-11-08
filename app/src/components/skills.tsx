@@ -100,7 +100,10 @@ export function ClassBriefSheet({
   locked,
   onStart,
   onClose,
+  extra,
 }: {
+  /** The adaptive teacher's plan for this class (shown under the skills). */
+  extra?: React.ReactNode;
   cls?: LessonClass;
   visible: boolean;
   percent: number;
@@ -135,6 +138,7 @@ export function ClassBriefSheet({
                 ))}
               </View>
             ) : null}
+            {extra}
             {cls.mathTarget ? (
               <View style={[styles.target, { backgroundColor: tint(primary, 0.08) }]} testID="brief-target">
                 <Text style={[type.meta, { color: colors.ink }]}>{t('skills.thinking')}</Text>

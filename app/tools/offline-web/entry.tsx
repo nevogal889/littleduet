@@ -14,6 +14,7 @@ import Player from '../../app/play/[classId]';
 import Celebrate from '../../app/celebrate';
 import PaywallRoute from '../../app/paywall';
 import Account from '../../app/account';
+import Tune from '../../app/tune';
 import Licenses from '../../app/licenses';
 import Settings from '../../app/settings';
 import Tutorial from '../../app/tutorial';
@@ -32,6 +33,7 @@ const routes: RouteDef[] = [
   { pattern: '/licenses', Component: Licenses },
   { pattern: '/settings', Component: Settings },
   { pattern: '/tutorial', Component: Tutorial },
+  { pattern: '/tune', Component: Tune },
 ];
 
 createRoot(document.getElementById('root')!).render(

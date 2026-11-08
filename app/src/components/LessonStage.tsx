@@ -8,6 +8,7 @@ import { LessonEngine, type EngineEvent } from '../lib/timeline';
 import { piano } from '../services/audio/piano';
 import { voice } from '../services/audio/voice';
 import { moment } from '../lib/moments';
+import { NUDGE_TIMES, outcomeFor, type CoachPlan, type CueLog } from '../lib/coach';
 import { Scene } from './Scene';
 import { colors, fonts, radius, space, useLayout } from '../theme';
 import type { LessonClass, Song } from '../types';
@@ -21,6 +22,10 @@ const WINDOW = 3; // seconds of falling notes visible
 export interface StageResult {
   completed: boolean;
   stars: number;
+  /** How each asked-for note went (adaptive teacher). Empty when nothing was listened for. */
+  cues?: CueLog[];
+  /** Seconds spent in the class. */
+  sec?: number;
 }
 
 /**
@@ -37,6 +42,7 @@ export function LessonStage({
   onExit,
   notice,
   skipReady = false,
+  plan,
 }: {
   song: Song;
   cls: LessonClass;
@@ -48,7 +54,25 @@ export function LessonStage({
   notice?: string | null;
   /** Start immediately (tests, tutorials). Otherwise the class waits on a get-ready card. */
   skipReady?: boolean;
+  /** Adaptive teacher's plan for this class: hint level and speed. */
+  plan?: CoachPlan;
 }) {
+  const level = plan?.hintLevel ?? 'normal';
+  const nudge = NUDGE_TIMES[level];
+  const tempo = plan?.tempo ?? 1;
+  // Fading: in the last "your turn" part the key no longer glows straight away ("now by yourself").
+  const lastTurnSeg = useMemo(() => cls.segments.map((g) => g.kind).lastIndexOf('your_turn'), [cls]);
+  const cueLogs = useRef<CueLog[]>([]);
+  const waitInfo = useRef<{ p: string; hinted: boolean } | null>(null);
+  const waitRef = useRef(0);
+  const startedAt = useRef<number | null>(null);
+  const spent = () => (startedAt.current ? Math.round((Date.now() - startedAt.current) / 1000) : 0);
+  const logCue = (p: string, opts: { skipped?: boolean } = {}) => {
+    if (watch) return;
+    const w = waitInfo.current?.p === p ? waitRef.current : 0;
+    cueLogs.current.push({ p, o: outcomeFor(w, { hinted: waitInfo.current?.p === p && waitInfo.current.hinted, skipped: opts.skipped, level }), w: Math.round(w * 10) / 10 });
+    waitInfo.current = null;
+  };
   const { width, height, isTablet, isLandscape } = useLayout();
   const insets = useSafeAreaInsets();
   const range = useMemo(() => keyboardRange(childPitches(song, cls)), [song, cls]);
@@ -94,6 +118,7 @@ export function LessonStage({
         setTimeout(() => setFlash((f) => ({ ...f, [e.p]: false })), 260);
         setPulse(1);
       } else if (e.type === 'hint') {
+        if (waitInfo.current) waitInfo.current.hinted = true;
         setHint(e.p);
         if (Date.now() - lastOther.current > 6000) {
           lastOther.current = Date.now();
@@ -118,7 +143,7 @@ export function LessonStage({
         const r = engine.result();
         const end = moment('classEnd', engine.classTime);
         if (end) voice.say(end.voiceId);
-        onFinish({ completed: r.completed, stars: watch ? 2 : r.stars });
+        onFinish({ completed: r.completed, stars: watch ? 2 : r.stars, cues: cueLogs.current, sec: spent() });
       }
     }
   };
@@ -132,7 +157,8 @@ export function LessonStage({
       const now = Date.now();
       // Web E2E hook: window.__LD_TIME_SCALE speeds the lesson clock (always 1 on devices).
       const scale = Platform.OS === 'web' ? Number((globalThis as any).__LD_TIME_SCALE) || 1 : 1;
-      const dt = Math.min(0.1, (now - last) / 1000) * scale;
+      const realDt = Math.min(0.1, (now - last) / 1000);
+      const dt = realDt * scale * tempo;
       last = now;
       if (ready && !paused && !finishedRef.current) {
         // The very first segment's line plays when the class starts (no segmentStart event for it).
@@ -142,16 +168,24 @@ export function LessonStage({
         }
         handle(engine.tick(dt));
         // Nudge ladder while waiting for the child (spec 7.4): 6 s child nudge, 12 s grown-up + pointer, 20 s Skip.
+        if (startedAt.current === null) startedAt.current = Date.now();
         if (engine.waitingFor) {
+          if (waitInfo.current?.p !== engine.waitingFor) {
+            waitInfo.current = { p: engine.waitingFor, hinted: false };
+            waitRef.current = 0;
+          }
+          // waiting time is real seconds, not lesson time (a slower class waits just as long)
+          waitRef.current += realDt;
           setWaitSec((w) => {
-            const nw = w + dt;
-            if (nw >= 6 && !nudged.current[6]) {
+            const nw = w + (tempo > 0 ? dt / tempo : dt);
+            if (nw >= nudge.child && !nudged.current[6]) {
               nudged.current[6] = true;
               const m = moment('waitNudge', engine.classTime);
               if (m) voice.say(m.voiceId);
             }
-            if (nw >= 12 && !nudged.current[12]) {
+            if (nw >= nudge.grownUp && !nudged.current[12]) {
               nudged.current[12] = true;
+              if (waitInfo.current) waitInfo.current.hinted = true;
               setHint(engine.waitingFor);
               const m = moment('waitNudgeGrownUp', engine.classTime);
               if (m) voice.say(m.voiceId);
@@ -197,7 +231,10 @@ export function LessonStage({
       if (p.startsWith('C') && !p.startsWith('C#')) start();
       return;
     }
-    handle(engine.press(p));
+    const turn = engine.segment.kind === 'your_turn';
+    const ev = engine.press(p);
+    if (turn && ev.some((e) => e.type === 'hit')) logCue(p);
+    handle(ev);
   };
   const start = () => {
     piano.unlock();
@@ -206,17 +243,20 @@ export function LessonStage({
   };
   const skipNote = () => {
     const p = engine.waitingFor;
-    if (p) handle(engine.press(p));
+    if (!p) return;
+    logCue(p, { skipped: true });
+    handle(engine.press(p));
   };
 
   const exit = () => {
     const r = engine.result();
     onProgress(engine.classTime, engine.segIndex);
-    onExit({ completed: r.completed, stars: watch ? (r.completed ? 1 : 0) : r.stars });
+    onExit({ completed: r.completed, stars: watch ? (r.completed ? 1 : 0) : r.stars, cues: cueLogs.current, sec: spent() });
   };
 
   const seg = engine.segment;
-  const lit = engine.litKeys();
+  const fading = level === 'fade' && engine.segIndex === lastTurnSeg && waitSec < 4;
+  const lit = fading ? engine.litKeys().filter((p) => p !== engine.waitingFor) : engine.litKeys();
   const sched = engine.schedule;
   const fingers: Record<string, number | undefined> = {};
   for (const n of sched) if (lit.includes(n.p) && n.f) fingers[n.p] = n.f;

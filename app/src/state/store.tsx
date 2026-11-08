@@ -1,4 +1,5 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { addLog, type ClassLog } from '../lib/coach';
 import { AppState } from 'react-native';
 import { LESSONS, SONGS } from '../data/catalog';
 import { FREE_ENTITLEMENT, isEntitled, type Entitlement, type Plan } from '../lib/entitlement';
@@ -44,6 +45,8 @@ interface Ctx {
   savePosition(cls: LessonClass, positionSec: number, segIndex?: number): void;
   /** Returns stickers newly earned by this completion. */
   completeClass(cls: LessonClass, stars: number, mode: PlayMode): Sticker[];
+  /** Store how a class went for the adaptive teacher (device-only). */
+  logClass(log: ClassLog): void;
   resetProgress(childId: string): void;
   purchase(plan: Plan): Promise<PurchaseResult>;
   restore(): Promise<Entitlement>;
@@ -231,6 +234,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
           ...(bday ? { birthdays: [...new Set([...(cd.birthdays ?? []), String(new Date().getFullYear())])] } : {}),
         }));
         return earned;
+      },
+      logClass(log) {
+        updateChildData((cd) => ({ ...cd, logs: addLog(cd.logs, log) }));
       },
       resetProgress(childId) {
         setData((d) => ({ ...d, childData: { ...d.childData, [childId]: emptyChild() } }));

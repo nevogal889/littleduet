@@ -150,6 +150,32 @@ describe('cluster-proof listening', () => {
   });
 });
 
+import { TOY_LISTEN } from '@/lib/pitch';
+
+describe('toy piano and xylophone', () => {
+  const at = (m: number, cents: number) => tone(m + cents / 100);
+  it('measures how far an untuned toy C sits from concert pitch', () => {
+    const m = new NoteMatcher(midiOfPitch('C4'), { ...TOY_LISTEN, tolerance: 1.5 });
+    m.feed(detectPitch(at(72, -60), SR, { maxHz: 2200 }));
+    expect(m.feed(detectPitch(at(72, -60), SR, { maxHz: 2200 }))).toBe(true);
+    expect(Math.abs(m.heardCents + 60)).toBeLessThan(15);
+  });
+  it('misses a 70-cents-flat toy note without tuning, hears it once tuned', () => {
+    const plain = new NoteMatcher(midiOfPitch('E4'));
+    plain.feed(detectPitch(at(64, -70), SR));
+    expect(plain.feed(detectPitch(at(64, -70), SR))).toBe(false);
+    const tuned = new NoteMatcher(midiOfPitch('E4'), { ...TOY_LISTEN, offsetCents: -70 });
+    tuned.feed(detectPitch(at(64, -70), SR, { maxHz: 2200 }));
+    expect(tuned.feed(detectPitch(at(64, -70), SR, { maxHz: 2200 }))).toBe(true);
+  });
+  it('hears a xylophone C up at 2,093 Hz in toy mode, and still rejects the wrong bar', () => {
+    const m = new NoteMatcher(midiOfPitch('C4'), { ...TOY_LISTEN });
+    expect([m.feedFrame(tone(96), SR), m.feedFrame(tone(96), SR)].some(Boolean)).toBe(true);
+    const wrong = new NoteMatcher(midiOfPitch('C4'), { ...TOY_LISTEN });
+    expect([wrong.feedFrame(tone(98), SR), wrong.feedFrame(tone(98), SR)].some(Boolean)).toBe(false);
+  });
+});
+
 import { childCues } from '@/lib/timeline';
 import type { LessonClass } from '@/types';
 

@@ -123,6 +123,7 @@ async function run(viewport, tag) {
   await shot('onboarding-child', true);
   await id('onb-next').click();
   await id('onb-mode-real').waitFor();
+  check(`${tag}: onboarding offers toy piano or xylophone`, (await id('onb-mode-toy').count()) === 1);
   await shot('onboarding-piano');
   await id('onb-mode-real').click();
   await id('gate').waitFor();
@@ -260,6 +261,9 @@ async function run(viewport, tag) {
   const plus = await id('celebrate-plus').innerText();
   check(`${tag}: celebration counts +stars and shows the streak`, /^\+[1-3] stars?$/.test(plus.trim()) && (await id('celebrate-streak').count()) === 1, plus);
   check(`${tag}: celebration shows what was practiced`, (await id('practiced-today').count()) === 1);
+  const noticedTxt = (await id('teacher-noticed').count()) ? await id('teacher-noticed').innerText() : '';
+  check(`${tag}: adaptive teacher says what it noticed`, /without help/.test(noticedTxt), noticedTxt.replace(/\s+/g, ' ').slice(0, 90));
+  check(`${tag}: celebration offers a screen-free idea for later`, (await id('home-idea').count()) === 1);
   await id('celebrate-continue').click();
   await id('song-page').waitFor();
   check(`${tag}: song page shows the lesson path`, (await id('lesson-path').count()) === 1 && (await id('song-primary').count()) === 1);
@@ -291,6 +295,8 @@ async function run(viewport, tag) {
   await id('grownups').waitFor();
   await shot('grownups', true);
   check(`${tag}: grown-ups shows progress (minutes, songs, skills)`, (await id('minutes-week').count()) === 1 && (await id('learning-list').count()) === 1 && (await id('skills-practiced').count()) === 1);
+  const weekTxt = (await id('week-report').count()) ? await id('week-report').innerText() : '';
+  check(`${tag}: weekly teacher report shows notes played without help`, /% of notes played without help/.test(weekTxt), weekTxt.replace(/\s+/g, ' ').slice(0, 90));
   await id('open-settings').click();
   await page.waitForTimeout(300);
   if (await id('gate').count()) {
@@ -301,6 +307,18 @@ async function run(viewport, tag) {
   await id('settings').waitFor();
   await shot('settings', true);
   check(`${tag}: settings has piano mode + birthday`, (await id('gu-mode').count()) === 1 && /Birthday:/.test(await page.locator('[data-testid^="child-age-"]').first().innerText()));
+  check(`${tag}: settings has the adaptive teacher switch`, (await id('adaptive-toggle').count()) === 1);
+  // Toy instruments: pick "Toy piano or xylophone", then open "Tune to our toy".
+  if (!(await id('instrument-toggle').count())) await id('gu-mode-real').click();
+  await id('instrument-toggle-toy').click();
+  await id('tune-open').waitFor();
+  check(`${tag}: toy mode explains self-tuning`, /tunes itself/.test(await id('settings').innerText()));
+  await id('tune-open').click();
+  await id('tune').waitFor();
+  await shot('tune-toy');
+  check(`${tag}: tune screen asks for the toy's C`, /Play C on your toy|microphone/.test(await id('tune').innerText()));
+  await id('tune-back').click();
+  await id('settings').waitFor();
   check(`${tag}: public-domain note lives in Settings`, (await id('public-domain-note').count()) === 1);
   check(`${tag}: About shows CC BY piano credit`, /CC BY 3\.0/.test(await id('audio-credit').innerText()));
 
