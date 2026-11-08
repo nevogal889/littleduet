@@ -58,7 +58,7 @@
  "icon": "ball",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2318,
+ "totalSec": 2309,
  "classes": [
   {
    "id": "one-two-buckle-my-shoe-c01",
@@ -66,7 +66,7 @@
    "title": "Sway and knock-knock",
    "goal": "Hear the whole rhyme, sway to the beat and knock at 'door'.",
    "type": "listen",
-   "durationSec": 245,
+   "durationSec": 250,
    "parentTip": "Sway side by side; knock gently on your knees at 'knock at the door'.",
    "video": "one-two-buckle-my-shoe/one-two-buckle-my-shoe-c01.mp4",
    "thumb": "one-two-buckle-my-shoe/one-two-buckle-my-shoe-c01.jpg",
@@ -120,10 +120,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and bounce",
+     "parentCue": "Bounce gently on your knees",
      "bpm": 100,
-     "leadInSec": 2.27,
+     "leadInSec": 2.34,
      "notes": [
       {
        "p": "C4",
@@ -352,25 +352,26 @@
       }
      ],
      "durationSec": 25,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and bounce with me.",
+     "voiceId": "dca195c8ddbb925e",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 100,
-     "leadInSec": 1.93,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 85,
+     "leadInSec": 4.7,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "C4",
@@ -410,9 +411,7 @@
       {
        "p": "C4",
        "d": 2,
-       "f": 1,
-       "s": "shoe",
-       "who": "parent"
+       "s": "shoe"
       },
       {
        "p": "D4",
@@ -452,9 +451,7 @@
       {
        "p": "D4",
        "d": 2,
-       "f": 2,
-       "s": "door",
-       "who": "parent"
+       "s": "door"
       },
       {
        "p": "E4",
@@ -487,9 +484,7 @@
       {
        "p": "G4",
        "d": 2,
-       "f": 5,
-       "s": "sticks",
-       "who": "parent"
+       "s": "sticks"
       },
       {
        "p": "G4",
@@ -529,51 +524,7 @@
       {
        "p": "D4",
        "d": 2,
-       "f": 2,
-       "s": "straight",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Nine",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ten",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "big",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "fat",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "hen",
-       "who": "parent"
+       "s": "straight"
       }
      ],
      "lines": [
@@ -592,263 +543,12 @@
       {
        "lyric": "Seven, eight, lay them straight",
        "from": 17
-      },
-      {
-       "lyric": "Nine, ten, a big fat hen",
-       "from": 23
       }
      ],
-     "durationSec": 24,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 100,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "One",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "two",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "buc",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "shoe",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Three",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "four",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "knock",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "at",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "door",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Five",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "six",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "pick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "sticks",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Sev",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "en",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "eight",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "lay",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "them",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "straight",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Nine",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ten",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "big",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "fat",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "hen",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "One, two, buckle my shoe",
-       "from": 0
-      },
-      {
-       "lyric": "Three, four, knock at the door",
-       "from": 6
-      },
-      {
-       "lyric": "Five, six, pick up sticks",
-       "from": 12
-      },
-      {
-       "lyric": "Seven, eight, lay them straight",
-       "from": 17
-      },
-      {
-       "lyric": "Nine, ten, a big fat hen",
-       "from": 23
-      }
-     ],
-     "durationSec": 25,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
-     "voiceSec": 2.66
+     "durationSec": 29,
+     "voice": "Your turn. Press the glowing key with one finger.",
+     "voiceId": "47631c6d2adadecd",
+     "voiceSec": 4.3
     },
     {
      "kind": "say",
@@ -1106,20 +806,90 @@
      "voiceSec": 1.94
     },
     {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 100,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Three",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "four",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "knock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "at",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "door",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Three, four, knock at the door",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's wave",
+     "parentCue": "Wave your arms slowly",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Now let's wave. Grown-up, wave your arms slowly.",
+     "voiceId": "691860dc06abbc20",
+     "voiceSec": 4.47
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "Listen and wave",
+     "parentCue": "Wave your arms slowly",
      "bpm": 100,
-     "leadInSec": 1.93,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "C4",
@@ -1347,10 +1117,80 @@
        "from": 23
       }
      ],
-     "durationSec": 24,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 25,
+     "voice": "Listen and wave with me.",
+     "voiceId": "8fdf219288a4563d",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 100,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "One",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "two",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "buc",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "shoe",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "One, two, buckle my shoe",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -1600,63 +1440,12 @@
      "voiceSec": 2.66
     },
     {
-     "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
-     "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
-    },
-    {
      "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 100,
-     "leadInSec": 2.78,
+     "leadInSec": 3.34,
      "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "One",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "two",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "buc",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "shoe",
-       "who": "parent"
-      },
       {
        "p": "D4",
        "d": 1,
@@ -1698,153 +1487,36 @@
        "f": 2,
        "s": "door",
        "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Five",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "six",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "pick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "sticks",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Sev",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "en",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "eight",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "lay",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "them",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "straight",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Nine",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ten",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "big",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "fat",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "hen",
-       "who": "parent"
       }
      ],
      "lines": [
       {
-       "lyric": "One, two, buckle my shoe",
-       "from": 0
-      },
-      {
        "lyric": "Three, four, knock at the door",
-       "from": 6
-      },
-      {
-       "lyric": "Five, six, pick up sticks",
-       "from": 12
-      },
-      {
-       "lyric": "Seven, eight, lay them straight",
-       "from": 17
-      },
-      {
-       "lyric": "Nine, ten, a big fat hen",
-       "from": 23
+       "from": 0
       }
      ],
-     "durationSec": 25,
-     "voice": "Point to each key as it lights up.",
-     "voiceId": "721e6d8cdcf7a9a2",
-     "voiceSec": 2.38
+     "durationSec": 10,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 5,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
@@ -1877,7 +1549,7 @@
    "title": "One, two, tap, tap",
    "goal": "Tap one steady tap on each beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 255,
+   "durationSec": 252,
    "parentTip": "Rest your hand on your child's hand; tap together, then slowly let go.",
    "video": "one-two-buckle-my-shoe/one-two-buckle-my-shoe-c02.mp4",
    "thumb": "one-two-buckle-my-shoe/one-two-buckle-my-shoe-c02.jpg",
@@ -1942,6 +1614,200 @@
      "voice": "One, two, buckle my shoe. Tap the beat with me.",
      "voiceId": "b4e5d7bb2fd59e3f",
      "voiceSec": 3.34
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 85,
+     "leadInSec": 4.18,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "One",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "two",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "buc",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "shoe"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Three",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "four",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "knock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "at",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "door"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Five",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "six",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "pick",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "sticks"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Sev",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "en",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "eight",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lay",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "them",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "straight"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "One, two, buckle my shoe",
+       "from": 0
+      },
+      {
+       "lyric": "Three, four, knock at the door",
+       "from": 6
+      },
+      {
+       "lyric": "Five, six, pick up sticks",
+       "from": 12
+      },
+      {
+       "lyric": "Seven, eight, lay them straight",
+       "from": 17
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
     },
     {
      "kind": "beat",
@@ -3203,261 +3069,6 @@
     },
     {
      "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap with the big circle",
-     "parentCue": "You play, your child taps",
-     "bpm": 100,
-     "leadInSec": 3.27,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "One",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "two",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "buc",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "shoe",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Three",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "four",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "knock",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "at",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "door",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Five",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "six",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "pick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "sticks",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Sev",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "en",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "eight",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "lay",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "them",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "straight",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Nine",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ten",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "big",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "fat",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "hen",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "One, two, buckle my shoe",
-       "from": 0
-      },
-      {
-       "lyric": "Three, four, knock at the door",
-       "from": 6
-      },
-      {
-       "lyric": "Five, six, pick up sticks",
-       "from": 12
-      },
-      {
-       "lyric": "Seven, eight, lay them straight",
-       "from": 17
-      },
-      {
-       "lyric": "Nine, ten, a big fat hen",
-       "from": 23
-      }
-     ],
-     "durationSec": 26,
-     "voice": "Tap with the circle. Nice and steady.",
-     "voiceId": "d916f37a4d2a5a53",
-     "voiceSec": 2.87
-    },
-    {
-     "kind": "praise",
-     "caption": "Well done!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
      "caption": "The start once more",
      "parentCue": "Play the beginning again",
      "durationSec": 6,
@@ -3572,9 +3183,9 @@
      "kind": "praise",
      "caption": "You kept the beat!",
      "durationSec": 5,
-     "voice": "Lovely work. You kept on trying.",
-     "voiceId": "fdd2bcc9e53b2a9b",
-     "voiceSec": 2.84
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {
@@ -5198,7 +4809,7 @@
    "title": "Up the stairs, one more step",
    "goal": "Echo a little tune, then the same tune starting one step higher.",
    "type": "echo",
-   "durationSec": 278,
+   "durationSec": 273,
    "parentTip": "Walk your fingers up one stair on your child's arm for each new line.",
    "video": "one-two-buckle-my-shoe/one-two-buckle-my-shoe-c05.mp4",
    "thumb": "one-two-buckle-my-shoe/one-two-buckle-my-shoe-c05.jpg",
@@ -6067,15 +5678,6 @@
      "voice": "Your turn. Echo me.",
      "voiceId": "eaf39d9171866fee",
      "voiceSec": 2.16
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 5,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
     },
     {
      "kind": "praise",
@@ -7466,7 +7068,7 @@
    "title": "E and D, next-door keys",
    "goal": "Play two special notes, E and D, when they light up in the song.",
    "type": "special-note",
-   "durationSec": 267,
+   "durationSec": 266,
    "parentTip": "Point to E or D just before it lights, then let your child play it.",
    "video": "one-two-buckle-my-shoe/one-two-buckle-my-shoe-c07.mp4",
    "thumb": "one-two-buckle-my-shoe/one-two-buckle-my-shoe-c07.jpg",
@@ -8584,7 +8186,7 @@
      "kind": "say",
      "caption": "Big breath in and out",
      "parentCue": "Breathe slowly together",
-     "durationSec": 7,
+     "durationSec": 6,
      "voice": "Big breath in, and out.",
      "voiceId": "67a43f157c55d975",
      "voiceSec": 2.01
@@ -8620,7 +8222,7 @@
    "title": "Buckle up, play together",
    "goal": "Play the whole song together, the grown-up on the tune, the child on E and D.",
    "type": "together",
-   "durationSec": 231,
+   "durationSec": 226,
    "parentTip": "Keep playing even if a note is missed; nod the beat with your head.",
    "video": "one-two-buckle-my-shoe/one-two-buckle-my-shoe-c08.mp4",
    "thumb": "one-two-buckle-my-shoe/one-two-buckle-my-shoe-c08.jpg",
@@ -8872,6 +8474,200 @@
      "voice": "Together time. Big smiles.",
      "voiceId": "a441a4bce0e6e1e6",
      "voiceSec": 2.6
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 85,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "One",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "two",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "buc",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "shoe"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Three",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "four",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "knock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "at",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "door"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Five",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "six",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "pick",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "sticks"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Sev",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "en",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "eight",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lay",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "them",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "straight"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "One, two, buckle my shoe",
+       "from": 0
+      },
+      {
+       "lyric": "Three, four, knock at the door",
+       "from": 6
+      },
+      {
+       "lyric": "Five, six, pick up sticks",
+       "from": 12
+      },
+      {
+       "lyric": "Seven, eight, lay them straight",
+       "from": 17
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "say",
@@ -9855,258 +9651,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "You stayed together!",
      "durationSec": 5,
      "voice": "Lovely work. You kept on trying.",
      "voiceId": "fdd2bcc9e53b2a9b",
      "voiceSec": 2.84
-    },
-    {
-     "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Swap seats if your child wants",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "together",
-     "caption": "Together again",
-     "parentCue": "Smile and keep going",
-     "bpm": 85,
-     "leadInSec": 1.84,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "One",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "two",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "buc"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "kle"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "my"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "shoe",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Three",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "four"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "knock",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "at",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "door",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Five"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "six",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "pick",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "sticks",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Sev",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "en",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "eight",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "lay"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "them"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "straight",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Nine"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ten",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "big",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "fat",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "hen",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "One, two, buckle my shoe",
-       "from": 0
-      },
-      {
-       "lyric": "Three, four, knock at the door",
-       "from": 6
-      },
-      {
-       "lyric": "Five, six, pick up sticks",
-       "from": 12
-      },
-      {
-       "lyric": "Seven, eight, lay them straight",
-       "from": 17
-      },
-      {
-       "lyric": "Nine, ten, a big fat hen",
-       "from": 23
-      }
-     ],
-     "durationSec": 28,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
-    },
-    {
-     "kind": "praise",
-     "caption": "You stayed together!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
     }
    ],
    "skill": {

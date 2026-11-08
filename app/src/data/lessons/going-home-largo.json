@@ -51,7 +51,7 @@
  "icon": "moon",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2121,
+ "totalSec": 2117,
  "classes": [
   {
    "id": "going-home-largo-c01",
@@ -59,7 +59,7 @@
    "title": "Up a little, down home",
    "goal": "Listen to the slow tune and move your arms up and down with it.",
    "type": "listen",
-   "durationSec": 189,
+   "durationSec": 185,
    "parentTip": "Sway slowly together; lift your arms on the first 'going home', lower them on the next.",
    "video": "going-home-largo/going-home-largo-c01.mp4",
    "thumb": "going-home-largo/going-home-largo-c01.jpg",
@@ -113,10 +113,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and march",
+     "parentCue": "March on the spot to the beat",
      "bpm": 72,
-     "leadInSec": 2.27,
+     "leadInSec": 2.48,
      "notes": [
       {
        "p": "E4",
@@ -300,25 +300,26 @@
       }
      ],
      "durationSec": 31,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and march with me.",
+     "voiceId": "d4e3ae6e88185fcd",
+     "voiceSec": 2.08
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 72,
-     "leadInSec": 1.93,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 61,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "E4",
@@ -337,9 +338,7 @@
       {
        "p": "G4",
        "d": 2,
-       "f": 5,
-       "s": "home",
-       "who": "parent"
+       "s": "home"
       },
       {
        "p": "E4",
@@ -358,9 +357,7 @@
       {
        "p": "C4",
        "d": 2,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
+       "s": "home"
       },
       {
        "p": "D4",
@@ -393,9 +390,7 @@
       {
        "p": "D4",
        "d": 4,
-       "f": 2,
-       "s": "home",
-       "who": "parent"
+       "s": "home"
       },
       {
        "p": "E4",
@@ -414,65 +409,7 @@
       {
        "p": "G4",
        "d": 2,
-       "f": 5,
-       "s": "now",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "slee",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "py",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "now",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "are",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
+       "s": "now"
       }
      ],
      "lines": [
@@ -491,20 +428,12 @@
       {
        "lyric": "Quiet now",
        "from": 11
-      },
-      {
-       "lyric": "sleepy now",
-       "from": 14
-      },
-      {
-       "lyric": "we are going home",
-       "from": 17
       }
      ],
-     "durationSec": 31,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 29,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "say",
@@ -640,41 +569,6 @@
        "f": 1,
        "s": "now",
        "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "are",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -697,13 +591,9 @@
       {
        "lyric": "sleepy now",
        "from": 14
-      },
-      {
-       "lyric": "we are going home",
-       "from": 17
       }
      ],
-     "durationSec": 32,
+     "durationSec": 25,
      "voice": "Clap along. Clap, clap, clap.",
      "voiceId": "18bb4de584dd97ad",
      "voiceSec": 2.66
@@ -842,41 +732,6 @@
        "f": 1,
        "s": "now",
        "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "are",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -899,13 +754,9 @@
       {
        "lyric": "sleepy now",
        "from": 14
-      },
-      {
-       "lyric": "we are going home",
-       "from": 17
       }
      ],
-     "durationSec": 31,
+     "durationSec": 25,
      "voice": "Point to each key as it lights up.",
      "voiceId": "721e6d8cdcf7a9a2",
      "voiceSec": 2.38
@@ -919,13 +770,53 @@
      "voiceSec": 2.26
     },
     {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 72,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "home",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "going home",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
      "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
      "durationSec": 7,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "praise",
@@ -958,7 +849,7 @@
    "title": "Slow footsteps home",
    "goal": "Tap one slow, steady tap for every beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 196,
+   "durationSec": 207,
    "parentTip": "Rest your hand over your child's hand and tap slowly together, then gently let go.",
    "video": "going-home-largo/going-home-largo-c02.mp4",
    "thumb": "going-home-largo/going-home-largo-c02.jpg",
@@ -1018,6 +909,137 @@
      "voice": "Walk slowly, we are going home. Soft, slow taps.",
      "voiceId": "b3ba5844870abf9a",
      "voiceSec": 3.88
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 61,
+     "leadInSec": 2.84,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "home"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "home"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "are",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 4,
+       "s": "home"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Qui",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "et",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "now"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Going home",
+       "from": 0
+      },
+      {
+       "lyric": "going home",
+       "from": 3
+      },
+      {
+       "lyric": "we are going home",
+       "from": 6
+      },
+      {
+       "lyric": "Quiet now",
+       "from": 11
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Your turn. I'll wait for you.",
+     "voiceId": "30da762511a45127",
+     "voiceSec": 2.44
     },
     {
      "kind": "beat",
@@ -1634,26 +1656,25 @@
     },
     {
      "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "Keep the taps steady",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
-     "kind": "beat",
-     "caption": "Tap, tap, tap",
-     "parentCue": "You play, your child taps",
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Your child plays the special note",
      "bpm": 72,
-     "leadInSec": 3.54,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Go",
-       "who": "parent"
+       "s": "Go"
       },
       {
        "p": "G4",
@@ -1673,8 +1694,7 @@
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "go",
-       "who": "parent"
+       "s": "go"
       },
       {
        "p": "D4",
@@ -1701,8 +1721,7 @@
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "are",
-       "who": "parent"
+       "s": "are"
       },
       {
        "p": "G4",
@@ -1715,90 +1734,12 @@
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "ing",
-       "who": "parent"
+       "s": "ing"
       },
       {
        "p": "D4",
        "d": 4,
        "f": 2,
-       "s": "home",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Qui",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "now",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "slee",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "py",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "now",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "are",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
        "s": "home",
        "who": "parent"
       }
@@ -1815,49 +1756,20 @@
       {
        "lyric": "we are going home",
        "from": 6
-      },
-      {
-       "lyric": "Quiet now",
-       "from": 11
-      },
-      {
-       "lyric": "sleepy now",
-       "from": 14
-      },
-      {
-       "lyric": "we are going home",
-       "from": 17
       }
      ],
-     "durationSec": 32,
-     "voice": "Grown-up plays the song. You tap the beat.",
-     "voiceId": "4517efb7c8c0ff3d",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 4,
-     "voice": "Shake, shake, shake your hands.",
-     "voiceId": "69041444bf86c15c",
-     "voiceSec": 2.85
+     "durationSec": 17,
+     "voice": "Play along with me.",
+     "voiceId": "f7d6cd562d8b99fe",
+     "voiceSec": 1.44
     },
     {
      "kind": "praise",
      "caption": "Such calm, steady steps!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
@@ -1882,7 +1794,7 @@
    "title": "Find E, the home key",
    "goal": "Find the special note E by using the two black keys as a landmark.",
    "type": "special-note",
-   "durationSec": 228,
+   "durationSec": 227,
    "parentTip": "Guide your child's finger over two black keys, then slide right to E.",
    "video": "going-home-largo/going-home-largo-c03.mp4",
    "thumb": "going-home-largo/going-home-largo-c03.jpg",
@@ -2360,7 +2272,7 @@
      "kind": "say",
      "caption": "Big breath in and out",
      "parentCue": "Breathe slowly together",
-     "durationSec": 5,
+     "durationSec": 4,
      "voice": "Big breath in, and out.",
      "voiceId": "67a43f157c55d975",
      "voiceSec": 2.01
@@ -5658,7 +5570,7 @@
    "title": "Walking home together",
    "goal": "Play the whole song together, sharing one slow, calm beat.",
    "type": "together",
-   "durationSec": 232,
+   "durationSec": 229,
    "parentTip": "Play slowly and breathe with your child; if they miss a note, keep going and smile.",
    "video": "going-home-largo/going-home-largo-c09.mp4",
    "thumb": "going-home-largo/going-home-largo-c09.jpg",
@@ -5895,6 +5807,137 @@
      "voice": "Together now. Keep going, even after a slip.",
      "voiceId": "6ef58099ced29d5c",
      "voiceSec": 3.72
+    },
+    {
+     "kind": "say",
+     "caption": "Now you play the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Now you play the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "26d77d7c62a95e67",
+     "voiceSec": 6.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 61,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "home"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "home"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "are",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 4,
+       "s": "home"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Qui",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "et",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "now"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Going home",
+       "from": 0
+      },
+      {
+       "lyric": "going home",
+       "from": 3
+      },
+      {
+       "lyric": "we are going home",
+       "from": 6
+      },
+      {
+       "lyric": "Quiet now",
+       "from": 11
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "say",
@@ -6304,19 +6347,19 @@
     },
     {
      "kind": "say",
-     "caption": "Let's do it again",
+     "caption": "And again!",
      "parentCue": "Swap seats if your child wants",
-     "durationSec": 6,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
+     "durationSec": 5,
+     "voice": "And again.",
+     "voiceId": "be3897a52d81cfa7",
+     "voiceSec": 1.2
     },
     {
      "kind": "together",
      "caption": "Together again",
      "parentCue": "Smile and keep going",
-     "bpm": 61,
-     "leadInSec": 1.967,
+     "bpm": 72,
+     "leadInSec": 1.84,
      "notes": [
       {
        "p": "E4",
@@ -6492,183 +6535,18 @@
        "from": 17
       }
      ],
-     "durationSec": 35,
+     "durationSec": 31,
      "voice": "Play along with me.",
      "voiceId": "f7d6cd562d8b99fe",
      "voiceSec": 1.44
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
+     "caption": "We walked home together!",
      "durationSec": 5,
      "voice": "High five, grown-up. High five, little one.",
      "voiceId": "02217b24bc257a87",
      "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "together",
-     "caption": "Play it together",
-     "parentCue": "Your child plays the special note",
-     "bpm": 72,
-     "leadInSec": 1.97,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Go"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "home",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "ing"
-      },
-      {
-       "p": "D4",
-       "d": 4,
-       "f": 2,
-       "s": "home",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Qui"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "et",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "now",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "slee"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "py",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "now",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Going home",
-       "from": 0
-      },
-      {
-       "lyric": "going home",
-       "from": 3
-      },
-      {
-       "lyric": "we are going home",
-       "from": 6
-      },
-      {
-       "lyric": "Quiet now",
-       "from": 11
-      },
-      {
-       "lyric": "sleepy now",
-       "from": 14
-      }
-     ],
-     "durationSec": 24,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
-    },
-    {
-     "kind": "praise",
-     "caption": "We walked home together!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
     }
    ],
    "skill": {
@@ -6693,7 +6571,7 @@
    "title": "Quiet concert for teddy",
    "goal": "Play the whole song for teddy and hear how it ends, home on C.",
    "type": "concert",
-   "durationSec": 225,
+   "durationSec": 218,
    "parentTip": "Sit teddy as the audience; play softly, then whisper 'we're home' and bow together.",
    "video": "going-home-largo/going-home-largo-c10.mp4",
    "thumb": "going-home-largo/going-home-largo-c10.jpg",
@@ -7647,40 +7525,6 @@
        "f": 1,
        "s": "now",
        "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -7703,13 +7547,9 @@
       {
        "lyric": "sleepy now",
        "from": 14
-      },
-      {
-       "lyric": "we are going home",
-       "from": 17
       }
      ],
-     "durationSec": 33,
+     "durationSec": 26,
      "voice": "Together now. Keep going, even after a slip.",
      "voiceId": "6ef58099ced29d5c",
      "voiceSec": 3.72

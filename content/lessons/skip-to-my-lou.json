@@ -51,7 +51,7 @@
  "icon": "heart",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 1980,
+ "totalSec": 1974,
  "classes": [
   {
    "id": "skip-to-my-lou-c01",
@@ -59,7 +59,7 @@
    "title": "Skip to my Lou",
    "goal": "Hear the whole song, sway, and clap each time 'Lou, lou' comes back.",
    "type": "listen",
-   "durationSec": 261,
+   "durationSec": 250,
    "parentTip": "Sway together and clap twice with your child on every 'Lou, lou'.",
    "video": "skip-to-my-lou/skip-to-my-lou-c01.mp4",
    "thumb": "skip-to-my-lou/skip-to-my-lou-c01.jpg",
@@ -113,10 +113,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and wave",
+     "parentCue": "Wave your arms slowly",
      "bpm": 104,
-     "leadInSec": 2.27,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "E4",
@@ -313,25 +313,233 @@
       }
      ],
      "durationSec": 16,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and wave with me.",
+     "voiceId": "8fdf219288a4563d",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 88,
+     "leadInSec": 3.9,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "skip",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "s": "Lou"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "lou",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "skip",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "s": "Lou"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2,
+       "s": "lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "skip",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "s": "Lou"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Skip",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "dar",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "ling"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Lou, lou, skip to my Lou",
+       "from": 0
+      },
+      {
+       "lyric": "Lou, lou, skip to my Lou",
+       "from": 6
+      },
+      {
+       "lyric": "Lou, lou, skip to my Lou",
+       "from": 12
+      },
+      {
+       "lyric": "Skip to my Lou, my darling",
+       "from": 18
+      }
+     ],
+     "durationSec": 23,
+     "voice": "Your turn. Wait for the glow, then press.",
+     "voiceId": "e03bd593ae91d1cb",
+     "voiceSec": 3.5
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's rock",
+     "parentCue": "Rock gently like a boat",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Now let's rock. Grown-up, rock gently like a boat.",
+     "voiceId": "561f28444796d11d",
+     "voiceSec": 4.0
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "Listen and rock",
+     "parentCue": "Rock gently like a boat",
      "bpm": 104,
-     "leadInSec": 1.93,
+     "leadInSec": 2.22,
      "notes": [
       {
        "p": "E4",
@@ -528,9 +736,79 @@
       }
      ],
      "durationSec": 16,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "voice": "Listen and rock with me.",
+     "voiceId": "87705484b21d1d46",
+     "voiceSec": 1.82
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 104,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "skip",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Lou",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Lou, lou, skip to my Lou",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -971,64 +1249,13 @@
      "voiceSec": 1.94
     },
     {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 104,
-     "leadInSec": 1.93,
+     "leadInSec": 3.34,
      "notes": [
       {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
        "p": "D4",
        "d": 1,
        "f": 2,
@@ -1068,97 +1295,6 @@
        "d": 1,
        "f": 5,
        "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Skip",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "dar",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "ling",
        "who": "parent"
       }
      ],
@@ -1166,255 +1302,38 @@
       {
        "lyric": "Lou, lou, skip to my Lou",
        "from": 0
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 6
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 12
-      },
-      {
-       "lyric": "Skip to my Lou, my darling",
-       "from": 18
       }
      ],
-     "durationSec": 16,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 8,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
     },
     {
      "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 104,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Skip",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "dar",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "ling",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 0
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 6
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 12
-      },
-      {
-       "lyric": "Skip to my Lou, my darling",
-       "from": 18
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
      "voiceSec": 2.66
     },
     {
      "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
-     "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
-     "bpm": 104,
-     "leadInSec": 2.78,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 88,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "E4",
@@ -1454,9 +1373,7 @@
       {
        "p": "G4",
        "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
+       "s": "Lou"
       },
       {
        "p": "D4",
@@ -1496,9 +1413,7 @@
       {
        "p": "F4",
        "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
+       "s": "Lou"
       },
       {
        "p": "E4",
@@ -1538,9 +1453,7 @@
       {
        "p": "G4",
        "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
+       "s": "Lou"
       },
       {
        "p": "D4",
@@ -1587,9 +1500,7 @@
       {
        "p": "C4",
        "d": 2,
-       "f": 1,
-       "s": "ling",
-       "who": "parent"
+       "s": "ling"
       }
      ],
      "lines": [
@@ -1610,34 +1521,26 @@
        "from": 18
       }
      ],
-     "durationSec": 17,
-     "voice": "Point to each key as it lights up.",
-     "voiceId": "721e6d8cdcf7a9a2",
-     "voiceSec": 2.38
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "durationSec": 23,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "Now let's rock",
+     "parentCue": "Rock gently like a boat",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Now let's rock. Grown-up, rock gently like a boat.",
+     "voiceId": "561f28444796d11d",
+     "voiceSec": 4.0
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "Listen and rock",
+     "parentCue": "Rock gently like a boat",
      "bpm": 104,
-     "leadInSec": 1.93,
+     "leadInSec": 2.22,
      "notes": [
       {
        "p": "E4",
@@ -1834,25 +1737,16 @@
       }
      ],
      "durationSec": 16,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
+     "voice": "Listen and rock with me.",
+     "voiceId": "87705484b21d1d46",
+     "voiceSec": 1.82
     },
     {
      "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 104,
-     "leadInSec": 3.06,
+     "leadInSec": 3.34,
      "notes": [
       {
        "p": "E4",
@@ -1895,386 +1789,35 @@
        "f": 5,
        "s": "Lou",
        "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Skip",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "dar",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "ling",
-       "who": "parent"
       }
      ],
      "lines": [
       {
        "lyric": "Lou, lou, skip to my Lou",
        "from": 0
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 6
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 12
-      },
-      {
-       "lyric": "Skip to my Lou, my darling",
-       "from": 18
       }
      ],
-     "durationSec": 17,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
+     "durationSec": 8,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
      "voiceSec": 2.66
-    },
-    {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 104,
-     "leadInSec": 1.93,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Skip",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "dar",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "ling",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 0
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 6
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 12
-      },
-      {
-       "lyric": "Skip to my Lou, my darling",
-       "from": 18
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
     },
     {
      "kind": "praise",
      "caption": "You heard it come back!",
      "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "voice": "Beautiful, gentle fingers.",
+     "voiceId": "16fffae286737b05",
+     "voiceSec": 2.22
     }
    ],
    "skill": {
@@ -2299,7 +1842,7 @@
    "title": "Skipping feet, steady beat",
    "goal": "Tap one steady tap on each beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 234,
+   "durationSec": 236,
    "parentTip": "Rest your hand on your child's hand; tap together, then slowly let go.",
    "video": "skip-to-my-lou/skip-to-my-lou-c02.mp4",
    "thumb": "skip-to-my-lou/skip-to-my-lou-c02.jpg",
@@ -2364,6 +1907,214 @@
      "voice": "Lou, lou, skip to my Lou. Tap the beat.",
      "voiceId": "0e5e668f82a7cdd9",
      "voiceSec": 2.86
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 88,
+     "leadInSec": 2.84,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "skip",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "s": "Lou"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "lou",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "skip",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "s": "Lou"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2,
+       "s": "lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "skip",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "s": "Lou"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Skip",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "dar",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "ling"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Lou, lou, skip to my Lou",
+       "from": 0
+      },
+      {
+       "lyric": "Lou, lou, skip to my Lou",
+       "from": 6
+      },
+      {
+       "lyric": "Lou, lou, skip to my Lou",
+       "from": 12
+      },
+      {
+       "lyric": "Skip to my Lou, my darling",
+       "from": 18
+      }
+     ],
+     "durationSec": 22,
+     "voice": "Your turn. I'll wait for you.",
+     "voiceId": "30da762511a45127",
+     "voiceSec": 2.44
     },
     {
      "kind": "beat",
@@ -3903,234 +3654,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Yes, that's it!",
+     "caption": "You kept the beat!",
      "durationSec": 5,
      "voice": "High five, grown-up. High five, little one.",
      "voiceId": "02217b24bc257a87",
      "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 5,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap on every beat",
-     "parentCue": "You play, your child taps",
-     "bpm": 104,
-     "leadInSec": 2.45,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Skip",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "dar",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "ling",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 0
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 6
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 12
-      },
-      {
-       "lyric": "Skip to my Lou, my darling",
-       "from": 18
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
-    },
-    {
-     "kind": "praise",
-     "caption": "You kept the beat!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
     }
    ],
    "skill": {
@@ -8100,7 +7628,7 @@
    "title": "Partners at the piano",
    "goal": "Play the whole song together, the grown-up on the tune, the child on D.",
    "type": "together",
-   "durationSec": 235,
+   "durationSec": 238,
    "parentTip": "Keep playing even if a note is missed; nod the beat with your head.",
    "video": "skip-to-my-lou/skip-to-my-lou-c07.mp4",
    "thumb": "skip-to-my-lou/skip-to-my-lou-c07.jpg",
@@ -8322,6 +7850,214 @@
      "voice": "Together time. Big smiles.",
      "voiceId": "a441a4bce0e6e1e6",
      "voiceSec": 2.6
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 88,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "skip",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "s": "Lou"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 1,
+       "f": 1,
+       "s": "lou",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "skip",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 3,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "s": "Lou"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 4,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 2,
+       "s": "lou",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 2,
+       "s": "skip",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 4,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "s": "Lou"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Skip",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Lou",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "dar",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "ling"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Lou, lou, skip to my Lou",
+       "from": 0
+      },
+      {
+       "lyric": "Lou, lou, skip to my Lou",
+       "from": 6
+      },
+      {
+       "lyric": "Lou, lou, skip to my Lou",
+       "from": 12
+      },
+      {
+       "lyric": "Skip to my Lou, my darling",
+       "from": 18
+      }
+     ],
+     "durationSec": 23,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "say",
@@ -9619,228 +9355,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "You stayed together!",
      "durationSec": 5,
      "voice": "I love how you kept going.",
      "voiceId": "5edf54ba234e9d32",
      "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Swap seats if your child wants",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Together again",
-     "parentCue": "Smile and keep going",
-     "bpm": 104,
-     "leadInSec": 2.47,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Lou"
-      },
-      {
-       "p": "B3",
-       "d": 1,
-       "f": 1,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 3,
-       "s": "to"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 2,
-       "s": "lou",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 2,
-       "s": "skip",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 4,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Skip"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "to"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "my"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Lou",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "dar"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "ling",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 0
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 6
-      },
-      {
-       "lyric": "Lou, lou, skip to my Lou",
-       "from": 12
-      },
-      {
-       "lyric": "Skip to my Lou, my darling",
-       "from": 18
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
-    },
-    {
-     "kind": "praise",
-     "caption": "You stayed together!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
     }
    ],
    "skill": {

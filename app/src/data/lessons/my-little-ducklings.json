@@ -58,7 +58,7 @@
  "icon": "duck",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 1906,
+ "totalSec": 1946,
  "classes": [
   {
    "id": "my-little-ducklings-c01",
@@ -66,7 +66,7 @@
    "title": "Ducks swim up, dip down",
    "goal": "Follow the tune as it climbs up the stairs and dips down into the water.",
    "type": "listen",
-   "durationSec": 218,
+   "durationSec": 224,
    "parentTip": "Lift your child's arms higher as the tune climbs; dip your heads together at 'heads go in'.",
    "video": "my-little-ducklings/my-little-ducklings-c01.mp4",
    "thumb": "my-little-ducklings/my-little-ducklings-c01.jpg",
@@ -344,19 +344,153 @@
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 78,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "All",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "duck",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "lings"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "swim",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "ming",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "s": "lake"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "swim",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "ming",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "s": "lake"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "All my little ducklings",
+       "from": 0
+      },
+      {
+       "lyric": "swimming on the lake",
+       "from": 6
+      },
+      {
+       "lyric": "swimming on the lake",
+       "from": 11
+      }
+     ],
+     "durationSec": 26,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 92,
-     "leadInSec": 1.93,
+     "leadInSec": 3.34,
      "notes": [
       {
        "p": "C4",
@@ -399,181 +533,27 @@
        "f": 5,
        "s": "lings",
        "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "swim",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "ming",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "lake",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "swim",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "ming",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "lake",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "Heads",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "tails",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "air",
-       "who": "parent"
       }
      ],
      "lines": [
       {
        "lyric": "All my little ducklings",
        "from": 0
-      },
-      {
-       "lyric": "swimming on the lake",
-       "from": 6
-      },
-      {
-       "lyric": "swimming on the lake",
-       "from": 11
-      },
-      {
-       "lyric": "Heads go in the water",
-       "from": 16
-      },
-      {
-       "lyric": "tails up in the air",
-       "from": 22
       }
      ],
-     "durationSec": 30,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 11,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 9,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -744,41 +724,6 @@
        "f": 2,
        "s": "ter",
        "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "tails",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "air",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -797,13 +742,9 @@
       {
        "lyric": "Heads go in the water",
        "from": 16
-      },
-      {
-       "lyric": "tails up in the air",
-       "from": 22
       }
      ],
-     "durationSec": 31,
+     "durationSec": 26,
      "voice": "Clap along. Clap, clap, clap.",
      "voiceId": "18bb4de584dd97ad",
      "voiceSec": 2.66
@@ -977,41 +918,6 @@
        "f": 2,
        "s": "ter",
        "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "tails",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "air",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -1030,13 +936,9 @@
       {
        "lyric": "Heads go in the water",
        "from": 16
-      },
-      {
-       "lyric": "tails up in the air",
-       "from": 22
       }
      ],
-     "durationSec": 31,
+     "durationSec": 26,
      "voice": "Point to each key as it lights up.",
      "voiceId": "721e6d8cdcf7a9a2",
      "voiceSec": 2.38
@@ -1050,20 +952,74 @@
      "voiceSec": 2.26
     },
     {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 92,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "swim",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "ming",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "f": 4,
+       "s": "lake",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "swimming on the lake",
+       "from": 0
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 9,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 92,
-     "leadInSec": 1.93,
+     "leadInSec": 3.34,
      "notes": [
       {
        "p": "C4",
@@ -1106,190 +1062,27 @@
        "f": 5,
        "s": "lings",
        "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "swim",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "ming",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "lake",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "swim",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "ming",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "lake",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "Heads",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "tails",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "air",
-       "who": "parent"
       }
      ],
      "lines": [
       {
        "lyric": "All my little ducklings",
        "from": 0
-      },
-      {
-       "lyric": "swimming on the lake",
-       "from": 6
-      },
-      {
-       "lyric": "swimming on the lake",
-       "from": 11
-      },
-      {
-       "lyric": "Heads go in the water",
-       "from": 16
-      },
-      {
-       "lyric": "tails up in the air",
-       "from": 22
       }
      ],
-     "durationSec": 30,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 11,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
     },
     {
      "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 6,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 9,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "praise",
@@ -1322,7 +1115,7 @@
    "title": "Paddle, paddle, paddle",
    "goal": "Tap one steady tap on each beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 264,
+   "durationSec": 256,
    "parentTip": "Rest your hand over your child's hand and tap together, then slowly let go.",
    "video": "my-little-ducklings/my-little-ducklings-c02.mp4",
    "thumb": "my-little-ducklings/my-little-ducklings-c02.jpg",
@@ -1382,6 +1175,149 @@
      "voice": "Swimming on the lake. Tap the beat, paddle, paddle.",
      "voiceId": "b7188d0e27c5515c",
      "voiceSec": 3.6
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 78,
+     "leadInSec": 3.9,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "All",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "duck",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "lings"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "swim",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "ming",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "s": "lake"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "swim",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "ming",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "s": "lake"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "All my little ducklings",
+       "from": 0
+      },
+      {
+       "lyric": "swimming on the lake",
+       "from": 6
+      },
+      {
+       "lyric": "swimming on the lake",
+       "from": 11
+      }
+     ],
+     "durationSec": 27,
+     "voice": "Your turn. Wait for the glow, then press.",
+     "voiceId": "e03bd593ae91d1cb",
+     "voiceSec": 3.5
     },
     {
      "kind": "beat",
@@ -2565,252 +2501,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "You paddled the beat!",
      "durationSec": 5,
      "voice": "High five, grown-up. High five, little one.",
      "voiceId": "02217b24bc257a87",
      "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap with the big circle",
-     "parentCue": "You play, your child taps",
-     "bpm": 92,
-     "leadInSec": 2.22,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "All",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "duck",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "lings",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "swim",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "ming",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "lake",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "swim",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "ming",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "lake",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "Heads",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "tails",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "air",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "All my little ducklings",
-       "from": 0
-      },
-      {
-       "lyric": "swimming on the lake",
-       "from": 6
-      },
-      {
-       "lyric": "swimming on the lake",
-       "from": 11
-      },
-      {
-       "lyric": "Heads go in the water",
-       "from": 16
-      },
-      {
-       "lyric": "tails up in the air",
-       "from": 22
-      }
-     ],
-     "durationSec": 30,
-     "voice": "Tap the beat, like a heartbeat.",
-     "voiceId": "0cf68adb12e1c639",
-     "voiceSec": 1.82
-    },
-    {
-     "kind": "praise",
-     "caption": "You paddled the beat!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
     }
    ],
    "skill": {
@@ -2835,7 +2530,7 @@
    "title": "Find the duck's note A",
    "goal": "Find A by touch, using the group of three black keys as a landmark.",
    "type": "special-note",
-   "durationSec": 231,
+   "durationSec": 243,
    "parentTip": "Guide your child's finger to the three black keys, then down to A between the last two.",
    "video": "my-little-ducklings/my-little-ducklings-c03.mp4",
    "thumb": "my-little-ducklings/my-little-ducklings-c03.jpg",
@@ -3337,12 +3032,108 @@
     },
     {
      "kind": "say",
-     "caption": "Big breath in and out",
-     "parentCue": "Breathe slowly together",
-     "durationSec": 9,
-     "voice": "Big breath in, and out.",
-     "voiceId": "67a43f157c55d975",
-     "voiceSec": 2.01
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
+    },
+    {
+     "kind": "together",
+     "caption": "Play it together",
+     "parentCue": "Your child plays the special note",
+     "bpm": 92,
+     "leadInSec": 2.47,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "All",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "duck",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "lings",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "swim"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "ming"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "on"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "f": 4,
+       "s": "lake",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "All my little ducklings",
+       "from": 0
+      },
+      {
+       "lyric": "swimming on the lake",
+       "from": 6
+      }
+     ],
+     "durationSec": 15,
+     "voice": "Let's make music together.",
+     "voiceId": "ce491b22b46d8348",
+     "voiceSec": 2.07
     },
     {
      "kind": "praise",
@@ -3375,7 +3166,7 @@
    "title": "Quack and quack back",
    "goal": "Listen to a short 2 or 3 note call, then play it back the same.",
    "type": "echo",
-   "durationSec": 226,
+   "durationSec": 245,
    "parentTip": "Play or sing the call first, then point to your child: your turn.",
    "video": "my-little-ducklings/my-little-ducklings-c04.mp4",
    "thumb": "my-little-ducklings/my-little-ducklings-c04.jpg",
@@ -4065,11 +3856,70 @@
     },
     {
      "kind": "praise",
-     "caption": "Lovely echoing!",
+     "caption": "You did it!",
      "durationSec": 5,
      "voice": "Lovely work. You kept on trying.",
      "voiceId": "fdd2bcc9e53b2a9b",
      "voiceSec": 2.84
+    },
+    {
+     "kind": "demo",
+     "caption": "Listen",
+     "parentCue": "Watch which keys light",
+     "bpm": 74,
+     "leadInSec": 2.32,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "All"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 6,
+     "voice": "Watch, and count with me.",
+     "voiceId": "b7bcf4a8d609498c",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn! Echo me",
+     "parentCue": "Help with the first key only",
+     "bpm": 74,
+     "leadInSec": 2.56,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "All"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "my"
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Your turn. Echo me.",
+     "voiceId": "eaf39d9171866fee",
+     "voiceSec": 2.16
+    },
+    {
+     "kind": "praise",
+     "caption": "Lovely echoing!",
+     "durationSec": 5,
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
@@ -4843,7 +4693,7 @@
    "title": "Wait for the A",
    "goal": "Wait while the grown-up plays, then play A on 'swimming on the lake'.",
    "type": "special-note",
-   "durationSec": 252,
+   "durationSec": 256,
    "parentTip": "Play your part, then nod to your child just before 'swimming'; smile while they wait.",
    "video": "my-little-ducklings/my-little-ducklings-c06.mp4",
    "thumb": "my-little-ducklings/my-little-ducklings-c06.jpg",
@@ -5881,7 +5731,7 @@
      "kind": "say",
      "caption": "Shake, shake, shake!",
      "parentCue": "Shake hands loose for a moment",
-     "durationSec": 4,
+     "durationSec": 8,
      "voice": "Shake, shake, shake your hands.",
      "voiceId": "69041444bf86c15c",
      "voiceSec": 2.85
@@ -5917,7 +5767,7 @@
    "title": "Swim side by side",
    "goal": "Play the whole song together, sharing one steady beat.",
    "type": "together",
-   "durationSec": 222,
+   "durationSec": 229,
    "parentTip": "Play the tune and nod the beat with your head; keep going if your child misses.",
    "video": "my-little-ducklings/my-little-ducklings-c07.mp4",
    "thumb": "my-little-ducklings/my-little-ducklings-c07.jpg",
@@ -6155,6 +6005,149 @@
      "voice": "Together time. Big smiles.",
      "voiceId": "a441a4bce0e6e1e6",
      "voiceSec": 2.6
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 78,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "All",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "duck",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "lings"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "swim",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "ming",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "s": "lake"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "swim",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "ming",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 4,
+       "s": "lake"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "All my little ducklings",
+       "from": 0
+      },
+      {
+       "lyric": "swimming on the lake",
+       "from": 6
+      },
+      {
+       "lyric": "swimming on the lake",
+       "from": 11
+      }
+     ],
+     "durationSec": 26,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "say",
@@ -6857,228 +6850,12 @@
     },
     {
      "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Swap seats if your child wants",
-     "durationSec": 5,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
-    },
-    {
-     "kind": "together",
-     "caption": "Together again",
-     "parentCue": "Smile and keep going",
-     "bpm": 92,
-     "leadInSec": 3.0,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "All",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "duck",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "lings",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "swim"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "ming"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "on"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "lake",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "swim"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "ming"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "on"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "the"
-      },
-      {
-       "p": "G4",
-       "d": 4,
-       "f": 4,
-       "s": "lake",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "Heads",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 2,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "tails",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "s": "air",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "All my little ducklings",
-       "from": 0
-      },
-      {
-       "lyric": "swimming on the lake",
-       "from": 6
-      },
-      {
-       "lyric": "swimming on the lake",
-       "from": 11
-      },
-      {
-       "lyric": "Heads go in the water",
-       "from": 16
-      },
-      {
-       "lyric": "tails up in the air",
-       "from": 22
-      }
-     ],
-     "durationSec": 31,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
+     "caption": "Big breath in and out",
+     "parentCue": "Breathe slowly together",
+     "durationSec": 9,
+     "voice": "Big breath in, and out.",
+     "voiceId": "67a43f157c55d975",
+     "voiceSec": 2.01
     },
     {
      "kind": "praise",

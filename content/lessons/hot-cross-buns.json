@@ -58,7 +58,7 @@
  "icon": "cake",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 1988,
+ "totalSec": 2007,
  "classes": [
   {
    "id": "hot-cross-buns-c01",
@@ -66,7 +66,7 @@
    "title": "Find your three-key house",
    "goal": "Find C by its landmark and rest three fingers on C, D and E.",
    "type": "listen",
-   "durationSec": 212,
+   "durationSec": 219,
    "parentTip": "Point to the two black keys, then help your child rest the thumb on C, just left.",
    "video": "hot-cross-buns/hot-cross-buns-c01.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c01.jpg",
@@ -177,10 +177,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and wave",
+     "parentCue": "Wave your arms slowly",
      "bpm": 90,
-     "leadInSec": 2.27,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "E4",
@@ -304,151 +304,58 @@
       }
      ],
      "durationSec": 15,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
-    },
-    {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Listen and wave with me.",
+     "voiceId": "8fdf219288a4563d",
+     "voiceSec": 1.92
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 90,
-     "leadInSec": 1.93,
+     "leadInSec": 3.34,
      "notes": [
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "One"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "pen"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ny"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "two"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pen"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ny"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       }
      ],
      "lines": [
       {
        "lyric": "Hot cross buns",
        "from": 0
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 3
-      },
-      {
-       "lyric": "One a penny, two a penny",
-       "from": 6
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 14
       }
      ],
-     "durationSec": 15,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 8,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -470,103 +377,120 @@
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "One"
+       "s": "One",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "pen"
+       "s": "pen",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "ny"
+       "s": "ny",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "two"
+       "s": "two",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "pen"
+       "s": "pen",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ny"
+       "s": "ny",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -612,103 +536,120 @@
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "One"
+       "s": "One",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "pen"
+       "s": "pen",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "ny"
+       "s": "ny",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "two"
+       "s": "two",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "pen"
+       "s": "pen",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ny"
+       "s": "ny",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -743,122 +684,188 @@
      "voiceSec": 2.26
     },
     {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 90,
-     "leadInSec": 1.93,
+     "leadInSec": 3.34,
      "notes": [
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hot cross buns",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's rock",
+     "parentCue": "Rock gently like a boat",
+     "durationSec": 6,
+     "voice": "Now let's rock. Grown-up, rock gently like a boat.",
+     "voiceId": "561f28444796d11d",
+     "voiceSec": 4.0
+    },
+    {
+     "kind": "listen",
+     "caption": "Listen and rock",
+     "parentCue": "Rock gently like a boat",
+     "bpm": 90,
+     "leadInSec": 2.22,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Hot",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "cross",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "buns",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "One"
+       "s": "One",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "pen"
+       "s": "pen",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "ny"
+       "s": "ny",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "two"
+       "s": "two",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "pen"
+       "s": "pen",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ny"
+       "s": "ny",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -880,9 +887,58 @@
       }
      ],
      "durationSec": 15,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "voice": "Listen and rock with me.",
+     "voiceId": "87705484b21d1d46",
+     "voiceSec": 1.82
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 90,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Hot",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "cross",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "buns",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hot cross buns",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -904,103 +960,120 @@
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "One"
+       "s": "One",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "pen"
+       "s": "pen",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "ny"
+       "s": "ny",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "two"
+       "s": "two",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "pen"
+       "s": "pen",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ny"
+       "s": "ny",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -1027,171 +1100,61 @@
      "voiceSec": 2.66
     },
     {
-     "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
-     "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
-    },
-    {
      "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 90,
-     "leadInSec": 2.78,
+     "leadInSec": 3.34,
      "notes": [
       {
        "p": "E4",
        "d": 1,
        "f": 3,
-       "s": "Hot"
+       "s": "Hot",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 2,
-       "s": "cross"
+       "s": "cross",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 2,
        "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "One"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "pen"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ny"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "two"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pen"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ny"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
+       "s": "buns",
+       "who": "parent"
       }
      ],
      "lines": [
       {
        "lyric": "Hot cross buns",
        "from": 0
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 3
-      },
-      {
-       "lyric": "One a penny, two a penny",
-       "from": 6
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 14
       }
      ],
-     "durationSec": 15,
-     "voice": "Point to each key as it lights up.",
-     "voiceId": "721e6d8cdcf7a9a2",
-     "voiceSec": 2.38
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Lovely work. You kept on trying.",
-     "voiceId": "fdd2bcc9e53b2a9b",
-     "voiceSec": 2.84
+     "durationSec": 8,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
     },
     {
      "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 6,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "praise",
      "caption": "You found your house!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
@@ -2121,7 +2084,7 @@
    "title": "How many hot cross buns?",
    "goal": "Play the whole song slowly and count how many times 'hot cross buns' comes.",
    "type": "put-together",
-   "durationSec": 221,
+   "durationSec": 231,
    "parentTip": "Each time 'hot cross buns' comes, hold up one more finger: one, two, three.",
    "video": "hot-cross-buns/hot-cross-buns-c03.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c03.jpg",
@@ -2960,11 +2923,28 @@
     },
     {
      "kind": "praise",
-     "caption": "Great counting!",
+     "caption": "Lovely!",
      "durationSec": 5,
      "voice": "That was real music, together.",
      "voiceId": "3da26e0fa12ffe07",
      "voiceSec": 2.29
+    },
+    {
+     "kind": "say",
+     "caption": "Big breath in and out",
+     "parentCue": "Breathe slowly together",
+     "durationSec": 5,
+     "voice": "Big breath in, and out.",
+     "voiceId": "67a43f157c55d975",
+     "voiceSec": 2.01
+    },
+    {
+     "kind": "praise",
+     "caption": "Great counting!",
+     "durationSec": 5,
+     "voice": "I love how you kept going.",
+     "voiceId": "5edf54ba234e9d32",
+     "voiceSec": 1.94
     }
    ],
    "skill": {
@@ -2989,7 +2969,7 @@
    "title": "Run-ning pennies",
    "goal": "Play the quick 'one a penny' part slowly: four quick notes on C, four on D.",
    "type": "review",
-   "durationSec": 230,
+   "durationSec": 223,
    "parentTip": "Say 'walk' for the slow notes and 'run-ning' for the quick ones while your child plays.",
    "video": "hot-cross-buns/hot-cross-buns-c04.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c04.jpg",
@@ -3560,18 +3540,18 @@
     },
     {
      "kind": "say",
-     "caption": "A little faster now",
-     "parentCue": "Only speed up if it feels easy",
-     "durationSec": 6,
-     "voice": "A little faster now.",
-     "voiceId": "c045f3637dd94536",
-     "voiceSec": 1.7
+     "caption": "Once more at this speed",
+     "parentCue": "Same speed, nice and even",
+     "durationSec": 7,
+     "voice": "Once more at this speed. Grown-up, same speed, nice and even.",
+     "voiceId": "407a90fcd5690d6e",
+     "voiceSec": 5.37
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
-     "bpm": 63,
+     "bpm": 81,
      "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
@@ -3652,35 +3632,26 @@
        "from": 8
       }
      ],
-     "durationSec": 23,
+     "durationSec": 19,
      "voice": "Your turn. Slow and steady.",
      "voiceId": "3445286047dfdab5",
      "voiceSec": 2.55
     },
     {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
+     "caption": "Now the whole song, together!",
+     "parentCue": "Play it all the way through. Mistakes are fine.",
+     "durationSec": 7,
+     "voice": "Now the whole song, together. Grown-up, play it all the way through. Mistakes are fine.",
+     "voiceId": "a7014715c4972f75",
+     "voiceSec": 5.5
     },
     {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 72,
-     "leadInSec": 3.42,
-     "gapBeats": 1,
+     "kind": "together",
+     "caption": "The whole song",
+     "parentCue": "Keep going, don't stop",
+     "bpm": 76,
+     "leadInSec": 2.07,
      "notes": [
       {
        "p": "E4",
@@ -3717,6 +3688,72 @@
        "d": 2,
        "f": 1,
        "s": "buns"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "One"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "pen"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ny"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "two"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "pen"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ny"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Hot"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "cross"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "buns"
       }
      ],
      "lines": [
@@ -3727,20 +3764,28 @@
       {
        "lyric": "Hot cross buns",
        "from": 3
+      },
+      {
+       "lyric": "One a penny, two a penny",
+       "from": 6
+      },
+      {
+       "lyric": "Hot cross buns",
+       "from": 14
       }
      ],
      "durationSec": 17,
-     "voice": "Your turn. Play each glowing key.",
-     "voiceId": "21e079a5c0ab490e",
-     "voiceSec": 3.02
+     "voice": "The whole song, together.",
+     "voiceId": "cd63b6b81661b69f",
+     "voiceSec": 1.67
     },
     {
      "kind": "praise",
      "caption": "You counted the pennies!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
@@ -3765,7 +3810,7 @@
    "title": "Four beats, slow and even",
    "goal": "Play the whole song slowly while counting four beats in every bar.",
    "type": "phrase",
-   "durationSec": 227,
+   "durationSec": 233,
    "parentTip": "Tap your child's shoulder on each beat and count 1, 2, 3, 4 softly.",
    "video": "hot-cross-buns/hot-cross-buns-c05.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c05.jpg",
@@ -4411,143 +4456,19 @@
      "voiceSec": 3.57
     },
     {
-     "kind": "demo",
-     "caption": "Watch",
-     "parentCue": "Watch the finger numbers",
-     "bpm": 63,
-     "leadInSec": 2.42,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "One"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "pen"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ny"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "two"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "pen"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ny"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Hot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "cross"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "buns"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hot cross buns",
-       "from": 0
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 3
-      },
-      {
-       "lyric": "One a penny, two a penny",
-       "from": 6
-      },
-      {
-       "lyric": "Hot cross buns",
-       "from": 14
-      }
-     ],
-     "durationSec": 20,
-     "voice": "Watch first, then your turn.",
-     "voiceId": "d2c60e2eed091532",
-     "voiceSec": 2.02
+     "kind": "say",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Help only if stuck",
-     "bpm": 63,
+     "parentCue": "The first part again",
+     "bpm": 72,
      "leadInSec": 3.24,
      "gapBeats": 1,
      "notes": [
@@ -4672,10 +4593,152 @@
        "from": 14
       }
      ],
-     "durationSec": 37,
+     "durationSec": 33,
      "voice": "Your turn. Take your time, I'll wait.",
      "voiceId": "c4dd3de11b056931",
      "voiceSec": 2.84
+    },
+    {
+     "kind": "say",
+     "caption": "Now the whole song, together!",
+     "parentCue": "Play it all the way through. Mistakes are fine.",
+     "durationSec": 7,
+     "voice": "Now the whole song, together. Grown-up, play it all the way through. Mistakes are fine.",
+     "voiceId": "a7014715c4972f75",
+     "voiceSec": 5.5
+    },
+    {
+     "kind": "together",
+     "caption": "The whole song",
+     "parentCue": "Keep going, don't stop",
+     "bpm": 76,
+     "leadInSec": 2.07,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Hot"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "cross"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "buns"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Hot"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "cross"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "buns"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "One"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "a"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "pen"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ny"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "two"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "pen"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ny"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Hot"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "cross"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "buns"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hot cross buns",
+       "from": 0
+      },
+      {
+       "lyric": "Hot cross buns",
+       "from": 3
+      },
+      {
+       "lyric": "One a penny, two a penny",
+       "from": 6
+      },
+      {
+       "lyric": "Hot cross buns",
+       "from": 14
+      }
+     ],
+     "durationSec": 17,
+     "voice": "The whole song, together.",
+     "voiceId": "cd63b6b81661b69f",
+     "voiceSec": 1.67
     },
     {
      "kind": "praise",
@@ -5707,7 +5770,7 @@
    "title": "Keep up with the music",
    "goal": "Play the whole song along with the music at full speed.",
    "type": "play-along",
-   "durationSec": 229,
+   "durationSec": 230,
    "parentTip": "Nod on each beat and keep playing your part; if a note slips, keep going.",
    "video": "hot-cross-buns/hot-cross-buns-c07.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c07.jpg",
@@ -6898,12 +6961,12 @@
     },
     {
      "kind": "say",
-     "caption": "And again!",
+     "caption": "Again, nice and easy",
      "parentCue": "Sing the words together",
-     "durationSec": 5,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
+     "durationSec": 6,
+     "voice": "Again, nice and easy.",
+     "voiceId": "6f32e8daa73a3ba6",
+     "voiceSec": 2.2
     },
     {
      "kind": "together",
@@ -8310,7 +8373,7 @@
    "title": "Bun concert for teddy",
    "goal": "Play the whole song for teddy from start to end, then bow together.",
    "type": "concert",
-   "durationSec": 208,
+   "durationSec": 210,
    "parentTip": "Sit teddy as the audience; announce the song, then clap and bow together at the end.",
    "video": "hot-cross-buns/hot-cross-buns-c09.mp4",
    "thumb": "hot-cross-buns/hot-cross-buns-c09.jpg",
@@ -9378,7 +9441,7 @@
      "kind": "say",
      "caption": "Stretch up tall!",
      "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 5,
+     "durationSec": 7,
      "voice": "Stretch up tall, as tall as a tree.",
      "voiceId": "7b02d4dc04aee044",
      "voiceSec": 3.14

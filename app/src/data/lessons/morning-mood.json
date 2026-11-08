@@ -65,7 +65,7 @@
  "icon": "sun",
  "key": "C",
  "timeSignature": "6/8",
- "totalSec": 2176,
+ "totalSec": 2181,
  "classes": [
   {
    "id": "morning-mood-c01",
@@ -73,7 +73,7 @@
    "title": "Wake up, little hand",
    "goal": "Find C by the two black keys and wake the right hand up on it.",
    "type": "listen",
-   "durationSec": 245,
+   "durationSec": 236,
    "parentTip": "Stretch and yawn together, then help your child rest the thumb on C.",
    "video": "morning-mood/morning-mood-c01.mp4",
    "thumb": "morning-mood/morning-mood-c01.jpg",
@@ -158,10 +158,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and march",
+     "parentCue": "March on the spot to the beat",
      "bpm": 96,
-     "leadInSec": 2.27,
+     "leadInSec": 2.48,
      "notes": [
       {
        "p": "G4",
@@ -327,169 +327,263 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
-    },
-    {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Listen and march with me.",
+     "voiceId": "d4e3ae6e88185fcd",
+     "voiceSec": 2.08
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 96,
-     "leadInSec": 1.93,
+     "leadInSec": 3.34,
      "notes": [
       {
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "Wake"
+       "s": "the",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "up"
+       "s": "sun",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "it's"
+       "s": "is",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "morn"
+       "s": "com",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 3,
        "f": 3,
-       "s": "now"
-      },
+       "s": "up",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "the sun is coming up",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's tiptoe",
+     "parentCue": "Tiptoe fingers on your lap",
+     "durationSec": 6,
+     "voice": "Now let's tiptoe. Grown-up, tiptoe fingers on your lap.",
+     "voiceId": "d7cb592eb2ae7719",
+     "voiceSec": 4.15
+    },
+    {
+     "kind": "listen",
+     "caption": "Listen and tiptoe",
+     "parentCue": "Tiptoe fingers on your lap",
+     "bpm": 96,
+     "leadInSec": 2.31,
+     "notes": [
       {
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "the"
+       "s": "Wake",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "sun"
+       "s": "up",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "is"
+       "s": "it's",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "com"
+       "s": "morn",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 3,
        "f": 3,
-       "s": "up"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "birds"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ing"
+       "s": "now",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "sweet"
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sun",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "is",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "com",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 3,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "birds",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "are",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "sing",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "sweet",
+       "who": "parent"
       },
       {
        "p": "A4",
        "d": 3,
        "f": 5,
-       "s": "ly"
+       "s": "ly",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 2,
-       "s": "time"
+       "s": "time",
+       "who": "parent"
       },
       {
        "p": "A4",
        "d": 0.5,
        "f": 5,
-       "s": "to"
+       "s": "to",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 0.5,
        "f": 4,
-       "s": "start"
+       "s": "start",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 2,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 1,
-       "s": "new"
+       "s": "new",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 3,
        "f": 1,
-       "s": "day"
+       "s": "day",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -511,9 +605,79 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "voice": "Tiptoe your fingers with me.",
+     "voiceId": "b153b9d40d3727cf",
+     "voiceSec": 1.91
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 96,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Wake",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "it's",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "morn",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 3,
+       "s": "now",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Wake up, it's morning now",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -535,145 +699,169 @@
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "Wake"
+       "s": "Wake",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "up"
+       "s": "up",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "it's"
+       "s": "it's",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "morn"
+       "s": "morn",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 3,
        "f": 3,
-       "s": "now"
+       "s": "now",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "the"
+       "s": "the",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "sun"
+       "s": "sun",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "is"
+       "s": "is",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "com"
+       "s": "com",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 3,
        "f": 3,
-       "s": "up"
+       "s": "up",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "birds"
+       "s": "birds",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "are"
+       "s": "are",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 0.5,
        "f": 5,
-       "s": "sing"
+       "s": "sing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "sweet"
+       "s": "sweet",
+       "who": "parent"
       },
       {
        "p": "A4",
        "d": 3,
        "f": 5,
-       "s": "ly"
+       "s": "ly",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 2,
-       "s": "time"
+       "s": "time",
+       "who": "parent"
       },
       {
        "p": "A4",
        "d": 0.5,
        "f": 5,
-       "s": "to"
+       "s": "to",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 0.5,
        "f": 4,
-       "s": "start"
+       "s": "start",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 2,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 1,
-       "s": "new"
+       "s": "new",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 3,
        "f": 1,
-       "s": "day"
+       "s": "day",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -719,145 +907,169 @@
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "Wake"
+       "s": "Wake",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "up"
+       "s": "up",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "it's"
+       "s": "it's",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "morn"
+       "s": "morn",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 3,
        "f": 3,
-       "s": "now"
+       "s": "now",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "the"
+       "s": "the",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "sun"
+       "s": "sun",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "is"
+       "s": "is",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "com"
+       "s": "com",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 3,
        "f": 3,
-       "s": "up"
+       "s": "up",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "birds"
+       "s": "birds",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "are"
+       "s": "are",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 0.5,
        "f": 5,
-       "s": "sing"
+       "s": "sing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "sweet"
+       "s": "sweet",
+       "who": "parent"
       },
       {
        "p": "A4",
        "d": 3,
        "f": 5,
-       "s": "ly"
+       "s": "ly",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 2,
-       "s": "time"
+       "s": "time",
+       "who": "parent"
       },
       {
        "p": "A4",
        "d": 0.5,
        "f": 5,
-       "s": "to"
+       "s": "to",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 0.5,
        "f": 4,
-       "s": "start"
+       "s": "start",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 2,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 1,
-       "s": "new"
+       "s": "new",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 3,
        "f": 1,
-       "s": "day"
+       "s": "day",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -892,724 +1104,258 @@
      "voiceSec": 1.93
     },
     {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 96,
-     "leadInSec": 1.93,
+     "leadInSec": 3.34,
      "notes": [
       {
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "Wake"
+       "s": "the",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "up"
+       "s": "sun",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "it's"
+       "s": "is",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "morn"
+       "s": "com",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 3,
        "f": 3,
-       "s": "now"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "sun"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "is"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "com"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 3,
-       "s": "up"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "birds"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "sweet"
-      },
-      {
-       "p": "A4",
-       "d": 3,
-       "f": 5,
-       "s": "ly"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "time"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "start"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "new"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "day"
+       "s": "up",
+       "who": "parent"
       }
      ],
      "lines": [
       {
-       "lyric": "Wake up, it's morning now",
-       "from": 0
-      },
-      {
        "lyric": "the sun is coming up",
-       "from": 6
-      },
-      {
-       "lyric": "birds are singing sweetly",
-       "from": 12
-      },
-      {
-       "lyric": "time to start a new day",
-       "from": 18
+       "from": 0
       }
      ],
-     "durationSec": 19,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
     },
     {
      "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 96,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Wake"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "up"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "it's"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "morn"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 3,
-       "s": "now"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "sun"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "is"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "com"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 3,
-       "s": "up"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "birds"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "sweet"
-      },
-      {
-       "p": "A4",
-       "d": 3,
-       "f": 5,
-       "s": "ly"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "time"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "start"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "new"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "day"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Wake up, it's morning now",
-       "from": 0
-      },
-      {
-       "lyric": "the sun is coming up",
-       "from": 6
-      },
-      {
-       "lyric": "birds are singing sweetly",
-       "from": 12
-      },
-      {
-       "lyric": "time to start a new day",
-       "from": 18
-      }
-     ],
-     "durationSec": 20,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
      "voiceSec": 2.66
     },
     {
      "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
+     "caption": "Now let's tiptoe",
+     "parentCue": "Tiptoe fingers on your lap",
      "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
+     "voice": "Now let's tiptoe. Grown-up, tiptoe fingers on your lap.",
+     "voiceId": "d7cb592eb2ae7719",
+     "voiceSec": 4.15
     },
     {
      "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
+     "caption": "Listen and tiptoe",
+     "parentCue": "Tiptoe fingers on your lap",
      "bpm": 96,
-     "leadInSec": 2.78,
+     "leadInSec": 2.31,
      "notes": [
       {
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "Wake"
+       "s": "Wake",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "up"
+       "s": "up",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "it's"
+       "s": "it's",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "morn"
+       "s": "morn",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 3,
        "f": 3,
-       "s": "now"
+       "s": "now",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "the"
+       "s": "the",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "sun"
+       "s": "sun",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "is"
+       "s": "is",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 0.5,
        "f": 1,
-       "s": "com"
+       "s": "com",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 3,
        "f": 3,
-       "s": "up"
+       "s": "up",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 0.5,
        "f": 2,
-       "s": "birds"
+       "s": "birds",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "are"
+       "s": "are",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 0.5,
        "f": 5,
-       "s": "sing"
+       "s": "sing",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 3,
-       "s": "ing"
+       "s": "ing",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 1,
        "f": 5,
-       "s": "sweet"
+       "s": "sweet",
+       "who": "parent"
       },
       {
        "p": "A4",
        "d": 3,
        "f": 5,
-       "s": "ly"
+       "s": "ly",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 2,
-       "s": "time"
+       "s": "time",
+       "who": "parent"
       },
       {
        "p": "A4",
        "d": 0.5,
        "f": 5,
-       "s": "to"
+       "s": "to",
+       "who": "parent"
       },
       {
        "p": "G4",
        "d": 0.5,
        "f": 4,
-       "s": "start"
+       "s": "start",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 0.5,
        "f": 2,
-       "s": "a"
+       "s": "a",
+       "who": "parent"
       },
       {
        "p": "D4",
        "d": 1,
        "f": 1,
-       "s": "new"
+       "s": "new",
+       "who": "parent"
       },
       {
        "p": "C4",
        "d": 3,
        "f": 1,
-       "s": "day"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Wake up, it's morning now",
-       "from": 0
-      },
-      {
-       "lyric": "the sun is coming up",
-       "from": 6
-      },
-      {
-       "lyric": "birds are singing sweetly",
-       "from": 12
-      },
-      {
-       "lyric": "time to start a new day",
-       "from": 18
-      }
-     ],
-     "durationSec": 20,
-     "voice": "Point to each key as it lights up.",
-     "voiceId": "721e6d8cdcf7a9a2",
-     "voiceSec": 2.38
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 96,
-     "leadInSec": 1.93,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Wake"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "up"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "it's"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "morn"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 3,
-       "s": "now"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "sun"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "is"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "com"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing"
-      },
-      {
-       "p": "E4",
-       "d": 3,
-       "f": 3,
-       "s": "up"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "birds"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "are"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "sing"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ing"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "sweet"
-      },
-      {
-       "p": "A4",
-       "d": 3,
-       "f": 5,
-       "s": "ly"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "time"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "start"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "new"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "day"
+       "s": "day",
+       "who": "parent"
       }
      ],
      "lines": [
@@ -1631,17 +1377,96 @@
       }
      ],
      "durationSec": 19,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "voice": "Tiptoe your fingers with me.",
+     "voiceId": "b153b9d40d3727cf",
+     "voiceSec": 1.91
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 96,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Wake",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "it's",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "morn",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 3,
+       "s": "now",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Wake up, it's morning now",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 5,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
      "caption": "Your hand is awake!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {
@@ -4379,7 +4204,7 @@
    "title": "Run-ning, then a long E",
    "goal": "Practise the quick C-D into the long E, holding it for three counts.",
    "type": "review",
-   "durationSec": 254,
+   "durationSec": 269,
    "parentTip": "Say 'run-ning' on the quick notes, then count '1, 2, 3' softly on E.",
    "video": "morning-mood/morning-mood-c05.mp4",
    "thumb": "morning-mood/morning-mood-c05.jpg",
@@ -4963,18 +4788,18 @@
     },
     {
      "kind": "say",
-     "caption": "A little faster now",
-     "parentCue": "Only speed up if it feels easy",
-     "durationSec": 6,
-     "voice": "A little faster now.",
-     "voiceId": "c045f3637dd94536",
-     "voiceSec": 1.7
+     "caption": "Once more at this speed",
+     "parentCue": "Same speed, nice and even",
+     "durationSec": 7,
+     "voice": "Once more at this speed. Grown-up, same speed, nice and even.",
+     "voiceId": "407a90fcd5690d6e",
+     "voiceSec": 5.37
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
      "parentCue": "Keep fingers close to the keys",
-     "bpm": 67,
+     "bpm": 86,
      "leadInSec": 3.42,
      "gapBeats": 1,
      "notes": [
@@ -5061,7 +4886,7 @@
        "from": 6
       }
      ],
-     "durationSec": 27,
+     "durationSec": 22,
      "voice": "Your turn. Play each glowing key.",
      "voiceId": "21e079a5c0ab490e",
      "voiceSec": 3.02
@@ -5076,57 +4901,21 @@
     },
     {
      "kind": "say",
-     "caption": "Again, a bit faster",
-     "parentCue": "Only speed up if it feels easy",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Again, a bit faster.",
-     "voiceId": "2ceeaf39a6d78f34",
-     "voiceSec": 1.91
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "your_turn",
      "caption": "Your turn!",
-     "parentCue": "Keep fingers close to the keys",
+     "parentCue": "The first part again",
      "bpm": 77,
      "leadInSec": 2.95,
      "gapBeats": 1,
      "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "time"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "start"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "new"
-      },
-      {
-       "p": "C4",
-       "d": 3,
-       "f": 1,
-       "s": "day"
-      },
       {
        "p": "G4",
        "d": 1,
@@ -5166,18 +4955,198 @@
      ],
      "lines": [
       {
-       "lyric": "time to start a new day",
-       "from": 0
-      },
-      {
        "lyric": "Wake up, it's morning now",
-       "from": 6
+       "from": 0
       }
      ],
-     "durationSec": 24,
+     "durationSec": 14,
      "voice": "Your turn. Slow and steady.",
      "voiceId": "3445286047dfdab5",
      "voiceSec": 2.55
+    },
+    {
+     "kind": "say",
+     "caption": "Now the whole song, together!",
+     "parentCue": "Play it all the way through. Mistakes are fine.",
+     "durationSec": 7,
+     "voice": "Now the whole song, together. Grown-up, play it all the way through. Mistakes are fine.",
+     "voiceId": "a7014715c4972f75",
+     "voiceSec": 5.5
+    },
+    {
+     "kind": "together",
+     "caption": "The whole song",
+     "parentCue": "Keep going, don't stop",
+     "bpm": 82,
+     "leadInSec": 2.07,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Wake"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "up"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "it's"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "morn"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 3,
+       "s": "now"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "the"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "sun"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "is"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "com"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing"
+      },
+      {
+       "p": "E4",
+       "d": 3,
+       "f": 3,
+       "s": "up"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "birds"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "sing"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "sweet"
+      },
+      {
+       "p": "A4",
+       "d": 3,
+       "f": 5,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "time"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "to"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "start"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "new"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1,
+       "s": "day"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Wake up, it's morning now",
+       "from": 0
+      },
+      {
+       "lyric": "the sun is coming up",
+       "from": 6
+      },
+      {
+       "lyric": "birds are singing sweetly",
+       "from": 12
+      },
+      {
+       "lyric": "time to start a new day",
+       "from": 18
+      }
+     ],
+     "durationSec": 22,
+     "voice": "The whole song, together.",
+     "voiceId": "cd63b6b81661b69f",
+     "voiceSec": 1.67
     },
     {
      "kind": "praise",
@@ -5210,7 +5179,7 @@
    "title": "Two big sways",
    "goal": "Play the whole song slowly and evenly, feeling two big sways in each bar.",
    "type": "phrase",
-   "durationSec": 251,
+   "durationSec": 250,
    "parentTip": "Sway gently left, then right, beside your child on each big beat.",
    "video": "morning-mood/morning-mood-c06.mp4",
    "thumb": "morning-mood/morning-mood-c06.jpg",
@@ -6117,20 +6086,19 @@
     },
     {
      "kind": "say",
-     "caption": "Opening lines again",
-     "parentCue": "Slow and steady",
-     "durationSec": 5,
-     "voice": "The beginning again.",
-     "voiceId": "44868b0ec9079244",
-     "voiceSec": 1.59
+     "caption": "Now the whole song, together!",
+     "parentCue": "Play it all the way through. Mistakes are fine.",
+     "durationSec": 7,
+     "voice": "Now the whole song, together. Grown-up, play it all the way through. Mistakes are fine.",
+     "voiceId": "a7014715c4972f75",
+     "voiceSec": 5.5
     },
     {
-     "kind": "your_turn",
-     "caption": "Your turn!",
-     "parentCue": "The first part again",
-     "bpm": 77,
-     "leadInSec": 3.93,
-     "gapBeats": 1,
+     "kind": "together",
+     "caption": "The whole song",
+     "parentCue": "Keep going, don't stop",
+     "bpm": 82,
+     "leadInSec": 2.07,
      "notes": [
       {
        "p": "G4",
@@ -6203,6 +6171,78 @@
        "d": 3,
        "f": 3,
        "s": "up"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "birds"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "sing"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "sweet"
+      },
+      {
+       "p": "A4",
+       "d": 3,
+       "f": 5,
+       "s": "ly"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "time"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "to"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "start"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "a"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "new"
+      },
+      {
+       "p": "C4",
+       "d": 3,
+       "f": 1,
+       "s": "day"
       }
      ],
      "lines": [
@@ -6213,12 +6253,20 @@
       {
        "lyric": "the sun is coming up",
        "from": 6
+      },
+      {
+       "lyric": "birds are singing sweetly",
+       "from": 12
+      },
+      {
+       "lyric": "time to start a new day",
+       "from": 18
       }
      ],
-     "durationSec": 25,
-     "voice": "Now you play it. Watch the finger numbers.",
-     "voiceId": "88a098b901d3c483",
-     "voiceSec": 3.53
+     "durationSec": 22,
+     "voice": "The whole song, together.",
+     "voiceId": "cd63b6b81661b69f",
+     "voiceSec": 1.67
     },
     {
      "kind": "praise",

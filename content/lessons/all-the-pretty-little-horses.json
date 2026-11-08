@@ -51,7 +51,7 @@
  "icon": "horse",
  "key": "Am",
  "timeSignature": "4/4",
- "totalSec": 1951,
+ "totalSec": 1953,
  "classes": [
   {
    "id": "all-the-pretty-little-horses-c01",
@@ -59,7 +59,7 @@
    "title": "Listen for the horses",
    "goal": "Rock to the lullaby and notice each time the horses line comes back.",
    "type": "listen",
-   "durationSec": 261,
+   "durationSec": 250,
    "parentTip": "Rock your child slowly; give a gentle knee trot each time 'pretty little horses' comes.",
    "video": "all-the-pretty-little-horses/all-the-pretty-little-horses-c01.mp4",
    "thumb": "all-the-pretty-little-horses/all-the-pretty-little-horses-c01.jpg",
@@ -460,19 +460,20 @@
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 76,
-     "leadInSec": 1.93,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 65,
+     "leadInSec": 2.84,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "A4",
@@ -512,9 +513,7 @@
       {
        "p": "E4",
        "d": 2,
-       "f": 1,
-       "s": "cry",
-       "who": "parent"
+       "s": "cry"
       },
       {
        "p": "C4",
@@ -568,219 +567,7 @@
       {
        "p": "A3",
        "d": 2,
-       "f": 1,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 3,
-       "s": "When",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 4,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "wake",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 5,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "shall",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "have",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "pret",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "ty",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "hor",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 2,
-       "f": 1,
-       "s": "ses",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 5,
-       "s": "Dap",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ples",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "grays",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "pin",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "tos",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "bays",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pret",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ty",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "hor",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 2,
-       "f": 1,
-       "s": "ses",
-       "who": "parent"
+       "s": "by"
       }
      ],
      "lines": [
@@ -791,28 +578,82 @@
       {
        "lyric": "go to sleepy little baby",
        "from": 6
-      },
-      {
-       "lyric": "When you wake you shall have",
-       "from": 14
-      },
-      {
-       "lyric": "all the pretty little horses",
-       "from": 20
-      },
-      {
-       "lyric": "Dapples and grays, pintos and bays",
-       "from": 28
-      },
-      {
-       "lyric": "all the pretty little horses",
-       "from": 36
       }
      ],
-     "durationSec": 42,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 21,
+     "voice": "Your turn. I'll wait for you.",
+     "voiceId": "30da762511a45127",
+     "voiceSec": 2.44
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 76,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "bye",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "cry",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush-a-bye, don't you cry",
+       "from": 0
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 10,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -969,174 +810,6 @@
        "f": 5,
        "s": "have",
        "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "pret",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "ty",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "hor",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 2,
-       "f": 1,
-       "s": "ses",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 5,
-       "s": "Dap",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ples",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "grays",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "pin",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "tos",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "bays",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pret",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ty",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "hor",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 2,
-       "f": 1,
-       "s": "ses",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -1151,21 +824,9 @@
       {
        "lyric": "When you wake you shall have",
        "from": 14
-      },
-      {
-       "lyric": "all the pretty little horses",
-       "from": 20
-      },
-      {
-       "lyric": "Dapples and grays, pintos and bays",
-       "from": 28
-      },
-      {
-       "lyric": "all the pretty little horses",
-       "from": 36
       }
      ],
-     "durationSec": 43,
+     "durationSec": 24,
      "voice": "Clap along. Clap, clap, clap.",
      "voiceId": "18bb4de584dd97ad",
      "voiceSec": 2.66
@@ -1325,174 +986,6 @@
        "f": 5,
        "s": "have",
        "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "pret",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "ty",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "hor",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 2,
-       "f": 1,
-       "s": "ses",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 5,
-       "s": "Dap",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ples",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "grays",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "pin",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "tos",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "bays",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pret",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ty",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "hor",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 2,
-       "f": 1,
-       "s": "ses",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -1507,21 +1000,9 @@
       {
        "lyric": "When you wake you shall have",
        "from": 14
-      },
-      {
-       "lyric": "all the pretty little horses",
-       "from": 20
-      },
-      {
-       "lyric": "Dapples and grays, pintos and bays",
-       "from": 28
-      },
-      {
-       "lyric": "all the pretty little horses",
-       "from": 36
       }
      ],
-     "durationSec": 43,
+     "durationSec": 24,
      "voice": "Point to each key as it lights up.",
      "voiceId": "721e6d8cdcf7a9a2",
      "voiceSec": 2.38
@@ -1535,20 +1016,104 @@
      "voiceSec": 2.84
     },
     {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 76,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "slee",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "py",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 4,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 1,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 2,
+       "f": 1,
+       "s": "by",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "go to sleepy little baby",
+       "from": 0
+      }
+     ],
+     "durationSec": 12,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
     },
     {
-     "kind": "together",
-     "caption": "Play it together",
-     "parentCue": "Your child plays the special note",
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 10,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's march",
+     "parentCue": "March on the spot to the beat",
+     "durationSec": 6,
+     "voice": "Now let's march. Grown-up, march on the spot to the beat.",
+     "voiceId": "fcc0a656515b54b9",
+     "voiceSec": 4.73
+    },
+    {
+     "kind": "listen",
+     "caption": "Listen and march",
+     "parentCue": "March on the spot to the beat",
      "bpm": 76,
-     "leadInSec": 2.47,
+     "leadInSec": 2.48,
      "notes": [
       {
        "p": "A4",
@@ -1568,7 +1133,8 @@
        "p": "E4",
        "d": 2,
        "f": 1,
-       "s": "bye"
+       "s": "bye",
+       "who": "parent"
       },
       {
        "p": "A4",
@@ -1588,7 +1154,8 @@
        "p": "E4",
        "d": 2,
        "f": 1,
-       "s": "cry"
+       "s": "cry",
+       "who": "parent"
       },
       {
        "p": "C4",
@@ -1608,13 +1175,15 @@
        "p": "E4",
        "d": 1,
        "f": 5,
-       "s": "slee"
+       "s": "slee",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 5,
-       "s": "py"
+       "s": "py",
+       "who": "parent"
       },
       {
        "p": "D4",
@@ -1662,13 +1231,15 @@
        "p": "E4",
        "d": 2,
        "f": 5,
-       "s": "wake"
+       "s": "wake",
+       "who": "parent"
       },
       {
        "p": "E4",
        "d": 1,
        "f": 5,
-       "s": "you"
+       "s": "you",
+       "who": "parent"
       },
       {
        "p": "G4",
@@ -1682,60 +1253,6 @@
        "d": 2,
        "f": 5,
        "s": "have",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "pret"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "ty",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "hor",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 2,
-       "f": 1,
-       "s": "ses",
        "who": "parent"
       }
      ],
@@ -1751,16 +1268,21 @@
       {
        "lyric": "When you wake you shall have",
        "from": 14
-      },
-      {
-       "lyric": "all the pretty little horses",
-       "from": 20
       }
      ],
-     "durationSec": 30,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "durationSec": 23,
+     "voice": "Listen and march with me.",
+     "voiceId": "d4e3ae6e88185fcd",
+     "voiceSec": 2.08
+    },
+    {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 9,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
@@ -1793,7 +1315,7 @@
    "title": "Slow sleepy hoofbeats",
    "goal": "Tap one slow, steady tap for every beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 225,
+   "durationSec": 218,
    "parentTip": "Rest your hand over your child's hand and tap slowly together, then gently let go.",
    "video": "all-the-pretty-little-horses/all-the-pretty-little-horses-c02.mp4",
    "thumb": "all-the-pretty-little-horses/all-the-pretty-little-horses-c02.jpg",
@@ -1868,6 +1390,133 @@
      "voice": "Slow, sleepy pony steps. Tap softly on the beat.",
      "voiceId": "14e2f419f0019516",
      "voiceSec": 4.14
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 65,
+     "leadInSec": 3.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "bye",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "cry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "slee",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "py",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 4,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 1,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 2,
+       "s": "by"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush-a-bye, don't you cry",
+       "from": 0
+      },
+      {
+       "lyric": "go to sleepy little baby",
+       "from": 6
+      }
+     ],
+     "durationSec": 22,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
     },
     {
      "kind": "beat",
@@ -2946,288 +2595,12 @@
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "together",
-     "caption": "Play it together",
-     "parentCue": "Your child plays the special note",
-     "bpm": 76,
-     "leadInSec": 1.84,
-     "notes": [
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 4,
-       "s": "Hush",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "bye"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 4,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 3,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 1,
-       "s": "cry"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 4,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 5,
-       "s": "slee"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 5,
-       "s": "py"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 4,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "ba",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 2,
-       "f": 1,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 3,
-       "s": "When",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 4,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 5,
-       "s": "wake"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 5,
-       "s": "you"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "shall",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 2,
-       "f": 5,
-       "s": "have",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "pret"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "ty",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "hor",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 2,
-       "f": 1,
-       "s": "ses",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 5,
-       "s": "Dap"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ples"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "grays"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "pin",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "tos",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "bays",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hush-a-bye, don't you cry",
-       "from": 0
-      },
-      {
-       "lyric": "go to sleepy little baby",
-       "from": 6
-      },
-      {
-       "lyric": "When you wake you shall have",
-       "from": 14
-      },
-      {
-       "lyric": "all the pretty little horses",
-       "from": 20
-      },
-      {
-       "lyric": "Dapples and grays, pintos and bays",
-       "from": 28
-      }
-     ],
-     "durationSec": 35,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 5,
+     "voice": "Shake, shake, shake your hands.",
+     "voiceId": "69041444bf86c15c",
+     "voiceSec": 2.85
     },
     {
      "kind": "praise",
@@ -6340,7 +5713,7 @@
    "title": "Ponies side by side",
    "goal": "Play the whole lullaby together, sharing one slow, gentle beat.",
    "type": "together",
-   "durationSec": 226,
+   "durationSec": 246,
    "parentTip": "Play slowly and softly; if your child misses an E, keep going and smile.",
    "video": "all-the-pretty-little-horses/all-the-pretty-little-horses-c07.mp4",
    "thumb": "all-the-pretty-little-horses/all-the-pretty-little-horses-c07.jpg",
@@ -6696,6 +6069,133 @@
      "voice": "Let's play together.",
      "voiceId": "b9d074678a65d0e2",
      "voiceSec": 1.57
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 65,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 4,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 1,
+       "s": "bye",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 3,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "cry"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 4,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "slee",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 5,
+       "s": "py",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 4,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 1,
+       "f": 1,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "A3",
+       "d": 2,
+       "s": "by"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush-a-bye, don't you cry",
+       "from": 0
+      },
+      {
+       "lyric": "go to sleepy little baby",
+       "from": 6
+      }
+     ],
+     "durationSec": 22,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "say",
@@ -7401,19 +6901,19 @@
     },
     {
      "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "Swap seats if your child wants",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "together",
-     "caption": "Together again",
-     "parentCue": "Smile and keep going",
-     "bpm": 65,
-     "leadInSec": 1.846,
+     "caption": "Play it together",
+     "parentCue": "Your child plays the special note",
+     "bpm": 76,
+     "leadInSec": 4.12,
      "notes": [
       {
        "p": "A4",
@@ -7655,60 +7155,6 @@
        "f": 2,
        "s": "bays",
        "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pret"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ty",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 2,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "f": 1,
-       "s": "hor",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 2,
-       "f": 1,
-       "s": "ses",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -7731,16 +7177,12 @@
       {
        "lyric": "Dapples and grays, pintos and bays",
        "from": 28
-      },
-      {
-       "lyric": "all the pretty little horses",
-       "from": 36
       }
      ],
-     "durationSec": 48,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
+     "durationSec": 38,
+     "voice": "Together now. Keep going, even after a slip.",
+     "voiceId": "6ef58099ced29d5c",
+     "voiceSec": 3.72
     },
     {
      "kind": "praise",

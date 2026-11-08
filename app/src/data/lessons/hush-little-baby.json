@@ -51,7 +51,7 @@
  "icon": "bird",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2216,
+ "totalSec": 2250,
  "classes": [
   {
    "id": "hush-little-baby-c01",
@@ -59,7 +59,7 @@
    "title": "Rock teddy to sleep",
    "goal": "Feel the slow, steady beat of the lullaby with the whole body.",
    "type": "listen",
-   "durationSec": 236,
+   "durationSec": 229,
    "parentTip": "Hold your child on your lap and rock slowly side to side on every beat.",
    "video": "hush-little-baby/hush-little-baby-c01.mp4",
    "thumb": "hush-little-baby/hush-little-baby-c01.jpg",
@@ -125,10 +125,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and march",
+     "parentCue": "March on the spot to the beat",
      "bpm": 80,
-     "leadInSec": 2.27,
+     "leadInSec": 2.48,
      "notes": [
       {
        "p": "G4",
@@ -429,25 +429,26 @@
       }
      ],
      "durationSec": 28,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and march with me.",
+     "voiceId": "d4e3ae6e88185fcd",
+     "voiceSec": 2.08
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 80,
-     "leadInSec": 1.93,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "G4",
@@ -508,9 +509,7 @@
       {
        "p": "E4",
        "d": 2,
-       "f": 3,
-       "s": "word",
-       "who": "parent"
+       "s": "word"
       },
       {
        "rest": true,
@@ -583,9 +582,7 @@
       {
        "p": "D4",
        "d": 1.5,
-       "f": 2,
-       "s": "bird",
-       "who": "parent"
+       "s": "bird"
       },
       {
        "rest": true,
@@ -644,84 +641,7 @@
       {
        "p": "E4",
        "d": 2,
-       "f": 3,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "ring",
-       "who": "parent"
+       "s": "sing"
       },
       {
        "rest": true,
@@ -741,16 +661,12 @@
       {
        "lyric": "And if that mockingbird don't sing",
        "from": 21
-      },
-      {
-       "lyric": "Mama's gonna buy you a diamond ring",
-       "from": 30
       }
      ],
-     "durationSec": 28,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 30,
+     "voice": "Now you try. Grown-up, point to the glowing key.",
+     "voiceId": "1c7b849e51249595",
+     "voiceSec": 3.58
     },
     {
      "kind": "say",
@@ -971,81 +887,6 @@
        "rest": true,
        "d": 1,
        "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "ring",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
       }
      ],
      "lines": [
@@ -1060,13 +901,9 @@
       {
        "lyric": "And if that mockingbird don't sing",
        "from": 21
-      },
-      {
-       "lyric": "Mama's gonna buy you a diamond ring",
-       "from": 30
       }
      ],
-     "durationSec": 29,
+     "durationSec": 23,
      "voice": "Clap along. Clap, clap, clap.",
      "voiceId": "18bb4de584dd97ad",
      "voiceSec": 2.66
@@ -1290,81 +1127,6 @@
        "rest": true,
        "d": 1,
        "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "ring",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
       }
      ],
      "lines": [
@@ -1379,13 +1141,9 @@
       {
        "lyric": "And if that mockingbird don't sing",
        "from": 21
-      },
-      {
-       "lyric": "Mama's gonna buy you a diamond ring",
-       "from": 30
       }
      ],
-     "durationSec": 29,
+     "durationSec": 23,
      "voice": "Point to each key as it lights up.",
      "voiceId": "721e6d8cdcf7a9a2",
      "voiceSec": 2.38
@@ -1399,20 +1157,123 @@
      "voiceSec": 2.84
     },
     {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 80,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Ma",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ma's",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "gon",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "na",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "buy",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 2,
+       "s": "bird",
+       "who": "parent"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Mama's gonna buy you a mockingbird",
+       "from": 0
+      }
+     ],
+     "durationSec": 11,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 10,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's tiptoe",
+     "parentCue": "Tiptoe fingers on your lap",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Now let's tiptoe. Grown-up, tiptoe fingers on your lap.",
+     "voiceId": "d7cb592eb2ae7719",
+     "voiceSec": 4.15
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "Listen and tiptoe",
+     "parentCue": "Tiptoe fingers on your lap",
      "bpm": 80,
-     "leadInSec": 1.93,
+     "leadInSec": 2.31,
      "notes": [
       {
        "p": "G4",
@@ -1617,81 +1478,6 @@
        "rest": true,
        "d": 1,
        "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "ring",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
       }
      ],
      "lines": [
@@ -1706,32 +1492,19 @@
       {
        "lyric": "And if that mockingbird don't sing",
        "from": 21
-      },
-      {
-       "lyric": "Mama's gonna buy you a diamond ring",
-       "from": 30
       }
      ],
-     "durationSec": 28,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
+     "durationSec": 22,
+     "voice": "Tiptoe your fingers with me.",
+     "voiceId": "b153b9d40d3727cf",
+     "voiceSec": 1.91
     },
     {
      "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 80,
-     "leadInSec": 3.06,
+     "leadInSec": 3.34,
      "notes": [
       {
        "p": "G4",
@@ -1800,240 +1573,26 @@
        "rest": true,
        "d": 1,
        "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mock",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "bird",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "And",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "if",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "that",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "mock",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "bird",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "ring",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
       }
      ],
      "lines": [
       {
        "lyric": "Hush, little baby, don't say a word",
        "from": 0
-      },
-      {
-       "lyric": "Mama's gonna buy you a mockingbird",
-       "from": 10
-      },
-      {
-       "lyric": "And if that mockingbird don't sing",
-       "from": 21
-      },
-      {
-       "lyric": "Mama's gonna buy you a diamond ring",
-       "from": 30
       }
      ],
-     "durationSec": 29,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
+     "durationSec": 11,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 10,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
      "voiceSec": 2.66
     },
     {
@@ -2067,7 +1626,7 @@
    "title": "Pat-pat, sleepy beat",
    "goal": "Tap one gentle tap for every beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 225,
+   "durationSec": 234,
    "parentTip": "Rest your hand over your child's hand and tap together, then slowly let go.",
    "video": "hush-little-baby/hush-little-baby-c02.mp4",
    "thumb": "hush-little-baby/hush-little-baby-c02.jpg",
@@ -2142,6 +1701,241 @@
      "voice": "Pat the beat softly. Never in a hurry.",
      "voiceId": "0d9267bd0b2073cc",
      "voiceSec": 3.13
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.11,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "say",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "word"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Ma",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ma's",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "gon",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "na",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "buy",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "bird"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "And",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "if",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "that",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "bird",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "sing"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush, little baby, don't say a word",
+       "from": 0
+      },
+      {
+       "lyric": "Mama's gonna buy you a mockingbird",
+       "from": 10
+      },
+      {
+       "lyric": "And if that mockingbird don't sing",
+       "from": 21
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Find the glowing key.",
+     "voiceId": "1a3f2d81f926be34",
+     "voiceSec": 2.71
     },
     {
      "kind": "beat",
@@ -3436,19 +3230,19 @@
     },
     {
      "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 5,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
+     "durationSec": 6,
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "beat",
-     "caption": "Tap on every beat",
+     "caption": "Tap the beat",
      "parentCue": "You play, your child taps",
      "bpm": 80,
-     "leadInSec": 3.63,
+     "leadInSec": 4.26,
      "notes": [
       {
        "p": "G4",
@@ -3517,266 +3311,26 @@
        "rest": true,
        "d": 1,
        "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mock",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "bird",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "And",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "if",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "that",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "mock",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "bird",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "ring",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
       }
      ],
      "lines": [
       {
        "lyric": "Hush, little baby, don't say a word",
        "from": 0
-      },
-      {
-       "lyric": "Mama's gonna buy you a mockingbird",
-       "from": 10
-      },
-      {
-       "lyric": "And if that mockingbird don't sing",
-       "from": 21
-      },
-      {
-       "lyric": "Mama's gonna buy you a diamond ring",
-       "from": 30
       }
      ],
-     "durationSec": 30,
-     "voice": "Tap with the big circle. Tap, tap, tap.",
-     "voiceId": "faf2ee285af584e0",
-     "voiceSec": 3.23
-    },
-    {
-     "kind": "praise",
-     "caption": "Super listening!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 5,
-     "voice": "Shake, shake, shake your hands.",
-     "voiceId": "69041444bf86c15c",
-     "voiceSec": 2.85
+     "durationSec": 12,
+     "voice": "Any key is fine. Tap when the circle grows.",
+     "voiceId": "015b37b18f728b6c",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
      "caption": "You kept the beat!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
@@ -3862,6 +3416,241 @@
      "voice": "The mockingbird sings. Tap up high, on the right.",
      "voiceId": "5ac75219ca70930e",
      "voiceSec": 3.63
+    },
+    {
+     "kind": "say",
+     "caption": "Now you play the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Now you play the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "26d77d7c62a95e67",
+     "voiceSec": 6.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.11,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "say",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "word"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Ma",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ma's",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "gon",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "na",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "buy",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "bird"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "And",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "if",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "that",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "bird",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "sing"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush, little baby, don't say a word",
+       "from": 0
+      },
+      {
+       "lyric": "Mama's gonna buy you a mockingbird",
+       "from": 10
+      },
+      {
+       "lyric": "And if that mockingbird don't sing",
+       "from": 21
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Find the glowing key.",
+     "voiceId": "1a3f2d81f926be34",
+     "voiceSec": 2.71
     },
     {
      "kind": "high_low",
@@ -4714,184 +4503,9 @@
     },
     {
      "kind": "say",
-     "caption": "Is it the bear or the bird?",
-     "parentCue": "Let your child guess first",
-     "durationSec": 7,
-     "voice": "Is it the bear or the bird? Listen.",
-     "voiceId": "74985bd4e5d066df",
-     "voiceSec": 2.88
-    },
-    {
-     "kind": "high_low",
-     "caption": "The bear!",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 80,
-     "leadInSec": 5.51,
-     "notes": [
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "Hush",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 0.5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 0.5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 0.5,
-       "s": "ba",
-       "who": "parent"
-      },
-      {
-       "p": "F3",
-       "d": 0.5,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "s": "say",
-       "who": "parent"
-      },
-      {
-       "p": "F3",
-       "d": 0.5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 2,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hush, little baby, don't say a word",
-       "from": 0
-      }
-     ],
-     "durationSec": 14,
-     "voice": "Here comes the big bear. Tap a low key, down on the left.",
-     "voiceId": "12a8fe0014ff7cb2",
-     "voiceSec": 5.11
-    },
-    {
-     "kind": "high_low",
-     "caption": "The bird!",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 80,
-     "leadInSec": 3.57,
-     "notes": [
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "Hush",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "ba",
-       "who": "parent"
-      },
-      {
-       "p": "F5",
-       "d": 0.5,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "s": "say",
-       "who": "parent"
-      },
-      {
-       "p": "F5",
-       "d": 0.5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 2,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hush, little baby, don't say a word",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Tweet, tweet. Tap high, on the right side.",
-     "voiceId": "f46cca9df0a3daaf",
-     "voiceSec": 3.17
-    },
-    {
-     "kind": "praise",
-     "caption": "Great listening!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
      "caption": "Big breath in and out",
      "parentCue": "Breathe slowly together",
-     "durationSec": 4,
+     "durationSec": 5,
      "voice": "Big breath in, and out.",
      "voiceId": "67a43f157c55d975",
      "voiceSec": 2.01
@@ -4900,9 +4514,9 @@
      "kind": "praise",
      "caption": "Great bear, great bird!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
@@ -4927,7 +4541,7 @@
    "title": "Big taps, hush taps",
    "goal": "Tap the beat with big loud taps, then with tiny hush taps.",
    "type": "loud-soft",
-   "durationSec": 214,
+   "durationSec": 217,
    "parentTip": "Make strong arms for loud taps; whisper 'shh' and tiptoe your fingers for soft.",
    "video": "hush-little-baby/hush-little-baby-c04.mp4",
    "thumb": "hush-little-baby/hush-little-baby-c04.jpg",
@@ -5116,6 +4730,241 @@
      "voice": "Loud taps, like a drum.",
      "voiceId": "866bdfe59808cd7c",
      "voiceSec": 2.11
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.11,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "say",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "word"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Ma",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ma's",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "gon",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "na",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "buy",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "bird"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "And",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "if",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "that",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "bird",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "sing"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush, little baby, don't say a word",
+       "from": 0
+      },
+      {
+       "lyric": "Mama's gonna buy you a mockingbird",
+       "from": 10
+      },
+      {
+       "lyric": "And if that mockingbird don't sing",
+       "from": 21
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Find the glowing key.",
+     "voiceId": "1a3f2d81f926be34",
+     "voiceSec": 2.71
     },
     {
      "kind": "beat",
@@ -6276,326 +6125,6 @@
     },
     {
      "kind": "say",
-     "caption": "Now loud for the whole song",
-     "parentCue": "Play strong together",
-     "durationSec": 6,
-     "voice": "Now the whole song, nice and loud.",
-     "voiceId": "040a2fae33605048",
-     "voiceSec": 2.44
-    },
-    {
-     "kind": "beat",
-     "caption": "Big loud taps",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
-     "bpm": 80,
-     "leadInSec": 1.97,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Hush",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ba",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "say",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mock",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "bird",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "And",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "if",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "that",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "mock",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "bird",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "ring",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hush, little baby, don't say a word",
-       "from": 0
-      },
-      {
-       "lyric": "Mama's gonna buy you a mockingbird",
-       "from": 10
-      },
-      {
-       "lyric": "And if that mockingbird don't sing",
-       "from": 21
-      },
-      {
-       "lyric": "Mama's gonna buy you a diamond ring",
-       "from": 30
-      }
-     ],
-     "durationSec": 28,
-     "voice": "Big loud taps.",
-     "voiceId": "b4985f7cf9e4f6ee",
-     "voiceSec": 1.57
-    },
-    {
-     "kind": "say",
      "caption": "The start once more",
      "parentCue": "Play the beginning again",
      "durationSec": 6,
@@ -6721,7 +6250,7 @@
    "title": "Sleepy slow, awake fast",
    "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
    "type": "fast-slow",
-   "durationSec": 232,
+   "durationSec": 235,
    "parentTip": "Walk your fingers up your child's arm, slowly then quickly, matching the music.",
    "video": "hush-little-baby/hush-little-baby-c05.mp4",
    "thumb": "hush-little-baby/hush-little-baby-c05.jpg",
@@ -6796,6 +6325,241 @@
      "voice": "Turtle time. Slow, heavy taps, like a sleepy turtle.",
      "voiceId": "b4af1f75a60b905c",
      "voiceSec": 4.35
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "say",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "word"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Ma",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ma's",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "gon",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "na",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "buy",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "bird"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "And",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "if",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "that",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "bird",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "sing"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush, little baby, don't say a word",
+       "from": 0
+      },
+      {
+       "lyric": "Mama's gonna buy you a mockingbird",
+       "from": 10
+      },
+      {
+       "lyric": "And if that mockingbird don't sing",
+       "from": 21
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Now you try. Grown-up, point to the glowing key.",
+     "voiceId": "1c7b849e51249595",
+     "voiceSec": 3.58
     },
     {
      "kind": "beat",
@@ -8162,338 +7926,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Great job!",
+     "caption": "You followed the music!",
      "durationSec": 5,
      "voice": "You did it. What a team.",
      "voiceId": "9c16fbc65ce4124d",
      "voiceSec": 2.26
-    },
-    {
-     "kind": "say",
-     "caption": "Whole song, fast!",
-     "parentCue": "Play it a bit faster",
-     "durationSec": 6,
-     "voice": "Now the whole song, quick like a bunny.",
-     "voiceId": "0b07ab84bbeed5da",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "beat",
-     "caption": "Fast, fast, fast!",
-     "parentCue": "Quick, like a running bunny",
-     "bpm": 104,
-     "leadInSec": 2.43,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Hush",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ba",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "say",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mock",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "bird",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "And",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "if",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "that",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "mock",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "bird",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "ring",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hush, little baby, don't say a word",
-       "from": 0
-      },
-      {
-       "lyric": "Mama's gonna buy you a mockingbird",
-       "from": 10
-      },
-      {
-       "lyric": "And if that mockingbird don't sing",
-       "from": 21
-      },
-      {
-       "lyric": "Mama's gonna buy you a diamond ring",
-       "from": 30
-      }
-     ],
-     "durationSec": 23,
-     "voice": "Fast, fast, fast.",
-     "voiceId": "6ad0ee14bbd640bd",
-     "voiceSec": 2.03
-    },
-    {
-     "kind": "praise",
-     "caption": "You followed the music!",
-     "durationSec": 5,
-     "voice": "Lovely work. You kept on trying.",
-     "voiceId": "fdd2bcc9e53b2a9b",
-     "voiceSec": 2.84
     }
    ],
    "skill": {
@@ -8518,7 +7955,7 @@
    "title": "Hush! Freeze, baby",
    "goal": "Tap while the music plays and freeze with a quiet 'shh' when it stops.",
    "type": "stop-go",
-   "durationSec": 225,
+   "durationSec": 233,
    "parentTip": "When the music stops, put a finger to your lips and freeze; cheer when it restarts.",
    "video": "hush-little-baby/hush-little-baby-c06.mp4",
    "thumb": "hush-little-baby/hush-little-baby-c06.jpg",
@@ -8636,6 +8073,241 @@
      "voice": "Stop. Freeze like a statue.",
      "voiceId": "baf3cadfe3548ad6",
      "voiceSec": 2.6
+    },
+    {
+     "kind": "say",
+     "caption": "Now you play the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Now you play the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "26d77d7c62a95e67",
+     "voiceSec": 6.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 4.4,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "say",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "word"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Ma",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ma's",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "gon",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "na",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "buy",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "bird"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "And",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "if",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "that",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "bird",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "sing"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush, little baby, don't say a word",
+       "from": 0
+      },
+      {
+       "lyric": "Mama's gonna buy you a mockingbird",
+       "from": 10
+      },
+      {
+       "lyric": "And if that mockingbird don't sing",
+       "from": 21
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Your turn. One soft tap, like a raindrop.",
+     "voiceId": "3c08aa1c961c54cc",
+     "voiceSec": 4.0
     },
     {
      "kind": "beat",
@@ -9628,205 +9300,6 @@
      "voiceSec": 2.6
     },
     {
-     "kind": "beat",
-     "caption": "Go! Tap the beat",
-     "parentCue": "Play this line",
-     "bpm": 80,
-     "leadInSec": 2.74,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "ring",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Mama's gonna buy you a diamond ring",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Go. Tap the beat.",
-     "voiceId": "9a3d3dd642048105",
-     "voiceSec": 2.34
-    },
-    {
-     "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Stop playing and freeze together",
-     "durationSec": 4,
-     "voice": "Stop. Freeze like a statue.",
-     "voiceId": "baf3cadfe3548ad6",
-     "voiceSec": 2.6
-    },
-    {
-     "kind": "beat",
-     "caption": "Go! Tap the beat",
-     "parentCue": "Play this line",
-     "bpm": 80,
-     "leadInSec": 2.74,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Hush",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ba",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "say",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hush, little baby, don't say a word",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Go. Tap the beat.",
-     "voiceId": "9a3d3dd642048105",
-     "voiceSec": 2.34
-    },
-    {
-     "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Stop playing and freeze together",
-     "durationSec": 4,
-     "voice": "Stop. Freeze like a statue.",
-     "voiceId": "baf3cadfe3548ad6",
-     "voiceSec": 2.6
-    },
-    {
      "kind": "praise",
      "caption": "Great hush and freeze!",
      "durationSec": 5,
@@ -9857,7 +9330,7 @@
    "title": "Ma-ma: two taps",
    "goal": "Tap once for each piece of a word, like Ma-ma, two taps.",
    "type": "rhythm",
-   "durationSec": 191,
+   "durationSec": 198,
    "parentTip": "Say the words slowly and tap your child's hand once for each word piece.",
    "video": "hush-little-baby/hush-little-baby-c07.mp4",
    "thumb": "hush-little-baby/hush-little-baby-c07.jpg",
@@ -9968,6 +9441,241 @@
      "voice": "Mama's gonna buy you. Tap your knees with each word.",
      "voiceId": "37916bf77b22a66d",
      "voiceSec": 3.51
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "say",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "word"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Ma",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ma's",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "gon",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "na",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "buy",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "bird"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "And",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "if",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "that",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "bird",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "sing"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush, little baby, don't say a word",
+       "from": 0
+      },
+      {
+       "lyric": "Mama's gonna buy you a mockingbird",
+       "from": 10
+      },
+      {
+       "lyric": "And if that mockingbird don't sing",
+       "from": 21
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Now you. Tap the glowing key.",
+     "voiceId": "abc1372ce1533a98",
+     "voiceSec": 2.8
     },
     {
      "kind": "together",
@@ -10822,194 +10530,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
+     "caption": "Ma-ma, two taps!",
      "durationSec": 5,
      "voice": "You worked so hard on that.",
      "voiceId": "0886fb9aff1f3753",
      "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Tap the words, not the beat",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "together",
-     "caption": "Tap the words",
-     "parentCue": "Your child taps each word",
-     "bpm": 64,
-     "leadInSec": 1.875,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Hush",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ba",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "say",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mock",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "bird",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hush, little baby, don't say a word",
-       "from": 0
-      },
-      {
-       "lyric": "Mama's gonna buy you a mockingbird",
-       "from": 10
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Tap with the words.",
-     "voiceId": "7006f056dcaf76da",
-     "voiceSec": 1.44
-    },
-    {
-     "kind": "praise",
-     "caption": "Ma-ma, two taps!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
     }
    ],
    "skill": {
@@ -11034,7 +10559,7 @@
    "title": "Guess the lullaby game",
    "goal": "Listen and switch between games: high and low, loud and soft, fast and slow.",
    "type": "review",
-   "durationSec": 223,
+   "durationSec": 221,
    "parentTip": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
    "video": "hush-little-baby/hush-little-baby-c08.mp4",
    "thumb": "hush-little-baby/hush-little-baby-c08.jpg",
@@ -11135,6 +10660,241 @@
      "voice": "Listen. Bear or bird?",
      "voiceId": "a19b0e215608835e",
      "voiceSec": 2.35
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "say",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "word"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Ma",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ma's",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "gon",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "na",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "buy",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "bird"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "And",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "if",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "that",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "bird",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "sing"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush, little baby, don't say a word",
+       "from": 0
+      },
+      {
+       "lyric": "Mama's gonna buy you a mockingbird",
+       "from": 10
+      },
+      {
+       "lyric": "And if that mockingbird don't sing",
+       "from": 21
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Now you. Tap the glowing key.",
+     "voiceId": "abc1372ce1533a98",
+     "voiceSec": 2.8
     },
     {
      "kind": "beat",
@@ -12187,270 +11947,6 @@
      "voiceSec": 2.35
     },
     {
-     "kind": "beat",
-     "caption": "Loud taps!",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
-     "bpm": 80,
-     "leadInSec": 2.51,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Hush",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ba",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "say",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hush, little baby, don't say a word",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Loud taps, like a drum.",
-     "voiceId": "866bdfe59808cd7c",
-     "voiceSec": 2.11
-    },
-    {
-     "kind": "high_low",
-     "caption": "Bear or bird? Bird!",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 80,
-     "leadInSec": 2.75,
-     "notes": [
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "Hush",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 0.5,
-       "s": "ba",
-       "who": "parent"
-      },
-      {
-       "p": "F5",
-       "d": 0.5,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 0.5,
-       "s": "say",
-       "who": "parent"
-      },
-      {
-       "p": "F5",
-       "d": 0.5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 2,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hush, little baby, don't say a word",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Listen. Bear or bird?",
-     "voiceId": "a19b0e215608835e",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "beat",
-     "caption": "Soft taps",
-     "parentCue": "Tap gently",
-     "dynamic": "soft",
-     "bpm": 80,
-     "leadInSec": 3.57,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Hush",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ba",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "say",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hush, little baby, don't say a word",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Soft taps, like a whisper.",
-     "voiceId": "c55d0e3a7c865977",
-     "voiceSec": 3.17
-    },
-    {
-     "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Freeze together",
-     "durationSec": 4,
-     "voice": "Stop. Freeze like a statue.",
-     "voiceId": "baf3cadfe3548ad6",
-     "voiceSec": 2.6
-    },
-    {
      "kind": "praise",
      "caption": "Great listening ears!",
      "durationSec": 5,
@@ -12481,7 +11977,7 @@
    "title": "Lullaby duet",
    "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
    "type": "together",
-   "durationSec": 211,
+   "durationSec": 218,
    "parentTip": "Play the tune softly and watch your child; if they stop, keep playing and smile.",
    "video": "hush-little-baby/hush-little-baby-c09.mp4",
    "thumb": "hush-little-baby/hush-little-baby-c09.jpg",
@@ -12854,6 +12350,241 @@
      "voice": "Let's play together.",
      "voiceId": "b9d074678a65d0e2",
      "voiceSec": 1.57
+    },
+    {
+     "kind": "say",
+     "caption": "Now you play the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Now you play the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "26d77d7c62a95e67",
+     "voiceSec": 6.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.11,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Hush",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ba",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "say",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "word"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "Ma",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ma's",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "gon",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "na",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "buy",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "bird"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "And",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "if",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "that",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "bird",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "sing"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hush, little baby, don't say a word",
+       "from": 0
+      },
+      {
+       "lyric": "Mama's gonna buy you a mockingbird",
+       "from": 10
+      },
+      {
+       "lyric": "And if that mockingbird don't sing",
+       "from": 21
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. Find the glowing key.",
+     "voiceId": "1a3f2d81f926be34",
+     "voiceSec": 2.71
     },
     {
      "kind": "say",
@@ -13838,321 +13569,11 @@
     },
     {
      "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Swap: let your child choose loud or soft",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
      "durationSec": 6,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap the beat with me",
-     "parentCue": "Keep it steady",
-     "bpm": 80,
-     "leadInSec": 3.54,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Hush",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ba",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "say",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "word",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mock",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 2,
-       "s": "bird",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "And",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "if",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "that",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "mock",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "bird",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "don't",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "sing",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "Ma",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "ma's",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "gon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "na",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "buy",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "ring",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hush, little baby, don't say a word",
-       "from": 0
-      },
-      {
-       "lyric": "Mama's gonna buy you a mockingbird",
-       "from": 10
-      },
-      {
-       "lyric": "And if that mockingbird don't sing",
-       "from": 21
-      },
-      {
-       "lyric": "Mama's gonna buy you a diamond ring",
-       "from": 30
-      }
-     ],
-     "durationSec": 30,
-     "voice": "Grown-up plays the song. You tap the beat.",
-     "voiceId": "4517efb7c8c0ff3d",
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
      "voiceSec": 3.14
     },
     {
@@ -14186,7 +13607,7 @@
    "title": "Goodnight concert for teddy",
    "goal": "Play the whole lullaby from start to end, then tuck teddy in together.",
    "type": "concert",
-   "durationSec": 235,
+   "durationSec": 241,
    "parentTip": "Sit teddy as the audience; play the tune, then clap softly and tuck teddy in.",
    "video": "hush-little-baby/hush-little-baby-c10.mp4",
    "thumb": "hush-little-baby/hush-little-baby-c10.jpg",
@@ -15993,6 +15414,67 @@
        "rest": true,
        "d": 1,
        "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "And",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "if",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "that",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mock",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "bird",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "don't",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "f": 3,
+       "s": "sing",
+       "who": "parent"
+      },
+      {
+       "rest": true,
+       "d": 1,
+       "who": "parent"
       }
      ],
      "lines": [
@@ -16003,9 +15485,13 @@
       {
        "lyric": "Mama's gonna buy you a mockingbird",
        "from": 10
+      },
+      {
+       "lyric": "And if that mockingbird don't sing",
+       "from": 21
       }
      ],
-     "durationSec": 16,
+     "durationSec": 22,
      "voice": "Tap any key on the beat.",
      "voiceId": "4802ab3c0193975b",
      "voiceSec": 2.05

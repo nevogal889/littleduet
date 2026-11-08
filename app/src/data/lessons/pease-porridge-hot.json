@@ -51,7 +51,7 @@
  "icon": "apple",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 1883,
+ "totalSec": 1885,
  "classes": [
   {
    "id": "pease-porridge-hot-c01",
@@ -59,7 +59,7 @@
    "title": "Pat, clap, porridge hot",
    "goal": "Keep a pat-clap pattern going together while the rhyme plays.",
    "type": "listen",
-   "durationSec": 223,
+   "durationSec": 224,
    "parentTip": "Sit facing your child: pat your knees, then clap hands, on each beat.",
    "video": "pease-porridge-hot/pease-porridge-hot-c01.mp4",
    "thumb": "pease-porridge-hot/pease-porridge-hot-c01.jpg",
@@ -113,10 +113,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and rock",
+     "parentCue": "Rock gently like a boat",
      "bpm": 96,
-     "leadInSec": 2.27,
+     "leadInSec": 2.22,
      "notes": [
       {
        "p": "E4",
@@ -257,25 +257,26 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and rock with me.",
+     "voiceId": "87705484b21d1d46",
+     "voiceSec": 1.82
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 96,
-     "leadInSec": 1.93,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 4.7,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "E4",
@@ -301,9 +302,7 @@
       {
        "p": "C4",
        "d": 2,
-       "f": 1,
-       "s": "hot",
-       "who": "parent"
+       "s": "hot"
       },
       {
        "p": "E4",
@@ -329,9 +328,7 @@
       {
        "p": "D4",
        "d": 2,
-       "f": 2,
-       "s": "cold",
-       "who": "parent"
+       "s": "cold"
       },
       {
        "p": "E4",
@@ -371,9 +368,7 @@
       {
        "p": "E4",
        "d": 2,
-       "f": 3,
-       "s": "pot",
-       "who": "parent"
+       "s": "pot"
       },
       {
        "p": "D4",
@@ -392,9 +387,7 @@
       {
        "p": "C4",
        "d": 2,
-       "f": 1,
-       "s": "old",
-       "who": "parent"
+       "s": "old"
       }
      ],
      "lines": [
@@ -415,10 +408,66 @@
        "from": 14
       }
      ],
-     "durationSec": 17,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 25,
+     "voice": "Your turn. Press the glowing key with one finger.",
+     "voiceId": "47631c6d2adadecd",
+     "voiceSec": 4.3
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 96,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Pease",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "por",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ridge",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "f": 1,
+       "s": "hot",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Pease porridge hot",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -747,49 +796,12 @@
      "voiceSec": 2.84
     },
     {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 96,
-     "leadInSec": 1.93,
+     "leadInSec": 3.34,
      "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Pease",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "hot",
-       "who": "parent"
-      },
       {
        "p": "E4",
        "d": 1,
@@ -817,435 +829,43 @@
        "f": 2,
        "s": "cold",
        "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pease",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "pot",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "nine",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "days",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "old",
-       "who": "parent"
       }
      ],
      "lines": [
       {
-       "lyric": "Pease porridge hot",
-       "from": 0
-      },
-      {
        "lyric": "pease porridge cold",
-       "from": 4
-      },
-      {
-       "lyric": "pease porridge in the pot",
-       "from": 8
-      },
-      {
-       "lyric": "nine days old",
-       "from": 14
+       "from": 0
       }
      ],
-     "durationSec": 17,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 8,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
     },
     {
      "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 96,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Pease",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "hot",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pease",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "cold",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pease",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "pot",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "nine",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "days",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "old",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Pease porridge hot",
-       "from": 0
-      },
-      {
-       "lyric": "pease porridge cold",
-       "from": 4
-      },
-      {
-       "lyric": "pease porridge in the pot",
-       "from": 8
-      },
-      {
-       "lyric": "nine days old",
-       "from": 14
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
      "voiceSec": 2.66
     },
     {
      "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
+     "caption": "Now let's bounce",
+     "parentCue": "Bounce gently on your knees",
      "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
+     "voice": "Now let's bounce. Grown-up, bounce gently on your knees.",
+     "voiceId": "b430fd5ef040c18e",
+     "voiceSec": 4.35
     },
     {
      "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
+     "caption": "Listen and bounce",
+     "parentCue": "Bounce gently on your knees",
      "bpm": 96,
-     "leadInSec": 2.78,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Pease",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "hot",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pease",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "cold",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pease",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "pot",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "nine",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "days",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "old",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Pease porridge hot",
-       "from": 0
-      },
-      {
-       "lyric": "pease porridge cold",
-       "from": 4
-      },
-      {
-       "lyric": "pease porridge in the pot",
-       "from": 8
-      },
-      {
-       "lyric": "nine days old",
-       "from": 14
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Point to each key as it lights up.",
-     "voiceId": "721e6d8cdcf7a9a2",
-     "voiceSec": 2.38
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 96,
-     "leadInSec": 1.93,
+     "leadInSec": 2.34,
      "notes": [
       {
        "p": "E4",
@@ -1386,17 +1006,178 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "voice": "Listen and bounce with me.",
+     "voiceId": "dca195c8ddbb925e",
+     "voiceSec": 1.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 4.18,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Pease",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "por",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ridge",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "hot"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "pease",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "por",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ridge",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "cold"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "pease",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "por",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ridge",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "in",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "pot"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "nine",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "days",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "old"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Pease porridge hot",
+       "from": 0
+      },
+      {
+       "lyric": "pease porridge cold",
+       "from": 4
+      },
+      {
+       "lyric": "pease porridge in the pot",
+       "from": 8
+      },
+      {
+       "lyric": "nine days old",
+       "from": 14
+      }
+     ],
+     "durationSec": 24,
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
+    },
+    {
+     "kind": "say",
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 5,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
      "caption": "Great pat-clap together!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
@@ -1496,6 +1277,158 @@
      "voice": "Pease porridge hot. Tap, and hold the long hot.",
      "voiceId": "d8524841c2f670b5",
      "voiceSec": 3.9
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 2.84,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Pease",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "por",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ridge",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "hot"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "pease",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "por",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ridge",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "cold"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "pease",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "por",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ridge",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "in",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "pot"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "nine",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "days",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "old"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Pease porridge hot",
+       "from": 0
+      },
+      {
+       "lyric": "pease porridge cold",
+       "from": 4
+      },
+      {
+       "lyric": "pease porridge in the pot",
+       "from": 8
+      },
+      {
+       "lyric": "nine days old",
+       "from": 14
+      }
+     ],
+     "durationSec": 23,
+     "voice": "Your turn. I'll wait for you.",
+     "voiceId": "30da762511a45127",
+     "voiceSec": 2.44
     },
     {
      "kind": "beat",
@@ -2484,173 +2417,6 @@
     },
     {
      "kind": "say",
-     "caption": "Again, with a big smile",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 6,
-     "voice": "Again, with a big smile.",
-     "voiceId": "c87b837cebfc2d54",
-     "voiceSec": 2.14
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap, tap, tap",
-     "parentCue": "You play, your child taps",
-     "bpm": 96,
-     "leadInSec": 4.26,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Pease",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "hot",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pease",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "cold",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pease",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "pot",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "nine",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "days",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "old",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Pease porridge hot",
-       "from": 0
-      },
-      {
-       "lyric": "pease porridge cold",
-       "from": 4
-      },
-      {
-       "lyric": "pease porridge in the pot",
-       "from": 8
-      },
-      {
-       "lyric": "nine days old",
-       "from": 14
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Any key is fine. Tap when the circle grows.",
-     "voiceId": "015b37b18f728b6c",
-     "voiceSec": 3.86
-    },
-    {
-     "kind": "praise",
-     "caption": "Yes, that's it!",
-     "durationSec": 5,
-     "voice": "Lovely work. You kept on trying.",
-     "voiceId": "fdd2bcc9e53b2a9b",
-     "voiceSec": 2.84
-    },
-    {
-     "kind": "say",
      "caption": "One more time",
      "parentCue": "Keep the taps steady",
      "durationSec": 5,
@@ -2812,9 +2578,9 @@
      "kind": "praise",
      "caption": "You kept the beat!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
@@ -6022,7 +5788,7 @@
    "title": "Clapping partners",
    "goal": "Play the whole rhyme together, like two partners in a clapping game.",
    "type": "together",
-   "durationSec": 242,
+   "durationSec": 243,
    "parentTip": "Play your blue keys and smile; if your child misses an E, keep going.",
    "video": "pease-porridge-hot/pease-porridge-hot-c07.mp4",
    "thumb": "pease-porridge-hot/pease-porridge-hot-c07.jpg",
@@ -6187,6 +5953,158 @@
      "voice": "Together time. Big smiles.",
      "voiceId": "a441a4bce0e6e1e6",
      "voiceSec": 2.6
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 4.7,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Pease",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "por",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ridge",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "hot"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "pease",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "por",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ridge",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "cold"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "pease",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "por",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ridge",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "in",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "pot"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "nine",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "days",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "old"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Pease porridge hot",
+       "from": 0
+      },
+      {
+       "lyric": "pease porridge cold",
+       "from": 4
+      },
+      {
+       "lyric": "pease porridge in the pot",
+       "from": 8
+      },
+      {
+       "lyric": "nine days old",
+       "from": 14
+      }
+     ],
+     "durationSec": 25,
+     "voice": "Your turn. Press the glowing key with one finger.",
+     "voiceId": "47631c6d2adadecd",
+     "voiceSec": 4.3
     },
     {
      "kind": "say",
@@ -6990,166 +6908,6 @@
     },
     {
      "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Swap seats if your child wants",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "together",
-     "caption": "Together again",
-     "parentCue": "Smile and keep going",
-     "bpm": 82,
-     "leadInSec": 4.12,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Pease"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "hot",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pease"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "cold",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "pease"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "por"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ridge",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "pot"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "nine",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "days",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "old",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Pease porridge hot",
-       "from": 0
-      },
-      {
-       "lyric": "pease porridge cold",
-       "from": 4
-      },
-      {
-       "lyric": "pease porridge in the pot",
-       "from": 8
-      },
-      {
-       "lyric": "nine days old",
-       "from": 14
-      }
-     ],
-     "durationSec": 21,
-     "voice": "Together now. Keep going, even after a slip.",
-     "voiceId": "6ef58099ced29d5c",
-     "voiceSec": 3.72
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
      "caption": "The start once more",
      "parentCue": "Play the beginning again",
      "durationSec": 6,
@@ -7279,9 +7037,9 @@
      "kind": "praise",
      "caption": "Great partners!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {

@@ -51,7 +51,7 @@
  "icon": "monkey",
  "key": "C",
  "timeSignature": "6/8",
- "totalSec": 2050,
+ "totalSec": 2055,
  "classes": [
   {
    "id": "pop-goes-the-weasel-c01",
@@ -59,7 +59,7 @@
    "title": "Wait for the pop!",
    "goal": "Hear the whole song, crouch down low, and jump up on 'Pop!'.",
    "type": "listen",
-   "durationSec": 205,
+   "durationSec": 211,
    "parentTip": "Crouch down together and wait; spring up with your arms high on 'Pop!'.",
    "video": "pop-goes-the-weasel/pop-goes-the-weasel-c01.mp4",
    "thumb": "pop-goes-the-weasel/pop-goes-the-weasel-c01.jpg",
@@ -113,10 +113,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and march",
+     "parentCue": "March on the spot to the beat",
      "bpm": 108,
-     "leadInSec": 2.27,
+     "leadInSec": 2.48,
      "notes": [
       {
        "p": "C4",
@@ -334,25 +334,26 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and march with me.",
+     "voiceId": "d4e3ae6e88185fcd",
+     "voiceSec": 2.08
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 108,
-     "leadInSec": 1.93,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 92,
+     "leadInSec": 4.7,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "C4",
@@ -406,9 +407,7 @@
       {
        "p": "C4",
        "d": 1,
-       "f": 1,
-       "s": "bush",
-       "who": "parent"
+       "s": "bush"
       },
       {
        "p": "G3",
@@ -455,9 +454,7 @@
       {
        "p": "C4",
        "d": 1,
-       "f": 1,
-       "s": "sel",
-       "who": "parent"
+       "s": "sel"
       },
       {
        "p": "C4",
@@ -511,9 +508,7 @@
       {
        "p": "C4",
        "d": 1,
-       "f": 1,
-       "s": "fun",
-       "who": "parent"
+       "s": "fun"
       },
       {
        "p": "A4",
@@ -546,9 +541,7 @@
       {
        "p": "C4",
        "d": 1.5,
-       "f": 1,
-       "s": "sel",
-       "who": "parent"
+       "s": "sel"
       }
      ],
      "lines": [
@@ -569,10 +562,10 @@
        "from": 23
       }
      ],
-     "durationSec": 17,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 24,
+     "voice": "Your turn. Press the glowing key with one finger.",
+     "voiceId": "47631c6d2adadecd",
+     "voiceSec": 4.3
     },
     {
      "kind": "say",
@@ -1055,20 +1048,97 @@
      "voiceSec": 1.94
     },
     {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 108,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "The",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "mon",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "key",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "chased",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "wea",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "sel",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "The monkey chased the weasel",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's tiptoe",
+     "parentCue": "Tiptoe fingers on your lap",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Now let's tiptoe. Grown-up, tiptoe fingers on your lap.",
+     "voiceId": "d7cb592eb2ae7719",
+     "voiceSec": 4.15
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "Listen and tiptoe",
+     "parentCue": "Tiptoe fingers on your lap",
      "bpm": 108,
-     "leadInSec": 1.93,
+     "leadInSec": 2.31,
      "notes": [
       {
        "p": "C4",
@@ -1286,9 +1356,93 @@
       }
      ],
      "durationSec": 17,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "voice": "Tiptoe your fingers with me.",
+     "voiceId": "b153b9d40d3727cf",
+     "voiceSec": 1.91
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 108,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "All",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "round",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mul",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ber",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "bush",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "All around the mulberry bush",
+       "from": 0
+      }
+     ],
+     "durationSec": 8,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -1527,265 +1681,12 @@
      "voiceSec": 2.66
     },
     {
-     "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
-     "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
-     "bpm": 108,
-     "leadInSec": 2.78,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "All",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "round",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "mul",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ber",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "bush",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "The",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "mon",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "key",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "chased",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "wea",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "sel",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "The",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "mon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "key",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "thought",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "'twas",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "fun",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "Pop",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "goes",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "wea",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "sel",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "All around the mulberry bush",
-       "from": 0
-      },
-      {
-       "lyric": "The monkey chased the weasel",
-       "from": 8
-      },
-      {
-       "lyric": "The monkey thought 'twas all in fun",
-       "from": 15
-      },
-      {
-       "lyric": "Pop! goes the weasel",
-       "from": 23
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Point to each key as it lights up.",
-     "voiceId": "721e6d8cdcf7a9a2",
-     "voiceSec": 2.38
-    },
-    {
      "kind": "praise",
-     "caption": "You did it!",
+     "caption": "What a great pop!",
      "durationSec": 5,
      "voice": "Beautiful, gentle fingers.",
      "voiceId": "16fffae286737b05",
      "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 5,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "What a great pop!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
     }
    ],
    "skill": {
@@ -1810,7 +1711,7 @@
    "title": "Round the mulberry bush",
    "goal": "Tap the big bouncy beat on any key while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 193,
+   "durationSec": 194,
    "parentTip": "Rest your hand over your child's hand and tap the big beats, then slowly let go.",
    "video": "pop-goes-the-weasel/pop-goes-the-weasel-c02.mp4",
    "thumb": "pop-goes-the-weasel/pop-goes-the-weasel-c02.jpg",
@@ -1885,6 +1786,235 @@
      "voice": "All around the bush. Tap the beat with me.",
      "voiceId": "1a13c4e11ac5019c",
      "voiceSec": 3.72
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 92,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "All",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "round",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mul",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ber",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "s": "bush"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "The",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "mon",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "key",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "chased",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "wea",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "s": "sel"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "The",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "mon",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "key",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "thought",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "'twas",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "all",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "s": "fun"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "Pop",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "goes",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2,
+       "s": "wea",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "sel"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "All around the mulberry bush",
+       "from": 0
+      },
+      {
+       "lyric": "The monkey chased the weasel",
+       "from": 8
+      },
+      {
+       "lyric": "The monkey thought 'twas all in fun",
+       "from": 15
+      },
+      {
+       "lyric": "Pop! goes the weasel",
+       "from": 23
+      }
+     ],
+     "durationSec": 23,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
     },
     {
      "kind": "beat",
@@ -3083,255 +3213,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "You bounced on the beat!",
      "durationSec": 5,
      "voice": "Lovely work. You kept on trying.",
      "voiceId": "fdd2bcc9e53b2a9b",
      "voiceSec": 2.84
-    },
-    {
-     "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap with the big circle",
-     "parentCue": "You play, your child taps",
-     "bpm": 108,
-     "leadInSec": 2.45,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "All",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "round",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "mul",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ber",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "bush",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "The",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "mon",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "key",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "chased",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "wea",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "sel",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "The",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "mon",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "key",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "thought",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "'twas",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "fun",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "Pop",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "goes",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "wea",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "sel",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "All around the mulberry bush",
-       "from": 0
-      },
-      {
-       "lyric": "The monkey chased the weasel",
-       "from": 8
-      },
-      {
-       "lyric": "The monkey thought 'twas all in fun",
-       "from": 15
-      },
-      {
-       "lyric": "Pop! goes the weasel",
-       "from": 23
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Tap any key on the beat.",
-     "voiceId": "4802ab3c0193975b",
-     "voiceSec": 2.05
-    },
-    {
-     "kind": "praise",
-     "caption": "You bounced on the beat!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
     }
    ],
    "skill": {
@@ -8565,7 +8451,7 @@
    "title": "The monkey and the weasel",
    "goal": "Play the whole song together, sharing one steady bouncy beat.",
    "type": "together",
-   "durationSec": 190,
+   "durationSec": 188,
    "parentTip": "Keep the beat going even if a note is missed; smile and nod at each turn.",
    "video": "pop-goes-the-weasel/pop-goes-the-weasel-c09.mp4",
    "thumb": "pop-goes-the-weasel/pop-goes-the-weasel-c09.jpg",
@@ -8804,6 +8690,235 @@
      "voice": "Let's play together.",
      "voiceId": "b9d074678a65d0e2",
      "voiceSec": 1.57
+    },
+    {
+     "kind": "say",
+     "caption": "Now you play the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Now you play the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "26d77d7c62a95e67",
+     "voiceSec": 6.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 92,
+     "leadInSec": 4.7,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "All",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "round",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "mul",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ber",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "s": "bush"
+      },
+      {
+       "p": "G3",
+       "d": 0.5,
+       "f": 1,
+       "s": "The",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 4,
+       "s": "mon",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 4,
+       "s": "key",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 5,
+       "s": "chased",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "wea",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "s": "sel"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "The",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "mon",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "key",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "thought",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "'twas",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "all",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "in",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "s": "fun"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 5,
+       "s": "Pop",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "goes",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 2,
+       "s": "wea",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "sel"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "All around the mulberry bush",
+       "from": 0
+      },
+      {
+       "lyric": "The monkey chased the weasel",
+       "from": 8
+      },
+      {
+       "lyric": "The monkey thought 'twas all in fun",
+       "from": 15
+      },
+      {
+       "lyric": "Pop! goes the weasel",
+       "from": 23
+      }
+     ],
+     "durationSec": 24,
+     "voice": "Your turn. Press the glowing key with one finger.",
+     "voiceId": "47631c6d2adadecd",
+     "voiceSec": 4.3
     },
     {
      "kind": "say",
@@ -9743,243 +9858,9 @@
     },
     {
      "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Swap seats if your child wants",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "together",
-     "caption": "Together again",
-     "parentCue": "Smile and keep going",
-     "bpm": 92,
-     "leadInSec": 4.12,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "All"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "a"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "round",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "mul",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ber",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "bush"
-      },
-      {
-       "p": "G3",
-       "d": 0.5,
-       "f": 1,
-       "s": "The",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 4,
-       "s": "mon"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 4,
-       "s": "key"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 5,
-       "s": "chased",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "wea",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "sel"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "The"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "mon"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "key",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "thought",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "'twas",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "fun"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 5,
-       "s": "Pop",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "goes",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 2,
-       "s": "wea",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "sel"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "All around the mulberry bush",
-       "from": 0
-      },
-      {
-       "lyric": "The monkey chased the weasel",
-       "from": 8
-      },
-      {
-       "lyric": "The monkey thought 'twas all in fun",
-       "from": 15
-      },
-      {
-       "lyric": "Pop! goes the weasel",
-       "from": 23
-      }
-     ],
-     "durationSec": 21,
-     "voice": "Together now. Keep going, even after a slip.",
-     "voiceId": "6ef58099ced29d5c",
-     "voiceSec": 3.72
-    },
-    {
-     "kind": "praise",
-     "caption": "Well done!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
-    },
-    {
-     "kind": "say",
      "caption": "Stretch up tall!",
      "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 8,
+     "durationSec": 7,
      "voice": "Stretch up tall, as tall as a tree.",
      "voiceId": "7b02d4dc04aee044",
      "voiceSec": 3.14
@@ -9988,9 +9869,9 @@
      "kind": "praise",
      "caption": "You played as a team!",
      "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
+     "voice": "That was real music, together.",
+     "voiceId": "3da26e0fa12ffe07",
+     "voiceSec": 2.29
     }
    ],
    "skill": {

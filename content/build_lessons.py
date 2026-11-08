@@ -37,6 +37,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CLASS_MIN, CLASS_MAX = 180, 300
 CLASSES_MIN, CLASSES_MAX = 8, 10
 SONG_MIN, SONG_MAX = 1800, 2400   # 30-40 minutes per song
+SONG_MIN_SEC = 1800       # a song is 30-40 minutes in total
 FILL_TARGET = 214          # aim for ~3.5 min classes
 FILL_CEILING = 292         # leave headroom under 300
 TAIL_SEC = 1.5
@@ -418,7 +419,7 @@ class Song:
 
 # ---------------------------------------------------------------- class builder
 def finish_class(song, idx, ctype, title, goal, tip, intro, required, extras,
-                 outro_praise="Wonderful playing!"):
+                 outro_praise="Wonderful playing!", finale=None):
     """intro + required units, then repeat extras (and opening-phrase practice) until the
     class reaches its planned length (song.cur_target, set by build_lesson), then praise."""
     cid = "%s-c%02d" % (song.id, idx)
@@ -430,6 +431,13 @@ def finish_class(song, idx, ctype, title, goal, tip, intro, required, extras,
         required = [game_unit(song, g) for g in ovl.get("games", [])] + list(required)
         outro_praise = ovl["praise"]
     target = getattr(song, "cur_target", FILL_TARGET)
+    if song.age in ("2-3", "3-4") and ctype not in ("listen", "concert") and not any(
+            x["kind"] == "your_turn" for u in list(required) + list(extras) for x in u):
+        land = landing_unit(song, idx)
+        if land:
+            required = list(required[:1]) + [land] + list(required[1:])
+    if finale:
+        target -= seq_dur(finale)
     ceil_ = min(FILL_CEILING, target + 12)
     required = [split_long_demos(song, u) for u in required]
     extras = [split_long_demos(song, u) for u in extras]
@@ -479,6 +487,17 @@ def finish_class(song, idx, ctype, title, goal, tip, intro, required, extras,
         if not unit:
             break
         segs += unit
+    if finale:
+        if segs[-1]["kind"] == "praise":
+            segs.pop()
+        room = FILL_CEILING - seq_dur(segs) - PRAISE_SEC
+        if seq_dur(finale) > room:  # too long here: the opening lines together instead
+            short = first_phrases(song, max(8.0, room - finale[0]["durationSec"] - 6), who=None,
+                                  bpm=finale[1]["bpm"])
+            finale = [finale[0], seg_notes("together", "Play it together", short[0], finale[1]["bpm"],
+                                           cue="Keep going, don't stop", lines=short[1])]
+        if seq_dur(finale) <= room:
+            segs += finale         # the payoff: the whole song (or its start), with the grown-up
     if segs[-1]["kind"] == "praise":
         segs[-1] = praise          # never two praise cards in a row at the end
     else:
@@ -637,6 +656,86 @@ def slow(bpm, f=0.8):
     return max(50, bpm * f)
 
 
+# ---------- variety + child action helpers (lesson review, Nov 2026)
+MOVES = [("Listen and sway", "Sway side to side"), ("Listen and rock", "Rock gently like a boat"),
+         ("Listen and march", "March on the spot to the beat"), ("Listen and bounce", "Bounce gently on your knees"),
+         ("Listen and tiptoe", "Tiptoe fingers on your lap"), ("Listen and wave", "Wave your arms slowly")]
+LISTEN_MAX = 22.0          # a listening block for little ones stays short (attention at 2-4)
+
+
+def song_seed(song):
+    return sum(ord(c) for c in song.id)
+
+
+def move_for(song, k=0):
+    return MOVES[(song_seed(song) + k) % len(MOVES)]
+
+
+def first_phrases(song, max_sec, who="parent", bpm=None):
+    """The longest run of opening phrases that plays in max_sec (at least one phrase)."""
+    bpm = bpm or song.bpm
+    best = None
+    for n in range(1, len(song.phrases) + 1):
+        ns, ls = song.phrase_notes(range(n), who=who)
+        if note_body_sec(ns, bpm) > max_sec and best:
+            break
+        best = (ns, ls)
+    return best
+
+
+def landing_unit(song, k=0):
+    """Duet for little ones: the grown-up plays the opening lines, the child plays the last note of each
+    line (a whole-hand press is fine: the listener hears the right note inside a cluster)."""
+    ns, ls = first_phrases(song, 18.0, who="parent")
+    ends, n_child = set(), 0
+    for i, ln in enumerate(ls):
+        stop = ls[i + 1]["from"] if i + 1 < len(ls) else len(ns)
+        last = next((j for j in range(stop - 1, ln["from"] - 1, -1) if not ns[j].get("rest")), None)
+        if last is not None:
+            ends.add(last)
+    notes = []
+    for j, n in enumerate(ns):
+        if j in ends:
+            nn = dict(n)
+            nn.pop("who", None)
+            nn.pop("f", None)
+            notes.append(clean_note(nn))
+            n_child += 1
+        else:
+            notes.append(n)
+    if not n_child:
+        return None
+    say = seg_say(["Now you play the last note", "Your turn for the last note", "Find the last note"][k % 3],
+                  "You play the tune, your child the last note")
+    seg = seg_notes("your_turn", "Your turn: the last note", notes, slow(song.bpm, 0.85),
+                    cue="A whole hand on the glowing key is fine", lines=ls)
+    return [say, seg]
+
+
+def echo_sing_unit(song, k=0):
+    """Call and response: the teacher plays one line, the family sings it back in the pause."""
+    ns, ls = song.phrase_notes([k % max(1, len(song.phrases))], who="parent")
+    body = note_body_sec(ns, song.bpm)
+    listen = seg_notes("listen", "I sing, you sing it back", ns, song.bpm, cue="Sing it back together", lines=ls)
+    back = seg_say("Your turn to sing it back!", "Sing the line together, any way is fine",
+                   sec=int(math.ceil(3.5 + body)))
+    return [listen, back]
+
+
+def short_listen(song, caption, cue, k=0):
+    ns, ls = first_phrases(song, LISTEN_MAX)
+    return seg_notes("listen", caption, ns, song.bpm, cue=cue, lines=ls)
+
+
+def finale_unit(song):
+    """Older children end drill classes by playing the whole song with their grown-up (the payoff)."""
+    ns, ls = song.whole()
+    if note_body_sec(ns, slow(song.bpm, 0.85)) > 60:
+        ns, ls = first_phrases(song, 45.0, who=None, bpm=slow(song.bpm, 0.85))
+    return [seg_say("Now the whole song, together!", "Play it all the way through. Mistakes are fine."),
+            seg_notes("together", "The whole song", ns, slow(song.bpm, 0.85), cue="Keep going, don't stop", lines=ls)]
+
+
 # ---------- shared class makers
 def cls_concert(song, idx, mode):
     """mode: 'beat' (2-3), 'special' (3-4), 'melody' (4-5), 'lh' (5-6)."""
@@ -677,19 +776,34 @@ def cls_listen(song, idx, title="Listen and sway", ctype="listen",
                tip="Sit together at the piano. Sway side to side while the song plays.",
                who="parent", show_hand=False):
     notes, lines = song.whole(who=who)
+    mv = move_for(song)
+    if title == "Listen and sway":
+        title = mv[0]
+        tip = "Sit together at the piano. %s while the song plays." % mv[1]
     intro = [seg_say("Let's listen together", "Sit side by side")]
     if show_hand:
         intro.append(seg_say("Thumb on %s, fingers curved" % song.thumb[:-1].replace("#", " sharp"),
                              "Help place one finger on each lit key", show_keys=song.hand))
-    required = [[seg_notes("listen", "Listen and sway", notes, song.bpm,
-                           cue="Sway side to side", lines=lines)]]
-    extras = [[seg_say("Sing along this time", "Sing the words softly"),
-               seg_notes("listen", "Sing along", notes, song.bpm, cue="Sing with your child", lines=lines)],
-              [seg_say("Now clap along", "Clap gently on each beat"),
-               seg_notes("listen", "Clap clap clap", notes, song.bpm, cue="Clap with the beat", lines=lines)],
-              [seg_say("Watch the keys light up", "Point at each lit key"),
-               seg_notes("listen", "Watch the lights", notes, song.bpm, cue="Point to the lit key", lines=lines),
-               seg_praise(praise_word(idx))]]
+    # The whole song once (moving to it), then short varied activities: never four full replays.
+    required = [[seg_notes("listen", mv[0], notes, song.bpm, cue=mv[1], lines=lines)]]
+    little = song.age in ("2-3", "3-4")
+    extras, land = [], None
+    if little:
+        land = landing_unit(song, idx)
+        if land:
+            extras.append(land)
+    extras += [echo_sing_unit(song, 0),
+               [seg_say("Now clap along", "Clap gently on each beat"),
+                short_listen(song, "Clap clap clap", "Clap with the beat")],
+               [seg_say("Watch the keys light up", "Point at each lit key"),
+                short_listen(song, "Watch the lights", "Point to the lit key"), seg_praise(praise_word(idx))],
+               echo_sing_unit(song, 1),
+               [seg_say(move_for(song, 2)[0].replace("Listen and", "Now let's"), move_for(song, 2)[1]),
+                short_listen(song, move_for(song, 2)[0], move_for(song, 2)[1])]]
+    k = song_seed(song) % len(extras)          # each song starts the activities at a different place
+    extras = extras[k:] + extras[:k]
+    if little and land:
+        extras = [land] + [u for u in extras if u is not land]   # the duet comes first for little ones
     return finish_class(song, idx, ctype, title, goal, tip, intro, required, extras)
 
 
@@ -977,7 +1091,8 @@ def cls_practice(song, idx):
     return finish_class(song, idx, "phrase", "Slow and steady",
                         "Play the whole song slowly and evenly",
                         "Slow playing builds sure fingers. Praise the effort, not the speed.",
-                        intro, units[:1], units[1:])
+                        intro, units[:1], units[1:],
+                        finale=finale_unit(song) if song.age in ("4-5", "5-6") else None)
 
 
 def cls_first_half(song, idx, half_groups):
@@ -1170,15 +1285,18 @@ def cls_tricky(song, idx):
                            lines=lines)],
                 [seg_notes("your_turn", "Your turn, slowly", notes, slow(song.bpm, 0.6), cue="Slow is perfect",
                            lines=lines)]]
-    extras = [[seg_say(["A little faster now", "Again, a bit faster", "Nearly full speed"][i % 3],
-                       "Only speed up if it feels easy"),
-               seg_notes("your_turn", "Your turn!", notes, slow(song.bpm, [0.7, 0.8, 0.9][i % 3]),
+    ladder = [("A little faster now", 0.7), ("Again, a bit faster", 0.8), ("Nearly full speed", 0.9)]
+    hold = [("Once more at this speed", 0.9), ("Steady, one more time", 0.9), ("Last time at this speed", 0.9)]
+    steps = ladder + hold
+    extras = [[seg_say(say, "Only speed up if it feels easy" if i < 3 else "Same speed, nice and even"),
+               seg_notes("your_turn", "Your turn!", notes, slow(song.bpm, f),
                          cue="Keep fingers close to the keys", lines=lines), seg_praise(praise_word(i))]
-              for i in range(6)]
+              for i, (say, f) in enumerate(steps)]
     return finish_class(song, idx, "review", "Tricky spots",
                         "Practise the hardest part slowly, then a little faster",
                         "Practise the hard part a few times, then stop. Short and slow beats long and rushed.",
-                        intro, required, extras)
+                        intro, required, extras,
+                        finale=finale_unit(song) if song.age in ("4-5", "5-6") else None)
 
 
 def octave_song_shift(song):
@@ -1436,11 +1554,11 @@ def build_lesson(song_dict, plan=None):
     if len(targets) != n:          # a plan had fewer options than asked: spread T over what we have
         targets = [T / n] * n
     classes = build_classes(song, makers, targets, plan)
-    for _ in range(5):             # nudge class targets until the song total lands near T
+    for _ in range(8):             # nudge class targets until the song total lands near T
         total = sum(c["durationSec"] for c in classes)
-        if abs(total - T) <= 20:
+        if abs(total - T) <= 20 and total >= SONG_MIN_SEC + 15:
             break
-        delta = (T - total) / float(n)
+        delta = (max(T, SONG_MIN_SEC + 30) - total) / float(n)
         targets = [t + delta for t in targets]
         classes = build_classes(song, makers, targets, plan)
     for i, c in enumerate(classes):  # renumber and rebuild ids/paths

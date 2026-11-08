@@ -58,7 +58,7 @@
  "icon": "clock",
  "key": "C",
  "timeSignature": "6/8",
- "totalSec": 2133,
+ "totalSec": 2123,
  "classes": [
   {
    "id": "hickory-dickory-dock-c01",
@@ -183,10 +183,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and bounce",
+     "parentCue": "Bounce gently on your knees",
      "bpm": 100,
-     "leadInSec": 2.27,
+     "leadInSec": 2.34,
      "notes": [
       {
        "p": "E4",
@@ -423,25 +423,26 @@
       }
      ],
      "durationSec": 20,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and bounce with me.",
+     "voiceId": "dca195c8ddbb925e",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 100,
-     "leadInSec": 1.93,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 85,
+     "leadInSec": 3.82,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "E4",
@@ -488,9 +489,7 @@
       {
        "p": "C4",
        "d": 1.5,
-       "f": 1,
-       "s": "dock",
-       "who": "parent"
+       "s": "dock"
       },
       {
        "rest": true,
@@ -535,9 +534,7 @@
       {
        "p": "A4",
        "d": 1.5,
-       "f": 3,
-       "s": "clock",
-       "who": "parent"
+       "s": "clock"
       },
       {
        "rest": true,
@@ -568,9 +565,7 @@
       {
        "p": "C5",
        "d": 1.5,
-       "f": 5,
-       "s": "one",
-       "who": "parent"
+       "s": "one"
       },
       {
        "p": "B4",
@@ -596,9 +591,7 @@
       {
        "p": "F4",
        "d": 1.5,
-       "f": 1,
-       "s": "down",
-       "who": "parent"
+       "s": "down"
       },
       {
        "p": "E4",
@@ -645,9 +638,7 @@
       {
        "p": "C4",
        "d": 1.5,
-       "f": 1,
-       "s": "dock",
-       "who": "parent"
+       "s": "dock"
       },
       {
        "rest": true,
@@ -677,265 +668,10 @@
        "from": 23
       }
      ],
-     "durationSec": 19,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 100,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Hick",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "dick",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "dock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "mouse",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ran",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 3,
-       "s": "clock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "The",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "clock",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "struck",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 5,
-       "s": "one",
-       "who": "parent"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "mouse",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ran",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 1,
-       "s": "down",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Hick",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "dick",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "dock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hickory dickory dock",
-       "from": 0
-      },
-      {
-       "lyric": "the mouse ran up the clock",
-       "from": 8
-      },
-      {
-       "lyric": "The clock struck one",
-       "from": 15
-      },
-      {
-       "lyric": "the mouse ran down",
-       "from": 19
-      },
-      {
-       "lyric": "Hickory dickory dock",
-       "from": 23
-      }
-     ],
-     "durationSec": 20,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
-     "voiceSec": 2.66
+     "durationSec": 27,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
     },
     {
      "kind": "say",
@@ -1201,20 +937,95 @@
      "voiceSec": 2.84
     },
     {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 100,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "mouse",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ran",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "f": 3,
+       "s": "clock",
+       "who": "parent"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "the mouse ran up the clock",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's wave",
+     "parentCue": "Wave your arms slowly",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Now let's wave. Grown-up, wave your arms slowly.",
+     "voiceId": "691860dc06abbc20",
+     "voiceSec": 4.47
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "Listen and wave",
+     "parentCue": "Wave your arms slowly",
      "bpm": 100,
-     "leadInSec": 1.93,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "E4",
@@ -1450,10 +1261,92 @@
        "from": 23
       }
      ],
-     "durationSec": 19,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 20,
+     "voice": "Listen and wave with me.",
+     "voiceId": "8fdf219288a4563d",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 100,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Hick",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "dick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "dock",
+       "who": "parent"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hickory dickory dock",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -1711,75 +1604,12 @@
      "voiceSec": 2.66
     },
     {
-     "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
-     "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
-    },
-    {
      "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 100,
-     "leadInSec": 2.78,
+     "leadInSec": 3.34,
      "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Hick",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "dick",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "dock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      },
       {
        "p": "C4",
        "d": 0.5,
@@ -1826,169 +1656,35 @@
        "rest": true,
        "d": 1.5,
        "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "The",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "clock",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "struck",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 5,
-       "s": "one",
-       "who": "parent"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "mouse",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ran",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 1,
-       "s": "down",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Hick",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "dick",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "dock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
       }
      ],
      "lines": [
       {
-       "lyric": "Hickory dickory dock",
-       "from": 0
-      },
-      {
        "lyric": "the mouse ran up the clock",
-       "from": 8
-      },
-      {
-       "lyric": "The clock struck one",
-       "from": 15
-      },
-      {
-       "lyric": "the mouse ran down",
-       "from": 19
-      },
-      {
-       "lyric": "Hickory dickory dock",
-       "from": 23
+       "from": 0
       }
      ],
-     "durationSec": 20,
-     "voice": "Point to each key as it lights up.",
-     "voiceId": "721e6d8cdcf7a9a2",
-     "voiceSec": 2.38
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
     },
     {
      "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 5,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "praise",
      "caption": "You ran up and down!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
@@ -2013,7 +1709,7 @@
    "title": "Tick, tock, the clock",
    "goal": "Tap one steady tap on each tick and tock while the grown-up plays.",
    "type": "beat",
-   "durationSec": 229,
+   "durationSec": 218,
    "parentTip": "Rest your hand over your child's hand; say 'tick, tock' and tap together, then let go.",
    "video": "hickory-dickory-dock/hickory-dickory-dock-c02.mp4",
    "thumb": "hickory-dickory-dock/hickory-dickory-dock-c02.jpg",
@@ -2083,6 +1779,252 @@
      "voice": "Tick, tock, like the clock. Tap the beat with me.",
      "voiceId": "149aa5af4158def0",
      "voiceSec": 3.36
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 85,
+     "leadInSec": 4.18,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Hick",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "dick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "dock"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "mouse",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ran",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "s": "clock"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "The",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "clock",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 5,
+       "s": "struck",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "s": "one"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "mouse",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ran",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "s": "down"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Hick",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "dick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "dock"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hickory dickory dock",
+       "from": 0
+      },
+      {
+       "lyric": "the mouse ran up the clock",
+       "from": 8
+      },
+      {
+       "lyric": "The clock struck one",
+       "from": 15
+      },
+      {
+       "lyric": "the mouse ran down",
+       "from": 19
+      },
+      {
+       "lyric": "Hickory dickory dock",
+       "from": 23
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
     },
     {
      "kind": "beat",
@@ -3384,465 +3326,20 @@
     },
     {
      "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap with the big circle",
-     "parentCue": "You play, your child taps",
-     "bpm": 100,
-     "leadInSec": 2.22,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Hick",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "dick",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "dock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "mouse",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ran",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 3,
-       "s": "clock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "The",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "clock",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "struck",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 5,
-       "s": "one",
-       "who": "parent"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "mouse",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ran",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 1,
-       "s": "down",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Hick",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "dick",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "dock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hickory dickory dock",
-       "from": 0
-      },
-      {
-       "lyric": "the mouse ran up the clock",
-       "from": 8
-      },
-      {
-       "lyric": "The clock struck one",
-       "from": 15
-      },
-      {
-       "lyric": "the mouse ran down",
-       "from": 19
-      },
-      {
-       "lyric": "Hickory dickory dock",
-       "from": 23
-      }
-     ],
-     "durationSec": 20,
-     "voice": "Tap the beat, like a heartbeat.",
-     "voiceId": "0cf68adb12e1c639",
-     "voiceSec": 1.82
-    },
-    {
-     "kind": "praise",
-     "caption": "Well done!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "together",
-     "caption": "Play it together",
-     "parentCue": "Your child plays the special note",
-     "bpm": 100,
-     "leadInSec": 2.47,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Hick",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "o"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "dick"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "dock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "mouse",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ran",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "up"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 3,
-       "s": "clock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "The",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "clock",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "struck",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 5,
-       "s": "one",
-       "who": "parent"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "mouse",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ran",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 1,
-       "s": "down"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hickory dickory dock",
-       "from": 0
-      },
-      {
-       "lyric": "the mouse ran up the clock",
-       "from": 8
-      },
-      {
-       "lyric": "The clock struck one",
-       "from": 15
-      },
-      {
-       "lyric": "the mouse ran down",
-       "from": 19
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Let's make music together.",
-     "voiceId": "ce491b22b46d8348",
-     "voiceSec": 2.07
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 8,
+     "voice": "Shake, shake, shake your hands.",
+     "voiceId": "69041444bf86c15c",
+     "voiceSec": 2.85
     },
     {
      "kind": "praise",
      "caption": "You kept the clock going!",
      "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
+     "voice": "You worked so hard on that.",
+     "voiceId": "0886fb9aff1f3753",
+     "voiceSec": 1.92
     }
    ],
    "skill": {
@@ -4589,7 +4086,7 @@
    "title": "Mouse squeaks back",
    "goal": "Listen to a short 2 or 3 note call, then play it back the same.",
    "type": "echo",
-   "durationSec": 242,
+   "durationSec": 241,
    "parentTip": "Play or sing the call first, then point to your child: your turn.",
    "video": "hickory-dickory-dock/hickory-dickory-dock-c04.mp4",
    "thumb": "hickory-dickory-dock/hickory-dickory-dock-c04.jpg",
@@ -5344,7 +4841,7 @@
      "kind": "say",
      "caption": "Wiggle your fingers!",
      "parentCue": "Shake out both hands together",
-     "durationSec": 5,
+     "durationSec": 4,
      "voice": "Wiggle your fingers. Wiggle, wiggle.",
      "voiceId": "640ef443bc914f6c",
      "voiceSec": 2.99
@@ -9306,7 +8803,7 @@
    "title": "Tick-tock together",
    "goal": "Play the whole song together, sharing one steady beat.",
    "type": "together",
-   "durationSec": 229,
+   "durationSec": 231,
    "parentTip": "Play the tune and nod 'tick, tock' with your head; keep going if your child misses.",
    "video": "hickory-dickory-dock/hickory-dickory-dock-c08.mp4",
    "thumb": "hickory-dickory-dock/hickory-dickory-dock-c08.jpg",
@@ -9565,6 +9062,252 @@
      "voice": "Here we go, all together.",
      "voiceId": "860c30d743a9b5a8",
      "voiceSec": 1.86
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 85,
+     "leadInSec": 4.7,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Hick",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "dick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "dock"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "mouse",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "ran",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1.5,
+       "s": "clock"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "The",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1,
+       "f": 5,
+       "s": "clock",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 0.5,
+       "f": 5,
+       "s": "struck",
+       "who": "parent"
+      },
+      {
+       "p": "C5",
+       "d": 1.5,
+       "s": "one"
+      },
+      {
+       "p": "B4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 3,
+       "s": "mouse",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ran",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "s": "down"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "Hick",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "dick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "o",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ry",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "dock"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Hickory dickory dock",
+       "from": 0
+      },
+      {
+       "lyric": "the mouse ran up the clock",
+       "from": 8
+      },
+      {
+       "lyric": "The clock struck one",
+       "from": 15
+      },
+      {
+       "lyric": "the mouse ran down",
+       "from": 19
+      },
+      {
+       "lyric": "Hickory dickory dock",
+       "from": 23
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Your turn. Press the glowing key with one finger.",
+     "voiceId": "47631c6d2adadecd",
+     "voiceSec": 4.3
     },
     {
      "kind": "say",
@@ -10830,265 +10573,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Well done!",
+     "caption": "You played together!",
      "durationSec": 5,
      "voice": "You worked so hard on that.",
      "voiceId": "0886fb9aff1f3753",
      "voiceSec": 1.92
-    },
-    {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Swap seats if your child wants",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "together",
-     "caption": "Together again",
-     "parentCue": "Smile and keep going",
-     "bpm": 85,
-     "leadInSec": 1.84,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Hick",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "o"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "dick"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "dock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "mouse",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "ran",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "up"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1.5,
-       "f": 3,
-       "s": "clock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "The",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "f": 5,
-       "s": "clock",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "f": 5,
-       "s": "struck",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1.5,
-       "f": 5,
-       "s": "one",
-       "who": "parent"
-      },
-      {
-       "p": "B4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 3,
-       "s": "mouse",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ran",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 1,
-       "s": "down"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "Hick",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "o"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "dick"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "o",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ry",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "dock",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Hickory dickory dock",
-       "from": 0
-      },
-      {
-       "lyric": "the mouse ran up the clock",
-       "from": 8
-      },
-      {
-       "lyric": "The clock struck one",
-       "from": 15
-      },
-      {
-       "lyric": "the mouse ran down",
-       "from": 19
-      },
-      {
-       "lyric": "Hickory dickory dock",
-       "from": 23
-      }
-     ],
-     "durationSec": 22,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
-    },
-    {
-     "kind": "praise",
-     "caption": "You played together!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
     }
    ],
    "skill": {

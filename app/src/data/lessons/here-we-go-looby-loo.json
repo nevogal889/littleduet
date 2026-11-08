@@ -51,7 +51,7 @@
  "icon": "music",
  "key": "C",
  "timeSignature": "6/8",
- "totalSec": 2306,
+ "totalSec": 2293,
  "classes": [
   {
    "id": "here-we-go-looby-loo-c01",
@@ -59,7 +59,7 @@
    "title": "Shake when it comes back",
    "goal": "Listen for the first line each time it returns, and shake your hands when it does.",
    "type": "listen",
-   "durationSec": 256,
+   "durationSec": 250,
    "parentTip": "Sway with your child; each time 'here we go looby loo' returns, shake your hands together.",
    "video": "here-we-go-looby-loo/here-we-go-looby-loo-c01.mp4",
    "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c01.jpg",
@@ -113,10 +113,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and wave",
+     "parentCue": "Wave your arms slowly",
      "bpm": 104,
-     "leadInSec": 2.27,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "C4",
@@ -313,25 +313,233 @@
       }
      ],
      "durationSec": 18,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and wave with me.",
+     "voiceId": "8fdf219288a4563d",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 88,
+     "leadInSec": 3.71,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "loo"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "light"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "here",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "loo"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "all",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Sat",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ur",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "day",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Here we go looby loo",
+       "from": 0
+      },
+      {
+       "lyric": "here we go looby light",
+       "from": 6
+      },
+      {
+       "lyric": "here we go looby loo",
+       "from": 12
+      },
+      {
+       "lyric": "all on a Saturday night",
+       "from": 18
+      }
+     ],
+     "durationSec": 25,
+     "voice": "Your turn. Find the glowing key and press.",
+     "voiceId": "46dd3e3e90dc9c9a",
+     "voiceSec": 3.31
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's rock",
+     "parentCue": "Rock gently like a boat",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Now let's rock. Grown-up, rock gently like a boat.",
+     "voiceId": "561f28444796d11d",
+     "voiceSec": 4.0
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "Listen and rock",
+     "parentCue": "Rock gently like a boat",
      "bpm": 104,
-     "leadInSec": 1.93,
+     "leadInSec": 2.22,
      "notes": [
       {
        "p": "C4",
@@ -528,9 +736,79 @@
       }
      ],
      "durationSec": 18,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "voice": "Listen and rock with me.",
+     "voiceId": "87705484b21d1d46",
+     "voiceSec": 1.82
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 104,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "f": 1,
+       "s": "loo",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Here we go looby loo",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -971,20 +1249,298 @@
      "voiceSec": 2.22
     },
     {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 104,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "f": 1,
+       "s": "light",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "here we go looby light",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 7,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 88,
+     "leadInSec": 3.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "loo"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "light"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "here",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "loo"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "all",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Sat",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ur",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "day",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Here we go looby loo",
+       "from": 0
+      },
+      {
+       "lyric": "here we go looby light",
+       "from": 6
+      },
+      {
+       "lyric": "here we go looby loo",
+       "from": 12
+      },
+      {
+       "lyric": "all on a Saturday night",
+       "from": 18
+      }
+     ],
+     "durationSec": 25,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's rock",
+     "parentCue": "Rock gently like a boat",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Now let's rock. Grown-up, rock gently like a boat.",
+     "voiceId": "561f28444796d11d",
+     "voiceSec": 4.0
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "Listen and rock",
+     "parentCue": "Rock gently like a boat",
      "bpm": 104,
-     "leadInSec": 1.93,
+     "leadInSec": 2.22,
      "notes": [
       {
        "p": "C4",
@@ -1181,885 +1737,17 @@
       }
      ],
      "durationSec": 18,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 104,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Sat",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ur",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "day",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "s": "night",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Here we go looby loo",
-       "from": 0
-      },
-      {
-       "lyric": "here we go looby light",
-       "from": 6
-      },
-      {
-       "lyric": "here we go looby loo",
-       "from": 12
-      },
-      {
-       "lyric": "all on a Saturday night",
-       "from": 18
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
-     "voiceSec": 2.66
-    },
-    {
-     "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
-     "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
-    },
-    {
-     "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
-     "bpm": 104,
-     "leadInSec": 2.78,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Sat",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ur",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "day",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "s": "night",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Here we go looby loo",
-       "from": 0
-      },
-      {
-       "lyric": "here we go looby light",
-       "from": 6
-      },
-      {
-       "lyric": "here we go looby loo",
-       "from": 12
-      },
-      {
-       "lyric": "all on a Saturday night",
-       "from": 18
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Point to each key as it lights up.",
-     "voiceId": "721e6d8cdcf7a9a2",
-     "voiceSec": 2.38
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 104,
-     "leadInSec": 1.93,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Sat",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ur",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "day",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "s": "night",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Here we go looby loo",
-       "from": 0
-      },
-      {
-       "lyric": "here we go looby light",
-       "from": 6
-      },
-      {
-       "lyric": "here we go looby loo",
-       "from": 12
-      },
-      {
-       "lyric": "all on a Saturday night",
-       "from": 18
-      }
-     ],
-     "durationSec": 18,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 104,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Sat",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ur",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "day",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "s": "night",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Here we go looby loo",
-       "from": 0
-      },
-      {
-       "lyric": "here we go looby light",
-       "from": 6
-      },
-      {
-       "lyric": "here we go looby loo",
-       "from": 12
-      },
-      {
-       "lyric": "all on a Saturday night",
-       "from": 18
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
-     "voiceSec": 2.66
+     "voice": "Listen and rock with me.",
+     "voiceId": "87705484b21d1d46",
+     "voiceSec": 1.82
     },
     {
      "kind": "praise",
      "caption": "You heard it come back!",
      "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
     }
    ],
    "skill": {
@@ -2084,7 +1772,7 @@
    "title": "Swing in the circle",
    "goal": "Tap one steady tap on each big swinging beat while the grown-up plays.",
    "type": "beat",
-   "durationSec": 232,
+   "durationSec": 225,
    "parentTip": "Rest your hand over your child's hand and tap together, then slowly let go.",
    "video": "here-we-go-looby-loo/here-we-go-looby-loo-c02.mp4",
    "thumb": "here-we-go-looby-loo/here-we-go-looby-loo-c02.jpg",
@@ -2149,6 +1837,214 @@
      "voice": "Here we go looby loo. Two big taps with me.",
      "voiceId": "1e7119e25c0193bf",
      "voiceSec": 3.59
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 88,
+     "leadInSec": 3.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "loo"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "light"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "here",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "loo"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "all",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Sat",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ur",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "day",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Here we go looby loo",
+       "from": 0
+      },
+      {
+       "lyric": "here we go looby light",
+       "from": 6
+      },
+      {
+       "lyric": "here we go looby loo",
+       "from": 12
+      },
+      {
+       "lyric": "all on a Saturday night",
+       "from": 18
+      }
+     ],
+     "durationSec": 25,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
     },
     {
      "kind": "beat",
@@ -3465,251 +3361,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Well done!",
+     "caption": "You kept the swing!",
      "durationSec": 5,
      "voice": "Beautiful, gentle fingers.",
      "voiceId": "16fffae286737b05",
      "voiceSec": 2.22
-    },
-    {
-     "kind": "say",
-     "caption": "Again, with a big smile",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 6,
-     "voice": "Again, with a big smile.",
-     "voiceId": "c87b837cebfc2d54",
-     "voiceSec": 2.14
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap, tap, tap",
-     "parentCue": "You play, your child taps",
-     "bpm": 104,
-     "leadInSec": 3.54,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Sat",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ur",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "day",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "s": "night",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Here we go looby loo",
-       "from": 0
-      },
-      {
-       "lyric": "here we go looby light",
-       "from": 6
-      },
-      {
-       "lyric": "here we go looby loo",
-       "from": 12
-      },
-      {
-       "lyric": "all on a Saturday night",
-       "from": 18
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Grown-up plays the song. You tap the beat.",
-     "voiceId": "4517efb7c8c0ff3d",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Yes, that's it!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
-    },
-    {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 4,
-     "voice": "Shake, shake, shake your hands.",
-     "voiceId": "69041444bf86c15c",
-     "voiceSec": 2.85
-    },
-    {
-     "kind": "praise",
-     "caption": "You kept the swing!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
     }
    ],
    "skill": {
@@ -9266,6 +8922,214 @@
     },
     {
      "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 88,
+     "leadInSec": 4.7,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Here",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "loo"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "here",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1.5,
+       "s": "light"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "here",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "go",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "loo",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "f": 3,
+       "s": "by",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "loo"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "all",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "Sat",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ur",
+       "who": "parent"
+      },
+      {
+       "p": "B3",
+       "d": 0.5,
+       "f": 1,
+       "s": "day",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1.5,
+       "s": "night"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Here we go looby loo",
+       "from": 0
+      },
+      {
+       "lyric": "here we go looby light",
+       "from": 6
+      },
+      {
+       "lyric": "here we go looby loo",
+       "from": 12
+      },
+      {
+       "lyric": "all on a Saturday night",
+       "from": 18
+      }
+     ],
+     "durationSec": 26,
+     "voice": "Your turn. Press the glowing key with one finger.",
+     "voiceId": "47631c6d2adadecd",
+     "voiceSec": 4.3
+    },
+    {
+     "kind": "say",
      "caption": "One more time",
      "parentCue": "Swap seats if your child wants",
      "durationSec": 6,
@@ -10562,222 +10426,6 @@
     },
     {
      "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Swap seats if your child wants",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Together again",
-     "parentCue": "Smile and keep going",
-     "bpm": 104,
-     "leadInSec": 3.0,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Here"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "here",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1.5,
-       "f": 1,
-       "s": "light",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "here"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "we"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "go",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "loo",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "by",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 1,
-       "s": "loo"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Sat",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ur",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "day",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "s": "night"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Here we go looby loo",
-       "from": 0
-      },
-      {
-       "lyric": "here we go looby light",
-       "from": 6
-      },
-      {
-       "lyric": "here we go looby loo",
-       "from": 12
-      },
-      {
-       "lyric": "all on a Saturday night",
-       "from": 18
-      }
-     ],
-     "durationSec": 19,
-     "voice": "Together time. Big smiles.",
-     "voiceId": "a441a4bce0e6e1e6",
-     "voiceSec": 2.6
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Lovely work. You kept on trying.",
-     "voiceId": "fdd2bcc9e53b2a9b",
-     "voiceSec": 2.84
-    },
-    {
-     "kind": "say",
      "caption": "The start once more",
      "parentCue": "Play the beginning again",
      "durationSec": 6,
@@ -10911,54 +10559,6 @@
        "d": 1.5,
        "f": 1,
        "s": "loo"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "all",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "Sat",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ur",
-       "who": "parent"
-      },
-      {
-       "p": "B3",
-       "d": 0.5,
-       "f": 1,
-       "s": "day",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1.5,
-       "f": 2,
-       "s": "night"
       }
      ],
      "lines": [
@@ -10973,13 +10573,9 @@
       {
        "lyric": "here we go looby loo",
        "from": 12
-      },
-      {
-       "lyric": "all on a Saturday night",
-       "from": 18
       }
      ],
-     "durationSec": 18,
+     "durationSec": 15,
      "voice": "Here we go, all together.",
      "voiceId": "860c30d743a9b5a8",
      "voiceSec": 1.86
@@ -10988,9 +10584,9 @@
      "kind": "praise",
      "caption": "You played together!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {

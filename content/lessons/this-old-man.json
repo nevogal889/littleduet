@@ -59,7 +59,7 @@
    "title": "Knick-knack on my knees",
    "goal": "Hear the whole song, pat the beat on your knees and tap thumbs on 'knick-knack'.",
    "type": "listen",
-   "durationSec": 235,
+   "durationSec": 232,
    "parentTip": "Pat your knees to the beat together; tap thumbs together on 'knick-knack'.",
    "video": "this-old-man/this-old-man-c01.mp4",
    "thumb": "this-old-man/this-old-man-c01.jpg",
@@ -113,10 +113,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and rock",
+     "parentCue": "Rock gently like a boat",
      "bpm": 104,
-     "leadInSec": 2.27,
+     "leadInSec": 2.22,
      "notes": [
       {
        "p": "G4",
@@ -366,25 +366,26 @@
       }
      ],
      "durationSec": 22,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and rock with me.",
+     "voiceId": "87705484b21d1d46",
+     "voiceSec": 1.82
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 104,
-     "leadInSec": 1.93,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 88,
+     "leadInSec": 4.18,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "G4",
@@ -424,9 +425,7 @@
       {
        "p": "G4",
        "d": 2,
-       "f": 4,
-       "s": "one",
-       "who": "parent"
+       "s": "one"
       },
       {
        "p": "A4",
@@ -473,9 +472,7 @@
       {
        "p": "F4",
        "d": 2,
-       "f": 3,
-       "s": "thumb",
-       "who": "parent"
+       "s": "thumb"
       },
       {
        "p": "E4",
@@ -522,9 +519,7 @@
       {
        "p": "C4",
        "d": 1,
-       "f": 1,
-       "s": "whack",
-       "who": "parent"
+       "s": "whack"
       },
       {
        "p": "C4",
@@ -557,9 +552,7 @@
       {
        "p": "G4",
        "d": 2,
-       "f": 5,
-       "s": "bone",
-       "who": "parent"
+       "s": "bone"
       },
       {
        "p": "G4",
@@ -606,9 +599,7 @@
       {
        "p": "C4",
        "d": 2,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
+       "s": "home"
       }
      ],
      "lines": [
@@ -633,10 +624,80 @@
        "from": 25
       }
      ],
-     "durationSec": 21,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 30,
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 104,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "he",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "played",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "one",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "This old man, he played one",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 9,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -1183,63 +1244,12 @@
      "voiceSec": 2.26
     },
     {
-     "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 104,
-     "leadInSec": 1.93,
+     "leadInSec": 3.34,
      "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "This",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "old",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "man",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "he",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "played",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "one",
-       "who": "parent"
-      },
       {
        "p": "A4",
        "d": 1,
@@ -1288,451 +1298,43 @@
        "f": 3,
        "s": "thumb",
        "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "With",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "knick",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "knack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "pad",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "dy",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "whack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Give",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "dog",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "bone",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "This",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "old",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "man",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
       }
      ],
      "lines": [
       {
-       "lyric": "This old man, he played one",
-       "from": 0
-      },
-      {
        "lyric": "He played knick-knack on my thumb",
-       "from": 6
-      },
-      {
-       "lyric": "With a knick-knack paddywhack",
-       "from": 13
-      },
-      {
-       "lyric": "Give the dog a bone",
-       "from": 20
-      },
-      {
-       "lyric": "This old man came rolling home",
-       "from": 25
+       "from": 0
       }
      ],
-     "durationSec": 21,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
     },
     {
      "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 104,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "This",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "old",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "man",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "he",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "played",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "one",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "He",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "played",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "knick",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "knack",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "thumb",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "With",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "knick",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "knack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "pad",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "dy",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "whack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Give",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "dog",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "bone",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "This",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "old",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "man",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "This old man, he played one",
-       "from": 0
-      },
-      {
-       "lyric": "He played knick-knack on my thumb",
-       "from": 6
-      },
-      {
-       "lyric": "With a knick-knack paddywhack",
-       "from": 13
-      },
-      {
-       "lyric": "Give the dog a bone",
-       "from": 20
-      },
-      {
-       "lyric": "This old man came rolling home",
-       "from": 25
-      }
-     ],
-     "durationSec": 22,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
      "voiceSec": 2.66
     },
     {
      "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
+     "caption": "Now let's bounce",
+     "parentCue": "Bounce gently on your knees",
      "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
+     "voice": "Now let's bounce. Grown-up, bounce gently on your knees.",
+     "voiceId": "b430fd5ef040c18e",
+     "voiceSec": 4.35
     },
     {
      "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
+     "caption": "Listen and bounce",
+     "parentCue": "Bounce gently on your knees",
      "bpm": 104,
-     "leadInSec": 2.78,
+     "leadInSec": 2.34,
      "notes": [
       {
        "p": "G4",
@@ -1982,34 +1584,87 @@
       }
      ],
      "durationSec": 22,
-     "voice": "Point to each key as it lights up.",
-     "voiceId": "721e6d8cdcf7a9a2",
-     "voiceSec": 2.38
+     "voice": "Listen and bounce with me.",
+     "voiceId": "dca195c8ddbb925e",
+     "voiceSec": 1.94
     },
     {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Lovely work. You kept on trying.",
-     "voiceId": "fdd2bcc9e53b2a9b",
-     "voiceSec": 2.84
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 104,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "he",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "played",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "one",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "This old man, he played one",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
     },
     {
      "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
      "durationSec": 9,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "praise",
      "caption": "You patted together!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
@@ -2034,7 +1689,7 @@
    "title": "Paddywhack steady beat",
    "goal": "Tap one steady tap on each beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 212,
+   "durationSec": 214,
    "parentTip": "Rest your hand on your child's hand; tap together, then slowly let go.",
    "video": "this-old-man/this-old-man-c02.mp4",
    "thumb": "this-old-man/this-old-man-c02.jpg",
@@ -2099,6 +1754,265 @@
      "voice": "This old man. Tap the beat with me.",
      "voiceId": "facbb0ac0f0eb835",
      "voiceSec": 2.87
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 88,
+     "leadInSec": 3.82,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "he",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "played",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "one"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "s": "thumb"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "With",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "knick",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "knack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "pad",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dy",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "s": "whack"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Give",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "bone"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "This",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "old",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "man",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "home"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "This old man, he played one",
+       "from": 0
+      },
+      {
+       "lyric": "He played knick-knack on my thumb",
+       "from": 6
+      },
+      {
+       "lyric": "With a knick-knack paddywhack",
+       "from": 13
+      },
+      {
+       "lyric": "Give the dog a bone",
+       "from": 20
+      },
+      {
+       "lyric": "This old man came rolling home",
+       "from": 25
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Now you. Gentle press, like a doorbell.",
+     "voiceId": "27bcbc00d57ee43e",
+     "voiceSec": 3.42
     },
     {
      "kind": "beat",
@@ -3457,287 +3371,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Super listening!",
+     "caption": "You kept the beat!",
      "durationSec": 5,
      "voice": "Great job, you two.",
      "voiceId": "78285fece9f091ba",
      "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap with the big circle",
-     "parentCue": "You play, your child taps",
-     "bpm": 104,
-     "leadInSec": 3.27,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "This",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "old",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "man",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "he",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "played",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "one",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "He",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "played",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "knick",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "knack",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "thumb",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "With",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "knick",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "knack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "pad",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "dy",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "whack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Give",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "dog",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "bone",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "This",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "old",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "man",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "This old man, he played one",
-       "from": 0
-      },
-      {
-       "lyric": "He played knick-knack on my thumb",
-       "from": 6
-      },
-      {
-       "lyric": "With a knick-knack paddywhack",
-       "from": 13
-      },
-      {
-       "lyric": "Give the dog a bone",
-       "from": 20
-      },
-      {
-       "lyric": "This old man came rolling home",
-       "from": 25
-      }
-     ],
-     "durationSec": 23,
-     "voice": "Tap with the circle. Nice and steady.",
-     "voiceId": "d916f37a4d2a5a53",
-     "voiceSec": 2.87
-    },
-    {
-     "kind": "praise",
-     "caption": "You kept the beat!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
     }
    ],
    "skill": {
@@ -8734,7 +8372,7 @@
    "title": "Rolling home together",
    "goal": "Play the whole song together, the grown-up on the tune, the child on G and E.",
    "type": "together",
-   "durationSec": 244,
+   "durationSec": 245,
    "parentTip": "Keep playing even if a note is missed; nod the beat with your head.",
    "video": "this-old-man/this-old-man-c09.mp4",
    "thumb": "this-old-man/this-old-man-c09.jpg",
@@ -9007,6 +8645,265 @@
      "voice": "Here we go, all together.",
      "voiceId": "860c30d743a9b5a8",
      "voiceSec": 1.86
+    },
+    {
+     "kind": "say",
+     "caption": "Now you play the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Now you play the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "26d77d7c62a95e67",
+     "voiceSec": 6.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 88,
+     "leadInSec": 4.18,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "This",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "old",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 4,
+       "s": "man",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "he",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "played",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "one"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "He",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "played",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "knick",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "knack",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "on",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "my",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 2,
+       "s": "thumb"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "With",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "knick",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "knack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "pad",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "dy",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "s": "whack"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "Give",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "dog",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "bone"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "This",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "old",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "man",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "ing",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "home"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "This old man, he played one",
+       "from": 0
+      },
+      {
+       "lyric": "He played knick-knack on my thumb",
+       "from": 6
+      },
+      {
+       "lyric": "With a knick-knack paddywhack",
+       "from": 13
+      },
+      {
+       "lyric": "Give the dog a bone",
+       "from": 20
+      },
+      {
+       "lyric": "This old man came rolling home",
+       "from": 25
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
     },
     {
      "kind": "say",
@@ -10082,18 +9979,18 @@
     },
     {
      "kind": "say",
-     "caption": "Can you do it once more?",
+     "caption": "And again!",
      "parentCue": "Swap seats if your child wants",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
+     "durationSec": 5,
+     "voice": "And again.",
+     "voiceId": "be3897a52d81cfa7",
+     "voiceSec": 1.2
     },
     {
      "kind": "together",
      "caption": "Together again",
      "parentCue": "Smile and keep going",
-     "bpm": 88,
+     "bpm": 104,
      "leadInSec": 3.0,
      "notes": [
       {
@@ -10335,286 +10232,18 @@
        "from": 25
       }
      ],
-     "durationSec": 25,
+     "durationSec": 22,
      "voice": "Together time. Big smiles.",
      "voiceId": "a441a4bce0e6e1e6",
      "voiceSec": 2.6
     },
     {
      "kind": "praise",
-     "caption": "Well done!",
+     "caption": "You stayed together!",
      "durationSec": 5,
      "voice": "I love how you kept going.",
      "voiceId": "5edf54ba234e9d32",
      "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "Again, nice and easy",
-     "parentCue": "Swap seats if your child wants",
-     "durationSec": 6,
-     "voice": "Again, nice and easy.",
-     "voiceId": "6f32e8daa73a3ba6",
-     "voiceSec": 2.2
-    },
-    {
-     "kind": "together",
-     "caption": "Together again",
-     "parentCue": "Smile and keep going",
-     "bpm": 104,
-     "leadInSec": 1.84,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "This"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "old",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "man"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "he"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "played",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "one"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "He",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "played"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "knick",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "knack",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "on",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "my",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 2,
-       "f": 3,
-       "s": "thumb",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "With",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "knick"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "knack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "pad",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "dy",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "whack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "Give",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "dog",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "bone"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "This"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "old",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "man",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "ing",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "home",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "This old man, he played one",
-       "from": 0
-      },
-      {
-       "lyric": "He played knick-knack on my thumb",
-       "from": 6
-      },
-      {
-       "lyric": "With a knick-knack paddywhack",
-       "from": 13
-      },
-      {
-       "lyric": "Give the dog a bone",
-       "from": 20
-      },
-      {
-       "lyric": "This old man came rolling home",
-       "from": 25
-      }
-     ],
-     "durationSec": 21,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
-    },
-    {
-     "kind": "praise",
-     "caption": "You stayed together!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
     }
    ],
    "skill": {

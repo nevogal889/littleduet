@@ -44,7 +44,7 @@
  "icon": "house",
  "key": "C",
  "timeSignature": "6/8",
- "totalSec": 2286,
+ "totalSec": 2285,
  "classes": [
   {
    "id": "jack-and-jill-c01",
@@ -52,7 +52,7 @@
    "title": "Swing up the hill",
    "goal": "Hear the whole song and rock to its swinging beat together.",
    "type": "listen",
-   "durationSec": 247,
+   "durationSec": 252,
    "parentTip": "Hold your child on your lap and rock forward and back, like a swing.",
    "video": "jack-and-jill/jack-and-jill-c01.mp4",
    "thumb": "jack-and-jill/jack-and-jill-c01.jpg",
@@ -118,10 +118,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and bounce",
+     "parentCue": "Bounce gently on your knees",
      "bpm": 96,
-     "leadInSec": 2.27,
+     "leadInSec": 2.34,
      "notes": [
       {
        "p": "C4",
@@ -349,25 +349,26 @@
       }
      ],
      "durationSec": 20,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and bounce with me.",
+     "voiceId": "dca195c8ddbb925e",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 96,
-     "leadInSec": 1.93,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 3.67,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "C4",
@@ -414,9 +415,7 @@
       {
        "p": "G4",
        "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
+       "s": "hill"
       },
       {
        "p": "G4",
@@ -463,9 +462,7 @@
       {
        "p": "D4",
        "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
+       "s": "ter"
       },
       {
        "rest": true,
@@ -517,9 +514,7 @@
       {
        "p": "E4",
        "d": 1.5,
-       "f": 3,
-       "s": "crown",
-       "who": "parent"
+       "s": "crown"
       },
       {
        "p": "E4",
@@ -566,9 +561,7 @@
       {
        "p": "C4",
        "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
+       "s": "ter"
       },
       {
        "rest": true,
@@ -594,256 +587,10 @@
        "from": 22
       }
      ],
-     "durationSec": 20,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 96,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "fetch",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pail",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fell",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "down",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "broke",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "his",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "crown",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tum",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bling",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "af",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      },
-      {
-       "lyric": "to fetch a pail of water",
-       "from": 7
-      },
-      {
-       "lyric": "Jack fell down and broke his crown",
-       "from": 15
-      },
-      {
-       "lyric": "and Jill came tumbling after",
-       "from": 22
-      }
-     ],
-     "durationSec": 21,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
-     "voiceSec": 2.66
+     "durationSec": 27,
+     "voice": "Your turn. One finger, gentle tap.",
+     "voiceId": "48d9d08cbbed1e15",
+     "voiceSec": 3.27
     },
     {
      "kind": "say",
@@ -1100,20 +847,102 @@
      "voiceSec": 2.84
     },
     {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 96,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "fetch",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "pail",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "wa",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "ter",
+       "who": "parent"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "to fetch a pail of water",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's wave",
+     "parentCue": "Wave your arms slowly",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Now let's wave. Grown-up, wave your arms slowly.",
+     "voiceId": "691860dc06abbc20",
+     "voiceSec": 4.47
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "Listen and wave",
+     "parentCue": "Wave your arms slowly",
      "bpm": 96,
-     "leadInSec": 1.93,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "C4",
@@ -1341,9 +1170,86 @@
       }
      ],
      "durationSec": 20,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "voice": "Listen and wave with me.",
+     "voiceId": "8fdf219288a4563d",
+     "voiceSec": 1.92
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 96,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "went",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "f": 5,
+       "s": "hill",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack and Jill went up the hill",
+       "from": 0
+      }
+     ],
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -1593,19 +1499,20 @@
     },
     {
      "kind": "say",
-     "caption": "Watch the keys light up",
-     "parentCue": "Point at each lit key",
-     "durationSec": 6,
-     "voice": "Watch the keys light up.",
-     "voiceId": "9235822e58c5363b",
-     "voiceSec": 1.73
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Watch the lights",
-     "parentCue": "Point to the lit key",
-     "bpm": 96,
-     "leadInSec": 2.78,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "C4",
@@ -1652,10 +1559,190 @@
       {
        "p": "G4",
        "d": 1.5,
+       "s": "hill"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
        "f": 5,
-       "s": "hill",
+       "s": "to",
        "who": "parent"
       },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "fetch",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "pail",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "wa",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fell",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "down",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "broke",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "his",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "s": "crown"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tum",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "bling",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "af",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack and Jill went up the hill",
+       "from": 0
+      },
+      {
+       "lyric": "to fetch a pail of water",
+       "from": 7
+      },
+      {
+       "lyric": "Jack fell down and broke his crown",
+       "from": 15
+      },
+      {
+       "lyric": "and Jill came tumbling after",
+       "from": 22
+      }
+     ],
+     "durationSec": 27,
+     "voice": "Now you try. Grown-up, point to the glowing key.",
+     "voiceId": "1c7b849e51249595",
+     "voiceSec": 3.58
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 96,
+     "leadInSec": 3.34,
+     "notes": [
       {
        "p": "G4",
        "d": 0.5,
@@ -1709,404 +1796,35 @@
        "rest": true,
        "d": 1.5,
        "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fell",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "down",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "broke",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "his",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "crown",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tum",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bling",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "af",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
       }
      ],
      "lines": [
       {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      },
-      {
        "lyric": "to fetch a pail of water",
-       "from": 7
-      },
-      {
-       "lyric": "Jack fell down and broke his crown",
-       "from": 15
-      },
-      {
-       "lyric": "and Jill came tumbling after",
-       "from": 22
+       "from": 0
       }
      ],
-     "durationSec": 20,
-     "voice": "Point to each key as it lights up.",
-     "voiceId": "721e6d8cdcf7a9a2",
-     "voiceSec": 2.38
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "durationSec": 9,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 96,
-     "leadInSec": 1.93,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "fetch",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pail",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fell",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "down",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "broke",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "his",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "crown",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tum",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bling",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "af",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      },
-      {
-       "lyric": "to fetch a pail of water",
-       "from": 7
-      },
-      {
-       "lyric": "Jack fell down and broke his crown",
-       "from": 15
-      },
-      {
-       "lyric": "and Jill came tumbling after",
-       "from": 22
-      }
-     ],
-     "durationSec": 20,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "Stretch up tall!",
-     "parentCue": "Stretch arms up, then hands back",
-     "durationSec": 6,
-     "voice": "Stretch up tall, as tall as a tree.",
-     "voiceId": "7b02d4dc04aee044",
-     "voiceSec": 3.14
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 8,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "praise",
      "caption": "You swung together!",
      "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
+     "voice": "Great job, you two.",
+     "voiceId": "78285fece9f091ba",
+     "voiceSec": 1.93
     }
    ],
    "skill": {
@@ -2201,6 +1919,245 @@
      "voice": "Jack, Jill. One, two. Tap the big beats.",
      "voiceId": "784433a3fdfc7121",
      "voiceSec": 4.2
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 3.11,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "went",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "s": "hill"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "fetch",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "pail",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "wa",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fell",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "down",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "broke",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "his",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "s": "crown"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tum",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "bling",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "af",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack and Jill went up the hill",
+       "from": 0
+      },
+      {
+       "lyric": "to fetch a pail of water",
+       "from": 7
+      },
+      {
+       "lyric": "Jack fell down and broke his crown",
+       "from": 15
+      },
+      {
+       "lyric": "and Jill came tumbling after",
+       "from": 22
+      }
+     ],
+     "durationSec": 26,
+     "voice": "Your turn. Find the glowing key.",
+     "voiceId": "1a3f2d81f926be34",
+     "voiceSec": 2.71
     },
     {
      "kind": "beat",
@@ -3703,265 +3660,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Well done!",
+     "caption": "You kept the beat!",
      "durationSec": 5,
      "voice": "Great job, you two.",
      "voiceId": "78285fece9f091ba",
      "voiceSec": 1.93
-    },
-    {
-     "kind": "say",
-     "caption": "Again, with a big smile",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 6,
-     "voice": "Again, with a big smile.",
-     "voiceId": "c87b837cebfc2d54",
-     "voiceSec": 2.14
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap, tap, tap",
-     "parentCue": "You play, your child taps",
-     "bpm": 96,
-     "leadInSec": 4.26,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "fetch",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pail",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fell",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "down",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "broke",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "his",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "crown",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tum",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bling",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "af",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      },
-      {
-       "lyric": "to fetch a pail of water",
-       "from": 7
-      },
-      {
-       "lyric": "Jack fell down and broke his crown",
-       "from": 15
-      },
-      {
-       "lyric": "and Jill came tumbling after",
-       "from": 22
-      }
-     ],
-     "durationSec": 22,
-     "voice": "Any key is fine. Tap when the circle grows.",
-     "voiceId": "015b37b18f728b6c",
-     "voiceSec": 3.86
-    },
-    {
-     "kind": "praise",
-     "caption": "You kept the beat!",
-     "durationSec": 5,
-     "voice": "That was real music, together.",
-     "voiceId": "3da26e0fa12ffe07",
-     "voiceSec": 2.29
     }
    ],
    "skill": {
@@ -3986,7 +3689,7 @@
    "title": "Bear low, bird high",
    "goal": "Hear low and high sounds and tap the matching side of the piano.",
    "type": "high-low",
-   "durationSec": 261,
+   "durationSec": 252,
    "parentTip": "Growl and crouch for the bear; flap your arms and stretch up for the bird.",
    "video": "jack-and-jill/jack-and-jill-c03.mp4",
    "thumb": "jack-and-jill/jack-and-jill-c03.jpg",
@@ -4087,6 +3790,245 @@
      "voice": "Up the hill we go. Tap your arm, up, up, up.",
      "voiceId": "76e939a2a90dd2e5",
      "voiceSec": 3.43
+    },
+    {
+     "kind": "say",
+     "caption": "Now you play the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Now you play the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "26d77d7c62a95e67",
+     "voiceSec": 6.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "went",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "s": "hill"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "fetch",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "pail",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "wa",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fell",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "down",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "broke",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "his",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "s": "crown"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tum",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "bling",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "af",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack and Jill went up the hill",
+       "from": 0
+      },
+      {
+       "lyric": "to fetch a pail of water",
+       "from": 7
+      },
+      {
+       "lyric": "Jack fell down and broke his crown",
+       "from": 15
+      },
+      {
+       "lyric": "and Jill came tumbling after",
+       "from": 22
+      }
+     ],
+     "durationSec": 26,
+     "voice": "Now you. Tap the glowing key.",
+     "voiceId": "abc1372ce1533a98",
+     "voiceSec": 2.8
     },
     {
      "kind": "high_low",
@@ -5034,214 +4976,11 @@
     },
     {
      "kind": "praise",
-     "caption": "You know high and low!",
+     "caption": "Great bear, great bird!",
      "durationSec": 5,
      "voice": "Beautiful, gentle fingers.",
      "voiceId": "16fffae286737b05",
      "voiceSec": 2.22
-    },
-    {
-     "kind": "high_low",
-     "caption": "Here comes the bear",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 96,
-     "leadInSec": 5.51,
-     "notes": [
-      {
-       "p": "C3",
-       "d": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C3",
-       "d": 0.5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D3",
-       "d": 1,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D3",
-       "d": 0.5,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F3",
-       "d": 0.5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1.5,
-       "s": "hill",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Here comes the big bear. Tap a low key, down on the left.",
-     "voiceId": "12a8fe0014ff7cb2",
-     "voiceSec": 5.11
-    },
-    {
-     "kind": "high_low",
-     "caption": "Here comes the bird",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 96,
-     "leadInSec": 4.47,
-     "notes": [
-      {
-       "p": "C5",
-       "d": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 0.5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D5",
-       "d": 1,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D5",
-       "d": 0.5,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E5",
-       "d": 1,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F5",
-       "d": 0.5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1.5,
-       "s": "hill",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Here comes the little bird. Tap a high key, up on the right.",
-     "voiceId": "fddf06316df8346e",
-     "voiceSec": 4.07
-    },
-    {
-     "kind": "say",
-     "caption": "Is it the bear or the bird?",
-     "parentCue": "Let your child guess first",
-     "durationSec": 7,
-     "voice": "Is it the bear or the bird? Listen.",
-     "voiceId": "74985bd4e5d066df",
-     "voiceSec": 2.88
-    },
-    {
-     "kind": "high_low",
-     "caption": "The bear!",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 96,
-     "leadInSec": 4.22,
-     "notes": [
-      {
-       "p": "C3",
-       "d": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C3",
-       "d": 0.5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D3",
-       "d": 1,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D3",
-       "d": 0.5,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F3",
-       "d": 0.5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1.5,
-       "s": "hill",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Listen, a big bear. Tap down low.",
-     "voiceId": "12ea2dbc14ca23b5",
-     "voiceSec": 3.82
-    },
-    {
-     "kind": "praise",
-     "caption": "Great bear, great bird!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
     }
    ],
    "skill": {
@@ -5266,7 +5005,7 @@
    "title": "Big splash, tiny drip",
    "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
    "type": "loud-soft",
-   "durationSec": 256,
+   "durationSec": 250,
    "parentTip": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
    "video": "jack-and-jill/jack-and-jill-c04.mp4",
    "thumb": "jack-and-jill/jack-and-jill-c04.jpg",
@@ -5415,6 +5154,245 @@
      "voice": "Loud taps, like a drum.",
      "voiceId": "866bdfe59808cd7c",
      "voiceSec": 2.11
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 4.4,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "went",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "s": "hill"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "fetch",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "pail",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "wa",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fell",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "down",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "broke",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "his",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "s": "crown"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tum",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "bling",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "af",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack and Jill went up the hill",
+       "from": 0
+      },
+      {
+       "lyric": "to fetch a pail of water",
+       "from": 7
+      },
+      {
+       "lyric": "Jack fell down and broke his crown",
+       "from": 15
+      },
+      {
+       "lyric": "and Jill came tumbling after",
+       "from": 22
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Your turn. One soft tap, like a raindrop.",
+     "voiceId": "3c08aa1c961c54cc",
+     "voiceSec": 4.0
     },
     {
      "kind": "beat",
@@ -7073,504 +7051,12 @@
     },
     {
      "kind": "say",
-     "caption": "Now loud for the whole song",
-     "parentCue": "Play strong together",
+     "caption": "Wiggle your fingers!",
+     "parentCue": "Shake out both hands together",
      "durationSec": 6,
-     "voice": "Now the whole song, nice and loud.",
-     "voiceId": "040a2fae33605048",
-     "voiceSec": 2.44
-    },
-    {
-     "kind": "beat",
-     "caption": "Big loud taps",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
-     "bpm": 96,
-     "leadInSec": 1.97,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "fetch",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pail",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fell",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "down",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "broke",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "his",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "crown",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tum",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bling",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "af",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      },
-      {
-       "lyric": "to fetch a pail of water",
-       "from": 7
-      },
-      {
-       "lyric": "Jack fell down and broke his crown",
-       "from": 15
-      },
-      {
-       "lyric": "and Jill came tumbling after",
-       "from": 22
-      }
-     ],
-     "durationSec": 20,
-     "voice": "Big loud taps.",
-     "voiceId": "b4985f7cf9e4f6ee",
-     "voiceSec": 1.57
-    },
-    {
-     "kind": "beat",
-     "caption": "Loud!",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
-     "bpm": 96,
-     "leadInSec": 1.35,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "fetch",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pail",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      },
-      {
-       "lyric": "to fetch a pail of water",
-       "from": 7
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Loud.",
-     "voiceId": "bbed641d3c02b875",
-     "voiceSec": 0.95
-    },
-    {
-     "kind": "beat",
-     "caption": "Soft...",
-     "parentCue": "Tap gently, tiny fingers",
-     "dynamic": "soft",
-     "bpm": 96,
-     "leadInSec": 1.32,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "fetch",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pail",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      },
-      {
-       "lyric": "to fetch a pail of water",
-       "from": 7
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Soft.",
-     "voiceId": "bb7d020610b0ccb6",
-     "voiceSec": 0.92
+     "voice": "Wiggle your fingers. Wiggle, wiggle.",
+     "voiceId": "640ef443bc914f6c",
+     "voiceSec": 2.99
     },
     {
      "kind": "praise",
@@ -7673,6 +7159,245 @@
      "voice": "The turtle climbs the hill. Slow, heavy taps, like a sleepy turtle.",
      "voiceId": "b932fa330579a389",
      "voiceSec": 4.79
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 3.11,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "went",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "s": "hill"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "fetch",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "pail",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "wa",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fell",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "down",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "broke",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "his",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "s": "crown"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tum",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "bling",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "af",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack and Jill went up the hill",
+       "from": 0
+      },
+      {
+       "lyric": "to fetch a pail of water",
+       "from": 7
+      },
+      {
+       "lyric": "Jack fell down and broke his crown",
+       "from": 15
+      },
+      {
+       "lyric": "and Jill came tumbling after",
+       "from": 22
+      }
+     ],
+     "durationSec": 26,
+     "voice": "Your turn. Find the glowing key.",
+     "voiceId": "1a3f2d81f926be34",
+     "voiceSec": 2.71
     },
     {
      "kind": "beat",
@@ -9228,271 +8953,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Speedy fingers!",
+     "caption": "You followed the music!",
      "durationSec": 5,
      "voice": "High five, grown-up. High five, little one.",
      "voiceId": "02217b24bc257a87",
      "voiceSec": 3.57
-    },
-    {
-     "kind": "beat",
-     "caption": "Turtle time",
-     "parentCue": "Slow, like a sleepy turtle",
-     "bpm": 62,
-     "leadInSec": 3.03,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "fetch",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pail",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      },
-      {
-       "lyric": "to fetch a pail of water",
-       "from": 7
-      }
-     ],
-     "durationSec": 17,
-     "voice": "Turtle time. Slow taps.",
-     "voiceId": "f494210e7317ed41",
-     "voiceSec": 2.63
-    },
-    {
-     "kind": "beat",
-     "caption": "Bunny time!",
-     "parentCue": "Quick, like a running bunny",
-     "bpm": 125,
-     "leadInSec": 2.93,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "fetch",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pail",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      },
-      {
-       "lyric": "to fetch a pail of water",
-       "from": 7
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Bunny time. Quick taps.",
-     "voiceId": "ba11decadf6a1cac",
-     "voiceSec": 2.53
-    },
-    {
-     "kind": "praise",
-     "caption": "You followed the music!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
     }
    ],
    "skill": {
@@ -9517,7 +8982,7 @@
    "title": "Climb, climb, freeze!",
    "goal": "Tap while the music plays and freeze when it stops.",
    "type": "stop-go",
-   "durationSec": 260,
+   "durationSec": 262,
    "parentTip": "Freeze with a funny face when the music stops; cheer when it starts again.",
    "video": "jack-and-jill/jack-and-jill-c06.mp4",
    "thumb": "jack-and-jill/jack-and-jill-c06.jpg",
@@ -9616,6 +9081,245 @@
      "voice": "Stop. Freeze like a statue.",
      "voiceId": "baf3cadfe3548ad6",
      "voiceSec": 2.6
+    },
+    {
+     "kind": "say",
+     "caption": "Now you play the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Now you play the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "26d77d7c62a95e67",
+     "voiceSec": 6.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 3.67,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "went",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "s": "hill"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "fetch",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "pail",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "wa",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fell",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "down",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "broke",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "his",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "s": "crown"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tum",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "bling",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "af",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack and Jill went up the hill",
+       "from": 0
+      },
+      {
+       "lyric": "to fetch a pail of water",
+       "from": 7
+      },
+      {
+       "lyric": "Jack fell down and broke his crown",
+       "from": 15
+      },
+      {
+       "lyric": "and Jill came tumbling after",
+       "from": 22
+      }
+     ],
+     "durationSec": 27,
+     "voice": "Your turn. One finger, gentle tap.",
+     "voiceId": "48d9d08cbbed1e15",
+     "voiceSec": 3.27
     },
     {
      "kind": "beat",
@@ -10755,245 +10459,13 @@
      "voiceSec": 2.6
     },
     {
-     "kind": "beat",
-     "caption": "Go! Tap the beat",
-     "parentCue": "Play this line",
-     "bpm": 96,
-     "leadInSec": 2.74,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tum",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bling",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "af",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "and Jill came tumbling after",
-       "from": 0
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Go. Tap the beat.",
-     "voiceId": "9a3d3dd642048105",
-     "voiceSec": 2.34
-    },
-    {
      "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Stop playing and freeze together",
-     "durationSec": 4,
-     "voice": "Stop. Freeze like a statue.",
-     "voiceId": "baf3cadfe3548ad6",
-     "voiceSec": 2.6
-    },
-    {
-     "kind": "beat",
-     "caption": "Go! Tap the beat",
-     "parentCue": "Play this line",
-     "bpm": 96,
-     "leadInSec": 2.74,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Go. Tap the beat.",
-     "voiceId": "9a3d3dd642048105",
-     "voiceSec": 2.34
-    },
-    {
-     "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Stop playing and freeze together",
-     "durationSec": 4,
-     "voice": "Stop. Freeze like a statue.",
-     "voiceId": "baf3cadfe3548ad6",
-     "voiceSec": 2.6
-    },
-    {
-     "kind": "beat",
-     "caption": "Go! Tap the beat",
-     "parentCue": "Play this line",
-     "bpm": 96,
-     "leadInSec": 2.74,
-     "notes": [
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "fetch",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pail",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "to fetch a pail of water",
-       "from": 0
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Go. Tap the beat.",
-     "voiceId": "9a3d3dd642048105",
-     "voiceSec": 2.34
-    },
-    {
-     "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Stop playing and freeze together",
-     "durationSec": 4,
-     "voice": "Stop. Freeze like a statue.",
-     "voiceId": "baf3cadfe3548ad6",
-     "voiceSec": 2.6
+     "caption": "Shake, shake, shake!",
+     "parentCue": "Shake hands loose for a moment",
+     "durationSec": 5,
+     "voice": "Shake, shake, shake your hands.",
+     "voiceId": "69041444bf86c15c",
+     "voiceSec": 2.85
     },
     {
      "kind": "praise",
@@ -11026,7 +10498,7 @@
    "title": "Hilltop game mix",
    "goal": "Listen and switch between games: high and low, loud and soft, fast and slow.",
    "type": "review",
-   "durationSec": 266,
+   "durationSec": 270,
    "parentTip": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
    "video": "jack-and-jill/jack-and-jill-c07.mp4",
    "thumb": "jack-and-jill/jack-and-jill-c07.jpg",
@@ -11110,6 +10582,245 @@
      "voice": "Listen. Bear or bird?",
      "voiceId": "a19b0e215608835e",
      "voiceSec": 2.35
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 3.11,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "went",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "s": "hill"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "fetch",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "pail",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "wa",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fell",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "down",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "broke",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "his",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "s": "crown"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tum",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "bling",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "af",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack and Jill went up the hill",
+       "from": 0
+      },
+      {
+       "lyric": "to fetch a pail of water",
+       "from": 7
+      },
+      {
+       "lyric": "Jack fell down and broke his crown",
+       "from": 15
+      },
+      {
+       "lyric": "and Jill came tumbling after",
+       "from": 22
+      }
+     ],
+     "durationSec": 26,
+     "voice": "Your turn. Find the glowing key.",
+     "voiceId": "1a3f2d81f926be34",
+     "voiceSec": 2.71
     },
     {
      "kind": "beat",
@@ -12566,218 +12277,12 @@
      "voiceSec": 2.6
     },
     {
-     "kind": "beat",
-     "caption": "Slow taps",
-     "parentCue": "Slow like a turtle",
-     "bpm": 62,
-     "leadInSec": 2.42,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      }
-     ],
-     "durationSec": 10,
-     "voice": "Slow taps, like a turtle.",
-     "voiceId": "1d385ecfcbf20698",
-     "voiceSec": 2.02
-    },
-    {
      "kind": "praise",
-     "caption": "You know all the games!",
+     "caption": "Great listening ears!",
      "durationSec": 5,
      "voice": "That was real music, together.",
      "voiceId": "3da26e0fa12ffe07",
      "voiceSec": 2.29
-    },
-    {
-     "kind": "beat",
-     "caption": "Fast taps!",
-     "parentCue": "Quick like a bunny",
-     "bpm": 125,
-     "leadInSec": 2.15,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      }
-     ],
-     "durationSec": 7,
-     "voice": "Quick taps, like a bunny.",
-     "voiceId": "1249fbc9e6bd459c",
-     "voiceSec": 1.75
-    },
-    {
-     "kind": "high_low",
-     "caption": "Bear or bird? Bear!",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 96,
-     "leadInSec": 2.75,
-     "notes": [
-      {
-       "p": "C3",
-       "d": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C3",
-       "d": 0.5,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D3",
-       "d": 1,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D3",
-       "d": 0.5,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E3",
-       "d": 1,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F3",
-       "d": 0.5,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1.5,
-       "s": "hill",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      }
-     ],
-     "durationSec": 8,
-     "voice": "Listen. Bear or bird?",
-     "voiceId": "a19b0e215608835e",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "praise",
-     "caption": "Great listening ears!",
-     "durationSec": 5,
-     "voice": "I love how you kept going.",
-     "voiceId": "5edf54ba234e9d32",
-     "voiceSec": 1.94
     }
    ],
    "skill": {
@@ -12802,7 +12307,7 @@
    "title": "Jack and Jill duet",
    "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
    "type": "together",
-   "durationSec": 246,
+   "durationSec": 249,
    "parentTip": "Play the tune and watch your child; if they stop, keep playing and smile.",
    "video": "jack-and-jill/jack-and-jill-c08.mp4",
    "thumb": "jack-and-jill/jack-and-jill-c08.jpg",
@@ -13102,6 +12607,245 @@
      "voice": "Let's play together.",
      "voiceId": "b9d074678a65d0e2",
      "voiceSec": 1.57
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 4.4,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "went",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "up",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 0.5,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1.5,
+       "s": "hill"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 5,
+       "s": "to",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "fetch",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 0.5,
+       "f": 4,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 3,
+       "s": "pail",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "of",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "wa",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 2,
+       "s": "Jack",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 2,
+       "s": "fell",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 1,
+       "s": "down",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 1,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "broke",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 0.5,
+       "f": 2,
+       "s": "his",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1.5,
+       "s": "crown"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "and",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "Jill",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "came",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "tum",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 0.5,
+       "f": 3,
+       "s": "bling",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "af",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 0.5,
+       "s": "ter"
+      },
+      {
+       "rest": true,
+       "d": 1.5,
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Jack and Jill went up the hill",
+       "from": 0
+      },
+      {
+       "lyric": "to fetch a pail of water",
+       "from": 7
+      },
+      {
+       "lyric": "Jack fell down and broke his crown",
+       "from": 15
+      },
+      {
+       "lyric": "and Jill came tumbling after",
+       "from": 22
+      }
+     ],
+     "durationSec": 28,
+     "voice": "Your turn. One soft tap, like a raindrop.",
+     "voiceId": "3c08aa1c961c54cc",
+     "voiceSec": 4.0
     },
     {
      "kind": "say",
@@ -14357,260 +14101,6 @@
      "voiceSec": 2.07
     },
     {
-     "kind": "say",
-     "caption": "One more time",
-     "parentCue": "Swap: let your child choose loud or soft",
-     "durationSec": 6,
-     "voice": "One more time.",
-     "voiceId": "b4c800d6a3120ebd",
-     "voiceSec": 1.34
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap the beat with me",
-     "parentCue": "Keep it steady",
-     "bpm": 96,
-     "leadInSec": 3.54,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "went",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "up",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 0.5,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1.5,
-       "f": 5,
-       "s": "hill",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 5,
-       "s": "to",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "fetch",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 0.5,
-       "f": 4,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 3,
-       "s": "pail",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "of",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "wa",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 2,
-       "s": "Jack",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 2,
-       "s": "fell",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 1,
-       "s": "down",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 1,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "broke",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 0.5,
-       "f": 2,
-       "s": "his",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1.5,
-       "f": 3,
-       "s": "crown",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "and",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "Jill",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "came",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "tum",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 0.5,
-       "f": 3,
-       "s": "bling",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "af",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 0.5,
-       "f": 1,
-       "s": "ter",
-       "who": "parent"
-      },
-      {
-       "rest": true,
-       "d": 1.5,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Jack and Jill went up the hill",
-       "from": 0
-      },
-      {
-       "lyric": "to fetch a pail of water",
-       "from": 7
-      },
-      {
-       "lyric": "Jack fell down and broke his crown",
-       "from": 15
-      },
-      {
-       "lyric": "and Jill came tumbling after",
-       "from": 22
-      }
-     ],
-     "durationSec": 21,
-     "voice": "Grown-up plays the song. You tap the beat.",
-     "voiceId": "4517efb7c8c0ff3d",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Great job!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
-    },
-    {
      "kind": "together",
      "caption": "Play it together",
      "parentCue": "Your child taps along",
@@ -14851,9 +14341,9 @@
      "kind": "praise",
      "caption": "What a duet together!",
      "durationSec": 5,
-     "voice": "Lovely work. You kept on trying.",
-     "voiceId": "fdd2bcc9e53b2a9b",
-     "voiceSec": 2.84
+     "voice": "You did it. What a team.",
+     "voiceId": "9c16fbc65ce4124d",
+     "voiceSec": 2.26
     }
    ],
    "skill": {

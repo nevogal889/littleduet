@@ -44,7 +44,7 @@
  "icon": "star",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2329,
+ "totalSec": 2352,
  "classes": [
   {
    "id": "twinkle-twinkle-c01",
@@ -52,7 +52,7 @@
    "title": "Rock the little star",
    "goal": "Feel the steady beat of the song with the whole body.",
    "type": "listen",
-   "durationSec": 282,
+   "durationSec": 277,
    "parentTip": "Hold your child on your lap and rock side to side on every beat.",
    "video": "twinkle-twinkle/twinkle-twinkle-c01.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c01.jpg",
@@ -118,10 +118,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and wave",
+     "parentCue": "Wave your arms slowly",
      "bpm": 80,
-     "leadInSec": 2.27,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "C4",
@@ -445,25 +445,203 @@
       }
      ],
      "durationSec": 40,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and wave with me.",
+     "voiceId": "8fdf219288a4563d",
+     "voiceSec": 1.92
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.67,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "star"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "How",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "won",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "der",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "what",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "bove",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "world",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "so",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "high"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
+      },
+      {
+       "lyric": "How I wonder what you are",
+       "from": 7
+      },
+      {
+       "lyric": "Up above the world so high",
+       "from": 14
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Your turn. One finger, gentle tap.",
+     "voiceId": "48d9d08cbbed1e15",
+     "voiceSec": 3.27
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's rock",
+     "parentCue": "Rock gently like a boat",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Now let's rock. Grown-up, rock gently like a boat.",
+     "voiceId": "561f28444796d11d",
+     "voiceSec": 4.0
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "Listen and rock",
+     "parentCue": "Rock gently like a boat",
      "bpm": 80,
-     "leadInSec": 1.93,
+     "leadInSec": 2.22,
      "notes": [
       {
        "p": "C4",
@@ -611,56 +789,34 @@
        "f": 2,
        "s": "high",
        "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
       },
       {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Like",
-       "who": "parent"
+       "lyric": "How I wonder what you are",
+       "from": 7
       },
       {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "sky",
-       "who": "parent"
-      },
+       "lyric": "Up above the world so high",
+       "from": 14
+      }
+     ],
+     "durationSec": 22,
+     "voice": "Listen and rock with me.",
+     "voiceId": "87705484b21d1d46",
+     "voiceSec": 1.82
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 80,
+     "leadInSec": 3.34,
+     "notes": [
       {
        "p": "C4",
        "d": 1,
@@ -709,87 +865,27 @@
        "f": 4,
        "s": "star",
        "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
       }
      ],
      "lines": [
       {
        "lyric": "Twinkle twinkle little star",
        "from": 0
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 7
-      },
-      {
-       "lyric": "Up above the world so high",
-       "from": 14
-      },
-      {
-       "lyric": "Like a diamond in the sky",
-       "from": 21
-      },
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 28
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 35
       }
      ],
-     "durationSec": 40,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
+     "durationSec": 11,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 10,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
      "kind": "say",
@@ -953,153 +1049,6 @@
        "f": 2,
        "s": "high",
        "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Like",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "sky",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -1114,21 +1063,9 @@
       {
        "lyric": "Up above the world so high",
        "from": 14
-      },
-      {
-       "lyric": "Like a diamond in the sky",
-       "from": 21
-      },
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 28
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 35
       }
      ],
-     "durationSec": 41,
+     "durationSec": 23,
      "voice": "Clap along. Clap, clap, clap.",
      "voiceId": "18bb4de584dd97ad",
      "voiceSec": 2.66
@@ -1295,105 +1232,42 @@
        "f": 2,
        "s": "high",
        "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
       },
       {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Like",
-       "who": "parent"
+       "lyric": "How I wonder what you are",
+       "from": 7
       },
       {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "sky",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      },
+       "lyric": "Up above the world so high",
+       "from": 14
+      }
+     ],
+     "durationSec": 23,
+     "voice": "Point to each key as it lights up.",
+     "voiceId": "721e6d8cdcf7a9a2",
+     "voiceSec": 2.38
+    },
+    {
+     "kind": "praise",
+     "caption": "You did it!",
+     "durationSec": 5,
+     "voice": "High five, grown-up. High five, little one.",
+     "voiceId": "02217b24bc257a87",
+     "voiceSec": 3.57
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 80,
+     "leadInSec": 3.34,
+     "notes": [
       {
        "p": "F4",
        "d": 1,
@@ -1446,58 +1320,40 @@
      ],
      "lines": [
       {
-       "lyric": "Twinkle twinkle little star",
+       "lyric": "How I wonder what you are",
        "from": 0
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 7
-      },
-      {
-       "lyric": "Up above the world so high",
-       "from": 14
-      },
-      {
-       "lyric": "Like a diamond in the sky",
-       "from": 21
-      },
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 28
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 35
       }
      ],
-     "durationSec": 41,
-     "voice": "Point to each key as it lights up.",
-     "voiceId": "721e6d8cdcf7a9a2",
-     "voiceSec": 2.38
-    },
-    {
-     "kind": "praise",
-     "caption": "You did it!",
-     "durationSec": 5,
-     "voice": "High five, grown-up. High five, little one.",
-     "voiceId": "02217b24bc257a87",
-     "voiceSec": 3.57
+     "durationSec": 11,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 10,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 80,
-     "leadInSec": 1.93,
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "C4",
@@ -1544,9 +1400,7 @@
       {
        "p": "G4",
        "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
+       "s": "star"
       },
       {
        "p": "F4",
@@ -1593,9 +1447,7 @@
       {
        "p": "C4",
        "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
+       "s": "are"
       },
       {
        "p": "G4",
@@ -1642,156 +1494,7 @@
       {
        "p": "D4",
        "d": 2,
-       "f": 2,
-       "s": "high",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Like",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "sky",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
+       "s": "high"
       }
      ],
      "lines": [
@@ -1806,154 +1509,12 @@
       {
        "lyric": "Up above the world so high",
        "from": 14
-      },
-      {
-       "lyric": "Like a diamond in the sky",
-       "from": 21
-      },
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 28
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 35
       }
      ],
-     "durationSec": 40,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap the beat",
-     "parentCue": "You play, your child taps",
-     "bpm": 80,
-     "leadInSec": 2.22,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 7
-      }
-     ],
-     "durationSec": 16,
-     "voice": "Tap the beat, like a heartbeat.",
-     "voiceId": "0cf68adb12e1c639",
-     "voiceSec": 1.82
+     "durationSec": 30,
+     "voice": "Now you try. Grown-up, point to the glowing key.",
+     "voiceId": "1c7b849e51249595",
+     "voiceSec": 3.58
     },
     {
      "kind": "praise",
@@ -1986,7 +1547,7 @@
    "title": "Tap the star's heartbeat",
    "goal": "Tap one steady tap for every beat while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 237,
+   "durationSec": 248,
    "parentTip": "Rest your hand over your child's hand and tap together, then slowly let go.",
    "video": "twinkle-twinkle/twinkle-twinkle-c02.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c02.jpg",
@@ -2056,6 +1617,184 @@
      "voice": "Two taps for the twin stars.",
      "voiceId": "8881f22ac3bbf618",
      "voiceSec": 2.34
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 4.4,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "star"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "How",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "won",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "der",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "what",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "bove",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "world",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "so",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "high"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
+      },
+      {
+       "lyric": "How I wonder what you are",
+       "from": 7
+      },
+      {
+       "lyric": "Up above the world so high",
+       "from": 14
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Your turn. One soft tap, like a raindrop.",
+     "voiceId": "3c08aa1c961c54cc",
+     "voiceSec": 4.0
     },
     {
      "kind": "beat",
@@ -3092,19 +2831,19 @@
     },
     {
      "kind": "say",
-     "caption": "Let's do it again",
-     "parentCue": "Keep the taps steady",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Let's do it again.",
-     "voiceId": "5608b20dfb890c6e",
-     "voiceSec": 1.58
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "beat",
-     "caption": "Tap, tap, tap",
+     "caption": "Tap the beat",
      "parentCue": "You play, your child taps",
      "bpm": 80,
-     "leadInSec": 3.54,
+     "leadInSec": 4.26,
      "notes": [
       {
        "p": "C4",
@@ -3301,104 +3040,6 @@
        "f": 2,
        "s": "sky",
        "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -3417,45 +3058,20 @@
       {
        "lyric": "Like a diamond in the sky",
        "from": 21
-      },
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 28
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 35
       }
      ],
-     "durationSec": 42,
-     "voice": "Grown-up plays the song. You tap the beat.",
-     "voiceId": "4517efb7c8c0ff3d",
-     "voiceSec": 3.14
-    },
-    {
-     "kind": "praise",
-     "caption": "Lovely!",
-     "durationSec": 5,
-     "voice": "Lovely work. You kept on trying.",
-     "voiceId": "fdd2bcc9e53b2a9b",
-     "voiceSec": 2.84
-    },
-    {
-     "kind": "say",
-     "caption": "Shake, shake, shake!",
-     "parentCue": "Shake hands loose for a moment",
-     "durationSec": 9,
-     "voice": "Shake, shake, shake your hands.",
-     "voiceId": "69041444bf86c15c",
-     "voiceSec": 2.85
+     "durationSec": 30,
+     "voice": "Any key is fine. Tap when the circle grows.",
+     "voiceId": "015b37b18f728b6c",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",
      "caption": "You kept the beat!",
      "durationSec": 5,
-     "voice": "Great job, you two.",
-     "voiceId": "78285fece9f091ba",
-     "voiceSec": 1.93
+     "voice": "Lovely work. You kept on trying.",
+     "voiceId": "fdd2bcc9e53b2a9b",
+     "voiceSec": 2.84
     }
    ],
    "skill": {
@@ -3480,7 +3096,7 @@
    "title": "Bear low, bird high",
    "goal": "Hear low and high sounds and tap the matching side of the piano.",
    "type": "high-low",
-   "durationSec": 244,
+   "durationSec": 251,
    "parentTip": "Growl and crouch for low sounds; flap your arms and stretch up for high.",
    "video": "twinkle-twinkle/twinkle-twinkle-c03.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c03.jpg",
@@ -3591,6 +3207,184 @@
      "voice": "Watch the lights walk down. Point with one finger.",
      "voiceId": "fca95f870b0d9e6a",
      "voiceSec": 3.89
+    },
+    {
+     "kind": "say",
+     "caption": "Now you play the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Now you play the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "26d77d7c62a95e67",
+     "voiceSec": 6.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 4.4,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "star"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "How",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "won",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "der",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "what",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "bove",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "world",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "so",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "high"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
+      },
+      {
+       "lyric": "How I wonder what you are",
+       "from": 7
+      },
+      {
+       "lyric": "Up above the world so high",
+       "from": 14
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Your turn. One soft tap, like a raindrop.",
+     "voiceId": "3c08aa1c961c54cc",
+     "voiceSec": 4.0
     },
     {
      "kind": "high_low",
@@ -4372,143 +4166,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Great listening!",
+     "caption": "Great bear, great bird!",
      "durationSec": 5,
      "voice": "High five, grown-up. High five, little one.",
      "voiceId": "02217b24bc257a87",
      "voiceSec": 3.57
-    },
-    {
-     "kind": "high_low",
-     "caption": "Big bear steps",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 80,
-     "leadInSec": 5.51,
-     "notes": [
-      {
-       "p": "C3",
-       "d": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C3",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "s": "star",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      }
-     ],
-     "durationSec": 14,
-     "voice": "Here comes the big bear. Tap a low key, down on the left.",
-     "voiceId": "12a8fe0014ff7cb2",
-     "voiceSec": 5.11
-    },
-    {
-     "kind": "high_low",
-     "caption": "Little bird song",
-     "parentCue": "Tap any high key",
-     "target": "high",
-     "bpm": 80,
-     "leadInSec": 4.47,
-     "notes": [
-      {
-       "p": "C5",
-       "d": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C5",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A5",
-       "d": 1,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A5",
-       "d": 1,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G5",
-       "d": 2,
-       "s": "star",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      }
-     ],
-     "durationSec": 12,
-     "voice": "Here comes the little bird. Tap a high key, up on the right.",
-     "voiceId": "fddf06316df8346e",
-     "voiceSec": 4.07
-    },
-    {
-     "kind": "praise",
-     "caption": "Great bear, great bird!",
-     "durationSec": 5,
-     "voice": "You worked so hard on that.",
-     "voiceId": "0886fb9aff1f3753",
-     "voiceSec": 1.92
     }
    ],
    "skill": {
@@ -4533,7 +4195,7 @@
    "title": "Thunder taps, rain taps",
    "goal": "Tap the beat with big loud taps, then with tiny soft taps.",
    "type": "loud-soft",
-   "durationSec": 283,
+   "durationSec": 281,
    "parentTip": "Make big strong arms for loud taps; whisper and tiptoe your fingers for soft.",
    "video": "twinkle-twinkle/twinkle-twinkle-c04.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c04.jpg",
@@ -4730,6 +4392,184 @@
      "voice": "Loud taps, like a drum.",
      "voiceId": "866bdfe59808cd7c",
      "voiceSec": 2.11
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 4.4,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "star"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "How",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "won",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "der",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "what",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "bove",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "world",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "so",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "high"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
+      },
+      {
+       "lyric": "How I wonder what you are",
+       "from": 7
+      },
+      {
+       "lyric": "Up above the world so high",
+       "from": 14
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Your turn. One soft tap, like a raindrop.",
+     "voiceId": "3c08aa1c961c54cc",
+     "voiceSec": 4.0
     },
     {
      "kind": "beat",
@@ -5960,20 +5800,19 @@
     },
     {
      "kind": "say",
-     "caption": "Now loud for the whole song",
-     "parentCue": "Play strong together",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "Now the whole song, nice and loud.",
-     "voiceId": "040a2fae33605048",
-     "voiceSec": 2.44
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "beat",
-     "caption": "Big loud taps",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
+     "caption": "Tap the beat",
+     "parentCue": "You play, your child taps",
      "bpm": 80,
-     "leadInSec": 1.97,
+     "leadInSec": 2.22,
      "notes": [
       {
        "p": "C4",
@@ -6170,104 +6009,6 @@
        "f": 2,
        "s": "sky",
        "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
       }
      ],
      "lines": [
@@ -6286,200 +6027,9 @@
       {
        "lyric": "Like a diamond in the sky",
        "from": 21
-      },
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 28
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 35
       }
      ],
-     "durationSec": 40,
-     "voice": "Big loud taps.",
-     "voiceId": "b4985f7cf9e4f6ee",
-     "voiceSec": 1.57
-    },
-    {
-     "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap the beat",
-     "parentCue": "You play, your child taps",
-     "bpm": 80,
-     "leadInSec": 2.22,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Up",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "bove",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "world",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "so",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "high",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 7
-      },
-      {
-       "lyric": "Up above the world so high",
-       "from": 14
-      }
-     ],
-     "durationSec": 22,
+     "durationSec": 28,
      "voice": "Tap the beat, like a heartbeat.",
      "voiceId": "0cf68adb12e1c639",
      "voiceSec": 1.82
@@ -6515,7 +6065,7 @@
    "title": "Turtle and bunny",
    "goal": "Follow the music as it slows like a turtle and speeds like a bunny.",
    "type": "fast-slow",
-   "durationSec": 243,
+   "durationSec": 237,
    "parentTip": "Walk your fingers up your child's back, slowly then quickly, matching the music.",
    "video": "twinkle-twinkle/twinkle-twinkle-c05.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c05.jpg",
@@ -6585,6 +6135,184 @@
      "voice": "The turtle sings it slowly. Slow, heavy taps, like a sleepy turtle.",
      "voiceId": "5150909a52a3adb3",
      "voiceSec": 4.74
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 4.4,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "star"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "How",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "won",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "der",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "what",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "bove",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "world",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "so",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "high"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
+      },
+      {
+       "lyric": "How I wonder what you are",
+       "from": 7
+      },
+      {
+       "lyric": "Up above the world so high",
+       "from": 14
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Your turn. One soft tap, like a raindrop.",
+     "voiceId": "3c08aa1c961c54cc",
+     "voiceSec": 4.0
     },
     {
      "kind": "beat",
@@ -7668,361 +7396,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Speedy fingers!",
-     "durationSec": 5,
-     "voice": "Quick little fingers.",
-     "voiceId": "07d002604f064b53",
-     "voiceSec": 1.45
-    },
-    {
-     "kind": "say",
-     "caption": "Whole song, fast!",
-     "parentCue": "Play it a bit faster",
-     "durationSec": 6,
-     "voice": "Now the whole song, quick like a bunny.",
-     "voiceId": "0b07ab84bbeed5da",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "beat",
-     "caption": "Fast, fast, fast!",
-     "parentCue": "Quick, like a running bunny",
-     "bpm": 104,
-     "leadInSec": 2.43,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Up",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "bove",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "world",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "so",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "high",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Like",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "sky",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 7
-      },
-      {
-       "lyric": "Up above the world so high",
-       "from": 14
-      },
-      {
-       "lyric": "Like a diamond in the sky",
-       "from": 21
-      },
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 28
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 35
-      }
-     ],
-     "durationSec": 32,
-     "voice": "Fast, fast, fast.",
-     "voiceId": "6ad0ee14bbd640bd",
-     "voiceSec": 2.03
-    },
-    {
-     "kind": "praise",
      "caption": "You followed the music!",
      "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
+     "voice": "You followed the music.",
+     "voiceId": "538f60183a122fe9",
+     "voiceSec": 1.69
     }
    ],
    "skill": {
@@ -8047,7 +7425,7 @@
    "title": "Freeze, little star!",
    "goal": "Tap while the music plays and freeze when it stops.",
    "type": "stop-go",
-   "durationSec": 233,
+   "durationSec": 240,
    "parentTip": "Freeze with a funny face when the music stops; cheer when it starts again.",
    "video": "twinkle-twinkle/twinkle-twinkle-c06.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c06.jpg",
@@ -8146,6 +7524,184 @@
      "voice": "Stop. Freeze like a statue.",
      "voiceId": "baf3cadfe3548ad6",
      "voiceSec": 2.6
+    },
+    {
+     "kind": "say",
+     "caption": "Now you play the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Now you play the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "26d77d7c62a95e67",
+     "voiceSec": 6.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.2,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "star"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "How",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "won",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "der",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "what",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "bove",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "world",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "so",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "high"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
+      },
+      {
+       "lyric": "How I wonder what you are",
+       "from": 7
+      },
+      {
+       "lyric": "Up above the world so high",
+       "from": 14
+      }
+     ],
+     "durationSec": 29,
+     "voice": "Now you. Tap the glowing key.",
+     "voiceId": "abc1372ce1533a98",
+     "voiceSec": 2.8
     },
     {
      "kind": "beat",
@@ -9003,160 +8559,6 @@
      "voiceSec": 2.6
     },
     {
-     "kind": "beat",
-     "caption": "Go! Tap the beat",
-     "parentCue": "Play this line",
-     "bpm": 80,
-     "leadInSec": 2.74,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Go. Tap the beat.",
-     "voiceId": "9a3d3dd642048105",
-     "voiceSec": 2.34
-    },
-    {
-     "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Stop playing and freeze together",
-     "durationSec": 4,
-     "voice": "Stop. Freeze like a statue.",
-     "voiceId": "baf3cadfe3548ad6",
-     "voiceSec": 2.6
-    },
-    {
-     "kind": "beat",
-     "caption": "Go! Tap the beat",
-     "parentCue": "Play this line",
-     "bpm": 80,
-     "leadInSec": 2.74,
-     "notes": [
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "How I wonder what you are",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Go. Tap the beat.",
-     "voiceId": "9a3d3dd642048105",
-     "voiceSec": 2.34
-    },
-    {
-     "kind": "say",
-     "caption": "Stop! Freeze!",
-     "parentCue": "Stop playing and freeze together",
-     "durationSec": 4,
-     "voice": "Stop. Freeze like a statue.",
-     "voiceId": "baf3cadfe3548ad6",
-     "voiceSec": 2.6
-    },
-    {
      "kind": "praise",
      "caption": "Great freezing, star!",
      "durationSec": 5,
@@ -9187,7 +8589,7 @@
    "title": "Guess the music game",
    "goal": "Listen and switch between games: high and low, loud and soft, fast and slow.",
    "type": "review",
-   "durationSec": 273,
+   "durationSec": 275,
    "parentTip": "Pause before each picture and ask: bear or bird? Loud or soft? Then cheer.",
    "video": "twinkle-twinkle/twinkle-twinkle-c07.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c07.jpg",
@@ -9271,6 +8673,184 @@
      "voice": "Listen. Bear or bird?",
      "voiceId": "a19b0e215608835e",
      "voiceSec": 2.35
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "star"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "How",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "won",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "der",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "what",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "bove",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "world",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "so",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "high"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
+      },
+      {
+       "lyric": "How I wonder what you are",
+       "from": 7
+      },
+      {
+       "lyric": "Up above the world so high",
+       "from": 14
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Now you try. Grown-up, point to the glowing key.",
+     "voiceId": "1c7b849e51249595",
+     "voiceSec": 3.58
     },
     {
      "kind": "beat",
@@ -10381,218 +9961,11 @@
     },
     {
      "kind": "praise",
-     "caption": "You know all the games!",
+     "caption": "Great listening ears!",
      "durationSec": 5,
      "voice": "You worked so hard on that.",
      "voiceId": "0886fb9aff1f3753",
      "voiceSec": 1.92
-    },
-    {
-     "kind": "beat",
-     "caption": "Fast taps!",
-     "parentCue": "Quick like a bunny",
-     "bpm": 104,
-     "leadInSec": 2.15,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      }
-     ],
-     "durationSec": 9,
-     "voice": "Quick taps, like a bunny.",
-     "voiceId": "1249fbc9e6bd459c",
-     "voiceSec": 1.75
-    },
-    {
-     "kind": "high_low",
-     "caption": "Bear or bird? Bear!",
-     "parentCue": "Tap any low key",
-     "target": "low",
-     "bpm": 80,
-     "leadInSec": 2.75,
-     "notes": [
-      {
-       "p": "C3",
-       "d": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C3",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A3",
-       "d": 1,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G3",
-       "d": 2,
-       "s": "star",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Listen. Bear or bird?",
-     "voiceId": "a19b0e215608835e",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "beat",
-     "caption": "Loud taps!",
-     "parentCue": "Tap strong, not hard",
-     "dynamic": "loud",
-     "bpm": 80,
-     "leadInSec": 2.51,
-     "notes": [
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 0
-      }
-     ],
-     "durationSec": 11,
-     "voice": "Loud taps, like a drum.",
-     "voiceId": "866bdfe59808cd7c",
-     "voiceSec": 2.11
-    },
-    {
-     "kind": "praise",
-     "caption": "Great listening ears!",
-     "durationSec": 5,
-     "voice": "You did it. What a team.",
-     "voiceId": "9c16fbc65ce4124d",
-     "voiceSec": 2.26
     }
    ],
    "skill": {
@@ -10617,7 +9990,7 @@
    "title": "You and me, star duet",
    "goal": "Make the song together: the grown-up plays the tune, the child keeps the beat.",
    "type": "together",
-   "durationSec": 273,
+   "durationSec": 282,
    "parentTip": "Play the tune and watch your child; if they stop, keep playing and smile.",
    "video": "twinkle-twinkle/twinkle-twinkle-c08.mp4",
    "thumb": "twinkle-twinkle/twinkle-twinkle-c08.jpg",
@@ -11013,6 +10386,184 @@
      "voice": "Here we go, all together.",
      "voiceId": "860c30d743a9b5a8",
      "voiceSec": 1.86
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 68,
+     "leadInSec": 3.98,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "Twin",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "twin",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 4,
+       "s": "kle",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "lit",
+       "who": "parent"
+      },
+      {
+       "p": "A4",
+       "d": 1,
+       "f": 5,
+       "s": "tle",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "star"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "How",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "I",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "won",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "der",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "what",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "you",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 2,
+       "s": "are"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "Up",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "bove",
+       "who": "parent"
+      },
+      {
+       "p": "F4",
+       "d": 1,
+       "f": 4,
+       "s": "the",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "world",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "so",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "s": "high"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Twinkle twinkle little star",
+       "from": 0
+      },
+      {
+       "lyric": "How I wonder what you are",
+       "from": 7
+      },
+      {
+       "lyric": "Up above the world so high",
+       "from": 14
+      }
+     ],
+     "durationSec": 30,
+     "voice": "Now you try. Grown-up, point to the glowing key.",
+     "voiceId": "1c7b849e51249595",
+     "voiceSec": 3.58
     },
     {
      "kind": "say",
@@ -12066,19 +11617,19 @@
     },
     {
      "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Swap: let your child choose loud or soft",
+     "caption": "The start once more",
+     "parentCue": "Play the beginning again",
      "durationSec": 6,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
+     "voice": "Back to the start, once more.",
+     "voiceId": "c91fd5fe16b303d2",
+     "voiceSec": 2.25
     },
     {
      "kind": "beat",
-     "caption": "Tap the beat with me",
-     "parentCue": "Keep it steady",
+     "caption": "Tap the beat",
+     "parentCue": "You play, your child taps",
      "bpm": 80,
-     "leadInSec": 2.22,
+     "leadInSec": 4.26,
      "notes": [
       {
        "p": "C4",
@@ -12128,283 +11679,18 @@
        "f": 4,
        "s": "star",
        "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Up",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "bove",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "world",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "so",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "high",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "Like",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "dia",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "mond",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "in",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "sky",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "Twin",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "twin",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 4,
-       "s": "kle",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "lit",
-       "who": "parent"
-      },
-      {
-       "p": "A4",
-       "d": 1,
-       "f": 5,
-       "s": "tle",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 4,
-       "s": "star",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "How",
-       "who": "parent"
-      },
-      {
-       "p": "F4",
-       "d": 1,
-       "f": 4,
-       "s": "I",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "won",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "der",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "what",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "you",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 2,
-       "f": 1,
-       "s": "are",
-       "who": "parent"
       }
      ],
      "lines": [
       {
        "lyric": "Twinkle twinkle little star",
        "from": 0
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 7
-      },
-      {
-       "lyric": "Up above the world so high",
-       "from": 14
-      },
-      {
-       "lyric": "Like a diamond in the sky",
-       "from": 21
-      },
-      {
-       "lyric": "Twinkle twinkle little star",
-       "from": 28
-      },
-      {
-       "lyric": "How I wonder what you are",
-       "from": 35
       }
      ],
-     "durationSec": 40,
-     "voice": "Tap the beat, like a heartbeat.",
-     "voiceId": "0cf68adb12e1c639",
-     "voiceSec": 1.82
+     "durationSec": 12,
+     "voice": "Any key is fine. Tap when the circle grows.",
+     "voiceId": "015b37b18f728b6c",
+     "voiceSec": 3.86
     },
     {
      "kind": "praise",

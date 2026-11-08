@@ -28,12 +28,14 @@ def words(s):
     return len((s or "").split())
 
 
-MOVES = re.compile(r"\b(sway|clap|pat|march|dance|rock|stomp|tap your|wiggle|bounce|nod|move|swing|shake|hop|jump|bow|sing|point|hum|count)", re.I)
+MOVES = re.compile(r"\b(sway|clap|pat|march|dance|rock|stomp|tap your|wiggle|bounce|nod|move|swing|shake|hop|jump|bow|sing|point|hum|count|wave|tiptoe)", re.I)
 
 
 def child_plays(seg):
     if seg["kind"] in ("beat", "high_low"):
         return True
+    if seg["kind"] == "say" and re.search(r"sing it back", seg.get("caption", ""), re.I):
+        return True     # echo singing: the pause is the family singing the line back
     if seg["kind"] == "listen" and MOVES.search(" ".join([seg.get("caption", ""), seg.get("parentCue", ""), seg.get("voice") or ""])):
         return True     # listening with movement counts as acting (spec 8)
     if seg["kind"] == "together":

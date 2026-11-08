@@ -58,7 +58,7 @@
  "icon": "boat",
  "key": "C",
  "timeSignature": "4/4",
- "totalSec": 2154,
+ "totalSec": 2145,
  "classes": [
   {
    "id": "merrily-we-roll-along-c01",
@@ -66,7 +66,7 @@
    "title": "Roll your arms along",
    "goal": "Hear the whole song and roll your arms each time you hear 'roll along'.",
    "type": "listen",
-   "durationSec": 213,
+   "durationSec": 212,
    "parentTip": "Roll your arms round and round like wheels every time the song says 'roll along'.",
    "video": "merrily-we-roll-along/merrily-we-roll-along-c01.mp4",
    "thumb": "merrily-we-roll-along/merrily-we-roll-along-c01.jpg",
@@ -120,10 +120,10 @@
     },
     {
      "kind": "listen",
-     "caption": "Listen and sway",
-     "parentCue": "Sway side to side",
+     "caption": "Listen and bounce",
+     "parentCue": "Bounce gently on your knees",
      "bpm": 96,
-     "leadInSec": 2.27,
+     "leadInSec": 2.34,
      "notes": [
       {
        "p": "E4",
@@ -326,25 +326,26 @@
       }
      ],
      "durationSec": 24,
-     "voice": "Listen and sway with me.",
-     "voiceId": "9e65e4e65f5bd26f",
-     "voiceSec": 1.87
+     "voice": "Listen and bounce with me.",
+     "voiceId": "dca195c8ddbb925e",
+     "voiceSec": 1.94
     },
     {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
-     "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "caption": "Your turn for the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Your turn for the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "f58ba649da161e3c",
+     "voiceSec": 6.31
     },
     {
-     "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
-     "bpm": 96,
-     "leadInSec": 1.93,
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 4.18,
+     "gapBeats": 1,
      "notes": [
       {
        "p": "E4",
@@ -391,9 +392,7 @@
       {
        "p": "E4",
        "d": 2,
-       "f": 3,
-       "s": "long",
-       "who": "parent"
+       "s": "long"
       },
       {
        "p": "D4",
@@ -433,9 +432,7 @@
       {
        "p": "G4",
        "d": 2,
-       "f": 5,
-       "s": "long",
-       "who": "parent"
+       "s": "long"
       },
       {
        "p": "E4",
@@ -489,43 +486,7 @@
       {
        "p": "E4",
        "d": 1,
-       "f": 3,
-       "s": "o'er",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "deep",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "blue",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "sea",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "who": "parent"
+       "s": "o'er"
       }
      ],
      "lines": [
@@ -540,237 +501,12 @@
       {
        "lyric": "Merrily we roll along, o'er",
        "from": 13
-      },
-      {
-       "lyric": "the deep blue sea",
-       "from": 21
       }
      ],
-     "durationSec": 24,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
-    },
-    {
-     "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
-     "bpm": 96,
-     "leadInSec": 3.06,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Mer",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ri",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Mer",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ri",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "o'er",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "deep",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "blue",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "sea",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Merrily we roll along",
-       "from": 0
-      },
-      {
-       "lyric": "Roll along, roll along",
-       "from": 7
-      },
-      {
-       "lyric": "Merrily we roll along, o'er",
-       "from": 13
-      },
-      {
-       "lyric": "the deep blue sea",
-       "from": 21
-      }
-     ],
-     "durationSec": 25,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
-     "voiceSec": 2.66
+     "durationSec": 26,
+     "voice": "Now you play. One finger, nice and gentle.",
+     "voiceId": "be385d54bac93081",
+     "voiceSec": 3.78
     },
     {
      "kind": "say",
@@ -1002,20 +738,90 @@
      "voiceSec": 1.93
     },
     {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 96,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "long",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "long",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Roll along, roll along",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
      "kind": "say",
-     "caption": "Sing along this time",
-     "parentCue": "Sing the words softly",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 9,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "say",
+     "caption": "Now let's wave",
+     "parentCue": "Wave your arms slowly",
      "durationSec": 6,
-     "voice": "This time, let's sing along.",
-     "voiceId": "fafc489034539c2a",
-     "voiceSec": 2.25
+     "voice": "Now let's wave. Grown-up, wave your arms slowly.",
+     "voiceId": "691860dc06abbc20",
+     "voiceSec": 4.47
     },
     {
      "kind": "listen",
-     "caption": "Sing along",
-     "parentCue": "Sing with your child",
+     "caption": "Listen and wave",
+     "parentCue": "Wave your arms slowly",
      "bpm": 96,
-     "leadInSec": 1.93,
+     "leadInSec": 2.32,
      "notes": [
       {
        "p": "E4",
@@ -1218,25 +1024,16 @@
       }
      ],
      "durationSec": 24,
-     "voice": "Sing along with me.",
-     "voiceId": "1e3170cce5105aae",
-     "voiceSec": 1.53
-    },
-    {
-     "kind": "say",
-     "caption": "Now clap along",
-     "parentCue": "Clap gently on each beat",
-     "durationSec": 6,
-     "voice": "Now clap along with the music.",
-     "voiceId": "99ccf236b8f144bf",
-     "voiceSec": 2.35
+     "voice": "Listen and wave with me.",
+     "voiceId": "8fdf219288a4563d",
+     "voiceSec": 1.92
     },
     {
      "kind": "listen",
-     "caption": "Clap clap clap",
-     "parentCue": "Clap with the beat",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
      "bpm": 96,
-     "leadInSec": 3.06,
+     "leadInSec": 3.34,
      "notes": [
       {
        "p": "E4",
@@ -1286,161 +1083,96 @@
        "f": 3,
        "s": "long",
        "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Mer",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ri",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "o'er",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "deep",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "blue",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "sea",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "who": "parent"
       }
      ],
      "lines": [
       {
        "lyric": "Merrily we roll along",
        "from": 0
-      },
-      {
-       "lyric": "Roll along, roll along",
-       "from": 7
-      },
-      {
-       "lyric": "Merrily we roll along, o'er",
-       "from": 13
-      },
-      {
-       "lyric": "the deep blue sea",
-       "from": 21
       }
      ],
-     "durationSec": 25,
-     "voice": "Clap along. Clap, clap, clap.",
-     "voiceId": "18bb4de584dd97ad",
+     "durationSec": 10,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 9,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
+     "voiceSec": 2.66
+    },
+    {
+     "kind": "listen",
+     "caption": "I sing, you sing it back",
+     "parentCue": "Sing it back together",
+     "bpm": 96,
+     "leadInSec": 3.34,
+     "notes": [
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "long",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "f": 5,
+       "s": "long",
+       "who": "parent"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Roll along, roll along",
+       "from": 0
+      }
+     ],
+     "durationSec": 10,
+     "voice": "Listen first. Then sing it back.",
+     "voiceId": "50a85eb5816ff505",
+     "voiceSec": 2.94
+    },
+    {
+     "kind": "say",
+     "caption": "Your turn to sing it back!",
+     "parentCue": "Sing the line together, any way is fine",
+     "durationSec": 9,
+     "voice": "Your turn. Sing it back to me!",
+     "voiceId": "80c9b47669a3ffa1",
      "voiceSec": 2.66
     },
     {
@@ -1474,7 +1206,7 @@
    "title": "Wheels keep turning",
    "goal": "Tap a steady beat on any key while the grown-up plays the tune.",
    "type": "beat",
-   "durationSec": 194,
+   "durationSec": 191,
    "parentTip": "Rest your hand over your child's hand and tap together, then slowly let go.",
    "video": "merrily-we-roll-along/merrily-we-roll-along-c02.mp4",
    "thumb": "merrily-we-roll-along/merrily-we-roll-along-c02.jpg",
@@ -1544,6 +1276,184 @@
      "voice": "Roll along. Steady taps, on every beat.",
      "voiceId": "cb7557c4dee3df88",
      "voiceSec": 3.63
+    },
+    {
+     "kind": "say",
+     "caption": "Find the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 7,
+     "voice": "Find the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "b791761c5795b2f4",
+     "voiceSec": 5.31
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 4.7,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Mer",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ri",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ly",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "long"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "long",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "long"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Mer",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ri",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ly",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "long",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "s": "o'er"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Merrily we roll along",
+       "from": 0
+      },
+      {
+       "lyric": "Roll along, roll along",
+       "from": 7
+      },
+      {
+       "lyric": "Merrily we roll along, o'er",
+       "from": 13
+      }
+     ],
+     "durationSec": 26,
+     "voice": "Your turn. Press the glowing key with one finger.",
+     "voiceId": "47631c6d2adadecd",
+     "voiceSec": 4.3
     },
     {
      "kind": "beat",
@@ -2438,240 +2348,11 @@
     },
     {
      "kind": "praise",
-     "caption": "Lovely!",
+     "caption": "You kept the wheels steady!",
      "durationSec": 5,
      "voice": "I love how you kept going.",
      "voiceId": "5edf54ba234e9d32",
      "voiceSec": 1.94
-    },
-    {
-     "kind": "say",
-     "caption": "And again!",
-     "parentCue": "Keep the taps steady",
-     "durationSec": 5,
-     "voice": "And again.",
-     "voiceId": "be3897a52d81cfa7",
-     "voiceSec": 1.2
-    },
-    {
-     "kind": "beat",
-     "caption": "Tap on every beat",
-     "parentCue": "You play, your child taps",
-     "bpm": 96,
-     "leadInSec": 4.26,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Mer",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ri",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Mer",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ri",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "o'er",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "deep",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "blue",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "sea",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Merrily we roll along",
-       "from": 0
-      },
-      {
-       "lyric": "Roll along, roll along",
-       "from": 7
-      },
-      {
-       "lyric": "Merrily we roll along, o'er",
-       "from": 13
-      },
-      {
-       "lyric": "the deep blue sea",
-       "from": 21
-      }
-     ],
-     "durationSec": 26,
-     "voice": "Any key is fine. Tap when the circle grows.",
-     "voiceId": "015b37b18f728b6c",
-     "voiceSec": 3.86
-    },
-    {
-     "kind": "praise",
-     "caption": "You kept the wheels steady!",
-     "durationSec": 5,
-     "voice": "Beautiful, gentle fingers.",
-     "voiceId": "16fffae286737b05",
-     "voiceSec": 2.22
     }
    ],
    "skill": {
@@ -2696,7 +2377,7 @@
    "title": "E, E, E, we roll along",
    "goal": "Find E by the two black keys and play it three times in a row.",
    "type": "special-note",
-   "durationSec": 197,
+   "durationSec": 196,
    "parentTip": "Hold up three fingers for 'we roll along', then help your child find E.",
    "video": "merrily-we-roll-along/merrily-we-roll-along-c03.mp4",
    "thumb": "merrily-we-roll-along/merrily-we-roll-along-c03.jpg",
@@ -3139,7 +2820,7 @@
      "kind": "say",
      "caption": "Big breath in and out",
      "parentCue": "Breathe slowly together",
-     "durationSec": 5,
+     "durationSec": 4,
      "voice": "Big breath in, and out.",
      "voiceId": "67a43f157c55d975",
      "voiceSec": 2.01
@@ -3175,7 +2856,7 @@
    "title": "Big wheel, little wheel",
    "goal": "Find E in two places: a low E and a high E with the same name.",
    "type": "octave",
-   "durationSec": 229,
+   "durationSec": 228,
    "parentTip": "Point to the low E, then the high E. Say 'big wheel' low, 'little wheel' high.",
    "video": "merrily-we-roll-along/merrily-we-roll-along-c04.mp4",
    "thumb": "merrily-we-roll-along/merrily-we-roll-along-c04.jpg",
@@ -3717,7 +3398,7 @@
      "kind": "say",
      "caption": "Wiggle your fingers!",
      "parentCue": "Shake out both hands together",
-     "durationSec": 9,
+     "durationSec": 8,
      "voice": "Wiggle your fingers. Wiggle, wiggle.",
      "voiceId": "640ef443bc914f6c",
      "voiceSec": 2.99
@@ -5147,7 +4828,7 @@
    "title": "Wait for the wagon's E",
    "goal": "Wait and play E at the right moments while the grown-up plays the rest.",
    "type": "special-note",
-   "durationSec": 224,
+   "durationSec": 213,
    "parentTip": "Play your notes, then look at your child and nod just before each E.",
    "video": "merrily-we-roll-along/merrily-we-roll-along-c07.mp4",
    "thumb": "merrily-we-roll-along/merrily-we-roll-along-c07.jpg",
@@ -6159,121 +5840,12 @@
     },
     {
      "kind": "say",
-     "caption": "The start once more",
-     "parentCue": "Play the beginning again",
-     "durationSec": 6,
-     "voice": "Back to the start, once more.",
-     "voiceId": "c91fd5fe16b303d2",
-     "voiceSec": 2.25
-    },
-    {
-     "kind": "together",
-     "caption": "Play it together",
-     "parentCue": "Your child plays the special note",
-     "bpm": 96,
-     "leadInSec": 1.84,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Mer"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ri",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "long"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "long",
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Merrily we roll along",
-       "from": 0
-      },
-      {
-       "lyric": "Roll along, roll along",
-       "from": 7
-      }
-     ],
-     "durationSec": 14,
-     "voice": "Play along with me.",
-     "voiceId": "f7d6cd562d8b99fe",
-     "voiceSec": 1.44
+     "caption": "Big breath in and out",
+     "parentCue": "Breathe slowly together",
+     "durationSec": 9,
+     "voice": "Big breath in, and out.",
+     "voiceId": "67a43f157c55d975",
+     "voiceSec": 2.01
     },
     {
      "kind": "praise",
@@ -7157,7 +6729,7 @@
    "title": "Rolling along together",
    "goal": "Play the whole song together, sharing one steady beat.",
    "type": "together",
-   "durationSec": 224,
+   "durationSec": 232,
    "parentTip": "Keep the beat going even if a note is missed; smile and nod at each turn.",
    "video": "merrily-we-roll-along/merrily-we-roll-along-c09.mp4",
    "thumb": "merrily-we-roll-along/merrily-we-roll-along-c09.jpg",
@@ -7380,6 +6952,184 @@
      "voice": "Let's make music together.",
      "voiceId": "ce491b22b46d8348",
      "voiceSec": 2.07
+    },
+    {
+     "kind": "say",
+     "caption": "Now you play the last note",
+     "parentCue": "You play the tune, your child the last note",
+     "durationSec": 8,
+     "voice": "Now you play the last note. Grown-up, you play the tune, your child the last note.",
+     "voiceId": "26d77d7c62a95e67",
+     "voiceSec": 6.46
+    },
+    {
+     "kind": "your_turn",
+     "caption": "Your turn: the last note",
+     "parentCue": "A whole hand on the glowing key is fine",
+     "bpm": 82,
+     "leadInSec": 3.9,
+     "gapBeats": 1,
+     "notes": [
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Mer",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ri",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ly",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 2,
+       "s": "long"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 2,
+       "f": 2,
+       "s": "long",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 1,
+       "f": 5,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "G4",
+       "d": 2,
+       "s": "long"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "Mer",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "ri",
+       "who": "parent"
+      },
+      {
+       "p": "C4",
+       "d": 1,
+       "f": 1,
+       "s": "ly",
+       "who": "parent"
+      },
+      {
+       "p": "D4",
+       "d": 1,
+       "f": 2,
+       "s": "we",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "roll",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "a",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "f": 3,
+       "s": "long",
+       "who": "parent"
+      },
+      {
+       "p": "E4",
+       "d": 1,
+       "s": "o'er"
+      }
+     ],
+     "lines": [
+      {
+       "lyric": "Merrily we roll along",
+       "from": 0
+      },
+      {
+       "lyric": "Roll along, roll along",
+       "from": 7
+      },
+      {
+       "lyric": "Merrily we roll along, o'er",
+       "from": 13
+      }
+     ],
+     "durationSec": 26,
+     "voice": "Your turn. Wait for the glow, then press.",
+     "voiceId": "e03bd593ae91d1cb",
+     "voiceSec": 3.5
     },
     {
      "kind": "say",
@@ -8255,213 +8005,12 @@
     },
     {
      "kind": "say",
-     "caption": "Can you do it once more?",
-     "parentCue": "Swap seats if your child wants",
-     "durationSec": 7,
-     "voice": "Let's try it once more.",
-     "voiceId": "d11a6527d0be0436",
-     "voiceSec": 1.85
-    },
-    {
-     "kind": "together",
-     "caption": "Together again",
-     "parentCue": "Smile and keep going",
-     "bpm": 82,
-     "leadInSec": 1.97,
-     "notes": [
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Mer"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ri",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "E4",
-       "d": 2,
-       "f": 3,
-       "s": "long"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "roll",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 2,
-       "f": 2,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll"
-      },
-      {
-       "p": "G4",
-       "d": 1,
-       "f": 5,
-       "s": "a",
-       "who": "parent"
-      },
-      {
-       "p": "G4",
-       "d": 2,
-       "f": 5,
-       "s": "long",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "Mer"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "ri",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 1,
-       "f": 1,
-       "s": "ly",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "we",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "roll"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "a"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "long"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "o'er"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "the",
-       "who": "parent"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "deep",
-       "who": "parent"
-      },
-      {
-       "p": "E4",
-       "d": 1,
-       "f": 3,
-       "s": "blue"
-      },
-      {
-       "p": "D4",
-       "d": 1,
-       "f": 2,
-       "s": "sea",
-       "who": "parent"
-      },
-      {
-       "p": "C4",
-       "d": 4,
-       "f": 1,
-       "who": "parent"
-      }
-     ],
-     "lines": [
-      {
-       "lyric": "Merrily we roll along",
-       "from": 0
-      },
-      {
-       "lyric": "Roll along, roll along",
-       "from": 7
-      },
-      {
-       "lyric": "Merrily we roll along, o'er",
-       "from": 13
-      },
-      {
-       "lyric": "the deep blue sea",
-       "from": 21
-      }
-     ],
-     "durationSec": 27,
-     "voice": "Let's play together.",
-     "voiceId": "b9d074678a65d0e2",
-     "voiceSec": 1.57
+     "caption": "Stretch up tall!",
+     "parentCue": "Stretch arms up, then hands back",
+     "durationSec": 8,
+     "voice": "Stretch up tall, as tall as a tree.",
+     "voiceId": "7b02d4dc04aee044",
+     "voiceSec": 3.14
     },
     {
      "kind": "praise",
